@@ -1,0 +1,58 @@
+Using the project context already provided, generate the mockup concept for the Home page of Inthegra Software.
+
+Objective of this page:
+- Immediately position Inthegra as an Oracle-native enterprise software and AI company
+- Build trust
+- Explain the business model clearly
+- Drive lead generation
+
+The page must feel premium, corporate, modern, and conversion-oriented.
+
+Required content blocks:
+1. Hero section
+   - Main positioning around Oracle-native enterprise software and AI
+   - Mention Argentina and Latam naturally
+   - Primary CTA: Agendar demo
+   - Secondary CTA: Ver soluciones or Conocer productos
+
+2. Trust / social proof section
+   - Show credibility with years, clients, implementations
+   - Suggest how to incorporate real client names tastefully
+
+3. Business model section
+   - Products / Solutions / Services
+   - Make it extremely clear how Inthegra is organized
+
+4. Differentiators section
+   - 23 years know-how
+   - End-to-end product + cloud + AI
+   - Fast implementation
+   - Native ERP + vertical integration
+   - AI applied to development and products
+
+5. Industries / products preview
+   - HealthCare
+   - Credit & Financial
+   - Retail
+
+6. AI positioning section
+   - Must feel real and business-oriented, not marketing fluff
+
+7. Success stories preview
+   - Highlight outcomes and business results
+
+8. People & Culture preview
+   - Institutional tone
+
+9. Final CTA section
+
+What I need in the answer:
+- High-end mockup concept
+- Section-by-section layout
+- Suggested copywriting for each section
+- Visual treatment guidance
+- Interaction suggestions
+- Premium inspiration cues
+- Component logic suitable for coding
+
+Make this page feel like a top-tier enterprise company, not a generic SaaS landing page.

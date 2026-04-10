@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inthegra Software — Home Mockup</title>
+  <style>
+    :root {
+      --bg: #07111f;
+      --bg-soft: #0c1930;
+      --panel: rgba(14, 28, 52, 0.72);
+      --panel-strong: #0f213d;
+      --line: rgba(255,255,255,0.1);
+      --text: #e8eefc;
+      --muted: #9fb0cf;
+      --accent: #79b7ff;
+      --accent-2: #9ee7ff;
+      --success: #9cf0c4;
+      --shadow: 0 20px 60px rgba(0,0,0,0.35);
+      --radius-xl: 28px;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --max: 1280px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 15% 20%, rgba(121,183,255,0.14), transparent 26%),
+        radial-gradient(circle at 80% 10%, rgba(158,231,255,0.10), transparent 22%),
+        linear-gradient(180deg, #06101c 0%, #081425 40%, #07111f 100%);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    .container {
+      width: min(calc(100% - 40px), var(--max));
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 90px 0;
+      position: relative;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 14px;
+      border: 1px solid rgba(121,183,255,0.28);
+      background: rgba(121,183,255,0.08);
+      border-radius: 999px;
+      color: var(--accent-2);
+      font-size: 13px;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    h1, h2, h3, p { margin: 0; }
+
+    h1 {
+      font-size: clamp(42px, 6vw, 74px);
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+      max-width: 10ch;
+    }
+
+    h2 {
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+      margin-top: 18px;
+      max-width: 14ch;
+    }
+
+    .lead {
+      font-size: clamp(17px, 2vw, 21px);
+      color: var(--muted);
+      max-width: 760px;
+      margin-top: 22px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 24px;
+    }
+
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 50px;
+      padding: 0 22px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-weight: 700;
+      transition: .25s ease;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #86c0ff 0%, #d7eeff 100%);
+      color: #06101b;
+      box-shadow: 0 12px 30px rgba(121,183,255,0.25);
+    }
+
+    .btn-primary:hover { transform: translateY(-1px); }
+
+    .btn-secondary {
+      border-color: rgba(255,255,255,0.14);
+      background: rgba(255,255,255,0.03);
+      color: var(--text);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.06);
+      border-color: rgba(255,255,255,0.20);
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(16px);
+      background: rgba(6,16,28,0.65);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 76px;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(121,183,255,0.9), rgba(158,231,255,0.8));
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.35);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 46px 0 80px;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 28px;
+      align-items: center;
+      min-height: 780px;
+    }
+
+    .hero-copy p strong { color: var(--text); }
+
+    .hero-visual {
+      position: relative;
+      min-height: 640px;
+    }
+
+    .glass {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(22px);
+    }
+
+    .hero-card-main {
+      position: absolute;
+      right: 0;
+      top: 40px;
+      width: min(100%, 560px);
+      border-radius: var(--radius-xl);
+      padding: 28px;
+      overflow: hidden;
+    }
+
+    .hero-card-main::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.06), transparent 35%),
+        radial-gradient(circle at top right, rgba(121,183,255,0.16), transparent 28%);
+      pointer-events: none;
+    }
+
+    .hero-topline {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 28px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .mini-stat {
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      min-width: 150px;
+    }
+
+    .mini-stat .k {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+
+    .mini-stat .v {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
+    .dashboard {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      gap: 16px;
+    }
+
+    .dashboard-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .tile {
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      min-height: 132px;
+    }
+
+    .tile h4 {
+      font-size: 14px;
+      color: var(--muted);
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .tile strong {
+      display: block;
+      font-size: 26px;
+      letter-spacing: -0.03em;
+      margin-bottom: 8px;
+    }
+
+    .tile p { color: var(--muted); font-size: 13px; }
+
+    .product-bars {
+      display: grid;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .bar-item {
+      display: grid;
+      grid-template-columns: 120px 1fr 42px;
+      gap: 12px;
+      align-items: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .bar {
+      height: 9px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.08);
+      overflow: hidden;
+    }
+
+    .bar > span {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, rgba(121,183,255,0.9), rgba(158,231,255,0.95));
+    }
+
+    .floating-card {
+      position: absolute;
+      left: 10px;
+      bottom: 46px;
+      width: min(100%, 280px);
+      border-radius: 24px;
+      padding: 20px;
+    }
+
+    .floating-card h4 {
+      font-size: 14px;
+      color: var(--accent-2);
+      margin-bottom: 14px;
+    }
+
+    .floating-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .floating-card li {
+      padding-left: 18px;
+      position: relative;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .floating-card li::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--success);
+      position: absolute;
+      left: 0;
+      top: 8px;
+    }
+
+    .logo-strip,
+    .stats-strip,
+    .feature-grid,
+    .vertical-grid,
+    .stories-grid,
+    .culture-grid,
+    .model-grid,
+    .ai-grid,
+    .footer-grid { display: grid; gap: 24px; }
+
+    .logo-strip {
+      grid-template-columns: 1.2fr 1fr;
+      align-items: center;
+      padding: 28px 32px;
+      border-radius: 24px;
+    }
+
+    .muted { color: var(--muted); }
+
+    .pseudo-logos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .pseudo-logo {
+      min-height: 62px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.03);
+      color: rgba(232,238,252,0.72);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: .04em;
+    }
+
+    .stats-strip {
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: 24px;
+    }
+
+    .stat-card,
+    .feature-card,
+    .vertical-card,
+    .story-card,
+    .culture-card,
+    .model-card,
+    .ai-card,
+    .cta-panel {
+      padding: 28px;
+      border-radius: 24px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .stat-card .k {
+      font-size: 42px;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+    }
+
+    .stat-card .v {
+      margin-top: 8px;
+      color: var(--muted);
+      max-width: 20ch;
+    }
+
+    .model-grid {
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 36px;
+    }
+
+    .model-card h3,
+    .feature-card h3,
+    .vertical-card h3,
+    .story-card h3,
+    .culture-card h3,
+    .ai-card h3 {
+      font-size: 22px;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+
+    .model-card ul,
+    .feature-card ul,
+    .vertical-card ul,
+    .ai-card ul {
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 12px;
+    }
+
+    .model-card li,
+    .feature-card li,
+    .vertical-card li,
+    .ai-card li {
+      color: var(--muted);
+      padding-left: 18px;
+      position: relative;
+    }
+
+    .model-card li::before,
+    .feature-card li::before,
+    .vertical-card li::before,
+    .ai-card li::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      position: absolute;
+      left: 0;
+      top: 10px;
+      background: var(--accent);
+    }
+
+    .feature-grid {
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 34px;
+    }
+
+    .vertical-grid {
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 36px;
+    }
+
+    .tag {
+      display: inline-flex;
+      margin-bottom: 16px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: var(--accent-2);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+
+    .link-arrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 18px;
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .ai-grid {
+      grid-template-columns: 1.05fr .95fr;
+      align-items: stretch;
+      margin-top: 36px;
+    }
+
+    .ai-panel-large {
+      padding: 34px;
+      border-radius: 28px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)),
+        linear-gradient(135deg, rgba(121,183,255,0.10), rgba(158,231,255,0.05));
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ai-panel-large::after {
+      content: "";
+      position: absolute;
+      inset: auto -30px -40px auto;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(121,183,255,0.22), transparent 65%);
+      pointer-events: none;
+    }
+
+    .workflow {
+      margin-top: 28px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .workflow-step {
+      padding: 18px 18px 18px 56px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      position: relative;
+      color: var(--muted);
+    }
+
+    .workflow-step strong { color: var(--text); display: block; margin-bottom: 6px; }
+
+    .workflow-step .n {
+      position: absolute;
+      left: 18px;
+      top: 18px;
+      width: 26px;
+      height: 26px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      background: rgba(121,183,255,0.18);
+      color: var(--accent-2);
+      font-weight: 800;
+      font-size: 12px;
+    }
+
+    .stories-grid {
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 34px;
+    }
+
+    .story-metric {
+      margin-top: 18px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(121,183,255,0.08);
+      border: 1px solid rgba(121,183,255,0.20);
+      color: var(--accent-2);
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .culture-grid {
+      grid-template-columns: 1fr 1fr;
+      margin-top: 36px;
+    }
+
+    .quote {
+      margin-top: 18px;
+      padding: 18px;
+      border-left: 3px solid rgba(121,183,255,0.55);
+      background: rgba(255,255,255,0.03);
+      border-radius: 0 18px 18px 0;
+      color: var(--muted);
+    }
+
+    .cta-panel {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 24px;
+      align-items: center;
+      padding: 36px;
+      border-radius: 32px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)),
+        linear-gradient(135deg, rgba(121,183,255,0.12), rgba(158,231,255,0.05));
+    }
+
+    footer {
+      padding: 40px 0 60px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      color: var(--muted);
+    }
+
+    .footer-grid {
+      grid-template-columns: 1fr auto;
+      align-items: center;
+    }
+
+    .code-note {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 1100px) {
+      .hero-grid,
+      .logo-strip,
+      .ai-grid,
+      .cta-panel,
+      .culture-grid,
+      .feature-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .model-grid,
+      .vertical-grid,
+      .stories-grid,
+      .stats-strip,
+      .dashboard-row {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero-visual {
+        min-height: 720px;
+      }
+
+      .floating-card {
+        left: auto;
+        right: 20px;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .nav-links { display: none; }
+      .container { width: min(calc(100% - 24px), var(--max)); }
+      .section { padding: 72px 0; }
+      .hero { padding-top: 24px; }
+      .hero-grid,
+      .model-grid,
+      .feature-grid,
+      .vertical-grid,
+      .stories-grid,
+      .stats-strip,
+      .dashboard-row,
+      .pseudo-logos {
+        grid-template-columns: 1fr;
+      }
+      .hero-card-main,
+      .floating-card { position: relative; width: 100%; top: auto; right: auto; left: auto; bottom: auto; }
+      .hero-visual { min-height: auto; display: grid; gap: 18px; }
+      .cta-panel { padding: 28px; }
+      .stat-card, .feature-card, .vertical-card, .story-card, .culture-card, .model-card, .ai-card, .cta-panel { padding: 22px; }
+      h1 { max-width: 12ch; }
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand">
+        <span class="brand-mark"></span>
+        <span>Inthegra Software</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#model">Business Model</a>
+        <a href="#industries">Industries</a>
+        <a href="#ai">AI</a>
+        <a href="#stories">Success Stories</a>
+        <a href="#culture">People & Culture</a>
+      </nav>
+      <a class="btn btn-secondary" href="#final-cta">Agendar demo</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Oracle-native enterprise software + AI</span>
+          <h1>Enterprise software built for complex operations in Argentina and Latam.</h1>
+          <p class="lead">
+            Inthegra combines <strong>industry products</strong>, <strong>enterprise solutions</strong>,
+            <strong>Oracle services</strong>, and <strong>applied AI</strong> to help organizations modernize,
+            integrate, and scale with confidence.
+          </p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="#final-cta">Agendar demo</a>
+            <a class="btn btn-secondary" href="#industries">Conocer productos</a>
+          </div>
+          <p class="code-note">
+            Positioning intent: premium, institutional, and high-trust. The hero should immediately communicate that Inthegra is not a generic SaaS vendor, but a strategic technology partner with Oracle-native depth.
+          </p>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card-main glass">
+            <div class="hero-topline">
+              <div>
+                <div class="tag">Enterprise overview</div>
+                <p class="muted">A visual placeholder for an executive-grade platform composition panel.</p>
+              </div>
+              <div class="mini-stat">
+                <div class="k">23+</div>
+                <div class="v">years of know-how</div>
+              </div>
+            </div>
+
+            <div class="dashboard">
+              <div class="dashboard-row">
+                <div class="tile">
+                  <h4>Business model</h4>
+                  <strong>3 pillars</strong>
+                  <p>Products, Solutions, and Services working as one integrated operating model.</p>
+                </div>
+                <div class="tile">
+                  <h4>Oracle-native</h4>
+                  <strong>Cloud + Data</strong>
+                  <p>Built on Oracle technologies for enterprise reliability, scalability, and governance.</p>
+                </div>
+                <div class="tile">
+                  <h4>Applied AI</h4>
+                  <strong>Real use cases</strong>
+                  <p>AI embedded into products, workflows, analytics, and software delivery.</p>
+                </div>
+              </div>
+
+              <div class="tile">
+                <h4>Industry product portfolio</h4>
+                <div class="product-bars">
+                  <div class="bar-item">
+                    <span>HealthCare</span>
+                    <div class="bar"><span style="width: 92%"></span></div>
+                    <span>92</span>
+                  </div>
+                  <div class="bar-item">
+                    <span>Credit & Financial</span>
+                    <div class="bar"><span style="width: 86%"></span></div>
+                    <span>86</span>
+                  </div>
+                  <div class="bar-item">
+                    <span>Retail</span>
+                    <div class="bar"><span style="width: 78%"></span></div>
+                    <span>78</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-card glass">
+            <h4>Why enterprise teams choose Inthegra</h4>
+            <ul>
+              <li>Oracle-native architecture with long-term scalability</li>
+              <li>Faster time-to-value with products and delivery capabilities</li>
+              <li>Vertical business depth across regulated and operationally complex industries</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="trust">
+      <div class="container">
+        <div class="logo-strip glass">
+          <div>
+            <span class="eyebrow">Trust & social proof</span>
+            <h2>Built for enterprise credibility from the first scroll.</h2>
+            <p class="lead">
+              Showcase real proof points with a restrained institutional treatment. Use numbers first, then selected client names in a tasteful way to reinforce trust without making the page feel crowded.
+            </p>
+          </div>
+          <div class="pseudo-logos">
+            <div class="pseudo-logo">CLIENT NAME</div>
+            <div class="pseudo-logo">CLIENT NAME</div>
+            <div class="pseudo-logo">CLIENT NAME</div>
+            <div class="pseudo-logo">CLIENT NAME</div>
+          </div>
+        </div>
+
+        <div class="stats-strip">
+          <article class="stat-card">
+            <div class="k">23+</div>
+            <div class="v">years building enterprise software with deep business understanding.</div>
+          </article>
+          <article class="stat-card">
+            <div class="k">X+</div>
+            <div class="v">clients across products, industry solutions, and Oracle services.</div>
+          </article>
+          <article class="stat-card">
+            <div class="k">X+</div>
+            <div class="v">implementations delivered across Argentina and Latam.</div>
+          </article>
+          <article class="stat-card">
+            <div class="k">24/7</div>
+            <div class="v">enterprise mindset for mission-critical operations and support.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="model">
+      <div class="container">
+        <span class="eyebrow">Business model clarity</span>
+        <h2>One company. Three clear ways to create value.</h2>
+        <p class="lead">
+          The home page should make Inthegra’s structure unmistakable. This is a key conversion point: visitors must quickly understand whether they need a product, a solution, or specialized Oracle services.
+        </p>
+
+        <div class="model-grid">
+          <article class="model-card">
+            <div class="tag">Products</div>
+            <h3>Industry products with enterprise foundations</h3>
+            <p class="muted">Configurable product families designed for specific industries and operational realities.</p>
+            <ul>
+              <li>Vertical business logic by industry</li>
+              <li>Modular and scalable architecture</li>
+              <li>Designed for long-term operational growth</li>
+            </ul>
+          </article>
+
+          <article class="model-card">
+            <div class="tag">Solutions</div>
+            <h3>Business solutions that extend and integrate</h3>
+            <p class="muted">Targeted capabilities for key processes, automation needs, analytics, and customer operations.</p>
+            <ul>
+              <li>Integration-first mindset</li>
+              <li>Use-case-oriented implementation</li>
+              <li>Fast path to measurable outcomes</li>
+            </ul>
+          </article>
+
+          <article class="model-card">
+            <div class="tag">Services</div>
+            <h3>Oracle-native services for modernization and scale</h3>
+            <p class="muted">Expert support for cloud, analytics, custom development, modernization, and AI-enabled delivery.</p>
+            <ul>
+              <li>OCI, Oracle Analytics, custom development</li>
+              <li>Modernization of legacy Oracle environments</li>
+              <li>AI applied to delivery and continuous improvement</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="differentiators">
+      <div class="container">
+        <span class="eyebrow">Why Inthegra</span>
+        <h2>End-to-end enterprise capability, not isolated services.</h2>
+        <p class="lead">
+          This section should feel like a boardroom-grade summary of why Inthegra is different: industry know-how, Oracle expertise, delivery velocity, native integration, and a credible AI strategy.
+        </p>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>23 years of operational know-how</h3>
+            <ul>
+              <li>Deep experience in complex and regulated environments</li>
+              <li>Long-term understanding of enterprise process realities</li>
+              <li>Credibility built through implementation, not just positioning</li>
+            </ul>
+          </article>
+
+          <article class="feature-card">
+            <h3>Product + cloud + AI in one partner</h3>
+            <ul>
+              <li>Enterprise products backed by Oracle-native services</li>
+              <li>Cloud, analytics, and custom development capabilities</li>
+              <li>Reduced coordination friction across vendors</li>
+            </ul>
+          </article>
+
+          <article class="feature-card">
+            <h3>Fast implementation with a pragmatic model</h3>
+            <ul>
+              <li>Reusable product foundations accelerate deployment</li>
+              <li>Modularity supports phased rollouts</li>
+              <li>Lower time-to-value for business stakeholders</li>
+            </ul>
+          </article>
+
+          <article class="feature-card">
+            <h3>Native ERP and vertical integration</h3>
+            <ul>
+              <li>Business continuity from operations to finance</li>
+              <li>Stronger cross-process visibility and control</li>
+              <li>Enterprise architecture with less fragmentation</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="industries">
+      <div class="container">
+        <span class="eyebrow">Industries & products</span>
+        <h2>Products designed around real business complexity.</h2>
+        <p class="lead">
+          Introduce the three main product families with concise business language. The goal is not to explain everything here, but to make visitors immediately recognize where they fit.
+        </p>
+
+        <div class="vertical-grid">
+          <article class="vertical-card">
+            <div class="tag">HealthCare</div>
+            <h3>Technology for complex healthcare operations</h3>
+            <p class="muted">Enterprise-grade software for organizations that need control, traceability, integration, and service continuity.</p>
+            <ul>
+              <li>Operational and administrative workflows</li>
+              <li>Modular structure by business need</li>
+              <li>Strong integration with finance and back office</li>
+            </ul>
+            <a href="#final-cta" class="link-arrow">Explore HealthCare →</a>
+          </article>
+
+          <article class="vertical-card">
+            <div class="tag">Credit & Financial</div>
+            <h3>Platforms for financial and credit-driven businesses</h3>
+            <p class="muted">Tools built for scale, automation, traceability, and high-volume transactional environments.</p>
+            <ul>
+              <li>Workflow control and business rules</li>
+              <li>Integrated customer and operations view</li>
+              <li>Support for growth and process standardization</li>
+            </ul>
+            <a href="#final-cta" class="link-arrow">Explore Credit & Financial →</a>
+          </article>
+
+          <article class="vertical-card">
+            <div class="tag">Retail</div>
+            <h3>Software to orchestrate distributed retail operations</h3>
+            <p class="muted">Solutions for companies that need better inventory visibility, operational efficiency, and integrated management.</p>
+            <ul>
+              <li>Branch and supply process coordination</li>
+              <li>Decision support with better operational data</li>
+              <li>Scalable architecture for multi-location growth</li>
+            </ul>
+            <a href="#final-cta" class="link-arrow">Explore Retail →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="ai">
+      <div class="container">
+        <span class="eyebrow">AI positioning</span>
+        <h2>Applied AI that improves operations, products, and delivery.</h2>
+        <p class="lead">
+          This section must feel grounded and business-oriented. Avoid generic AI language. The message should be: Inthegra uses AI where it creates measurable value, inside products and across enterprise delivery.
+        </p>
+
+        <div class="ai-grid">
+          <article class="ai-panel-large">
+            <div class="tag">Business-oriented AI</div>
+            <h3 style="font-size:32px; letter-spacing:-0.03em; margin-bottom:14px;">From intelligent workflows to accelerated delivery, AI is part of how Inthegra creates value.</h3>
+            <p class="muted">
+              AI is not presented as a buzzword. It appears as a capability layer applied to automation, analytics, user assistance, decision support, and software development efficiency.
+            </p>
+
+            <div class="workflow">
+              <div class="workflow-step">
+                <span class="n">01</span>
+                <strong>Inside products</strong>
+                Workflow assistance, process automation, smarter interactions, and decision support embedded into business operations.
+              </div>
+              <div class="workflow-step">
+                <span class="n">02</span>
+                <strong>Inside solutions</strong>
+                AI-enhanced analytics, document processing, customer operations, and targeted automation for business bottlenecks.
+              </div>
+              <div class="workflow-step">
+                <span class="n">03</span>
+                <strong>Inside delivery</strong>
+                AI applied to development and implementation to accelerate cycles, improve quality, and reduce friction in execution.
+              </div>
+            </div>
+          </article>
+
+          <div class="grid">
+            <article class="ai-card">
+              <div class="tag">Use cases</div>
+              <h3>Where AI shows up credibly</h3>
+              <ul>
+                <li>Automation of repetitive operational flows</li>
+                <li>Smarter interfaces and guided actions</li>
+                <li>Analytics augmentation for business teams</li>
+                <li>Delivery acceleration in software lifecycle</li>
+              </ul>
+            </article>
+
+            <article class="ai-card">
+              <div class="tag">Tone guidance</div>
+              <h3>How to present it visually</h3>
+              <ul>
+                <li>Avoid futuristic clichés and glowing robots</li>
+                <li>Prefer executive dashboards and structured workflows</li>
+                <li>Use subtle motion and data-like composition</li>
+                <li>Keep the message sober, useful, and enterprise-ready</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="stories">
+      <div class="container">
+        <span class="eyebrow">Success stories</span>
+        <h2>Business results people can understand at a glance.</h2>
+        <p class="lead">
+          Use short, high-impact story previews focused on outcomes, not long narratives. Each card should make it easy to imagine a dedicated case study page behind it.
+        </p>
+
+        <div class="stories-grid">
+          <article class="story-card">
+            <div class="tag">HealthCare</div>
+            <h3>Operational visibility across critical workflows</h3>
+            <p class="muted">A healthcare organization unified fragmented processes and improved execution control with a more integrated operating model.</p>
+            <div class="story-metric">Outcome: Faster operational coordination</div>
+          </article>
+
+          <article class="story-card">
+            <div class="tag">Credit & Financial</div>
+            <h3>More standardized execution in high-volume environments</h3>
+            <p class="muted">A financial operation improved process consistency, traceability, and management visibility through better workflow orchestration.</p>
+            <div class="story-metric">Outcome: Better process control</div>
+          </article>
+
+          <article class="story-card">
+            <div class="tag">Retail</div>
+            <h3>Greater coordination across distributed operations</h3>
+            <p class="muted">A retail-focused environment improved alignment between operational nodes with stronger visibility and integrated management support.</p>
+            <div class="story-metric">Outcome: Higher operational efficiency</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="culture">
+      <div class="container">
+        <span class="eyebrow">People & culture</span>
+        <h2>An institutional company with long-term commitment.</h2>
+        <p class="lead">
+          This block should reinforce seriousness, stability, and execution culture. It is not a startup-style culture section. It should feel like a mature company with capable people and sustained client commitment.
+        </p>
+
+        <div class="culture-grid">
+          <article class="culture-card">
+            <div class="tag">Our approach</div>
+            <h3>Built on expertise, continuity, and execution.</h3>
+            <p class="muted">Inthegra combines experienced teams, enterprise mindset, and a pragmatic way of delivering results. The culture message should communicate reliability, collaboration, and long-term partnership.</p>
+            <div class="quote">“We combine business understanding, Oracle-native depth, and execution focus to help organizations move forward with clarity.”</div>
+          </article>
+
+          <article class="culture-card">
+            <div class="tag">Institutional preview</div>
+            <h3>Premium presentation cues</h3>
+            <p class="muted">Use real team photography only if it feels polished and corporate. Otherwise, prefer abstract enterprise imagery, architecture-inspired backgrounds, and subtle product visuals.</p>
+            <div class="quote">Recommended treatment: sober motion, premium typography, measured spacing, and restrained proof points instead of over-marketing.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="final-cta">
+      <div class="container">
+        <div class="cta-panel">
+          <div>
+            <span class="eyebrow">Final CTA</span>
+            <h2>Looking for an Oracle-native partner to modernize, integrate, or scale your business?</h2>
+            <p class="lead">
+              Whether you need an industry product, a business solution, or Oracle services, Inthegra can help you move with more clarity, speed, and enterprise confidence.
+            </p>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="#">Agendar demo</a>
+              <a class="btn btn-secondary" href="#model">Ver soluciones</a>
+            </div>
+          </div>
+          <div class="culture-card" style="background: rgba(255,255,255,0.03); box-shadow:none;">
+            <div class="tag">Component logic</div>
+            <h3>Ready for coding</h3>
+            <p class="muted">Each section is structured as a reusable content block: hero, trust, business model, differentiators, industries, AI, stories, culture, and CTA. This makes the mockup easy to translate into modular frontend components.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong style="color: var(--text);">Inthegra Software</strong>
+        <p class="muted" style="margin-top:8px;">Oracle-native enterprise software, solutions, services, and applied AI for Argentina and Latam.</p>
+      </div>
+      <div class="muted">Mockup concept — Home page</div>
+    </div>
+  </footer>
+</body>
+</html>

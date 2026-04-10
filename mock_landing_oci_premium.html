@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mock Landing Premium | Oracle Cloud Infrastructure</title>
+  <style>
+    :root{
+      --bg:#08111f;
+      --panel:#0f1830;
+      --panel2:#121f3d;
+      --text:#eef4ff;
+      --muted:#a9b9da;
+      --line:#243a61;
+      --brand:#55a3ff;
+      --brand2:#7c5cff;
+      --green:#35d39b;
+      --gold:#ffd166;
+      --red:#ff9f7a;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(85,163,255,.18), transparent 28%),
+        radial-gradient(circle at 15% 0%, rgba(124,92,255,.12), transparent 25%),
+        linear-gradient(180deg,#08111f 0%, #091220 100%);
+      color:var(--text);
+      line-height:1.5;
+    }
+    .wrap{max-width:1280px;margin:0 auto;padding:28px}
+    .hero{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:24px;
+      align-items:center;
+      padding:10px 0 20px;
+    }
+    .eyebrow{
+      display:inline-block;
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      color:#d8e4ff;
+      background:rgba(255,255,255,.03);
+      font-size:13px;
+    }
+    h1{
+      font-size:58px;
+      line-height:1.02;
+      margin:18px 0 14px;
+      letter-spacing:-.04em;
+      max-width:10ch;
+    }
+    .sub{
+      color:var(--muted);
+      font-size:19px;
+      max-width:64ch;
+      margin-bottom:18px;
+    }
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .btn{
+      display:inline-block;
+      text-decoration:none;
+      padding:13px 18px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      color:var(--text);
+      background:#12203d;
+    }
+    .btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand2));border:none;font-weight:700}
+    .card,.section,.img-card,.prompt,.metric,.tile,.service{
+      background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.015));
+      border:1px solid var(--line);
+      border-radius:24px;
+      box-shadow:0 14px 34px rgba(0,0,0,.18);
+    }
+    .card,.img-card{padding:16px}
+    .section{padding:22px;margin-top:18px}
+    .section h2{margin:0 0 8px;font-size:34px;letter-spacing:-.02em}
+    .lead{color:var(--muted);margin:0 0 18px}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .grid-5{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+    .metric{padding:18px}
+    .metric .n{font-size:32px;font-weight:800}
+    .metric .l{color:var(--muted)}
+    .tile{padding:18px}
+    .tile h3,.service h3{margin:0 0 8px;font-size:20px}
+    .tile p,.service p{margin:0;color:var(--muted)}
+    .service{padding:18px}
+    .badge{
+      display:inline-block;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+      color:#dce6ff;
+      font-size:12px;
+      margin:0 8px 8px 0;
+    }
+    .note{
+      padding:14px 16px;
+      border-radius:18px;
+      border:1px dashed #4367ab;
+      background:rgba(85,163,255,.07);
+      color:#dde8ff;
+      margin-top:16px;
+    }
+    .prompt{
+      padding:16px;
+      margin-top:12px;
+      background:linear-gradient(180deg,rgba(85,163,255,.08),rgba(124,92,255,.08));
+    }
+    .prompt h4{margin:0 0 10px;font-size:15px}
+    .prompt pre{
+      white-space:pre-wrap;
+      margin:0;
+      font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+      font-size:13px;
+      color:#f4f8ff;
+    }
+    .img-label{font-size:13px;color:#cad8fb;margin:10px 4px 0}
+    ul.clean{padding-left:18px;margin:10px 0 0}
+    ul.clean li{margin:7px 0;color:var(--muted)}
+    .ok{color:var(--green);font-weight:700}
+    .gold{color:var(--gold);font-weight:700}
+    .red{color:var(--red);font-weight:700}
+    .story{
+      padding:18px 20px;
+      border-radius:20px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      color:#dce6ff;
+      margin-top:12px;
+    }
+    .kpi{
+      padding:16px;border-radius:18px;border:1px solid var(--line);background:#0f1933
+    }
+    .kpi .n{font-size:30px;font-weight:800}
+    .kpi .t{color:var(--muted)}
+    .footer{padding:28px 0 10px;color:var(--muted);font-size:14px}
+    svg{width:100%;height:auto;display:block;border-radius:18px}
+    @media (max-width: 980px){
+      .hero{grid-template-columns:1fr}
+      .grid-5,.grid-4,.grid-3,.grid-2{grid-template-columns:1fr}
+      h1{font-size:42px;max-width:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div>
+        <span class="eyebrow">Mock premium para pedirle a una IA la landing real</span>
+        <h1>Oracle Cloud Infrastructure</h1>
+        <p class="sub">
+          Posicionamiento recomendado para Inthegra: partner estratégico de cloud + apps sobre Oracle.
+          No solo infraestructura: arquitectura, operación, seguridad, bases de datos, automatización y optimización continua de costos.
+        </p>
+        <div>
+          <span class="badge">OCI</span>
+          <span class="badge">Managed Cloud</span>
+          <span class="badge">DB Systems</span>
+          <span class="badge">Networking</span>
+          <span class="badge">Security</span>
+          <span class="badge">FinOps OCI</span>
+          <span class="badge">DevOps</span>
+        </div>
+        <div class="cta-row">
+          <a class="btn primary" href="#imagenes">Ver imágenes guía</a>
+          <a class="btn" href="#prompt-maestro">Ver prompt maestro</a>
+        </div>
+        <div class="note">
+          <strong>Enfoque premium:</strong> esta landing no vende “hosting Oracle”. Vende una capacidad completa:
+          migrar, operar, optimizar y hacer evolucionar plataformas Oracle críticas con foco en costo, performance y continuidad.
+        </div>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 920 640" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1">
+              <stop offset="0%" stop-color="#55a3ff"/>
+              <stop offset="100%" stop-color="#7c5cff"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="0" x2="1">
+              <stop offset="0%" stop-color="#0f1933"/>
+              <stop offset="100%" stop-color="#16264a"/>
+            </linearGradient>
+          </defs>
+          <rect width="920" height="640" rx="30" fill="url(#g2)"/>
+          <rect x="44" y="70" width="250" height="500" rx="24" fill="#121f3b" stroke="#30446f"/>
+          <text x="84" y="114" fill="#eef4ff" font-size="24" font-family="Arial">Operación</text>
+          <rect x="74" y="158" width="190" height="88" rx="16" fill="#eef3ff"/>
+          <rect x="74" y="278" width="190" height="88" rx="16" fill="#eef3ff"/>
+          <rect x="74" y="398" width="190" height="88" rx="16" fill="#eef3ff"/>
+
+          <rect x="336" y="70" width="248" height="500" rx="24" fill="#121f3b" stroke="#30446f"/>
+          <text x="386" y="114" fill="#eef4ff" font-size="24" font-family="Arial">OCI</text>
+          <rect x="366" y="156" width="188" height="98" rx="18" fill="url(#g1)"/>
+          <rect x="366" y="286" width="188" height="78" rx="18" fill="#eef3ff"/>
+          <rect x="366" y="394" width="188" height="92" rx="18" fill="#eef3ff"/>
+          <text x="418" y="214" fill="#ffffff" font-size="24" font-family="Arial">Cloud</text>
+          <text x="394" y="334" fill="#21345d" font-size="22" font-family="Arial">Security</text>
+          <text x="386" y="448" fill="#21345d" font-size="22" font-family="Arial">DB & Ops</text>
+
+          <rect x="626" y="70" width="250" height="500" rx="24" fill="#121f3b" stroke="#30446f"/>
+          <text x="664" y="114" fill="#eef4ff" font-size="24" font-family="Arial">Resultado</text>
+          <rect x="656" y="158" width="190" height="116" rx="18" fill="#eef3ff"/>
+          <rect x="656" y="304" width="190" height="78" rx="18" fill="#eef3ff"/>
+          <rect x="656" y="412" width="190" height="74" rx="18" fill="#eef3ff"/>
+
+          <path d="M264 202 H366 M554 202 H656 M264 322 H366 M554 322 H656 M264 442 H366 M554 442 H656" stroke="url(#g1)" stroke-width="10" stroke-linecap="round"/>
+        </svg>
+        <div class="img-label">Visual sugerido: operación crítica → plataforma OCI → resultado de negocio con seguridad, performance y control de costos.</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Storytelling recomendado para la landing</h2>
+      <p class="lead">La narrativa debe subir a Inthegra desde “infraestructura” hacia “partner estratégico cloud + apps”.</p>
+      <div class="story">
+        Muchas empresas ya no necesitan solo mover workloads a la nube. Necesitan una plataforma Oracle bien diseñada,
+        segura, observable, operable y financieramente controlada. El mensaje central de la landing debería ser:
+        <strong>“Te ayudamos a correr y evolucionar tus aplicaciones y bases Oracle en OCI con menos riesgo, mejor performance y costos bajo control.”</strong>
+      </div>
+      <div class="grid-4" style="margin-top:18px">
+        <div class="metric"><div class="n">01</div><div class="l">Assessment y arquitectura</div></div>
+        <div class="metric"><div class="n">02</div><div class="l">Migración y despliegue</div></div>
+        <div class="metric"><div class="n">03</div><div class="l">Operación gestionada</div></div>
+        <div class="metric"><div class="n">04</div><div class="l">Optimización continua</div></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Top 10 servicios OCI para ofrecer</h2>
+      <p class="lead">Seleccionados para una propuesta rentable, con buena combinación de proyectos de entrada, recurrencia y upsell.</p>
+      <div class="grid-2">
+        <div class="service"><h3>1. Assessment + Landing Zone OCI</h3><p>Diseño de tenancy, compartments, red, IAM, tagging y guardrails para empezar bien desde el día uno.</p></div>
+        <div class="service"><h3>2. Migración a OCI</h3><p>Lift & shift, move & improve, cutover, pruebas y estabilización para cargas Oracle y aplicaciones críticas.</p></div>
+        <div class="service"><h3>3. Managed Compute & Servers</h3><p>VMs, block storage, balanceadores, autoscaling y operación del stack base para entornos productivos.</p></div>
+        <div class="service"><h3>4. Managed Database Services</h3><p>DB Systems estándar, backup, patching, hardening, tuning, alta disponibilidad y soporte DBA continuo.</p></div>
+        <div class="service"><h3>5. Networking Avanzado</h3><p>VCN, subnets, routing, VPN, FastConnect, balanceo y segmentación segura entre ambientes y sedes.</p></div>
+        <div class="service"><h3>6. Cloud Security & Hardening</h3><p>IAM, WAF, Vault, Cloud Guard, posture review, políticas y controles para reducir exposición y errores.</p></div>
+        <div class="service"><h3>7. Backup, Recovery & DR</h3><p>Estrategias de continuidad, políticas de backup, pruebas de recuperación y diseño de disaster recovery.</p></div>
+        <div class="service"><h3>8. Observabilidad & Monitoreo</h3><p>Métricas, logs, alarmas, dashboards operativos y reporting para anticipar incidentes y sostener SLAs.</p></div>
+        <div class="service"><h3>9. FinOps / Optimización de Costos</h3><p>Revisión de consumo, rightsizing, presupuestos, tagging, tendencias de gasto y oportunidades de ahorro.</p></div>
+        <div class="service"><h3>10. DevOps & Automatización</h3><p>CI/CD, infraestructura reproducible, pipelines y automatización de despliegues para cloud + apps.</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Modelo de valor sugerido</h2>
+      <p class="lead">Cómo presentar la oferta para que se vea premium y estratégica.</p>
+      <div class="grid-3">
+        <div class="tile">
+          <h3>Proyecto inicial</h3>
+          <p>Assessment, arquitectura, plan de migración, landing zone, seguridad base y roadmap operativo.</p>
+        </div>
+        <div class="tile">
+          <h3>Managed service mensual</h3>
+          <p>Operación, monitoreo, DBA, backup, incidentes, reporting y mejora continua con SLA.</p>
+        </div>
+        <div class="tile">
+          <h3>Upsells naturales</h3>
+          <p>FinOps, hardening avanzado, DR, automatización DevOps, modernización de apps y observabilidad extendida.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Casos de uso que conviene mostrar</h2>
+      <p class="lead">Estos bloques ayudan a aterrizar la propuesta y la vuelven más tangible.</p>
+      <div class="grid-3">
+        <div class="tile">
+          <h3>Aplicaciones Oracle de negocio</h3>
+          <p>Portales, APEX, integraciones y aplicaciones críticas corriendo sobre OCI con operación gestionada.</p>
+        </div>
+        <div class="tile">
+          <h3>Bases de datos con operación profesional</h3>
+          <p>DB Systems estándar con backup, patching, observabilidad, tuning y continuidad operativa.</p>
+        </div>
+        <div class="tile">
+          <h3>Cloud cost governance</h3>
+          <p>Visibilidad de gasto, budgets, tagging, rightsizing y decisiones de consumo más inteligentes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Arquitectura real sugerida para la landing</h2>
+      <p class="lead">Una visual ejecutiva, clara y creíble. Ideal para parecer consultora top global.</p>
+      <div class="card">
+        <svg viewBox="0 0 1200 620" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="arch" x1="0" x2="1">
+              <stop offset="0%" stop-color="#55a3ff"/>
+              <stop offset="100%" stop-color="#35d39b"/>
+            </linearGradient>
+          </defs>
+          <rect width="1200" height="620" rx="28" fill="#0f1830"/>
+          <rect x="58" y="118" width="226" height="382" rx="22" fill="#121f3d" stroke="#30446f"/>
+          <text x="98" y="170" fill="#eef4ff" font-size="28" font-family="Arial">Usuarios / Canales</text>
+          <rect x="92" y="224" width="158" height="90" rx="16" fill="#eef3ff"/>
+          <rect x="92" y="344" width="158" height="90" rx="16" fill="#eef3ff"/>
+
+          <rect x="488" y="82" width="226" height="454" rx="22" fill="#121f3d" stroke="#30446f"/>
+          <text x="548" y="132" fill="#eef4ff" font-size="28" font-family="Arial">OCI</text>
+          <rect x="522" y="176" width="158" height="76" rx="16" fill="url(#arch)"/>
+          <rect x="522" y="276" width="158" height="76" rx="16" fill="#eef3ff"/>
+          <rect x="522" y="376" width="158" height="76" rx="16" fill="#eef3ff"/>
+
+          <rect x="892" y="118" width="250" height="382" rx="22" fill="#121f3d" stroke="#30446f"/>
+          <text x="932" y="170" fill="#eef4ff" font-size="28" font-family="Arial">Core Oracle</text>
+          <rect x="926" y="224" width="182" height="70" rx="16" fill="#eef3ff"/>
+          <rect x="926" y="316" width="182" height="70" rx="16" fill="#eef3ff"/>
+          <rect x="926" y="408" width="182" height="70" rx="16" fill="#eef3ff"/>
+
+          <path d="M284 268 H488 M284 388 H488 M714 214 H892 M714 314 H892 M714 414 H892" stroke="#55a3ff" stroke-width="10" stroke-linecap="round"/>
+        </svg>
+        <div class="img-label">Arquitectura sugerida: canales y apps → servicios OCI → compute, network, seguridad, DB Systems, backup y observabilidad.</div>
+      </div>
+      <div class="grid-4" style="margin-top:18px">
+        <div class="kpi"><div class="n">Compute</div><div class="t">Servidores y capacidad</div></div>
+        <div class="kpi"><div class="n">Network</div><div class="t">VCN, VPN, FastConnect</div></div>
+        <div class="kpi"><div class="n">Security</div><div class="t">IAM, WAF, Vault</div></div>
+        <div class="kpi"><div class="n">DB Systems</div><div class="t">Bases Oracle gestionadas</div></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Sección premium sobre optimización de costos</h2>
+      <p class="lead">Este bloque es clave. “3” era esto: FinOps / optimización continua del gasto cloud.</p>
+      <div class="story">
+        El mensaje no debería ser solo “bajamos costos”, sino:
+        <strong>“te damos control financiero de OCI sin comprometer disponibilidad ni performance.”</strong>
+        Conviene hablar de budgets, tagging, análisis de consumo, rightsizing, identificación de recursos ociosos y optimización por ambiente.
+      </div>
+      <div class="grid-3" style="margin-top:18px">
+        <div class="tile"><h3>Visibilidad</h3><p>Qué consume, quién consume, en qué ambiente y por qué.</p></div>
+        <div class="tile"><h3>Acción</h3><p>Rightsizing, apagado controlado, storage review, políticas y alertas.</p></div>
+        <div class="tile"><h3>Gobernanza</h3><p>Budgets, tags, reporting y disciplina operativa para evitar desvíos.</p></div>
+      </div>
+    </section>
+
+    <section id="imagenes" class="section">
+      <h2>Imágenes guía para la landing</h2>
+      <p class="lead">Cada bloque incluye una visual de referencia y un prompt listo para generar la estética final.</p>
+      <div class="grid-2">
+        <div class="img-card">
+          <svg viewBox="0 0 1200 760" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="hbg" x1="0" x2="1"><stop offset="0%" stop-color="#0f1a34"/><stop offset="100%" stop-color="#142142"/></linearGradient>
+              <linearGradient id="hgl" x1="0" x2="1"><stop offset="0%" stop-color="#55a3ff"/><stop offset="100%" stop-color="#7c5cff"/></linearGradient>
+            </defs>
+            <rect width="1200" height="760" rx="30" fill="url(#hbg)"/>
+            <rect x="58" y="74" width="476" height="86" rx="18" fill="#101936" stroke="#35528a"/>
+            <text x="86" y="126" fill="#eef4ff" font-size="42" font-family="Arial">Oracle Cloud Infrastructure</text>
+            <rect x="58" y="190" width="400" height="22" rx="10" fill="#90a5cf" opacity=".52"/>
+            <rect x="58" y="224" width="336" height="22" rx="10" fill="#90a5cf" opacity=".34"/>
+            <rect x="58" y="296" width="162" height="52" rx="16" fill="url(#hgl)"/>
+            <rect x="236" y="296" width="148" height="52" rx="16" fill="#142246" stroke="#35528a"/>
+            <rect x="660" y="116" width="454" height="508" rx="28" fill="#101936" stroke="#35528a"/>
+            <rect x="694" y="154" width="174" height="94" rx="18" fill="url(#hgl)"/>
+            <rect x="896" y="154" width="174" height="94" rx="18" fill="#eef3ff"/>
+            <rect x="694" y="280" width="376" height="110" rx="18" fill="#eef3ff"/>
+            <rect x="694" y="424" width="174" height="126" rx="18" fill="#eef3ff"/>
+            <rect x="896" y="424" width="174" height="126" rx="18" fill="#eef3ff"/>
+          </svg>
+          <div class="img-label">1. Hero principal OCI</div>
+          <div class="prompt"><h4>Prompt de imagen</h4><pre>Premium enterprise hero image for Oracle Cloud Infrastructure consulting and managed services, showing cloud architecture, Oracle databases, compute, networking, security and operations layers, dark elegant B2B style, blue and violet gradients, no people, realistic cloud dashboard fragments</pre></div>
+        </div>
+
+        <div class="img-card">
+          <svg viewBox="0 0 1200 760" xmlns="http://www.w3.org/2000/svg">
+            <rect width="1200" height="760" rx="30" fill="#0d162d"/>
+            <rect x="74" y="106" width="314" height="530" rx="24" fill="#121d38" stroke="#30446f"/>
+            <rect x="442" y="106" width="314" height="530" rx="24" fill="#121d38" stroke="#30446f"/>
+            <rect x="810" y="106" width="314" height="530" rx="24" fill="#121d38" stroke="#30446f"/>
+            <text x="128" y="160" fill="#eef4ff" font-size="28">Compute</text>
+            <text x="494" y="160" fill="#eef4ff" font-size="28">Database</text>
+            <text x="868" y="160" fill="#eef4ff" font-size="28">Network & Security</text>
+            <rect x="112" y="212" width="238" height="312" rx="16" fill="#eef3ff"/>
+            <rect x="480" y="212" width="238" height="312" rx="16" fill="#eef3ff"/>
+            <rect x="848" y="212" width="238" height="312" rx="16" fill="#eef3ff"/>
+          </svg>
+          <div class="img-label">2. Capacidades core</div>
+          <div class="prompt"><h4>Prompt de imagen</h4><pre>Enterprise OCI capabilities illustration showing three pillars: compute and servers, Oracle database systems, and networking plus security, premium dark consulting style, clean cards, no stock-photo people</pre></div>
+        </div>
+
+        <div class="img-card">
+          <svg viewBox="0 0 1200 760" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="mig" x1="0" x2="1"><stop offset="0%" stop-color="#55a3ff"/><stop offset="100%" stop-color="#35d39b"/></linearGradient></defs>
+            <rect width="1200" height="760" rx="30" fill="#0d162d"/>
+            <path d="M134 390 H1066" stroke="#2f446f" stroke-width="10" stroke-linecap="round"/>
+            <circle cx="170" cy="390" r="58" fill="#131f3b" stroke="#55a3ff"/><text x="156" y="402" fill="#fff" font-size="34">1</text>
+            <circle cx="420" cy="390" r="58" fill="#131f3b" stroke="#55a3ff"/><text x="406" y="402" fill="#fff" font-size="34">2</text>
+            <circle cx="670" cy="390" r="58" fill="#131f3b" stroke="#55a3ff"/><text x="656" y="402" fill="#fff" font-size="34">3</text>
+            <circle cx="920" cy="390" r="58" fill="#131f3b" stroke="#55a3ff"/><text x="906" y="402" fill="#fff" font-size="34">4</text>
+            <text x="104" y="220" fill="#eef4ff" font-size="28">Assess</text>
+            <text x="346" y="220" fill="#eef4ff" font-size="28">Design</text>
+            <text x="594" y="220" fill="#eef4ff" font-size="28">Migrate</text>
+            <text x="836" y="220" fill="#eef4ff" font-size="28">Operate</text>
+            <path d="M228 390 H362 M478 390 H612 M728 390 H862" stroke="url(#mig)" stroke-width="10" stroke-linecap="round"/>
+          </svg>
+          <div class="img-label">3. Journey de migración y operación</div>
+          <div class="prompt"><h4>Prompt de imagen</h4><pre>Enterprise migration and managed services journey for Oracle Cloud Infrastructure: assess, design, migrate, operate and optimize, elegant step-based diagram, dark premium style, consulting website visual</pre></div>
+        </div>
+
+        <div class="img-card">
+          <svg viewBox="0 0 1200 760" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="cost" x1="0" x2="1"><stop offset="0%" stop-color="#55a3ff"/><stop offset="100%" stop-color="#7c5cff"/></linearGradient></defs>
+            <rect width="1200" height="760" rx="30" fill="#0d162d"/>
+            <rect x="84" y="122" width="1030" height="514" rx="28" fill="#121d38" stroke="#30446f"/>
+            <rect x="126" y="170" width="304" height="418" rx="22" fill="#0f1831" stroke="#38548a"/>
+            <rect x="468" y="170" width="304" height="418" rx="22" fill="#0f1831" stroke="#38548a"/>
+            <rect x="810" y="170" width="264" height="418" rx="22" fill="#0f1831" stroke="#38548a"/>
+            <text x="166" y="218" fill="#eef4ff" font-size="28">Costos</text>
+            <text x="522" y="218" fill="#eef4ff" font-size="28">Acciones</text>
+            <text x="872" y="218" fill="#eef4ff" font-size="28">Ahorro</text>
+            <path d="M156 450 L208 410 L260 458 L324 362" fill="none" stroke="#ff9f7a" stroke-width="10" stroke-linecap="round"/>
+            <path d="M500 456 L560 402 L624 428" fill="none" stroke="#35d39b" stroke-width="10" stroke-linecap="round"/>
+            <rect x="842" y="296" width="198" height="120" rx="18" fill="url(#cost)"/>
+          </svg>
+          <div class="img-label">4. FinOps / optimización de costos</div>
+          <div class="prompt"><h4>Prompt de imagen</h4><pre>Oracle Cloud cost optimization and FinOps dashboard visual, showing budgets, cost analysis, rightsizing actions, resource efficiency and savings, executive enterprise style, dark premium consulting look</pre></div>
+        </div>
+
+        <div class="img-card">
+          <svg viewBox="0 0 1200 760" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="sec" x1="0" x2="1"><stop offset="0%" stop-color="#7c5cff"/><stop offset="100%" stop-color="#55a3ff"/></linearGradient></defs>
+            <rect width="1200" height="760" rx="30" fill="#0d162d"/>
+            <rect x="88" y="118" width="1024" height="524" rx="28" fill="#121d38" stroke="#30446f"/>
+            <rect x="130" y="168" width="280" height="420" rx="22" fill="#0f1831" stroke="#38548a"/>
+            <rect x="462" y="168" width="280" height="420" rx="22" fill="#0f1831" stroke="#38548a"/>
+            <rect x="794" y="168" width="280" height="420" rx="22" fill="#0f1831" stroke="#38548a"/>
+            <text x="174" y="214" fill="#eef4ff" font-size="28">IAM</text>
+            <text x="544" y="214" fill="#eef4ff" font-size="28">WAF / Vault</text>
+            <text x="846" y="214" fill="#eef4ff" font-size="28">Cloud Guard</text>
+            <rect x="164" y="268" width="210" height="240" rx="18" fill="#eef3ff"/>
+            <rect x="496" y="268" width="210" height="240" rx="18" fill="url(#sec)"/>
+            <rect x="828" y="268" width="210" height="240" rx="18" fill="#eef3ff"/>
+          </svg>
+          <div class="img-label">5. Seguridad cloud</div>
+          <div class="prompt"><h4>Prompt de imagen</h4><pre>OCI cloud security visual for enterprise website, highlighting IAM, WAF, Vault, security posture and threat detection, dark premium style, clean security architecture illustration, no people</pre></div>
+        </div>
+
+        <div class="img-card">
+          <svg viewBox="0 0 1200 760" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="ops" x1="0" x2="1"><stop offset="0%" stop-color="#55a3ff"/><stop offset="100%" stop-color="#35d39b"/></linearGradient></defs>
+            <rect width="1200" height="760" rx="30" fill="#0d162d"/>
+            <rect x="86" y="116" width="1028" height="528" rx="28" fill="#121d38" stroke="#30446f"/>
+            <text x="118" y="176" fill="#eef4ff" font-size="34">Monitoreo, backup y DBA</text>
+            <rect x="136" y="232" width="270" height="296" rx="22" fill="#0f1831" stroke="#38548a"/>
+            <rect x="464" y="232" width="270" height="296" rx="22" fill="#0f1831" stroke="#38548a"/>
+            <rect x="792" y="232" width="270" height="296" rx="22" fill="#0f1831" stroke="#38548a"/>
+            <rect x="172" y="276" width="198" height="176" rx="18" fill="url(#ops)"/>
+            <rect x="500" y="276" width="198" height="176" rx="18" fill="#eef3ff"/>
+            <rect x="828" y="276" width="198" height="176" rx="18" fill="#eef3ff"/>
+          </svg>
+          <div class="img-label">6. Operación gestionada</div>
+          <div class="prompt"><h4>Prompt de imagen</h4><pre>Enterprise managed operations visual for OCI showing monitoring, backup and recovery, DBA services and incident management, premium dark consulting style, clear and executive-friendly</pre></div>
+        </div>
+
+        <div class="img-card">
+          <svg viewBox="0 0 1200 760" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="arch2" x1="0" x2="1"><stop offset="0%" stop-color="#55a3ff"/><stop offset="100%" stop-color="#35d39b"/></linearGradient></defs>
+            <rect width="1200" height="760" rx="30" fill="#0d162d"/>
+            <rect x="82" y="140" width="230" height="460" rx="20" fill="#121d38" stroke="#30446f"/>
+            <rect x="484" y="140" width="230" height="460" rx="20" fill="#121d38" stroke="#30446f"/>
+            <rect x="886" y="140" width="230" height="460" rx="20" fill="#121d38" stroke="#30446f"/>
+            <text x="112" y="198" fill="#eef4ff" font-size="28">Canales & Apps</text>
+            <text x="546" y="198" fill="#eef4ff" font-size="28">OCI Stack</text>
+            <text x="956" y="198" fill="#eef4ff" font-size="28">Datos</text>
+            <rect x="112" y="248" width="168" height="100" rx="16" fill="#eef3ff"/>
+            <rect x="112" y="382" width="168" height="100" rx="16" fill="#eef3ff"/>
+            <rect x="514" y="238" width="170" height="86" rx="16" fill="url(#arch2)"/>
+            <rect x="514" y="352" width="170" height="86" rx="16" fill="#eef3ff"/>
+            <rect x="514" y="466" width="170" height="86" rx="16" fill="#eef3ff"/>
+            <rect x="918" y="238" width="166" height="86" rx="16" fill="#eef3ff"/>
+            <rect x="918" y="352" width="166" height="86" rx="16" fill="#eef3ff"/>
+            <rect x="918" y="466" width="166" height="86" rx="16" fill="#eef3ff"/>
+            <path d="M280 298 H484 M280 432 H484 M714 282 H886 M714 396 H886 M714 510 H886" stroke="#55a3ff" stroke-width="10" stroke-linecap="round"/>
+          </svg>
+          <div class="img-label">7. Arquitectura objetivo</div>
+          <div class="prompt"><h4>Prompt de imagen</h4><pre>Executive OCI reference architecture with business applications and channels on the left, OCI services in the middle, Oracle databases and integrations on the right, dark elegant consulting style, simple but credible</pre></div>
+        </div>
+
+        <div class="img-card">
+          <svg viewBox="0 0 1200 760" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="cta" x1="0" x2="1"><stop offset="0%" stop-color="#55a3ff"/><stop offset="100%" stop-color="#7c5cff"/></linearGradient></defs>
+            <rect width="1200" height="760" rx="30" fill="#0d162d"/>
+            <rect x="74" y="112" width="1052" height="536" rx="32" fill="url(#cta)"/>
+            <circle cx="964" cy="212" r="96" fill="rgba(255,255,255,.12)"/>
+            <circle cx="1038" cy="320" r="56" fill="rgba(255,255,255,.08)"/>
+            <text x="124" y="236" fill="#fff" font-size="46" font-family="Arial">¿Listos para correr Oracle en OCI mejor?</text>
+            <rect x="124" y="286" width="560" height="22" rx="10" fill="rgba(255,255,255,.32)"/>
+            <rect x="124" y="320" width="476" height="22" rx="10" fill="rgba(255,255,255,.24)"/>
+            <rect x="124" y="402" width="198" height="56" rx="16" fill="#101936"/>
+            <rect x="342" y="402" width="184" height="56" rx="16" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.32)"/>
+          </svg>
+          <div class="img-label">8. CTA final</div>
+          <div class="prompt"><h4>Prompt de imagen</h4><pre>Final CTA banner for Oracle Cloud Infrastructure consulting and managed services, premium blue-violet gradient, cloud architecture motifs, enterprise B2B look, serious and elegant, no people</pre></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Texto premium sugerido para la landing</h2>
+      <p class="lead">Base editorial para que la IA escriba la página con tono consultora global.</p>
+      <div class="grid-2">
+        <div class="tile">
+          <h3>Headline</h3>
+          <p><strong>Diseñamos, operamos y optimizamos plataformas Oracle sobre OCI.</strong></p>
+          <ul class="clean">
+            <li>Migración, operación y evolución de entornos Oracle con foco en continuidad, seguridad y performance.</li>
+            <li>Compute, networking, DB Systems, backup, monitoreo y servicios DBA gestionados.</li>
+            <li>Optimización de costos cloud para que OCI sea una ventaja operativa, no una caja negra financiera.</li>
+          </ul>
+        </div>
+        <div class="tile">
+          <h3>Bloque de valor</h3>
+          <p><strong>No solo movemos workloads: construimos una base cloud preparada para crecer.</strong></p>
+          <ul class="clean">
+            <li>Arquitectura correcta desde el inicio.</li>
+            <li>Operación gestionada con observabilidad y disciplina.</li>
+            <li>Cost management continuo para mejorar eficiencia sin comprometer el servicio.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="prompt-maestro" class="section">
+      <h2>Prompt maestro para pedirle a una IA el sitio</h2>
+      <p class="lead">Podés copiar esto tal cual y adjuntarle este HTML.</p>
+      <div class="prompt"><pre>Diseñá y desarrollá una landing page B2B premium para Inthegra Software sobre el servicio “Oracle Cloud Infrastructure”.
+
+Objetivo de negocio:
+- Posicionar a Inthegra como partner estratégico cloud + apps sobre Oracle
+- Mostrar capacidad para diseñar, migrar, operar y optimizar entornos Oracle en OCI
+- Diferenciar con una propuesta premium: arquitectura, managed services, DBA, seguridad, observabilidad y optimización de costos
+- Transmitir que no se vende solo infraestructura, sino una plataforma operable, segura y financieramente controlada
+
+Público:
+- CTOs, gerentes de sistemas, responsables de infraestructura, líderes de aplicaciones, áreas de operaciones
+- Empresas con workloads Oracle o apps de negocio que necesitan cloud serio, con menos riesgo y más control
+- Organizaciones que valoran performance, continuidad, seguridad y eficiencia financiera
+
+Estilo visual:
+- Enterprise premium
+- Fondo oscuro con acentos azules, violetas y verdes suaves
+- Sin fotos de personas
+- Visuales de arquitectura cloud, dashboards operativos, seguridad, observabilidad y FinOps
+- Diseño elegante, serio y ejecutivo
+
+Estructura:
+1. Hero fuerte con headline, subheadline, CTA y visual de plataforma OCI
+2. Storytelling: de infraestructura a partner estratégico
+3. Top 10 servicios OCI
+4. Modelo de valor: proyecto inicial + managed services + upsells
+5. Casos de uso
+6. Arquitectura objetivo
+7. Operación gestionada: monitoreo, backup, recovery, DBA
+8. Optimización de costos / FinOps OCI
+9. CTA final
+
+Mensajes clave:
+- OCI como plataforma para workloads Oracle y aplicaciones críticas
+- Compute, networking, security, DB Systems, backup y observabilidad
+- Servicios DBA gestionados para operar bases con disciplina profesional
+- Seguridad, continuidad operativa y posture control
+- Visibilidad y optimización de costos con budgets, tagging, cost analysis y rightsizing
+- Partner estratégico para cloud + apps, no solo proveedor de infraestructura
+
+Usá el HTML adjunto como guía visual, de composición y de prompts de imágenes.</pre></div>
+    </section>
+
+    <div class="footer">
+      Archivo preparado como brief premium para construir la landing real de Oracle Cloud Infrastructure.
+    </div>
+  </div>
+</body>
+</html>

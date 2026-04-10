@@ -1,0 +1,374 @@
+Using the existing website context of Inthegra Software, implement the HealthCare product page mockup as a premium enterprise landing page.
+
+GENERAL OBJECTIVE
+Create a high-end, conversion-oriented, enterprise-grade product page for Inthegra HealthCare.
+
+The page must position Inthegra HealthCare as:
+- a robust healthcare software platform
+- modular and configurable
+- enterprise-ready
+- Oracle-native
+- backed by 23 years of industry know-how
+
+This is NOT generic software.
+This is a serious healthcare platform for complex organizations.
+
+TARGET ORGANIZATIONS
+The page must clearly support and communicate coverage for these healthcare business models:
+- Prepagas
+- Obras sociales
+- Gerenciadores de salud
+- Clínicas
+- Emergencias médicas
+- Medicina Laboral
+- Internación domiciliaria
+
+IMPORTANT STRATEGIC MESSAGE
+Inthegra HealthCare should be perceived as:
+- a configurable modular healthcare platform
+- built for real operational complexity
+- capable of scaling
+- designed for integration
+- credible for enterprise healthcare environments in LATAM
+
+The page should feel premium, corporate, modern, high-trust, and visually clean.
+
+VISUAL / DESIGN DIRECTION
+The visual tone must be:
+- premium
+- enterprise
+- healthcare-specific but not cliché
+- modern and highly readable
+- conversion-oriented
+- Oracle-native in perception
+
+Avoid:
+- startup style
+- playful SaaS style
+- generic healthcare stock-page feeling
+- feature overload
+- overuse of bright medical clichés
+- anything that looks cheap or template-like
+
+IMPORTANT BACKGROUND GRAPHICS GUIDELINE
+Inthegra already has graphic assets for backgrounds:
+- Solutions
+- Product
+- Inthegra
+- Services
+
+These graphics should be incorporated subtly across the page as delicate background elements.
+
+Rules for using these graphics:
+- they must be soft and secondary
+- they must not compete with the content
+- they must not reduce readability
+- they should be used as premium visual texture, not as decoration overload
+- use low opacity, large scale, partial cropping, soft blur if needed
+- prioritize clean composition over visibility of the asset itself
+- they should help reinforce brand sophistication and page depth
+
+Recommended usage:
+- hero background: one soft branded graphic shape, partially visible
+- section transitions: very subtle graphic accents
+- CTA area: controlled branded background detail
+- avoid repeating the same pattern too aggressively
+
+PAGE GOAL
+The page should help a visitor quickly understand:
+1. Inthegra has real healthcare expertise
+2. the platform is modular and adaptable
+3. Inthegra understands the complexity of different healthcare organizations
+4. this is a serious enterprise solution, not generic software
+5. the next action should be to schedule a demo
+
+PAGE STRUCTURE TO IMPLEMENT
+
+1. HERO SECTION
+Purpose:
+Immediate positioning and trust.
+
+Must include:
+- strong headline with enterprise healthcare value proposition
+- supporting text explaining modular, configurable, Oracle-native healthcare platform
+- mention of complexity / scale / operational control
+- primary CTA: Agendar demo
+- optional secondary CTA: Explorar capacidades / Ver cobertura
+
+Tone:
+Strong, serious, executive-level, clear.
+
+Possible message direction:
+“Software de salud para operaciones complejas”
+“Plataforma modular para organizaciones de salud”
+“Oracle-native, escalable e integrada”
+
+Visual guidance:
+- large headline
+- strong layout balance
+- premium whitespace
+- subtle background graphic from Inthegra asset library
+- optional product/platform visual card on the side
+
+2. INDUSTRY CHALLENGES SECTION
+Purpose:
+Show that Inthegra deeply understands the healthcare sector.
+
+Must communicate challenges such as:
+- complejidad administrativa
+- autorizaciones
+- fragmentación operativa
+- escalabilidad
+- integración con otros sistemas / ERP / finanzas
+
+This section should feel consultative and credible, not dramatic.
+
+Recommended format:
+- 4 cards or 4 pillars
+- concise problem statements
+- enterprise copy, not exaggerated pain-marketing
+
+3. PLATFORM OVERVIEW SECTION
+Purpose:
+Explain the modular platform concept.
+
+Critical message:
+Inthegra HealthCare is one platform with multiple possible configurations depending on the organization model.
+
+Must explain:
+- modular approach
+- flexible configuration
+- enterprise structure
+- ability to cover different healthcare operations
+
+Important:
+Do not invent fake technical details.
+Do not become overly specific if not validated.
+Keep it credible and business-oriented.
+
+Suggested module areas that can be referenced carefully:
+- afiliados / pacientes
+- autorizaciones
+- prestaciones
+- auditoría
+- facturación / liquidaciones
+- historia clínica digital
+- operación médica
+- reporting / analytics
+- integration layer
+
+Recommended UI treatment:
+- layered architecture diagram
+- module cards
+- platform blocks
+- clean enterprise infographic style
+
+4. SUB-VERTICAL COVERAGE SECTION
+Purpose:
+Make coverage explicit and commercially useful.
+
+This is one of the most important sections.
+
+The page must clearly show dedicated relevance for:
+- Prepagas / Obras Sociales
+- Gerenciadores de salud
+- Clínicas
+- Emergencias médicas
+- Medicina Laboral
+- Internación domiciliaria
+
+Each vertical should feel like a supported business model, not just a label.
+
+Each block/card should include:
+- vertical name
+- short value proposition
+- typical operational scope / problems solved
+- modular relevance
+- optional micro-CTA such as “Ver enfoque” or “Conocer más”
+
+Suggested guidance by vertical:
+
+Prepagas / Obras Sociales
+- afiliados
+- cobertura
+- autorizaciones
+- prestaciones
+- liquidaciones
+- trazabilidad administrativa
+
+Gerenciadores de salud
+- control de redes
+- auditoría
+- seguimiento de prestaciones
+- visibilidad operativa y de costos
+
+Clínicas
+- turnos
+- operación clínica
+- historia clínica digital
+- integración de gestión
+
+Emergencias médicas
+- coordinación en tiempo real
+- despacho / seguimiento operativo
+- control de tiempos y servicios
+
+Medicina Laboral
+- empresas clientes
+- certificados
+- seguimiento médico
+- orden administrativo y control
+
+Internación domiciliaria
+- agenda de visitas
+- seguimiento del paciente
+- control de prestadores
+- trazabilidad operativa
+
+5. BENEFITS SECTION
+Purpose:
+Translate platform capability into business value.
+
+The benefits should be expressed in executive/business terms:
+- mayor eficiencia operativa
+- más control
+- mejor operación
+- mejor capacidad de decisión
+- integración
+- escalabilidad
+
+Recommended format:
+- 4 to 6 premium cards
+- short headline + one supporting sentence
+- no bloated copy
+
+6. WHY INTHEGRA SECTION
+Purpose:
+Differentiate Inthegra.
+
+Must include:
+- 23 years of healthcare know-how
+- deep sector understanding
+- Oracle-native base
+- end-to-end delivery capability
+
+Possible positioning dimensions:
+- industry expertise
+- robust technology
+- product + services + cloud + evolution
+- regional understanding
+- partner for long-term transformation
+
+Tone:
+Confident, executive, trustworthy.
+Do not exaggerate.
+Do not sound promotional in a weak marketing way.
+
+7. SOCIAL PROOF / TRUST SECTION
+Purpose:
+Reinforce credibility.
+
+Use carefully and tastefully:
+- SIPSSA
+- EMI
+- ALTA SALUD
+- ROSTER
+
+Important:
+These names should be used as subtle trust support.
+Do not overload the page.
+Do not make this section visually noisy.
+Use restrained enterprise styling.
+
+8. FINAL CTA SECTION
+Purpose:
+Close with strong conversion intent.
+
+Must include:
+- concise powerful closing statement
+- invitation to schedule a demo
+- enterprise tone
+- strong visual contrast with the rest of the page
+
+Primary CTA:
+Agendar demo
+
+Optional secondary CTA:
+Hablar con un especialista
+Ver cobertura
+
+COPYWRITING GUIDELINES
+The copy must be:
+- business-first
+- clear
+- premium
+- concise
+- enterprise
+- credible
+- not overly technical
+- not generic SaaS copy
+
+Avoid:
+- buzzword overload
+- empty AI language
+- fake technical specificity
+- too much text in each block
+- marketing clichés
+
+The user should feel:
+- trust
+- seriousness
+- capability
+- sector expertise
+- scalability
+- clarity
+
+UX / UI RECOMMENDATIONS
+- large clean typography
+- strong spacing rhythm
+- premium cards
+- soft shadows
+- subtle borders
+- restrained color system
+- healthcare + enterprise balance
+- modular diagrams where useful
+- visual hierarchy must be obvious
+- responsive behavior must preserve premium feel
+
+STYLE REFERENCES
+The experience should feel closer to:
+- enterprise product page
+- Oracle ecosystem seriousness
+- high-trust B2B healthcare positioning
+- premium corporate design
+
+Do not make it feel like:
+- startup landing page
+- low-cost SaaS template
+- crowded medical brochure
+- generic UI kit demo
+
+IMPLEMENTATION PRIORITIES
+Priority 1:
+Positioning and trust
+
+Priority 2:
+Clear understanding of modular healthcare platform
+
+Priority 3:
+Explicit sub-vertical coverage
+
+Priority 4:
+Premium visual execution
+
+Priority 5:
+Conversion CTA clarity
+
+FINAL EXPECTED RESULT
+Deliver a polished premium HealthCare product page that:
+- looks consistent with Inthegra’s website direction
+- incorporates subtle Inthegra background graphics
+- clearly communicates enterprise healthcare platform value
+- supports all listed healthcare sub-verticals
+- feels serious, modern, scalable, and high-trust
+- is ready to function as a strong product/solution landing page

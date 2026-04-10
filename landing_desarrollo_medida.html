@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Desarrollo a medida sobre Oracle APEX, Oracle Database y OCI. Aplicaciones enterprise, portales, workflows y operaciones, con DevOps y aceleración con IA." />
+  <title>Desarrollo a Medida Oracle | Inthegra</title>
+
+  <link rel="icon" href="https://inthegrasoftware.com/wp-content/uploads/2025/02/favicon-150x140.png" sizes="32x32" />
+  <link rel="icon" href="https://inthegrasoftware.com/wp-content/uploads/2025/02/favicon.png" sizes="192x192" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="nav.js"></script>
+
+  <style>
+    /* ── TOKENS ─────────────────────────────────────── */
+    :root {
+      --bg:        #0F2043;
+      --bg-deep:   #08101d;
+      --bg-panel:  #0f1a2f;
+      --bg-card:   #121e39;
+      --line:      #24385d;
+      --line-2:    #2e4a78;
+      --text:      #edf3ff;
+      --text-2:    #c2d4f0;
+      --muted:     #7d9ac4;
+      --brand:     #4fa3ff;
+      --brand-2:   #7c5cff;
+      --ok:        #39d98a;
+      --gold:      #ffcf70;
+      --danger:    #ff6b6b;
+      --accent:    #00d9ff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg);
+      background-image:
+        radial-gradient(ellipse 90% 55% at 80% -5%,  rgba(79,163,255,.16) 0%, transparent 65%),
+        radial-gradient(ellipse 70% 45% at 10% 85%,  rgba(124,92,255,.12) 0%, transparent 60%),
+        radial-gradient(ellipse 100% 70% at 50% 50%,  rgba(8,16,29,.65)   0%, transparent 100%);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container { max-width: 1260px; margin: 0 auto; padding: 0 32px; }
+
+    /* ── HEADER ─────────────────────────────────────── */
+    header {
+      position: sticky; top: 0; z-index: 200;
+      background: rgba(8,16,29,.82);
+      backdrop-filter: blur(18px) saturate(1.4);
+      border-bottom: 1px solid rgba(36,56,93,.7);
+    }
+    .header-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 0; gap: 24px;
+    }
+    .logo-wrap { flex-shrink: 0; }
+    .logo-wrap img { height: 34px; width: auto; display: block; }
+    nav { display: flex; align-items: center; gap: 2px; }
+    nav a {
+      color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500;
+      padding: 7px 14px; border-radius: 8px; transition: all .2s; white-space: nowrap;
+    }
+    nav a:hover, nav a.active { color: var(--brand); background: rgba(79,163,255,.09); }
+    .nav-cta {
+      flex-shrink: 0; padding: 10px 22px; border-radius: 10px;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: #fff; font-size: 14px; font-weight: 700;
+      text-decoration: none; transition: box-shadow .25s;
+      box-shadow: 0 4px 18px rgba(79,163,255,.3);
+    }
+    .nav-cta:hover { box-shadow: 0 6px 28px rgba(79,163,255,.5); }
+
+    /* ── BUTTONS ─────────────────────────────────────── */
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 28px; border-radius: 12px; font-size: 15px; font-weight: 700;
+      text-decoration: none; cursor: pointer; border: 1.5px solid transparent;
+      transition: all .25s; font-family: inherit;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: #fff; box-shadow: 0 8px 28px rgba(79,163,255,.32);
+    }
+    .btn-primary:hover { box-shadow: 0 12px 40px rgba(79,163,255,.5); }
+    .btn-ghost {
+      background: rgba(255,255,255,.05); border-color: var(--line-2); color: var(--text-2);
+    }
+    .btn-ghost:hover { border-color: var(--brand); color: var(--brand); background: rgba(79,163,255,.08); }
+
+    /* ── SHARED SECTION ──────────────────────────────── */
+    .section { padding: 96px 0; }
+    .section + .section { border-top: 1px solid rgba(36,56,93,.5); }
+
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 14px; border-radius: 999px;
+      border: 1px solid rgba(79,163,255,.3);
+      background: rgba(79,163,255,.08);
+      color: var(--brand); font-size: 11px; font-weight: 700;
+      letter-spacing: .07em; text-transform: uppercase; margin-bottom: 18px;
+    }
+    .eyebrow::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--brand); }
+
+    .section-label {
+      font-size: 11px; font-weight: 700; letter-spacing: .09em;
+      text-transform: uppercase; color: var(--brand); display: block; margin-bottom: 12px;
+    }
+    h1, .h1 {
+      font-size: 60px; font-weight: 900; line-height: 1.06; letter-spacing: -.04em;
+      margin-bottom: 22px;
+    }
+    .gradient-text {
+      background: linear-gradient(145deg, #ffffff 30%, var(--brand) 60%, var(--accent) 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .section-title {
+      font-size: 44px; font-weight: 800; line-height: 1.15;
+      letter-spacing: -.025em; margin-bottom: 16px;
+    }
+    .section-desc { color: var(--muted); font-size: 18px; line-height: 1.7; }
+    .center { text-align: center; }
+    .center .section-desc { max-width: 60ch; margin: 0 auto; }
+
+    /* ── HERO ───────────────────────────────────────── */
+    .hero {
+      display: grid; grid-template-columns: 1.08fr .92fr;
+      gap: 52px; align-items: center; padding: 88px 0 72px;
+    }
+    .hero-sub {
+      color: var(--text-2); font-size: 18px; line-height: 1.75;
+      max-width: 54ch; margin-bottom: 32px;
+    }
+    .hero-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }
+    .tag {
+      padding: 6px 14px; border-radius: 999px;
+      border: 1px solid var(--line-2);
+      background: rgba(255,255,255,.04);
+      color: var(--text-2); font-size: 13px; font-weight: 500;
+    }
+    .tag-brand { border-color: rgba(79,163,255,.4); color: var(--brand); background: rgba(79,163,255,.07); }
+    .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+    .hero-note {
+      margin-top: 22px; display: flex; flex-wrap: wrap; gap: 18px;
+      font-size: 12px; color: var(--muted);
+    }
+    .hero-note span::before { content: '✓ '; color: var(--ok); font-weight: 700; }
+    .hero-visual {
+      background: linear-gradient(160deg, rgba(255,255,255,.035), rgba(255,255,255,.01));
+      border: 1px solid var(--line); border-radius: 22px; padding: 6px;
+      box-shadow: 0 24px 72px rgba(0,0,0,.4);
+    }
+    .hero-visual svg { display: block; width: 100%; height: auto; border-radius: 16px; }
+
+    /* ── SOLUTIONS TYPES ─────────────────────────────── */
+    .sol-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; }
+    .sol-card {
+      border-radius: 20px; overflow: hidden;
+      background: linear-gradient(160deg, rgba(18,30,57,.95), rgba(11,22,44,.98));
+      border: 1px solid var(--line-2);
+      transition: all .3s; display: flex; flex-direction: column;
+    }
+    .sol-card:hover { border-color: rgba(79,163,255,.5); transform: translateY(-5px); box-shadow: 0 20px 50px rgba(0,0,0,.4); }
+    .sol-mockup {
+      width: 100%; aspect-ratio: 4/3; overflow: hidden;
+      background: #0c1628; position: relative; flex-shrink: 0;
+    }
+    .sol-mockup svg { display: block; width: 100%; height: 100%; }
+    .sol-body { padding: 22px 24px 26px; flex: 1; display: flex; flex-direction: column; gap: 10px; }
+    .sol-body h3 { font-size: 17px; font-weight: 800; margin: 0; }
+    .sol-body p { color: var(--muted); font-size: 13px; line-height: 1.6; margin: 0; flex: 1; }
+    .sol-list { list-style: none; display: flex; flex-direction: column; gap: 5px; margin-top: 4px; }
+    .sol-list li { font-size: 12px; color: var(--text-2); padding-left: 14px; position: relative; }
+    .sol-list li::before { content: '→'; position: absolute; left: 0; color: var(--brand); font-weight: 700; }
+    .sol-tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+    .sol-tag {
+      font-size: 10px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
+      padding: 3px 8px; border-radius: 99px;
+      background: rgba(79,163,255,.1); border: 1px solid rgba(79,163,255,.25); color: var(--brand);
+    }
+    .sol-tag-green { background: rgba(57,217,138,.1); border-color: rgba(57,217,138,.3); color: var(--ok); }
+    /* PWA comparison table */
+    .pwa-section { margin-top: 56px; }
+    .pwa-compare {
+      display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1px;
+      background: var(--line); border-radius: 20px; overflow: hidden;
+      border: 1px solid var(--line);
+    }
+    .pwa-col { background: var(--bg-card); padding: 28px 24px; }
+    .pwa-col-header {
+      background: linear-gradient(160deg, rgba(79,163,255,.12), rgba(124,92,255,.08));
+    }
+    .pwa-col h4 { font-size: 15px; font-weight: 800; margin-bottom: 18px; }
+    .pwa-col h4 .highlight { color: var(--ok); }
+    .pwa-row { display: flex; flex-direction: column; gap: 10px; }
+    .pwa-item { display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--text-2); }
+    .pwa-item-icon { flex-shrink: 0; font-size: 14px; line-height: 1.4; }
+    .pwa-item strong { color: var(--text); }
+    .pwa-stat-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; margin-top: 40px; }
+    .pwa-stat {
+      padding: 22px 18px; border-radius: 16px; text-align: center;
+      background: rgba(255,255,255,.03); border: 1px solid var(--line);
+    }
+    .pwa-stat .pwa-n { font-size: 30px; font-weight: 900; color: var(--ok); line-height: 1; margin-bottom: 6px; }
+    .pwa-stat .pwa-l { font-size: 12px; color: var(--muted); line-height: 1.5; }
+
+    .svg-card {
+      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+      border: 1px solid var(--line); border-radius: 20px; overflow: hidden;
+      margin-top: 40px;
+    }
+    .svg-card svg { display: block; width: 100%; height: auto; }
+
+    /* ── CAPABILITIES ────────────────────────────────── */
+    .cap-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+    .cap-list { display: flex; flex-direction: column; gap: 16px; }
+    .cap-item {
+      display: flex; gap: 18px; align-items: flex-start;
+      padding: 22px; border-radius: 16px;
+      background: rgba(255,255,255,.03); border: 1px solid var(--line);
+      transition: all .25s;
+    }
+    .cap-item:hover { border-color: var(--brand); background: rgba(79,163,255,.06); }
+    .cap-item-icon {
+      flex-shrink: 0; width: 44px; height: 44px; border-radius: 12px;
+      background: linear-gradient(135deg, rgba(79,163,255,.2), rgba(124,92,255,.15));
+      border: 1px solid rgba(79,163,255,.3);
+      display: flex; align-items: center; justify-content: center; font-size: 20px;
+    }
+    .cap-item h4 { font-size: 16px; font-weight: 700; margin-bottom: 5px; }
+    .cap-item p { color: var(--muted); font-size: 14px; line-height: 1.6; margin: 0; }
+    .tech-badges { display: flex; flex-direction: column; gap: 12px; }
+    .tech-badge-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .tech-badge {
+      padding: 16px 18px; border-radius: 14px;
+      background: linear-gradient(135deg, rgba(79,163,255,.12), rgba(124,92,255,.08));
+      border: 1px solid rgba(79,163,255,.28);
+      font-weight: 700; font-size: 15px; color: var(--brand);
+      text-align: center; transition: all .25s;
+    }
+    .tech-badge:hover { transform: translateY(-2px); background: linear-gradient(135deg, rgba(79,163,255,.2), rgba(124,92,255,.14)); }
+    .tech-badge small { display: block; font-weight: 400; font-size: 12px; color: var(--muted); margin-top: 3px; }
+    .cap-kpi-box {
+      margin-top: 16px; padding: 24px; border-radius: 16px;
+      background: linear-gradient(160deg, rgba(57,217,138,.08), rgba(57,217,138,.04));
+      border: 1px solid rgba(57,217,138,.22);
+    }
+    .cap-kpi-box p { color: var(--text-2); font-size: 15px; line-height: 1.7; margin: 0; }
+    .cap-kpi-box strong { color: var(--ok); }
+
+    /* ── DELIVERY MODEL ──────────────────────────────── */
+    .delivery-steps { display: grid; grid-template-columns: repeat(4,1fr); gap: 0; position: relative; }
+    .delivery-steps::before {
+      content: ''; position: absolute; top: 32px; left: 12.5%; right: 12.5%;
+      height: 2px; background: linear-gradient(90deg, var(--brand), var(--brand-2));
+      opacity: .25; z-index: 0;
+    }
+    .delivery-step { text-align: center; padding: 0 16px; position: relative; z-index: 1; }
+    .d-num {
+      width: 64px; height: 64px; border-radius: 50%; margin: 0 auto 20px;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px; font-weight: 900; color: #fff;
+      box-shadow: 0 0 0 6px rgba(79,163,255,.11), 0 8px 24px rgba(79,163,255,.25);
+    }
+    .d-tag {
+      display: inline-block; margin-bottom: 10px; font-size: 10px; font-weight: 700;
+      letter-spacing: .08em; text-transform: uppercase; color: var(--brand);
+      background: rgba(79,163,255,.1); border: 1px solid rgba(79,163,255,.2);
+      padding: 3px 9px; border-radius: 99px;
+    }
+    .delivery-step h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+    .delivery-step p { font-size: 13px; color: var(--muted); line-height: 1.55; }
+
+    /* ── DEVOPS ──────────────────────────────────────── */
+    .devops-wrap {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center;
+    }
+    .devops-list { display: flex; flex-direction: column; gap: 14px; }
+    .devops-item {
+      display: flex; gap: 16px; align-items: flex-start;
+      padding: 18px 20px; border-radius: 14px;
+      background: rgba(255,255,255,.03); border: 1px solid var(--line);
+      transition: border-color .2s;
+    }
+    .devops-item:hover { border-color: var(--ok); }
+    .devops-item-dot {
+      flex-shrink: 0; width: 10px; height: 10px; border-radius: 50%;
+      background: var(--ok); margin-top: 5px;
+      box-shadow: 0 0 8px rgba(57,217,138,.5);
+    }
+    .devops-item h4 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+    .devops-item p { font-size: 13px; color: var(--muted); margin: 0; }
+    .devops-pipeline {
+      background: linear-gradient(160deg, rgba(57,217,138,.07), rgba(79,163,255,.05));
+      border: 1px solid rgba(57,217,138,.2); border-radius: 20px; padding: 6px;
+    }
+    .devops-pipeline svg { display: block; width: 100%; height: auto; border-radius: 14px; }
+
+    /* ── AI SECTION ──────────────────────────────────── */
+    .ai-wrap {
+      background: linear-gradient(160deg, rgba(79,163,255,.09), rgba(124,92,255,.07));
+      border: 1px solid rgba(79,163,255,.22); border-radius: 24px; padding: 60px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+    }
+    .ai-stat-col { display: flex; flex-direction: column; gap: 16px; }
+    .ai-stat {
+      padding: 22px 26px; background: rgba(255,255,255,.05);
+      border: 1px solid var(--line); border-radius: 16px;
+      display: flex; align-items: center; gap: 20px;
+    }
+    .ai-stat-n { font-size: 38px; font-weight: 900; color: var(--brand); line-height: 1; min-width: 90px; }
+    .ai-stat-l { font-size: 14px; color: var(--text-2); }
+    .ai-stat-l strong { display: block; font-size: 15px; color: var(--text); margin-bottom: 3px; }
+    .ai-feat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .ai-feat {
+      padding: 20px; background: rgba(255,255,255,.04);
+      border: 1px solid var(--line); border-radius: 14px; transition: all .25s;
+    }
+    .ai-feat:hover { border-color: var(--brand); background: rgba(79,163,255,.07); }
+    .ai-feat-icon { font-size: 22px; margin-bottom: 10px; }
+    .ai-feat h4 { font-size: 14px; font-weight: 700; margin-bottom: 5px; }
+    .ai-feat p { font-size: 13px; color: var(--muted); line-height: 1.55; margin: 0; }
+
+    /* ── ARCHITECTURE ────────────────────────────────── */
+    .arch-svg {
+      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+      border: 1px solid var(--line); border-radius: 20px; overflow: hidden;
+    }
+    .arch-svg svg { display: block; width: 100%; height: auto; }
+
+    /* ── BENEFITS ────────────────────────────────────── */
+    .ben-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+    .ben-card {
+      padding: 32px; border-radius: 18px;
+      background: linear-gradient(160deg, rgba(255,255,255,.04), rgba(255,255,255,.015));
+      border: 1px solid var(--line); position: relative; overflow: hidden;
+      transition: all .3s;
+    }
+    .ben-card::after {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, var(--ok), transparent);
+    }
+    .ben-card:hover { border-color: rgba(57,217,138,.35); transform: translateY(-4px); box-shadow: 0 16px 44px rgba(0,0,0,.28); }
+    .ben-metric { font-size: 32px; font-weight: 900; color: var(--ok); margin-bottom: 6px; }
+    .ben-icon { font-size: 30px; margin-bottom: 12px; }
+    .ben-card h4 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
+    .ben-card p { color: var(--muted); font-size: 14px; line-height: 1.65; margin: 0; }
+
+    /* ── CTA ─────────────────────────────────────────── */
+    .cta-section {
+      border-radius: 28px; padding: 72px 64px;
+      background: linear-gradient(145deg, rgba(79,163,255,.14), rgba(124,92,255,.10));
+      border: 1px solid rgba(79,163,255,.28);
+      position: relative; overflow: hidden;
+    }
+    .cta-section::before {
+      content: ''; position: absolute; top: -70px; right: -70px;
+      width: 320px; height: 320px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(79,163,255,.18), transparent 70%);
+      pointer-events: none;
+    }
+    .cta-section::after {
+      content: ''; position: absolute; bottom: -50px; left: -50px;
+      width: 240px; height: 240px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(124,92,255,.14), transparent 70%);
+      pointer-events: none;
+    }
+    .cta-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; position: relative; z-index: 1; }
+    .cta-heading { font-size: 40px; font-weight: 900; line-height: 1.15; letter-spacing: -.025em; margin-bottom: 14px; }
+    .cta-sub { color: var(--text-2); font-size: 17px; line-height: 1.7; margin-bottom: 28px; }
+    .cta-benefits { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .cta-benefits li { color: var(--text-2); font-size: 14px; display: flex; align-items: center; gap: 10px; }
+    .cta-benefits li::before { content: '✓'; color: var(--ok); font-weight: 800; font-size: 13px; flex-shrink: 0; }
+    .form-box {
+      background: rgba(255,255,255,.06); border: 1px solid rgba(79,163,255,.22);
+      border-radius: 20px; padding: 36px; display: flex; flex-direction: column; gap: 14px;
+    }
+    .form-box p { font-size: 12px; color: var(--muted); text-align: center; }
+    .form-label { font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--brand); display: block; margin-bottom: 4px; }
+    .form-input {
+      width: 100%; padding: 13px 16px; border-radius: 10px;
+      border: 1.5px solid var(--line-2); background: rgba(255,255,255,.07);
+      color: var(--text); font-family: inherit; font-size: 15px; transition: all .25s;
+    }
+    .form-input::placeholder { color: var(--muted); }
+    .form-input:focus { outline: none; border-color: var(--brand); background: rgba(255,255,255,.1); box-shadow: 0 0 0 3px rgba(79,163,255,.2); }
+    .form-submit {
+      width: 100%; padding: 14px; border: none; border-radius: 12px; font-family: inherit;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: #fff; font-size: 16px; font-weight: 700; cursor: pointer;
+      transition: all .25s; box-shadow: 0 6px 24px rgba(79,163,255,.3);
+    }
+    .form-submit:hover { box-shadow: 0 8px 32px rgba(79,163,255,.5); transform: translateY(-1px); }
+    .form-submit:disabled { opacity: .7; cursor: default; transform: none; }
+
+    /* ── FOOTER ──────────────────────────────────────── */
+    footer {
+      background: rgba(8,16,29,.6);
+      border-top: 1px solid var(--line);
+      padding: 48px 0 32px;
+    }
+    .footer-grid {
+      display: grid; grid-template-columns: auto 1fr auto; gap: 48px; align-items: start;
+      margin-bottom: 36px;
+    }
+    .footer-logo img { height: 40px; width: auto; filter: brightness(.85); }
+    .footer-nav { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+    .footer-nav a { color: var(--muted); text-decoration: none; font-size: 14px; transition: color .2s; }
+    .footer-nav a:hover { color: var(--brand); }
+    .footer-social { display: flex; gap: 12px; }
+    .footer-social a {
+      width: 38px; height: 38px; border-radius: 10px;
+      background: rgba(255,255,255,.06); border: 1px solid var(--line);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--muted); text-decoration: none; font-size: 16px; transition: all .2s;
+    }
+    .footer-social a:hover { border-color: var(--brand); color: var(--brand); }
+    .footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; padding-top: 24px; border-top: 1px solid rgba(36,56,93,.4); color: var(--muted); font-size: 13px; }
+
+    /* ── WHATSAPP FLOAT ──────────────────────────────── */
+    .wa-float {
+      position: fixed; bottom: 28px; right: 28px; z-index: 999;
+      width: 56px; height: 56px; border-radius: 50%;
+      background: #25D366; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 6px 24px rgba(37,211,102,.45); text-decoration: none;
+      transition: transform .25s, box-shadow .25s;
+    }
+    .wa-float:hover { transform: scale(1.08); box-shadow: 0 8px 32px rgba(37,211,102,.6); }
+    .wa-float svg { width: 28px; height: 28px; fill: #fff; }
+
+    /* ── RESPONSIVE ──────────────────────────────────── */
+    @media (max-width: 1200px) {
+      .sol-grid { grid-template-columns: repeat(2,1fr); }
+      .pwa-stat-grid { grid-template-columns: repeat(2,1fr); }
+    }
+    @media (max-width: 1100px) {
+      .sol-grid { grid-template-columns: repeat(2,1fr); }
+      .pwa-compare { grid-template-columns: 1fr; }
+      .cap-layout { grid-template-columns: 1fr; gap: 40px; }
+      .tech-badge-row { grid-template-columns: repeat(4,1fr); }
+      .devops-wrap { grid-template-columns: 1fr; gap: 40px; }
+      .ai-wrap { grid-template-columns: 1fr; gap: 44px; }
+      .cta-inner { grid-template-columns: 1fr; gap: 40px; }
+    }
+    @media (max-width: 768px) {
+      .container { padding: 0 20px; }
+      .section { padding: 64px 0; }
+      .hero { grid-template-columns: 1fr; gap: 36px; padding: 60px 0 48px; }
+      h1, .h1 { font-size: 40px; }
+      .section-title { font-size: 30px; }
+      .sol-grid { grid-template-columns: 1fr; }
+      .pwa-stat-grid { grid-template-columns: repeat(2,1fr); }
+      .delivery-steps { grid-template-columns: repeat(2,1fr); }
+      .delivery-steps::before { display: none; }
+      .ben-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+      .tech-badge-row { grid-template-columns: 1fr 1fr; }
+      nav { display: none; }
+      .cta-section { padding: 48px 28px; }
+      .cta-heading { font-size: 28px; }
+      .ai-feat-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── HEADER ───────────────────────────────────────── -->
+<header>
+  <div class="container">
+    <div class="header-inner">
+      <a href="https://inthegrasoftware.com/homenueva/" class="logo-wrap">
+        <img src="https://inthegrasoftware.com/wp-content/uploads/2026/02/Logo_oracle_header.svg" alt="Inthegra" />
+      </a>
+      <nav>
+        <a href="https://inthegrasoftware.com/oracle-services/" class="active">Servicios</a>
+        <a href="https://inthegrasoftware.com/soluciones/">Soluciones</a>
+        <a href="https://inthegrasoftware.com/casos-de-exitos/">Casos</a>
+        <a href="https://inthegrasoftware.com/blog/">Blog</a>
+        <a href="https://inthegrasoftware.com/people-culture/">People &amp; Culture</a>
+      </nav>
+      <a href="#contacto" class="nav-cta">Hablemos →</a>
+    </div>
+  </div>
+</header>
+
+<!-- ── HERO ─────────────────────────────────────────── -->
+<section class="section hero">
+  <div class="container" style="display:contents;">
+    <div style="padding-left:32px;">
+      <div class="eyebrow">Oracle Enterprise · Desarrollo a medida</div>
+      <h1 class="gradient-text">Desarrollamos aplicaciones Oracle listas para operar en serio.</h1>
+      <p class="hero-sub">
+        Construimos soluciones sobre Oracle APEX, Oracle Database y OCI, diseñadas para integrarse con tu operación, tus procesos y tus datos existentes. Con delivery DevOps y aceleración con IA para llegar más rápido con más control.
+      </p>
+      <div class="hero-tags">
+        <span class="tag tag-brand">Oracle APEX</span>
+        <span class="tag tag-brand">Oracle Database</span>
+        <span class="tag tag-brand">OCI</span>
+        <span class="tag">DevOps Oracle</span>
+        <span class="tag">IA aplicada al delivery</span>
+        <span class="tag">Integraciones REST</span>
+      </div>
+      <div class="hero-ctas">
+        <a href="#contacto" class="btn btn-primary">Solicitar consulta gratuita →</a>
+        <a href="#delivery" class="btn btn-ghost">Ver nuestro proceso</a>
+      </div>
+      <div class="hero-note">
+        <span>Aplicaciones críticas en producción</span>
+        <span>Entrega iterativa y controlada</span>
+        <span>Reutilización de tu base Oracle</span>
+      </div>
+    </div>
+    <div class="hero-visual" style="margin-right:32px;">
+      <svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="hg1" x1="0" x2="1"><stop offset="0%" stop-color="#4fa3ff"/><stop offset="100%" stop-color="#7c5cff"/></linearGradient>
+          <linearGradient id="hg2" x1="0" x2="1"><stop offset="0%" stop-color="#0f1831"/><stop offset="100%" stop-color="#16264a"/></linearGradient>
+        </defs>
+        <rect width="900" height="620" rx="28" fill="url(#hg2)"/>
+        <!-- ambient glow -->
+        <ellipse cx="450" cy="310" rx="240" ry="140" fill="rgba(79,163,255,.06)"/>
+        <!-- Negocio panel -->
+        <rect x="48" y="64" width="260" height="482" rx="22" fill="#121e39" stroke="#30446f"/>
+        <text x="82" y="106" fill="#edf3ff" font-size="22" font-weight="700" font-family="Arial">Negocio</text>
+        <rect x="76" y="130" width="204" height="80" rx="14" fill="#eef3ff" opacity=".9"/>
+        <rect x="88" y="144" width="120" height="10" rx="5" fill="#c5d3e8"/>
+        <rect x="88" y="162" width="90"  height="8"  rx="4" fill="#d8e2f0"/>
+        <rect x="76" y="228" width="204" height="80" rx="14" fill="#eef3ff" opacity=".75"/>
+        <rect x="88" y="244" width="100" height="10" rx="5" fill="#c5d3e8"/>
+        <rect x="88" y="262" width="140" height="8"  rx="4" fill="#d8e2f0"/>
+        <rect x="76" y="326" width="204" height="80" rx="14" fill="#eef3ff" opacity=".6"/>
+        <rect x="88" y="342" width="80"  height="10" rx="5" fill="#c5d3e8"/>
+        <rect x="88" y="360" width="110" height="8"  rx="4" fill="#d8e2f0"/>
+        <text x="82" y="468" fill="#7d9ac4" font-size="11" font-family="Arial">Portales · Workflows · Ops</text>
+        <!-- Platform panel -->
+        <rect x="332" y="64" width="236" height="482" rx="22" fill="#121e39" stroke="#30446f"/>
+        <text x="372" y="106" fill="#edf3ff" font-size="22" font-weight="700" font-family="Arial">Plataforma</text>
+        <rect x="364" y="138" width="172" height="80" rx="16" fill="url(#hg1)"/>
+        <text x="410" y="186" fill="#fff" font-size="22" font-weight="800" font-family="Arial">APEX</text>
+        <rect x="364" y="238" width="172" height="78" rx="16" fill="#1b3060" stroke="rgba(79,163,255,.4)"/>
+        <text x="390" y="284" fill="#c2d4f0" font-size="18" font-family="Arial">DevOps</text>
+        <rect x="364" y="336" width="172" height="78" rx="16" fill="#1b3060" stroke="rgba(124,92,255,.4)"/>
+        <text x="390" y="382" fill="#c2d4f0" font-size="18" font-family="Arial">IA assist.</text>
+        <text x="372" y="468" fill="#7d9ac4" font-size="11" font-family="Arial">Oracle APEX · ORDS · OCI</text>
+        <!-- Delivery panel -->
+        <rect x="592" y="64" width="260" height="482" rx="22" fill="#121e39" stroke="#30446f"/>
+        <text x="624" y="106" fill="#edf3ff" font-size="22" font-weight="700" font-family="Arial">Entrega</text>
+        <rect x="620" y="130" width="204" height="110" rx="16" fill="#eef3ff" opacity=".9"/>
+        <!-- mini chart -->
+        <polyline points="636,218 660,192 684,204 710,178 736,188 760,166 788,174 808,160" fill="none" stroke="url(#hg1)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="620" y="262" width="204" height="80" rx="16" fill="#eef3ff" opacity=".7"/>
+        <rect x="636" y="280" width="80" height="10" rx="5" fill="#c5d3e8"/>
+        <rect x="636" y="298" width="120" height="8" rx="4" fill="#d8e2f0"/>
+        <rect x="620" y="364" width="204" height="80" rx="16" fill="#eef3ff" opacity=".5"/>
+        <rect x="636" y="380" width="50" height="12" rx="6" fill="url(#hg1)" opacity=".7"/>
+        <rect x="696" y="380" width="50" height="12" rx="6" fill="url(#hg1)" opacity=".5"/>
+        <rect x="636" y="402" width="140" height="8" rx="4" fill="#d8e2f0"/>
+        <text x="624" y="468" fill="#7d9ac4" font-size="11" font-family="Arial">APIs · Integrations · Cloud</text>
+        <!-- connecting arrows -->
+        <path d="M308 190 H364 M308 278 H364 M308 376 H364" stroke="url(#hg1)" stroke-width="9" stroke-linecap="round"/>
+        <path d="M536 190 H592 M536 278 H592 M536 376 H592" stroke="url(#hg1)" stroke-width="9" stroke-linecap="round"/>
+        <!-- arrow heads right side -->
+        <polygon points="364,186 350,178 350,194" fill="#7c5cff"/>
+        <polygon points="592,186 578,178 578,194" fill="#7c5cff"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ── TIPOS DE SOLUCIONES ───────────────────────────── -->
+<section class="section" id="soluciones">
+  <div class="container">
+    <div class="center" style="margin-bottom:56px;">
+      <span class="section-label">Qué construimos</span>
+      <h2 class="section-title gradient-text">Aplicaciones enterprise para cada proceso crítico</h2>
+      <p class="section-desc">No vendemos solo horas de desarrollo. Entregamos una capacidad de evolución sobre tu base Oracle.</p>
+    </div>
+    <div class="sol-grid">
+
+      <!-- ── PORTALES ── -->
+      <div class="sol-card">
+        <div class="sol-mockup">
+          <svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="pm1" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#4fa3ff"/><stop offset="100%" stop-color="#7c5cff"/></linearGradient>
+            </defs>
+            <rect width="360" height="270" fill="#0c1628"/>
+            <!-- nav bar -->
+            <rect x="18" y="18" width="324" height="36" rx="10" fill="#162040" stroke="#243860"/>
+            <rect x="30" y="28" width="52" height="16" rx="5" fill="#4fa3ff" opacity=".7"/>
+            <rect x="94" y="30" width="40" height="12" rx="4" fill="#2a3e68"/>
+            <rect x="144" y="30" width="40" height="12" rx="4" fill="#2a3e68"/>
+            <rect x="194" y="30" width="40" height="12" rx="4" fill="#2a3e68"/>
+            <rect x="298" y="27" width="32" height="18" rx="6" fill="url(#pm1)"/>
+            <!-- two content cards -->
+            <rect x="18" y="68" width="152" height="126" rx="12" fill="url(#pm1)" opacity=".9"/>
+            <rect x="24" y="76" width="90" height="12" rx="5" fill="rgba(255,255,255,.45)"/>
+            <rect x="24" y="96" width="70" height="10" rx="4" fill="rgba(255,255,255,.3)"/>
+            <rect x="24" y="154" width="72" height="28" rx="8" fill="rgba(255,255,255,.2)" stroke="rgba(255,255,255,.3)"/>
+            <rect x="184" y="68" width="158" height="126" rx="12" fill="#162040" stroke="#243860"/>
+            <rect x="196" y="80" width="80" height="10" rx="4" fill="#3a5280"/>
+            <rect x="196" y="98" width="130" height="8" rx="4" fill="#2a3e68"/>
+            <rect x="196" y="114" width="110" height="8" rx="4" fill="#2a3e68"/>
+            <rect x="196" y="130" width="120" height="8" rx="4" fill="#2a3e68"/>
+            <rect x="196" y="154" width="56" height="24" rx="7" fill="#4fa3ff" opacity=".8"/>
+            <!-- bottom text rows -->
+            <rect x="18" y="208" width="220" height="10" rx="5" fill="#243860" opacity=".8"/>
+            <rect x="18" y="226" width="168" height="8" rx="4" fill="#1e3260" opacity=".6"/>
+            <rect x="18" y="244" width="190" height="8" rx="4" fill="#1e3260" opacity=".45"/>
+          </svg>
+        </div>
+        <div class="sol-body">
+          <h3>Portales de negocio</h3>
+          <p>Portales web responsivos para clientes, proveedores, empleados o socios, integrados directamente con tu Oracle Database.</p>
+          <ul class="sol-list">
+            <li>Autogestión B2B/B2C</li>
+            <li>Portales de proveedores</li>
+            <li>Intranet y onboarding digital</li>
+          </ul>
+          <div class="sol-tag-row"><span class="sol-tag">APEX</span><span class="sol-tag">ORDS</span></div>
+        </div>
+      </div>
+
+      <!-- ── WORKFLOWS ── -->
+      <div class="sol-card">
+        <div class="sol-mockup">
+          <svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="wm1" x1="0" x2="1"><stop offset="0%" stop-color="#4fa3ff"/><stop offset="100%" stop-color="#7c5cff"/></linearGradient>
+            </defs>
+            <rect width="360" height="270" fill="#0c1628"/>
+            <!-- step circles + connectors -->
+            <line x1="54" y1="90" x2="306" y2="90" stroke="#1e3460" stroke-width="3"/>
+            <circle cx="72"  cy="90" r="30" fill="#111f3a" stroke="#4fa3ff" stroke-width="2"/>
+            <circle cx="180" cy="90" r="30" fill="#111f3a" stroke="#4fa3ff" stroke-width="2"/>
+            <circle cx="288" cy="90" r="30" fill="#4fa3ff"/>
+            <text x="63"  y="97" fill="#4fa3ff" font-size="18" font-weight="900" font-family="Arial">1</text>
+            <text x="171" y="97" fill="#4fa3ff" font-size="18" font-weight="900" font-family="Arial">2</text>
+            <text x="278" y="97" fill="#fff"    font-size="18" font-weight="900" font-family="Arial">3</text>
+            <!-- connector arrows -->
+            <path d="M102 90 H150" stroke="url(#wm1)" stroke-width="6" stroke-linecap="round"/>
+            <path d="M210 90 H258" stroke="url(#wm1)" stroke-width="6" stroke-linecap="round"/>
+            <!-- step labels -->
+            <text x="72"  y="138" fill="#7d9ac4" font-size="11" font-family="Arial" text-anchor="middle">Solicitud</text>
+            <text x="180" y="138" fill="#7d9ac4" font-size="11" font-family="Arial" text-anchor="middle">Revisión</text>
+            <text x="288" y="138" fill="#39d98a" font-size="11" font-family="Arial" text-anchor="middle">Aprobado</text>
+            <!-- info card -->
+            <rect x="28" y="156" width="304" height="96" rx="14" fill="#111f3a" stroke="#243860"/>
+            <rect x="42" y="170" width="36" height="36" rx="9" fill="url(#wm1)" opacity=".8"/>
+            <rect x="90" y="172" width="140" height="11" rx="5" fill="#3a5280"/>
+            <rect x="90" y="190" width="110" height="9" rx="4" fill="#2a3e68"/>
+            <rect x="90" y="207" width="90"  height="9" rx="4" fill="#2a3e68" opacity=".7"/>
+            <rect x="254" y="178" width="60" height="22" rx="7" fill="#39d98a" opacity=".85"/>
+            <text x="269" y="193" fill="#0c1628" font-size="10" font-weight="800" font-family="Arial">Aprobar</text>
+          </svg>
+        </div>
+        <div class="sol-body">
+          <h3>Workflows y aprobaciones</h3>
+          <p>Digitalización de circuitos de aprobación, validación y compliance con trazabilidad completa.</p>
+          <ul class="sol-list">
+            <li>Aprobaciones multi-nivel</li>
+            <li>Gestión de solicitudes</li>
+            <li>Firmas y validaciones</li>
+          </ul>
+          <div class="sol-tag-row"><span class="sol-tag">APEX</span><span class="sol-tag">PL/SQL</span></div>
+        </div>
+      </div>
+
+      <!-- ── OPERACIONES ── -->
+      <div class="sol-card">
+        <div class="sol-mockup">
+          <svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="om1" x1="0" x2="1"><stop offset="0%" stop-color="#4fa3ff"/><stop offset="100%" stop-color="#7c5cff"/></linearGradient>
+              <linearGradient id="om2" x1="0" x2="1"><stop offset="0%" stop-color="#7c5cff"/><stop offset="100%" stop-color="#39d98a"/></linearGradient>
+            </defs>
+            <rect width="360" height="270" fill="#0c1628"/>
+            <!-- chart area -->
+            <rect x="18" y="18" width="324" height="150" rx="12" fill="#101e38" stroke="#1e3460"/>
+            <!-- grid lines -->
+            <line x1="30" y1="148" x2="330" y2="148" stroke="#1e3460" stroke-width="1"/>
+            <line x1="30" y1="122" x2="330" y2="122" stroke="#1e3460" stroke-width="1" stroke-dasharray="4,4"/>
+            <line x1="30" y1="96"  x2="330" y2="96"  stroke="#1e3460" stroke-width="1" stroke-dasharray="4,4"/>
+            <!-- line 1 -->
+            <polyline points="34,138 78,120 122,128 166,100 210,108 254,84 298,92 330,72"
+              fill="none" stroke="url(#om1)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- area fill 1 -->
+            <polygon points="34,148 34,138 78,120 122,128 166,100 210,108 254,84 298,92 330,72 330,148"
+              fill="url(#om1)" opacity=".12"/>
+            <!-- line 2 -->
+            <polyline points="34,145 78,136 122,140 166,130 210,134 254,118 298,122 330,108"
+              fill="none" stroke="url(#om2)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6,3"/>
+            <!-- stat cards -->
+            <rect x="18"  y="182" width="150" height="72" rx="12" fill="#111f3a" stroke="#243860"/>
+            <rect x="192" y="182" width="150" height="72" rx="12" fill="#111f3a" stroke="#243860"/>
+            <text x="34"  y="210" fill="#39d98a" font-size="22" font-weight="900" font-family="Arial">+28%</text>
+            <rect x="34"  y="218" width="100" height="8" rx="4" fill="#2a3e68"/>
+            <rect x="34"  y="232" width="76"  height="8" rx="4" fill="#1e3260" opacity=".7"/>
+            <text x="208" y="210" fill="#4fa3ff" font-size="22" font-weight="900" font-family="Arial">4.8k</text>
+            <rect x="208" y="218" width="100" height="8" rx="4" fill="#2a3e68"/>
+            <rect x="208" y="232" width="76"  height="8" rx="4" fill="#1e3260" opacity=".7"/>
+          </svg>
+        </div>
+        <div class="sol-body">
+          <h3>Operaciones y reporting</h3>
+          <p>Dashboards operativos y reporting en tiempo real sobre Oracle Database, sin ETLs costosos.</p>
+          <ul class="sol-list">
+            <li>Dashboards ejecutivos</li>
+            <li>Stock, logística, comercial</li>
+            <li>Reporting financiero/regulatorio</li>
+          </ul>
+          <div class="sol-tag-row"><span class="sol-tag">APEX</span><span class="sol-tag">OCI</span></div>
+        </div>
+      </div>
+
+      <!-- ── PWA MÓVIL ── -->
+      <div class="sol-card" style="border-color: rgba(57,217,138,.3);">
+        <div class="sol-mockup">
+          <svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="pw1" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#4fa3ff"/><stop offset="100%" stop-color="#39d98a"/></linearGradient>
+            </defs>
+            <rect width="360" height="270" fill="#0c1628"/>
+            <!-- phone frame -->
+            <rect x="110" y="10" width="140" height="250" rx="22" fill="#111f3a" stroke="#2a4060" stroke-width="2"/>
+            <rect x="115" y="15" width="130" height="240" rx="18" fill="#0c1628"/>
+            <!-- notch -->
+            <rect x="148" y="18" width="64" height="14" rx="7" fill="#111f3a"/>
+            <!-- status bar -->
+            <rect x="122" y="38" width="44" height="5" rx="3" fill="#2a3e68"/>
+            <rect x="216" y="38" width="22" height="5" rx="3" fill="#2a3e68"/>
+            <!-- app header -->
+            <rect x="122" y="52" width="116" height="28" rx="8" fill="url(#pw1)" opacity=".85"/>
+            <rect x="130" y="60" width="60" height="8" rx="3" fill="rgba(255,255,255,.55)"/>
+            <!-- content cards -->
+            <rect x="122" y="90"  width="116" height="52" rx="8" fill="#162040" stroke="#243860"/>
+            <rect x="130" y="100" width="50"  height="7"  rx="3" fill="#3a5280"/>
+            <rect x="130" y="114" width="90"  height="6"  rx="3" fill="#2a3e68"/>
+            <rect x="130" y="126" width="72"  height="6"  rx="3" fill="#2a3e68" opacity=".7"/>
+            <rect x="122" y="150" width="55"  height="52" rx="8" fill="#162040" stroke="#243860"/>
+            <rect x="183" y="150" width="55"  height="52" rx="8" fill="#162040" stroke="#243860"/>
+            <rect x="128" y="162" width="38"  height="18" rx="5" fill="url(#pw1)" opacity=".7"/>
+            <rect x="128" y="186" width="38"  height="8"  rx="3" fill="#2a3e68"/>
+            <rect x="189" y="162" width="38"  height="18" rx="5" fill="#1e3460" stroke="#4fa3ff" stroke-opacity=".4"/>
+            <rect x="189" y="186" width="38"  height="8"  rx="3" fill="#2a3e68"/>
+            <!-- bottom nav -->
+            <rect x="122" y="212" width="116" height="30" rx="8" fill="#111f3a" stroke="#243860"/>
+            <circle cx="147" cy="227" r="6" fill="url(#pw1)"/>
+            <circle cx="180" cy="227" r="5" fill="#2a3e68"/>
+            <circle cx="213" cy="227" r="5" fill="#2a3e68"/>
+            <!-- "install" badge outside phone -->
+            <rect x="262" y="60" width="80" height="22" rx="7" fill="rgba(57,217,138,.15)" stroke="rgba(57,217,138,.4)"/>
+            <text x="271" y="75" fill="#39d98a" font-size="10" font-weight="700" font-family="Arial">+ Instalar</text>
+            <!-- wifi/offline badge -->
+            <rect x="262" y="90" width="80" height="22" rx="7" fill="rgba(79,163,255,.12)" stroke="rgba(79,163,255,.35)"/>
+            <text x="272" y="105" fill="#4fa3ff" font-size="10" font-weight="700" font-family="Arial">Offline ✓</text>
+            <!-- push badge -->
+            <rect x="262" y="120" width="80" height="22" rx="7" fill="rgba(124,92,255,.12)" stroke="rgba(124,92,255,.35)"/>
+            <text x="265" y="135" fill="#b07fff" font-size="10" font-weight="700" font-family="Arial">Push notif.</text>
+          </svg>
+        </div>
+        <div class="sol-body">
+          <h3>Apps móviles PWA</h3>
+          <p>Aplicaciones móviles con el mismo stack Oracle APEX: un solo código para web, iOS y Android. Sin app stores, sin costos dobles.</p>
+          <ul class="sol-list">
+            <li>Apps de campo y operativas</li>
+            <li>Portales móviles para clientes</li>
+            <li>Herramientas internas mobile-first</li>
+          </ul>
+          <div class="sol-tag-row">
+            <span class="sol-tag sol-tag-green">PWA</span>
+            <span class="sol-tag">APEX</span>
+            <span class="sol-tag">OCI</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /sol-grid -->
+
+    <!-- ── PWA SECTION ── -->
+    <div class="pwa-section">
+      <div style="text-align:center; margin-bottom:36px;">
+        <span class="section-label">¿Por qué PWA sobre APEX?</span>
+        <h3 style="font-size:28px; font-weight:800; letter-spacing:-.02em; margin-bottom:10px; background: linear-gradient(135deg,#fff 40%,var(--ok) 90%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">
+          Móvil nativo sin los costos del desarrollo nativo
+        </h3>
+        <p style="color:var(--muted); font-size:16px; max-width:60ch; margin:0 auto;">
+          Con Oracle APEX 21.2+ cualquier aplicación puede habilitarse como PWA en horas. Un único equipo, un único codebase, web y móvil al mismo tiempo.
+        </p>
+      </div>
+
+      <div class="pwa-compare">
+        <div class="pwa-col">
+          <h4 style="color:var(--danger);">📱 App nativa iOS + Android</h4>
+          <div class="pwa-row">
+            <div class="pwa-item"><span class="pwa-item-icon">❌</span><span><strong>2 codebases separados</strong> — Swift/Kotlin, 2 equipos especializados</span></div>
+            <div class="pwa-item"><span class="pwa-item-icon">❌</span><span><strong>4–8 meses</strong> para tener ambas plataformas en producción</span></div>
+            <div class="pwa-item"><span class="pwa-item-icon">❌</span><span><strong>30% de comisión</strong> Apple/Google sobre pagos in-app</span></div>
+            <div class="pwa-item"><span class="pwa-item-icon">❌</span><span><strong>Review de 1–6 semanas</strong> para cada actualización en tiendas</span></div>
+            <div class="pwa-item"><span class="pwa-item-icon">❌</span><span><strong>Equipo separado</strong> de tu desarrollo Oracle existente</span></div>
+          </div>
+        </div>
+        <div class="pwa-col">
+          <h4 style="color:var(--gold);">⚡ App híbrida (Flutter / React Native)</h4>
+          <div class="pwa-row">
+            <div class="pwa-item"><span class="pwa-item-icon">⚠️</span><span><strong>1 codebase</strong> pero tecnología diferente a tu stack Oracle</span></div>
+            <div class="pwa-item"><span class="pwa-item-icon">⚠️</span><span><strong>3–5 meses</strong> de desarrollo promedio</span></div>
+            <div class="pwa-item"><span class="pwa-item-icon">❌</span><span><strong>Sigue pagando</strong> comisiones de tiendas</span></div>
+            <div class="pwa-item"><span class="pwa-item-icon">⚠️</span><span><strong>Review obligatorio</strong> para cada release</span></div>
+            <div class="pwa-item"><span class="pwa-item-icon">❌</span><span><strong>Equipo nuevo</strong> — no aprovecha tu base Oracle</span></div>
+          </div>
+        </div>
+        <div class="pwa-col pwa-col-header">
+          <h4><span class="highlight">✅ PWA sobre Oracle APEX</span></h4>
+          <div class="pwa-row">
+            <div class="pwa-item"><span class="pwa-item-icon">✅</span><span><strong>1 codebase</strong> — mismo equipo Oracle, misma app para web y móvil</span></div>
+            <div class="pwa-item"><span class="pwa-item-icon">✅</span><span><strong>2–4 semanas</strong> para habilitar móvil sobre app APEX existente</span></div>
+            <div class="pwa-item"><span class="pwa-item-icon">✅</span><span><strong>0% comisión</strong> — distribución directa vía URL, sin tiendas</span></div>
+            <div class="pwa-item"><span class="pwa-item-icon">✅</span><span><strong>Deploy instantáneo</strong> — actualizaciones llegan al 100% de usuarios en horas</span></div>
+            <div class="pwa-item"><span class="pwa-item-icon">✅</span><span><strong>Mismo equipo</strong> — el desarrollo Oracle cubre también el móvil</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PWA capabilities stat row -->
+      <div class="pwa-stat-grid">
+        <div class="pwa-stat">
+          <div class="pwa-n">50–70%</div>
+          <div class="pwa-l">Reducción de costo vs apps nativas iOS + Android</div>
+        </div>
+        <div class="pwa-stat">
+          <div class="pwa-n">2–3x</div>
+          <div class="pwa-l">Más rápido a producción que desarrollo nativo</div>
+        </div>
+        <div class="pwa-stat">
+          <div class="pwa-n">0%</div>
+          <div class="pwa-l">Comisión Apple / Google. Cero fees de app store</div>
+        </div>
+        <div class="pwa-stat">
+          <div class="pwa-n">1</div>
+          <div class="pwa-l">Solo codebase para web + iOS + Android simultáneamente</div>
+        </div>
+      </div>
+
+      <!-- PWA capabilities -->
+      <div style="margin-top:32px; padding:28px 32px; border-radius:18px; background:rgba(255,255,255,.03); border:1px solid var(--line); display:flex; flex-wrap:wrap; gap:12px; align-items:center;">
+        <span style="font-size:13px; font-weight:700; color:var(--muted); margin-right:4px; flex-shrink:0;">Capacidades nativas en PWA:</span>
+        <span class="sol-tag sol-tag-green">Push notifications</span>
+        <span class="sol-tag sol-tag-green">Offline (Service Workers)</span>
+        <span class="sol-tag sol-tag-green">Cámara y GPS</span>
+        <span class="sol-tag sol-tag-green">Biometría (Face ID / Touch ID)</span>
+        <span class="sol-tag sol-tag-green">Instalar en pantalla de inicio</span>
+        <span class="sol-tag sol-tag-green">Acceso a archivos del dispositivo</span>
+        <span class="sol-tag sol-tag-green">Sincronización en background</span>
+        <span class="sol-tag" style="background:rgba(79,163,255,.1); border-color:rgba(79,163,255,.3); color:var(--brand);">APEX PWA module nativo v21.2+</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── CAPACIDADES ORACLE ─────────────────────────────── -->
+<section class="section" id="capacidades">
+  <div class="container">
+    <div style="margin-bottom:56px;">
+      <span class="section-label">Capacidades técnicas</span>
+      <h2 class="section-title gradient-text">Expertise real sobre toda la plataforma Oracle</h2>
+      <p class="section-desc" style="max-width:60ch;">No es solo conocer la tecnología. Es saber cómo usarla para resolver problemas de negocio complejos en producción.</p>
+    </div>
+    <div class="cap-layout">
+      <div class="cap-list">
+        <div class="cap-item">
+          <div class="cap-item-icon">🏗️</div>
+          <div>
+            <h4>Oracle APEX — Aplicaciones web enterprise</h4>
+            <p>Desarrollo de aplicaciones low-code de alta calidad: interfaces responsivas, componentes avanzados, autenticación, reportes y dashboards sobre Oracle DB.</p>
+          </div>
+        </div>
+        <div class="cap-item">
+          <div class="cap-item-icon">🔌</div>
+          <div>
+            <h4>ORDS — APIs REST nativas</h4>
+            <p>Exposición de servicios Oracle como APIs RESTful. Integración nativa con Oracle Database sin middleware adicional. Ideal para microservicios y front-ends modernos.</p>
+          </div>
+        </div>
+        <div class="cap-item">
+          <div class="cap-item-icon">🗃️</div>
+          <div>
+            <h4>PL/SQL y lógica de negocio</h4>
+            <p>Diseño e implementación de lógica crítica directamente en Oracle Database: procedures, triggers, funciones, packages y optimización de queries complejas.</p>
+          </div>
+        </div>
+        <div class="cap-item">
+          <div class="cap-item-icon">☁️</div>
+          <div>
+            <h4>Oracle Cloud Infrastructure (OCI)</h4>
+            <p>Despliegue y administración de entornos en OCI. Aprovisionamiento de instancias APEX, Autonomous DB, Object Storage y gestión de redes.</p>
+          </div>
+        </div>
+        <div class="cap-item">
+          <div class="cap-item-icon">🔗</div>
+          <div>
+            <h4>Integraciones y conectividad</h4>
+            <p>Conexión con ERPs (SAP, Oracle EBS), CRMs, plataformas SaaS, sistemas financieros y cualquier servicio externo vía APIs o conectores nativos.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="tech-badges">
+          <div class="tech-badge-row">
+            <div class="tech-badge">Oracle APEX<small>22.x · 23.x · 24.x</small></div>
+            <div class="tech-badge">ORDS<small>REST APIs nativas</small></div>
+            <div class="tech-badge">PL/SQL<small>Lógica de negocio</small></div>
+            <div class="tech-badge">OCI<small>Cloud Infrastructure</small></div>
+          </div>
+          <div class="tech-badge-row">
+            <div class="tech-badge">Autonomous DB<small>Oracle managed</small></div>
+            <div class="tech-badge">Oracle EBS<small>Integración</small></div>
+            <div class="tech-badge">Object Storage<small>Archivos y media</small></div>
+            <div class="tech-badge">IA / LLMs<small>Dev acceleration</small></div>
+          </div>
+        </div>
+        <div class="cap-kpi-box">
+          <p>
+            Reutilizamos el valor de tu <strong>Oracle Database existente</strong>: lógica de negocio, datos, integraciones y seguridad ya configuradas. Las nuevas aplicaciones se suman al ecosistema Oracle sin reemplazarlo.
+          </p>
+        </div>
+        <div class="svg-card" style="margin-top:20px;">
+          <svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="c2" x1="0" x2="1"><stop offset="0%" stop-color="#4fa3ff"/><stop offset="100%" stop-color="#39d98a"/></linearGradient></defs>
+            <rect width="640" height="280" fill="#0a1629"/>
+            <rect x="20"  y="30" width="136" height="220" rx="14" fill="#121d38" stroke="#30446f"/>
+            <rect x="252" y="30" width="136" height="220" rx="14" fill="#121d38" stroke="#30446f"/>
+            <rect x="484" y="30" width="136" height="220" rx="14" fill="#121d38" stroke="#30446f"/>
+            <text x="40"  y="62" fill="#edf3ff" font-size="14" font-family="Arial">Usuarios</text>
+            <text x="265" y="62" fill="#edf3ff" font-size="14" font-family="Arial">Apps / APIs</text>
+            <text x="506" y="62" fill="#edf3ff" font-size="14" font-family="Arial">Oracle Core</text>
+            <rect x="36"  y="82" width="104" height="56" rx="10" fill="#eef3ff" opacity=".8"/>
+            <rect x="36"  y="154" width="104" height="56" rx="10" fill="#eef3ff" opacity=".6"/>
+            <rect x="268" y="78" width="104" height="52" rx="10" fill="url(#c2)"/>
+            <rect x="268" y="148" width="104" height="50" rx="10" fill="#eef3ff" opacity=".7"/>
+            <rect x="268" y="210" width="104" height="22" rx="8"  fill="#eef3ff" opacity=".5"/>
+            <rect x="500" y="78" width="100" height="50" rx="10" fill="#eef3ff" opacity=".7"/>
+            <rect x="500" y="144" width="100" height="50" rx="10" fill="#eef3ff" opacity=".6"/>
+            <rect x="500" y="210" width="100" height="22" rx="8"  fill="#eef3ff" opacity=".45"/>
+            <path d="M156 110 H252 M156 182 H252 M388 104 H484 M388 174 H484 M388 222 H484" stroke="#4fa3ff" stroke-width="7" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── DELIVERY MODEL ─────────────────────────────────── -->
+<section class="section" id="delivery">
+  <div class="container">
+    <div class="center" style="margin-bottom:56px;">
+      <span class="section-label">Metodología</span>
+      <h2 class="section-title gradient-text">Delivery iterativo, controlado y sin sorpresas</h2>
+      <p class="section-desc">Un proceso claro desde el día 1. Cada sprint entrega valor funcional al negocio.</p>
+    </div>
+    <div class="delivery-steps">
+      <div class="delivery-step">
+        <div class="d-num">1</div>
+        <div class="d-tag">Discovery</div>
+        <h3>Entendemos tu negocio</h3>
+        <p>Relevamos procesos, datos y sistemas existentes. Definimos alcance, prioridades y arquitectura. Armamos el backlog inicial.</p>
+      </div>
+      <div class="delivery-step">
+        <div class="d-num">2</div>
+        <div class="d-tag">Diseño</div>
+        <h3>Arquitectura y UX</h3>
+        <p>Definimos la arquitectura técnica en APEX + ORDS + OCI. Diseñamos la experiencia de usuario y los modelos de datos.</p>
+      </div>
+      <div class="delivery-step">
+        <div class="d-num">3</div>
+        <div class="d-tag">Build</div>
+        <h3>Desarrollo iterativo</h3>
+        <p>Sprints de 2 semanas con entregas funcionales. IA asiste en blueprinting, código y QA. Ambientes controlados desde el inicio.</p>
+      </div>
+      <div class="delivery-step">
+        <div class="d-num">4</div>
+        <div class="d-tag">Deploy & Evolución</div>
+        <h3>Go-live y mejora continua</h3>
+        <p>Pipeline CI/CD automatizado. Deploy en OCI con rollback. Soporte y evolución continua sobre la base desplegada.</p>
+      </div>
+    </div>
+    <div class="svg-card" style="margin-top:48px;">
+      <svg viewBox="0 0 1200 280" xmlns="http://www.w3.org/2000/svg">
+        <defs><linearGradient id="d1" x1="0" x2="1"><stop offset="0%" stop-color="#4fa3ff"/><stop offset="100%" stop-color="#7c5cff"/></linearGradient></defs>
+        <rect width="1200" height="280" fill="#091530"/>
+        <path d="M134 120 H1066" stroke="#1e3460" stroke-width="6" stroke-linecap="round"/>
+        <path d="M134 120 H1066" stroke="url(#d1)" stroke-width="6" stroke-linecap="round" opacity=".35"/>
+        <circle cx="170"  cy="120" r="42" fill="#0d1b3e" stroke="url(#d1)" stroke-width="2.5"/>
+        <circle cx="420"  cy="120" r="42" fill="#0d1b3e" stroke="url(#d1)" stroke-width="2.5"/>
+        <circle cx="670"  cy="120" r="42" fill="#0d1b3e" stroke="url(#d1)" stroke-width="2.5"/>
+        <circle cx="920"  cy="120" r="42" fill="#0d1b3e" stroke="url(#d1)" stroke-width="2.5"/>
+        <text x="155"  y="128" fill="#fff" font-size="24" font-weight="900" font-family="Arial">1</text>
+        <text x="405"  y="128" fill="#fff" font-size="24" font-weight="900" font-family="Arial">2</text>
+        <text x="655"  y="128" fill="#fff" font-size="24" font-weight="900" font-family="Arial">3</text>
+        <text x="905"  y="128" fill="#fff" font-size="24" font-weight="900" font-family="Arial">4</text>
+        <text x="170"  y="185" fill="#b4c8f0" font-size="14" font-family="Arial" text-anchor="middle">Discovery</text>
+        <text x="420"  y="185" fill="#b4c8f0" font-size="14" font-family="Arial" text-anchor="middle">Diseño</text>
+        <text x="670"  y="185" fill="#b4c8f0" font-size="14" font-family="Arial" text-anchor="middle">Build</text>
+        <text x="920"  y="185" fill="#b4c8f0" font-size="14" font-family="Arial" text-anchor="middle">Deploy</text>
+        <text x="170"  y="52"  fill="#4fa3ff" font-size="11" font-family="Arial" text-anchor="middle">Sem. 1–2</text>
+        <text x="420"  y="52"  fill="#4fa3ff" font-size="11" font-family="Arial" text-anchor="middle">Sem. 2–3</text>
+        <text x="670"  y="52"  fill="#4fa3ff" font-size="11" font-family="Arial" text-anchor="middle">Sprints 2–N</text>
+        <text x="920"  y="52"  fill="#39d98a" font-size="11" font-family="Arial" text-anchor="middle">Producción + evolución</text>
+        <rect x="78"   y="208" width="184" height="56" rx="12" fill="#0d1b3e" stroke="#1e3460"/>
+        <rect x="328"  y="208" width="184" height="56" rx="12" fill="#0d1b3e" stroke="#1e3460"/>
+        <rect x="578"  y="208" width="184" height="56" rx="12" fill="#0d1b3e" stroke="#1e3460"/>
+        <rect x="828"  y="208" width="184" height="56" rx="12" fill="#0d1b3e" stroke="#39d98a" stroke-opacity=".5"/>
+        <text x="170"  y="234" fill="#7d9ac4" font-size="11" font-family="Arial" text-anchor="middle">Backlog + arquitectura</text>
+        <text x="170"  y="252" fill="#7d9ac4" font-size="11" font-family="Arial" text-anchor="middle">base de datos</text>
+        <text x="420"  y="234" fill="#7d9ac4" font-size="11" font-family="Arial" text-anchor="middle">APEX + ORDS + OCI</text>
+        <text x="420"  y="252" fill="#7d9ac4" font-size="11" font-family="Arial" text-anchor="middle">modelo de datos</text>
+        <text x="670"  y="234" fill="#7d9ac4" font-size="11" font-family="Arial" text-anchor="middle">Sprints con IA assist.</text>
+        <text x="670"  y="252" fill="#7d9ac4" font-size="11" font-family="Arial" text-anchor="middle">QA automatizado</text>
+        <text x="920"  y="234" fill="#39d98a" font-size="11" font-family="Arial" text-anchor="middle">CI/CD · OCI · Soporte</text>
+        <text x="920"  y="252" fill="#39d98a" font-size="11" font-family="Arial" text-anchor="middle">evolución continua</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ── DEVOPS ORACLE ───────────────────────────────────── -->
+<section class="section" id="devops">
+  <div class="container">
+    <div class="devops-wrap">
+      <div>
+        <span class="section-label">DevOps Oracle</span>
+        <h2 class="section-title gradient-text">Delivery moderno sobre Oracle</h2>
+        <p class="section-desc" style="margin-bottom:36px;">Gestionamos todo el ciclo de vida del software con prácticas DevOps diseñadas para el ecosistema Oracle. Despliegues controlados, ambientes separados y trazabilidad total.</p>
+        <div class="devops-list">
+          <div class="devops-item">
+            <div class="devops-item-dot"></div>
+            <div>
+              <h4>Control de versiones y branching</h4>
+              <p>Git para todo el código APEX, PL/SQL y configuración. Estrategia de branching clara para desarrollo, testing y producción.</p>
+            </div>
+          </div>
+          <div class="devops-item">
+            <div class="devops-item-dot"></div>
+            <div>
+              <h4>CI/CD automatizado para Oracle</h4>
+              <p>Pipelines de despliegue automático de aplicaciones APEX y objetos de base de datos. Rollback en minutos ante cualquier incidente.</p>
+            </div>
+          </div>
+          <div class="devops-item">
+            <div class="devops-item-dot"></div>
+            <div>
+              <h4>Ambientes controlados</h4>
+              <p>Entornos separados de desarrollo, testing y producción en OCI. Promoción controlada de artefactos entre ambientes.</p>
+            </div>
+          </div>
+          <div class="devops-item">
+            <div class="devops-item-dot"></div>
+            <div>
+              <h4>Testing y validación automatizada</h4>
+              <p>Suite de tests automatizados para regresión y validación funcional. QA asistido por IA para cobertura más amplia en menos tiempo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="devops-pipeline">
+        <svg viewBox="0 0 1200 440" xmlns="http://www.w3.org/2000/svg">
+          <defs><linearGradient id="dv1" x1="0" x2="1"><stop offset="0%" stop-color="#4fa3ff"/><stop offset="100%" stop-color="#39d98a"/></linearGradient></defs>
+          <rect width="1200" height="440" fill="#0d162d"/>
+          <rect x="84" y="60" width="1030" height="320" rx="24" fill="#121d38" stroke="#30446f"/>
+          <text x="118" y="108" fill="#edf3ff" font-size="22" font-weight="700" font-family="Arial">Pipeline DevOps Oracle</text>
+          <circle cx="244" cy="240" r="80" fill="#101936" stroke="#35528a" stroke-width="2"/>
+          <circle cx="488" cy="240" r="80" fill="#101936" stroke="#35528a" stroke-width="2"/>
+          <circle cx="732" cy="240" r="80" fill="#101936" stroke="#35528a" stroke-width="2"/>
+          <circle cx="976" cy="240" r="80" fill="#101936" stroke="#35528a" stroke-width="2"/>
+          <text x="200" y="248" fill="#edf3ff" font-size="26" font-weight="700" font-family="Arial">Code</text>
+          <text x="444" y="248" fill="#edf3ff" font-size="26" font-weight="700" font-family="Arial">Build</text>
+          <text x="696" y="248" fill="#edf3ff" font-size="26" font-weight="700" font-family="Arial">Test</text>
+          <text x="930" y="248" fill="#edf3ff" font-size="26" font-weight="700" font-family="Arial">Deploy</text>
+          <path d="M324 240 H408 M568 240 H652 M812 240 H896" stroke="url(#dv1)" stroke-width="12" stroke-linecap="round"/>
+          <text x="244" y="360" fill="#7d9ac4" font-size="13" font-family="Arial" text-anchor="middle">APEX · PL/SQL · Git</text>
+          <text x="488" y="360" fill="#7d9ac4" font-size="13" font-family="Arial" text-anchor="middle">Artefactos · Export</text>
+          <text x="732" y="360" fill="#7d9ac4" font-size="13" font-family="Arial" text-anchor="middle">Regresión · QA IA</text>
+          <text x="976" y="360" fill="#39d98a" font-size="13" font-family="Arial" text-anchor="middle">OCI · Rollback</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── IA EN EL DELIVERY ──────────────────────────────── -->
+<section class="section" id="ia">
+  <div class="container">
+    <div class="ai-wrap">
+      <div>
+        <span class="section-label">Diferencial IA</span>
+        <h2 class="section-title" style="font-size:34px; background: linear-gradient(135deg,#fff 40%,var(--brand) 80%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">IA aplicada al desarrollo Oracle</h2>
+        <p style="color:var(--muted); font-size:16px; line-height:1.7; margin:16px 0 36px;">Usamos inteligencia artificial para acelerar todas las etapas del desarrollo: desde el blueprint inicial hasta la generación de tests y documentación automática.</p>
+        <div class="ai-stat-col">
+          <div class="ai-stat">
+            <div class="ai-stat-n">40%</div>
+            <div class="ai-stat-l"><strong>Menos tiempo en blueprinting y diseño</strong>IA genera la estructura de aplicación, modelos de datos y flujos desde los requisitos</div>
+          </div>
+          <div class="ai-stat">
+            <div class="ai-stat-n">2–3x</div>
+            <div class="ai-stat-l"><strong>Más velocidad en desarrollo</strong>Asistencia en PL/SQL, APEX pages, queries complejas y componentes reutilizables</div>
+          </div>
+          <div class="ai-stat">
+            <div class="ai-stat-n">100%</div>
+            <div class="ai-stat-l"><strong>Documentación automática</strong>Generación de documentación técnica y funcional de todo el código desarrollado</div>
+          </div>
+        </div>
+      </div>
+      <div class="ai-feat-grid">
+        <div class="ai-feat">
+          <div class="ai-feat-icon">🗺️</div>
+          <h4>Blueprinting automático</h4>
+          <p>De requisitos a arquitectura de aplicación, modelos de datos y flujos en horas, no días.</p>
+        </div>
+        <div class="ai-feat">
+          <div class="ai-feat-icon">💻</div>
+          <h4>Asistencia en PL/SQL</h4>
+          <p>Generación, revisión y optimización de código PL/SQL complejo con IA.</p>
+        </div>
+        <div class="ai-feat">
+          <div class="ai-feat-icon">📄</div>
+          <h4>Generación de APEX pages</h4>
+          <p>Scaffolding acelerado de páginas, formularios, reportes y componentes APEX.</p>
+        </div>
+        <div class="ai-feat">
+          <div class="ai-feat-icon">🧪</div>
+          <h4>Testing asistido por IA</h4>
+          <p>Generación automática de casos de prueba y scripts de validación de regresión.</p>
+        </div>
+        <div class="ai-feat">
+          <div class="ai-feat-icon">📝</div>
+          <h4>Documentación automática</h4>
+          <p>Documentación técnica y funcional generada automáticamente desde el código.</p>
+        </div>
+        <div class="ai-feat">
+          <div class="ai-feat-icon">🔍</div>
+          <h4>Code review aumentado</h4>
+          <p>Análisis de calidad, seguridad y performance del código antes de cada release.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ARQUITECTURA ───────────────────────────────────── -->
+<section class="section" id="arquitectura">
+  <div class="container">
+    <div class="center" style="margin-bottom:48px;">
+      <span class="section-label">Arquitectura objetivo</span>
+      <h2 class="section-title gradient-text">Plataforma moderna sobre tu core Oracle</h2>
+      <p class="section-desc">Las nuevas aplicaciones se integran en el ecosistema Oracle existente, sin reemplazar, sin perder historia.</p>
+    </div>
+    <div class="arch-svg">
+      <svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg">
+        <defs><linearGradient id="ar1" x1="0" x2="1"><stop offset="0%" stop-color="#4fa3ff"/><stop offset="100%" stop-color="#39d98a"/></linearGradient></defs>
+        <rect width="1200" height="480" fill="#091530"/>
+        <!-- columns -->
+        <rect x="82"  y="60" width="230" height="360" rx="20" fill="#121d38" stroke="#30446f"/>
+        <rect x="485" y="60" width="230" height="360" rx="20" fill="#121d38" stroke="#30446f"/>
+        <rect x="888" y="60" width="230" height="360" rx="20" fill="#121d38" stroke="#30446f"/>
+        <!-- column headers -->
+        <text x="112" y="108" fill="#edf3ff" font-size="20" font-weight="700" font-family="Arial">Usuarios</text>
+        <text x="519" y="108" fill="#edf3ff" font-size="20" font-weight="700" font-family="Arial">Apps / APIs</text>
+        <text x="920" y="108" fill="#edf3ff" font-size="20" font-weight="700" font-family="Arial">Core Oracle</text>
+        <!-- user cards -->
+        <rect x="112" y="132" width="170" height="80" rx="14" fill="#eef3ff" opacity=".85"/>
+        <rect x="124" y="148" width="80" height="10" rx="5" fill="#c5d3e8"/>
+        <rect x="124" y="166" width="110" height="8" rx="4" fill="#d8e2f0"/>
+        <rect x="112" y="228" width="170" height="80" rx="14" fill="#eef3ff" opacity=".7"/>
+        <rect x="124" y="244" width="60" height="10" rx="5" fill="#c5d3e8"/>
+        <rect x="124" y="262" width="95"  height="8"  rx="4" fill="#d8e2f0"/>
+        <rect x="112" y="324" width="170" height="60" rx="14" fill="#eef3ff" opacity=".55"/>
+        <!-- app cards -->
+        <rect x="515" y="128" width="170" height="80" rx="14" fill="url(#ar1)" opacity=".85"/>
+        <text x="545" y="174" fill="#fff" font-size="16" font-weight="700" font-family="Arial">APEX App</text>
+        <rect x="515" y="226" width="170" height="78" rx="14" fill="#1b3060" stroke="rgba(79,163,255,.4)"/>
+        <text x="540" y="272" fill="#c2d4f0" font-size="15" font-family="Arial">ORDS / REST</text>
+        <rect x="515" y="322" width="170" height="72" rx="14" fill="#1b3060" stroke="rgba(124,92,255,.4)"/>
+        <text x="540" y="366" fill="#c2d4f0" font-size="15" font-family="Arial">OCI Services</text>
+        <!-- core cards -->
+        <rect x="918" y="128" width="168" height="78" rx="14" fill="#eef3ff" opacity=".8"/>
+        <rect x="930" y="144" width="80" height="10" rx="5" fill="#c5d3e8"/>
+        <rect x="930" y="162" width="110" height="8" rx="4" fill="#d8e2f0"/>
+        <rect x="918" y="220" width="168" height="78" rx="14" fill="#eef3ff" opacity=".65"/>
+        <rect x="930" y="236" width="60" height="10" rx="5" fill="#c5d3e8"/>
+        <rect x="930" y="254" width="90" height="8"  rx="4" fill="#d8e2f0"/>
+        <rect x="918" y="312" width="168" height="70" rx="14" fill="#eef3ff" opacity=".5"/>
+        <!-- connecting lines -->
+        <path d="M312 172 H485 M312 268 H485 M312 354 H485" stroke="#4fa3ff" stroke-width="9" stroke-linecap="round"/>
+        <path d="M715 168 H888 M715 266 H888 M715 358 H888" stroke="url(#ar1)" stroke-width="9" stroke-linecap="round"/>
+        <!-- labels -->
+        <text x="197" y="432" fill="#7d9ac4" font-size="13" font-family="Arial" text-anchor="middle">Web · Mobile · API</text>
+        <text x="600" y="432" fill="#7d9ac4" font-size="13" font-family="Arial" text-anchor="middle">Oracle APEX · ORDS · OCI</text>
+        <text x="1003" y="432" fill="#7d9ac4" font-size="13" font-family="Arial" text-anchor="middle">Oracle DB · EBS · Cloud</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ── BENEFICIOS ─────────────────────────────────────── -->
+<section class="section" id="beneficios">
+  <div class="container">
+    <div class="center" style="margin-bottom:56px;">
+      <span class="section-label">Resultados</span>
+      <h2 class="section-title gradient-text">Beneficios tangibles para el negocio</h2>
+      <p class="section-desc">Lo que ganás cuando desarrollás con Inthegra sobre Oracle.</p>
+    </div>
+    <div class="ben-grid">
+      <div class="ben-card">
+        <div class="ben-metric">2–3x</div>
+        <div class="ben-icon">⚡</div>
+        <h4>Mayor velocidad de entrega</h4>
+        <p>DevOps + IA reducen el tiempo de cada sprint. Nuevas features en semanas, no meses.</p>
+      </div>
+      <div class="ben-card">
+        <div class="ben-metric">↓40%</div>
+        <div class="ben-icon">💡</div>
+        <h4>Menor complejidad técnica</h4>
+        <p>Arquitectura limpia sobre Oracle, sin middleware innecesario. Menos puntos de falla, más fácil de mantener.</p>
+      </div>
+      <div class="ben-card">
+        <div class="ben-metric">100%</div>
+        <div class="ben-icon">🔗</div>
+        <h4>Integración real con el core</h4>
+        <p>Las aplicaciones se conectan directamente con tu Oracle DB, EBS y datos existentes. Sin ETLs costosos.</p>
+      </div>
+      <div class="ben-card">
+        <div class="ben-metric">∞</div>
+        <div class="ben-icon">☁️</div>
+        <h4>Escalabilidad cloud</h4>
+        <p>Infraestructura OCI elástica. Crece con la demanda sin inversión de capital en hardware.</p>
+      </div>
+      <div class="ben-card">
+        <div class="ben-metric">0</div>
+        <div class="ben-icon">🛡️</div>
+        <h4>Sin lock-in de proveedores</h4>
+        <p>Código propio, documentado y en tu repositorio. Sin dependencia de plataformas propietarias ajenas a Oracle.</p>
+      </div>
+      <div class="ben-card">
+        <div class="ben-metric">+ROI</div>
+        <div class="ben-icon">📈</div>
+        <h4>Retorno sobre inversión Oracle</h4>
+        <p>Aprovechás la licencia Oracle que ya tenés. Cada nueva aplicación multiplica el valor de tu plataforma existente.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA / CONTACTO ─────────────────────────────────── -->
+<section class="section" id="contacto">
+  <div class="container">
+    <div class="cta-section">
+      <div class="cta-inner">
+        <div>
+          <span class="section-label" style="color:#90c4ff;">¿Necesitás construir sobre Oracle?</span>
+          <h2 class="cta-heading gradient-text">Hablemos de tu proyecto</h2>
+          <p class="cta-sub">Contanos qué necesitás construir. En menos de 24 horas te respondemos con un enfoque inicial y una propuesta de trabajo.</p>
+          <ul class="cta-benefits">
+            <li>Consulta inicial sin costo ni compromisos</li>
+            <li>Definición de alcance y arquitectura base</li>
+            <li>Estimación de tiempos y esfuerzo</li>
+            <li>Equipo especialista en Oracle asignado desde el día 1</li>
+          </ul>
+        </div>
+        <div class="form-box">
+          <div>
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-input" placeholder="Tu nombre" id="f-name" />
+          </div>
+          <div>
+            <label class="form-label">Email corporativo</label>
+            <input type="email" class="form-input" placeholder="nombre@empresa.com" id="f-email" />
+          </div>
+          <div>
+            <label class="form-label">¿Qué querés construir?</label>
+            <input type="text" class="form-input" placeholder="Ej: portal de clientes, workflow de aprobaciones..." id="f-msg" />
+          </div>
+          <button class="form-submit" id="f-btn" onclick="handleSubmit()">Enviar consulta →</button>
+          <p>Sin spam · Respondemos en &lt; 24 horas hábiles</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-logo">
+        <a href="https://inthegrasoftware.com/homenueva/">
+          <img src="https://inthegrasoftware.com/wp-content/uploads/2024/12/logo-footer.png" alt="Inthegra" />
+        </a>
+      </div>
+      <nav class="footer-nav">
+        <a href="https://inthegrasoftware.com/oracle-services/">Oracle Services</a>
+        <a href="https://inthegrasoftware.com/soluciones/">Soluciones</a>
+        <a href="https://inthegrasoftware.com/healthcare-software/">HealthCare Software</a>
+        <a href="https://inthegrasoftware.com/credit-financial-software/">Credit &amp; Financial</a>
+        <a href="https://inthegrasoftware.com/retail-software/">Retail Software</a>
+        <a href="https://inthegrasoftware.com/casos-de-exitos/">Casos de éxito</a>
+        <a href="https://inthegrasoftware.com/blog/">Blog</a>
+        <a href="https://inthegrasoftware.com/people-culture/">People &amp; Culture</a>
+      </nav>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/inthegra" target="_blank" rel="noopener" title="LinkedIn">in</a>
+        <a href="https://www.facebook.com/inthegra.software" target="_blank" rel="noopener" title="Facebook">f</a>
+        <a href="https://www.instagram.com/inthegra_software/" target="_blank" rel="noopener" title="Instagram">ig</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Inthegra ® © Todos los derechos reservados en cumplimiento de normativas de Compliance y seguridad de datos.</span>
+      <a href="https://inthegrasoftware.com/oracle-services/" style="color:var(--brand); text-decoration:none;">Oracle Services</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ── WHATSAPP FLOAT ─────────────────────────────────── -->
+<a class="wa-float" href="https://wa.me/5491158151437" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<script>
+  function handleSubmit() {
+    const name  = document.getElementById('f-name').value.trim();
+    const email = document.getElementById('f-email').value.trim();
+    const btn   = document.getElementById('f-btn');
+    if (!name || !email) { alert('Por favor completá al menos tu nombre y email.'); return; }
+    btn.textContent = '✓ Consulta enviada — te respondemos pronto';
+    btn.disabled = true;
+    btn.style.background = 'linear-gradient(135deg, #39d98a, #1eb87a)';
+    document.querySelectorAll('.form-input').forEach(i => i.disabled = true);
+  }
+
+  // Scroll-triggered fade-in
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+
+  document.querySelectorAll(
+    '.sol-card, .ben-card, .cap-item, .devops-item, .ai-feat, .delivery-step'
+  ).forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(18px)';
+    el.style.transition = 'opacity .5s ease, transform .5s ease';
+    io.observe(el);
+  });
+</script>
+</body>
+</html>

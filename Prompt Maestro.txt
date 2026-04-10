@@ -1,0 +1,75 @@
+We are redesigning the full website for Inthegra Software (inthegrasoftware.com).
+
+Goal:
+Create premium enterprise-level website mockups and front-end page concepts for a company specialized in Oracle-native enterprise software, industry products, AI-powered solutions, and Oracle services.
+
+Brand positioning:
+- Oracle-Native / Enterprise Software
+- Inthegra wants to become the leading Oracle services and enterprise software company in Latam within the next 3 years
+- The website must feel corporate, trustworthy, modern, high-end, and execution-driven
+- Visual style should follow the direction already defined in the Services pages: premium enterprise, similar to Oracle / Accenture, not startup playful, not generic SaaS template
+
+Commercial priorities:
+1. Generate leads
+2. Strengthen enterprise brand positioning
+3. Support sales process
+Main CTA logic:
+- Products and Solutions => "Agendar demo"
+- Services => "Hablar con un experto"
+
+Target audience:
+SMEs and mid-market companies with 40+ employees that need a strategic technology partner and modern enterprise software to support growth.
+
+Core differentiators:
+- 23 years of industry know-how
+- End-to-end approach: product + cloud + AI
+- Fast implementation
+- Native ERP + vertical integration
+- AI both in software development process and in products
+
+Site architecture:
+- Home
+- Products
+  - HealthCare
+  - Credit & Financial
+  - Retail
+- Services
+  - already defined in previous work, maintain same visual level and style
+- Solutions
+  - CRM
+  - AI Chatbot
+- People & Culture
+- Success Stories
+- Blog
+
+Additional context:
+- Each product vertical has its own product, configurable through modules
+- CRM and AI Chatbot are cross-industry solutions
+- People & Culture is institutional, not aggressive hiring-focused
+- Geographic scope: Argentina + Latam
+- Real client references that may be used carefully as social proof:
+  Health: SIPSSA, EMI, ASESORES ESPECIALIZADOS, INDOM, ROSTER, ALTA SALUD, YIOS
+  Credit: Elebar, Sucredito, La Zonal, Grupo Dilfer, Noacard
+  Retail / ERP: Tiendas Nico, Acogra, Todo Cerca
+
+Design direction:
+- Desktop-first premium mockups
+- Strong visual hierarchy
+- Dark/blue corporate palette with premium gradients and subtle AI-tech atmosphere
+- Elegant animations and modern section transitions
+- Not overloaded
+- Strong enterprise credibility
+- Use modular section design so pages feel like one coherent system
+
+Output expected for each page:
+1. A premium landing page mockup concept
+2. Clear page structure / section hierarchy
+3. Copywriting guidance for hero, section titles, supporting paragraphs and CTA buttons
+4. Suggested UI modules/cards/grids
+5. Suggestions for subtle motion / interactions
+6. Premium visual references in terms of layout style
+7. The output should be implementation-oriented, suitable to be turned into React/Next.js sections
+
+Important:
+The site should not feel like a small software vendor.
+It must feel like a serious Oracle-native enterprise technology company with strong execution capabilities and AI positioning.

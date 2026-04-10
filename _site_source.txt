@@ -1,0 +1,811 @@
+﻿<!doctype html>
+<html lang="es-AR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->
+	<!-- This site is optimized with the Yoast SEO Premium plugin v24.6 (Yoast SEO v25.4) - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Oracle Services - Inthegra</title>
+	<meta name="description" content="Servicios Oracle para empresas: migraciÃ³n a la nube, modernizaciÃ³n de sistemas y desarrollo de soluciones escalables con tecnologÃ­a Oracle." />
+	<link rel="canonical" href="https://inthegrasoftware.com/oracle-services/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Oracle Services" />
+	<meta property="og:description" content="Servicios Oracle para empresas: migraciÃ³n a la nube, modernizaciÃ³n de sistemas y desarrollo de soluciones escalables con tecnologÃ­a Oracle." />
+	<meta property="og:url" content="https://inthegrasoftware.com/oracle-services/" />
+	<meta property="og:site_name" content="Inthegra" />
+	<meta property="article:publisher" content="https://www.facebook.com/inthegra.software" />
+	<meta property="article:modified_time" content="2026-03-18T22:46:16+00:00" />
+	<meta property="og:image" content="https://inthegrasoftware.com/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-16-at-4.24.58-PM.webp" />
+	<meta property="og:image:width" content="1536" />
+	<meta property="og:image:height" content="1024" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Tiempo de lectura" />
+	<meta name="twitter:data1" content="2 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://inthegrasoftware.com/oracle-services/","url":"https://inthegrasoftware.com/oracle-services/","name":"Oracle Services - Inthegra","isPartOf":{"@id":"https://inthegrasoftware.com/#website"},"primaryImageOfPage":{"@id":"https://inthegrasoftware.com/oracle-services/#primaryimage"},"image":{"@id":"https://inthegrasoftware.com/oracle-services/#primaryimage"},"thumbnailUrl":"https://inthegrasoftware.com/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-16-at-4.24.58-PM.webp","datePublished":"2026-02-25T15:00:39+00:00","dateModified":"2026-03-18T22:46:16+00:00","description":"Servicios Oracle para empresas: migraciÃ³n a la nube, modernizaciÃ³n de sistemas y desarrollo de soluciones escalables con tecnologÃ­a Oracle.","breadcrumb":{"@id":"https://inthegrasoftware.com/oracle-services/#breadcrumb"},"inLanguage":"es-AR","potentialAction":[{"@type":"ReadAction","target":["https://inthegrasoftware.com/oracle-services/"]}]},{"@type":"ImageObject","inLanguage":"es-AR","@id":"https://inthegrasoftware.com/oracle-services/#primaryimage","url":"https://inthegrasoftware.com/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-16-at-4.24.58-PM.webp","contentUrl":"https://inthegrasoftware.com/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-16-at-4.24.58-PM.webp","width":1536,"height":1024},{"@type":"BreadcrumbList","@id":"https://inthegrasoftware.com/oracle-services/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://inthegrasoftware.com/"},{"@type":"ListItem","position":2,"name":"Oracle Services"}]},{"@type":"WebSite","@id":"https://inthegrasoftware.com/#website","url":"https://inthegrasoftware.com/","name":"Inthegra","description":"","publisher":{"@id":"https://inthegrasoftware.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://inthegrasoftware.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"es-AR"},{"@type":"Organization","@id":"https://inthegrasoftware.com/#organization","name":"Inthegra","url":"https://inthegrasoftware.com/","logo":{"@type":"ImageObject","inLanguage":"es-AR","@id":"https://inthegrasoftware.com/#/schema/logo/image/","url":"https://inthegrasoftware.com/wp-content/uploads/2024/12/Inthegra-Enterprise-Software-Services.png","contentUrl":"https://inthegrasoftware.com/wp-content/uploads/2024/12/Inthegra-Enterprise-Software-Services.png","width":1320,"height":270,"caption":"Inthegra"},"image":{"@id":"https://inthegrasoftware.com/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/inthegra.software","https://www.instagram.com/inthegra_software/","https://www.linkedin.com/company/inthegra"]}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<script type='application/javascript'  id='pys-version-script'>console.log('PixelYourSite Free version 11.0.2');</script>
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel="alternate" type="application/rss+xml" title="Inthegra &raquo; Feed" href="https://inthegrasoftware.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Inthegra &raquo; RSS de los comentarios" href="https://inthegrasoftware.com/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://inthegrasoftware.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Finthegrasoftware.com%2Foracle-services%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://inthegrasoftware.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Finthegrasoftware.com%2Foracle-services%2F&#038;format=xml" />
+<style id='wp-img-auto-sizes-contain-inline-css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<link rel='stylesheet' id='jet-engine-frontend-css' href='https://inthegrasoftware.com/wp-content/plugins/jet-engine/assets/css/frontend.css?ver=3.6.3' media='all' />
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:root { --wp--style--global--content-size: 800px;--wp--style--global--wide-size: 1200px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 24px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 24px; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 24px;}:root :where(.is-layout-grid){gap: 24px;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='hello-elementor-css' href='https://inthegrasoftware.com/wp-content/themes/hello-elementor/assets/css/reset.css?ver=3.4.4' media='all' />
+<link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://inthegrasoftware.com/wp-content/themes/hello-elementor/assets/css/theme.css?ver=3.4.4' media='all' />
+<link rel='stylesheet' id='hello-elementor-header-footer-css' href='https://inthegrasoftware.com/wp-content/themes/hello-elementor/assets/css/header-footer.css?ver=3.4.4' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://inthegrasoftware.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.31.2' media='all' />
+<link rel='stylesheet' id='elementor-post-7-css' href='https://inthegrasoftware.com/wp-content/uploads/elementor/css/post-7.css?ver=1775068357' media='all' />
+<link rel='stylesheet' id='widget-image-css' href='https://inthegrasoftware.com/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.31.2' media='all' />
+<link rel='stylesheet' id='widget-nav-menu-css' href='https://inthegrasoftware.com/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=3.31.2' media='all' />
+<link rel='stylesheet' id='e-sticky-css' href='https://inthegrasoftware.com/wp-content/plugins/elementor-pro/assets/css/modules/sticky.min.css?ver=3.31.2' media='all' />
+<link rel='stylesheet' id='widget-search-css' href='https://inthegrasoftware.com/wp-content/plugins/elementor-pro/assets/css/widget-search.min.css?ver=3.31.2' media='all' />
+<link rel='stylesheet' id='widget-heading-css' href='https://inthegrasoftware.com/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.31.2' media='all' />
+<link rel='stylesheet' id='widget-social-icons-css' href='https://inthegrasoftware.com/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.31.2' media='all' />
+<link rel='stylesheet' id='e-apple-webkit-css' href='https://inthegrasoftware.com/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=3.31.2' media='all' />
+<link rel='stylesheet' id='ooohboi-steroids-styles-css' href='https://inthegrasoftware.com/wp-content/plugins/ooohboi-steroids-for-elementor/assets/css/main.css?ver=2.1.2126082023' media='all' />
+<link rel='stylesheet' id='e-animation-fadeInLeft-css' href='https://inthegrasoftware.com/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInLeft.min.css?ver=3.31.2' media='all' />
+<link rel='stylesheet' id='e-animation-fadeInUp-css' href='https://inthegrasoftware.com/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInUp.min.css?ver=3.31.2' media='all' />
+<link rel='stylesheet' id='e-animation-fadeIn-css' href='https://inthegrasoftware.com/wp-content/plugins/elementor/assets/lib/animations/styles/fadeIn.min.css?ver=3.31.2' media='all' />
+<link rel='stylesheet' id='e-motion-fx-css' href='https://inthegrasoftware.com/wp-content/plugins/elementor-pro/assets/css/modules/motion-fx.min.css?ver=3.31.2' media='all' />
+<link rel='stylesheet' id='elementor-post-7500-css' href='https://inthegrasoftware.com/wp-content/uploads/elementor/css/post-7500.css?ver=1775071039' media='all' />
+<link rel='stylesheet' id='elementor-post-7503-css' href='https://inthegrasoftware.com/wp-content/uploads/elementor/css/post-7503.css?ver=1775071039' media='all' />
+<link rel='stylesheet' id='elementor-post-95-css' href='https://inthegrasoftware.com/wp-content/uploads/elementor/css/post-95.css?ver=1775068358' media='all' />
+<link rel='stylesheet' id='elementor-gf-local-roboto-css' href='https://inthegrasoftware.com/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1742396448' media='all' />
+<link rel='stylesheet' id='elementor-gf-local-robotoslab-css' href='https://inthegrasoftware.com/wp-content/uploads/elementor/google-fonts/css/robotoslab.css?ver=1742396475' media='all' />
+<link rel='stylesheet' id='elementor-gf-local-poppins-css' href='https://inthegrasoftware.com/wp-content/uploads/elementor/google-fonts/css/poppins.css?ver=1742396487' media='all' />
+<link rel='stylesheet' id='elementor-gf-local-montserrat-css' href='https://inthegrasoftware.com/wp-content/uploads/elementor/google-fonts/css/montserrat.css?ver=1742396548' media='all' />
+<script src="https://inthegrasoftware.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script src="https://inthegrasoftware.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://inthegrasoftware.com/wp-content/plugins/pixelyoursite/dist/scripts/jquery.bind-first-0.2.3.min.js?ver=6.9.4" id="jquery-bind-first-js"></script>
+<script src="https://inthegrasoftware.com/wp-content/plugins/pixelyoursite/dist/scripts/js.cookie-2.1.3.min.js?ver=2.1.3" id="js-cookie-pys-js"></script>
+<script src="https://inthegrasoftware.com/wp-content/plugins/pixelyoursite/dist/scripts/tld.min.js?ver=2.3.1" id="js-tld-js"></script>
+<script id="pys-js-extra">
+var pysOptions = {"staticEvents":{"facebook":{"init_event":[{"delay":0,"type":"static","ajaxFire":false,"name":"PageView","pixelIds":["1226651955694155"],"eventID":"d7b45ddc-912b-4fdd-9867-6b2e1e3194c9","params":{"page_title":"Oracle Services","post_type":"page","post_id":7500,"plugin":"PixelYourSite","user_role":"guest","event_url":"inthegrasoftware.com/oracle-services/"},"e_id":"init_event","ids":[],"hasTimeWindow":false,"timeWindow":0,"woo_order":"","edd_order":""}]}},"dynamicEvents":[],"triggerEvents":[],"triggerEventTypes":[],"facebook":{"pixelIds":["1226651955694155"],"advancedMatching":[],"advancedMatchingEnabled":false,"removeMetadata":true,"wooVariableAsSimple":false,"serverApiEnabled":false,"wooCRSendFromServer":false,"send_external_id":null,"enabled_medical":false,"do_not_track_medical_param":["event_url","post_title","page_title","landing_page","content_name","categories","category_name","tags"],"meta_ldu":false},"debug":"","siteUrl":"https://inthegrasoftware.com","ajaxUrl":"https://inthegrasoftware.com/wp-admin/admin-ajax.php","ajax_event":"4634edab2e","enable_remove_download_url_param":"1","cookie_duration":"7","last_visit_duration":"60","enable_success_send_form":"","ajaxForServerEvent":"1","ajaxForServerStaticEvent":"1","send_external_id":"1","external_id_expire":"180","track_cookie_for_subdomains":"1","google_consent_mode":"1","gdpr":{"ajax_enabled":true,"all_disabled_by_api":false,"facebook_disabled_by_api":false,"analytics_disabled_by_api":false,"google_ads_disabled_by_api":false,"pinterest_disabled_by_api":false,"bing_disabled_by_api":false,"externalID_disabled_by_api":false,"facebook_prior_consent_enabled":true,"analytics_prior_consent_enabled":true,"google_ads_prior_consent_enabled":null,"pinterest_prior_consent_enabled":true,"bing_prior_consent_enabled":true,"cookiebot_integration_enabled":false,"cookiebot_facebook_consent_category":"marketing","cookiebot_analytics_consent_category":"statistics","cookiebot_tiktok_consent_category":"marketing","cookiebot_google_ads_consent_category":"marketing","cookiebot_pinterest_consent_category":"marketing","cookiebot_bing_consent_category":"marketing","consent_magic_integration_enabled":false,"real_cookie_banner_integration_enabled":false,"cookie_notice_integration_enabled":false,"cookie_law_info_integration_enabled":false,"analytics_storage":{"enabled":true,"value":"granted","filter":false},"ad_storage":{"enabled":true,"value":"granted","filter":false},"ad_user_data":{"enabled":true,"value":"granted","filter":false},"ad_personalization":{"enabled":true,"value":"granted","filter":false}},"cookie":{"disabled_all_cookie":false,"disabled_start_session_cookie":false,"disabled_advanced_form_data_cookie":false,"disabled_landing_page_cookie":false,"disabled_first_visit_cookie":false,"disabled_trafficsource_cookie":false,"disabled_utmTerms_cookie":false,"disabled_utmId_cookie":false},"tracking_analytics":{"TrafficSource":"direct","TrafficLanding":"https://inthegrasoftware.com/","TrafficUtms":[],"TrafficUtmsId":[]},"GATags":{"ga_datalayer_type":"default","ga_datalayer_name":"dataLayerPYS"},"woo":{"enabled":false},"edd":{"enabled":false},"cache_bypass":"1775078026"};
+//# sourceURL=pys-js-extra
+</script>
+<script src="https://inthegrasoftware.com/wp-content/plugins/pixelyoursite/dist/scripts/public.js?ver=11.0.2" id="pys-js"></script>
+        <script type="text/javascript">
+            if (typeof jQuery !== 'undefined' && typeof jQuery.migrateWarnings !== 'undefined') {
+                jQuery.migrateTrace = true; // Habilitar stack traces
+                jQuery.migrateMute = false; // Garantir avisos no console
+            }
+            let bill_timeout;
+
+            function isBot() {
+                const bots = ['crawler', 'spider', 'baidu', 'duckduckgo', 'bot', 'googlebot', 'bingbot', 'facebook', 'slurp', 'twitter', 'yahoo'];
+                const userAgent = navigator.userAgent.toLowerCase();
+                return bots.some(bot => userAgent.includes(bot));
+            }
+            const originalConsoleWarn = console.warn; // Armazenar o console.warn original
+            const sentWarnings = [];
+            const bill_errorQueue = [];
+            const slugs = [
+                "antibots", "antihacker", "bigdump-restore", "boatdealer", "cardealer",
+                "database-backup", "disable-wp-sitemap", "easy-update-urls", "hide-site-title",
+                "lazy-load-disable", "multidealer", "real-estate-right-now", "recaptcha-for-all",
+                "reportattacks", "restore-classic-widgets", "s3cloud", "site-checkup",
+                "stopbadbots", "toolsfors", "toolstruthsocial", "wp-memory", "wptools"
+            ];
+
+            function hasSlug(warningMessage) {
+                return slugs.some(slug => warningMessage.includes(slug));
+            }
+            // Sobrescrita de console.warn para capturar avisos JQMigrate
+            console.warn = function(message, ...args) {
+                // Processar avisos JQMIGRATE
+                if (typeof message === 'string' && message.includes('JQMIGRATE')) {
+                    if (!sentWarnings.includes(message)) {
+                        sentWarnings.push(message);
+                        let file = 'unknown';
+                        let line = '0';
+                        try {
+                            const stackTrace = new Error().stack.split('\n');
+                            for (let i = 1; i < stackTrace.length && i < 10; i++) {
+                                const match = stackTrace[i].match(/at\s+.*?\((.*):(\d+):(\d+)\)/) ||
+                                    stackTrace[i].match(/at\s+(.*):(\d+):(\d+)/);
+                                if (match && match[1].includes('.js') &&
+                                    !match[1].includes('jquery-migrate.js') &&
+                                    !match[1].includes('jquery.js')) {
+                                    file = match[1];
+                                    line = match[2];
+                                    break;
+                                }
+                            }
+                        } catch (e) {
+                            // Ignorar erros
+                        }
+                        const warningMessage = message.replace('JQMIGRATE:', 'Error:').trim() + ' - URL: ' + file + ' - Line: ' + line;
+                        if (!hasSlug(warningMessage)) {
+                            bill_errorQueue.push(warningMessage);
+                            handleErrorQueue();
+                        }
+                    }
+                }
+                // Repassar todas as mensagens para o console.warn original
+                originalConsoleWarn.apply(console, [message, ...args]);
+            };
+            //originalConsoleWarn.apply(console, arguments);
+            // Restaura o console.warn original apÃ³s 6 segundos
+            setTimeout(() => {
+                console.warn = originalConsoleWarn;
+            }, 6000);
+
+            function handleErrorQueue() {
+                // Filtrar mensagens de bots antes de processar
+                if (isBot()) {
+                    bill_errorQueue = []; // Limpar a fila se for bot
+                    return;
+                }
+                if (bill_errorQueue.length >= 5) {
+                    sendErrorsToServer();
+                } else {
+                    clearTimeout(bill_timeout);
+                    bill_timeout = setTimeout(sendErrorsToServer, 7000);
+                }
+            }
+
+            function sendErrorsToServer() {
+                if (bill_errorQueue.length > 0) {
+                    const message = bill_errorQueue.join(' | ');
+                    //console.log('[Bill Catch] Enviando ao Servidor:', message); // Log temporÃ¡rio para depuraÃ§Ã£o
+                    const xhr = new XMLHttpRequest();
+                    const nonce = 'c8e168af64';
+                    const ajax_url = 'https://inthegrasoftware.com/wp-admin/admin-ajax.php?action=bill_minozzi_js_error_catched&_wpnonce=c8e168af64';
+                    xhr.open('POST', encodeURI(ajax_url));
+                    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                    xhr.send('action=bill_minozzi_js_error_catched&_wpnonce=' + nonce + '&bill_js_error_catched=' + encodeURIComponent(message));
+                    // bill_errorQueue = [];
+                    bill_errorQueue.length = 0; // Limpa o array sem reatribuir
+                }
+            }
+        </script>
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+ fbq('init', '1226651955694155'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+ <img height="1" width="1" 
+src="https://www.facebook.com/tr?id=1226651955694155&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<!-- GTM Container placement set to off -->
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var dataLayer_content = {"pagePostType":"page","pagePostType2":"single-page","pagePostAuthor":"Agencia Crudo"};
+	dataLayer.push( dataLayer_content );
+</script>
+<script data-cfasync="false" data-pagespeed-no-defer>
+	console.warn && console.warn("[GTM4WP] Google Tag Manager container code placement set to OFF !!!");
+	console.warn && console.warn("[GTM4WP] Data layer codes are active but GTM container must be loaded using custom coding !!!");
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TRT4B92N');</script>
+<!-- End Google Tag Manager -->
+
+
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			
+
+<link rel="icon" href="https://inthegrasoftware.com/wp-content/uploads/2025/02/favicon-150x140.png" sizes="32x32" />
+<link rel="icon" href="https://inthegrasoftware.com/wp-content/uploads/2025/02/favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://inthegrasoftware.com/wp-content/uploads/2025/02/favicon.png" />
+<meta name="msapplication-TileImage" content="https://inthegrasoftware.com/wp-content/uploads/2025/02/favicon.png" />
+		<style id="wp-custom-css">
+			body{
+	background-color: #0F2043; 
+}
+
+		</style>
+		<link rel='stylesheet' id='joinchat-css' href='https://inthegrasoftware.com/wp-content/plugins/creame-whatsapp-me/public/css/joinchat.min.css?ver=6.0.6' media='all' />
+<style id='joinchat-inline-css'>
+.joinchat{--ch:27;--cs:100%;--cl:50%;--bw:1}
+/*# sourceURL=joinchat-inline-css */
+</style>
+
+</head>
+<body class="wp-singular page-template-default page page-id-7500 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-kit-7 elementor-page elementor-page-7500">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRT4B92N"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16670573573"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16670573573');
+</script>
+
+<a class="skip-link screen-reader-text" href="#content">Ir al contenido</a>
+
+		<header data-elementor-type="header" data-elementor-id="7503" class="elementor elementor-7503 elementor-location-header" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-f073947 e-flex e-con-boxed e-con e-parent" data-id="f073947" data-element_type="container" id="header-bar" data-settings="{"background_background":"classic","sticky":"top","sticky_effects_offset":100,"_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no","sticky_on":["desktop","tablet","mobile"],"sticky_offset":0,"sticky_anchor_link_offset":0}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-2f3466d2 e-con-full header-internal e-flex e-con e-child" data-id="2f3466d2" data-element_type="container" data-settings="{"_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+		<div class="elementor-element elementor-element-1311d2fc e-con-full e-flex e-con e-child" data-id="1311d2fc" data-element_type="container" data-settings="{"_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+				<div class="elementor-element elementor-element-2a6db777 ob-has-background-overlay elementor-widget elementor-widget-image" data-id="2a6db777" data-element_type="widget" data-settings="{"_ob_photomorph_use":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="image.default">
+																<a href="https://inthegrasoftware.com/homenueva/">
+							<img data-od-xpath="/HTML/BODY/HEADER[@class=&apos;elementor elementor-7503 elementor-location-header&apos;]/*[1][self::DIV]/*[1][self::DIV]/*[1][self::DIV]/*[1][self::DIV]/*[1][self::DIV]/*[1][self::A]/*[1][self::IMG]" width="205" height="37" src="https://inthegrasoftware.com/wp-content/uploads/2026/02/Logo_oracle_header.svg" class="attachment-medium_large size-medium_large wp-image-8833" alt="" />								</a>
+															</div>
+				</div>
+		<div class="elementor-element elementor-element-6886d042 e-con-full e-flex e-con e-child" data-id="6886d042" data-element_type="container" data-settings="{"_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+				<div class="elementor-element elementor-element-6398094e elementor-nav-menu--stretch elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger ob-has-background-overlay elementor-widget elementor-widget-nav-menu" data-id="6398094e" data-element_type="widget" data-settings="{"full_width":"stretch","layout":"horizontal","submenu_icon":{"value":"&lt;svg class=\"e-font-icon-svg e-fas-caret-down\" viewBox=\"0 0 320 512\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"&gt;&lt;path d=\"M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z\"&gt;&lt;\/path&gt;&lt;\/svg&gt;","library":"fa-solid"},"toggle":"burger","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="nav-menu.default">
+								<nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-fade">
+				<ul id="menu-1-6398094e" class="elementor-nav-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5683"><a class="elementor-item">Productos</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8350"><a href="https://inthegrasoftware.com/healthcare-software/" class="elementor-sub-item">HealthCare Software</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8349"><a href="https://inthegrasoftware.com/credit-financial-software/" class="elementor-sub-item">Credit &amp; Financial Software</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8390"><a href="https://inthegrasoftware.com/retail-software/" class="elementor-sub-item">Retail Software</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-has-children menu-item-5684"><a href="https://inthegrasoftware.com/oracle-services/" aria-current="page" class="elementor-item elementor-item-active">Servicios</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8682"><a class="elementor-sub-item">Desarrollo a Medida</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8683"><a class="elementor-sub-item">ModernizaciÃ³n de Oracle Forms &#038; Reports</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8684"><a class="elementor-sub-item">Oracle Cloud Infrastructure</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8685"><a class="elementor-sub-item">Oracle Analytics</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-8556"><a href="https://inthegrasoftware.com/soluciones/" class="elementor-item">Soluciones</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8686"><a href="https://inthegrasoftware.com/crm/" class="elementor-sub-item">CRM</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8687"><a href="https://inthegrasoftware.com/rrhh/" class="elementor-sub-item">RRHH</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8688"><a href="https://inthegrasoftware.com/wms/" class="elementor-sub-item">WMS</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8689"><a class="elementor-sub-item">Chatbot</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8690"><a class="elementor-sub-item">Onboarding Digital</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8691"><a class="elementor-sub-item">Reconocimiento Facial</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8692"><a class="elementor-sub-item">Pago QR</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8557"><a href="https://inthegrasoftware.com/people-culture/" class="elementor-item">People &amp; Culture</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5687"><a href="https://inthegrasoftware.com/casos-de-exitos/" class="elementor-item">Casos</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5688"><a href="https://inthegrasoftware.com/blog/" class="elementor-item">Blog</a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z"></path></svg><svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M742 167L500 408 258 167C246 154 233 150 217 150 196 150 179 158 167 167 154 179 150 196 150 212 150 229 154 242 171 254L408 500 167 742C138 771 138 800 167 829 196 858 225 858 254 829L496 587 738 829C750 842 767 846 783 846 800 846 817 842 829 829 842 817 846 804 846 783 846 767 842 750 829 737L588 500 833 258C863 229 863 200 833 171 804 137 775 137 742 167Z"></path></svg>		</div>
+					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-6398094e" class="elementor-nav-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5683"><a class="elementor-item" tabindex="-1">Productos</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8350"><a href="https://inthegrasoftware.com/healthcare-software/" class="elementor-sub-item" tabindex="-1">HealthCare Software</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8349"><a href="https://inthegrasoftware.com/credit-financial-software/" class="elementor-sub-item" tabindex="-1">Credit &amp; Financial Software</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8390"><a href="https://inthegrasoftware.com/retail-software/" class="elementor-sub-item" tabindex="-1">Retail Software</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-has-children menu-item-5684"><a href="https://inthegrasoftware.com/oracle-services/" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Servicios</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8682"><a class="elementor-sub-item" tabindex="-1">Desarrollo a Medida</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8683"><a class="elementor-sub-item" tabindex="-1">ModernizaciÃ³n de Oracle Forms &#038; Reports</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8684"><a class="elementor-sub-item" tabindex="-1">Oracle Cloud Infrastructure</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8685"><a class="elementor-sub-item" tabindex="-1">Oracle Analytics</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-8556"><a href="https://inthegrasoftware.com/soluciones/" class="elementor-item" tabindex="-1">Soluciones</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8686"><a href="https://inthegrasoftware.com/crm/" class="elementor-sub-item" tabindex="-1">CRM</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8687"><a href="https://inthegrasoftware.com/rrhh/" class="elementor-sub-item" tabindex="-1">RRHH</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8688"><a href="https://inthegrasoftware.com/wms/" class="elementor-sub-item" tabindex="-1">WMS</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8689"><a class="elementor-sub-item" tabindex="-1">Chatbot</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8690"><a class="elementor-sub-item" tabindex="-1">Onboarding Digital</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8691"><a class="elementor-sub-item" tabindex="-1">Reconocimiento Facial</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8692"><a class="elementor-sub-item" tabindex="-1">Pago QR</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8557"><a href="https://inthegrasoftware.com/people-culture/" class="elementor-item" tabindex="-1">People &amp; Culture</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5687"><a href="https://inthegrasoftware.com/casos-de-exitos/" class="elementor-item" tabindex="-1">Casos</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5688"><a href="https://inthegrasoftware.com/blog/" class="elementor-item" tabindex="-1">Blog</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-4c4e2ba9 e-con-full elementor-hidden-mobile e-flex e-con e-child" data-id="4c4e2ba9" data-element_type="container" data-settings="{"_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+				<div class="elementor-element elementor-element-60f227b6 elementor-button-info elementor-align-center ob-has-background-overlay elementor-widget elementor-widget-button" data-id="60f227b6" data-element_type="widget" data-settings="{"_ob_butterbutton_use_it":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="button.default">
+										<a class="elementor-button elementor-button-link elementor-size-sm" href="#Form">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Contacto</span>
+					</span>
+					</a>
+								</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</header>
+		
+<main id="content" class="site-main post-7500 page type-page status-publish hentry">
+
+	
+	<div class="page-content">
+				<div data-elementor-type="wp-page" data-elementor-id="7500" class="elementor elementor-7500" data-elementor-post-type="page">
+				<div class="elementor-element elementor-element-4fe14be2 e-con-full e-flex e-con e-parent" data-id="4fe14be2" data-element_type="container" data-settings="{"background_background":"classic","background_motion_fx_motion_fx_mouse":"yes","background_motion_fx_mouseTrack_effect":"yes","background_motion_fx_mouseTrack_direction":"negative","background_motion_fx_mouseTrack_speed":{"unit":"px","size":0.3,"sizes":[]},"_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+		<div class="elementor-element elementor-element-75a8a200 e-flex e-con-boxed e-con e-child" data-id="75a8a200" data-element_type="container" data-settings="{"_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-18fc68ba e-con-full e-flex e-con e-child" data-id="18fc68ba" data-element_type="container" data-settings="{"_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+				<div class="elementor-element elementor-element-5ed58baf ob-harakiri-inherit elementor-invisible ob-has-background-overlay elementor-widget elementor-widget-heading" data-id="5ed58baf" data-element_type="widget" data-settings="{"_animation":"fadeInLeft","_ob_use_harakiri":"yes","_ob_harakiri_writing_mode":"inherit","_ob_harakiri_text_clip":"none","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="heading.default">
+					<h1 class="elementor-heading-title elementor-size-default">Oracle Services</h1>				</div>
+				<div class="elementor-element elementor-element-5ccbf02 ob-harakiri-inherit elementor-invisible ob-has-background-overlay elementor-widget elementor-widget-text-editor" data-id="5ccbf02" data-element_type="widget" data-settings="{"_animation":"fadeInLeft","_animation_delay":200,"_ob_use_harakiri":"yes","_ob_harakiri_writing_mode":"inherit","_ob_postman_use":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="text-editor.default">
+									<p>Ofrecemos servicios profesionales especializados en tecnologÃ­as Oracle, ayudando a las organizaciones a modernizar sus plataformas y potenciar sus capacidades tecnolÃ³gicas mediante soluciones seguras, escalables y basadas en las mejores prÃ¡cticas de Oracle.</p><p><span style="font-weight: 400;">Trabajamos en toda la cadena de valor tecnolÃ³gica de Oracle, desde la extensiÃ³n y adaptaciÃ³n de aplicaciones existentes, hasta la migraciÃ³n a la nube, el desarrollo de soluciones a medida y la modernizaciÃ³n de sistemas legados.</span></p>								</div>
+				<div class="elementor-element elementor-element-681def36 elementor-tablet-align-center elementor-mobile-align-center elementor-invisible ob-has-background-overlay elementor-widget elementor-widget-button" data-id="681def36" data-element_type="widget" data-settings="{"_animation":"fadeInUp","_animation_delay":400,"_ob_butterbutton_use_it":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="button.default">
+										<a class="elementor-button elementor-button-link elementor-size-sm" href="#Form">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Conocenos</span>
+					</span>
+					</a>
+								</div>
+				</div>
+		<div class="elementor-element elementor-element-4eb2efbd e-con-full e-flex elementor-invisible e-con e-child" data-id="4eb2efbd" data-element_type="container" data-settings="{"animation":"fadeIn","_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+				<div class="elementor-element elementor-element-31f1da0c ob-has-background-overlay elementor-widget elementor-widget-image" data-id="31f1da0c" data-element_type="widget" data-settings="{"_ob_photomorph_use":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="image.default">
+															<img data-od-removed-fetchpriority="high" data-od-replaced-sizes="(max-width: 1536px) 100vw, 1536px" data-od-xpath="/HTML/BODY/MAIN[@id=&apos;content&apos;]/*[1][self::DIV]/*[1][self::DIV]/*[1][self::DIV]/*[1][self::DIV]/*[1][self::DIV]/*[2][self::DIV]/*[1][self::DIV]/*[1][self::IMG]"  decoding="async" width="1536" height="1024" src="https://inthegrasoftware.com/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-16-at-4.24.58-PM.webp" class="attachment-2048x2048 size-2048x2048 wp-image-9087" alt="" srcset="https://inthegrasoftware.com/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-16-at-4.24.58-PM.webp 1536w, https://inthegrasoftware.com/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-16-at-4.24.58-PM-300x200.webp 300w, https://inthegrasoftware.com/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-16-at-4.24.58-PM-1024x683.webp 1024w, https://inthegrasoftware.com/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-16-at-4.24.58-PM-768x512.webp 768w" sizes="(width &lt;= 480px) 351px, (782px &lt; width) 540px, (max-width: 1536px) 100vw, 1536px" />															</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-45dd6010 e-con-full e-flex e-con e-parent" data-id="45dd6010" data-element_type="container" data-settings="{"background_background":"video","background_video_link":"https:\/\/inthegrasoftware.com\/wp-content\/uploads\/2026\/02\/Fondo_cuerpo_ITG-1.mp4","_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+		<div class="elementor-background-video-container elementor-hidden-mobile" aria-hidden="true">
+							<video data-od-xpath="/HTML/BODY/MAIN[@id=&apos;content&apos;]/*[1][self::DIV]/*[1][self::DIV]/*[2][self::DIV]/*[1][self::DIV]/*[1][self::VIDEO]" class="elementor-background-video-hosted" autoplay muted playsinline loop></video>
+					</div><div class="elementor-element elementor-element-132cb46f e-con-full e-flex e-con e-child" data-id="132cb46f" data-element_type="container" data-settings="{"_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+				<div class="elementor-element elementor-element-51be2a87 ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-heading" data-id="51be2a87" data-element_type="widget" data-settings="{"_ob_use_harakiri":"yes","_ob_harakiri_writing_mode":"inherit","_ob_harakiri_text_clip":"none","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">NUESTROS SERVICIOS</h2>				</div>
+		<div class="elementor-element elementor-element-0aa0aab elementor-hidden-tablet elementor-hidden-mobile e-con-full e-flex e-con e-child" data-id="0aa0aab" data-element_type="container" data-settings="{"_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+		<a class="elementor-element elementor-element-9e77ef1 e-con-full magic-card e-flex elementor-invisible e-con e-child" data-id="9e77ef1" data-element_type="container" data-settings="{"animation":"fadeInUp","animation_delay":0,"_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+				<div class="elementor-element elementor-element-148d897 ob-has-background-overlay elementor-widget elementor-widget-image" data-id="148d897" data-element_type="widget" data-settings="{"_ob_photomorph_use":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="image.default">
+															<img data-od-xpath="/HTML/BODY/MAIN[@id=&apos;content&apos;]/*[1][self::DIV]/*[1][self::DIV]/*[2][self::DIV]/*[2][self::DIV]/*[2][self::DIV]/*[1][self::A]/*[1][self::DIV]/*[1][self::IMG]" loading="lazy" decoding="async" width="154" height="131" src="https://inthegrasoftware.com/wp-content/uploads/2026/02/desarrollo-a-medida.svg" class="attachment-large size-large wp-image-7886" alt="" />															</div>
+				<div class="elementor-element elementor-element-0129a31 ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-heading" data-id="0129a31" data-element_type="widget" data-settings="{"_ob_use_harakiri":"yes","_ob_harakiri_writing_mode":"inherit","_ob_harakiri_text_clip":"none","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">Desarrollo a Medida</h3>				</div>
+				<div class="elementor-element elementor-element-8fc4a8b ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-text-editor" data-id="8fc4a8b" data-element_type="widget" data-settings="{"_ob_use_harakiri":"yes","_ob_harakiri_writing_mode":"inherit","_ob_postman_use":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="text-editor.default">
+									<p>Desarrollamos el software que tu negocio necesita. Creamos soluciones a medida con tecnologÃ­a Oracle Low-Code para que tu empresa sea mÃ¡s Ã¡gil, escalable y competitiva.</p><p><strong>Ver mÃ¡s&#8230;</strong></p>								</div>
+				</a>
+		<a class="elementor-element elementor-element-a63791e e-con-full magic-card e-flex elementor-invisible e-con e-child" data-id="a63791e" data-element_type="container" data-settings="{"animation":"fadeInUp","animation_delay":200,"_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+				<div class="elementor-element elementor-element-b87d423 ob-has-background-overlay elementor-widget elementor-widget-image" data-id="b87d423" data-element_type="widget" data-settings="{"_ob_photomorph_use":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="image.default">
+															<img data-od-xpath="/HTML/BODY/MAIN[@id=&apos;content&apos;]/*[1][self::DIV]/*[1][self::DIV]/*[2][self::DIV]/*[2][self::DIV]/*[2][self::DIV]/*[2][self::A]/*[1][self::DIV]/*[1][self::IMG]" loading="lazy" decoding="async" width="145" height="129" src="https://inthegrasoftware.com/wp-content/uploads/2026/02/Forms-y-reports.svg" class="attachment-large size-large wp-image-7898" alt="" />															</div>
+				<div class="elementor-element elementor-element-bf81dda ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-heading" data-id="bf81dda" data-element_type="widget" data-settings="{"_ob_use_harakiri":"yes","_ob_harakiri_writing_mode":"inherit","_ob_harakiri_text_clip":"none","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">ModernizaciÃ³n de Oracle Forms &amp; Reports</h3>				</div>
+				<div class="elementor-element elementor-element-a85deab ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-text-editor" data-id="a85deab" data-element_type="widget" data-settings="{"_ob_use_harakiri":"yes","_ob_harakiri_writing_mode":"inherit","_ob_postman_use":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="text-editor.default">
+									<p>ActualizÃ¡ sistemas obsoletos a soluciones modernas con Oracle APEX. Mejora procesos, reduce costos y aumenta la competitividad.</p><p><strong>Ver mÃ¡s&#8230;</strong></p>								</div>
+				</a>
+		<a class="elementor-element elementor-element-3f714cf e-con-full magic-card e-flex elementor-invisible e-con e-child" data-id="3f714cf" data-element_type="container" data-settings="{"animation":"fadeInUp","animation_delay":400,"_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+				<div class="elementor-element elementor-element-e60d6c7 ob-has-background-overlay elementor-widget elementor-widget-image" data-id="e60d6c7" data-element_type="widget" data-settings="{"_ob_photomorph_use":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="image.default">
+															<img data-od-xpath="/HTML/BODY/MAIN[@id=&apos;content&apos;]/*[1][self::DIV]/*[1][self::DIV]/*[2][self::DIV]/*[2][self::DIV]/*[2][self::DIV]/*[3][self::A]/*[1][self::DIV]/*[1][self::IMG]" loading="lazy" decoding="async" width="164" height="129" src="https://inthegrasoftware.com/wp-content/uploads/2026/02/oracle-infrastructure.svg" class="attachment-large size-large wp-image-7887" alt="" />															</div>
+				<div class="elementor-element elementor-element-241124f ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-heading" data-id="241124f" data-element_type="widget" data-settings="{"_ob_use_harakiri":"yes","_ob_harakiri_writing_mode":"inherit","_ob_harakiri_text_clip":"none","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">Oracle Cloud Infrastructure</h3>				</div>
+				<div class="elementor-element elementor-element-f9d17d7 ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-text-editor" data-id="f9d17d7" data-element_type="widget" data-settings="{"_ob_use_harakiri":"yes","_ob_harakiri_writing_mode":"inherit","_ob_postman_use":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="text-editor.default">
+									<p>MÃ¡s rendimiento, menos costo.<br />MigrÃ¡ tus cargas a Oracle Cloud Infrastructure con la seguridad, escalabilidad y performance que tu negocio necesita.</p><p><strong>Ver mÃ¡s&#8230;</strong></p>								</div>
+				</a>
+		<div class="elementor-element elementor-element-5b86d0a e-con-full magic-card e-flex elementor-invisible e-con e-child" data-id="5b86d0a" data-element_type="container" data-settings="{"animation":"fadeInUp","animation_delay":600,"_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+				<div class="elementor-element elementor-element-ab0755c ob-has-background-overlay elementor-widget elementor-widget-image" data-id="ab0755c" data-element_type="widget" data-settings="{"_ob_photomorph_use":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="image.default">
+															<img data-od-added-fetchpriority data-od-removed-loading="lazy" data-od-xpath="/HTML/BODY/MAIN[@id=&apos;content&apos;]/*[1][self::DIV]/*[1][self::DIV]/*[2][self::DIV]/*[2][self::DIV]/*[2][self::DIV]/*[4][self::DIV]/*[1][self::DIV]/*[1][self::IMG]" fetchpriority="low"  decoding="async" width="158" height="91" src="https://inthegrasoftware.com/wp-content/uploads/2026/02/Oracle-analytics.svg" class="attachment-large size-large wp-image-7888" alt="" />															</div>
+				<div class="elementor-element elementor-element-ea1fa93 ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-heading" data-id="ea1fa93" data-element_type="widget" data-settings="{"_ob_use_harakiri":"yes","_ob_harakiri_writing_mode":"inherit","_ob_harakiri_text_clip":"none","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">Oracle Analytics</h3>				</div>
+				<div class="elementor-element elementor-element-a65ffca ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-text-editor" data-id="a65ffca" data-element_type="widget" data-settings="{"_ob_use_harakiri":"yes","_ob_harakiri_writing_mode":"inherit","_ob_postman_use":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="text-editor.default">
+									<div class="message__5126c cozyMessage__5126c wrapper_c19a55 cozy_c19a55 zalgo_c19a55" tabindex="-1" role="article" data-list-item-id="chat-messages___chat-messages-1015386594070503455-1470435862041989303" aria-setsize="-1" aria-roledescription="Message" aria-labelledby="message-username-1470435837526278174 uid_1 message-content-1470435862041989303 uid_2 message-timestamp-1470435862041989303"><p>AnalizÃ¡, visualizÃ¡ y comprendÃ© los datos de tu negocio desde una Ãºnica plataforma combinando analÃ­tica avanzada, visualizaciones interactivas e inteligencia artificial.</p><p><strong>Ver mÃ¡s&#8230;</strong></p></div>								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-7f06d6a4 e-grid e-con-full elementor-hidden-desktop e-con e-child" data-id="7f06d6a4" data-element_type="container" data-settings="{"_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+		<a class="elementor-element elementor-element-2b7411f7 e-con-full e-flex e-con e-child" data-id="2b7411f7" data-element_type="container" data-settings="{"background_background":"classic","_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}" href="https://inthegrasoftware.com/itg-desarrollo-a-medida/">
+				<div class="elementor-element elementor-element-6e35df35 ob-has-background-overlay elementor-widget elementor-widget-image" data-id="6e35df35" data-element_type="widget" data-settings="{"_ob_photomorph_use":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="image.default">
+															<img data-od-added-fetchpriority data-od-removed-loading="lazy" data-od-xpath="/HTML/BODY/MAIN[@id=&apos;content&apos;]/*[1][self::DIV]/*[1][self::DIV]/*[2][self::DIV]/*[2][self::DIV]/*[3][self::DIV]/*[1][self::A]/*[1][self::DIV]/*[1][self::IMG]" fetchpriority="low"  decoding="async" width="154" height="131" src="https://inthegrasoftware.com/wp-content/uploads/2026/02/desarrollo-a-medida.svg" class="attachment-large size-large wp-image-7886" alt="" />															</div>
+				<div class="elementor-element elementor-element-1575c7e9 ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-heading" data-id="1575c7e9" data-element_type="widget" data-settings="{"_ob_use_harakiri":"yes","_ob_harakiri_writing_mode":"inherit","_ob_harakiri_text_clip":"none","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">Desarrollo a Medida</h3>				</div>
+				<div class="elementor-element elementor-element-f1d0e81 ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-text-editor" data-id="f1d0e81" data-element_type="widget" data-settings="{"_ob_use_harakiri":"yes","_ob_harakiri_writing_mode":"inherit","_ob_postman_use":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="text-editor.default">
+									<p>Desarrollamos el software que tu negocio necesita. Creamos soluciones a medida con tecnologÃ­a Oracle Low-Code para que tu empresa sea mÃ¡s Ã¡gil, escalable y competitiva. <strong>Ver mÃ¡s&#8230;</strong></p>								</div>
+				</a>
+		<a class="elementor-element elementor-element-41b81309 e-con-full e-flex e-con e-child" data-id="41b81309" data-element_type="container" data-settings="{"background_background":"classic","_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}" href="https://inthegrasoftware.com/itg-modernizacion/">
+				<div class="elementor-element elementor-element-1258adc3 ob-has-background-overlay elementor-widget elementor-widget-image" data-id="1258adc3" data-element_type="widget" data-settings="{"_ob_photomorph_use":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="image.default">
+															<img data-od-added-fetchpriority data-od-removed-loading="lazy" data-od-xpath="/HTML/BODY/MAIN[@id=&apos;content&apos;]/*[1][self::DIV]/*[1][self::DIV]/*[2][self::DIV]/*[2][self::DIV]/*[3][self::DIV]/*[2][self::A]/*[1][self::DIV]/*[1][self::IMG]" fetchpriority="low"  decoding="async" width="145" height="129" src="https://inthegrasoftware.com/wp-content/uploads/2026/02/Forms-y-reports.svg" class="attachment-large size-large wp-image-7898" alt="" />															</div>
+				<div class="elementor-element elementor-element-1e65bfaf ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-heading" data-id="1e65bfaf" data-element_type="widget" data-settings="{"_ob_use_harakiri":"yes","_ob_harakiri_writing_mode":"inherit","_ob_harakiri_text_clip":"none","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">ModernizaciÃ³n de Oracle Forms &amp; Reports</h3>				</div>
+				<div class="elementor-element elementor-element-de81386 ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-text-editor" data-id="de81386" data-element_type="widget" data-settings="{"_ob_use_harakiri":"yes","_ob_harakiri_writing_mode":"inherit","_ob_postman_use":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="text-editor.default">
+									<p>ActualizÃ¡ sistemas obsoletos a soluciones modernas con Oracle APEX. Mejora procesos, reduce costos y aumenta la competitividad. <strong>Ver mÃ¡s&#8230;</strong></p>								</div>
+				</a>
+		<a class="elementor-element elementor-element-6a466ba8 e-con-full e-flex e-con e-child" data-id="6a466ba8" data-element_type="container" data-settings="{"background_background":"classic","_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}" href="https://inthegrasoftware.com/itg-oci/">
+				<div class="elementor-element elementor-element-300f768a ob-has-background-overlay elementor-widget elementor-widget-image" data-id="300f768a" data-element_type="widget" data-settings="{"_ob_photomorph_use":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="image.default">
+															<img data-od-added-fetchpriority data-od-removed-loading="lazy" data-od-xpath="/HTML/BODY/MAIN[@id=&apos;content&apos;]/*[1][self::DIV]/*[1][self::DIV]/*[2][self::DIV]/*[2][self::DIV]/*[3][self::DIV]/*[3][self::A]/*[1][self::DIV]/*[1][self::IMG]" fetchpriority="low"  decoding="async" width="164" height="129" src="https://inthegrasoftware.com/wp-content/uploads/2026/02/oracle-infrastructure.svg" class="attachment-large size-large wp-image-7887" alt="" />															</div>
+				<div class="elementor-element elementor-element-14a3431e ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-heading" data-id="14a3431e" data-element_type="widget" data-settings="{"_ob_use_harakiri":"yes","_ob_harakiri_writing_mode":"inherit","_ob_harakiri_text_clip":"none","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">Oracle Cloud Infrastructure</h3>				</div>
+				<div class="elementor-element elementor-element-471dac1f ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-text-editor" data-id="471dac1f" data-element_type="widget" data-settings="{"_ob_use_harakiri":"yes","_ob_harakiri_writing_mode":"inherit","_ob_postman_use":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="text-editor.default">
+									<p>Infraestructura Oracle Cloud: mÃ¡s rendimiento, menos costo.<br />MigrÃ¡ tus cargas a Oracle Cloud Infrastructure con la seguridad, escalabilidad y performance que tu negocio necesita. Nosotros lo hacemos simple. <strong>Ver mÃ¡s&#8230;</strong></p>								</div>
+				</a>
+		<div class="elementor-element elementor-element-3f337730 e-con-full e-flex e-con e-child" data-id="3f337730" data-element_type="container" data-settings="{"background_background":"classic","_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+				<div class="elementor-element elementor-element-5e38ff79 ob-has-background-overlay elementor-widget elementor-widget-image" data-id="5e38ff79" data-element_type="widget" data-settings="{"_ob_photomorph_use":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="image.default">
+															<img data-od-added-fetchpriority data-od-removed-loading="lazy" data-od-xpath="/HTML/BODY/MAIN[@id=&apos;content&apos;]/*[1][self::DIV]/*[1][self::DIV]/*[2][self::DIV]/*[2][self::DIV]/*[3][self::DIV]/*[4][self::DIV]/*[1][self::DIV]/*[1][self::IMG]" fetchpriority="low"  decoding="async" width="158" height="91" src="https://inthegrasoftware.com/wp-content/uploads/2026/02/Oracle-analytics.svg" class="attachment-large size-large wp-image-7888" alt="" />															</div>
+				<div class="elementor-element elementor-element-21902ae2 ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-heading" data-id="21902ae2" data-element_type="widget" data-settings="{"_ob_use_harakiri":"yes","_ob_harakiri_writing_mode":"inherit","_ob_harakiri_text_clip":"none","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">Oracle Analytics</h3>				</div>
+				<div class="elementor-element elementor-element-1b2e8df7 ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-text-editor" data-id="1b2e8df7" data-element_type="widget" data-settings="{"_ob_use_harakiri":"yes","_ob_harakiri_writing_mode":"inherit","_ob_postman_use":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="text-editor.default">
+									<div class="message__5126c cozyMessage__5126c wrapper_c19a55 cozy_c19a55 zalgo_c19a55" tabindex="-1" role="article" data-list-item-id="chat-messages___chat-messages-1015386594070503455-1470435885026644048" aria-setsize="-1" aria-roledescription="Message" aria-labelledby="message-username-1470435837526278174 uid_1 message-content-1470435885026644048 uid_2 message-timestamp-1470435885026644048"><div class="contents_c19a55"><div id="message-content-1470435885026644048" class="markup__75297 messageContent_c19a55">AnalizÃ¡, visualizÃ¡ y comprendÃ© los datos de tu negocio desde una Ãºnica plataforma combinando analÃ­tica avanzada, visualizaciones interactivas e inteligencia artificial. <strong>Ver mÃ¡s&#8230;</strong></div></div></div>								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-b71a24b elementor-hidden-mobile e-flex e-con-boxed e-con e-child" data-id="b71a24b" data-element_type="container" data-settings="{"_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-889d780 ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-heading" data-id="889d780" data-element_type="widget" data-settings="{"_ob_use_harakiri":"yes","_ob_harakiri_writing_mode":"inherit","_ob_harakiri_text_clip":"none","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">NUESTRO DIFERENCIAL</h2>				</div>
+		<div class="elementor-element elementor-element-92f6582 e-con-full e-flex e-con e-child" data-id="92f6582" data-element_type="container" data-settings="{"motion_fx_motion_fx_scrolling":"yes","motion_fx_translateY_effect":"yes","motion_fx_translateY_direction":"negative","motion_fx_translateY_speed":{"unit":"px","size":2,"sizes":[]},"motion_fx_translateY_affectedRange":{"unit":"%","size":"","sizes":{"start":50,"end":85}},"motion_fx_devices":["desktop"],"_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+		<div class="elementor-element elementor-element-12f4a40 e-con-full e-flex elementor-invisible e-con e-child" data-id="12f4a40" data-element_type="container" data-settings="{"animation":"fadeInLeft","_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+				<div class="elementor-element elementor-element-73d0761 ob-has-background-overlay elementor-widget elementor-widget-image" data-id="73d0761" data-element_type="widget" data-settings="{"_ob_photomorph_use":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="image.default">
+															<img data-od-added-fetchpriority data-od-removed-loading="lazy" data-od-replaced-sizes="(max-width: 800px) 100vw, 800px" data-od-xpath="/HTML/BODY/MAIN[@id=&apos;content&apos;]/*[1][self::DIV]/*[1][self::DIV]/*[2][self::DIV]/*[3][self::DIV]/*[1][self::DIV]/*[2][self::DIV]/*[1][self::DIV]/*[1][self::DIV]/*[1][self::IMG]" fetchpriority="low"  decoding="async" width="800" height="155" src="https://inthegrasoftware.com/wp-content/uploads/2026/02/Beneficio1-1024x198.webp" class="attachment-large size-large wp-image-7574" alt="Beneficio 1" srcset="https://inthegrasoftware.com/wp-content/uploads/2026/02/Beneficio1-1024x198.webp 1024w, https://inthegrasoftware.com/wp-content/uploads/2026/02/Beneficio1-300x58.webp 300w, https://inthegrasoftware.com/wp-content/uploads/2026/02/Beneficio1-768x149.webp 768w, https://inthegrasoftware.com/wp-content/uploads/2026/02/Beneficio1-1536x297.webp 1536w, https://inthegrasoftware.com/wp-content/uploads/2026/02/Beneficio1.webp 1622w" sizes="(width &lt;= 480px) 331px, (782px &lt; width) 770px, (max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-7bc908c e-con-full e-flex elementor-invisible e-con e-child" data-id="7bc908c" data-element_type="container" data-settings="{"animation":"fadeInLeft","animation_delay":200,"_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+				<div class="elementor-element elementor-element-f9e082a ob-has-background-overlay elementor-widget elementor-widget-image" data-id="f9e082a" data-element_type="widget" data-settings="{"_ob_photomorph_use":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="image.default">
+															<img data-od-added-fetchpriority data-od-removed-loading="lazy" data-od-replaced-sizes="(max-width: 800px) 100vw, 800px" data-od-xpath="/HTML/BODY/MAIN[@id=&apos;content&apos;]/*[1][self::DIV]/*[1][self::DIV]/*[2][self::DIV]/*[3][self::DIV]/*[1][self::DIV]/*[2][self::DIV]/*[2][self::DIV]/*[1][self::DIV]/*[1][self::IMG]" fetchpriority="low"  decoding="async" width="800" height="155" src="https://inthegrasoftware.com/wp-content/uploads/2026/02/Beneficio2-1024x198.webp" class="attachment-large size-large wp-image-7575" alt="" srcset="https://inthegrasoftware.com/wp-content/uploads/2026/02/Beneficio2-1024x198.webp 1024w, https://inthegrasoftware.com/wp-content/uploads/2026/02/Beneficio2-300x58.webp 300w, https://inthegrasoftware.com/wp-content/uploads/2026/02/Beneficio2-768x148.webp 768w, https://inthegrasoftware.com/wp-content/uploads/2026/02/Beneficio2-1536x296.webp 1536w, https://inthegrasoftware.com/wp-content/uploads/2026/02/Beneficio2.webp 1622w" sizes="(width &lt;= 480px) 331px, (782px &lt; width) 770px, (max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-156a8df e-con-full e-flex elementor-invisible e-con e-child" data-id="156a8df" data-element_type="container" data-settings="{"animation":"fadeInLeft","animation_delay":400,"_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+				<div class="elementor-element elementor-element-8638172 ob-has-background-overlay elementor-widget elementor-widget-image" data-id="8638172" data-element_type="widget" data-settings="{"_ob_photomorph_use":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="image.default">
+															<img data-od-added-fetchpriority data-od-removed-loading="lazy" data-od-replaced-sizes="(max-width: 800px) 100vw, 800px" data-od-xpath="/HTML/BODY/MAIN[@id=&apos;content&apos;]/*[1][self::DIV]/*[1][self::DIV]/*[2][self::DIV]/*[3][self::DIV]/*[1][self::DIV]/*[2][self::DIV]/*[3][self::DIV]/*[1][self::DIV]/*[1][self::IMG]" fetchpriority="low"  decoding="async" width="800" height="155" src="https://inthegrasoftware.com/wp-content/uploads/2026/02/Beneficio3-1024x198.webp" class="attachment-large size-large wp-image-7573" alt="" srcset="https://inthegrasoftware.com/wp-content/uploads/2026/02/Beneficio3-1024x198.webp 1024w, https://inthegrasoftware.com/wp-content/uploads/2026/02/Beneficio3-300x58.webp 300w, https://inthegrasoftware.com/wp-content/uploads/2026/02/Beneficio3-768x149.webp 768w, https://inthegrasoftware.com/wp-content/uploads/2026/02/Beneficio3-1536x297.webp 1536w, https://inthegrasoftware.com/wp-content/uploads/2026/02/Beneficio3.webp 1622w" sizes="(width &lt;= 480px) 331px, (782px &lt; width) 770px, (max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-adea492 elementor-hidden-desktop elementor-hidden-tablet e-flex e-con-boxed e-con e-child" data-id="adea492" data-element_type="container" data-settings="{"_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-c4a3b06 ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-heading" data-id="c4a3b06" data-element_type="widget" data-settings="{"_ob_use_harakiri":"yes","_ob_harakiri_writing_mode":"inherit","_ob_harakiri_text_clip":"none","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">NUESTRO DIFERENCIAL</h2>				</div>
+		<div class="elementor-element elementor-element-aeb070d e-con-full e-flex e-con e-child" data-id="aeb070d" data-element_type="container" data-settings="{"motion_fx_motion_fx_scrolling":"yes","motion_fx_translateY_effect":"yes","motion_fx_translateY_direction":"negative","motion_fx_translateY_speed":{"unit":"px","size":2,"sizes":[]},"motion_fx_translateY_affectedRange":{"unit":"%","size":"","sizes":{"start":50,"end":85}},"motion_fx_devices":["desktop"],"_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+		<div class="elementor-element elementor-element-4c61ea3 e-con-full e-flex elementor-invisible e-con e-child" data-id="4c61ea3" data-element_type="container" data-settings="{"animation":"fadeInLeft","_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+				<div class="elementor-element elementor-element-094dcbb ob-has-background-overlay elementor-widget elementor-widget-image" data-id="094dcbb" data-element_type="widget" data-settings="{"_ob_photomorph_use":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="image.default">
+															<img data-od-added-fetchpriority data-od-removed-loading="lazy" data-od-xpath="/HTML/BODY/MAIN[@id=&apos;content&apos;]/*[1][self::DIV]/*[1][self::DIV]/*[2][self::DIV]/*[4][self::DIV]/*[1][self::DIV]/*[2][self::DIV]/*[1][self::DIV]/*[1][self::DIV]/*[1][self::IMG]" fetchpriority="low"  decoding="async" width="800" height="327" src="https://inthegrasoftware.com/wp-content/uploads/2026/03/beneficio1.svg" class="attachment-large size-large wp-image-9081" alt="" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-596138e e-con-full e-flex elementor-invisible e-con e-child" data-id="596138e" data-element_type="container" data-settings="{"animation":"fadeInLeft","animation_delay":200,"_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+				<div class="elementor-element elementor-element-2c74092 ob-has-background-overlay elementor-widget elementor-widget-image" data-id="2c74092" data-element_type="widget" data-settings="{"_ob_photomorph_use":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="image.default">
+															<img data-od-added-fetchpriority data-od-removed-loading="lazy" data-od-xpath="/HTML/BODY/MAIN[@id=&apos;content&apos;]/*[1][self::DIV]/*[1][self::DIV]/*[2][self::DIV]/*[4][self::DIV]/*[1][self::DIV]/*[2][self::DIV]/*[2][self::DIV]/*[1][self::DIV]/*[1][self::IMG]" fetchpriority="low"  decoding="async" width="800" height="327" src="https://inthegrasoftware.com/wp-content/uploads/2026/03/beneficio2.svg" class="attachment-large size-large wp-image-9082" alt="" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-97fd168 e-con-full e-flex elementor-invisible e-con e-child" data-id="97fd168" data-element_type="container" data-settings="{"animation":"fadeInLeft","animation_delay":400,"_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+				<div class="elementor-element elementor-element-fcc9891 ob-has-background-overlay elementor-widget elementor-widget-image" data-id="fcc9891" data-element_type="widget" data-settings="{"_ob_photomorph_use":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="image.default">
+															<img data-od-added-fetchpriority data-od-removed-loading="lazy" data-od-xpath="/HTML/BODY/MAIN[@id=&apos;content&apos;]/*[1][self::DIV]/*[1][self::DIV]/*[2][self::DIV]/*[4][self::DIV]/*[1][self::DIV]/*[2][self::DIV]/*[3][self::DIV]/*[1][self::DIV]/*[1][self::IMG]" fetchpriority="low"  decoding="async" width="800" height="327" src="https://inthegrasoftware.com/wp-content/uploads/2026/03/beneficio3.svg" class="attachment-large size-large wp-image-9083" alt="" />															</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-49d9fd0a e-con-full e-flex e-con e-parent" data-id="49d9fd0a" data-element_type="container" id="Form" data-settings="{"background_background":"classic","_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+				<div class="elementor-element elementor-element-3096b6f ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-heading" data-id="3096b6f" data-element_type="widget" data-settings="{"_ob_use_harakiri":"yes","_ob_harakiri_writing_mode":"inherit","_ob_harakiri_text_clip":"none","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">PreparÃ¡ tu empresa para el futuro.</h2>				</div>
+				<div class="elementor-element elementor-element-7028bbad ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-heading" data-id="7028bbad" data-element_type="widget" data-settings="{"_ob_use_harakiri":"yes","_ob_harakiri_writing_mode":"inherit","_ob_harakiri_text_clip":"none","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="heading.default">
+					<p class="elementor-heading-title elementor-size-default">Conectemos y descubrÃ­ cÃ³mo podemos optimizar tu operaciÃ³n con tecnologÃ­a Oracle.</p>				</div>
+				<div class="elementor-element elementor-element-74f8a2c8 elementor-widget__width-initial elementor-widget-tablet__width-auto ob-has-background-overlay elementor-widget elementor-widget-html" data-id="74f8a2c8" data-element_type="widget" data-settings="{"_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="html.default">
+					<script>!function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"1526499",hash:"c83a3e80ae1763b5c9eb3488b3765191",locale:"es"}),a[o+m]=a[o+m]||function(f,k){a[o+m].f=(a[o+m].f||[]).concat([[f,k]])}}(window,0,"amo_forms_","params","load","loaded");</script><script id="amoforms_script_1526499" async="async" charset="utf-8" src="https://forms.kommo.com/forms/assets/js/amoforms.js?1749482923"></script>				</div>
+				</div>
+				</div>
+		
+		
+			</div>
+
+	
+</main>
+
+			<footer data-elementor-type="footer" data-elementor-id="95" class="elementor elementor-95 elementor-location-footer" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-db55152 e-flex e-con-boxed e-con e-parent" data-id="db55152" data-element_type="container" data-settings="{"background_background":"classic","_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-cfc4404 e-con-full e-flex e-con e-child" data-id="cfc4404" data-element_type="container" data-settings="{"_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+				<div class="elementor-element elementor-element-3a01fae elementor-widget-tablet__width-initial ob-has-background-overlay elementor-widget elementor-widget-image" data-id="3a01fae" data-element_type="widget" data-settings="{"_ob_photomorph_use":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="image.default">
+															<img data-od-added-loading data-od-replaced-sizes="(max-width: 384px) 100vw, 384px" data-od-xpath="/HTML/BODY/FOOTER[@class=&apos;elementor elementor-95 elementor-location-footer&apos;]/*[1][self::DIV]/*[1][self::DIV]/*[1][self::DIV]/*[1][self::DIV]/*[1][self::IMG]" loading="lazy" width="384" height="71" src="https://inthegrasoftware.com/wp-content/uploads/2024/12/logo-footer.png" class="attachment-large size-large wp-image-97" alt="" srcset="https://inthegrasoftware.com/wp-content/uploads/2024/12/logo-footer.png 384w, https://inthegrasoftware.com/wp-content/uploads/2024/12/logo-footer-300x55.png 300w" sizes="auto, (max-width: 384px) 100vw, 384px" />															</div>
+				<div class="elementor-element elementor-element-869c881 elementor-widget__width-initial ob-has-background-overlay elementor-widget elementor-widget-search" data-id="869c881" data-element_type="widget" data-settings="{"submit_trigger":"click_submit","pagination_type_options":"none","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="search.default">
+							<search class="e-search hidden" role="search">
+			<form class="e-search-form" action="https://inthegrasoftware.com" method="get">
+
+				
+				<label class="e-search-label" for="search-869c881">
+					<span class="elementor-screen-only">
+						Search					</span>
+									</label>
+
+				<div class="e-search-input-wrapper">
+					<input id="search-869c881" placeholder="Escribe para buscar" class="e-search-input" type="search" name="s" value="" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="results-869c881" aria-haspopup="listbox">
+					<svg aria-hidden="true" class="e-font-icon-svg e-fas-times" viewBox="0 0 352 512" xmlns="http://www.w3.org/2000/svg"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>										<output id="results-869c881" class="e-search-results-container hide-loader" aria-live="polite" aria-atomic="true" aria-label="Results for search" tabindex="0">
+						<div class="e-search-results"></div>
+											</output>
+									</div>
+				
+				
+				<button class="e-search-submit  " type="submit">
+					
+										<span class="">
+						Buscar					</span>
+									</button>
+				<input type="hidden" name="e_search_props" value="869c881-95">
+			</form>
+		</search>
+						</div>
+				<div class="elementor-element elementor-element-b6e8f5f elementor-widget__width-initial ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-text-editor" data-id="b6e8f5f" data-element_type="widget" data-settings="{"_ob_use_harakiri":"yes","_ob_harakiri_writing_mode":"inherit","_ob_postman_use":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="text-editor.default">
+									<p>Inthegra Â® Â©</p><p>Todos los derechos reservados en cumplimiento de normativas de Compliance y seguridad de datos.</p>								</div>
+				</div>
+		<div class="elementor-element elementor-element-fc187dd e-con-full e-flex e-con e-child" data-id="fc187dd" data-element_type="container" data-settings="{"_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+		<div class="elementor-element elementor-element-316a933 e-con-full elementor-hidden-mobile e-flex e-con e-child" data-id="316a933" data-element_type="container" data-settings="{"_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+				<div class="elementor-element elementor-element-76bb0f0 ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-heading" data-id="76bb0f0" data-element_type="widget" data-settings="{"_ob_use_harakiri":"yes","_ob_harakiri_writing_mode":"inherit","_ob_harakiri_text_clip":"none","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">NavegaciÃ³n</h2>				</div>
+				<div class="elementor-element elementor-element-7af3e1f elementor-nav-menu__align-start elementor-nav-menu--dropdown-none elementor-widget-tablet__width-initial ob-has-background-overlay elementor-widget elementor-widget-nav-menu" data-id="7af3e1f" data-element_type="widget" data-settings="{"layout":"vertical","submenu_icon":{"value":"&lt;svg class=\"e-font-icon-svg e-fas-caret-down\" viewBox=\"0 0 320 512\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"&gt;&lt;path d=\"M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z\"&gt;&lt;\/path&gt;&lt;\/svg&gt;","library":"fa-solid"},"_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="nav-menu.default">
+								<nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-underline e--animation-fade">
+				<ul id="menu-1-7af3e1f" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5683"><a class="elementor-item">Productos</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8350"><a href="https://inthegrasoftware.com/healthcare-software/" class="elementor-sub-item">HealthCare Software</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8349"><a href="https://inthegrasoftware.com/credit-financial-software/" class="elementor-sub-item">Credit &amp; Financial Software</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8390"><a href="https://inthegrasoftware.com/retail-software/" class="elementor-sub-item">Retail Software</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-has-children menu-item-5684"><a href="https://inthegrasoftware.com/oracle-services/" aria-current="page" class="elementor-item elementor-item-active">Servicios</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8682"><a class="elementor-sub-item">Desarrollo a Medida</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8683"><a class="elementor-sub-item">ModernizaciÃ³n de Oracle Forms &#038; Reports</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8684"><a class="elementor-sub-item">Oracle Cloud Infrastructure</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8685"><a class="elementor-sub-item">Oracle Analytics</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-8556"><a href="https://inthegrasoftware.com/soluciones/" class="elementor-item">Soluciones</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8686"><a href="https://inthegrasoftware.com/crm/" class="elementor-sub-item">CRM</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8687"><a href="https://inthegrasoftware.com/rrhh/" class="elementor-sub-item">RRHH</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8688"><a href="https://inthegrasoftware.com/wms/" class="elementor-sub-item">WMS</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8689"><a class="elementor-sub-item">Chatbot</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8690"><a class="elementor-sub-item">Onboarding Digital</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8691"><a class="elementor-sub-item">Reconocimiento Facial</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8692"><a class="elementor-sub-item">Pago QR</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8557"><a href="https://inthegrasoftware.com/people-culture/" class="elementor-item">People &amp; Culture</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5687"><a href="https://inthegrasoftware.com/casos-de-exitos/" class="elementor-item">Casos</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5688"><a href="https://inthegrasoftware.com/blog/" class="elementor-item">Blog</a></li>
+</ul>			</nav>
+						<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-7af3e1f" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5683"><a class="elementor-item" tabindex="-1">Productos</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8350"><a href="https://inthegrasoftware.com/healthcare-software/" class="elementor-sub-item" tabindex="-1">HealthCare Software</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8349"><a href="https://inthegrasoftware.com/credit-financial-software/" class="elementor-sub-item" tabindex="-1">Credit &amp; Financial Software</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8390"><a href="https://inthegrasoftware.com/retail-software/" class="elementor-sub-item" tabindex="-1">Retail Software</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-has-children menu-item-5684"><a href="https://inthegrasoftware.com/oracle-services/" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Servicios</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8682"><a class="elementor-sub-item" tabindex="-1">Desarrollo a Medida</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8683"><a class="elementor-sub-item" tabindex="-1">ModernizaciÃ³n de Oracle Forms &#038; Reports</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8684"><a class="elementor-sub-item" tabindex="-1">Oracle Cloud Infrastructure</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8685"><a class="elementor-sub-item" tabindex="-1">Oracle Analytics</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-8556"><a href="https://inthegrasoftware.com/soluciones/" class="elementor-item" tabindex="-1">Soluciones</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8686"><a href="https://inthegrasoftware.com/crm/" class="elementor-sub-item" tabindex="-1">CRM</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8687"><a href="https://inthegrasoftware.com/rrhh/" class="elementor-sub-item" tabindex="-1">RRHH</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8688"><a href="https://inthegrasoftware.com/wms/" class="elementor-sub-item" tabindex="-1">WMS</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8689"><a class="elementor-sub-item" tabindex="-1">Chatbot</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8690"><a class="elementor-sub-item" tabindex="-1">Onboarding Digital</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8691"><a class="elementor-sub-item" tabindex="-1">Reconocimiento Facial</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8692"><a class="elementor-sub-item" tabindex="-1">Pago QR</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8557"><a href="https://inthegrasoftware.com/people-culture/" class="elementor-item" tabindex="-1">People &amp; Culture</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5687"><a href="https://inthegrasoftware.com/casos-de-exitos/" class="elementor-item" tabindex="-1">Casos</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5688"><a href="https://inthegrasoftware.com/blog/" class="elementor-item" tabindex="-1">Blog</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-7e8287d e-con-full e-flex e-con e-child" data-id="7e8287d" data-element_type="container" data-settings="{"_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+				<div class="elementor-element elementor-element-5a8c6be ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-heading" data-id="5a8c6be" data-element_type="widget" data-settings="{"_ob_use_harakiri":"yes","_ob_harakiri_writing_mode":"inherit","_ob_harakiri_text_clip":"none","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Contacto</h2>				</div>
+				<div class="elementor-element elementor-element-8ae9157 ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-text-editor" data-id="8ae9157" data-element_type="widget" data-settings="{"_ob_use_harakiri":"yes","_ob_harakiri_writing_mode":"inherit","_ob_postman_use":"no","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="text-editor.default">
+									<p><a href="https://www.google.com.ar/maps/dir//Inthegra+-+Software+empresarial,+Jos%C3%A9+Antonio+de+Sucre+511,+X5000+JWK,+C%C3%B3rdoba/@-31.4083798,-64.1865747,20z/data=!4m8!4m7!1m0!1m5!1m1!1s0x9432a2717544564b:0xb5bc66a563dd45bf!2m2!1d-64.18709!2d-31.4084174?hl=es&amp;entry=ttu&amp;g_ep=EgoyMDI1MDMyMy4wIKXMDSoASAFQAw%3D%3D">JosÃ© Antonio de Sucre 511, X5000JWK</a></p><p>CÃ³rdoba, Argentina</p>								</div>
+				</div>
+		<div class="elementor-element elementor-element-0a51be7 e-con-full e-flex e-con e-child" data-id="0a51be7" data-element_type="container" data-settings="{"_ob_use_container_extras":"no","_ob_column_hoveranimator":"no","_ob_glider_is_slider":"no","_ob_column_has_pseudo":"no"}">
+				<div class="elementor-element elementor-element-c247550 ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-heading" data-id="c247550" data-element_type="widget" data-settings="{"_ob_use_harakiri":"yes","_ob_harakiri_writing_mode":"inherit","_ob_harakiri_text_clip":"none","_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Seguinos</h2>				</div>
+				<div class="elementor-element elementor-element-6a613aa e-grid-align-left elementor-shape-rounded elementor-grid-0 ob-has-background-overlay elementor-widget elementor-widget-social-icons" data-id="6a613aa" data-element_type="widget" data-settings="{"_ob_perspektive_use":"no","_ob_poopart_use":"yes","_ob_shadough_use":"no","_ob_allow_hoveranimator":"no","_ob_widget_stalker_use":"no"}" data-widget_type="social-icons.default">
+							<div class="elementor-social-icons-wrapper elementor-grid" role="list">
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-repeater-item-4b811d4" href="https://ar.linkedin.com/company/inthegra" target="_blank">
+						<span class="elementor-screen-only">Linkedin</span>
+						<svg class="e-font-icon-svg e-fab-linkedin" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-1a5381c" href="https://www.instagram.com/inthegra_software/" target="_blank">
+						<span class="elementor-screen-only">Instagram</span>
+						<svg class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-7c475e1" href="https://www.facebook.com/inthegra.software" target="_blank">
+						<span class="elementor-screen-only">Facebook</span>
+						<svg class="e-font-icon-svg e-fab-facebook" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>					</a>
+				</span>
+					</div>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</footer>
+		
+<script type="speculationrules">
+{"prerender":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/hello-elementor/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prerender, .no-prerender a"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"moderate"}]}
+</script>
+<script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/app/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:'137553d220a7fd4a270968f42cf874f3'})})</script>			<script type="text/javascript">
+			(function( $ ) {		  "use strict";		
+				$(function() {
+					$('.menu-item-type-custom > a').each(function() {
+						if ($(this).attr('href') == '#') {
+							$(this).replaceWith('<span>' + $(this).text() + '</span>');
+						}
+					});
+				});
+			}(jQuery));
+			</script>
+			            <div class="wkit-plugin-review-popup-container">
+            </div>
+            
+<div class="joinchat joinchat--right" data-settings='{"telephone":"5493517870115","mobile_only":false,"button_delay":1,"whatsapp_web":false,"qr":false,"message_views":2,"message_delay":10,"message_badge":false,"message_send":"Hola, estuve navegando en https://inthegrasoftware.com/oracle-services/ y me gustaria recibir mÃ¡s informaciÃ³n.","message_hash":"c1eab065"}' hidden aria-hidden="false">
+	<div class="joinchat__button" role="button" tabindex="0">
+							</div>
+					<div class="joinchat__chatbox" role="dialog" aria-labelledby="joinchat__label" aria-modal="true">
+			<div class="joinchat__header">
+				<div id="joinchat__label">
+											<a href="https://join.chat/es/powered/?site=Inthegra&#038;url=https%3A%2F%2Finthegrasoftware.com%2Foracle-services" rel="nofollow noopener" target="_blank">
+							Powered by <svg width="81" height="18" viewbox="0 0 1424 318"><title>Joinchat</title><path d="m171 7 6 2 3 3v5l-1 8a947 947 0 0 0-2 56v53l1 24v31c0 22-6 43-18 63-11 19-27 35-48 48s-44 18-69 18c-14 0-24-3-32-8-7-6-11-13-11-23a26 26 0 0 1 26-27c7 0 13 2 19 6l12 12 1 1a97 97 0 0 0 10 13c4 4 7 6 10 6 4 0 7-2 10-6l6-23v-1c2-12 3-28 3-48V76l-1-3-3-1h-1l-11-2c-2-1-3-3-3-7s1-6 3-7a434 434 0 0 0 90-49zm1205 43c4 0 6 1 6 3l3 36a1888 1888 0 0 0 34 0h1l3 2 1 8-1 8-3 1h-35v62c0 14 2 23 5 28 3 6 9 8 16 8l5-1 3-1c2 0 3 1 5 3s3 4 2 6c-4 10-11 19-22 27-10 8-22 12-36 12-16 0-28-5-37-15l-8-13v1h-1c-17 17-33 26-47 26-18 0-31-13-39-39-5 12-12 22-21 29s-19 10-31 10c-11 0-21-4-29-13-7-8-11-18-11-30 0-10 2-17 5-23s9-11 17-15c13-7 35-14 67-21h1v-11c0-11-2-19-5-26-4-6-8-9-14-9-3 0-5 1-5 4v1l-2 15c-2 11-6 19-11 24-6 6-14 8-23 8-5 0-9-1-13-4-3-3-5-8-5-13 0-11 9-22 26-33s38-17 60-17c41 0 62 15 62 46v58l1 11 2 8 2 3h4l5-3 1-1-1-13v-88l-3-2-12-1c-1 0-2-3-2-7s1-6 2-6c16-4 29-9 40-15 10-6 20-15 31-25 1-2 4-3 7-3zM290 88c28 0 50 7 67 22 17 14 25 34 25 58 0 26-9 46-27 61s-42 22-71 22c-28 0-50-7-67-22a73 73 0 0 1-25-58c0-26 9-46 27-61s42-22 71-22zm588 0c19 0 34 4 45 12 11 9 17 18 17 29 0 6-3 11-7 15s-10 6-17 6c-13 0-24-8-33-25-5-11-10-18-13-21s-6-5-9-5c-8 0-11 6-11 17a128 128 0 0 0 32 81c8 8 16 12 25 12 8 0 16-3 24-10 1-1 3 0 6 2 2 2 3 3 3 5-5 12-15 23-29 32s-30 13-48 13c-24 0-43-7-58-22a78 78 0 0 1-22-58c0-25 9-45 27-60s41-23 68-23zm-402-3 5 2 3 3-1 10a785 785 0 0 0-2 53v76c1 3 2 4 4 4l11 3 11-3c3 0 4-1 4-4v-82l-1-2-3-2-11-1-2-6c0-4 1-6 2-6a364 364 0 0 0 77-44l5 2 3 3v12a393 393 0 0 0-1 21c5-10 12-18 22-25 9-8 21-11 34-11 16 0 29 5 38 14 10 9 14 22 14 39v88c0 3 2 4 4 4l11 3c1 0 2 2 2 6 0 5-1 7-2 7h-1a932 932 0 0 1-49-2 462 462 0 0 0-48 2c-2 0-3-2-3-7 0-3 1-6 3-6l8-3 3-1 1-3v-62c0-14-2-24-6-29-4-6-12-9-22-9l-7 1v99l1 3 3 1 8 3h1l2 6c0 5-1 7-3 7a783 783 0 0 1-47-2 512 512 0 0 0-51 2h-1a895 895 0 0 1-49-2 500 500 0 0 0-50 2c-1 0-2-2-2-7 0-4 1-6 2-6l11-3c2 0 3-1 4-4v-82l-1-3-3-1-11-2c-1 0-2-2-2-6l2-6a380 380 0 0 0 80-44zm539-75 5 2 3 3-1 9a758 758 0 0 0-2 55v42h1c5-9 12-16 21-22 9-7 20-10 32-10 16 0 29 5 38 14 10 9 14 22 14 39v88c0 2 2 3 4 4l11 2c1 0 2 2 2 7 0 4-1 6-2 6h-1a937 937 0 0 1-49-2 466 466 0 0 0-48 2c-2 0-3-2-3-6s1-7 3-7l8-2 3-2 1-3v-61c0-14-2-24-6-29-4-6-12-9-22-9l-7 1v99l1 2 3 2 8 2h1c1 1 2 3 2 7s-1 6-3 6a788 788 0 0 1-47-2 517 517 0 0 0-51 2c-1 0-2-2-2-6 0-5 1-7 2-7l11-2c3-1 4-2 4-5V71l-1-3-3-1-11-2c-1 0-2-2-2-6l2-6a387 387 0 0 0 81-43zm-743 90c-8 0-12 7-12 20a266 266 0 0 0 33 116c3 3 6 4 9 4 8 0 12-6 12-20 0-17-4-38-11-65-8-27-15-44-22-50-3-4-6-5-9-5zm939 65c-6 0-9 4-9 13 0 8 2 16 7 22 5 7 10 10 15 10l6-2v-22c0-6-2-11-7-15-4-4-8-6-12-6zM451 0c10 0 18 3 25 10s10 16 10 26a35 35 0 0 1-35 36c-11 0-19-4-26-10-7-7-10-16-10-26s3-19 10-26 15-10 26-10zm297 249c9 0 16-3 22-8 6-6 9-12 9-20s-3-15-9-21-13-8-22-8-16 3-22 8-9 12-9 21 3 14 9 20 13 8 22 8z"/></svg>
+						</a>
+									</div>
+				<div class="joinchat__close" role="button" tabindex="0" aria-label="Cerrar"></div>
+			</div>
+			<div class="joinchat__scroll">
+				<div class="joinchat__content">
+					<div class="joinchat__chat"><div class="joinchat__bubble">Bienvenido a Inthegra, somos tu partner Software para tu empresa. ConsultÃ¡ con nuestro equipo ahora.</div></div>
+					<div class="joinchat__open" role="button" tabindex="0">
+													<div class="joinchat__open__text">Whatsapp</div>
+												<svg class="joinchat__open__icon" width="60" height="60" viewbox="0 0 400 400">
+							<path class="joinchat__pa" d="M168.83 200.504H79.218L33.04 44.284a1 1 0 0 1 1.386-1.188L365.083 199.04a1 1 0 0 1 .003 1.808L34.432 357.903a1 1 0 0 1-1.388-1.187l29.42-99.427"/>
+							<path class="joinchat__pb" d="M318.087 318.087c-52.982 52.982-132.708 62.922-195.725 29.82l-80.449 10.18 10.358-80.112C18.956 214.905 28.836 134.99 81.913 81.913c65.218-65.217 170.956-65.217 236.174 0 42.661 42.661 57.416 102.661 44.265 157.316"/>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+			<script>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<noscript><img height="1" width="1" style="display: none;" src="https://www.facebook.com/tr?id=1226651955694155&ev=PageView&noscript=1&cd%5Bpage_title%5D=Oracle+Services&cd%5Bpost_type%5D=page&cd%5Bpost_id%5D=7500&cd%5Bplugin%5D=PixelYourSite&cd%5Buser_role%5D=guest&cd%5Bevent_url%5D=inthegrasoftware.com%2Foracle-services%2F" alt=""></noscript>
+<script src="https://inthegrasoftware.com/wp-content/themes/hello-elementor/assets/js/hello-frontend.js?ver=3.4.4" id="hello-theme-frontend-js"></script>
+<script src="https://inthegrasoftware.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.31.2" id="elementor-webpack-runtime-js"></script>
+<script src="https://inthegrasoftware.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.31.2" id="elementor-frontend-modules-js"></script>
+<script src="https://inthegrasoftware.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartir en Facebook","shareOnTwitter":"Compartir en Twitter","pinIt":"Fijarlo","download":"Descargar","downloadImage":"Descargar imagen","fullscreen":"Pantalla completa","zoom":"Zoom","share":"Compartir","playVideo":"Reproducir v\u00eddeo","previous":"Anterior","next":"Siguiente","close":"Cerrar","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Portable","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Pantalla grande","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},
+"hasCustomBreakpoints":false},"version":"3.31.2","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"nested-elements":true,"e_element_cache":true,"home_screen":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"cloud-library":true,"e_opt_in_v4_page":true},"urls":{"assets":"https:\/\/inthegrasoftware.com\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/inthegrasoftware.com\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/inthegrasoftware.com\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"abba7ab762"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"logo","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":7500,"title":"Oracle%20Services%20-%20Inthegra","excerpt":"","featuredImage":false}};
+//# sourceURL=elementor-frontend-js-before
+</script>
+<script src="https://inthegrasoftware.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.31.2" id="elementor-frontend-js"></script>
+<script id="elementor-frontend-js-after">
+"use strict";!function(e,t){e(t).on("elementor/frontend/init",(function(){var t,i=elementorModules.frontend.handlers.Base;t=i.extend({onInit:function(){i.prototype.onInit.apply(this,arguments),this.isHarakiri()&&(this.$element.addClass("ob-harakiri"),"clip"===this.getElementSettings("_ob_harakiri_text_clip")&&this.updateCSS("add"))},isHarakiri:function(){return"yes"===this.getElementSettings("_ob_use_harakiri")},onElementChange:function(e){"_ob_harakiri_writing_mode"===e&&("inherit"!==this.getElementSettings("_ob_harakiri_writing_mode")?this.$element.addClass("ob-harakiri"):this.$element.removeClass("ob-harakiri")),"_ob_harakiri_text_clip"===e&&("clip"===this.getElementSettings("_ob_harakiri_text_clip")?this.updateCSS("add"):""===this.getElementSettings("_ob_harakiri_text_clip")&&this.updateCSS("remove"))},updateCSS:function(e){"add"===e&&this.$element.find(".elementor-heading-title").css("background-clip","text").css("-webkit-text-fill-color","transparent"),"remove"===e&&this.$element.find(".elementor-heading-title").css("background-clip","unset").css("-webkit-text-fill-color","unset")}});var n={"heading.default":t,"text-editor.default":t};e.each(n,(function(e,t){elementorFrontend.hooks.addAction("frontend/element_ready/"+e,(function(e){elementorFrontend.elementsHandler.addHandler(t,{$element:e})}))}))}))}(jQuery,window);
+//# sourceURL=elementor-frontend-js-after
+</script>
+<script src="https://inthegrasoftware.com/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.2.1" id="smartmenus-js"></script>
+<script src="https://inthegrasoftware.com/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.31.2" id="e-sticky-js"></script>
+<script src="https://inthegrasoftware.com/wp-content/plugins/ooohboi-steroids-for-elementor/assets/js/ooohboi-steroids.js?ver=2.1.21aaa" id="ooohboi-steroids-js"></script>
+<script src="https://inthegrasoftware.com/wp-content/plugins/creame-whatsapp-me/public/js/joinchat.min.js?ver=6.0.6" id="joinchat-js" defer data-wp-strategy="defer"></script>
+<script src="https://inthegrasoftware.com/wp-content/plugins/website-chat-button-kommo-integration/script.js?ver=1.3.1" id="kommoflash-script-js-js"></script>
+<script src="https://inthegrasoftware.com/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.31.2" id="elementor-pro-webpack-runtime-js"></script>
+<script src="https://inthegrasoftware.com/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1" id="wp-hooks-js"></script>
+<script src="https://inthegrasoftware.com/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/inthegrasoftware.com\/wp-admin\/admin-ajax.php","nonce":"c881d37a32","urls":{"assets":"https:\/\/inthegrasoftware.com\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/inthegrasoftware.com\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":true},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},
+"facebook_sdk":{"lang":"es_AR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/inthegrasoftware.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+//# sourceURL=elementor-pro-frontend-js-before
+</script>
+<script src="https://inthegrasoftware.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.31.2" id="elementor-pro-frontend-js"></script>
+<script src="https://inthegrasoftware.com/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.31.2" id="pro-elements-handlers-js"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://inthegrasoftware.com/wp-includes/js/wp-emoji-release.min.js?ver=6.9.4"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=https://inthegrasoftware.com/wp-includes/js/wp-emoji-loader.min.js
+</script>
+            <script>
+                (function() {
+                    var link = document.createElement('link');
+                    link.rel = 'stylesheet';
+                    link.href = 'https://inthegrasoftware.com/wp-content/plugins/ooohboi-steroids-for-elementor/assets/css/swiper.min.css';
+                    document.head.appendChild(link);
+                })();
+            </script>
+            
+<script type="module">
+import detect from "https:\/\/inthegrasoftware.com\/wp-content\/plugins\/optimization-detective\/detect.min.js?ver=1.0.0-beta3"; detect( {"minViewportAspectRatio":0.4,"maxViewportAspectRatio":2.5,"isDebug":false,"extensionModuleUrls":["https:\/\/inthegrasoftware.com\/wp-content\/plugins\/image-prioritizer\/detect.min.js?ver=1.0.0-beta2"],"restApiEndpoint":"https:\/\/inthegrasoftware.com\/wp-json\/optimization-detective\/v1\/url-metrics:store","currentETag":"859aad5e614bdcc6bdab77c2c31fc0cc","currentUrl":"https:\/\/inthegrasoftware.com\/oracle-services\/","urlMetricSlug":"54952ea365a807eaeabc207b747d7969","cachePurgePostId":7500,"urlMetricHMAC":"f64472f130cc6b22be31e478e5e3411b","urlMetricGroupStatuses":[{"minimumViewportWidth":0,"maximumViewportWidth":480,"complete":false},{"minimumViewportWidth":480,"maximumViewportWidth":600,"complete":false},{"minimumViewportWidth":600,"maximumViewportWidth":782,"complete":false},{"minimumViewportWidth":782,"maximumViewportWidth":null,"complete":true}],"storageLockTTL":60,"freshnessTTL":604800,"webVitalsLibrarySrc":"https:\/\/inthegrasoftware.com\/wp-content\/plugins\/optimization-detective\/build\/web-vitals.js?ver=4.2.4"} );
+</script>
+</body>
+</html>
+

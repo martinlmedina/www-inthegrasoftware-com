@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Inthegra Software — Sitemap / Arquitectura del sitio
+  Dominio: https://inthegrasoftware.com
+  Última actualización: 2026-04-10
+
+  ESTRUCTURA DE NAVEGACIÓN:
+  ─────────────────────────
+  Home
+  ├── Productos
+  │   ├── HealthCare
+  │   ├── Credit & Financial
+  │   └── Retail & Distribución
+  ├── Servicios Oracle
+  │   ├── Modernización Oracle Forms
+  │   ├── Oracle Cloud (OCI)
+  │   ├── Desarrollo a Medida
+  │   ├── Oracle Analytics Cloud
+  │   └── Production AI
+  ├── Soluciones
+  │   ├── CRM Enterprise
+  │   └── AI Chatbot
+  ├── Equipo & Cultura
+  ├── Casos de Éxito
+  └── Blog
+
+  ARCHIVOS DEL PROYECTO ↔ URL FINAL:
+  ────────────────────────────────────
+  home.html                    → /
+  index_productos.html         → /productos/
+  landing_healthcare.html      → /productos/healthcare/
+  landing_credit_financial.html→ /productos/credit-financial/
+  landing_retail.html          → /productos/retail/
+  index_services.html          → /servicios-oracle/
+  landing_modernizacion.html   → /servicios-oracle/modernizacion/
+  landing_oci.html             → /servicios-oracle/oci/
+  landing_desarrollo_medida.html→ /servicios-oracle/desarrollo-medida/
+  landing_oac.html             → /servicios-oracle/analytics/
+  landing_production_ai.html   → /servicios-oracle/production-ai/
+  solutions_crm.html           → /soluciones/crm/
+  solutions_ai_chatbot.html    → /soluciones/ai-chatbot/
+  people_culture.html          → /equipo/
+  success_stories.html         → /casos-de-exito/
+  blog.html                    → /blog/
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+          http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- ── HOME ── -->
+  <url>
+    <loc>https://inthegrasoftware.com/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- ── PRODUCTOS ── -->
+  <url>
+    <loc>https://inthegrasoftware.com/productos/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://inthegrasoftware.com/productos/healthcare/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://inthegrasoftware.com/productos/credit-financial/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://inthegrasoftware.com/productos/retail/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ── SERVICIOS ORACLE ── -->
+  <url>
+    <loc>https://inthegrasoftware.com/servicios-oracle/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://inthegrasoftware.com/servicios-oracle/modernizacion/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://inthegrasoftware.com/servicios-oracle/oci/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://inthegrasoftware.com/servicios-oracle/desarrollo-medida/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://inthegrasoftware.com/servicios-oracle/analytics/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://inthegrasoftware.com/servicios-oracle/production-ai/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ── SOLUCIONES ── -->
+  <url>
+    <loc>https://inthegrasoftware.com/soluciones/crm/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://inthegrasoftware.com/soluciones/ai-chatbot/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ── INSTITUCIONAL ── -->
+  <url>
+    <loc>https://inthegrasoftware.com/equipo/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://inthegrasoftware.com/casos-de-exito/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://inthegrasoftware.com/blog/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

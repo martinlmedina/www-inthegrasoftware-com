@@ -1,0 +1,209 @@
+Using the full website context and product portfolio of Inthegra Software, generate the mockup concept for the AI Chatbot solution page.
+
+IMPORTANT CONTEXT:
+This is NOT a generic chatbot.
+This is an enterprise conversational automation layer integrated with CRM, collections workflows, and business operations.
+
+The chatbot must be positioned as:
+- A business tool for automation and operational efficiency
+- A key component in collections (cobranzas) and customer management
+- A configurable and trainable AI system aligned with company rules and processes
+- A solution that combines AI + human interaction + analytics
+
+CORE CAPABILITIES (REAL PRODUCT SCOPE):
+- Customer service automation (WhatsApp and digital channels)
+- Collections management support (mora, seguimiento, estrategias)
+- Parametrizable flows and business rules
+- AI that learns from interactions and company processes
+- Sentiment analysis on conversations
+- Registration of all interactions (AI + human)
+- Human handoff when needed
+- Centralized conversation management panel
+- Performance monitoring and analytics
+
+The page must feel:
+- Enterprise-grade
+- Operationally critical
+- Integrated into real business workflows (not a standalone bot)
+- Strongly connected to CRM and company processes
+
+--------------------------------------------------
+
+OBJECTIVE OF THE PAGE:
+Position the AI Chatbot as a strategic operational layer that improves:
+- Customer experience
+- Collections efficiency
+- Response times
+- Process automation
+- Visibility and control over interactions
+
+--------------------------------------------------
+
+REQUIRED STRUCTURE:
+
+1. HERO SECTION
+- Strong positioning:
+  "Automatizá la atención y cobranzas con inteligencia artificial integrada a tu operación"
+- Subheadline:
+  Emphasize integration with CRM, workflows and business rules
+- Key ideas:
+  - AI + procesos + negocio
+  - No es solo chat, es gestión
+- CTA: Agendar demo
+
+--------------------------------------------------
+
+2. THE REAL PROBLEM (NOT GENERIC)
+Focus on real operational pains:
+
+- Atención desordenada en múltiples canales
+- Falta de trazabilidad en conversaciones
+- Procesos de cobranza manuales y poco eficientes
+- Baja capacidad de respuesta en volumen alto
+- Dificultad para escalar atención sin aumentar costos
+- Falta de visibilidad sobre calidad de atención
+
+Make it operational, not marketing fluff.
+
+--------------------------------------------------
+
+3. SOLUTION POSITIONING
+Explain clearly:
+
+This is not just a chatbot.
+It is a conversational management platform integrated with business processes.
+
+Key pillars:
+- Automatización inteligente
+- Orquestación de conversaciones
+- Integración con CRM y sistemas
+- Aprendizaje continuo
+
+--------------------------------------------------
+
+4. HOW IT WORKS (HIGH LEVEL FLOW)
+
+Suggested flow:
+
+1. Cliente inicia contacto (WhatsApp / canal digital)
+2. IA responde según reglas y entrenamiento
+3. Analiza intención y sentimiento
+4. Ejecuta acciones (consultas, gestión, cobranza)
+5. Escala a humano si es necesario
+6. Registra todo en el sistema
+7. Alimenta métricas y mejora continua
+
+--------------------------------------------------
+
+5. CORE CAPABILITIES (CARDS / MODULES)
+
+- Atención automatizada omnicanal
+- Gestión de cobranzas automatizada
+- Motor de reglas y parametrización
+- IA entrenable con procesos del negocio
+- Análisis de sentimiento en tiempo real
+- Derivación inteligente a operadores
+- Registro completo de interacciones
+- Panel de gestión de conversaciones
+- Métricas y control de performance
+
+--------------------------------------------------
+
+6. USE CASES BY AREA
+
+Divide clearly:
+
+A. Customer Service
+- Respuestas automáticas
+- Gestión de consultas
+- Seguimiento de casos
+
+B. Collections / Cobranzas
+- Contactación automatizada
+- Seguimiento de mora
+- Ejecución de estrategias
+- Registro de gestiones
+
+C. Sales / Campaigns
+- Mensajería saliente
+- Automatización de respuestas
+- Calificación de leads
+
+--------------------------------------------------
+
+7. INTEGRATION & ORCHESTRATION
+
+Key message:
+The chatbot is fully integrated into the Inthegra ecosystem.
+
+- CRM
+- ERP / productos verticales
+- Workflows internos
+- APIs externas
+
+Important:
+Position it as part of a larger system, not standalone.
+
+--------------------------------------------------
+
+8. CONTROL & VISIBILITY
+
+Show enterprise control:
+
+- Panel de gestión de conversaciones
+- Métricas en tiempo real
+- Análisis de performance
+- Auditoría de interacciones
+- Mejora continua basada en datos
+
+--------------------------------------------------
+
+9. BUSINESS IMPACT
+
+Concrete outcomes:
+
+- Reducción de costos operativos
+- Mejora en tiempos de respuesta
+- Mayor tasa de recuperación en cobranzas
+- Mejor experiencia del cliente
+- Escalabilidad sin aumentar headcount
+
+--------------------------------------------------
+
+10. FINAL CTA
+
+- "Transformá tu atención y cobranzas con IA"
+- "Agendar demo"
+
+--------------------------------------------------
+
+DESIGN DIRECTION:
+
+- Enterprise, clean, structured
+- Avoid startup chatbot look
+- Use subtle AI-inspired background graphics (as provided)
+- Dark + light contrast sections
+- Data / control / dashboard feeling
+
+UI IDEAS:
+
+- Chat simulation panel
+- Conversation dashboard mock
+- Flow diagram (automation → human → analytics)
+- KPI blocks (response time, recovery rate, automation rate)
+
+INTERACTIONS:
+
+- Animated conversation flow
+- Hover states on capabilities
+- Step-by-step process animation
+
+--------------------------------------------------
+
+OUTPUT REQUIRED:
+
+- Premium mockup concept
+- Section-by-section copy
+- Layout hierarchy
+- UI component suggestions
+- Visual direction aligned with Inthegra brand

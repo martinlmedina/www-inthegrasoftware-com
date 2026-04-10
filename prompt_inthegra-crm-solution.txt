@@ -1,0 +1,198 @@
+Using the full Inthegra Software website and product context, generate a premium mockup concept for the CRM Solution page.
+
+IMPORTANT CONTEXT (VERY IMPORTANT):
+This is NOT a generic CRM.
+
+Inthegra CRM has TWO CORE CAPABILITIES:
+1. Sales CRM (lead, opportunity and commercial management)
+2. Collections CRM (debt management, payment follow-up, and recovery workflows)
+
+This dual approach is a key differentiator and MUST be clearly reflected.
+
+The platform is designed for:
+- Companies that need real operational control over sales AND collections
+- Credit companies, lenders, retail financing, and service businesses
+- Organizations that require tight integration between CRM, ERP and financial workflows
+
+The CRM is part of a broader ecosystem:
+- Integrated with ERP (Business Suite)
+- Connected to Credit & Financial systems
+- Can integrate with chatbot, automation and analytics
+
+--------------------------------------------------
+
+GOAL OF THE PAGE:
+Position Inthegra CRM as an execution-driven, operational CRM platform that goes beyond traditional sales tools by incorporating collections and financial workflows.
+
+The page should feel:
+- Enterprise-grade
+- Operationally strong
+- Process-oriented (not marketing-oriented)
+- Focused on control, efficiency and scalability
+
+--------------------------------------------------
+
+KEY MESSAGES TO COMMUNICATE:
+
+- End-to-end visibility of customer lifecycle (from lead → sale → debt → collection)
+- Real operational control over commercial and collection processes
+- Automation of repetitive tasks and workflows
+- Integration with ERP and financial systems
+- Designed for real business operations, not just pipeline visualization
+
+--------------------------------------------------
+
+REQUIRED STRUCTURE:
+
+1. HERO SECTION
+- Strong headline combining Sales + Collections
+  Example direction: 
+  “From Lead to Collection: Full Control of Your Customer Lifecycle”
+- Subheadline explaining dual CRM approach
+- Primary CTA: Agendar demo
+- Secondary CTA: Ver funcionalidades
+
+Visual direction:
+- Split concept (Sales vs Collections)
+- Use subtle Inthegra background graphics (Solutions/Product style)
+
+--------------------------------------------------
+
+2. PROBLEM SECTION (REAL BUSINESS PAINS)
+Focus on real operational issues:
+
+Sales side:
+- Lost leads and poor follow-up
+- Lack of visibility in pipeline
+- Disconnected tools
+
+Collections side:
+- Manual debt tracking
+- Inefficient collection processes
+- Low recovery rates
+- Lack of prioritization and automation
+
+Add strong enterprise tone (no generic SaaS language)
+
+--------------------------------------------------
+
+3. SOLUTION OVERVIEW (CORE POSITIONING)
+
+Explain clearly:
+
+"This is not just a CRM. It is an operational platform that connects sales and collections in a single system."
+
+Include:
+- Unified customer view
+- Workflow-driven processes
+- Configurable according to business model
+- Oracle-native / enterprise base
+
+--------------------------------------------------
+
+4. DUAL CRM ARCHITECTURE (VERY IMPORTANT SECTION)
+
+Split into two clear blocks:
+
+A) SALES CRM
+- Lead management
+- Opportunity tracking
+- Pipeline visibility
+- Sales team productivity
+
+B) COLLECTIONS CRM
+- Debt tracking
+- Collection workflows
+- Payment agreements
+- Prioritization strategies
+- Follow-up automation
+
+This section is KEY to differentiation
+
+--------------------------------------------------
+
+5. KEY USE CASES
+
+Examples:
+- Credit companies managing full lifecycle
+- Retail financing operations
+- Service companies with recurring billing + collections
+- Organizations needing sales + financial follow-up
+
+Use cards or scenarios
+
+--------------------------------------------------
+
+6. AUTOMATION & INTELLIGENCE
+
+Include:
+- Workflow automation
+- Task automation
+- Potential chatbot integration (WhatsApp / conversational flows)
+- Smart prioritization (collections focus)
+
+--------------------------------------------------
+
+7. INTEGRATION ECOSYSTEM
+
+Show strong integration with:
+- ERP (Business Suite)
+- Credit & Financial platform
+- Analytics (OAC or similar)
+- External channels (WhatsApp, APIs)
+
+Visual:
+- Diagram or ecosystem map
+
+--------------------------------------------------
+
+8. BUSINESS IMPACT / RESULTS
+
+Focus on outcomes:
+- Higher conversion rates
+- Better recovery rates
+- Reduced manual work
+- Full operational visibility
+- Faster decision making
+
+--------------------------------------------------
+
+9. FINAL CTA
+
+- “Transform your sales and collections operations”
+- CTA: Agendar demo
+
+--------------------------------------------------
+
+DESIGN SYSTEM DIRECTIONS:
+
+- Premium enterprise look
+- Clean layouts, strong typography
+- Use dark/light contrast sections
+- Subtle background graphics (Inthegra SVGs: Solutions, Product, etc.)
+- Avoid visual noise
+
+--------------------------------------------------
+
+INTERACTION / MOTION:
+
+- Smooth transitions between Sales and Collections sections
+- Hover states on use cases
+- Animated flow (Lead → Sale → Debt → Collection)
+
+--------------------------------------------------
+
+OUTPUT FORMAT:
+
+- Section-by-section mockup structure
+- Suggested copy (headline + supporting text)
+- UI component ideas (cards, diagrams, layouts)
+- Visual and interaction direction
+
+DO NOT:
+- Create generic CRM messaging
+- Ignore collections capability
+- Overuse marketing buzzwords
+
+FOCUS:
+Execution, operations, and real business value.

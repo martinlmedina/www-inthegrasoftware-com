@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Modernización de Oracle Forms & Reports con IA - Inthegra transforma tus aplicaciones legacy en sistemas modernos, escalables y cloud-ready." />
+  <title>Modernización Oracle Forms & Reports | Inthegra</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="nav.js"></script>
+
+  <style>
+    :root {
+      --bg:        #0F2043;
+      --bg-deep:   #091530;
+      --bg-panel:  #112048;
+      --bg-card:   #0d1b3e;
+      --line:      #1e3460;
+      --line-2:    #2a4578;
+      --text:      #e8eefc;
+      --text-2:    #b4c8f0;
+      --muted:     #7d9ac4;
+      --brand:     #5aa0ff;
+      --brand-2:   #7c5cff;
+      --accent:    #00d9ff;
+      --ok:        #36d399;
+      --warn:      #ffd166;
+      --danger:    #ff6b6b;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg-deep);
+      background-image:
+        radial-gradient(ellipse 80% 60% at 50% -10%, rgba(90,160,255,.14) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 40% at 80% 80%, rgba(124,92,255,.10) 0%, transparent 60%);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container { max-width: 1260px; margin: 0 auto; padding: 0 32px; }
+
+    /* ─── HEADER ─────────────────────────────────── */
+    header {
+      position: sticky; top: 0; z-index: 100;
+      backdrop-filter: blur(16px);
+      background: rgba(9,21,48,.75);
+      border-bottom: 1px solid var(--line);
+      padding: 18px 0;
+    }
+    .header-inner { display: flex; justify-content: space-between; align-items: center; }
+    .logo {
+      font-size: 20px; font-weight: 800; letter-spacing: -.03em;
+      background: linear-gradient(120deg, var(--brand), var(--accent));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .logo span { font-weight: 400; opacity: .7; }
+    nav { display: flex; gap: 4px; }
+    nav a {
+      color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500;
+      padding: 6px 14px; border-radius: 8px; transition: all .2s;
+    }
+    nav a:hover { color: var(--brand); background: rgba(90,160,255,.08); }
+    .nav-cta {
+      padding: 9px 20px; border-radius: 10px; border: none;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: #fff; font-size: 14px; font-weight: 700; cursor: pointer;
+      text-decoration: none; display: inline-block; transition: box-shadow .2s;
+      box-shadow: 0 4px 16px rgba(90,160,255,.3);
+    }
+    .nav-cta:hover { box-shadow: 0 6px 24px rgba(90,160,255,.45); }
+
+    /* ─── HERO ───────────────────────────────────── */
+    .hero {
+      display: grid; grid-template-columns: 1.1fr .9fr;
+      gap: 56px; align-items: center; padding: 96px 0 72px;
+    }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 7px 14px; border-radius: 999px;
+      border: 1px solid rgba(90,160,255,.35);
+      background: rgba(90,160,255,.08);
+      color: var(--brand); font-size: 12px; font-weight: 700;
+      letter-spacing: .06em; text-transform: uppercase; margin-bottom: 20px;
+    }
+    .eyebrow::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--brand); display: inline-block; }
+    .hero h1 {
+      font-size: 58px; font-weight: 900; line-height: 1.08;
+      letter-spacing: -.04em; margin-bottom: 24px; max-width: 14ch;
+      background: linear-gradient(140deg, #ffffff 30%, var(--brand) 65%, var(--accent) 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .hero-sub {
+      color: var(--text-2); font-size: 18px; line-height: 1.7;
+      max-width: 52ch; margin-bottom: 36px;
+    }
+    .hero-badges {
+      display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 36px;
+    }
+    .badge {
+      padding: 6px 14px; border-radius: 999px;
+      background: rgba(255,255,255,.05); border: 1px solid var(--line-2);
+      color: var(--text-2); font-size: 13px; font-weight: 500;
+    }
+    .badge-ok { border-color: rgba(54,211,153,.4); color: var(--ok); background: rgba(54,211,153,.07); }
+    .cta-row { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn {
+      padding: 14px 28px; border-radius: 12px; font-size: 15px; font-weight: 700;
+      text-decoration: none; display: inline-flex; align-items: center; gap: 8px;
+      border: 1.5px solid transparent; cursor: pointer; transition: all .25s;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: #fff; border-color: transparent;
+      box-shadow: 0 8px 28px rgba(90,160,255,.35);
+    }
+    .btn-primary:hover { box-shadow: 0 12px 40px rgba(90,160,255,.5); }
+    .btn-ghost {
+      background: rgba(255,255,255,.05); border-color: var(--line-2);
+      color: var(--text-2);
+    }
+    .btn-ghost:hover { border-color: var(--brand); color: var(--brand); background: rgba(90,160,255,.07); }
+    .hero-note { margin-top: 20px; font-size: 12px; color: var(--muted); display: flex; gap: 18px; flex-wrap: wrap; }
+    .hero-note span::before { content: '✓ '; color: var(--ok); }
+
+    .hero-visual {
+      background: linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.01));
+      border: 1px solid var(--line); border-radius: 22px; padding: 6px;
+      box-shadow: 0 24px 64px rgba(0,0,0,.35);
+    }
+    .hero-visual svg { display: block; width: 100%; height: auto; border-radius: 16px; }
+
+    /* ─── SECTIONS ───────────────────────────────── */
+    .section { padding: 88px 0; }
+    .section + .section { border-top: 1px solid rgba(30,52,96,.6); }
+    .section-label {
+      display: inline-block; font-size: 11px; font-weight: 700;
+      letter-spacing: .1em; text-transform: uppercase; color: var(--brand);
+      margin-bottom: 14px;
+    }
+    .section-title {
+      font-size: 42px; font-weight: 800; line-height: 1.15;
+      letter-spacing: -.025em; margin-bottom: 18px;
+    }
+    .section-title.gradient {
+      background: linear-gradient(135deg, #ffffff 40%, var(--brand) 80%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .section-desc { color: var(--muted); font-size: 18px; max-width: 58ch; }
+    .section-header { margin-bottom: 56px; }
+    .section-header.center { text-align: center; }
+    .section-header.center .section-desc { margin: 0 auto; }
+
+    /* ─── PAIN POINTS ────────────────────────────── */
+    .pain-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .pain-card {
+      background: linear-gradient(160deg, rgba(255,107,107,.06), rgba(255,107,107,.02));
+      border: 1px solid rgba(255,107,107,.18); border-radius: 18px; padding: 32px;
+      position: relative; overflow: hidden; transition: all .3s;
+    }
+    .pain-card::after {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, var(--danger), transparent);
+    }
+    .pain-card:hover { border-color: rgba(255,107,107,.4); transform: translateY(-3px); }
+    .pain-icon { font-size: 28px; margin-bottom: 14px; display: block; }
+    .pain-card h3 { font-size: 19px; font-weight: 700; margin-bottom: 10px; color: var(--text); }
+    .pain-card p { color: var(--muted); font-size: 15px; line-height: 1.65; }
+    .pain-svg-wrap {
+      grid-column: span 2;
+      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+      border: 1px solid var(--line); border-radius: 18px; overflow: hidden;
+    }
+    .pain-svg-wrap svg { display: block; width: 100%; height: auto; }
+
+    /* ─── SOLUTION ───────────────────────────────── */
+    .solution-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+    .solution-img-wrap {
+      margin: 32px 0 48px;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.10);
+      box-shadow: 0 24px 70px rgba(0,0,0,.40);
+    }
+    .solution-img-wrap img { width: 100%; display: block; }
+    .check-list { list-style: none; display: flex; flex-direction: column; gap: 20px; }
+    .check-list li {
+      display: flex; gap: 14px; align-items: flex-start;
+      padding: 20px; background: rgba(255,255,255,.03);
+      border: 1px solid var(--line); border-radius: 14px; transition: border-color .2s;
+    }
+    .check-list li:hover { border-color: var(--brand); }
+    .check-list li::before {
+      content: '✓'; flex-shrink: 0; width: 28px; height: 28px;
+      border-radius: 50%; background: rgba(54,211,153,.15); color: var(--ok);
+      font-weight: 900; font-size: 13px; display: flex; align-items: center;
+      justify-content: center; margin-top: 1px;
+    }
+    .check-list li strong { color: var(--text); font-size: 16px; display: block; margin-bottom: 4px; }
+    .check-list li span { color: var(--muted); font-size: 14px; }
+
+    .tech-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; margin-top: 28px; }
+    .tech-card {
+      padding: 18px 20px; border-radius: 14px;
+      background: linear-gradient(135deg, rgba(90,160,255,.12), rgba(124,92,255,.08));
+      border: 1px solid rgba(90,160,255,.3); text-align: center;
+      font-weight: 700; font-size: 15px; color: var(--brand);
+      transition: all .25s;
+    }
+    .tech-card:hover { background: linear-gradient(135deg, rgba(90,160,255,.2), rgba(124,92,255,.14)); transform: translateY(-2px); }
+    .tech-card small { display: block; font-weight: 400; font-size: 12px; color: var(--muted); margin-top: 3px; }
+
+    .kpi-box {
+      background: linear-gradient(160deg, rgba(90,160,255,.09), rgba(124,92,255,.07));
+      border: 1px solid rgba(90,160,255,.25); border-radius: 18px; padding: 36px;
+    }
+    .kpi-box h4 { font-size: 16px; font-weight: 700; color: var(--brand); margin-bottom: 20px; text-align: center; }
+    .kpi-list { display: flex; flex-direction: column; gap: 12px; }
+    .kpi-item {
+      padding: 14px 18px; background: rgba(255,255,255,.05); border-radius: 10px;
+      display: flex; align-items: center; gap: 12px; font-weight: 600;
+    }
+    .kpi-item .kpi-val { font-size: 22px; font-weight: 900; color: var(--brand); min-width: 56px; }
+
+    /* ─── PROCESS ────────────────────────────────── */
+    .process-row {
+      display: grid; grid-template-columns: repeat(5,1fr); gap: 0;
+      position: relative; margin-top: 8px;
+    }
+    .process-row::before {
+      content: ''; position: absolute; top: 32px; left: 10%; right: 10%;
+      height: 2px; background: linear-gradient(90deg, var(--brand), var(--brand-2));
+      opacity: .3; z-index: 0;
+    }
+    .process-step { text-align: center; padding: 0 12px; position: relative; z-index: 1; }
+    .step-num {
+      width: 64px; height: 64px; border-radius: 50%; margin: 0 auto 20px;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px; font-weight: 900; color: #fff;
+      box-shadow: 0 0 0 6px rgba(90,160,255,.12), 0 8px 24px rgba(90,160,255,.25);
+    }
+    .process-step h3 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+    .process-step p { font-size: 13px; color: var(--muted); line-height: 1.55; }
+    .process-step .step-tag {
+      display: inline-block; margin-bottom: 10px; font-size: 10px; font-weight: 700;
+      letter-spacing: .08em; text-transform: uppercase; color: var(--brand);
+      background: rgba(90,160,255,.1); border: 1px solid rgba(90,160,255,.2);
+      padding: 3px 8px; border-radius: 99px;
+    }
+    .process-svg-wrap {
+      margin-top: 56px;
+      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+      border: 1px solid var(--line); border-radius: 18px; overflow: hidden;
+    }
+    .process-svg-wrap svg { display: block; width: 100%; height: auto; }
+
+    /* ─── AI SECTION ─────────────────────────────── */
+    .ai-section-wrap {
+      background: linear-gradient(160deg, rgba(90,160,255,.08), rgba(124,92,255,.06));
+      border: 1px solid rgba(90,160,255,.22); border-radius: 24px; padding: 56px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center;
+    }
+    .ai-features { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .ai-feat {
+      padding: 22px; background: rgba(255,255,255,.04);
+      border: 1px solid var(--line); border-radius: 14px; transition: all .25s;
+    }
+    .ai-feat:hover { border-color: var(--brand); background: rgba(90,160,255,.07); }
+    .ai-feat-icon { font-size: 24px; margin-bottom: 10px; }
+    .ai-feat h4 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+    .ai-feat p { font-size: 13px; color: var(--muted); line-height: 1.55; }
+    .ai-stat-row { display: flex; flex-direction: column; gap: 16px; }
+    .ai-stat {
+      padding: 20px 24px; background: rgba(255,255,255,.05);
+      border: 1px solid var(--line); border-radius: 14px;
+      display: flex; align-items: center; gap: 18px;
+    }
+    .ai-stat .ai-stat-n { font-size: 36px; font-weight: 900; color: var(--brand); line-height: 1; min-width: 80px; }
+    .ai-stat .ai-stat-l { font-size: 14px; color: var(--text-2); }
+    .ai-stat .ai-stat-l strong { display: block; font-size: 16px; color: var(--text); margin-bottom: 2px; }
+
+    /* ─── BEFORE / AFTER ─────────────────────────── */
+    .ba-wrap {
+      display: grid; grid-template-columns: 1fr 60px 1fr; gap: 0; align-items: stretch;
+    }
+    .ba-side {
+      border-radius: 20px; padding: 36px;
+      border: 1px solid var(--line);
+    }
+    .ba-before { background: linear-gradient(160deg, rgba(255,107,107,.06), rgba(255,107,107,.02)); border-color: rgba(255,107,107,.2); }
+    .ba-after  { background: linear-gradient(160deg, rgba(54,211,153,.06), rgba(54,211,153,.02)); border-color: rgba(54,211,153,.2); }
+    .ba-label {
+      font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+      margin-bottom: 20px; display: flex; align-items: center; gap: 8px;
+    }
+    .ba-before .ba-label { color: var(--danger); }
+    .ba-after  .ba-label { color: var(--ok); }
+    .ba-label::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+    .ba-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .ba-list li {
+      padding: 12px 16px; border-radius: 10px; background: rgba(255,255,255,.04);
+      font-size: 14px; color: var(--text-2);
+    }
+    .ba-before .ba-list li { border-left: 3px solid rgba(255,107,107,.4); }
+    .ba-after  .ba-list li { border-left: 3px solid rgba(54,211,153,.4); color: var(--text); }
+    .ba-divider {
+      display: flex; align-items: center; justify-content: center;
+    }
+    .ba-arrow {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; color: #fff; box-shadow: 0 4px 20px rgba(90,160,255,.35);
+    }
+
+    /* ─── ARCHITECTURE ───────────────────────────── */
+    .arch-svg-wrap {
+      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+      border: 1px solid var(--line); border-radius: 20px; overflow: hidden;
+    }
+    .arch-svg-wrap svg { display: block; width: 100%; height: auto; }
+
+    /* ─── BENEFITS ───────────────────────────────── */
+    .benefits-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+    .benefit-card {
+      padding: 32px; border-radius: 18px;
+      background: linear-gradient(160deg, rgba(255,255,255,.04), rgba(255,255,255,.015));
+      border: 1px solid var(--line); position: relative; overflow: hidden; transition: all .3s;
+    }
+    .benefit-card::after {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, var(--ok), transparent);
+    }
+    .benefit-card:hover { border-color: rgba(54,211,153,.35); transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,.25); }
+    .benefit-icon { font-size: 34px; margin-bottom: 14px; }
+    .benefit-card h4 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
+    .benefit-card p { font-size: 14px; color: var(--muted); line-height: 1.65; }
+    .benefit-metric { font-size: 28px; font-weight: 900; color: var(--ok); margin-bottom: 4px; }
+
+    /* ─── CTA ────────────────────────────────────── */
+    .cta-section {
+      margin: 0 0 88px; padding: 72px 64px; border-radius: 28px;
+      background: linear-gradient(140deg, rgba(90,160,255,.14), rgba(124,92,255,.1));
+      border: 1px solid rgba(90,160,255,.3);
+      position: relative; overflow: hidden; text-align: center;
+    }
+    .cta-section::before {
+      content: ''; position: absolute; top: -60px; right: -60px;
+      width: 300px; height: 300px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(90,160,255,.15), transparent 70%);
+      pointer-events: none;
+    }
+    .cta-section::after {
+      content: ''; position: absolute; bottom: -40px; left: -40px;
+      width: 200px; height: 200px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(124,92,255,.12), transparent 70%);
+      pointer-events: none;
+    }
+    .cta-section h2 {
+      font-size: 44px; font-weight: 900; letter-spacing: -.03em;
+      margin-bottom: 16px; position: relative; z-index: 1;
+      background: linear-gradient(135deg, #fff 40%, var(--brand) 80%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .cta-section p { color: var(--text-2); font-size: 18px; max-width: 48ch; margin: 0 auto 36px; position: relative; z-index: 1; }
+    .cta-form { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; position: relative; z-index: 1; }
+    .text-input {
+      padding: 14px 20px; border-radius: 12px;
+      border: 1.5px solid var(--line-2);
+      background: rgba(255,255,255,.07); color: var(--text);
+      font-family: inherit; font-size: 15px; min-width: 260px; transition: all .25s;
+    }
+    .text-input::placeholder { color: var(--muted); }
+    .text-input:focus { outline: none; border-color: var(--brand); background: rgba(255,255,255,.1); box-shadow: 0 0 0 3px rgba(90,160,255,.2); }
+    .cta-note { font-size: 12px; color: var(--muted); margin-top: 16px; position: relative; z-index: 1; }
+
+    /* ─── FOOTER ─────────────────────────────────── */
+    footer {
+      border-top: 1px solid var(--line); padding: 40px 0 32px;
+      color: var(--muted); font-size: 14px;
+    }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a { color: var(--muted); text-decoration: none; transition: color .2s; }
+    .footer-links a:hover { color: var(--brand); }
+
+    /* ─── RESPONSIVE ─────────────────────────────── */
+    @media (max-width: 1024px) {
+      .hero { grid-template-columns: 1fr; gap: 40px; padding: 64px 0 48px; }
+      .hero h1 { font-size: 46px; max-width: none; }
+      .solution-grid { grid-template-columns: 1fr; gap: 36px; }
+      .ai-section-wrap { grid-template-columns: 1fr; gap: 36px; }
+      .pain-grid { grid-template-columns: 1fr; }
+      .pain-svg-wrap { grid-column: span 1; }
+      .process-row { grid-template-columns: repeat(3,1fr); }
+      .process-row::before { display: none; }
+      .benefits-grid { grid-template-columns: repeat(2,1fr); }
+    }
+    @media (max-width: 768px) {
+      .container { padding: 0 20px; }
+      .hero h1 { font-size: 38px; }
+      .section { padding: 64px 0; }
+      .section-title { font-size: 32px; }
+      .process-row { grid-template-columns: 1fr; }
+      .benefits-grid { grid-template-columns: 1fr; }
+      .ba-wrap { grid-template-columns: 1fr; }
+      .ba-divider { display: none; }
+      .cta-section { padding: 48px 28px; }
+      .cta-section h2 { font-size: 30px; }
+      .cta-form { flex-direction: column; align-items: stretch; }
+      .text-input { min-width: auto; }
+      nav { display: none; }
+      .ai-features { grid-template-columns: 1fr; }
+      .tech-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ─── HEADER ──────────────────────────────────── -->
+<header>
+  <div class="container">
+    <div class="header-inner">
+      <a href="https://inthegrasoftware.com" style="text-decoration:none; display:block;">
+          <img src="https://inthegrasoftware.com/wp-content/uploads/2026/02/Logo_oracle_header.svg" alt="Inthegra Software" style="height:34px; width:auto; display:block;" />
+        </a>
+      <nav>
+        <a href="#problema">Problema</a>
+        <a href="#solucion">Solución</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#ia">IA</a>
+        <a href="#beneficios">Beneficios</a>
+      </nav>
+      <a href="#cta" class="nav-cta">Diagnóstico gratuito</a>
+    </div>
+  </div>
+</header>
+
+<!-- ─── HERO ────────────────────────────────────── -->
+<section class="hero">
+  <div class="container" style="display:contents;">
+    <div class="hero-content" style="padding-left:32px;">
+      <div class="eyebrow">Modernización enterprise · Potenciado por IA</div>
+      <h1>Transformá tus Oracle Forms en sistemas modernos</h1>
+      <p class="hero-sub">
+        Modernizamos tus aplicaciones legacy sin frenar la operación. Combinamos expertise en Oracle con IA para acelerar tiempos y reducir riesgos.
+      </p>
+      <div class="hero-badges">
+        <span class="badge badge-ok">↓ 40–60% menos esfuerzo</span>
+        <span class="badge badge-ok">2–3x más velocidad</span>
+        <span class="badge">Oracle APEX · ORDS · OCI</span>
+      </div>
+      <div class="cta-row">
+        <a href="#cta" class="btn btn-primary">Solicitar diagnóstico gratuito →</a>
+        <a href="#proceso" class="btn btn-ghost">Ver cómo lo hacemos</a>
+      </div>
+      <div class="hero-note">
+        <span>Sin interrupciones operativas</span>
+        <span>Riesgo controlado</span>
+        <span>ROI en 18–24 meses</span>
+      </div>
+    </div>
+    <div class="hero-visual" style="margin-right:32px;">
+      <svg viewBox="0 0 560 440" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="hg1" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0%" stop-color="#5aa0ff"/>
+            <stop offset="100%" stop-color="#7c5cff"/>
+          </linearGradient>
+          <linearGradient id="hg2" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="#0d1b3e"/>
+            <stop offset="100%" stop-color="#091530"/>
+          </linearGradient>
+          <filter id="glow">
+            <feGaussianBlur stdDeviation="4" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+        <rect width="560" height="440" rx="18" fill="url(#hg2)"/>
+
+        <!-- Background glow -->
+        <ellipse cx="280" cy="220" rx="160" ry="100" fill="rgba(90,160,255,.06)"/>
+
+        <!-- LEGACY panel -->
+        <rect x="18" y="28" width="168" height="390" rx="16" fill="#0d1b3e" stroke="#ff6b6b" stroke-width="1.5" stroke-opacity=".5"/>
+        <text x="36" y="60" fill="#ff8e8e" font-size="13" font-weight="700" font-family="Arial">Legacy Forms</text>
+        <!-- screenshot real clipped inside panel -->
+        <clipPath id="clip-legacy">
+          <rect x="28" y="68" width="148" height="252" rx="6"/>
+        </clipPath>
+        <image href="img_services/forms_legacy.png" x="28" y="68" width="148" height="252" clip-path="url(#clip-legacy)" preserveAspectRatio="xMidYMid slice"/>
+        <!-- subtle overlay so text is readable -->
+        <rect x="28" y="68" width="148" height="252" rx="6" fill="rgba(7,15,35,.18)"/>
+        <!-- problems -->
+        <text x="28" y="338" fill="#ff8e8e" font-size="10" font-family="Arial">✗  Interfaces obsoletas</text>
+        <text x="28" y="356" fill="#ff8e8e" font-size="10" font-family="Arial">✗  Mantenimiento costoso</text>
+        <text x="28" y="374" fill="#ff8e8e" font-size="10" font-family="Arial">✗  Sin APIs modernas</text>
+        <text x="28" y="392" fill="#ff8e8e" font-size="10" font-family="Arial">✗  Talento escaso</text>
+
+        <!-- AI core -->
+        <circle cx="280" cy="220" r="56" fill="#0a1328" stroke="url(#hg1)" stroke-width="2.5" filter="url(#glow)"/>
+        <circle cx="280" cy="220" r="34" fill="rgba(90,160,255,.12)"/>
+        <circle cx="280" cy="220" r="18" fill="url(#hg1)"/>
+        <text x="271" y="226" fill="#fff" font-size="13" font-weight="800" font-family="Arial">IA</text>
+        <!-- Connecting lines -->
+        <path d="M186 180 C220 180 240 200 262 212" stroke="url(#hg1)" stroke-width="2" fill="none" stroke-dasharray="5,4" opacity=".6"/>
+        <path d="M186 250 C220 250 240 240 262 228" stroke="url(#hg1)" stroke-width="2" fill="none" stroke-dasharray="5,4" opacity=".6"/>
+        <path d="M298 212 C320 200 340 180 374 180" stroke="url(#hg1)" stroke-width="2" fill="none" stroke-dasharray="5,4" opacity=".6"/>
+        <path d="M298 228 C320 240 340 250 374 250" stroke="url(#hg1)" stroke-width="2" fill="none" stroke-dasharray="5,4" opacity=".6"/>
+        <!-- Small nodes -->
+        <circle cx="244" cy="185" r="6" fill="#7c5cff" opacity=".8"/>
+        <circle cx="244" cy="255" r="6" fill="#7c5cff" opacity=".8"/>
+        <circle cx="316" cy="185" r="6" fill="#5aa0ff" opacity=".8"/>
+        <circle cx="316" cy="255" r="6" fill="#5aa0ff" opacity=".8"/>
+
+        <!-- MODERN panel -->
+        <rect x="374" y="28" width="168" height="390" rx="16" fill="#0d1b3e" stroke="#36d399" stroke-width="1.5" stroke-opacity=".5"/>
+        <text x="392" y="60" fill="#36d399" font-size="13" font-weight="700" font-family="Arial">Aplicación moderna</text>
+        <!-- screenshot real clipped inside panel -->
+        <clipPath id="clip-modern">
+          <rect x="384" y="68" width="148" height="252" rx="6"/>
+        </clipPath>
+        <image href="img_services/apex-modern.png" x="384" y="68" width="148" height="252" clip-path="url(#clip-modern)" preserveAspectRatio="xMidYMid slice"/>
+        <!-- subtle overlay so text is readable -->
+        <rect x="384" y="68" width="148" height="252" rx="6" fill="rgba(7,15,35,.12)"/>
+        <!-- benefits -->
+        <text x="390" y="345" fill="#5df0a0" font-size="10" font-family="Arial">✓  Interfaz responsive</text>
+        <text x="390" y="362" fill="#5df0a0" font-size="10" font-family="Arial">✓  APIs REST nativas</text>
+        <text x="390" y="379" fill="#5df0a0" font-size="10" font-family="Arial">✓  Cloud scalable</text>
+        <text x="390" y="396" fill="#5df0a0" font-size="10" font-family="Arial">✓  Talento disponible</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PROBLEMA ─────────────────────────────────── -->
+<section class="section" id="problema">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">El problema</div>
+      <h2 class="section-title gradient">El stack legacy está frenando tu empresa</h2>
+      <p class="section-desc">Tus sistemas Oracle Forms siguen operando, pero cada día acumulan deuda técnica y bloquean la innovación.</p>
+    </div>
+    <div class="pain-grid">
+      <div class="pain-card">
+        <span class="pain-icon">🖥️</span>
+        <h3>Interfaces obsoletas</h3>
+        <p>Experiencia de usuario anticuada que no retiene talento ni satisface a los usuarios modernos. Contrasta con cualquier herramienta SaaS del mercado.</p>
+      </div>
+      <div class="pain-card">
+        <span class="pain-icon">🔒</span>
+        <h3>Alta dependencia técnica</h3>
+        <p>Muy pocos profesionales saben Oracle Forms. Cada baja de personal es un riesgo operacional crítico. El conocimiento está en pocas cabezas.</p>
+      </div>
+      <div class="pain-card">
+        <span class="pain-icon">🔌</span>
+        <h3>Integración casi imposible</h3>
+        <p>Conectar con APIs modernas, plataformas SaaS o microservicios requiere workarounds complejos y costosos. El ecosistema digital avanza sin vos.</p>
+      </div>
+      <div class="pain-card">
+        <span class="pain-icon">💸</span>
+        <h3>Costos crecientes sin retorno</h3>
+        <p>Licencias caras, especialistas escasos a tarifas altas, infraestructura rígida. El presupuesto de IT queda atrapado en mantener el pasado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SOLUCIÓN ─────────────────────────────────── -->
+<section class="section" id="solucion">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">La solución</div>
+      <h2 class="section-title gradient">Modernización inteligente, sin frenar la operación</h2>
+      <p class="section-desc">No hacemos una migración a ciegas. Entendemos tu negocio, extraemos la lógica con IA y reconstruimos sobre bases modernas.</p>
+      <div class="solution-img-wrap">
+        <img src="img_services/forms_to_apex_modernization.png" alt="De Oracle Forms a Oracle APEX — proceso de modernización" loading="lazy">
+      </div>
+    </div>
+    <div class="solution-grid">
+      <ul class="check-list">
+        <li>
+          <div>
+            <strong>Oracle APEX — Desarrollo web moderno sobre tu base de datos</strong>
+            <span>Plataforma low-code de Oracle, rápida de desarrollar y fácil de mantener. Se integra nativamente con tu base de datos Oracle existente.</span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <strong>ORDS — APIs REST nativas</strong>
+            <span>Exposición de tu lógica de negocio como APIs RESTful. Integración seamless con cualquier plataforma, ERP, o front-end moderno.</span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <strong>Oracle Cloud Infrastructure — Escalabilidad sin límites</strong>
+            <span>Infraestructura elástica, segura y de bajo mantenimiento. Crece con la demanda sin inversión de capital en servidores.</span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <strong>IA generativa — Aceleración real del proceso</strong>
+            <span>Usamos IA para analizar código legacy, documentar lógica de negocio y acelerar la reconstrucción. Menos esfuerzo, mayor precisión.</span>
+          </div>
+        </li>
+      </ul>
+      <div>
+        <div class="tech-grid" style="margin-bottom:24px;">
+          <div class="tech-card">Oracle APEX<small>Low-code enterprise</small></div>
+          <div class="tech-card">ORDS APIs<small>REST nativas</small></div>
+          <div class="tech-card">OCI Cloud<small>Infraestructura</small></div>
+          <div class="tech-card">IA + LLMs<small>Aceleración</small></div>
+        </div>
+        <div class="kpi-box">
+          <h4>Resultados típicos</h4>
+          <div class="kpi-list">
+            <div class="kpi-item"><span class="kpi-val">40–60%</span> Reducción de esfuerzo de desarrollo</div>
+            <div class="kpi-item"><span class="kpi-val">2–3x</span> Mayor velocidad de entrega de features</div>
+            <div class="kpi-item"><span class="kpi-val">30–40%</span> Reducción de costos anuales de IT</div>
+            <div class="kpi-item"><span class="kpi-val">18m</span> Recuperación típica de la inversión</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PROCESO ──────────────────────────────────── -->
+<section class="section" id="proceso">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-label">Metodología</div>
+      <h2 class="section-title gradient">5 pasos hacia la modernización</h2>
+      <p class="section-desc">Un proceso claro, iterativo y con bajo riesgo operacional. Podés continuar operando durante toda la transición.</p>
+    </div>
+    <div class="process-row">
+      <div class="process-step">
+        <div class="step-num">1</div>
+        <div class="step-tag">Assessment</div>
+        <h3>Diagnóstico inteligente</h3>
+        <p>Analizamos tu código, arquitectura y lógica de negocio. Identificamos oportunidades, riesgos y ROI potencial con soporte de IA.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">2</div>
+        <div class="step-tag">Extracción IA</div>
+        <h3>Documentación automática</h3>
+        <p>La IA extrae y documenta la lógica de negocio oculta en el código Forms. Generamos modelos de datos y mapas de procesos.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">3</div>
+        <div class="step-tag">Rediseño</div>
+        <h3>Arquitectura moderna</h3>
+        <p>Diseñamos la nueva arquitectura en APEX + ORDS + OCI. Definimos la nueva UX y los patrones de desarrollo.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">4</div>
+        <div class="step-tag">Construcción</div>
+        <h3>Desarrollo acelerado</h3>
+        <p>Reconstrucción por módulos con IA asistiendo el desarrollo. Migración de datos sin downtime. Operación paralela.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">5</div>
+        <div class="step-tag">Go-Live</div>
+        <h3>Testing y deployment</h3>
+        <p>Validación exhaustiva con testing automatizado. Go-live controlado con plan de contingencia. Soporte post-lanzamiento.</p>
+      </div>
+    </div>
+    <div class="process-svg-wrap" style="margin-top:48px;">
+      <svg viewBox="0 0 1200 280" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="proc" x1="0" x2="1"><stop offset="0%" stop-color="#5aa0ff"/><stop offset="100%" stop-color="#7c5cff"/></linearGradient>
+        </defs>
+        <rect width="1200" height="280" fill="#091530"/>
+        <!-- connector line -->
+        <path d="M120 110 H1080" stroke="#1e3460" stroke-width="6" stroke-linecap="round"/>
+        <path d="M120 110 H1080" stroke="url(#proc)" stroke-width="6" stroke-linecap="round" stroke-dasharray="1 0" opacity=".35"/>
+        <!-- step circles -->
+        <circle cx="120"  cy="110" r="40" fill="#0d1b3e" stroke="url(#proc)" stroke-width="2.5"/>
+        <circle cx="360"  cy="110" r="40" fill="#0d1b3e" stroke="url(#proc)" stroke-width="2.5"/>
+        <circle cx="600"  cy="110" r="40" fill="#0d1b3e" stroke="url(#proc)" stroke-width="2.5"/>
+        <circle cx="840"  cy="110" r="40" fill="#0d1b3e" stroke="url(#proc)" stroke-width="2.5"/>
+        <circle cx="1080" cy="110" r="40" fill="#0d1b3e" stroke="url(#proc)" stroke-width="2.5"/>
+        <!-- step numbers -->
+        <text x="107"  y="118" fill="#fff" font-size="24" font-weight="900" font-family="Arial">1</text>
+        <text x="347"  y="118" fill="#fff" font-size="24" font-weight="900" font-family="Arial">2</text>
+        <text x="587"  y="118" fill="#fff" font-size="24" font-weight="900" font-family="Arial">3</text>
+        <text x="827"  y="118" fill="#fff" font-size="24" font-weight="900" font-family="Arial">4</text>
+        <text x="1067" y="118" fill="#fff" font-size="24" font-weight="900" font-family="Arial">5</text>
+        <!-- step labels below -->
+        <text x="120"  y="175" fill="#b4c8f0" font-size="14" font-family="Arial" text-anchor="middle">Assessment</text>
+        <text x="360"  y="175" fill="#b4c8f0" font-size="14" font-family="Arial" text-anchor="middle">Extracción IA</text>
+        <text x="600"  y="175" fill="#b4c8f0" font-size="14" font-family="Arial" text-anchor="middle">Rediseño</text>
+        <text x="840"  y="175" fill="#b4c8f0" font-size="14" font-family="Arial" text-anchor="middle">Construcción</text>
+        <text x="1080" y="175" fill="#b4c8f0" font-size="14" font-family="Arial" text-anchor="middle">Go-Live</text>
+        <!-- tags above -->
+        <text x="120"  y="52"  fill="#5aa0ff" font-size="11" font-family="Arial" text-anchor="middle">Día 1</text>
+        <text x="360"  y="52"  fill="#5aa0ff" font-size="11" font-family="Arial" text-anchor="middle">Semana 2–3</text>
+        <text x="600"  y="52"  fill="#5aa0ff" font-size="11" font-family="Arial" text-anchor="middle">Semana 4–5</text>
+        <text x="840"  y="52"  fill="#5aa0ff" font-size="11" font-family="Arial" text-anchor="middle">Sprints 2–N</text>
+        <text x="1080" y="52"  fill="#36d399" font-size="11" font-family="Arial" text-anchor="middle">Producción</text>
+        <!-- info cards below steps -->
+        <rect x="30"   y="200" width="178" height="60" rx="12" fill="#0d1b3e" stroke="#1e3460"/>
+        <rect x="270"  y="200" width="178" height="60" rx="12" fill="#0d1b3e" stroke="#1e3460"/>
+        <rect x="510"  y="200" width="178" height="60" rx="12" fill="#0d1b3e" stroke="#1e3460"/>
+        <rect x="750"  y="200" width="178" height="60" rx="12" fill="#0d1b3e" stroke="#1e3460"/>
+        <rect x="990"  y="200" width="178" height="60" rx="12" fill="#0d1b3e" stroke="#36d399" stroke-opacity=".5"/>
+        <text x="119"  y="226" fill="#7d9ac4" font-size="11" font-family="Arial" text-anchor="middle">Mapeo + roadmap</text>
+        <text x="119"  y="244" fill="#7d9ac4" font-size="11" font-family="Arial" text-anchor="middle">Sin costo</text>
+        <text x="359"  y="226" fill="#7d9ac4" font-size="11" font-family="Arial" text-anchor="middle">IA extrae lógica</text>
+        <text x="359"  y="244" fill="#7d9ac4" font-size="11" font-family="Arial" text-anchor="middle">de negocio</text>
+        <text x="599"  y="226" fill="#7d9ac4" font-size="11" font-family="Arial" text-anchor="middle">APEX + ORDS</text>
+        <text x="599"  y="244" fill="#7d9ac4" font-size="11" font-family="Arial" text-anchor="middle">+ OCI</text>
+        <text x="839"  y="226" fill="#7d9ac4" font-size="11" font-family="Arial" text-anchor="middle">Sprints iterativos</text>
+        <text x="839"  y="244" fill="#7d9ac4" font-size="11" font-family="Arial" text-anchor="middle">paralelos</text>
+        <text x="1079" y="226" fill="#36d399" font-size="11" font-family="Arial" text-anchor="middle">Operación plena</text>
+        <text x="1079" y="244" fill="#36d399" font-size="11" font-family="Arial" text-anchor="middle">en OCI</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ─── IA SECTION ────────────────────────────────── -->
+<section class="section" id="ia">
+  <div class="container">
+    <div class="ai-section-wrap">
+      <div>
+        <div class="section-label">Diferencial IA</div>
+        <h2 class="section-title" style="font-size:34px;">IA aplicada a la modernización Oracle</h2>
+        <p style="color:var(--muted);font-size:16px;line-height:1.7;margin:16px 0 36px;">Usamos inteligencia artificial en cada etapa del proceso para reducir tiempos, minimizar errores y capturar lógica de negocio que de otro modo se pierde.</p>
+        <div class="ai-stat-row">
+          <div class="ai-stat">
+            <div class="ai-stat-n">40–60%</div>
+            <div class="ai-stat-l"><strong>Reducción de esfuerzo manual</strong>Análisis, documentación y generación de código acelerados por IA</div>
+          </div>
+          <div class="ai-stat">
+            <div class="ai-stat-n">100%</div>
+            <div class="ai-stat-l"><strong>Cobertura de lógica de negocio</strong>La IA captura reglas ocultas en el código que los equipos suelen perder</div>
+          </div>
+          <div class="ai-stat">
+            <div class="ai-stat-n">2–3x</div>
+            <div class="ai-stat-l"><strong>Velocidad de desarrollo</strong>Generación asistida de módulos APEX y casos de prueba</div>
+          </div>
+        </div>
+      </div>
+      <div class="ai-features">
+        <div class="ai-feat">
+          <div class="ai-feat-icon">🔍</div>
+          <h4>Análisis automático de código</h4>
+          <p>Escaneo IA de Forms y Reports. Reportes de complejidad, dependencias y riesgos en horas.</p>
+        </div>
+        <div class="ai-feat">
+          <div class="ai-feat-icon">📝</div>
+          <h4>Documentación inteligente</h4>
+          <p>Generación automática de documentación técnica y funcional del legado.</p>
+        </div>
+        <div class="ai-feat">
+          <div class="ai-feat-icon">⚙️</div>
+          <h4>Extracción de lógica</h4>
+          <p>La IA identifica y mapea reglas de negocio embebidas en triggers y procedures.</p>
+        </div>
+        <div class="ai-feat">
+          <div class="ai-feat-icon">🏗️</div>
+          <h4>Generación de código APEX</h4>
+          <p>Asistencia IA en la construcción de módulos en APEX, acelerando los sprints.</p>
+        </div>
+        <div class="ai-feat">
+          <div class="ai-feat-icon">🧪</div>
+          <h4>Testing automatizado</h4>
+          <p>Generación de casos de prueba y validación de equivalencia funcional.</p>
+        </div>
+        <div class="ai-feat">
+          <div class="ai-feat-icon">🗺️</div>
+          <h4>Mapeo de datos</h4>
+          <p>Identificación automática de entidades, relaciones y transformaciones necesarias.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ANTES / DESPUÉS ───────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-label">Antes y después</div>
+      <h2 class="section-title gradient">La transformación en concreto</h2>
+      <p class="section-desc">Lo que cambia cuando modernizás con Inthegra.</p>
+    </div>
+    <div class="ba-wrap">
+      <div class="ba-side ba-before">
+        <div class="ba-label">Antes — Oracle Forms legacy</div>
+        <ul class="ba-list">
+          <li>Interfaz de cliente Oracle Forms, solo funciona en escritorio</li>
+          <li>Formularios sin responsive, sin acceso mobile</li>
+          <li>Lógica de negocio atrapada en triggers PL/SQL sin documentar</li>
+          <li>Sin APIs: integración manual via archivos planos o DB links</li>
+          <li>Deployment complejo, rollback difícil</li>
+          <li>Requiere plugin Java en el browser para ejecutar</li>
+          <li>Especialistas escasos y caros en el mercado</li>
+          <li>Escalabilidad vertical limitada por hardware</li>
+        </ul>
+      </div>
+      <div class="ba-divider">
+        <div class="ba-arrow">→</div>
+      </div>
+      <div class="ba-side ba-after">
+        <div class="ba-label">Después — APEX + ORDS + OCI</div>
+        <ul class="ba-list">
+          <li>Aplicación web responsiva, accesible desde cualquier dispositivo</li>
+          <li>UX moderna con componentes actuales y dashboards interactivos</li>
+          <li>Lógica documentada, versionada en Git y mantenible</li>
+          <li>APIs REST nativas: integración con cualquier sistema en horas</li>
+          <li>CI/CD automatizado, deploy en minutos, rollback trivial</li>
+          <li>Funciona en cualquier browser moderno, sin plugins</li>
+          <li>Desarrolladores APEX disponibles en el mercado</li>
+          <li>Escalabilidad elástica en Oracle Cloud</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── BENEFICIOS ────────────────────────────────── -->
+<section class="section" id="beneficios">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-label">Resultados</div>
+      <h2 class="section-title gradient">Beneficios tangibles para el negocio</h2>
+      <p class="section-desc">Impacto real, medible, en costos, velocidad y capacidad de innovación.</p>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-metric">30–40%</div>
+        <div class="benefit-icon">💰</div>
+        <h4>Reducción de costos IT</h4>
+        <p>Menos licencias, infraestructura más eficiente y menor costo de especialistas en el mercado.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-metric">2–3x</div>
+        <div class="benefit-icon">⚡</div>
+        <h4>Velocidad de entrega</h4>
+        <p>Nuevas funcionalidades se desarrollan y despliegan mucho más rápido. Agilidad real para responder al negocio.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-metric">100%</div>
+        <div class="benefit-icon">☁️</div>
+        <h4>Cloud-ready</h4>
+        <p>Infraestructura elástica en Oracle Cloud. Crece con la demanda sin inversión de capital en hardware.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-metric">∞</div>
+        <div class="benefit-icon">🔌</div>
+        <h4>Integración moderna</h4>
+        <p>APIs REST nativas. Conectá con cualquier ERP, CRM, plataforma SaaS o front-end en días, no meses.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-metric">↓ 0</div>
+        <div class="benefit-icon">🛡️</div>
+        <h4>Riesgo operacional</h4>
+        <p>Código documentado, equipo más amplio, conocimiento distribuido. Sin dependencia de personas clave.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-metric">18m</div>
+        <div class="benefit-icon">📈</div>
+        <h4>ROI acelerado</h4>
+        <p>Con el ahorro en costos operativos, la inversión se recupera en promedio en 18 a 24 meses.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CTA ──────────────────────────────────────── -->
+<section class="section" id="cta">
+  <div class="container">
+    <div class="cta-section">
+      <div class="section-label" style="color:#90c4ff;">Tu próximo paso</div>
+      <h2>Obtén tu diagnóstico gratuito</h2>
+      <p>Conversamos sobre tu situación actual y te entregamos un roadmap claro: alcance, riesgos y ROI estimado. Sin costo, sin compromiso.</p>
+      <form class="cta-form" onsubmit="handleSubmit(event)">
+        <input type="email" class="text-input" placeholder="Tu email corporativo" required />
+        <button type="submit" class="btn btn-primary">Solicitar ahora →</button>
+      </form>
+      <p class="cta-note">Respondemos en menos de 24 horas hábiles · Sin spam · Sin compromisos</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ───────────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <a href="https://inthegrasoftware.com" style="text-decoration:none; display:block;">
+          <img src="https://inthegrasoftware.com/wp-content/uploads/2024/12/logo-footer.png" alt="Inthegra Software" style="height:32px; width:auto; display:block;" />
+        </a>
+      <div class="footer-links">
+        <a href="https://inthegrasoftware.com">Sitio principal</a>
+        <a href="https://inthegrasoftware.com/oracle-services">Oracle Services</a>
+        <a href="mailto:info@inthegrasoftware.com">Contacto</a>
+      </div>
+      <p>© 2025 Inthegra Software · Especialistas en Oracle enterprise</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    const email = e.target.querySelector('input[type="email"]').value;
+    const btn = e.target.querySelector('button');
+    btn.textContent = '✓ Recibido, te contactamos pronto';
+    btn.disabled = true;
+    btn.style.background = 'linear-gradient(135deg, #36d399, #1eb87a)';
+    e.target.querySelector('input').disabled = true;
+  }
+
+  // Animate elements on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.pain-card, .benefit-card, .process-step, .ai-feat, .check-list li').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(16px)';
+    el.style.transition = 'opacity .5s ease, transform .5s ease';
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>

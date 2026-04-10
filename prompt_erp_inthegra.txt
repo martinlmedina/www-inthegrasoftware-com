@@ -1,0 +1,196 @@
+# Prompt premium — ERP / Business Suite Inthegra
+
+Using the global website context and the attached Inthegra portfolio sources, generate the premium mockup concept for the ERP / Business Suite page of Inthegra Software.
+
+## PAGE SCOPE
+This page must position Inthegra ERP as an enterprise-grade management platform for:
+- retail minorista
+- retail mayorista
+- empresas de servicios
+
+It must also clearly communicate one of Inthegra’s strongest differentiators:
+this ERP does not live in isolation. It integrates naturally with the rest of the Inthegra portfolio, especially:
+- Credit & Financial / Credit Suite
+- HealthCare / Health Suite
+- WMS
+- Supply Chain
+- CRM
+- Ecommerce
+- BI / Analytics
+- RRHH / People solutions
+
+## IMPORTANT BUSINESS TRUTH TO RESPECT
+Do not present the ERP as a generic low-end administrative system.
+This is a robust Oracle-native business platform with modular architecture and vertical expansion capability.
+It must feel credible for companies that need operational control, finance visibility, stock accuracy, logistics coordination, branch execution, and business scalability.
+
+## GROUNDING FROM PROVIDED SOURCES
+Use the attached sources as hard context and reflect these ideas faithfully:
+- Inthegra ERP Suite is adaptable to empresas de servicios, financieras, salud, retail mayorista, retail minorista y manufactura.
+- Core ERP modules include: compras, ventas, clientes, proveedores, finanzas, contabilidad, impuestos, comercial, stock, logística, punto de venta, reporting, BI, ecommerce, RRHH, seguridad y cash management.
+- WMS is integrated with stock operations and improves depósitos, inventario visibility, picking and order preparation.
+- Supply Chain supports clusters, demand visibility, assisted replenishment, assisted purchasing, automatic replenishment, stock minimums, equivalents and branch / distribution center logic.
+- Credit Suite covers tarjetas de crédito no bancarizadas, préstamos, cobranzas, CRM clientes, CRM comercios, scoring, otorgamiento y cajas.
+- Health Suite covers afiliaciones, autorizaciones online, auditorías, prestadores, liquidaciones and related admin-financial processes.
+- CRM consumes ERP data and enables omnichannel commercial interaction.
+- Ecommerce can be deeply connected with ERP stock, products and parametrization.
+- Inthegra’s technology base is Oracle-native, deployed on OCI, using Oracle Database and Oracle APEX.
+
+## PAGE OBJECTIVE
+The page must help a prospect immediately understand:
+1. Inthegra ERP is a serious operational backbone.
+2. It serves both service companies and retail operations.
+3. It scales from core administration to advanced operational execution.
+4. It can extend into specialized industry products without forcing disconnected systems.
+
+## AUDIENCES TO ADDRESS
+Primary audiences:
+- retail chains
+- wholesale distributors
+- service companies with administrative and financial complexity
+- companies with branches, warehouses, field operations or omnichannel needs
+
+Secondary audiences:
+- businesses that may later require integrated credit operations
+- healthcare-related businesses that need ERP + specialized healthcare workflows
+
+## TONE AND DESIGN DIRECTION
+- premium, enterprise, modern, high-trust
+- visually clean, not overloaded
+- serious B2B corporate tone
+- operational strength over startup hype
+- show scalability, control, modularity and integration depth
+- avoid vague marketing clichés
+
+## VERY IMPORTANT COPY RULES
+- Do not invent unsupported technical claims.
+- Do not mention fake metrics.
+- Do not fabricate client names or project results.
+- You may reference sectors and use wording like “integración nativa con soluciones del portfolio Inthegra” when aligned with the sources.
+- When mentioning integrations with HealthCare and Credit & Financial, present them as portfolio synergy and business-platform continuity.
+
+## VISUAL SYSTEM TO USE
+Use subtle background graphics inspired by Inthegra’s portfolio visual language.
+Reference the provided graphic asset set (Solutions / Product / Inthegra / Services style backgrounds) in a delicate, low-opacity way that never harms readability.
+Background graphics should feel like soft enterprise motion lines / brand system accents, not decorative noise.
+
+## OUTPUT REQUIRED
+Create a complete section-by-section mockup concept with real website copy in Spanish.
+The output should be detailed enough for direct implementation in HTML.
+
+## REQUIRED PAGE STRUCTURE
+1. Hero section
+   Include:
+   - strong headline for ERP / Business Suite
+   - subheadline covering retail + servicios
+   - trust cues around Oracle-native architecture / modularity / enterprise operations
+   - primary CTA: Agendar demo
+   - secondary CTA: Ver módulos or Ver integración
+   - optional visual idea: dashboard / operations / architecture card cluster
+
+2. Positioning / why Inthegra ERP
+   Explain that this is a modular business platform, not isolated software.
+   Clarify that Inthegra can cover core ERP needs and then extend with portfolio solutions.
+   Must communicate “from backbone to ecosystem”.
+
+3. Segment split section
+   Create 3 differentiated cards or columns:
+   - ERP para retail minorista
+   - ERP para retail mayorista
+   - ERP para empresas de servicios
+   Each segment should include:
+   - typical operational complexity
+   - what the ERP helps organize
+   - how Inthegra adds value
+
+4. Core modules section
+   Organize modules in a clean enterprise way.
+   Use groups instead of a random long list.
+   Suggested groups:
+   - administración y comercial
+   - finanzas y control
+   - stock y logística
+   - ventas y canales
+   - reporting y gobierno
+   - personas y seguridad
+   Make it feel modular and scalable.
+
+5. Advanced retail operations section
+   This is important.
+   Show how the ERP expands with:
+   - WMS
+   - Supply Chain
+   - POS / sucursales
+   - Ecommerce
+   - analytics
+   Communicate use cases like inventory visibility, replenishment, purchasing support, picking, branch execution and omnichannel coordination.
+
+6. Service companies section
+   Explain why the ERP also works well for service companies.
+   Emphasize process order, financial control, billing support, visibility, reporting and cross-area coordination.
+   Do not force retail language here.
+
+7. Portfolio integration section
+   This is one of the key sections.
+   Build a visual / conceptual block showing the ERP connected to:
+   - Credit & Financial
+   - HealthCare
+   - CRM
+   - WMS
+   - Supply Chain
+   - Ecommerce
+   - BI / Analytics
+   Explain that companies can start with ERP and expand into specialized solutions without losing operational continuity.
+
+8. Architecture / technology confidence section
+   Mention:
+   - Oracle-native foundation
+   - Oracle Database
+   - Oracle APEX
+   - OCI deployment
+   - enterprise-grade security, scalability and performance language
+   Keep it credible and concise.
+
+9. Business outcomes section
+   Focus on outcomes such as:
+   - more control
+   - better operational traceability
+   - improved stock and financial visibility
+   - better coordination across areas
+   - support for growth and multi-unit complexity
+   Keep it executive and business-oriented.
+
+10. Final CTA section
+   Premium closing block.
+   Reaffirm that Inthegra can cover both ERP backbone and specialized operational growth.
+   CTA: Agendar demo.
+
+## LAYOUT GUIDANCE
+Suggest a premium landing layout with:
+- wide hero
+- alternating dark / light sections
+- enterprise cards
+- architecture / ecosystem visualization
+- restrained iconography
+- optional tables or comparison cards only if they improve clarity
+
+## INTERACTION GUIDANCE
+Suggest tasteful micro-interactions only:
+- hover states on module cards
+- reveal animations for ecosystem map
+- sticky section navigation if useful
+- subtle counters or badges only if they do not feel gimmicky
+
+## COPY STYLE
+Write all copy in Spanish.
+Make it sound like a premium B2B website for decision-makers.
+The content must be ready for designers and frontend implementation.
+
+## FINAL DELIVERABLE FORMAT
+Return:
+- page concept summary
+- section by section structure
+- suggested copy blocks
+- visual direction notes
+- component ideas where useful
+- no code

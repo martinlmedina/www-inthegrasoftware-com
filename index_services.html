@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Partner Oracle especializado en modernización, cloud, desarrollo a medida, analítica e inteligencia artificial. Inthegra Software — capacidad Oracle integrada." />
+  <title>Oracle Services | Inthegra Software</title>
+
+  <link rel="icon" href="https://inthegrasoftware.com/wp-content/uploads/2025/02/favicon-150x140.png" sizes="32x32" />
+  <link rel="icon" href="https://inthegrasoftware.com/wp-content/uploads/2025/02/favicon.png" sizes="192x192" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="nav.js"></script>
+
+  <style>
+    :root {
+      --bg:       #0F2043;
+      --bg-deep:  #08111f;
+      --bg-panel: #0f1830;
+      --bg-card:  #121f3d;
+      --line:     #243a61;
+      --line-2:   #2e4a7a;
+      --text:     #eef4ff;
+      --text-2:   #c0d4f0;
+      --muted:    #7d9ac4;
+      --brand:    #55a3ff;
+      --brand-2:  #7c5cff;
+      --green:    #35d39b;
+      --gold:     #ffd166;
+      --ai:       #a78bfa;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg);
+      background-image:
+        radial-gradient(ellipse 90% 55% at 100% 0%,  rgba(85,163,255,.18) 0%, transparent 50%),
+        radial-gradient(ellipse 60% 40% at 0%   10%, rgba(124,92,255,.13)  0%, transparent 45%),
+        radial-gradient(ellipse 80% 70% at 50%  70%, rgba(53,211,155,.06)  0%, transparent 55%);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container { max-width: 1260px; margin: 0 auto; padding: 0 32px; }
+
+    /* ── HEADER ─── */
+    header {
+      position: sticky; top: 0; z-index: 200;
+      background: rgba(8,17,31,.88);
+      backdrop-filter: blur(20px) saturate(1.5);
+      border-bottom: 1px solid rgba(36,58,97,.7);
+    }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; gap: 24px; }
+    .logo-wrap a { display: block; }
+    .logo-wrap img { height: 34px; width: auto; display: block; }
+    nav { display: flex; align-items: center; gap: 2px; }
+    nav a { color: var(--muted); text-decoration: none; font-size: 13px; font-weight: 500; padding: 6px 12px; border-radius: 8px; transition: all .2s; white-space: nowrap; }
+    nav a:hover { color: var(--brand); background: rgba(85,163,255,.09); }
+    .nav-cta { flex-shrink: 0; padding: 10px 22px; border-radius: 10px; background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #fff; font-size: 14px; font-weight: 700; text-decoration: none; transition: box-shadow .25s; box-shadow: 0 4px 18px rgba(85,163,255,.3); }
+    .nav-cta:hover { box-shadow: 0 6px 28px rgba(85,163,255,.5); }
+
+    /* ── BUTTONS ─── */
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 13px 26px; border-radius: 12px; font-size: 15px; font-weight: 700; text-decoration: none; cursor: pointer; border: 1.5px solid transparent; transition: all .25s; font-family: inherit; }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #fff; box-shadow: 0 8px 28px rgba(85,163,255,.3); }
+    .btn-primary:hover { box-shadow: 0 12px 40px rgba(85,163,255,.5); }
+    .btn-ghost { background: rgba(255,255,255,.05); border-color: var(--line-2); color: var(--text-2); }
+    .btn-ghost:hover { border-color: var(--brand); color: var(--brand); background: rgba(85,163,255,.08); }
+
+    /* ── SHARED ─── */
+    .section { padding: 96px 0; }
+    .section + .section { border-top: 1px solid rgba(36,58,97,.45); }
+    .eyebrow { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 18px; padding: 6px 14px; border-radius: 999px; border: 1px solid rgba(85,163,255,.3); background: rgba(85,163,255,.08); color: var(--brand); font-size: 11px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
+    .eyebrow::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--brand); }
+    .section-label { font-size: 11px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--brand); display: block; margin-bottom: 12px; }
+    .section-title { font-size: 44px; font-weight: 800; line-height: 1.12; letter-spacing: -.025em; margin-bottom: 16px; }
+    .gradient-text { background: linear-gradient(145deg, #ffffff 30%, var(--brand) 60%, var(--green) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .section-desc { color: var(--muted); font-size: 18px; line-height: 1.7; }
+    .center { text-align: center; }
+
+    /* ── HERO ─── */
+    .hero { display: grid; grid-template-columns: 1.05fr .95fr; gap: 52px; align-items: center; padding: 88px 0 72px; }
+    .hero-title { font-size: 60px; font-weight: 900; line-height: 1.02; letter-spacing: -.04em; margin-bottom: 22px; }
+    .hero-sub { color: var(--text-2); font-size: 19px; line-height: 1.72; max-width: 54ch; margin-bottom: 32px; }
+    .hero-badges { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 36px; }
+    .hero-badge { padding: 5px 13px; border-radius: 999px; border: 1px solid var(--line-2); background: rgba(255,255,255,.04); color: var(--text-2); font-size: 12px; font-weight: 500; }
+    .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 28px; }
+    .hero-trust { display: flex; flex-wrap: wrap; gap: 18px; }
+    .hero-trust span { font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+    .hero-trust span::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--green); }
+    .hero-visual { border-radius: 24px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 32px 80px rgba(0,0,0,.45); }
+    .hero-visual svg { display: block; width: 100%; height: auto; }
+
+    /* ── KPI STRIP ─── */
+    .kpi-strip { display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 20px; overflow: hidden; }
+    .kpi-item { background: var(--bg-card); padding: 28px 24px; text-align: center; }
+    .kpi-n { font-size: 36px; font-weight: 900; background: linear-gradient(135deg, var(--brand), var(--green)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1; margin-bottom: 8px; }
+    .kpi-l { font-size: 13px; color: var(--muted); line-height: 1.45; }
+
+    /* ── SERVICES GRID ─── */
+    .services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .svc-hero { grid-column: 1 / -1; }
+
+    .svc-card {
+      border-radius: 24px; background: var(--bg-card); border: 1px solid var(--line);
+      overflow: hidden; text-decoration: none; color: inherit; display: flex; flex-direction: column;
+      transition: border-color .25s, transform .25s, box-shadow .25s;
+      position: relative;
+    }
+    .svc-card:hover { transform: translateY(-6px); box-shadow: 0 24px 60px rgba(0,0,0,.3); }
+    .svc-card.accent-blue:hover { border-color: var(--brand); }
+    .svc-card.accent-green:hover { border-color: var(--green); }
+    .svc-card.accent-violet:hover { border-color: var(--brand-2); }
+    .svc-card.accent-teal:hover { border-color: #2dd4bf; }
+    .svc-card.accent-ai:hover { border-color: var(--ai); }
+
+    .svc-top { padding: 32px 32px 0; display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+    .svc-num { font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; padding: 4px 10px; border-radius: 6px; background: rgba(255,255,255,.05); color: var(--muted); }
+    .svc-body { padding: 20px 32px 32px; flex: 1; display: flex; flex-direction: column; }
+    .svc-tag { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; margin-bottom: 12px; }
+    .svc-tag::before { content: ''; width: 6px; height: 6px; border-radius: 50%; }
+    .svc-card.accent-blue .svc-tag { color: var(--brand); }
+    .svc-card.accent-blue .svc-tag::before { background: var(--brand); }
+    .svc-card.accent-green .svc-tag { color: var(--green); }
+    .svc-card.accent-green .svc-tag::before { background: var(--green); }
+    .svc-card.accent-violet .svc-tag { color: var(--brand-2); }
+    .svc-card.accent-violet .svc-tag::before { background: var(--brand-2); }
+    .svc-card.accent-teal .svc-tag { color: #2dd4bf; }
+    .svc-card.accent-teal .svc-tag::before { background: #2dd4bf; }
+    .svc-card.accent-ai .svc-tag { color: var(--ai); }
+    .svc-card.accent-ai .svc-tag::before { background: var(--ai); }
+
+    .svc-body h3 { font-size: 22px; font-weight: 800; line-height: 1.2; margin-bottom: 12px; }
+    .svc-body p { font-size: 14px; color: var(--muted); line-height: 1.7; margin-bottom: 20px; }
+    .svc-bullets { list-style: none; display: flex; flex-direction: column; gap: 7px; margin-bottom: 24px; }
+    .svc-bullets li { font-size: 13px; color: var(--text-2); padding-left: 18px; position: relative; }
+    .svc-bullets li::before { content: '→'; position: absolute; left: 0; color: var(--brand); font-size: 12px; }
+    .svc-card.accent-green .svc-bullets li::before { color: var(--green); }
+    .svc-card.accent-violet .svc-bullets li::before { color: var(--brand-2); }
+    .svc-card.accent-teal .svc-bullets li::before { color: #2dd4bf; }
+    .svc-card.accent-ai .svc-bullets li::before { color: var(--ai); }
+
+    .svc-footer { margin-top: auto; display: flex; align-items: center; justify-content: space-between; padding-top: 20px; border-top: 1px solid var(--line); }
+    .svc-link { font-size: 14px; font-weight: 700; display: flex; align-items: center; gap: 6px; }
+    .svc-card.accent-blue .svc-link { color: var(--brand); }
+    .svc-card.accent-green .svc-link { color: var(--green); }
+    .svc-card.accent-violet .svc-link { color: var(--brand-2); }
+    .svc-card.accent-teal .svc-link { color: #2dd4bf; }
+    .svc-card.accent-ai .svc-link { color: var(--ai); }
+    .svc-kpi { font-size: 12px; color: var(--muted); text-align: right; }
+    .svc-kpi strong { display: block; font-size: 18px; font-weight: 800; color: var(--text); }
+
+    /* Card full-width (Production AI) */
+    .svc-card.full { grid-column: 1 / -1; }
+    .svc-card.full .svc-body { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center; }
+    .svc-card.full .svc-bullets { columns: 2; gap: 6px; }
+
+    /* ── PROPUESTA INTEGRADA ─── */
+    .integrated-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin-bottom: 36px; }
+    .int-card { background: var(--bg-card); border: 1px solid var(--line); border-radius: 20px; padding: 28px; }
+    .int-icon { font-size: 28px; margin-bottom: 14px; }
+    .int-card h3 { font-size: 17px; font-weight: 700; margin-bottom: 8px; }
+    .int-card p { font-size: 14px; color: var(--muted); line-height: 1.65; }
+
+    /* ── JOURNEY ─── */
+    .journey-strip { display: grid; grid-template-columns: repeat(5,1fr); position: relative; }
+    .journey-strip::before { content: ''; position: absolute; top: 40px; left: 8%; right: 8%; height: 2px; background: linear-gradient(90deg, var(--brand), var(--brand-2), var(--ai), var(--green)); }
+    .j-step { padding: 0 16px; text-align: center; position: relative; }
+    .j-circle { width: 52px; height: 52px; border-radius: 50%; margin: 0 auto 18px; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 900; color: #fff; position: relative; z-index: 1; box-shadow: 0 0 0 6px rgba(255,255,255,.06); }
+    .j-step:nth-child(1) .j-circle { background: linear-gradient(135deg, var(--brand), #3b8ee8); }
+    .j-step:nth-child(2) .j-circle { background: linear-gradient(135deg, #3b8ee8, var(--brand-2)); }
+    .j-step:nth-child(3) .j-circle { background: linear-gradient(135deg, var(--brand-2), var(--ai)); }
+    .j-step:nth-child(4) .j-circle { background: linear-gradient(135deg, var(--ai), #4fc7b0); }
+    .j-step:nth-child(5) .j-circle { background: linear-gradient(135deg, #4fc7b0, var(--green)); }
+    .j-label { font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--brand); margin-bottom: 8px; }
+    .j-step h4 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+    .j-step p { font-size: 12px; color: var(--muted); line-height: 1.55; }
+    .j-service { font-size: 11px; color: var(--green); font-weight: 600; margin-top: 8px; background: rgba(53,211,155,.1); padding: 3px 8px; border-radius: 999px; display: inline-block; }
+
+    /* ── ARCHITECTURE SVG ─── */
+    .arch-wrap { border-radius: 20px; overflow: hidden; border: 1px solid var(--line); }
+    .arch-wrap svg { display: block; width: 100%; height: auto; }
+
+    /* ── CTA ─── */
+    .cta-box {
+      background: linear-gradient(135deg, rgba(85,163,255,.12), rgba(124,92,255,.12));
+      border: 1px solid rgba(85,163,255,.25); border-radius: 28px;
+      padding: 72px 56px; text-align: center; position: relative; overflow: hidden;
+    }
+    .cta-box::before { content: ''; position: absolute; top: -80px; right: -80px; width: 300px; height: 300px; border-radius: 50%; background: rgba(85,163,255,.08); pointer-events: none; }
+    .cta-box::after { content: ''; position: absolute; bottom: -60px; left: -60px; width: 240px; height: 240px; border-radius: 50%; background: rgba(124,92,255,.08); pointer-events: none; }
+    .cta-box h2 { font-size: 42px; font-weight: 900; letter-spacing: -.025em; margin-bottom: 16px; position: relative; z-index: 1; }
+    .cta-box p { font-size: 18px; color: var(--muted); max-width: 55ch; margin: 0 auto 36px; line-height: 1.7; position: relative; z-index: 1; }
+    .cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; position: relative; z-index: 1; }
+
+    /* ── FOOTER ─── */
+    footer { background: rgba(8,17,31,.85); border-top: 1px solid rgba(36,58,97,.7); padding: 56px 0 32px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr repeat(3,1fr); gap: 40px; margin-bottom: 40px; }
+    .footer-logo img { height: 36px; margin-bottom: 14px; }
+    .footer-tagline { font-size: 13px; color: var(--muted); line-height: 1.65; max-width: 30ch; }
+    .footer-col h4 { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; }
+    .footer-col a { display: block; font-size: 13px; color: var(--text-2); text-decoration: none; margin-bottom: 8px; transition: color .2s; }
+    .footer-col a:hover { color: var(--brand); }
+    .footer-bottom { border-top: 1px solid rgba(36,58,97,.5); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+    .footer-copy { font-size: 12px; color: var(--muted); }
+
+    /* ── WHATSAPP ─── */
+    .wa-float { position: fixed; bottom: 28px; right: 28px; z-index: 999; width: 56px; height: 56px; border-radius: 50%; background: #25d366; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 24px rgba(37,211,102,.5); transition: transform .25s; text-decoration: none; }
+    .wa-float:hover { transform: scale(1.1); }
+    .wa-float svg { width: 28px; height: 28px; fill: #fff; }
+
+    /* ── ANIMATION ─── */
+    .fade-up { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+    .fade-up.in { opacity: 1; transform: translateY(0); }
+
+    /* ── RESPONSIVE ─── */
+    @media (max-width: 1100px) {
+      .hero { grid-template-columns: 1fr; gap: 40px; }
+      .hero-title { font-size: 46px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .svc-card.full .svc-body { grid-template-columns: 1fr; }
+      .svc-card.full .svc-bullets { columns: 1; }
+      .journey-strip { grid-template-columns: 1fr 1fr; }
+      .journey-strip::before { display: none; }
+      .kpi-strip { grid-template-columns: 1fr 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .integrated-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 768px) {
+      .section { padding: 64px 0; }
+      .section-title { font-size: 32px; }
+      .hero-title { font-size: 36px; }
+      .journey-strip { grid-template-columns: 1fr; }
+      .kpi-strip { grid-template-columns: 1fr 1fr; }
+      .cta-box { padding: 48px 28px; }
+      .cta-box h2 { font-size: 30px; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .container { padding: 0 20px; }
+      nav { display: none; }
+    }
+
+    /* ── BACKGROUND GRAPHICS ─── */
+    .section-relative { position: relative; overflow: hidden; }
+    .section-relative > .container { position: relative; z-index: 1; }
+    .bg-graphic { position: absolute; pointer-events: none; z-index: 0; user-select: none; }
+    @media (max-width: 768px) { .bg-graphic { display: none; } }
+  </style>
+</head>
+<body>
+
+<!-- ── HEADER ─────────────────────────────────────── -->
+<header>
+  <div class="container">
+    <div class="header-inner">
+      <div class="logo-wrap">
+        <a href="https://inthegrasoftware.com">
+          <img src="https://inthegrasoftware.com/wp-content/uploads/2026/02/Logo_oracle_header.svg" alt="Inthegra Software" />
+        </a>
+      </div>
+      <nav>
+        <a href="landing_modernizacion.html">Oracle Forms</a>
+        <a href="landing_oci.html">OCI</a>
+        <a href="landing_desarrollo_medida.html">Desarrollo</a>
+        <a href="landing_oac.html">Analytics</a>
+        <a href="landing_production_ai.html">Production AI</a>
+      </nav>
+      <a href="#contacto" class="nav-cta">Hablar con un experto</a>
+    </div>
+  </div>
+</header>
+
+<!-- ── HERO ─────────────────────────────────────── -->
+<section class="section-relative">
+  <img src="Services.svg" class="bg-graphic" aria-hidden="true"
+    style="right: -80px; top: -60px; width: 640px; opacity: 0.16; filter: blur(0.5px);" />
+  <div class="container">
+    <div class="hero">
+      <div class="fade-up">
+        <div class="eyebrow">Oracle Partner · Inthegra Software</div>
+        <h1 class="hero-title">
+          Capacidad Oracle
+          <span style="background: linear-gradient(135deg, var(--brand), var(--brand-2), var(--green)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">integrada</span>
+        </h1>
+        <p class="hero-sub">
+          Modernización, cloud, desarrollo, analítica e inteligencia artificial — todo sobre una plataforma Oracle coherente. No cinco servicios sueltos: una propuesta de valor end-to-end.
+        </p>
+        <div class="hero-badges">
+          <span class="hero-badge">Modernización Oracle Forms</span>
+          <span class="hero-badge">Oracle Cloud (OCI)</span>
+          <span class="hero-badge">Desarrollo a Medida</span>
+          <span class="hero-badge">Oracle Analytics Cloud</span>
+          <span class="hero-badge">Production AI</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#servicios" class="btn btn-primary">Ver servicios →</a>
+          <a href="https://inthegrasoftware.com/oracle-services/" class="btn btn-ghost" target="_blank" rel="noopener">Sitio Inthegra ↗</a>
+        </div>
+        <div class="hero-trust">
+          <span>Partner Oracle certificado</span>
+          <span>Más de 10 años de experiencia</span>
+          <span>Proyectos en producción</span>
+          <span>Equipo en Argentina</span>
+        </div>
+      </div>
+      <div class="hero-visual fade-up" style="transition-delay:.15s;">
+        <svg viewBox="0 0 920 640" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="hg1" x1="0" x2="1"><stop offset="0%" stop-color="#55a3ff"/><stop offset="100%" stop-color="#7c5cff"/></linearGradient>
+            <linearGradient id="hg2" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#0f1933"/><stop offset="100%" stop-color="#162442"/></linearGradient>
+            <linearGradient id="hg3" x1="0" x2="1"><stop offset="0%" stop-color="#55a3ff"/><stop offset="100%" stop-color="#35d39b"/></linearGradient>
+            <linearGradient id="hg4" x1="0" x2="1"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#55a3ff"/></linearGradient>
+          </defs>
+          <rect width="920" height="640" fill="url(#hg2)"/>
+          <ellipse cx="460" cy="320" rx="220" ry="140" fill="rgba(85,163,255,.05)"/>
+
+          <!-- Panel izquierdo: Stack Oracle actual -->
+          <rect x="28" y="68" width="240" height="504" rx="20" fill="#121f3b" stroke="#30446f"/>
+          <text x="66" y="104" fill="#eef4ff" font-size="16" font-weight="700" font-family="Arial">Stack Oracle</text>
+          <!-- Oracle Forms legacy -->
+          <rect x="50" y="118" width="196" height="72" rx="12" fill="#162040" stroke="rgba(255,100,50,.3)"/>
+          <text x="70" y="142" fill="#ff9060" font-size="12" font-weight="700" font-family="Arial">Oracle Forms legacy</text>
+          <text x="70" y="158" fill="#7d9ac4" font-size="11" font-family="Arial">Client/server · Reportes</text>
+          <text x="70" y="180" fill="#ffd166" font-size="10" font-family="Arial">▲ Desactualizado</text>
+          <!-- Oracle DB -->
+          <rect x="50" y="204" width="196" height="72" rx="12" fill="#162040" stroke="rgba(85,163,255,.3)"/>
+          <text x="70" y="228" fill="#55a3ff" font-size="12" font-weight="700" font-family="Arial">Oracle Database</text>
+          <text x="70" y="244" fill="#7d9ac4" font-size="11" font-family="Arial">On-premise · Producción</text>
+          <text x="70" y="266" fill="#35d39b" font-size="10" font-family="Arial">● Core del negocio</text>
+          <!-- Infra local -->
+          <rect x="50" y="290" width="196" height="72" rx="12" fill="#162040" stroke="rgba(124,92,255,.25)"/>
+          <text x="70" y="314" fill="#a78bfa" font-size="12" font-weight="700" font-family="Arial">Infraestructura propia</text>
+          <text x="70" y="330" fill="#7d9ac4" font-size="11" font-family="Arial">Servidores · Alto costo</text>
+          <text x="70" y="352" fill="#ffd166" font-size="10" font-family="Arial">▲ Sin escalabilidad</text>
+          <!-- Reportes dispersos -->
+          <rect x="50" y="376" width="196" height="68" rx="12" fill="#162040" stroke="rgba(255,209,102,.2)"/>
+          <text x="70" y="400" fill="#ffd166" font-size="12" font-weight="700" font-family="Arial">Datos y reportes</text>
+          <text x="70" y="416" fill="#7d9ac4" font-size="11" font-family="Arial">Excel · Silos · Sin BI</text>
+          <text x="70" y="434" fill="#ffd166" font-size="10" font-family="Arial">▲ Sin gobernanza</text>
+          <!-- Sin AI -->
+          <rect x="50" y="458" width="196" height="60" rx="12" fill="#162040" stroke="rgba(255,159,122,.2)"/>
+          <text x="70" y="481" fill="#ff9f7a" font-size="12" font-weight="700" font-family="Arial">Procesos manuales</text>
+          <text x="70" y="497" fill="#7d9ac4" font-size="11" font-family="Arial">Sin AI · Sin automatización</text>
+          <text x="28" y="548" fill="#7d9ac4" font-size="11" font-family="Arial">Desafíos tecnológicos Oracle</text>
+
+          <!-- Panel central: Inthegra Services -->
+          <rect x="310" y="44" width="300" height="552" rx="22" fill="#121f3b" stroke="#30446f"/>
+          <ellipse cx="460" cy="320" rx="100" ry="200" fill="rgba(85,163,255,.04)"/>
+          <text x="387" y="84" fill="#eef4ff" font-size="16" font-weight="700" font-family="Arial">Inthegra Oracle</text>
+          <!-- Modernización -->
+          <rect x="330" y="102" width="260" height="76" rx="14" fill="url(#hg1)"/>
+          <text x="352" y="136" fill="#fff" font-size="14" font-weight="800" font-family="Arial">Modernización Forms</text>
+          <text x="352" y="154" fill="rgba(255,255,255,.8)" font-size="11" font-family="Arial">Oracle Forms → Web + IA</text>
+          <!-- OCI -->
+          <rect x="330" y="194" width="260" height="70" rx="14" fill="#162040" stroke="rgba(53,211,155,.4)"/>
+          <text x="352" y="225" fill="#35d39b" font-size="14" font-weight="700" font-family="Arial">Oracle Cloud (OCI)</text>
+          <text x="352" y="245" fill="#7d9ac4" font-size="11" font-family="Arial">Infra · DB · Security · FinOps</text>
+          <!-- Desarrollo -->
+          <rect x="330" y="280" width="260" height="70" rx="14" fill="#162040" stroke="rgba(124,92,255,.4)"/>
+          <text x="352" y="311" fill="#a78bfa" font-size="14" font-weight="700" font-family="Arial">Desarrollo a Medida</text>
+          <text x="352" y="331" fill="#7d9ac4" font-size="11" font-family="Arial">APEX · ORDS · PWA · APIs</text>
+          <!-- Analytics -->
+          <rect x="330" y="366" width="260" height="70" rx="14" fill="#162040" stroke="rgba(85,163,255,.3)"/>
+          <text x="352" y="397" fill="#55a3ff" font-size="14" font-weight="700" font-family="Arial">Oracle Analytics Cloud</text>
+          <text x="352" y="417" fill="#7d9ac4" font-size="11" font-family="Arial">Semantic Model · BI · Reporting</text>
+          <!-- Production AI -->
+          <rect x="330" y="452" width="260" height="70" rx="14" fill="#162040" stroke="rgba(167,139,250,.4)"/>
+          <text x="352" y="484" fill="#a78bfa" font-size="14" font-weight="700" font-family="Arial">Production AI</text>
+          <text x="352" y="504" fill="#7d9ac4" font-size="11" font-family="Arial">RAG · Agentes · LLM en prod.</text>
+          <text x="330" y="544" fill="#7d9ac4" font-size="11" font-family="Arial">Capacidad Oracle integrada · end-to-end</text>
+
+          <!-- Panel derecho: Resultados -->
+          <rect x="652" y="68" width="240" height="504" rx="20" fill="#121f3b" stroke="#30446f"/>
+          <text x="690" y="104" fill="#eef4ff" font-size="16" font-weight="700" font-family="Arial">Resultado</text>
+          <!-- Apps modernas -->
+          <rect x="672" y="118" width="200" height="72" rx="12" fill="#162040" stroke="rgba(85,163,255,.35)"/>
+          <text x="692" y="142" fill="#55a3ff" font-size="12" font-weight="700" font-family="Arial">Apps web modernas</text>
+          <text x="692" y="158" fill="#7d9ac4" font-size="11" font-family="Arial">UX renovada · Integración</text>
+          <text x="692" y="179" fill="#35d39b" font-size="10" font-family="Arial">● Sin reescribir el core</text>
+          <!-- Cloud optimizado -->
+          <rect x="672" y="204" width="200" height="72" rx="12" fill="#162040" stroke="rgba(53,211,155,.3)"/>
+          <text x="692" y="228" fill="#35d39b" font-size="12" font-weight="700" font-family="Arial">Cloud operado con SLA</text>
+          <text x="692" y="244" fill="#7d9ac4" font-size="11" font-family="Arial">99.9% uptime · -30% costo</text>
+          <text x="692" y="266" fill="#35d39b" font-size="10" font-family="Arial">● FinOps continuo</text>
+          <!-- APEX apps -->
+          <rect x="672" y="290" width="200" height="72" rx="12" fill="#162040" stroke="rgba(124,92,255,.3)"/>
+          <text x="692" y="314" fill="#a78bfa" font-size="12" font-weight="700" font-family="Arial">Apps a medida entregadas</text>
+          <text x="692" y="330" fill="#7d9ac4" font-size="11" font-family="Arial">Portales · Workflows · PWA</text>
+          <text x="692" y="352" fill="#35d39b" font-size="10" font-family="Arial">● DevOps + agilidad</text>
+          <!-- Analytics gobernada -->
+          <rect x="672" y="376" width="200" height="68" rx="12" fill="#162040" stroke="rgba(85,163,255,.25)"/>
+          <text x="692" y="400" fill="#55a3ff" font-size="12" font-weight="700" font-family="Arial">Analítica gobernada</text>
+          <text x="692" y="416" fill="#7d9ac4" font-size="11" font-family="Arial">Una fuente de verdad</text>
+          <text x="692" y="434" fill="#35d39b" font-size="10" font-family="Arial">● -65% tiempo reporting</text>
+          <!-- AI en producción -->
+          <rect x="672" y="458" width="200" height="60" rx="12" fill="#162040" stroke="rgba(167,139,250,.3)"/>
+          <text x="692" y="482" fill="#a78bfa" font-size="12" font-weight="700" font-family="Arial">AI en producción real</text>
+          <text x="692" y="498" fill="#7d9ac4" font-size="11" font-family="Arial">ROI medible · Sin hype</text>
+          <text x="652" y="548" fill="#7d9ac4" font-size="11" font-family="Arial">Modernización · Ops · Datos · AI</text>
+
+          <!-- Arrows -->
+          <path d="M268 154 H310 M268 240 H310 M268 326 H310 M268 410 H310 M268 488 H310" stroke="#55a3ff" stroke-width="6" stroke-linecap="round" opacity=".55"/>
+          <path d="M630 140 H652 M630 229 H652 M630 315 H652 M630 401 H652 M630 487 H652" stroke="url(#hg3)" stroke-width="6" stroke-linecap="round" opacity=".65"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── KPI STRIP ─────────────────────────────────────── -->
+<section style="padding: 0 0 80px;">
+  <div class="container">
+    <div class="kpi-strip fade-up">
+      <div class="kpi-item">
+        <div class="kpi-n">+10 años</div>
+        <div class="kpi-l">Partner Oracle en Argentina con proyectos en producción</div>
+      </div>
+      <div class="kpi-item">
+        <div class="kpi-n">5 práct.</div>
+        <div class="kpi-l">Modernización · OCI · Desarrollo · Analytics · AI</div>
+      </div>
+      <div class="kpi-item">
+        <div class="kpi-n">End-to-end</div>
+        <div class="kpi-l">Advisory · Implementación · Managed Services</div>
+      </div>
+      <div class="kpi-item">
+        <div class="kpi-n">Oracle</div>
+        <div class="kpi-l">Ecosystem nativo: APEX · OCI · OAC · DB · AI Services</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICIOS ─────────────────────────────────────── -->
+<section class="section" id="servicios">
+  <div class="container">
+    <div style="margin-bottom:52px;" class="fade-up">
+      <span class="section-label">Servicios</span>
+      <h2 class="section-title gradient-text">Cinco prácticas, una propuesta</h2>
+      <p class="section-desc" style="max-width:58ch;">Cada servicio resuelve un problema concreto. Juntos forman una capacidad Oracle que cubre todo el ciclo de vida.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- 01 Modernización -->
+      <a href="landing_modernizacion.html" class="svc-card accent-blue fade-up">
+        <div class="svc-top">
+          <span class="svc-num">01</span>
+        </div>
+        <div class="svc-body">
+          <span class="svc-tag">Modernización</span>
+          <h3>Oracle Forms &amp; Reports — potenciado por IA</h3>
+          <p>Transformamos aplicaciones Oracle Forms legacy en soluciones web modernas sin perder la lógica de negocio acumulada. Acelerado con IA para análisis, documentación y reconstrucción.</p>
+          <ul class="svc-bullets">
+            <li>Migración progresiva a Oracle APEX y APIs REST</li>
+            <li>IA para análisis de código y generación de equivalencias</li>
+            <li>Sin big bang — continuidad operativa garantizada</li>
+            <li>De client/server a web responsive y móvil</li>
+          </ul>
+          <div class="svc-footer">
+            <span class="svc-link">Ver servicio →</span>
+            <div class="svc-kpi"><strong>-70%</strong>tiempo de modernización con IA</div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 02 OCI -->
+      <a href="landing_oci.html" class="svc-card accent-green fade-up" style="transition-delay:.08s">
+        <div class="svc-top">
+          <span class="svc-num">02</span>
+        </div>
+        <div class="svc-body">
+          <span class="svc-tag">Cloud</span>
+          <h3>Oracle Cloud Infrastructure</h3>
+          <p>Diseñamos, migramos y operamos tu plataforma Oracle sobre OCI. Compute, DB Systems, networking, seguridad, observabilidad y FinOps como un servicio gestionado con SLA.</p>
+          <ul class="svc-bullets">
+            <li>Landing Zone, migración y arquitectura OCI</li>
+            <li>Managed DB Services con DBA como servicio</li>
+            <li>Cloud Guard, IAM, WAF y hardening de seguridad</li>
+            <li>FinOps continuo — -30% de costos promedio</li>
+          </ul>
+          <div class="svc-footer">
+            <span class="svc-link">Ver servicio →</span>
+            <div class="svc-kpi"><strong>99.9%</strong>uptime en plataformas gestionadas</div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 03 Desarrollo -->
+      <a href="landing_desarrollo_medida.html" class="svc-card accent-violet fade-up" style="transition-delay:.16s">
+        <div class="svc-top">
+          <span class="svc-num">03</span>
+        </div>
+        <div class="svc-body">
+          <span class="svc-tag">Desarrollo</span>
+          <h3>Desarrollo a Medida Oracle</h3>
+          <p>Construimos aplicaciones empresariales sobre Oracle APEX, Oracle Database y OCI: portales, workflows, apps operativas y PWA móviles. Entrega DevOps con aceleración IA.</p>
+          <ul class="svc-bullets">
+            <li>Oracle APEX — portales, workflows, operaciones</li>
+            <li>ORDS para APIs REST nativas sobre Oracle DB</li>
+            <li>PWA móvil: 50–70% más barato que nativa</li>
+            <li>DevOps con CI/CD y ambientes separados</li>
+          </ul>
+          <div class="svc-footer">
+            <span class="svc-link">Ver servicio →</span>
+            <div class="svc-kpi"><strong>-50%</strong>costo vs. app nativa con PWA</div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 04 Analytics -->
+      <a href="landing_oac.html" class="svc-card accent-blue fade-up" style="transition-delay:.24s">
+        <div class="svc-top">
+          <span class="svc-num">04</span>
+        </div>
+        <div class="svc-body">
+          <span class="svc-tag">Analytics</span>
+          <h3>Oracle Analytics Cloud</h3>
+          <p>Convertimos datos dispersos en una capa analítica gobernada: semantic model enterprise, dashboards ejecutivos, reporting pixel-perfect y autoservicio con IA sobre OAC.</p>
+          <ul class="svc-bullets">
+            <li>Semantic Model — una sola fuente de verdad</li>
+            <li>Dashboards para dirección, operaciones y analistas</li>
+            <li>Ask Data: preguntas en lenguaje natural al dato</li>
+            <li>Managed Analytics — evolución continua post go-live</li>
+          </ul>
+          <div class="svc-footer">
+            <span class="svc-link">Ver servicio →</span>
+            <div class="svc-kpi"><strong>-65%</strong>tiempo en reporting vs. manual</div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 05 Production AI (full width) -->
+      <a href="landing_production_ai.html" class="svc-card accent-ai full fade-up" style="transition-delay:.32s">
+        <div class="svc-top">
+          <span class="svc-num">05 · Destacado</span>
+        </div>
+        <div class="svc-body">
+          <div>
+            <span class="svc-tag">Production AI</span>
+            <h3>AI en producción — sin hype</h3>
+            <p>La mayoría de las empresas experimenta con AI. Pocas logran llevarla a procesos reales. Inthegra resuelve la parte difícil: integración con Oracle, gobernanza y operación continua.</p>
+            <ul class="svc-bullets">
+              <li>RAG sobre documentos Oracle y bases de conocimiento</li>
+              <li>Agentes AI integrados a ERP y procesos reales</li>
+              <li>AI Discovery: identificamos casos con ROI claro</li>
+              <li>Guardrails, logging y control de costos de modelo</li>
+              <li>AI Operations — monitoreo de drift en producción</li>
+              <li>4–8 semanas de piloto a primera versión productiva</li>
+            </ul>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:16px; align-items:flex-end; justify-content:space-between;">
+            <div style="background:rgba(167,139,250,.08); border:1px solid rgba(167,139,250,.2); border-radius:16px; padding:20px 24px; width:100%;">
+              <div style="font-size:11px; color:var(--muted); margin-bottom:12px; font-weight:600; text-transform:uppercase; letter-spacing:.07em;">Casos en producción</div>
+              <div style="display:flex; flex-direction:column; gap:8px;">
+                <div style="font-size:13px; color:var(--text-2); display:flex; align-items:center; gap:8px;"><span style="width:8px;height:8px;border-radius:50%;background:var(--ai);flex-shrink:0;"></span>Lectura automática de facturas y comprobantes</div>
+                <div style="font-size:13px; color:var(--text-2); display:flex; align-items:center; gap:8px;"><span style="width:8px;height:8px;border-radius:50%;background:var(--ai);flex-shrink:0;"></span>Asistente interno sobre base de conocimiento Oracle</div>
+                <div style="font-size:13px; color:var(--text-2); display:flex; align-items:center; gap:8px;"><span style="width:8px;height:8px;border-radius:50%;background:var(--ai);flex-shrink:0;"></span>Clasificación y routing automático de tickets</div>
+                <div style="font-size:13px; color:var(--text-2); display:flex; align-items:center; gap:8px;"><span style="width:8px;height:8px;border-radius:50%;background:var(--ai);flex-shrink:0;"></span>Análisis documental de contratos y licitaciones</div>
+              </div>
+            </div>
+            <div class="svc-footer" style="width:100%; border-top:1px solid var(--line); padding-top:16px; margin-top:0;">
+              <span class="svc-link">Ver servicio →</span>
+              <div class="svc-kpi"><strong>-80%</strong>tiempo en procesamiento de documentos</div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── PROPUESTA INTEGRADA ────────────────────────────── -->
+<section class="section" id="propuesta">
+  <div class="container">
+    <div style="margin-bottom:48px;" class="center fade-up">
+      <span class="section-label">Por qué Inthegra</span>
+      <h2 class="section-title gradient-text">Una capacidad Oracle integrada</h2>
+      <p class="section-desc" style="max-width:60ch;">Una capacidad Oracle integrada que cubre modernización, operación, extensión, analítica e IA — todo sobre el mismo ecosistema.</p>
+    </div>
+    <div class="integrated-grid fade-up">
+      <div class="int-card">
+        <div class="int-icon">🔗</div>
+        <h3>Ecosistema nativo Oracle</h3>
+        <p>Todo sobre Oracle: APEX, OCI, OAC, DB y AI Services. Sin integraciones forzadas ni stacks desconectados. Los servicios se potencian entre sí porque comparten la misma plataforma.</p>
+      </div>
+      <div class="int-card">
+        <div class="int-icon">📈</div>
+        <h3>Modernización sin parar la operación</h3>
+        <p>Migración progresiva, continuidad operativa y entrega iterativa. No big bangs. Cada etapa entrega valor medible sin frenar los procesos críticos del negocio.</p>
+      </div>
+      <div class="int-card">
+        <div class="int-icon">🛡️</div>
+        <h3>Advisory + Implementación + Operación</h3>
+        <p>No solo entregamos proyectos: operamos lo que construimos. Managed Services con SLA, monitoreo, mejora continua y soporte para que la plataforma funcione en el tiempo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── JOURNEY ─────────────────────────────────────── -->
+<section class="section" id="modelo">
+  <div class="container">
+    <div style="margin-bottom:52px;" class="center fade-up">
+      <span class="section-label">Modelo de trabajo</span>
+      <h2 class="section-title gradient-text">Modernizar → Operar → Extender → Analizar → Escalar con AI</h2>
+      <p class="section-desc" style="max-width:62ch;">El camino natural de una organización Oracle que quiere crecer sin fricción tecnológica.</p>
+    </div>
+    <div class="journey-strip fade-up">
+      <div class="j-step">
+        <div class="j-circle">1</div>
+        <div class="j-label">Modernize</div>
+        <h4>Modernizar</h4>
+        <p>Actualizar Oracle Forms y sistemas legacy a plataformas web sin perder la lógica del negocio.</p>
+        <span class="j-service">Oracle Forms & Reports</span>
+      </div>
+      <div class="j-step">
+        <div class="j-circle">2</div>
+        <div class="j-label">Run</div>
+        <h4>Operar en Cloud</h4>
+        <p>Migrar y operar workloads Oracle sobre OCI con seguridad, observabilidad y costos bajo control.</p>
+        <span class="j-service">Oracle Cloud (OCI)</span>
+      </div>
+      <div class="j-step">
+        <div class="j-circle">3</div>
+        <div class="j-label">Extend</div>
+        <h4>Extender</h4>
+        <p>Construir nuevas capacidades sobre Oracle APEX y la plataforma existente: portales, apps, PWA y APIs.</p>
+        <span class="j-service">Desarrollo a Medida</span>
+      </div>
+      <div class="j-step">
+        <div class="j-circle">4</div>
+        <div class="j-label">Analyze</div>
+        <h4>Analizar</h4>
+        <p>Ordenar la capa analítica con un semantic model gobernado, dashboards y reporting enterprise sobre OAC.</p>
+        <span class="j-service">Oracle Analytics</span>
+      </div>
+      <div class="j-step">
+        <div class="j-circle">5</div>
+        <div class="j-label">Scale with AI</div>
+        <h4>Escalar con AI</h4>
+        <p>Llevar inteligencia artificial a procesos reales: RAG, agentes, automatización y AI integrada a Oracle.</p>
+        <span class="j-service">Production AI</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ARQUITECTURA PORTFOLIO ─────────────────────────── -->
+<section class="section" id="arquitectura">
+  <div class="container">
+    <div style="margin-bottom:40px;" class="center fade-up">
+      <span class="section-label">Portfolio</span>
+      <h2 class="section-title">Cómo se relacionan los cinco servicios</h2>
+      <p class="section-desc" style="max-width:58ch;">La plataforma Oracle de Inthegra como un sistema integrado, no como servicios independientes.</p>
+    </div>
+    <div class="arch-wrap fade-up">
+      <svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="pg1" x1="0" x2="1"><stop offset="0%" stop-color="#55a3ff"/><stop offset="100%" stop-color="#7c5cff"/></linearGradient>
+          <linearGradient id="pg2" x1="0" x2="1"><stop offset="0%" stop-color="#55a3ff"/><stop offset="100%" stop-color="#35d39b"/></linearGradient>
+          <linearGradient id="pbg" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#0f1933"/><stop offset="100%" stop-color="#0d1628"/></linearGradient>
+        </defs>
+        <rect width="1200" height="480" rx="20" fill="url(#pbg)"/>
+
+        <!-- Layer labels -->
+        <text x="120"  y="32" fill="#55a3ff" font-size="10" font-weight="700" font-family="Arial" text-anchor="middle" letter-spacing="1">LEGACY / NEGOCIO</text>
+        <text x="380"  y="32" fill="#35d39b" font-size="10" font-weight="700" font-family="Arial" text-anchor="middle" letter-spacing="1">MODERNIZACIÓN</text>
+        <text x="600"  y="32" fill="#a78bfa" font-size="10" font-weight="700" font-family="Arial" text-anchor="middle" letter-spacing="1">PLATAFORMA ORACLE</text>
+        <text x="860"  y="32" fill="#55a3ff" font-size="10" font-weight="700" font-family="Arial" text-anchor="middle" letter-spacing="1">DATOS &amp; AI</text>
+        <text x="1090" y="32" fill="#ffd166" font-size="10" font-weight="700" font-family="Arial" text-anchor="middle" letter-spacing="1">OUTCOMES</text>
+
+        <!-- Col 1: Legacy -->
+        <rect x="46"  y="52" width="148" height="376" rx="16" fill="#121f3b" stroke="#243860"/>
+        <rect x="64"  y="80"  width="112" height="50" rx="10" fill="#162040" stroke="rgba(255,100,50,.3)"/>
+        <text x="120" y="105" fill="#ff9060" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">Oracle Forms</text>
+        <text x="120" y="120" fill="#7d9ac4" font-size="9"  font-family="Arial" text-anchor="middle">Legacy apps</text>
+        <rect x="64"  y="146" width="112" height="50" rx="10" fill="#162040" stroke="rgba(85,163,255,.3)"/>
+        <text x="120" y="171" fill="#55a3ff" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">Oracle DB</text>
+        <text x="120" y="186" fill="#7d9ac4" font-size="9"  font-family="Arial" text-anchor="middle">Core data</text>
+        <rect x="64"  y="212" width="112" height="50" rx="10" fill="#162040" stroke="rgba(124,92,255,.25)"/>
+        <text x="120" y="237" fill="#a78bfa" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">Infra propia</text>
+        <text x="120" y="252" fill="#7d9ac4" font-size="9"  font-family="Arial" text-anchor="middle">On-premise</text>
+        <rect x="64"  y="278" width="112" height="50" rx="10" fill="#162040" stroke="rgba(255,209,102,.2)"/>
+        <text x="120" y="303" fill="#ffd166" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">Datos Excel</text>
+        <text x="120" y="318" fill="#7d9ac4" font-size="9"  font-family="Arial" text-anchor="middle">Sin gobernanza</text>
+        <rect x="64"  y="344" width="112" height="50" rx="10" fill="#162040" stroke="rgba(255,159,122,.2)"/>
+        <text x="120" y="369" fill="#ff9f7a" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">Procesos manuales</text>
+        <text x="120" y="384" fill="#7d9ac4" font-size="9"  font-family="Arial" text-anchor="middle">Sin AI</text>
+
+        <!-- Col 2: Modernización -->
+        <rect x="240" y="52" width="148" height="376" rx="16" fill="#121f3b" stroke="#243860"/>
+        <rect x="258" y="80"  width="112" height="70" rx="10" fill="url(#pg1)"/>
+        <text x="314" y="112" fill="#fff" font-size="11" font-weight="800" font-family="Arial" text-anchor="middle">Forms → Web</text>
+        <text x="314" y="128" fill="rgba(255,255,255,.75)" font-size="9" font-family="Arial" text-anchor="middle">APEX · APIs · IA</text>
+        <rect x="258" y="168" width="112" height="60" rx="10" fill="#162040" stroke="rgba(53,211,155,.35)"/>
+        <text x="314" y="196" fill="#35d39b" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">OCI Migration</text>
+        <text x="314" y="212" fill="#7d9ac4" font-size="9" font-family="Arial" text-anchor="middle">Lift &amp; shift / improve</text>
+        <rect x="258" y="246" width="112" height="60" rx="10" fill="#162040" stroke="rgba(124,92,255,.3)"/>
+        <text x="314" y="274" fill="#a78bfa" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">APEX Dev</text>
+        <text x="314" y="290" fill="#7d9ac4" font-size="9" font-family="Arial" text-anchor="middle">Nuevas apps</text>
+        <text x="258" y="414" fill="#7d9ac4" font-size="9" font-family="Arial" text-anchor="left">Modernización Oracle Forms</text>
+
+        <!-- Col 3: Plataforma OCI (center, taller) -->
+        <rect x="440" y="36" width="320" height="408" rx="18" fill="#121f3b" stroke="#30446f"/>
+        <rect x="464" y="64"  width="272" height="64" rx="12" fill="url(#pg1)"/>
+        <text x="600" y="96"  fill="#fff" font-size="13" font-weight="800" font-family="Arial" text-anchor="middle">Oracle Cloud (OCI)</text>
+        <text x="600" y="114" fill="rgba(255,255,255,.8)" font-size="10" font-family="Arial" text-anchor="middle">Compute · DB Systems · Networking · Security</text>
+        <rect x="464" y="146" width="128" height="56" rx="10" fill="#162040" stroke="rgba(85,163,255,.3)"/>
+        <text x="528" y="172" fill="#55a3ff" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">Oracle APEX</text>
+        <text x="528" y="188" fill="#7d9ac4" font-size="9" font-family="Arial" text-anchor="middle">Apps · PWA · Portals</text>
+        <rect x="608" y="146" width="128" height="56" rx="10" fill="#162040" stroke="rgba(53,211,155,.3)"/>
+        <text x="672" y="172" fill="#35d39b" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">Oracle DB</text>
+        <text x="672" y="188" fill="#7d9ac4" font-size="9" font-family="Arial" text-anchor="middle">19c · RAC · ADW</text>
+        <rect x="464" y="220" width="128" height="56" rx="10" fill="#162040" stroke="rgba(124,92,255,.25)"/>
+        <text x="528" y="246" fill="#a78bfa" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">IAM · Security</text>
+        <text x="528" y="262" fill="#7d9ac4" font-size="9" font-family="Arial" text-anchor="middle">WAF · Cloud Guard</text>
+        <rect x="608" y="220" width="128" height="56" rx="10" fill="#162040" stroke="rgba(255,209,102,.2)"/>
+        <text x="672" y="246" fill="#ffd166" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">FinOps</text>
+        <text x="672" y="262" fill="#7d9ac4" font-size="9" font-family="Arial" text-anchor="middle">Cost · Budget · Tag</text>
+        <rect x="464" y="294" width="272" height="48" rx="10" fill="#162040" stroke="rgba(85,163,255,.25)"/>
+        <text x="600" y="318" fill="#55a3ff" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">ORDS · APIs REST · Integration</text>
+        <text x="600" y="334" fill="#7d9ac4" font-size="9" font-family="Arial" text-anchor="middle">Capa de conectividad entre servicios</text>
+        <rect x="464" y="358" width="272" height="64" rx="10" fill="#162040" stroke="rgba(167,139,250,.3)"/>
+        <text x="600" y="382" fill="#a78bfa" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">OCI AI Services · Vector DB · LLM</text>
+        <text x="600" y="398" fill="#7d9ac4" font-size="9" font-family="Arial" text-anchor="middle">Oracle GenAI · OpenSearch · Custom AI stack</text>
+        <text x="600" y="414" fill="#7d9ac4" font-size="9" font-family="Arial" text-anchor="middle">Oracle Cloud Platform</text>
+
+        <!-- Col 4: Datos & AI -->
+        <rect x="812" y="52" width="148" height="376" rx="16" fill="#121f3b" stroke="#243860"/>
+        <rect x="830" y="80"  width="112" height="64" rx="10" fill="#162040" stroke="rgba(85,163,255,.35)"/>
+        <text x="886" y="108" fill="#55a3ff" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">OAC · Analytics</text>
+        <text x="886" y="124" fill="#7d9ac4" font-size="9"  font-family="Arial" text-anchor="middle">Semantic · BI</text>
+        <rect x="830" y="162" width="112" height="60" rx="10" fill="#162040" stroke="rgba(167,139,250,.35)"/>
+        <text x="886" y="188" fill="#a78bfa" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">RAG Pipeline</text>
+        <text x="886" y="204" fill="#7d9ac4" font-size="9"  font-family="Arial" text-anchor="middle">LLM · Vector</text>
+        <rect x="830" y="240" width="112" height="60" rx="10" fill="#162040" stroke="rgba(53,211,155,.3)"/>
+        <text x="886" y="266" fill="#35d39b" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">AI Agents</text>
+        <text x="886" y="282" fill="#7d9ac4" font-size="9"  font-family="Arial" text-anchor="middle">Procesos auto</text>
+        <rect x="830" y="318" width="112" height="60" rx="10" fill="#162040" stroke="rgba(255,209,102,.2)"/>
+        <text x="886" y="344" fill="#ffd166" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">AI Governance</text>
+        <text x="886" y="360" fill="#7d9ac4" font-size="9"  font-family="Arial" text-anchor="middle">Guardrails · Ops</text>
+
+        <!-- Col 5: Outcomes -->
+        <rect x="1016" y="52" width="148" height="376" rx="16" fill="#121f3b" stroke="#243860"/>
+        <rect x="1034" y="80"  width="112" height="56" rx="10" fill="#162040" stroke="rgba(85,163,255,.3)"/>
+        <text x="1090" y="107" fill="#55a3ff" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">Apps modernas</text>
+        <text x="1090" y="123" fill="#35d39b" font-size="9"  font-family="Arial" text-anchor="middle">UX mejorada</text>
+        <rect x="1034" y="152" width="112" height="56" rx="10" fill="#162040" stroke="rgba(53,211,155,.3)"/>
+        <text x="1090" y="178" fill="#35d39b" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">Cloud con SLA</text>
+        <text x="1090" y="194" fill="#35d39b" font-size="9"  font-family="Arial" text-anchor="middle">99.9% · -30% costo</text>
+        <rect x="1034" y="224" width="112" height="56" rx="10" fill="#162040" stroke="rgba(124,92,255,.25)"/>
+        <text x="1090" y="250" fill="#a78bfa" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">1 fuente de verdad</text>
+        <text x="1090" y="266" fill="#35d39b" font-size="9"  font-family="Arial" text-anchor="middle">Analytics gobernada</text>
+        <rect x="1034" y="296" width="112" height="56" rx="10" fill="#162040" stroke="rgba(167,139,250,.3)"/>
+        <text x="1090" y="322" fill="#a78bfa" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">AI en producción</text>
+        <text x="1090" y="338" fill="#35d39b" font-size="9"  font-family="Arial" text-anchor="middle">ROI medible</text>
+        <rect x="1034" y="368" width="112" height="44" rx="10" fill="#162040" stroke="rgba(255,209,102,.2)"/>
+        <text x="1090" y="393" fill="#ffd166" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">Negocio escalable</text>
+
+        <!-- Arrows -->
+        <path d="M194 240 H240" stroke="#55a3ff" stroke-width="5" stroke-linecap="round" opacity=".55"/>
+        <path d="M388 200 H440 M388 300 H440" stroke="url(#pg2)" stroke-width="5" stroke-linecap="round" opacity=".6"/>
+        <path d="M760 200 H812 M760 300 H812" stroke="#a78bfa" stroke-width="5" stroke-linecap="round" opacity=".6"/>
+        <path d="M960 200 H1016 M960 300 H1016" stroke="#35d39b" stroke-width="5" stroke-linecap="round" opacity=".6"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ─────────────────────────────────────── -->
+<section class="section" id="contacto">
+  <div class="container">
+    <div class="cta-box fade-up">
+      <h2 class="gradient-text">Oracle Services para crecer sin fricción</h2>
+      <p>Hablemos de tu stack Oracle actual y cómo podemos modernizarlo, operarlo, extenderlo, ponerle analítica e inteligencia artificial.</p>
+      <div class="cta-btns">
+        <a href="https://inthegrasoftware.com/#contacto" class="btn btn-primary" target="_blank" rel="noopener">Hablar con un experto →</a>
+        <a href="https://wa.me/5491150595908" class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp directo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="https://inthegrasoftware.com/wp-content/uploads/2024/12/logo-footer.png" alt="Inthegra Software" />
+        </div>
+        <p class="footer-tagline">Partner Oracle especializado en modernización, cloud, desarrollo, analítica e inteligencia artificial aplicada a producción.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios Oracle</h4>
+        <a href="landing_modernizacion.html">Modernización Oracle Forms</a>
+        <a href="landing_oci.html">Oracle Cloud (OCI)</a>
+        <a href="landing_desarrollo_medida.html">Desarrollo a Medida</a>
+        <a href="landing_oac.html">Oracle Analytics Cloud</a>
+        <a href="landing_production_ai.html">Production AI</a>
+      </div>
+      <div class="footer-col">
+        <h4>Recursos</h4>
+        <a href="#servicios">Portfolio Oracle</a>
+        <a href="#modelo">Modelo de trabajo</a>
+        <a href="#arquitectura">Arquitectura</a>
+        <a href="https://inthegrasoftware.com/oracle-services/" target="_blank" rel="noopener">Sitio Inthegra ↗</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <a href="https://inthegrasoftware.com/#contacto" target="_blank" rel="noopener">Formulario de contacto</a>
+        <a href="https://wa.me/5491150595908" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://inthegrasoftware.com" target="_blank" rel="noopener">inthegrasoftware.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 Inthegra Software. Todos los derechos reservados.</span>
+      <span class="footer-copy" style="color: var(--brand);">Oracle Partner · OCI · APEX · Analytics · Production AI</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ── WHATSAPP FLOAT ─────────────────────────────── -->
+<a href="https://wa.me/5491150595908" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<script>
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>

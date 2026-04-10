@@ -1,0 +1,240 @@
+Using the full project context already provided, create a premium, enterprise-grade HTML mockup for the Credit page of Inthegra Software.
+
+PROJECT GOAL
+Design a high-conversion, premium B2B product page for Inthegra’s Credit Suite, accurately reflecting the real portfolio and strategic positioning of Inthegra.
+
+IMPORTANT BUSINESS POSITIONING
+This is NOT a generic fintech landing page.
+This is an enterprise financial software page for decision-makers.
+
+The page must clearly position Inthegra Credit Suite as a robust platform for:
+
+- Préstamos personales
+- Créditos de consumo
+- Tarjetas de crédito no bancarizadas
+- Financieras regionales
+- Emisoras de crédito
+- Operaciones híbridas de crédito + tarjeta + cobranza
+
+The page must strongly communicate that Inthegra covers the end-to-end lifecycle of these businesses:
+
+- Originación
+- Scoring
+- Alta de cliente
+- Onboarding digital
+- Otorgamiento
+- Administración de productos financieros
+- Gestión de tarjetas
+- Cobranzas
+- Gestión de mora
+- Autogestión de clientes
+- Autogestión de comercios
+
+This page should feel serious, enterprise-grade, modular, scalable, credible, and high-trust.
+
+VISUAL STYLE
+The design must feel:
+
+- Premium
+- Corporate
+- Modern
+- Enterprise
+- Clean
+- Conversion-oriented
+- Oracle-native / technology-backed
+- Financially trustworthy
+
+Avoid startup-fintech visual clichés.
+Avoid neon colors, playful consumer UI patterns, or overly app-like aesthetics.
+This should look like software for established financial businesses.
+
+BACKGROUND GRAPHICS REQUIREMENT
+Use the existing Inthegra background graphics (Solutions / Product / Inthegra / Services) in a subtle and elegant way:
+
+- low opacity
+- oversized
+- cropped
+- decorative only
+- must not compete with content
+- should reinforce the brand language and premium feel
+
+They should appear in hero or section backgrounds very delicately.
+
+CONTENT ARCHITECTURE REQUIRED
+
+1. HERO SECTION
+Create a strong hero that immediately positions the solution around:
+- gestión integral financiera
+- préstamos + créditos + tarjetas no bancarizadas
+- plataforma escalable y segura
+- experiencia de mercado
+- tecnología Oracle-native
+
+Must include:
+- strong headline
+- supporting paragraph
+- primary CTA: Agendar demo
+- secondary CTA: Hablar con un especialista
+
+The message should make it obvious that this is a specialized financial platform.
+
+2. ENTERPRISE POSITIONING STRIP / TRUST BAR
+Immediately below hero, include a compact credibility strip with items like:
+- Core financiero especializado
+- Oracle-native technology
+- Operación end-to-end
+- Plataforma configurable
+- Escalable para crecimiento
+
+3. INDUSTRY CHALLENGES SECTION
+Show the real challenges these companies face:
+- fragmentación entre originación, otorgamiento y cobranza
+- procesos manuales o poco trazables
+- complejidad operativa en tarjetas y préstamos
+- dificultades para escalar productos financieros
+- mala experiencia del cliente
+- baja visibilidad sobre mora y cartera
+- necesidad de mayor automatización y control
+
+This section should feel business-realistic and credible.
+
+4. PLATFORM OVERVIEW SECTION
+Present Inthegra Credit Suite as a specialized enterprise platform that centralizes the operation.
+
+Key idea:
+A unified platform for managing the full lifecycle of lending, credit, cards, collections, and customer/commercial operations.
+
+5. TWO STRATEGIC PILLARS
+Create a visually strong split layout with two main solution pillars:
+
+A. Préstamos y créditos de consumo
+Include:
+- alta y evaluación de clientes
+- scoring
+- líneas de crédito configurables
+- planes de pago
+- otorgamiento
+- seguimiento de cartera
+- cobranzas
+- refinanciaciones
+- mora
+
+B. Tarjetas de crédito no bancarizadas
+Include:
+- administración integral del ciclo de tarjeta
+- parametrización de tarjetas
+- planes y tasas
+- compras con tarjeta
+- resúmenes y movimientos
+- autogestión del cliente
+- comercios y liquidaciones
+- cobranzas y mora
+
+These pillars must feel like two operational views of the same platform, not disconnected products.
+
+6. MODULAR CAPABILITIES GRID
+Build a strong modular grid for real portfolio capabilities. Include cards for:
+- Scoring y alta de cliente
+- Onboarding digital
+- Otorgamiento
+- CRM clientes
+- CRM comercios
+- Cobranzas
+- Mora extrajudicial y judicial
+- App de autogestión de clientes
+- App de autogestión de comercios
+- Primera compra digital
+
+Each card should have:
+- concise title
+- short business value proposition
+- enterprise-focused explanation
+
+7. DIGITAL EXPERIENCE LAYER
+Add a section showing that the suite is not just back-office, but also improves digital experience for:
+- clientes
+- comercios
+- equipos internos
+
+Mention concepts such as:
+- visualización de resúmenes
+- gestión de productos financieros
+- tarjeta virtual
+- consulta de planes
+- liquidaciones anticipadas
+- transparencia operativa
+- autoservicio
+
+8. WHY INTHEGRA SECTION
+Create a strong credibility section with enterprise differentiators:
+- más de 20 años de experiencia
+- expertise en tecnología Oracle
+- core probado para operaciones financieras
+- capacidad de parametrización
+- producto + servicios + cloud + AI
+- enfoque enterprise
+- implementación acompañada
+
+This section must feel trustworthy and concrete.
+
+9. TECHNOLOGY FOUNDATION SECTION
+Present the Oracle-native base in a sober, premium way:
+- Oracle APEX
+- Oracle Database
+- OCI
+- enterprise security
+- escalabilidad
+- analytics / AI where relevant
+
+Do not overdo jargon.
+This is a trust-building section.
+
+10. IMPLEMENTATION MODEL
+Add a section based on Inthegra’s implementation approach:
+- Onboarding
+- Configuración y personalización
+- Migración
+- Capacitación
+- Puesta en marcha
+- Soporte y evolución
+
+Make it look structured and enterprise-ready.
+
+11. FINAL CTA
+Strong conversion-oriented close.
+Suggested direction:
+“Transforma tu operación de crédito en una plataforma más ágil, segura y escalable.”
+
+CTA:
+- Agendar demo
+- Hablar con un especialista
+
+HTML / CODE REQUIREMENTS
+- Output a single self-contained HTML file
+- Use modern semantic HTML and CSS
+- No external frameworks required
+- Responsive layout
+- Premium spacing and typography
+- Strong section hierarchy
+- Use subtle gradients, borders, cards, soft shadows
+- Include placeholder decorative background shapes inspired by Inthegra graphics
+- Include polished CTA buttons
+- Include realistic enterprise copy in Spanish
+- The page must look presentation-ready, not wireframe-like
+- The page should be visually rich enough to communicate the final direction clearly
+
+VERY IMPORTANT
+The final result must strongly reflect Inthegra’s actual Credit portfolio:
+- préstamos
+- créditos de consumo
+- tarjetas no bancarizadas
+- scoring
+- onboarding
+- otorgamiento
+- cobranzas
+- mora
+- autogestión
+- comercios
+
+Do not create a generic “financial software” page.
+Make it feel like Inthegra’s real Credit product family.

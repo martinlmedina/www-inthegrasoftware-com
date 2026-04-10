@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Inthegra AI Chatbot — Automatización conversacional enterprise integrada con CRM, cobranzas y operaciones. Atención, gestión y análisis en un solo sistema." />
+  <title>Inthegra AI Chatbot | Automatización Conversacional Enterprise</title>
+
+  <link rel="icon" href="https://inthegrasoftware.com/wp-content/uploads/2025/02/favicon-150x140.png" sizes="32x32" />
+  <link rel="icon" href="https://inthegrasoftware.com/wp-content/uploads/2025/02/favicon.png" sizes="192x192" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="nav.js"></script>
+
+  <style>
+    :root {
+      --bg:        #0F2043;
+      --bg-deep:   #08111f;
+      --bg-panel:  #0f1830;
+      --bg-card:   #121f3d;
+      --line:      #243a61;
+      --text:      #eef4ff;
+      --text-2:    #c0d4f0;
+      --muted:     #7d9ac4;
+      --purple:    #a78bfa;
+      --purple-2:  #7c5cff;
+      --cyan:      #22d3ee;
+      --green:     #6ee7b7;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg);
+      background-image:
+        radial-gradient(ellipse 80% 50% at 100% 0%,  rgba(167,139,250,.12) 0%, transparent 50%),
+        radial-gradient(ellipse 55% 40% at 0%   10%, rgba(34,211,238,.07)  0%, transparent 45%),
+        radial-gradient(ellipse 70% 60% at 50%  85%, rgba(124,92,255,.06)  0%, transparent 55%);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    .container { max-width: 1240px; margin: 0 auto; padding: 0 32px; }
+
+    /* ── HEADER PLACEHOLDER ─── */
+    header {
+      position: sticky; top: 0; z-index: 200;
+      background: rgba(8,17,31,.9);
+      backdrop-filter: blur(20px) saturate(1.5);
+      border-bottom: 1px solid rgba(36,58,97,.7);
+    }
+
+    /* ── BG GRAPHICS ─── */
+    .section-relative { position: relative; overflow: hidden; }
+    .section-relative > .container { position: relative; z-index: 1; }
+    .bg-graphic { position: absolute; pointer-events: none; z-index: 0; user-select: none; }
+    @media (max-width: 768px) { .bg-graphic { display: none; } }
+
+    /* ── EYEBROW ─── */
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px; margin-bottom: 18px;
+      padding: 6px 14px; border-radius: 999px;
+      border: 1px solid rgba(167,139,250,.3); background: rgba(167,139,250,.08);
+      color: var(--purple); font-size: 11px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
+    }
+    .eyebrow::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--purple); }
+
+    .eyebrow.cyan { border-color: rgba(34,211,238,.3); background: rgba(34,211,238,.08); color: var(--cyan); }
+    .eyebrow.cyan::before { background: var(--cyan); }
+
+    /* ── TYPOGRAPHY ─── */
+    .section-title { font-size: clamp(30px,4vw,50px); font-weight: 800; line-height: 1.06; letter-spacing: -.03em; margin-bottom: 18px; }
+    .section-desc { color: var(--muted); font-size: 18px; line-height: 1.7; max-width: 72ch; }
+
+    /* ── SECTIONS ─── */
+    .section { padding: 96px 0; }
+    .section-alt { background: rgba(255,255,255,.015); border-top: 1px solid rgba(36,58,97,.5); border-bottom: 1px solid rgba(36,58,97,.5); }
+
+    /* ── HERO ─── */
+    .hero { padding: 56px 0 96px; min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden; }
+    .hero-orb { position: absolute; border-radius: 50%; filter: blur(90px); pointer-events: none; }
+    .hero-orb.a { width: 600px; height: 600px; top: -200px; left: -150px; background: radial-gradient(circle, rgba(124,92,255,.14), transparent 65%); }
+    .hero-orb.b { width: 480px; height: 480px; bottom: -150px; right: -120px; background: radial-gradient(circle, rgba(34,211,238,.08), transparent 65%); }
+
+    .hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center; }
+    .hero-copy { display: flex; flex-direction: column; gap: 24px; }
+    .hero-title { font-size: clamp(38px,5.5vw,68px); font-weight: 900; line-height: .96; letter-spacing: -.04em; }
+    .hero-lead { font-size: clamp(16px,1.7vw,19px); color: var(--text-2); max-width: 58ch; line-height: 1.65; }
+
+    .hero-pills { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; }
+    .hero-pill {
+      padding: 14px; border-radius: 18px;
+      background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08);
+      color: var(--text-2); font-size: 13px; line-height: 1.45;
+    }
+
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 28px; border-radius: 999px; font-size: 15px; font-weight: 700;
+      background: linear-gradient(135deg, var(--purple), var(--purple-2));
+      color: #fff; box-shadow: 0 18px 40px rgba(124,92,255,.3);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 24px 48px rgba(124,92,255,.42); }
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 28px; border-radius: 999px; font-size: 15px; font-weight: 700;
+      border: 1px solid rgba(255,255,255,.16); color: var(--text-2);
+      background: rgba(255,255,255,.03); transition: all .2s;
+    }
+    .btn-ghost:hover { border-color: rgba(167,139,250,.4); color: var(--purple); background: rgba(167,139,250,.06); }
+
+    /* ── HERO VISUAL (chat simulation) ─── */
+    .hero-card {
+      padding: 24px; border-radius: 28px;
+      background: linear-gradient(180deg, rgba(19,36,69,.92), rgba(10,18,34,.94));
+      border: 1px solid rgba(255,255,255,.1);
+      box-shadow: 0 24px 64px rgba(0,0,0,.32);
+      overflow: hidden; position: relative;
+    }
+    .hero-card::before {
+      content: ''; position: absolute; inset: 0; border-radius: 28px; pointer-events: none;
+      background: radial-gradient(circle at 80% 10%, rgba(167,139,250,.1), transparent 40%);
+    }
+    .chat-status {
+      display: flex; justify-content: space-between; align-items: center;
+      margin-bottom: 18px; font-size: 13px; color: var(--text-2);
+    }
+    .status-live {
+      display: inline-flex; align-items: center; gap: 8px; font-size: 12px;
+      color: var(--green); font-weight: 600;
+    }
+    .status-live::before {
+      content: ''; width: 8px; height: 8px; border-radius: 50%;
+      background: var(--green); box-shadow: 0 0 0 4px rgba(110,231,183,.2);
+    }
+    .conversation { display: grid; gap: 10px; margin-bottom: 18px; }
+    .bubble {
+      max-width: 85%; padding: 12px 14px; border-radius: 16px;
+      font-size: 13px; line-height: 1.55; border: 1px solid rgba(255,255,255,.07);
+    }
+    .bubble.ai { background: rgba(255,255,255,.06); }
+    .bubble.user {
+      background: linear-gradient(135deg, rgba(167,139,250,.9), rgba(124,92,255,.85));
+      justify-self: end; color: #fff; border-color: transparent;
+    }
+    .bubble-label { font-size: 10px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 4px; }
+    .bubble-label.ai-label { color: var(--purple); }
+    .bubble-label.user-label { color: rgba(255,255,255,.7); text-align: right; }
+
+    .mini-panels { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .mini-panel {
+      padding: 14px; border-radius: 18px;
+      background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.08);
+    }
+    .mini-panel .label { font-size: 11px; color: var(--muted); margin-bottom: 6px; font-weight: 600; }
+    .mini-panel .kpi { font-size: 28px; font-weight: 800; letter-spacing: -.04em; }
+    .mini-panel .kpi.purple { color: var(--purple); }
+    .mini-panel .kpi.cyan { color: var(--cyan); }
+    .mini-panel .small { font-size: 12px; color: var(--muted); margin-top: 4px; line-height: 1.4; }
+
+    /* ── CARDS ─── */
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.025));
+      border: 1px solid rgba(36,58,97,.8); border-radius: 24px; padding: 28px;
+      box-shadow: 0 12px 40px rgba(0,0,0,.18);
+    }
+    .card.soft { background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); }
+    .card-icon {
+      width: 46px; height: 46px; border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 16px; font-size: 22px;
+      background: rgba(167,139,250,.12); border: 1px solid rgba(167,139,250,.2);
+    }
+    .card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; letter-spacing: -.015em; }
+    .card p { color: var(--muted); font-size: 15px; line-height: 1.65; }
+    .cap-tag {
+      display: inline-block; margin-top: 14px;
+      padding: 5px 10px; border-radius: 999px;
+      background: rgba(167,139,250,.1); border: 1px solid rgba(167,139,250,.2);
+      color: var(--purple); font-size: 11px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
+    }
+
+    /* ── GRIDS ─── */
+    .grid-2 { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 20px; }
+
+    /* ── PROBLEM ─── */
+    .problem-card {
+      padding: 28px; border-radius: 24px; min-height: 200px;
+      border: 1px solid rgba(36,58,97,.8);
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+    }
+    .problem-card .num {
+      font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+      color: var(--purple); margin-bottom: 14px; display: block;
+    }
+    .problem-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; letter-spacing: -.015em; }
+    .problem-card p { color: var(--muted); font-size: 15px; line-height: 1.65; }
+
+    /* ── POSITIONING SPLIT ─── */
+    .pos-split { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+    .pos-panel {
+      padding: 30px; border-radius: 26px;
+      background: linear-gradient(180deg, rgba(11,30,70,.9), rgba(8,20,50,.95));
+    }
+    .pos-panel.bad { border: 1px solid rgba(255,90,31,.18); }
+    .pos-panel.good { border: 1px solid rgba(167,139,250,.25); }
+    .pos-panel h3 { font-size: 20px; font-weight: 700; margin-bottom: 18px; letter-spacing: -.02em; }
+    .checklist { display: grid; gap: 12px; margin-top: 4px; }
+    .check-item { display: flex; gap: 12px; align-items: flex-start; color: var(--text-2); font-size: 15px; line-height: 1.55; }
+    .check-x { width: 20px; height: 20px; border-radius: 50%; flex: 0 0 20px; margin-top: 1px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 800; background: rgba(255,90,31,.15); color: #ff6b3d; border: 1px solid rgba(255,90,31,.2); }
+    .check-ok { width: 20px; height: 20px; border-radius: 50%; flex: 0 0 20px; margin-top: 1px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 800; background: rgba(167,139,250,.15); color: var(--purple); border: 1px solid rgba(167,139,250,.25); }
+
+    /* ── FLOW ─── */
+    .flow-grid { display: grid; grid-template-columns: repeat(7,minmax(0,1fr)); gap: 12px; }
+    .flow-step {
+      padding: 20px 16px; border-radius: 20px; position: relative;
+      background: rgba(255,255,255,.04); border: 1px solid rgba(36,58,97,.8);
+      min-height: 180px;
+    }
+    .flow-step .step-num { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--purple); margin-bottom: 10px; display: block; }
+    .flow-step h4 { font-size: 16px; font-weight: 700; margin-bottom: 8px; letter-spacing: -.01em; }
+    .flow-step p { font-size: 13px; color: var(--muted); line-height: 1.55; }
+    .flow-step::after { content: '→'; position: absolute; right: -10px; top: 50%; transform: translateY(-50%); color: rgba(255,255,255,.2); font-size: 18px; z-index: 2; }
+    .flow-step:last-child::after { display: none; }
+
+    /* ── TABS (use cases) ─── */
+    .usecases-grid { display: grid; grid-template-columns: 260px 1fr; gap: 18px; align-items: start; }
+    .tabs-list { display: grid; gap: 10px; }
+    .tab-btn {
+      padding: 18px; border-radius: 18px; cursor: pointer;
+      background: rgba(255,255,255,.04); border: 1px solid rgba(36,58,97,.8);
+      color: var(--text-2); transition: all .2s; text-align: left;
+    }
+    .tab-btn strong { display: block; font-size: 15px; margin-bottom: 4px; }
+    .tab-btn span { font-size: 13px; color: var(--muted); line-height: 1.4; }
+    .tab-btn.active {
+      background: linear-gradient(180deg, rgba(167,139,250,.16), rgba(124,92,255,.07));
+      border-color: rgba(167,139,250,.3);
+    }
+    .tab-panel { display: none; padding: 30px; border-radius: 24px; background: linear-gradient(180deg, rgba(11,30,70,.9), rgba(8,20,50,.95)); border: 1px solid rgba(36,58,97,.8); }
+    .tab-panel.active { display: block; }
+    .tab-panel h3 { font-size: 22px; font-weight: 700; margin-bottom: 10px; letter-spacing: -.02em; }
+    .tab-panel > p { color: var(--muted); font-size: 16px; line-height: 1.65; margin-bottom: 20px; }
+    .bullet-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; }
+    .bullet-item {
+      padding: 16px; border-radius: 16px;
+      background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.07);
+      color: var(--text-2); font-size: 14px; line-height: 1.55;
+    }
+    .bullet-item strong { display: block; margin-bottom: 4px; color: var(--text); }
+
+    /* ── ORBIT / ECOSYSTEM ─── */
+    .orbit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center; }
+    .orbit-wrap {
+      position: relative; min-height: 460px; border-radius: 28px;
+      background: linear-gradient(180deg, rgba(167,139,250,.07), rgba(124,92,255,.03));
+      border: 1px solid rgba(167,139,250,.15);
+      overflow: hidden;
+    }
+    .orbit-center {
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+      width: 140px; height: 140px; border-radius: 50%;
+      background: linear-gradient(135deg, rgba(167,139,250,.3), rgba(124,92,255,.15));
+      border: 2px solid rgba(167,139,250,.3);
+      box-shadow: 0 0 0 20px rgba(167,139,250,.05), 0 0 0 40px rgba(167,139,250,.02);
+      display: flex; align-items: center; justify-content: center;
+      text-align: center; padding: 16px; z-index: 2;
+      font-size: 12px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; line-height: 1.3;
+    }
+    .orbit-node {
+      position: absolute; padding: 12px 14px; border-radius: 14px; z-index: 2;
+      background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12);
+      font-size: 12px; font-weight: 700; text-align: center; color: var(--text-2); line-height: 1.3;
+    }
+    .on-top    { top: 32px;   left: 50%; transform: translateX(-50%); }
+    .on-right  { right: 28px; top: 50%; transform: translateY(-50%); }
+    .on-bottom { bottom: 32px; left: 50%; transform: translateX(-50%); }
+    .on-left   { left: 28px;  top: 50%; transform: translateY(-50%); }
+    .on-tr     { right: 60px; top: 70px; }
+    .on-bl     { left: 60px; bottom: 70px; }
+
+    /* ── DASHBOARD ─── */
+    .dashboard-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 20px; }
+    .dash-main { display: grid; gap: 16px; }
+    .dash-side { display: grid; gap: 16px; }
+    .chart-box {
+      padding: 26px; border-radius: 22px;
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      border: 1px solid rgba(36,58,97,.8);
+    }
+    .chart-box h4 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+    .chart-box p { font-size: 13px; color: var(--muted); margin-bottom: 20px; }
+    .bar-chart { display: flex; align-items: flex-end; gap: 10px; height: 100px; }
+    .bar-col { flex: 1; border-radius: 6px 6px 0 0; background: linear-gradient(180deg, var(--purple), rgba(124,92,255,.4)); min-width: 0; position: relative; }
+    .bar-col span { position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); font-size: 11px; color: var(--muted); white-space: nowrap; }
+    .log-box {
+      padding: 22px; border-radius: 20px;
+      background: rgba(255,255,255,.04); border: 1px solid rgba(36,58,97,.8);
+    }
+    .log-box h4 { font-size: 14px; font-weight: 700; margin-bottom: 14px; }
+    .log-item { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,.05); font-size: 13px; color: var(--text-2); }
+    .log-item:last-child { border-bottom: none; }
+    .log-time { color: var(--muted); white-space: nowrap; flex-shrink: 0; }
+    .stats-box {
+      padding: 22px; border-radius: 20px;
+      background: rgba(255,255,255,.04); border: 1px solid rgba(36,58,97,.8);
+    }
+    .stats-box h4 { font-size: 14px; font-weight: 700; margin-bottom: 16px; }
+    .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .stat-item { padding: 14px; border-radius: 14px; background: rgba(255,255,255,.04); }
+    .stat-item .s-label { font-size: 11px; color: var(--muted); margin-bottom: 4px; }
+    .stat-item .s-value { font-size: 26px; font-weight: 800; letter-spacing: -.03em; color: var(--purple); }
+    .score-box {
+      padding: 22px; border-radius: 20px;
+      background: linear-gradient(180deg, rgba(167,139,250,.08), rgba(255,255,255,.02));
+      border: 1px solid rgba(167,139,250,.18);
+    }
+    .score-box h4 { font-size: 14px; font-weight: 700; margin-bottom: 10px; }
+    .score-box p { font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 14px; }
+    .score-inner {
+      padding: 16px; border-radius: 16px;
+      background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.07);
+    }
+    .score-inner .s-label { font-size: 11px; color: var(--muted); margin-bottom: 6px; }
+    .score-inner .s-big { font-size: 42px; font-weight: 800; letter-spacing: -.05em; color: var(--purple); }
+    .score-inner .s-desc { font-size: 13px; color: var(--text-2); line-height: 1.55; margin-top: 8px; }
+
+    /* ── IMPACT ─── */
+    .impact-row { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 16px; }
+    .impact-card {
+      padding: 28px 22px; border-radius: 22px; text-align: center;
+      background: rgba(255,255,255,.03); border: 1px solid rgba(36,58,97,.8);
+    }
+    .impact-card .big { font-size: clamp(28px,3vw,40px); font-weight: 900; letter-spacing: -.04em; color: var(--purple); display: block; margin-bottom: 12px; }
+    .impact-card p { font-size: 14px; color: var(--muted); line-height: 1.55; }
+
+    /* ── CTA ─── */
+    .cta-box {
+      padding: 52px; border-radius: 32px;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(167,139,250,.16), transparent 35%),
+        linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03));
+      border: 1px solid rgba(167,139,250,.2);
+      box-shadow: 0 24px 64px rgba(0,0,0,.24);
+    }
+    .cta-inner { display: grid; grid-template-columns: 1.1fr .9fr; gap: 32px; align-items: center; }
+    .cta-box h2 { font-size: clamp(24px,2.8vw,38px); font-weight: 800; line-height: 1.1; letter-spacing: -.03em; margin-bottom: 16px; }
+    .cta-box p { font-size: 17px; color: var(--muted); line-height: 1.65; margin-bottom: 28px; }
+    .cta-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+    .cta-props { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .cta-prop {
+      padding: 16px; border-radius: 16px;
+      background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.07);
+    }
+    .cta-prop strong { display: block; font-size: 13px; font-weight: 700; margin-bottom: 4px; }
+    .cta-prop span { font-size: 12px; color: var(--muted); line-height: 1.4; }
+
+    /* ── FOOTER ─── */
+    footer { background: rgba(8,17,31,.85); border-top: 1px solid rgba(36,58,97,.7); padding: 56px 0 32px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr repeat(4,1fr); gap: 36px; margin-bottom: 40px; }
+    .footer-logo img { height: 34px; margin-bottom: 14px; }
+    .footer-tagline { font-size: 13px; color: var(--muted); line-height: 1.65; max-width: 28ch; }
+    .footer-col h4 { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; }
+    .footer-col a { display: block; font-size: 13px; color: var(--text-2); margin-bottom: 8px; transition: color .2s; }
+    .footer-col a:hover { color: var(--purple); }
+    .footer-bottom { border-top: 1px solid rgba(36,58,97,.5); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+    .footer-copy { font-size: 12px; color: var(--muted); }
+
+    /* ── WHATSAPP FLOAT ─── */
+    .wa-float {
+      position: fixed; bottom: 28px; right: 28px; z-index: 900;
+      width: 56px; height: 56px; border-radius: 50%;
+      background: #25D366; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 8px 24px rgba(0,0,0,.3); transition: transform .2s;
+    }
+    .wa-float:hover { transform: scale(1.08); }
+    .wa-float svg { width: 28px; height: 28px; fill: #fff; }
+
+    /* ── ANIMATIONS ─── */
+    .fade-up { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+    .fade-up.in { opacity: 1; transform: translateY(0); }
+
+    /* ── RESPONSIVE ─── */
+    @media (max-width: 1080px) {
+      .hero-grid, .pos-split, .grid-2, .orbit-grid, .dashboard-grid, .cta-inner, .usecases-grid { grid-template-columns: 1fr; }
+      .grid-3, .grid-4 { grid-template-columns: repeat(2,1fr); }
+      .flow-grid { grid-template-columns: repeat(4,1fr); }
+      .flow-step::after { display: none; }
+      .impact-row { grid-template-columns: repeat(3,1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .hero { min-height: auto; padding-bottom: 64px; }
+      .orbit-wrap { min-height: 360px; }
+      .on-top, .on-right, .on-bottom, .on-left, .on-tr, .on-bl { position: static; transform: none; }
+      .orbit-center { position: static; transform: none; }
+      .orbit-wrap { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; padding: 20px; min-height: auto; }
+    }
+    @media (max-width: 720px) {
+      .section { padding: 72px 0; }
+      .container { padding: 0 20px; }
+      .grid-3, .grid-4 { grid-template-columns: 1fr; }
+      .flow-grid { grid-template-columns: repeat(2,1fr); }
+      .impact-row { grid-template-columns: repeat(2,1fr); }
+      .cta-props { grid-template-columns: 1fr; }
+      .cta-box { padding: 32px 24px; }
+      .hero-pills { grid-template-columns: 1fr; }
+      .hero-actions { flex-direction: column; }
+      .btn-primary, .btn-ghost { width: 100%; justify-content: center; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .bullet-grid { grid-template-columns: 1fr; }
+      .stat-grid { grid-template-columns: 1fr; }
+      .cta-props { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── HEADER (replaced by nav.js) ─── -->
+<header>
+  <div style="padding:16px 0;color:#7d9ac4;font-size:14px;">Cargando navegación…</div>
+</header>
+
+<!-- ══════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════ -->
+<section class="hero section-relative">
+  <div class="hero-orb a"></div>
+  <div class="hero-orb b"></div>
+  <img src="Solutions.svg" class="bg-graphic" aria-hidden="true"
+       style="width:680px;top:-60px;right:-100px;opacity:.09;" />
+
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-copy fade-up">
+        <span class="eyebrow">IA conversacional · Cobranzas · CRM · Analytics</span>
+        <h1 class="hero-title">Automatizá la atención y cobranzas con IA integrada a tu operación.</h1>
+        <p class="hero-lead">No es solo un chatbot. Es una capa de automatización conversacional que se conecta con tu CRM, tus flujos de cobranza y tus reglas de negocio para operar con control real.</p>
+        <div class="hero-actions">
+          <a href="https://wa.me/5491150595908?text=Hola%2C%20me%20interesa%20conocer%20Inthegra%20AI%20Chatbot" class="btn-primary" target="_blank" rel="noopener">Agendar demo →</a>
+          <a href="#capacidades" class="btn-ghost">Ver capacidades</a>
+        </div>
+        <div class="hero-pills">
+          <div class="hero-pill"><strong style="display:block;margin-bottom:4px;color:var(--purple)">IA + procesos</strong>Entrenado con reglas y flujos reales de negocio.</div>
+          <div class="hero-pill"><strong style="display:block;margin-bottom:4px;color:var(--purple)">No es solo chat</strong>Es gestión: cobranza, atención, leads y derivación.</div>
+          <div class="hero-pill"><strong style="display:block;margin-bottom:4px;color:var(--purple)">Integrado</strong>CRM, ERP, workflows y canales digitales en uno.</div>
+        </div>
+      </div>
+
+      <div class="fade-up" style="transition-delay:.15s">
+        <div class="hero-card">
+          <div class="chat-status">
+            <span style="font-weight:600">Panel de conversaciones</span>
+            <span class="status-live">IA activa</span>
+          </div>
+          <div class="conversation">
+            <div>
+              <div class="bubble-label ai-label">Inthegra AI</div>
+              <div class="bubble ai">Hola, te contactamos porque tenés un saldo pendiente de $18.400. ¿Podemos coordinar un acuerdo de pago hoy?</div>
+            </div>
+            <div style="justify-self:end;text-align:right">
+              <div class="bubble-label user-label">Cliente</div>
+              <div class="bubble user">Sí, puedo pagar el viernes. ¿Puedo hacer 2 cuotas?</div>
+            </div>
+            <div>
+              <div class="bubble-label ai-label">Inthegra AI</div>
+              <div class="bubble ai">Perfecto. Registré tu promesa de pago para el viernes y configuré el plan en 2 cuotas. Te llegará confirmación por WhatsApp.</div>
+            </div>
+          </div>
+          <div class="mini-panels">
+            <div class="mini-panel">
+              <div class="label">Automatización</div>
+              <div class="kpi purple">78%</div>
+              <div class="small">conversaciones sin intervención humana</div>
+            </div>
+            <div class="mini-panel">
+              <div class="label">TMO respuesta</div>
+              <div class="kpi cyan">-41%</div>
+              <div class="small">reducción en tiempo medio de respuesta</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     PROBLEMA REAL
+══════════════════════════════════════════════ -->
+<section class="section section-alt section-relative">
+  <img src="Solutions.svg" class="bg-graphic" aria-hidden="true"
+       style="width:620px;bottom:-100px;left:-80px;opacity:.08;" />
+  <div class="container">
+    <div class="fade-up" style="max-width:820px;margin-bottom:52px">
+      <span class="eyebrow">El problema real</span>
+      <h2 class="section-title">Atención desordenada, cobranzas manuales y cero visibilidad sobre lo que pasa en cada conversación.</h2>
+      <p class="section-desc">Los problemas operativos no son de tecnología. Son de procesos sin trazabilidad, canales sin integración y equipos que no pueden escalar.</p>
+    </div>
+    <div class="grid-3 fade-up" style="transition-delay:.1s">
+      <div class="problem-card">
+        <span class="num">01</span>
+        <h3>Atención dispersa en múltiples canales</h3>
+        <p>WhatsApp, email, llamadas sin centralización ni historial unificado. Cada canal opera en silos y el cliente repite el contexto en cada contacto.</p>
+      </div>
+      <div class="problem-card">
+        <span class="num">02</span>
+        <h3>Cobranzas manuales y de baja eficiencia</h3>
+        <p>Seguimiento persona a persona, sin priorización automática ni estrategias configurables. Alta carga operativa, bajo porcentaje de recupero.</p>
+      </div>
+      <div class="problem-card">
+        <span class="num">03</span>
+        <h3>Sin trazabilidad de conversaciones</h3>
+        <p>No hay registro sistematizado de lo que se habló, acordó o prometió. Imposible auditar, mejorar o escalar con ese modelo.</p>
+      </div>
+      <div class="problem-card">
+        <span class="num">04</span>
+        <h3>Baja capacidad de respuesta en volumen alto</h3>
+        <p>En picos de demanda, la atención se resiente. No hay capa de automatización que absorba el volumen sin perder calidad.</p>
+      </div>
+      <div class="problem-card">
+        <span class="num">05</span>
+        <h3>Escalabilidad dependiente de headcount</h3>
+        <p>Más volumen implica más personal. Sin automatización, el costo operativo crece linealmente con la demanda.</p>
+      </div>
+      <div class="problem-card">
+        <span class="num">06</span>
+        <h3>Sin visibilidad sobre calidad de atención</h3>
+        <p>No hay métricas, análisis de sentimiento ni control de performance sobre las interacciones. Decisiones sin datos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     POSICIONAMIENTO
+══════════════════════════════════════════════ -->
+<section class="section section-relative">
+  <img src="Solutions.svg" class="bg-graphic" aria-hidden="true"
+       style="width:660px;top:-80px;right:-120px;opacity:.09;" />
+  <div class="container">
+    <div class="fade-up" style="max-width:820px;margin-bottom:52px">
+      <span class="eyebrow">Posicionamiento</span>
+      <h2 class="section-title">No es un chatbot. Es una plataforma de gestión conversacional integrada al negocio.</h2>
+      <p class="section-desc">La diferencia no está en el canal. Está en lo que pasa después de cada mensaje: qué se registra, qué se dispara, qué se mide y cómo mejora la operación.</p>
+    </div>
+    <div class="pos-split fade-up" style="transition-delay:.1s">
+      <div class="pos-panel bad">
+        <h3 style="color:#ff8060">Chatbot genérico</h3>
+        <div class="checklist">
+          <div class="check-item"><span class="check-x">✕</span><div>Responde preguntas frecuentes sin integración al sistema</div></div>
+          <div class="check-item"><span class="check-x">✕</span><div>Sin acceso a datos del cliente, historial o estado de deuda</div></div>
+          <div class="check-item"><span class="check-x">✕</span><div>Derivación manual sin contexto al operador</div></div>
+          <div class="check-item"><span class="check-x">✕</span><div>Sin registro sistematizado de lo conversado</div></div>
+          <div class="check-item"><span class="check-x">✕</span><div>Métricas básicas sin visibilidad operativa real</div></div>
+        </div>
+      </div>
+      <div class="pos-panel good">
+        <h3 style="color:var(--purple)">Inthegra AI Chatbot</h3>
+        <div class="checklist">
+          <div class="check-item"><span class="check-ok">✓</span><div>Conectado al CRM, ERP y procesos internos de la empresa</div></div>
+          <div class="check-item"><span class="check-ok">✓</span><div>Accede a datos del cliente y ejecuta acciones en tiempo real</div></div>
+          <div class="check-item"><span class="check-ok">✓</span><div>Derivación inteligente con historial completo al operador</div></div>
+          <div class="check-item"><span class="check-ok">✓</span><div>Registro completo de cada interacción, acuerdo y gestión</div></div>
+          <div class="check-item"><span class="check-ok">✓</span><div>Dashboard de performance, sentimiento y mejora continua</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     CÓMO FUNCIONA
+══════════════════════════════════════════════ -->
+<section class="section section-alt section-relative">
+  <img src="Solutions.svg" class="bg-graphic" aria-hidden="true"
+       style="width:640px;bottom:-80px;right:-60px;opacity:.08;" />
+  <div class="container">
+    <div class="fade-up" style="text-align:center;max-width:820px;margin:0 auto 52px">
+      <span class="eyebrow">Cómo funciona</span>
+      <h2 class="section-title">De la conversación a la acción en tiempo real.</h2>
+      <p class="section-desc" style="margin-inline:auto">Cada interacción sigue un flujo estructurado que combina IA, reglas de negocio, integración con sistemas y registro completo.</p>
+    </div>
+    <div class="flow-grid fade-up" style="transition-delay:.1s">
+      <div class="flow-step">
+        <span class="step-num">01</span>
+        <h4>Contacto entrante</h4>
+        <p>Cliente inicia conversación por WhatsApp u otro canal digital configurado.</p>
+      </div>
+      <div class="flow-step">
+        <span class="step-num">02</span>
+        <h4>IA responde</h4>
+        <p>El asistente responde según entrenamiento, reglas y flujos del negocio.</p>
+      </div>
+      <div class="flow-step">
+        <span class="step-num">03</span>
+        <h4>Analiza intención</h4>
+        <p>Detecta sentimiento, intención y contexto para definir la respuesta adecuada.</p>
+      </div>
+      <div class="flow-step">
+        <span class="step-num">04</span>
+        <h4>Ejecuta acciones</h4>
+        <p>Consultas, gestiones, acuerdos de cobranza o actualizaciones en el sistema.</p>
+      </div>
+      <div class="flow-step">
+        <span class="step-num">05</span>
+        <h4>Escala si es necesario</h4>
+        <p>Derivación inteligente al operador con historial completo de la conversación.</p>
+      </div>
+      <div class="flow-step">
+        <span class="step-num">06</span>
+        <h4>Registra todo</h4>
+        <p>Cada interacción queda documentada en el CRM para auditoría y seguimiento.</p>
+      </div>
+      <div class="flow-step">
+        <span class="step-num">07</span>
+        <h4>Mejora continua</h4>
+        <p>Métricas y feedback alimentan el modelo para optimizar respuestas y flujos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     CAPACIDADES
+══════════════════════════════════════════════ -->
+<section id="capacidades" class="section section-relative">
+  <img src="Solutions.svg" class="bg-graphic" aria-hidden="true"
+       style="width:680px;top:-60px;left:-100px;opacity:.09;" />
+  <div class="container">
+    <div class="fade-up" style="max-width:820px;margin-bottom:52px">
+      <span class="eyebrow">Capacidades core</span>
+      <h2 class="section-title">Todo lo que necesitás para automatizar, gestionar y medir conversaciones a escala.</h2>
+    </div>
+    <div class="grid-3 fade-up" style="transition-delay:.1s">
+      <div class="card">
+        <div class="card-icon">💬</div>
+        <h3>Atención automatizada omnicanal</h3>
+        <p>Respuestas automáticas en WhatsApp y canales digitales con configuración por tipo de consulta, horario y prioridad.</p>
+        <span class="cap-tag">Atención</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">📋</div>
+        <h3>Gestión de cobranzas automatizada</h3>
+        <p>Contactación, seguimiento de mora, registro de gestiones, acuerdos de pago y actualización en el sistema de cobranzas.</p>
+        <span class="cap-tag">Cobranzas</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">⚙️</div>
+        <h3>Motor de reglas y parametrización</h3>
+        <p>Flujos, condiciones, respuestas y acciones configurables según los procesos reales de la empresa. Sin programar.</p>
+        <span class="cap-tag">Configuración</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">🧠</div>
+        <h3>IA entrenable con procesos propios</h3>
+        <p>El asistente aprende del negocio: tono, criterios, casos frecuentes y respuestas validadas por el equipo.</p>
+        <span class="cap-tag">IA</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <h3>Análisis de sentimiento en tiempo real</h3>
+        <p>Detecta el estado emocional de la conversación para priorizar, escalar o adaptar la respuesta de forma automática.</p>
+        <span class="cap-tag">Analytics</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔀</div>
+        <h3>Derivación inteligente a operadores</h3>
+        <p>Cuando la IA detecta que se requiere intervención humana, transfiere la conversación con todo el historial disponible.</p>
+        <span class="cap-tag">Operaciones</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">🗂️</div>
+        <h3>Registro completo de interacciones</h3>
+        <p>Cada mensaje, acción, acuerdo y derivación queda documentado en el sistema para auditoría y seguimiento.</p>
+        <span class="cap-tag">Trazabilidad</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">🖥️</div>
+        <h3>Panel de gestión de conversaciones</h3>
+        <p>Vista centralizada de conversaciones activas, estados, operadores y prioridades para gestión en tiempo real.</p>
+        <span class="cap-tag">Control</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">📈</div>
+        <h3>Métricas y control de performance</h3>
+        <p>TMO, tasa de automatización, handoff efectivo, sentimiento y performance por operador, canal y campaña.</p>
+        <span class="cap-tag">Reporting</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     CASOS DE USO POR ÁREA
+══════════════════════════════════════════════ -->
+<section class="section section-alt section-relative">
+  <img src="Solutions.svg" class="bg-graphic" aria-hidden="true"
+       style="width:620px;bottom:-80px;right:-60px;opacity:.08;" />
+  <div class="container">
+    <div class="fade-up" style="text-align:center;max-width:820px;margin:0 auto 52px">
+      <span class="eyebrow">Casos de uso</span>
+      <h2 class="section-title">Una solución, múltiples áreas de impacto.</h2>
+      <p class="section-desc" style="margin-inline:auto">El chatbot adapta su comportamiento según el contexto: atención, cobranzas o ventas. Cada área tiene sus flujos, criterios y métricas propias.</p>
+    </div>
+    <div class="usecases-grid fade-up" style="transition-delay:.1s">
+      <div class="tabs-list">
+        <button class="tab-btn active" data-tab="tab-atencion">
+          <strong>Atención al cliente</strong>
+          <span>Respuestas, consultas y seguimiento de casos.</span>
+        </button>
+        <button class="tab-btn" data-tab="tab-cobranzas">
+          <strong>Cobranzas</strong>
+          <span>Mora, estrategias, acuerdos y recupero.</span>
+        </button>
+        <button class="tab-btn" data-tab="tab-ventas">
+          <strong>Ventas y campañas</strong>
+          <span>Mensajería saliente y calificación de leads.</span>
+        </button>
+      </div>
+      <div>
+        <div class="tab-panel active" id="tab-atencion">
+          <h3>Atención al cliente automatizada</h3>
+          <p>Resuelve consultas frecuentes, gestiona casos y reduce la carga del equipo de soporte sin perder calidad ni trazabilidad.</p>
+          <div class="bullet-grid">
+            <div class="bullet-item"><strong>Respuestas automáticas</strong>Consultas de estado, saldo, condiciones y procesos resueltas sin intervención.</div>
+            <div class="bullet-item"><strong>Gestión de consultas</strong>Flujos configurados por tipo de consulta con derivación cuando es necesario.</div>
+            <div class="bullet-item"><strong>Seguimiento de casos</strong>Registro de incidentes, actualizaciones y cierre con trazabilidad completa.</div>
+            <div class="bullet-item"><strong>Atención 24/7</strong>Continuidad operativa fuera del horario del equipo sin costo adicional.</div>
+          </div>
+        </div>
+        <div class="tab-panel" id="tab-cobranzas">
+          <h3>Cobranzas automatizadas con IA</h3>
+          <p>El asistente ejecuta estrategias de contactación, registra gestiones, acuerda pagos y alimenta el sistema de cobranzas en tiempo real.</p>
+          <div class="bullet-grid">
+            <div class="bullet-item"><strong>Contactación automatizada</strong>Disparo de mensajes por cartera, días de mora o estrategia definida.</div>
+            <div class="bullet-item"><strong>Seguimiento de mora</strong>Conversaciones adaptadas según grado de mora, producto y comportamiento.</div>
+            <div class="bullet-item"><strong>Ejecución de estrategias</strong>Flujos de negociación configurables: cuotas, descuentos, plazos y condiciones.</div>
+            <div class="bullet-item"><strong>Registro de gestiones</strong>Promesas de pago, respuestas y acuerdos documentados automáticamente en el CRM.</div>
+          </div>
+        </div>
+        <div class="tab-panel" id="tab-ventas">
+          <h3>Ventas y automatización de campañas</h3>
+          <p>Lanza campañas salientes, responde consultas de interesados y califica leads para que el equipo comercial se enfoque en los más calientes.</p>
+          <div class="bullet-grid">
+            <div class="bullet-item"><strong>Mensajería saliente</strong>Campañas disparadas por segmento, evento o estrategia puntual.</div>
+            <div class="bullet-item"><strong>Respuesta automática</strong>El asistente responde y filtra lo que requiere intervención del asesor.</div>
+            <div class="bullet-item"><strong>Calificación de interés</strong>Clasificación según intención, respuesta y comportamiento conversacional.</div>
+            <div class="bullet-item"><strong>Trazabilidad comercial</strong>Interacciones centralizadas para seguimiento y mejora continua del equipo.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     INTEGRACIÓN
+══════════════════════════════════════════════ -->
+<section id="integracion" class="section section-relative">
+  <img src="Solutions.svg" class="bg-graphic" aria-hidden="true"
+       style="width:660px;top:-80px;right:-100px;opacity:.09;" />
+  <div class="container">
+    <div class="fade-up" style="max-width:820px;margin-bottom:52px">
+      <span class="eyebrow">Integración y orquestación</span>
+      <h2 class="section-title">Una pieza del ecosistema Inthegra, no una herramienta aislada.</h2>
+      <p class="section-desc">El chatbot cobra valor cuando conversa con el CRM, consume datos del negocio, dispara acciones y registra todo en una misma lógica operativa.</p>
+    </div>
+    <div class="orbit-grid fade-up" style="transition-delay:.1s">
+      <div class="orbit-wrap">
+        <div class="orbit-node on-top">WhatsApp<br>Canales digitales</div>
+        <div class="orbit-node on-right">CRM<br>Gestión central</div>
+        <div class="orbit-node on-bottom">ERP /<br>Productos</div>
+        <div class="orbit-node on-left">Workflows<br>internos</div>
+        <div class="orbit-node on-tr">APIs<br>externas</div>
+        <div class="orbit-node on-bl">Analytics<br>y monitoreo</div>
+        <div class="orbit-center">INTHEGRA<br>AI<br>CHATBOT</div>
+      </div>
+      <div class="grid-2" style="gap:16px;align-content:start">
+        <div class="card soft" style="padding:24px">
+          <div class="card-icon" style="margin-bottom:12px">🔗</div>
+          <h3>Conectado al negocio</h3>
+          <p>Consulta información, registra gestiones, alimenta métricas y forma parte de los procesos que ya mueven la operación.</p>
+        </div>
+        <div class="card soft" style="padding:24px">
+          <div class="card-icon" style="margin-bottom:12px">🔄</div>
+          <h3>Sin pérdida de contexto</h3>
+          <p>Cada interacción puede continuar sobre el historial disponible, reduciendo repeticiones y fricción operativa.</p>
+        </div>
+        <div class="card soft" style="padding:24px;grid-column:span 2">
+          <div class="card-icon" style="margin-bottom:12px">🚀</div>
+          <h3>Arquitectura escalable</h3>
+          <p>Pensado para crecer con más volumen, más casos de uso y mayor automatización sin perder control operacional.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     CONTROL Y VISIBILIDAD
+══════════════════════════════════════════════ -->
+<section class="section section-alt section-relative">
+  <img src="Solutions.svg" class="bg-graphic" aria-hidden="true"
+       style="width:640px;bottom:-60px;left:-80px;opacity:.08;" />
+  <div class="container">
+    <div class="fade-up" style="text-align:center;max-width:820px;margin:0 auto 52px">
+      <span class="eyebrow">Control y visibilidad</span>
+      <h2 class="section-title">Dashboard operativo para gestionar calidad, rendimiento y trazabilidad.</h2>
+      <p class="section-desc" style="margin-inline:auto">La conversación deja de ser una caja negra. La operación gana métricas, auditoría, seguimiento y capacidad real de mejora continua.</p>
+    </div>
+    <div class="dashboard-grid fade-up" style="transition-delay:.1s">
+      <div class="dash-main">
+        <div class="chart-box">
+          <h4>Volumen de conversaciones gestionadas</h4>
+          <p>Performance diaria con resolución automatizada y escalamiento a operador.</p>
+          <div class="bar-chart">
+            <div class="bar-col" style="height:54%"><span>Lun</span></div>
+            <div class="bar-col" style="height:68%"><span>Mar</span></div>
+            <div class="bar-col" style="height:61%"><span>Mié</span></div>
+            <div class="bar-col" style="height:84%"><span>Jue</span></div>
+            <div class="bar-col" style="height:92%"><span>Vie</span></div>
+            <div class="bar-col" style="height:73%"><span>Sáb</span></div>
+          </div>
+        </div>
+        <div class="log-box">
+          <h4>Registro y auditoría</h4>
+          <div class="log-item"><span>Derivación automática a operador de cobranzas</span><span class="log-time">09:21</span></div>
+          <div class="log-item"><span>Sentimiento negativo detectado y priorizado</span><span class="log-time">09:34</span></div>
+          <div class="log-item"><span>Promesa de pago registrada y almacenada en CRM</span><span class="log-time">10:02</span></div>
+          <div class="log-item"><span>Consulta resuelta sin intervención humana</span><span class="log-time">10:17</span></div>
+        </div>
+      </div>
+      <div class="dash-side">
+        <div class="stats-box">
+          <h4>Métricas clave</h4>
+          <div class="stat-grid">
+            <div class="stat-item">
+              <div class="s-label">TMO respuesta</div>
+              <div class="s-value">-41%</div>
+            </div>
+            <div class="stat-item">
+              <div class="s-label">Cobertura</div>
+              <div class="s-value">24/7</div>
+            </div>
+            <div class="stat-item">
+              <div class="s-label">Automatización</div>
+              <div class="s-value">78%</div>
+            </div>
+            <div class="stat-item">
+              <div class="s-label">Handoff efectivo</div>
+              <div class="s-value">92%</div>
+            </div>
+          </div>
+        </div>
+        <div class="score-box">
+          <h4>Panel de calidad conversacional</h4>
+          <p>Seguimiento de sentimiento, puntos de fricción y satisfacción sobre cada interacción.</p>
+          <div class="score-inner">
+            <div class="s-label">Sentiment trend</div>
+            <div class="s-big">+32</div>
+            <div class="s-desc">Más conversaciones positivas, menos escaladas por fricción y mayor consistencia en la atención.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     IMPACTO DE NEGOCIO
+══════════════════════════════════════════════ -->
+<section class="section section-relative">
+  <img src="Solutions.svg" class="bg-graphic" aria-hidden="true"
+       style="width:660px;top:-80px;right:-100px;opacity:.09;" />
+  <div class="container">
+    <div class="fade-up" style="text-align:center;max-width:820px;margin:0 auto 52px">
+      <span class="eyebrow">Valor de negocio</span>
+      <h2 class="section-title">Impacto concreto sobre atención, cobranzas y escalabilidad.</h2>
+      <p class="section-desc" style="margin-inline:auto">La promesa no es "más IA". Es mejor operación: menor costo, más capacidad, más control y mejor experiencia para clientes y equipos.</p>
+    </div>
+    <div class="impact-row fade-up" style="transition-delay:.1s">
+      <div class="impact-card">
+        <span class="big">24/7</span>
+        <p>Atención continua más allá del horario del equipo.</p>
+      </div>
+      <div class="impact-card">
+        <span class="big">-41%</span>
+        <p>Reducción estimada del tiempo medio de respuesta en alto volumen.</p>
+      </div>
+      <div class="impact-card">
+        <span class="big">+78%</span>
+        <p>Automatización de conversaciones repetitivas sin perder trazabilidad.</p>
+      </div>
+      <div class="impact-card">
+        <span class="big">+Vis.</span>
+        <p>Métricas, sentimiento y auditoría completa para mejorar la gestión.</p>
+      </div>
+      <div class="impact-card">
+        <span class="big">+Escala</span>
+        <p>Más atención y cobranzas sin escalar linealmente el equipo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     CTA FINAL
+══════════════════════════════════════════════ -->
+<section id="cta" class="section section-relative">
+  <div class="container">
+    <div class="cta-box fade-up">
+      <div class="cta-inner">
+        <div>
+          <span class="eyebrow" style="margin-bottom:20px">Próximo paso</span>
+          <h2>Transformá tu atención y cobranzas con IA conectada a tu operación real.</h2>
+          <p>Mostrá tus procesos actuales. Configuramos el chatbot sobre tus flujos reales: atención, cobranzas, campañas o los tres.</p>
+          <div class="cta-actions">
+            <a href="https://wa.me/5491150595908?text=Hola%2C%20me%20interesa%20conocer%20Inthegra%20AI%20Chatbot" class="btn-primary" target="_blank" rel="noopener">Agendar demo →</a>
+            <a href="https://wa.me/5491150595908?text=Hola%2C%20quiero%20hablar%20con%20un%20asesor%20sobre%20el%20chatbot" class="btn-ghost" target="_blank" rel="noopener">Hablar con un asesor</a>
+          </div>
+        </div>
+        <div class="cta-props">
+          <div class="cta-prop">
+            <strong>IA entrenable</strong>
+            <span>Configurada con los procesos y criterios reales de tu negocio.</span>
+          </div>
+          <div class="cta-prop">
+            <strong>Integrado</strong>
+            <span>CRM, ERP, cobranzas y canales digitales en un solo sistema.</span>
+          </div>
+          <div class="cta-prop">
+            <strong>Control total</strong>
+            <span>Dashboard, métricas, auditoría y mejora continua.</span>
+          </div>
+          <div class="cta-prop">
+            <strong>Enterprise-ready</strong>
+            <span>Base Oracle, escalable y preparada para operaciones críticas.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="https://inthegrasoftware.com/wp-content/uploads/2026/02/Logo_oracle_header.svg" alt="Inthegra Software" />
+        </div>
+        <p class="footer-tagline">Oracle-native enterprise software para organizaciones que necesitan escalar con control.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Productos</h4>
+        <a href="landing_healthcare.html">HealthCare</a>
+        <a href="landing_credit_financial.html">Credit &amp; Financial</a>
+        <a href="landing_erp.html">ERP para Retail &amp; Servicios</a>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios Oracle</h4>
+        <a href="landing_modernizacion.html">Modernización</a>
+        <a href="landing_oci.html">Oracle Cloud (OCI)</a>
+        <a href="landing_desarrollo_medida.html">Desarrollo a Medida</a>
+        <a href="landing_oac.html">Analytics</a>
+        <a href="landing_production_ai.html">Production AI</a>
+      </div>
+      <div class="footer-col">
+        <h4>Soluciones</h4>
+        <a href="solutions_crm.html">CRM</a>
+        <a href="solutions_ai_chatbot.html">AI Chatbot</a>
+      </div>
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <a href="people_culture.html">Equipo &amp; Cultura</a>
+        <a href="success_stories.html">Casos de Éxito</a>
+        <a href="blog.html">Blog</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 Inthegra Software. Argentina &amp; Latam.</span>
+      <span class="footer-copy">Oracle Partner · Enterprise AI &amp; Conversational Automation</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ── WHATSAPP FLOAT ─────────────────────────────── -->
+<a href="https://wa.me/5491150595908" class="wa-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<!-- ── SCROLL ANIMATIONS ──────────────────────────── -->
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); } });
+  }, { threshold: 0.10 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // Tabs
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(btn.dataset.tab).classList.add('active');
+    });
+  });
+</script>
+
+</body>
+</html>

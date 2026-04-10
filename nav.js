@@ -217,7 +217,7 @@
         '</div>',
 
         /* Direct links */
-        '<a href="people_culture.html" class="sn-link">Equipo</a>',
+        '<a href="people_culture.html" class="sn-link">People &amp; Culture</a>',
         '<a href="success_stories.html" class="sn-link">Casos de Éxito</a>',
         '<a href="blog.html" class="sn-link">Blog</a>',
 

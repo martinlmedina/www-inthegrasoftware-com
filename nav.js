@@ -254,7 +254,22 @@
     header.id = 'site-nav';
     header.innerHTML = NAV_HTML;
 
-    /* 3. Mark active link based on current filename */
+    /* 3. Fix relative hrefs for pages in subdirectories (e.g. /blog/post.html) */
+    var depth = location.pathname.split('/').filter(function(p) {
+      return p && !p.match(/\.html?$/i);
+    }).length;
+    if (depth > 0) {
+      var prefix = '';
+      for (var i = 0; i < depth; i++) prefix += '../';
+      header.querySelectorAll('a[href]').forEach(function(a) {
+        var href = a.getAttribute('href');
+        if (href && !href.match(/^(https?:|#|\/)/)) {
+          a.setAttribute('href', prefix + href);
+        }
+      });
+    }
+
+    /* 4. Mark active link based on current filename */
     var page = (location.pathname.split('/').pop() || 'home.html').toLowerCase();
     var links = header.querySelectorAll('.sn-link, .sn-panel-item');
     links.forEach(function (link) {
@@ -271,11 +286,7 @@
       }
     });
 
-    /* Special case: home */
-    if (page === '' || page === 'home.html' || page === 'index.html') {
-      var homeLink = header.querySelector('a[href="home.html"]');
-      /* Just the logo — no link to highlight specifically */
-    }
+    /* Special case: home — logo only, nothing to highlight */
   }
 
   /* Run as soon as DOM is ready */

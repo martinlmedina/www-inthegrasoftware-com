@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Inthegra Software — Oracle-native enterprise software y AI para salud, crédito y retail. 23 años de experiencia. ERP vertical, CRM, servicios Oracle e inteligencia artificial en producción. Argentina & Latam." />
   <title>Inthegra Software | Oracle-Native Enterprise Software para Latam</title>
+  <link rel="canonical" href="https://inthegrasoftware.com/" />
 
-  <link rel="icon" href="https://inthegrasoftware.com/wp-content/uploads/2025/02/favicon-150x140.png" sizes="32x32" />
-  <link rel="icon" href="https://inthegrasoftware.com/wp-content/uploads/2025/02/favicon.png" sizes="192x192" />
+  <link rel="icon" href="favicon-32.png" sizes="32x32" />
+  <link rel="icon" href="favicon-192.png" sizes="192x192" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -639,7 +640,7 @@
               <span class="npi-icon" style="background:rgba(255,209,102,.1);border:1px solid rgba(255,209,102,.2);">💳</span>
               <div class="npi-text"><strong>Credit &amp; Financial</strong><span>Crédito, cobranzas y gestión de carteras</span></div>
             </a>
-            <a href="landing_retail.html" class="nav-panel-item">
+            <a href="landing_erp.html" class="nav-panel-item">
               <span class="npi-icon" style="background:rgba(85,163,255,.1);border:1px solid rgba(85,163,255,.2);">🏪</span>
               <div class="npi-text"><strong>Retail &amp; Distribución</strong><span>ERP para cadenas, mayoristas y distribuidoras</span></div>
             </a>
@@ -1184,7 +1185,7 @@
         </div>
       </a>
 
-      <a href="landing_retail.html" class="ind-card retail fade-up fd3">
+      <a href="landing_erp.html" class="ind-card retail fade-up fd3">
         <div class="ind-accent"></div>
         <div class="ind-body">
           <div class="ind-icon-wrap">🏪</div>
@@ -1429,19 +1430,105 @@
      9. FINAL CTA
 ══════════════════════════════════════════════════════════ -->
 <section class="section section-sep" id="contacto">
+  <style>
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
+    .contact-info h2{font-size:clamp(28px,4vw,40px);line-height:1.15;margin-bottom:16px;}
+    .contact-info p{color:var(--text-2);font-size:16px;line-height:1.6;margin-bottom:32px;}
+    .contact-channels{display:flex;flex-direction:column;gap:16px;}
+    .contact-channel{display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;background:rgba(255,255,255,.03);border:1px solid rgba(30,50,87,.5);text-decoration:none;color:var(--text);transition:background .18s,border-color .18s;}
+    .contact-channel:hover{background:rgba(85,163,255,.06);border-color:rgba(85,163,255,.3);}
+    .contact-channel .ch-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+    .contact-channel .ch-text strong{display:block;font-size:13px;color:var(--text);margin-bottom:2px;}
+    .contact-channel .ch-text span{font-size:12px;color:var(--muted);}
+    .contact-form-card{background:rgba(255,255,255,.03);border:1px solid rgba(30,50,87,.5);border-radius:20px;padding:32px;}
+    .contact-form-card h3{font-size:20px;margin-bottom:4px;}
+    .contact-form-card .form-sub{font-size:13px;color:var(--muted);margin-bottom:24px;}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;}
+    .form-group{display:flex;flex-direction:column;gap:6px;margin-bottom:14px;}
+    .form-group label{font-size:12px;font-weight:600;color:var(--text-2);text-transform:uppercase;letter-spacing:.5px;}
+    .form-group input,.form-group textarea,.form-group select{background:rgba(255,255,255,.04);border:1px solid rgba(30,50,87,.7);border-radius:10px;padding:12px 14px;color:var(--text);font-size:14px;font-family:inherit;transition:border-color .18s;}
+    .form-group input:focus,.form-group textarea:focus,.form-group select:focus{outline:none;border-color:var(--brand);}
+    .form-group textarea{resize:vertical;min-height:90px;}
+    .form-group select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237294bb' stroke-width='2.5'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;background-size:16px;padding-right:36px;}
+    .form-group select option{background:#0f1830;color:var(--text);}
+    .form-submit{width:100%;padding:14px;border:none;border-radius:12px;background:linear-gradient(135deg,#55a3ff,#7c5cff);color:#fff;font-size:15px;font-weight:700;font-family:inherit;cursor:pointer;transition:box-shadow .25s,transform .2s;}
+    .form-submit:hover{box-shadow:0 6px 30px rgba(85,163,255,.48);transform:translateY(-1px);}
+    .form-note{text-align:center;font-size:12px;color:var(--muted);margin-top:12px;}
+    @media(max-width:768px){.contact-grid{grid-template-columns:1fr;gap:32px;}.form-row{grid-template-columns:1fr;}}
+  </style>
   <div class="container">
-    <div class="cta-box fade-up">
-      <div class="eyebrow" style="margin-bottom:24px;justify-content:center;">
-        <span class="dot"></span>
-        Siguiente paso
+    <div class="contact-grid fade-up">
+
+      <div class="contact-info">
+        <div class="eyebrow" style="margin-bottom:20px;">
+          <span class="dot"></span>
+          Siguiente paso
+        </div>
+        <h2>¿Listo para construir<br><span class="gradient-text">la próxima versión de tu empresa?</span></h2>
+        <p>El primer paso es una conversación de 30 minutos con nuestro equipo técnico-comercial. Sin compromisos, sin discursos genéricos.</p>
+
+        <div class="contact-channels">
+          <a href="https://wa.me/5491150595908?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20las%20soluciones%20de%20Inthegra." class="contact-channel" target="_blank" rel="noopener">
+            <span class="ch-icon" style="background:rgba(37,211,102,.1);border:1px solid rgba(37,211,102,.2)">💬</span>
+            <div class="ch-text">
+              <strong>WhatsApp</strong>
+              <span>Respuesta inmediata</span>
+            </div>
+          </a>
+          <a href="mailto:contacto@inthegrasoftware.com" class="contact-channel">
+            <span class="ch-icon" style="background:rgba(85,163,255,.1);border:1px solid rgba(85,163,255,.2)">✉️</span>
+            <div class="ch-text">
+              <strong>contacto@inthegrasoftware.com</strong>
+              <span>Respondemos en menos de 24 hs</span>
+            </div>
+          </a>
+        </div>
       </div>
-      <h2>¿Listo para construir<br><span class="gradient-text">la próxima versión de tu empresa?</span></h2>
-      <p>Sea un producto, una solución o un servicio Oracle — el primer paso es una conversación de 30 minutos con nuestro equipo técnico-comercial. Sin compromisos, sin discursos genéricos.</p>
-      <div class="cta-actions">
-        <a href="https://wa.me/5491150595908" class="btn btn-primary" target="_blank" rel="noopener">Agendar demo →</a>
-        <a href="https://inthegrasoftware.com/#contacto" class="btn btn-ghost" target="_blank" rel="noopener">Hablar con un experto</a>
+
+      <div class="contact-form-card">
+        <h3>Escribinos</h3>
+        <p class="form-sub">Completá el formulario y te contactamos.</p>
+        <form action="https://formspree.io/f/FORM_ID" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-name">Nombre</label>
+              <input type="text" id="cf-name" name="name" required placeholder="Tu nombre" />
+            </div>
+            <div class="form-group">
+              <label for="cf-company">Empresa</label>
+              <input type="text" id="cf-company" name="company" placeholder="Tu empresa" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" required placeholder="tu@empresa.com" />
+          </div>
+          <div class="form-group">
+            <label for="cf-interest">Interés</label>
+            <select id="cf-interest" name="interest">
+              <option value="">Seleccioná un área</option>
+              <option value="healthcare">HealthCare</option>
+              <option value="credit">Credit &amp; Financial</option>
+              <option value="erp">ERP para Retail</option>
+              <option value="modernizacion">Modernización Oracle Forms</option>
+              <option value="oci">Oracle Cloud (OCI)</option>
+              <option value="desarrollo">Desarrollo a Medida</option>
+              <option value="analytics">Oracle Analytics</option>
+              <option value="ai">Production AI</option>
+              <option value="crm">CRM Enterprise</option>
+              <option value="chatbot">AI Chatbot</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="cf-message">Mensaje</label>
+            <textarea id="cf-message" name="message" placeholder="Contanos brevemente qué necesitás..."></textarea>
+          </div>
+          <button type="submit" class="form-submit">Enviar consulta →</button>
+          <p class="form-note">Equipo en Argentina · Sin compromisos</p>
+        </form>
       </div>
-      <p class="cta-note">Respondemos en menos de 24 horas · Equipo en Argentina</p>
+
     </div>
   </div>
 </section>
@@ -1469,7 +1556,7 @@
         <a href="index_productos.html">Ver todos los productos</a>
         <a href="landing_healthcare.html">HealthCare ERP</a>
         <a href="landing_credit_financial.html">Crédito &amp; Finanzas</a>
-        <a href="landing_retail.html">Retail &amp; Distribución</a>
+        <a href="landing_erp.html">Retail &amp; Distribución</a>
       </div>
 
       <div class="footer-col">
@@ -1496,13 +1583,13 @@
         <a href="success_stories.html">Clientes</a>
         <a href="blog.html">Novedades</a>
         <a href="https://wa.me/5491150595908" target="_blank" rel="noopener">WhatsApp</a>
-        <a href="https://inthegrasoftware.com/#contacto" target="_blank" rel="noopener">Contacto</a>
+        <a href="#contacto">Contacto</a>
       </div>
 
     </div>
 
     <div class="footer-bottom">
-      <p class="footer-copy">© 2025 Inthegra Software. Todos los derechos reservados.</p>
+      <p class="footer-copy">© 2026 Inthegra Software. Todos los derechos reservados.</p>
       <div class="footer-links">
         <a href="#">Política de privacidad</a>
         <a href="#">Términos de uso</a>

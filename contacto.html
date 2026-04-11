@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="es-AR">
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TRT4B92N');</script>
+  <!-- End Google Tag Manager -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Contactá al equipo de Inthegra Software. Formulario de consulta, WhatsApp y email. Oracle Partner certificado con 23 años de experiencia en Argentina y Latam." />
@@ -245,6 +252,18 @@
   </script>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRT4B92N"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- Global site tag (gtag.js) - Google Ads -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16670573573"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-16670573573');
+</script>
 
 <div class="page-spacer"></div>
 
@@ -293,7 +312,7 @@
         </div>
         <h2>Escribinos</h2>
         <p class="form-sub">Completá el formulario y te contactamos.</p>
-        <form action="https://formspree.io/f/FORM_ID" method="POST" id="contact-form">
+        <form id="contact-form" onsubmit="return submitForm(event)">
           <input type="hidden" name="page_origin" id="field-origin" value="contacto" />
           <input type="hidden" name="utm_source" id="field-utm" value="" />
           <div class="form-row">
@@ -407,13 +426,67 @@
 </a>
 
 <script>
+/* ── Google Apps Script endpoint (REPLACE with your deployed URL) ── */
+var APPS_SCRIPT_URL = 'APPS_SCRIPT_URL_PLACEHOLDER';
+
+/* ── Form submission → Apps Script + GA4 event ── */
+function submitForm(e) {
+  e.preventDefault();
+  var form = document.getElementById('contact-form');
+  var btn  = form.querySelector('button[type="submit"]');
+  var data = {
+    name:        document.getElementById('cf-name').value.trim(),
+    company:     document.getElementById('cf-company').value.trim(),
+    email:       document.getElementById('cf-email').value.trim(),
+    interest:    document.getElementById('cf-interest').value,
+    message:     document.getElementById('cf-message').value.trim(),
+    page_origin: document.getElementById('field-origin').value,
+    utm_source:  document.getElementById('field-utm').value,
+    timestamp:   new Date().toISOString()
+  };
+
+  if (!data.name || !data.email) {
+    alert('Por favor completá al menos tu nombre y email.');
+    return false;
+  }
+
+  btn.disabled = true;
+  btn.textContent = 'Enviando...';
+
+  fetch(APPS_SCRIPT_URL, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
+  })
+  .then(function () {
+    btn.textContent = '✓ Consulta enviada — te contactamos pronto';
+    btn.style.background = 'linear-gradient(135deg, #36d399, #1eb87a)';
+    form.querySelectorAll('input, select, textarea').forEach(function (el) { el.disabled = true; });
+
+    // GA4 conversion event via dataLayer
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'form_submit',
+      form_name: 'contacto',
+      form_interest: data.interest,
+      form_origin: data.page_origin
+    });
+  })
+  .catch(function () {
+    btn.textContent = 'Error — intentá de nuevo';
+    btn.disabled = false;
+  });
+
+  return false;
+}
+
 /* ── URL params → form pre-fill ── */
 (function () {
   var params = new URLSearchParams(window.location.search);
   var interes = params.get('interes');
   var origen  = params.get('origen');
 
-  // Pre-select interest dropdown
   if (interes) {
     var sel = document.getElementById('cf-interest');
     if (sel) {
@@ -426,16 +499,13 @@
     }
   }
 
-  // Set hidden fields
   if (origen) {
     document.getElementById('field-origin').value = origen;
   }
 
-  // UTM source from referrer or param
   var utm = params.get('utm_source') || '';
   if (utm) document.getElementById('field-utm').value = utm;
 
-  // Context banner labels
   var labels = {
     healthcare: 'HealthCare ERP',
     credit: 'Credit & Financial',
@@ -464,6 +534,18 @@
     });
   }, { threshold: 0.10 });
   els.forEach(function (el) { obs.observe(el); });
+
+  // GA4 event: track WhatsApp clicks
+  document.querySelectorAll('a[href*="wa.me"]').forEach(function (link) {
+    link.addEventListener('click', function () {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'whatsapp_click',
+        link_url: link.href,
+        page_location: window.location.pathname
+      });
+    });
+  });
 })();
 </script>
 </body>

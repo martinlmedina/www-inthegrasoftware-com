@@ -511,8 +511,37 @@
   /* Run as soon as DOM is ready */
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', injectNav);
+    document.addEventListener('DOMContentLoaded', trackClicks);
   } else {
     injectNav();
+    trackClicks();
+  }
+
+  /* ── GA4 event tracking via dataLayer ── */
+  function trackClicks() {
+    // Track WhatsApp clicks
+    document.querySelectorAll('a[href*="wa.me"]').forEach(function (link) {
+      link.addEventListener('click', function () {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'whatsapp_click',
+          link_url: link.href,
+          page_location: window.location.pathname
+        });
+      });
+    });
+    // Track CTA clicks to contacto.html
+    document.querySelectorAll('a[href*="contacto.html"]').forEach(function (link) {
+      link.addEventListener('click', function () {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'cta_click',
+          link_url: link.href,
+          link_text: link.textContent.trim(),
+          page_location: window.location.pathname
+        });
+      });
+    });
   }
 
 })();

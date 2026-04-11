@@ -1305,35 +1305,20 @@
 <section class="section" id="contacto">
   <div class="container">
     <div class="cta-section">
-      <div class="cta-inner">
-        <div>
-          <span class="section-label" style="color:#90c4ff;">¿Necesitás construir sobre Oracle?</span>
-          <h2 class="cta-heading gradient-text">Hablemos de tu proyecto</h2>
-          <p class="cta-sub">Contanos qué necesitás construir. En menos de 24 horas te respondemos con un enfoque inicial y una propuesta de trabajo.</p>
-          <ul class="cta-benefits">
-            <li>Consulta inicial sin costo ni compromisos</li>
-            <li>Definición de alcance y arquitectura base</li>
-            <li>Estimación de tiempos y esfuerzo</li>
-            <li>Equipo especialista en Oracle asignado desde el día 1</li>
-          </ul>
-        </div>
-        <div class="form-box">
-          <div>
-            <label class="form-label">Nombre</label>
-            <input type="text" class="form-input" placeholder="Tu nombre" id="f-name" />
-          </div>
-          <div>
-            <label class="form-label">Email corporativo</label>
-            <input type="email" class="form-input" placeholder="nombre@empresa.com" id="f-email" />
-          </div>
-          <div>
-            <label class="form-label">¿Qué querés construir?</label>
-            <input type="text" class="form-input" placeholder="Ej: portal de clientes, workflow de aprobaciones..." id="f-msg" />
-          </div>
-          <button class="form-submit" id="f-btn" onclick="handleSubmit()">Enviar consulta →</button>
-          <p>Sin spam · Respondemos en &lt; 24 horas hábiles</p>
-        </div>
+      <span class="section-label" style="color:#90c4ff;">¿Necesitás construir sobre Oracle?</span>
+      <h2 class="cta-heading gradient-text">Hablemos de tu proyecto</h2>
+      <p class="cta-sub">Contanos qué necesitás construir. En menos de 24 horas te respondemos con un enfoque inicial y una propuesta de trabajo.</p>
+      <ul class="cta-benefits">
+        <li>Consulta inicial sin costo ni compromisos</li>
+        <li>Definición de alcance y arquitectura base</li>
+        <li>Estimación de tiempos y esfuerzo</li>
+        <li>Equipo especialista en Oracle asignado desde el día 1</li>
+      </ul>
+      <div style="display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; margin-top:2rem;">
+        <a href="contacto.html?interes=desarrollo&origen=landing_desarrollo_medida" class="btn btn-primary" style="font-size:1.1rem; padding:1rem 2.5rem;">Enviar consulta →</a>
+        <a href="https://wa.me/5491150595908?text=Hola%2C%20me%20interesa%20desarrollo%20a%20medida%20sobre%20Oracle" class="btn btn-outline" target="_blank" rel="noopener" style="font-size:1.1rem; padding:1rem 2.5rem;">WhatsApp directo</a>
       </div>
+      <p class="cta-note">Sin spam · Respondemos en &lt; 24 horas hábiles · Sin compromisos</p>
     </div>
   </div>
 </section>
@@ -1379,16 +1364,6 @@
 </a>
 
 <script>
-  function handleSubmit() {
-    const name  = document.getElementById('f-name').value.trim();
-    const email = document.getElementById('f-email').value.trim();
-    const btn   = document.getElementById('f-btn');
-    if (!name || !email) { alert('Por favor completá al menos tu nombre y email.'); return; }
-    btn.textContent = '✓ Consulta enviada — te respondemos pronto';
-    btn.disabled = true;
-    btn.style.background = 'linear-gradient(135deg, #39d98a, #1eb87a)';
-    document.querySelectorAll('.form-input').forEach(i => i.disabled = true);
-  }
 
   // Scroll-triggered fade-in
   const io = new IntersectionObserver(entries => {

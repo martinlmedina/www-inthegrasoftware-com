@@ -254,17 +254,22 @@
     header.id = 'site-nav';
     header.innerHTML = NAV_HTML;
 
-    /* 3. Fix relative hrefs for pages in subdirectories (e.g. /blog/post.html) */
-    var depth = location.pathname.split('/').filter(function(p) {
-      return p && !p.match(/\.html?$/i);
-    }).length;
-    if (depth > 0) {
-      var prefix = '';
-      for (var i = 0; i < depth; i++) prefix += '../';
+    /* 3. Fix relative hrefs: resolve against nav.js location so links work
+          from any subdirectory and any deploy base path (e.g. GitHub Pages) */
+    var navBase = '';
+    var scripts = document.getElementsByTagName('script');
+    for (var i = 0; i < scripts.length; i++) {
+      var s = scripts[i].src || '';
+      if (s.match(/\/nav\.js(\?|$)/)) {
+        navBase = s.replace(/\/nav\.js.*$/, '/');
+        break;
+      }
+    }
+    if (navBase) {
       header.querySelectorAll('a[href]').forEach(function(a) {
         var href = a.getAttribute('href');
         if (href && !href.match(/^(https?:|#|\/)/)) {
-          a.setAttribute('href', prefix + href);
+          a.setAttribute('href', navBase + href);
         }
       });
     }

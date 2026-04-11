@@ -41,6 +41,7 @@
   solutions_ai_chatbot.html    → /soluciones/ai-chatbot/
   people_culture.html          → /equipo/
   success_stories.html         → /casos-de-exito/
+  contacto.html                → /contacto/
   blog.html                    → /blog/
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -156,6 +157,13 @@
     <lastmod>2026-04-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://inthegrasoftware.com/contacto/</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <url>

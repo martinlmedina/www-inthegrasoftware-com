@@ -317,7 +317,7 @@
       '</nav>',
 
       /* CTA */
-      '<a href="#contacto" class="sn-cta">Hablar con un experto</a>',
+      '<a href="contacto.html" class="sn-cta">Hablar con un experto</a>',
 
       /* Hamburger button (mobile only) */
       '<button class="sn-burger" aria-label="Menú" aria-expanded="false">',
@@ -400,7 +400,7 @@
       '<a href="blog.html" class="sn-m-link">Blog</a>',
 
       /* Mobile CTA */
-      '<a href="#contacto" class="sn-m-cta">Hablar con un experto</a>',
+      '<a href="contacto.html" class="sn-m-cta">Hablar con un experto</a>',
 
     '</div>',
   ].join('');

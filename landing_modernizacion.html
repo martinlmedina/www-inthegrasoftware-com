@@ -930,10 +930,10 @@
       <div class="section-label" style="color:#90c4ff;">Tu próximo paso</div>
       <h2>Obtén tu diagnóstico gratuito</h2>
       <p>Conversamos sobre tu situación actual y te entregamos un roadmap claro: alcance, riesgos y ROI estimado. Sin costo, sin compromiso.</p>
-      <form class="cta-form" onsubmit="handleSubmit(event)">
-        <input type="email" class="text-input" placeholder="Tu email corporativo" required />
-        <button type="submit" class="btn btn-primary">Solicitar ahora →</button>
-      </form>
+      <div style="display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; margin-top:2rem;">
+        <a href="contacto.html?interes=modernizacion&origen=landing_modernizacion" class="btn btn-primary" style="font-size:1.1rem; padding:1rem 2.5rem;">Solicitar diagnóstico gratuito →</a>
+        <a href="https://wa.me/5491150595908?text=Hola%2C%20me%20interesa%20modernizar%20Oracle%20Forms" class="btn btn-outline" target="_blank" rel="noopener" style="font-size:1.1rem; padding:1rem 2.5rem;">WhatsApp directo</a>
+      </div>
       <p class="cta-note">Respondemos en menos de 24 horas hábiles · Sin spam · Sin compromisos</p>
     </div>
   </div>
@@ -959,16 +959,6 @@
 </footer>
 
 <script>
-  function handleSubmit(e) {
-    e.preventDefault();
-    const email = e.target.querySelector('input[type="email"]').value;
-    const btn = e.target.querySelector('button');
-    btn.textContent = '✓ Recibido, te contactamos pronto';
-    btn.disabled = true;
-    btn.style.background = 'linear-gradient(135deg, #36d399, #1eb87a)';
-    e.target.querySelector('input').disabled = true;
-  }
-
   // Animate elements on scroll
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {

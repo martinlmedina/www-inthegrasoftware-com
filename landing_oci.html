@@ -1023,35 +1023,20 @@
 <section class="section" id="contacto">
   <div class="container">
     <div class="cta-section">
-      <div class="cta-inner">
-        <div>
-          <span class="section-label" style="color:#90c4ff;">¿Listos para correr Oracle en OCI mejor?</span>
-          <h2 class="cta-heading">Hablemos de tu plataforma</h2>
-          <p class="cta-sub">Analizamos tu situación actual y te entregamos un assessment inicial: workloads, arquitectura recomendada, riesgos y roadmap. Sin costo, sin compromisos.</p>
-          <ul class="cta-benefits">
-            <li>Assessment de infraestructura actual sin costo</li>
-            <li>Arquitectura OCI recomendada para tu caso</li>
-            <li>Estimación de costos y savings potenciales</li>
-            <li>Plan de migración y modelo de managed services</li>
-          </ul>
-        </div>
-        <div class="form-box">
-          <div>
-            <label class="form-label">Nombre</label>
-            <input type="text" class="form-input" placeholder="Tu nombre" id="f-name" />
-          </div>
-          <div>
-            <label class="form-label">Email corporativo</label>
-            <input type="email" class="form-input" placeholder="nombre@empresa.com" id="f-email" />
-          </div>
-          <div>
-            <label class="form-label">¿Cuál es tu situación actual?</label>
-            <input type="text" class="form-input" placeholder="Ej: servidores on-premise, OCI sin gestión..." id="f-msg" />
-          </div>
-          <button class="form-submit" id="f-btn" onclick="handleSubmit()">Solicitar assessment →</button>
-          <p>Sin spam · Respondemos en &lt; 24 horas hábiles</p>
-        </div>
+      <span class="section-label" style="color:#90c4ff;">¿Listos para correr Oracle en OCI mejor?</span>
+      <h2 class="cta-heading">Hablemos de tu plataforma</h2>
+      <p class="cta-sub">Analizamos tu situación actual y te entregamos un assessment inicial: workloads, arquitectura recomendada, riesgos y roadmap. Sin costo, sin compromisos.</p>
+      <ul class="cta-benefits">
+        <li>Assessment de infraestructura actual sin costo</li>
+        <li>Arquitectura OCI recomendada para tu caso</li>
+        <li>Estimación de costos y savings potenciales</li>
+        <li>Plan de migración y modelo de managed services</li>
+      </ul>
+      <div style="display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; margin-top:2rem;">
+        <a href="contacto.html?interes=oci&origen=landing_oci" class="btn btn-primary" style="font-size:1.1rem; padding:1rem 2.5rem;">Solicitar assessment gratuito →</a>
+        <a href="https://wa.me/5491150595908?text=Hola%2C%20me%20interesa%20Oracle%20Cloud%20Infrastructure" class="btn btn-outline" target="_blank" rel="noopener" style="font-size:1.1rem; padding:1rem 2.5rem;">WhatsApp directo</a>
       </div>
+      <p class="cta-note">Sin spam · Respondemos en &lt; 24 horas hábiles</p>
     </div>
   </div>
 </section>
@@ -1097,16 +1082,6 @@
 </a>
 
 <script>
-  function handleSubmit() {
-    const name  = document.getElementById('f-name').value.trim();
-    const email = document.getElementById('f-email').value.trim();
-    const btn   = document.getElementById('f-btn');
-    if (!name || !email) { alert('Por favor completá al menos tu nombre y email.'); return; }
-    btn.textContent = '✓ Solicitud enviada — te respondemos pronto';
-    btn.disabled = true;
-    btn.style.background = 'linear-gradient(135deg, #35d39b, #1eb87a)';
-    document.querySelectorAll('.form-input').forEach(i => i.disabled = true);
-  }
 
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => {

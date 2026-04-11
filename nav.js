@@ -153,9 +153,82 @@
     '}',
     '#site-nav .sn-cta:hover{box-shadow:0 6px 30px rgba(85,163,255,.48);transform:translateY(-1px);}',
 
+    /* Hamburger button (hidden on desktop) */
+    '#site-nav .sn-burger{',
+      'display:none;flex-shrink:0;background:none;border:none;cursor:pointer;',
+      'width:40px;height:40px;padding:8px;border-radius:8px;',
+      'transition:background .18s;',
+    '}',
+    '#site-nav .sn-burger:hover{background:rgba(255,255,255,.06);}',
+    '#site-nav .sn-burger svg{display:block;width:24px;height:24px;}',
+
+    /* Mobile overlay panel */
+    '#site-nav .sn-mobile{',
+      'display:none;position:fixed;top:64px;left:0;width:100%;',
+      'height:calc(100vh - 64px);height:calc(100dvh - 64px);',
+      'background:#08111f;',
+      'overflow-y:auto;padding:16px 24px 32px;',
+      'box-sizing:border-box;',
+      'z-index:499;',
+      'animation:snSlideDown .22s ease;',
+    '}',
+    '#site-nav .sn-mobile.sn-open{display:block;}',
+
+    '@keyframes snSlideDown{from{opacity:0;transform:translateY(-12px);}to{opacity:1;transform:translateY(0);}}',
+
+    /* Mobile nav links */
+    '#site-nav .sn-mobile .sn-m-link{',
+      'display:flex;align-items:center;justify-content:space-between;',
+      'padding:14px 12px;border-radius:10px;',
+      'color:#bdd2ef;text-decoration:none;font-size:15px;font-weight:500;',
+      'border-bottom:1px solid rgba(30,50,87,.5);',
+      'transition:background .16s,color .16s;',
+    '}',
+    '#site-nav .sn-mobile .sn-m-link:hover{background:rgba(255,255,255,.04);color:#eef4ff;}',
+    '#site-nav .sn-mobile .sn-m-link.sn-active{color:#eef4ff;}',
+
+    /* Mobile chevron for expandable sections */
+    '#site-nav .sn-m-link .sn-m-chev{',
+      'width:18px;height:18px;flex-shrink:0;',
+      'transition:transform .2s;',
+    '}',
+    '#site-nav .sn-m-link.sn-m-expanded .sn-m-chev{transform:rotate(180deg);}',
+
+    /* Mobile sub-panel */
+    '#site-nav .sn-m-sub{',
+      'display:none;padding:4px 0 8px 16px;',
+    '}',
+    '#site-nav .sn-m-sub.sn-open{display:block;}',
+
+    '#site-nav .sn-m-sub a{',
+      'display:flex;align-items:center;gap:10px;',
+      'padding:10px 12px;border-radius:8px;',
+      'text-decoration:none;color:#7294bb;font-size:13.5px;',
+      'transition:background .16s,color .16s;',
+    '}',
+    '#site-nav .sn-m-sub a:hover{background:rgba(85,163,255,.06);color:#eef4ff;}',
+    '#site-nav .sn-m-sub .sn-m-icon{',
+      'width:30px;height:30px;border-radius:8px;',
+      'display:flex;align-items:center;justify-content:center;',
+      'font-size:14px;flex-shrink:0;',
+    '}',
+    '#site-nav .sn-m-sub .sn-m-label{font-weight:500;color:#eef4ff;font-size:13px;}',
+
+    /* Mobile CTA */
+    '#site-nav .sn-m-cta{',
+      'display:block;text-align:center;margin-top:20px;padding:14px 24px;border-radius:12px;',
+      'background:linear-gradient(135deg,#55a3ff,#7c5cff);',
+      'color:#fff;font-size:15px;font-weight:700;text-decoration:none;',
+      'box-shadow:0 4px 20px rgba(85,163,255,.28);',
+    '}',
+
     /* Responsive */
     '@media(max-width:1100px){#site-nav .sn-inner{padding:0 24px;gap:16px;}}',
-    '@media(max-width:768px){#site-nav nav{display:none;}}',
+    '@media(max-width:768px){',
+      '#site-nav nav{display:none;}',
+      '#site-nav .sn-cta{display:none;}',
+      '#site-nav .sn-burger{display:flex;align-items:center;justify-content:center;}',
+    '}',
   ].join('');
 
   /* ──────────────────────────────────────────────────────
@@ -167,7 +240,7 @@
       /* Logo */
       '<div class="sn-logo">',
         '<a href="home.html">',
-          '<img src="https://inthegrasoftware.com/wp-content/uploads/2026/02/Logo_oracle_header.svg" alt="Inthegra Software" />',
+          '<img src="logo-header.svg" alt="Inthegra Software" />',
         '</a>',
       '</div>',
 
@@ -246,6 +319,89 @@
       /* CTA */
       '<a href="#contacto" class="sn-cta">Hablar con un experto</a>',
 
+      /* Hamburger button (mobile only) */
+      '<button class="sn-burger" aria-label="Menú" aria-expanded="false">',
+        '<svg viewBox="0 0 24 24" fill="none" stroke="#bdd2ef" stroke-width="2" stroke-linecap="round">',
+          '<line class="sn-b1" x1="3" y1="6" x2="21" y2="6"/>',
+          '<line class="sn-b2" x1="3" y1="12" x2="21" y2="12"/>',
+          '<line class="sn-b3" x1="3" y1="18" x2="21" y2="18"/>',
+        '</svg>',
+      '</button>',
+
+    '</div>',
+
+    /* Mobile menu overlay */
+    '<div class="sn-mobile">',
+
+      /* Productos */
+      '<a href="#" class="sn-m-link" data-toggle="m-productos">Productos',
+        '<svg class="sn-m-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>',
+      '</a>',
+      '<div class="sn-m-sub" id="m-productos">',
+        '<a href="landing_healthcare.html">',
+          '<span class="sn-m-icon" style="background:rgba(45,212,191,.1);border:1px solid rgba(45,212,191,.2)">🏥</span>',
+          '<span class="sn-m-label">HealthCare</span>',
+        '</a>',
+        '<a href="landing_credit_financial.html">',
+          '<span class="sn-m-icon" style="background:rgba(255,209,102,.1);border:1px solid rgba(255,209,102,.2)">💳</span>',
+          '<span class="sn-m-label">Credit & Financial</span>',
+        '</a>',
+        '<a href="landing_erp.html">',
+          '<span class="sn-m-icon" style="background:rgba(255,107,53,.1);border:1px solid rgba(255,107,53,.2)">🏪</span>',
+          '<span class="sn-m-label">ERP para Retail</span>',
+        '</a>',
+      '</div>',
+
+      /* Servicios Oracle */
+      '<a href="#" class="sn-m-link" data-toggle="m-servicios">Servicios Oracle',
+        '<svg class="sn-m-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>',
+      '</a>',
+      '<div class="sn-m-sub" id="m-servicios">',
+        '<a href="landing_modernizacion.html">',
+          '<span class="sn-m-icon" style="background:rgba(85,163,255,.1);border:1px solid rgba(85,163,255,.2)">⚡</span>',
+          '<span class="sn-m-label">Modernización Forms</span>',
+        '</a>',
+        '<a href="landing_oci.html">',
+          '<span class="sn-m-icon" style="background:rgba(53,211,155,.1);border:1px solid rgba(53,211,155,.2)">☁️</span>',
+          '<span class="sn-m-label">Oracle Cloud (OCI)</span>',
+        '</a>',
+        '<a href="landing_desarrollo_medida.html">',
+          '<span class="sn-m-icon" style="background:rgba(124,92,255,.1);border:1px solid rgba(124,92,255,.2)">🛠️</span>',
+          '<span class="sn-m-label">Desarrollo a Medida</span>',
+        '</a>',
+        '<a href="landing_oac.html">',
+          '<span class="sn-m-icon" style="background:rgba(85,163,255,.1);border:1px solid rgba(85,163,255,.2)">📊</span>',
+          '<span class="sn-m-label">Oracle Analytics</span>',
+        '</a>',
+        '<a href="landing_production_ai.html">',
+          '<span class="sn-m-icon" style="background:rgba(167,139,250,.1);border:1px solid rgba(167,139,250,.2)">🤖</span>',
+          '<span class="sn-m-label">Production AI</span>',
+        '</a>',
+      '</div>',
+
+      /* Soluciones */
+      '<a href="#" class="sn-m-link" data-toggle="m-soluciones">Soluciones',
+        '<svg class="sn-m-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>',
+      '</a>',
+      '<div class="sn-m-sub" id="m-soluciones">',
+        '<a href="solutions_crm.html">',
+          '<span class="sn-m-icon" style="background:rgba(124,92,255,.1);border:1px solid rgba(124,92,255,.2)">🤝</span>',
+          '<span class="sn-m-label">CRM Enterprise</span>',
+        '</a>',
+        '<a href="solutions_ai_chatbot.html">',
+          '<span class="sn-m-icon" style="background:rgba(167,139,250,.1);border:1px solid rgba(167,139,250,.2)">💬</span>',
+          '<span class="sn-m-label">AI Chatbot</span>',
+        '</a>',
+      '</div>',
+
+      /* Direct links */
+      '<a href="people_culture.html" class="sn-m-link">People & Culture</a>',
+      '<a href="success_stories.html" class="sn-m-link">Casos de Éxito</a>',
+      '<a href="blog.html" class="sn-m-link">Blog</a>',
+
+      /* Mobile CTA */
+      '<a href="#contacto" class="sn-m-cta">Hablar con un experto</a>',
+
     '</div>',
   ].join('');
 
@@ -303,6 +459,53 @@
     });
 
     /* Special case: home — logo only, nothing to highlight */
+
+    /* 5. Mobile menu: hamburger toggle + dropdown accordions */
+    var burger = header.querySelector('.sn-burger');
+    var mobilePanel = header.querySelector('.sn-mobile');
+    if (burger && mobilePanel) {
+      burger.addEventListener('click', function () {
+        var isOpen = mobilePanel.classList.toggle('sn-open');
+        burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        /* Prevent body scroll when menu is open */
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+      });
+
+      /* Accordion toggles for expandable sections */
+      var toggleLinks = mobilePanel.querySelectorAll('[data-toggle]');
+      toggleLinks.forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          var targetId = link.getAttribute('data-toggle');
+          var sub = document.getElementById(targetId);
+          if (sub) {
+            var wasOpen = sub.classList.contains('sn-open');
+            sub.classList.toggle('sn-open');
+            link.classList.toggle('sn-m-expanded');
+            /* Close other open sections */
+            if (!wasOpen) {
+              toggleLinks.forEach(function (otherLink) {
+                if (otherLink !== link) {
+                  var otherId = otherLink.getAttribute('data-toggle');
+                  var otherSub = document.getElementById(otherId);
+                  if (otherSub) otherSub.classList.remove('sn-open');
+                  otherLink.classList.remove('sn-m-expanded');
+                }
+              });
+            }
+          }
+        });
+      });
+
+      /* Close mobile menu when a real link is clicked */
+      mobilePanel.querySelectorAll('a:not([data-toggle])').forEach(function (a) {
+        a.addEventListener('click', function () {
+          mobilePanel.classList.remove('sn-open');
+          burger.setAttribute('aria-expanded', 'false');
+          document.body.style.overflow = '';
+        });
+      });
+    }
   }
 
   /* Run as soon as DOM is ready */

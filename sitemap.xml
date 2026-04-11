@@ -30,7 +30,7 @@
   index_productos.html         → /productos/
   landing_healthcare.html      → /productos/healthcare/
   landing_credit_financial.html→ /productos/credit-financial/
-  landing_retail.html          → /productos/retail/
+  landing_erp.html             → /productos/retail/
   index_services.html          → /servicios-oracle/
   landing_modernizacion.html   → /servicios-oracle/modernizacion/
   landing_oci.html             → /servicios-oracle/oci/

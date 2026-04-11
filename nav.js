@@ -7,6 +7,26 @@
   'use strict';
 
   /* ──────────────────────────────────────────────────────
+     BASE URL — captured synchronously at script parse time
+     so nav links resolve correctly from any subdirectory
+     or GitHub Pages deploy path (e.g. /www-inthegrasoftware-com/).
+     document.currentScript is only reliable during sync execution,
+     so we grab it here at IIFE top level before any callbacks.
+  ────────────────────────────────────────────────────── */
+  var NAV_BASE = (function () {
+    var cs = document.currentScript;
+    if (cs && cs.src) return cs.src.replace(/\/nav\.js.*$/i, '/');
+    /* Fallback for older browsers: scan script tags */
+    var ss = document.getElementsByTagName('script');
+    for (var i = 0; i < ss.length; i++) {
+      if ((ss[i].src || '').match(/\/nav\.js(\?|$)/i)) {
+        return ss[i].src.replace(/\/nav\.js.*$/i, '/');
+      }
+    }
+    return '';
+  }());
+
+  /* ──────────────────────────────────────────────────────
      CSS — all scoped to #site-nav to avoid page conflicts
   ────────────────────────────────────────────────────── */
   var NAV_CSS = [
@@ -256,20 +276,11 @@
 
     /* 3. Fix relative hrefs: resolve against nav.js location so links work
           from any subdirectory and any deploy base path (e.g. GitHub Pages) */
-    var navBase = '';
-    var scripts = document.getElementsByTagName('script');
-    for (var i = 0; i < scripts.length; i++) {
-      var s = scripts[i].src || '';
-      if (s.match(/\/nav\.js(\?|$)/)) {
-        navBase = s.replace(/\/nav\.js.*$/, '/');
-        break;
-      }
-    }
-    if (navBase) {
+    if (NAV_BASE) {
       header.querySelectorAll('a[href]').forEach(function(a) {
         var href = a.getAttribute('href');
         if (href && !href.match(/^(https?:|#|\/)/)) {
-          a.setAttribute('href', navBase + href);
+          a.setAttribute('href', NAV_BASE + href);
         }
       });
     }

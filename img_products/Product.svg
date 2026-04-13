@@ -1,0 +1,56 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Capa_1" data-name="Capa 1" viewBox="0 0 424.85 563.74" width="424.8500061035156" height="563.739990234375">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: url(#Degradado_sin_nombre_442-5);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        fill: none;
+      }
+
+      .cls-1, .cls-3, .cls-4, .cls-5, .cls-6 {
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 10px;
+      }
+
+      .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        stroke: url(#Degradado_sin_nombre_442);
+      }
+
+      .cls-4 {
+        stroke: url(#Degradado_sin_nombre_442-4);
+      }
+
+      .cls-5 {
+        stroke: url(#Degradado_sin_nombre_442-3);
+      }
+
+      .cls-6 {
+        stroke: url(#Degradado_sin_nombre_442-2);
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre_442" data-name="Degradado sin nombre 442" x1="-144.54" y1="2378.42" x2="-311.55" y2="2211.41" gradientTransform="translate(-2084.02 47.75) rotate(-90)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#179dca" stop-opacity="0"/>
+      <stop offset=".57" stop-color="#17acca" stop-opacity=".58"/>
+      <stop offset="1" stop-color="#17b7ca"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_442-2" data-name="Degradado sin nombre 442" x1="97.83" y1="2212.2" x2="-99.63" y2="2014.74" gradientTransform="translate(-1860.28 -144.74) rotate(-78.55)" xlink:href="#Degradado_sin_nombre_442"/>
+    <linearGradient id="Degradado_sin_nombre_442-3" data-name="Degradado sin nombre 442" x1="261" y1="2057.28" x2="35.02" y2="1831.29" gradientTransform="translate(-1663.43 -261.3) rotate(-69.65)" xlink:href="#Degradado_sin_nombre_442"/>
+    <linearGradient id="Degradado_sin_nombre_442-4" data-name="Degradado sin nombre 442" x1="402.29" y1="1870.83" x2="146.7" y2="1615.24" gradientTransform="translate(-1439.38 -348.24) rotate(-60.33)" xlink:href="#Degradado_sin_nombre_442"/>
+    <linearGradient id="Degradado_sin_nombre_442-5" data-name="Degradado sin nombre 442" x1="482.22" y1="1746.11" x2="194.56" y2="1458.45" gradientTransform="translate(-1286.84 -385.82) rotate(-54.23)" xlink:href="#Degradado_sin_nombre_442"/>
+  </defs>
+  <path class="cls-3" d="M111.34,222.07c19.12-35.36,56.53-59.37,99.55-59.37,62.46,0,113.1,50.64,113.1,113.1s-50.64,113.1-113.1,113.1c-31,0-59.08-12.47-79.51-32.66"/>
+  <path class="cls-6" d="M107.51,189.66c30.67-36.73,79.99-55.91,130.18-45.74,72.87,14.77,119.98,85.81,105.21,158.68-14.77,72.87-85.81,119.98-158.68,105.21-36.16-7.33-65.98-28.51-85.04-56.9"/>
+  <path class="cls-5" d="M108.81,159.64c41.37-36.27,100.8-49.29,156.01-28.82,80.16,29.73,121.04,118.81,91.31,198.96-29.73,80.16-118.81,121.04-198.96,91.31-39.78-14.75-69.88-44.12-86.49-79.76"/>
+  <path class="cls-4" d="M117.93,126.96c53.01-33.03,121.99-36.69,180.07-3.6,84.33,48.04,113.76,155.34,65.72,239.68-48.04,84.33-155.34,113.76-239.68,65.72-41.85-23.84-70.18-62.27-82.23-105.25"/>
+  <path class="cls-1" d="M124.42,97.6c63.47-30.72,141.35-26.55,202.58,17.55,88.91,64.05,109.07,188.04,45.03,276.96-64.05,88.91-188.04,109.07-276.96,45.03-44.12-31.78-71.31-78.33-79.68-128.02"/>
+  <rect class="cls-2" x="56.96" y="94.94" width="240.02" height="344.45"/>
+</svg>

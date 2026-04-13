@@ -32,10 +32,13 @@ La pestaña **Contactos** se crea automáticamente con el primer submit.
 
 1. En el editor de Apps Script, seleccionar la funcion `testSubmission` del dropdown
 2. Click en **Ejecutar** (play)
-3. La primera vez pedira permisos — aceptar todos
+3. La primera vez pedira permisos — aceptar todos:
+   - Acceso a Google Sheets (para leer/escribir la hoja)
+   - Envio de email (para las notificaciones)
 4. Verificar:
    - Se creo la pestaña **Contactos** con una fila de test
    - Llegaron los emails a los destinatarios de la pestaña Config
+5. **Eliminar la funcion `testSubmission()` del script despues del test** — no debe quedar en produccion
 
 ## Paso 4: Deploy como Web App
 
@@ -116,6 +119,49 @@ Estos eventos se disparan automaticamente y estan disponibles en GTM para crear 
 1. Ir a [search.google.com/search-console](https://search.google.com/search-console)
 2. Agregar propiedad: `https://inthegrasoftware.com`
 3. Verificar via GTM (metodo mas simple — ya tienen GTM instalado)
+
+---
+
+## Actualizaciones del script
+
+Si se modifica el codigo del Apps Script despues del deploy inicial:
+
+1. Ir a **Implementar > Administrar implementaciones**
+2. Clickear el icono de editar (lapiz)
+3. En "Version", seleccionar **Nueva version**
+4. Clickear **Implementar**
+
+> La URL no cambia, pero los cambios solo toman efecto despues de crear una nueva version.
+
+---
+
+## Limites de email
+
+| Tipo de cuenta | Limite diario |
+|---|---|
+| Gmail free | ~100 emails/dia |
+| Google Workspace | ~1500 emails/dia |
+
+Para el volumen esperado de un formulario de contacto corporativo, estos limites son mas que suficientes.
+
+---
+
+## Datos que envia el formulario
+
+El frontend envia un JSON con estos campos:
+
+```json
+{
+  "name": "Nombre del contacto",
+  "company": "Empresa",
+  "email": "email@ejemplo.com",
+  "interest": "healthcare|credit|erp|modernizacion|oci|desarrollo|analytics|ai|crm|chatbot",
+  "message": "Texto libre del mensaje",
+  "page_origin": "contacto",
+  "utm_source": "valor del parametro UTM si existe",
+  "timestamp": "2026-04-13T10:30:00.000Z"
+}
+```
 
 ---
 

@@ -92,38 +92,39 @@
 
     /* ── HERO ─── */
     .hero {
-      position: relative; overflow: hidden; padding: 64px 0 96px;
-      min-height: 100vh; display: flex; align-items: center;
+      position: relative; overflow: hidden;
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      text-align: center;
     }
     .hero::before {
       content: ''; position: absolute; inset: 0; z-index: 0;
       background:
-        linear-gradient(90deg, rgba(6,16,29,.88) 0%, rgba(6,16,29,.78) 34%, rgba(6,16,29,.48) 60%, rgba(6,16,29,.65) 100%),
-        url('https://inthegrasoftware.com/wp-content/uploads/2026/03/DSC03508copia-768x512.webp') center/cover no-repeat;
+        linear-gradient(180deg, rgba(6,16,29,.35) 0%, rgba(6,16,29,.25) 40%, rgba(6,16,29,.55) 80%, rgba(6,16,29,.85) 100%),
+        url('img/inthegra-team-completo.webp') center 30%/cover no-repeat;
     }
-    .hero::after {
-      content: ''; position: absolute; z-index: 0;
-      right: -120px; top: 80px; width: 420px; height: 420px; border-radius: 50%;
-      border: 1px solid rgba(255,255,255,.06);
-      box-shadow: 0 0 0 70px rgba(255,255,255,.015), 0 0 0 150px rgba(255,255,255,.008);
-    }
-    .hero-radials {
-      position: absolute; inset: 0; z-index: 0; pointer-events: none;
-      background:
-        radial-gradient(circle at 12% 18%, rgba(134,168,255,.16), transparent 32%),
-        radial-gradient(circle at 88% 18%, rgba(107,227,255,.12), transparent 28%);
-    }
-    .hero-grid {
+    .hero-copy {
       position: relative; z-index: 1;
-      display: grid; grid-template-columns: 1.1fr .75fr; gap: 42px; align-items: center;
+      display: flex; flex-direction: column; align-items: center; gap: 20px;
+      max-width: 800px; padding: 0 32px;
     }
-    .hero-copy { display: flex; flex-direction: column; gap: 20px; max-width: 720px; }
+    .hero-eyebrow {
+      font-size: 14px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+      color: rgba(255,255,255,.7);
+    }
     .hero-title {
-      font-size: clamp(42px, 6vw, 72px); font-weight: 900;
-      line-height: .96; letter-spacing: -.04em; max-width: 12ch;
+      font-size: clamp(48px, 8vw, 96px); font-weight: 900;
+      line-height: .92; letter-spacing: -.04em; color: #fff;
+      text-shadow: 0 2px 40px rgba(0,0,0,.4);
     }
-    .hero-lead { font-size: 18px; color: #d6e1ef; line-height: 1.65; max-width: 58ch; }
-    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+    .hero-subtitle {
+      font-size: clamp(15px, 2vw, 18px); font-weight: 600; color: rgba(255,255,255,.85);
+      text-shadow: 0 1px 20px rgba(0,0,0,.5);
+    }
+    .hero-lead {
+      font-size: 16px; color: rgba(255,255,255,.75); line-height: 1.65; max-width: 60ch;
+      text-shadow: 0 1px 10px rgba(0,0,0,.4);
+    }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
 
     .btn-primary {
       display: inline-flex; align-items: center; gap: 8px;
@@ -141,22 +142,7 @@
     }
     .btn-ghost:hover { border-color: rgba(134,168,255,.4); color: var(--brand); }
 
-    /* ── HERO CARD ─── */
-    .hero-card {
-      background: linear-gradient(180deg, rgba(255,255,255,.12), rgba(255,255,255,.06));
-      border: 1px solid rgba(255,255,255,.12);
-      border-radius: 28px; padding: 26px;
-      backdrop-filter: blur(16px);
-      box-shadow: 0 18px 60px rgba(4,12,22,.28);
-    }
-    .hero-card-label { font-size: 12px; color: #bcd0e9; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 18px; }
-    .stat-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 14px; }
-    .stat-box {
-      border: 1px solid rgba(255,255,255,.09); border-radius: 18px; padding: 18px;
-      background: rgba(255,255,255,.04);
-    }
-    .stat-box strong { display: block; font-size: 28px; font-weight: 800; line-height: 1; margin-bottom: 8px; color: #fff; }
-    .stat-box span { font-size: 13px; color: #c4d2e6; line-height: 1.4; }
+    /* ── HERO CARD (removed — immersive hero) ─── */
 
     /* ── LIGHT SECTIONS ─── */
     .section-light { background: var(--bg-light); padding: 88px 0; }
@@ -311,13 +297,13 @@
 
     /* ── RESPONSIVE ─── */
     @media (max-width: 1080px) {
-      .hero-grid, .split-layout, .capability-grid, .future-grid { grid-template-columns: 1fr; }
+      .split-layout, .capability-grid, .future-grid { grid-template-columns: 1fr; }
       .cards-4 { grid-template-columns: repeat(2,1fr); }
       .cards-3 { grid-template-columns: repeat(2,1fr); }
       .mosaic { grid-template-columns: 1fr 1fr; }
       .tile.large, .tile.wide { grid-column: auto; grid-row: auto; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
-      .hero { min-height: auto; }
+      .hero { min-height: 70vh; }
     }
     @media (max-width: 720px) {
       .section-light, .section-light-nopad, .section-future, .section-cta { padding: 72px 0; }
@@ -327,7 +313,6 @@
       .image-stack { grid-template-columns: 1fr; }
       .image-card.tall { min-height: 260px; grid-row: auto; }
       .mosaic { grid-template-columns: 1fr; }
-      .stat-grid { grid-template-columns: 1fr; }
       .hero-actions { flex-direction: column; }
       .btn-primary, .btn-ghost { width: 100%; justify-content: center; }
       .footer-grid { grid-template-columns: 1fr; }
@@ -372,40 +357,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      HERO
 ══════════════════════════════════════════════ -->
 <section class="hero">
-  <div class="hero-radials"></div>
-  <div class="container">
-    <div class="hero-grid">
-      <div class="hero-copy fade-up">
-        <span class="eyebrow-dark">People &amp; Culture</span>
-        <h1 class="hero-title">Equipos sólidos para proyectos de largo plazo.</h1>
-        <p class="hero-lead">En Inthegra, la cultura no es un discurso aislado: es la forma en que conectamos capacidad técnica, entendimiento de negocio y trabajo colaborativo para construir soluciones enterprise con visión de futuro.</p>
-        <div class="hero-actions">
-          <a href="contacto.html?origen=people_culture" class="btn-primary">Coordinar reunión →</a>
-          <a href="#equipo" class="btn-ghost">Ver equipo y capacidades</a>
-        </div>
-      </div>
-
-      <aside class="hero-card fade-up" style="transition-delay:.15s">
-        <div class="hero-card-label">Una cultura orientada a ejecución</div>
-        <div class="stat-grid">
-          <div class="stat-box">
-            <strong>+20</strong>
-            <span>Años de experiencia en software y transformación empresarial</span>
-          </div>
-          <div class="stat-box">
-            <strong>Oracle</strong>
-            <span>Expertise tecnológico aplicado a productos, servicios e innovación</span>
-          </div>
-          <div class="stat-box">
-            <strong>Equipos</strong>
-            <span>Trabajo multidisciplinario con foco en delivery, calidad y evolución</span>
-          </div>
-          <div class="stat-box">
-            <strong>Largo plazo</strong>
-            <span>Relaciones sostenibles con clientes, personas y proyectos</span>
-          </div>
-        </div>
-      </aside>
+  <div class="hero-copy fade-up">
+    <span class="hero-eyebrow">Who we are</span>
+    <h1 class="hero-title">Inthegra</h1>
+    <p class="hero-subtitle">Transformamos tecnología en crecimiento real</p>
+    <p class="hero-lead">En Inthegra somos un equipo especializado en tecnología Oracle con más de 20 años de experiencia desarrollando soluciones empresariales.</p>
+    <div class="hero-actions">
+      <a href="contacto.html?origen=people_culture" class="btn-primary">Coordinar reunión →</a>
+      <a href="#quienes" class="btn-ghost">Conocer al equipo</a>
     </div>
   </div>
 </section>

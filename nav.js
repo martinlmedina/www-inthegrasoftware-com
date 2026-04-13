@@ -43,7 +43,7 @@
     /* Inner flex row */
     '#site-nav .sn-inner{',
       'display:flex;align-items:center;justify-content:space-between;',
-      'max-width:1280px;margin:0 auto;padding:0 40px;',
+      'max-width:1260px;margin:0 auto;padding:0 40px;',
       'height:64px;gap:24px;',
     '}',
 

@@ -1,0 +1,33 @@
+# Inthegra Software
+
+> Oracle-native enterprise software company specializing in healthcare, credit/financial services, and retail ERP solutions. Founded in 2004, based in Argentina.
+
+## Company Overview
+
+Inthegra Software develops enterprise platforms built on Oracle technology for healthcare organizations, financial/credit institutions, and retail businesses across Latin America.
+
+## Products
+
+- [HealthCare Suite](https://inthegrasoftware.com/landing_healthcare.html): ERP for healthcare — prepaid medicine, social security, occupational health, home care. Clients include SIPSSA, EMI, Alta Salud.
+- [Credit & Financial Suite](https://inthegrasoftware.com/landing_credit_financial.html): Platform for loans and credit card management. Clients include Elebar, Sucredito, La Zonal.
+- [ERP for Retail & Services](https://inthegrasoftware.com/landing_erp.html): Business suite for retail, wholesale, and services with WMS, POS, ecommerce, and analytics modules.
+
+## Oracle Services
+
+- [Oracle Forms Modernization](https://inthegrasoftware.com/landing_modernizacion.html): Migration from Oracle Forms to Oracle APEX.
+- [Oracle Cloud Infrastructure (OCI)](https://inthegrasoftware.com/landing_oci.html): Cloud migration and managed infrastructure.
+- [Oracle Analytics Cloud (OAC)](https://inthegrasoftware.com/landing_oac.html): Business intelligence and analytics implementation.
+- [Production AI](https://inthegrasoftware.com/landing_production_ai.html): AI integration for enterprise processes.
+- [Custom Development](https://inthegrasoftware.com/landing_desarrollo_medida.html): Bespoke Oracle APEX application development.
+
+## Solutions
+
+- [CRM](https://inthegrasoftware.com/solutions_crm.html): Customer relationship management.
+- [AI Chatbot](https://inthegrasoftware.com/solutions_ai_chatbot.html): Intelligent conversational assistants for enterprises.
+
+## Other Pages
+
+- [Contact](https://inthegrasoftware.com/contacto.html): Contact form and information.
+- [Team & Culture](https://inthegrasoftware.com/people_culture.html): Company culture and team.
+- [Success Stories](https://inthegrasoftware.com/success_stories.html): Client case studies.
+- [Blog](https://inthegrasoftware.com/blog.html): Technical articles on Oracle, healthcare IT, and enterprise software.

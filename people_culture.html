@@ -10,19 +10,19 @@
   <!-- End Google Tag Manager -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="People & Culture — Inthegra Software. Equipos sólidos, cultura de ejecución y expertise Oracle-native para proyectos enterprise de largo plazo." />
+  <meta name="description" content="People & Culture en Inthegra: un equipo con seniority, criterio y capacidad de entrega para proyectos empresariales de largo plazo." />
   <title>People &amp; Culture | Inthegra Software</title>
   <link rel="canonical" href="https://inthegrasoftware.com/equipo/" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://inthegrasoftware.com/equipo/" />
   <meta property="og:title" content="People &amp; Culture | Inthegra Software" />
-  <meta property="og:description" content="People &amp; Culture — Inthegra Software. Equipos sólidos, cultura de ejecución y expertise Oracle-native para proyectos enterprise de largo plazo." />
+  <meta property="og:description" content="People & Culture en Inthegra: un equipo con seniority, criterio y capacidad de entrega para proyectos empresariales de largo plazo." />
   <meta property="og:image" content="https://inthegrasoftware.com/logo-header.svg" />
   <meta property="og:locale" content="es_AR" />
   <meta property="og:site_name" content="Inthegra Software" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="People &amp; Culture | Inthegra Software" />
-  <meta name="twitter:description" content="People &amp; Culture — Inthegra Software. Equipos sólidos, cultura de ejecución y expertise Oracle-native para proyectos enterprise de largo plazo." />
+  <meta name="twitter:description" content="People & Culture en Inthegra: un equipo con seniority, criterio y capacidad de entrega para proyectos empresariales de largo plazo." />
 
   <link rel="icon" href="favicon-32.png" sizes="32x32" />
   <link rel="icon" href="favicon-192.png" sizes="192x192" />
@@ -34,264 +34,480 @@
 
   <style>
     :root {
-      --bg-dark:   #07111f;
-      --bg-dark-2: #0b1727;
-      --bg-light:  #eef3f9;
-      --bg-card:   #ffffff;
-      --line-dark: rgba(12,26,43,.09);
-      --line-light: rgba(255,255,255,.1);
-      --text-dark: #0b1727;
-      --text-dark-2: #43566f;
-      --text-light: #e8eef7;
-      --muted-light: #9fb0c5;
-      --muted-dark: #5d7492;
-      --brand:     #86a8ff;
-      --brand-2:   #6be3ff;
+      --bg: #08111f;
+      --bg-soft: #0d1728;
+      --surface: rgba(255,255,255,.06);
+      --surface-strong: rgba(255,255,255,.09);
+      --border: rgba(255,255,255,.10);
+      --text: #f3f7fb;
+      --muted: #b8c5d6;
+      --muted-2: #8ea0b8;
+      --brand: #4da3ff;
+      --brand-2: #81c4ff;
+      --accent: #d9ecff;
+      --shadow: 0 20px 60px rgba(0,0,0,.28);
+      --radius-xl: 28px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --max: 1260px;
     }
 
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      color: var(--text-light);
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 85% 12%, rgba(77,163,255,.16), transparent 0 26%),
+        radial-gradient(circle at 12% 22%, rgba(129,196,255,.11), transparent 0 18%),
+        linear-gradient(180deg, #09111d 0%, #0a1322 42%, #0d1728 100%);
       line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-      background: var(--bg-dark);
     }
 
-    a { text-decoration: none; color: inherit; }
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      inset: auto;
+      pointer-events: none;
+      z-index: 0;
+      opacity: .08;
+      filter: blur(1px);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    body::before {
+      width: 420px;
+      height: 420px;
+      left: -90px;
+      top: 90px;
+      background-image: radial-gradient(circle at center, rgba(77,163,255,.45) 0 1px, transparent 1px), radial-gradient(circle at center, rgba(255,255,255,.22) 0 1px, transparent 1px);
+      background-size: 28px 28px, 56px 56px;
+      transform: rotate(14deg);
+    }
+
+    body::after {
+      width: 460px;
+      height: 460px;
+      right: -110px;
+      bottom: 80px;
+      background-image: linear-gradient(135deg, rgba(77,163,255,.45), transparent 65%), radial-gradient(circle at 22% 22%, rgba(255,255,255,.22) 0 2px, transparent 2px);
+      background-size: cover, 42px 42px;
+      transform: rotate(-8deg);
+    }
+
+    a { color: inherit; text-decoration: none; }
     img { max-width: 100%; display: block; }
 
-    .container { max-width: 1260px; margin: 0 auto; padding: 0 32px; }
-
-    /* ── HEADER PLACEHOLDER ─── */
-    header {
-      position: sticky; top: 0; z-index: 200;
-      background: rgba(8,17,31,.9);
-      backdrop-filter: blur(20px) saturate(1.5);
-      border-bottom: 1px solid rgba(36,58,97,.7);
+    .page {
+      position: relative;
+      z-index: 1;
+      overflow: clip;
     }
 
-    /* ── EYEBROWS ─── */
-    .eyebrow-dark {
-      display: inline-flex; align-items: center; gap: 8px; margin-bottom: 18px;
-      padding: 6px 14px; border-radius: 999px;
-      border: 1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.04);
-      color: #d7e3f5; font-size: 11px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
+    .container {
+      width: min(calc(100% - 40px), var(--max));
+      margin: 0 auto;
     }
-    .eyebrow-dark::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: linear-gradient(135deg, var(--brand), var(--brand-2)); }
 
-    .eyebrow-light {
-      display: inline-flex; align-items: center; gap: 8px; margin-bottom: 18px;
-      padding: 6px 14px; border-radius: 999px;
-      border: 1px solid rgba(12,26,43,.12); background: #ffffff;
-      color: #23374f; font-size: 11px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
+    .section {
+      padding: 92px 0;
+      position: relative;
     }
-    .eyebrow-light::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: linear-gradient(135deg, var(--brand), var(--brand-2)); }
 
-    /* ── HERO ─── */
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--brand-2);
+      font-size: 13px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 42px;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(77,163,255,0), rgba(77,163,255,.95));
+    }
+
+    h1, h2, h3, h4, p { margin: 0; }
+
+    h1 {
+      font-size: clamp(2.7rem, 6vw, 5.1rem);
+      line-height: 1.02;
+      letter-spacing: -.04em;
+      max-width: 10.5ch;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 3.6vw, 3.2rem);
+      line-height: 1.08;
+      letter-spacing: -.03em;
+      max-width: 14ch;
+    }
+
+    .lead {
+      margin-top: 24px;
+      font-size: clamp(1.08rem, 1.55vw, 1.32rem);
+      color: var(--muted);
+      max-width: 760px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
     .hero {
-      position: relative; overflow: hidden; padding: 64px 0 96px;
-      min-height: 100vh; display: flex; align-items: center;
+      padding: 38px 0 88px;
     }
-    .hero::before {
-      content: ''; position: absolute; inset: 0; z-index: 0;
-      background: linear-gradient(90deg, rgba(6,16,29,.95) 0%, rgba(6,16,29,.85) 34%, rgba(6,16,29,.7) 60%, rgba(6,16,29,.8) 100%);
-    }
-    .team-photo-section {
-      background: var(--bg-dark);
-      padding: 0 0 0;
-    }
-    .team-photo-section img {
-      width: 100%;
-      max-height: 520px;
-      object-fit: cover;
-      object-position: center 30%;
-      border-radius: 0;
-    }
-    .hero::after {
-      content: ''; position: absolute; z-index: 0;
-      right: -120px; top: 80px; width: 420px; height: 420px; border-radius: 50%;
-      border: 1px solid rgba(255,255,255,.06);
-      box-shadow: 0 0 0 70px rgba(255,255,255,.015), 0 0 0 150px rgba(255,255,255,.008);
-    }
-    .hero-radials {
-      position: absolute; inset: 0; z-index: 0; pointer-events: none;
-      background:
-        radial-gradient(circle at 12% 18%, rgba(134,168,255,.16), transparent 32%),
-        radial-gradient(circle at 88% 18%, rgba(107,227,255,.12), transparent 28%);
-    }
+
     .hero-grid {
-      position: relative; z-index: 1;
-      display: grid; grid-template-columns: 1.1fr .75fr; gap: 42px; align-items: center;
-    }
-    .hero-copy { display: flex; flex-direction: column; gap: 20px; max-width: 720px; }
-    .hero-title {
-      font-size: clamp(42px, 6vw, 72px); font-weight: 900;
-      line-height: .96; letter-spacing: -.04em; max-width: 12ch;
-    }
-    .hero-lead { font-size: 18px; color: #d6e1ef; line-height: 1.65; max-width: 58ch; }
-    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
-
-    .btn-primary {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 14px 26px; border-radius: 14px; font-size: 15px; font-weight: 700;
-      background: linear-gradient(135deg, var(--brand), var(--brand-2));
-      color: #07111f; box-shadow: 0 14px 30px rgba(107,227,255,.2);
-      transition: transform .2s, box-shadow .2s;
-    }
-    .btn-primary:hover { transform: translateY(-2px); }
-    .btn-ghost {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 14px 26px; border-radius: 14px; font-size: 15px; font-weight: 700;
-      border: 1px solid rgba(255,255,255,.16); color: #eaf1fb;
-      background: rgba(255,255,255,.04); transition: all .2s;
-    }
-    .btn-ghost:hover { border-color: rgba(134,168,255,.4); color: var(--brand); }
-
-    /* ── HERO CARD ─── */
-    .hero-card {
-      background: linear-gradient(180deg, rgba(255,255,255,.12), rgba(255,255,255,.06));
-      border: 1px solid rgba(255,255,255,.12);
-      border-radius: 28px; padding: 26px;
-      backdrop-filter: blur(16px);
-      box-shadow: 0 18px 60px rgba(4,12,22,.28);
-    }
-    .hero-card-label { font-size: 12px; color: #bcd0e9; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 18px; }
-    .stat-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 14px; }
-    .stat-box {
-      border: 1px solid rgba(255,255,255,.09); border-radius: 18px; padding: 18px;
-      background: rgba(255,255,255,.04);
-    }
-    .stat-box strong { display: block; font-size: 28px; font-weight: 800; line-height: 1; margin-bottom: 8px; color: #fff; }
-    .stat-box span { font-size: 13px; color: #c4d2e6; line-height: 1.4; }
-
-    /* ── LIGHT SECTIONS ─── */
-    .section-light { background: var(--bg-light); padding: 88px 0; }
-    .section-light-nopad { background: var(--bg-light); padding: 0 0 88px; }
-
-    /* ── SECTION TITLES ─── */
-    .section-title-light { font-size: clamp(28px,3.8vw,50px); font-weight: 800; line-height: 1.04; letter-spacing: -.03em; color: var(--text-dark); margin-bottom: 14px; }
-    .section-title-dark  { font-size: clamp(28px,3.8vw,50px); font-weight: 800; line-height: 1.04; letter-spacing: -.03em; color: var(--text-light); margin-bottom: 14px; }
-    .section-intro-light { font-size: 17px; color: var(--text-dark-2); line-height: 1.7; max-width: 72ch; }
-    .section-intro-dark  { font-size: 17px; color: #c9d6e8; line-height: 1.7; max-width: 72ch; }
-
-    /* ── POSITIONING PANEL + IMAGE STACK ─── */
-    .split-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 42px; align-items: center; margin-top: 42px; }
-    .pos-panel {
-      background: linear-gradient(180deg, #ffffff, #f8fbff);
-      border: 1px solid var(--line-dark); border-radius: 24px; padding: 28px;
-      box-shadow: 0 18px 50px rgba(12,26,43,.07);
-      color: var(--text-dark);
-    }
-    .pos-panel-label { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted-dark); margin-bottom: 20px; }
-    .pos-list { display: grid; gap: 0; }
-    .pos-item {
-      display: grid; grid-template-columns: 26px 1fr; gap: 14px; align-items: start;
-      padding: 16px 0; border-top: 1px solid var(--line-dark);
-    }
-    .pos-item:first-child { border-top: none; padding-top: 0; }
-    .pos-check {
-      width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
-      background: linear-gradient(135deg, var(--brand), var(--brand-2));
-      color: #07111f; font-size: 12px; font-weight: 800; flex-shrink: 0; margin-top: 2px;
-    }
-    .pos-item-text strong { display: block; font-size: 15px; margin-bottom: 4px; color: var(--text-dark); }
-    .pos-item-text span { font-size: 14px; color: var(--text-dark-2); line-height: 1.55; }
-
-    /* ── IMAGE STACK ─── */
-    .image-stack { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-    .image-card {
-      position: relative; overflow: hidden; border-radius: 22px;
-      min-height: 220px; box-shadow: 0 18px 50px rgba(8,19,35,.18); background: #dbe7f7;
-    }
-    .image-card img { width: 100%; height: 100%; object-fit: cover; }
-    .image-card.tall { grid-row: span 2; min-height: 454px; }
-    .image-card::after {
-      content: ''; position: absolute; inset: 0;
-      background: linear-gradient(180deg, rgba(6,16,29,0) 30%, rgba(6,16,29,.5) 100%);
-    }
-    .image-label {
-      position: absolute; left: 16px; bottom: 16px; z-index: 2;
-      padding: 6px 12px; border-radius: 999px; font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
-      color: #e9f3ff; background: rgba(255,255,255,.12); backdrop-filter: blur(12px);
-      border: 1px solid rgba(255,255,255,.12);
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 38px;
+      align-items: stretch;
     }
 
-    /* ── HOW WE WORK CARDS ─── */
-    .cards-4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 18px; margin-top: 34px; }
-    .cards-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; margin-top: 34px; }
-    .light-card {
-      background: #fff; border: 1px solid var(--line-dark); border-radius: 22px; padding: 26px;
-      box-shadow: 0 14px 40px rgba(12,26,43,.07); color: var(--text-dark);
-    }
-    .light-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; letter-spacing: -.01em; }
-    .light-card p { font-size: 15px; color: var(--text-dark-2); line-height: 1.65; }
-    .card-num {
-      width: 44px; height: 44px; border-radius: 14px; margin-bottom: 18px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 14px; font-weight: 800; color: #17304e;
-      background: linear-gradient(135deg, rgba(134,168,255,.18), rgba(107,227,255,.18));
-      border: 1px solid rgba(12,26,43,.08);
+    .hero-top {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 38px;
+      align-items: start;
     }
 
-    /* ── TEAM CAPABILITIES ─── */
-    .capability-grid { display: grid; grid-template-columns: .92fr 1.08fr; gap: 36px; align-items: center; margin-top: 40px; }
-    .quote-strip { display: grid; gap: 16px; }
+    .hero-copy {
+      padding: 34px 0 12px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 0 22px;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: .22s ease;
+      border: 1px solid transparent;
+    }
+
+    .button.primary {
+      background: linear-gradient(135deg, var(--brand), #2d7be8);
+      color: white;
+      box-shadow: 0 10px 28px rgba(77,163,255,.25);
+    }
+
+    .button.secondary {
+      border-color: var(--border);
+      background: rgba(255,255,255,.03);
+      color: var(--accent);
+    }
+
+    .button:hover { transform: translateY(-1px); }
+
+    .hero-side {
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03));
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      position: relative;
+    }
+
+    .hero-side img {
+      width: 100%;
+      height: auto;
+      display: block;
+      opacity: 1;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: auto 22px 22px 22px;
+      padding: 20px 20px 18px;
+      border-radius: 20px;
+      background: linear-gradient(180deg, rgba(8,17,31,.08), rgba(8,17,31,.82));
+      border: 1px solid rgba(255,255,255,.1);
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-overlay strong {
+      display: block;
+      font-size: 1.02rem;
+      margin-bottom: 8px;
+      color: white;
+    }
+
+    .hero-overlay p {
+      color: var(--muted);
+      font-size: .96rem;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-top: 0;
+    }
+
+    .metric {
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03));
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 22px;
+      min-height: 150px;
+    }
+
+    .metric-number {
+      font-size: clamp(1.9rem, 3.2vw, 2.6rem);
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -.04em;
+      margin-bottom: 12px;
+      color: white;
+    }
+
+    .metric p {
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .panel {
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03));
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow);
+    }
+
+    .positioning {
+      padding: 34px;
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .positioning h3 {
+      font-size: 1.55rem;
+      line-height: 1.18;
+      letter-spacing: -.03em;
+      margin-bottom: 12px;
+    }
+
+    .positioning-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .tag-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .tag {
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.05);
+      border: 1px solid var(--border);
+      color: var(--accent);
+      font-size: .92rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 42px;
+      align-items: start;
+    }
+
     .quote-box {
-      padding: 22px; border-radius: 20px;
-      background: linear-gradient(180deg, #f9fbff, #fff); border: 1px solid var(--line-dark);
+      margin-top: 28px;
+      padding: 24px;
+      border-radius: 20px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid var(--border);
+      color: var(--accent);
+      font-size: 1.02rem;
     }
-    .quote-box strong { display: block; font-size: 17px; font-weight: 700; margin-bottom: 6px; color: #11243a; }
-    .quote-box span { font-size: 14px; color: #4a607c; line-height: 1.6; }
 
-    /* ── MOSAIC ─── */
-    .mosaic { display: grid; grid-template-columns: 1.15fr .85fr .85fr; grid-auto-rows: 180px; gap: 14px; }
-    .tile { position: relative; overflow: hidden; border-radius: 20px; background: #dce8f7; }
-    .tile img { width: 100%; height: 100%; object-fit: cover; }
-    .tile.large { grid-row: span 2; }
-    .tile.wide { grid-column: span 2; }
-    .tile::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 35%, rgba(7,17,31,.5) 100%); }
+    .stat-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 24px;
+    }
 
-    /* ── FUTURE (dark section) ─── */
-    .section-future {
-      background: linear-gradient(180deg, #0a1728, #091423);
-      color: var(--text-light); padding: 88px 0;
-      position: relative; overflow: hidden;
+    .stat-item {
+      padding: 18px 20px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid var(--border);
     }
-    .section-future::before {
-      content: ''; position: absolute; bottom: -120px; left: -120px;
-      width: 420px; height: 420px; border-radius: 50%;
-      background: radial-gradient(circle, rgba(134,168,255,.2), transparent 62%); filter: blur(10px);
-    }
-    .future-grid { display: grid; grid-template-columns: 1fr .9fr; gap: 32px; align-items: center; position: relative; z-index: 1; }
-    .dark-panel {
-      background: linear-gradient(180deg, #0c1b2e, #0b1727);
-      border: 1px solid rgba(255,255,255,.08); border-radius: 24px; padding: 28px;
-      color: var(--text-light);
-    }
-    .dark-panel-label { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: #b5c7de; margin-bottom: 20px; }
-    .dark-list { display: grid; gap: 0; }
-    .dark-item {
-      display: grid; grid-template-columns: 26px 1fr; gap: 14px; align-items: start;
-      padding: 16px 0; border-top: 1px solid rgba(255,255,255,.08);
-    }
-    .dark-item:first-child { border-top: none; padding-top: 0; }
-    .dark-item strong { display: block; font-size: 15px; margin-bottom: 4px; color: var(--text-light); }
-    .dark-item span { font-size: 14px; color: var(--muted-light); line-height: 1.55; }
 
-    /* ── CTA FINAL ─── */
-    .section-cta { background: var(--bg-light); padding: 72px 0 96px; }
-    .cta-box {
-      padding: 32px 36px; border-radius: 26px;
-      background: linear-gradient(135deg, #102641, #122f50);
-      border: 1px solid rgba(255,255,255,.08);
-      display: flex; gap: 24px; justify-content: space-between; align-items: center; flex-wrap: wrap;
+    .stat-item strong {
+      display: block;
+      color: white;
+      font-size: 1rem;
+      margin-bottom: 4px;
     }
-    .cta-box h3 { font-size: clamp(20px,2.5vw,28px); font-weight: 700; color: #eff5ff; margin-bottom: 6px; }
-    .cta-box p { font-size: 14px; color: #c4d2e6; }
-    .cta-actions { display: flex; gap: 12px; flex-wrap: wrap; flex-shrink: 0; }
+
+    .cards-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 36px;
+    }
+
+    .card {
+      padding: 26px;
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03));
+      border: 1px solid var(--border);
+      min-height: 230px;
+    }
+
+    .card-index {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: rgba(77,163,255,.14);
+      color: var(--brand-2);
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      font-size: 1.18rem;
+      line-height: 1.18;
+      margin-bottom: 10px;
+      letter-spacing: -.02em;
+    }
+
+    .card p,
+    .card li { color: var(--muted); }
+
+    .principles-grid,
+    .capabilities-grid,
+    .human-grid,
+    .closing-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 34px;
+    }
+
+    .principle,
+    .capability,
+    .human-card,
+    .closing-card {
+      padding: 26px;
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03));
+      border: 1px solid var(--border);
+      min-height: 180px;
+    }
+
+    .principle .label,
+    .capability .label,
+    .human-card .label,
+    .closing-card .label {
+      display: inline-block;
+      font-size: .84rem;
+      color: var(--brand-2);
+      font-weight: 700;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    .principle h3,
+    .capability h3,
+    .human-card h3,
+    .closing-card h3 {
+      font-size: 1.16rem;
+      margin-bottom: 10px;
+      line-height: 1.2;
+      letter-spacing: -.02em;
+    }
+
+    .capability ul {
+      padding-left: 18px;
+      margin: 12px 0 0;
+      display: grid;
+      gap: 6px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 32px;
+    }
+    .gallery-item {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      opacity: .88;
+      transition: opacity .3s;
+    }
+    .gallery-item:hover img { opacity: 1; }
+    .gallery-item:first-child {
+      grid-column: 1 / 3;
+    }
+    .gallery-item:first-child img {
+      height: 320px;
+    }
+
+    .small-copy {
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      padding: 30px;
+      display: grid;
+      align-content: center;
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .cta-panel {
+      padding: 38px;
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .cta-panel .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
 
     /* ── FOOTER ─── */
     footer { background: rgba(8,17,31,.98); border-top: 1px solid rgba(36,58,97,.7); padding: 56px 0 32px; }
@@ -300,7 +516,7 @@
     .footer-tagline { font-size: 13px; color: #7d9ac4; line-height: 1.65; max-width: 28ch; }
     .footer-col h4 { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #7d9ac4; margin-bottom: 16px; }
     .footer-col a { display: block; font-size: 13px; color: #c0d4f0; margin-bottom: 8px; transition: color .2s; }
-    .footer-col a:hover { color: var(--brand); }
+    .footer-col a:hover { color: var(--brand-2); }
     .footer-bottom { border-top: 1px solid rgba(36,58,97,.5); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
     .footer-copy { font-size: 12px; color: #7d9ac4; }
 
@@ -315,40 +531,63 @@
     .wa-float svg { width: 28px; height: 28px; fill: #fff; }
 
     /* ── ANIMATIONS ─── */
-    .fade-up { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
-    .fade-up.in { opacity: 1; transform: translateY(0); }
+    .fade-up { opacity: 0; transform: translateY(32px); transition: opacity .7s ease, transform .7s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
 
-    /* ── RESPONSIVE ─── */
     @media (max-width: 1080px) {
-      .hero-grid, .split-layout, .capability-grid, .future-grid { grid-template-columns: 1fr; }
-      .cards-4 { grid-template-columns: repeat(2,1fr); }
-      .cards-3 { grid-template-columns: repeat(2,1fr); }
-      .mosaic { grid-template-columns: 1fr 1fr; }
-      .tile.large, .tile.wide { grid-column: auto; grid-row: auto; }
+      .hero-grid,
+      .hero-top,
+      .split,
+      .positioning,
+      .cta-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .cards-4 { grid-template-columns: repeat(2, 1fr); }
+      .tag-row,
+      .cta-panel .actions { justify-content: flex-start; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
-      .hero { min-height: auto; }
     }
-    @media (max-width: 720px) {
-      .section-light, .section-light-nopad, .section-future, .section-cta { padding: 72px 0; }
-      .section-light-nopad { padding-top: 0; }
-      .container { padding: 0 20px; }
-      .cards-4, .cards-3 { grid-template-columns: 1fr; }
-      .image-stack { grid-template-columns: 1fr; }
-      .image-card.tall { min-height: 260px; grid-row: auto; }
-      .mosaic { grid-template-columns: 1fr; }
-      .stat-grid { grid-template-columns: 1fr; }
-      .hero-actions { flex-direction: column; }
-      .btn-primary, .btn-ghost { width: 100%; justify-content: center; }
+
+    @media (max-width: 760px) {
+      .section { padding: 72px 0; }
+      .cards-4,
+      .principles-grid,
+      .capabilities-grid,
+      .human-grid,
+      .closing-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+      .gallery-item:first-child {
+        grid-column: auto;
+      }
+
+      .positioning,
+      .cta-panel,
+      .small-copy,
+      .card,
+      .principle,
+      .capability,
+      .human-card,
+      .closing-card,
+      .metric,
+      .stat-item {
+        padding: 22px;
+      }
       .footer-grid { grid-template-columns: 1fr; }
-      .cta-box { flex-direction: column; align-items: flex-start; }
     }
   </style>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "People & Culture | Inthegra Software",
-    "description": "Equipos sólidos, cultura de ejecución y expertise Oracle-native para proyectos enterprise de largo plazo.",
+    "description": "People & Culture en Inthegra: un equipo con seniority, criterio y capacidad de entrega para proyectos empresariales de largo plazo.",
     "publisher": {
       "@type": "Organization",
       "name": "Inthegra Software",
@@ -362,319 +601,356 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRT4B92N"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<!-- Global site tag (gtag.js) - Google Ads -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16670573573"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-16670573573');
-</script>
 
 <!-- ── HEADER (replaced by nav.js) ─── -->
-<header>
-  <div style="padding:16px 0;color:#7d9ac4;font-size:14px;">Cargando navegación…</div>
-</header>
+<header></header>
+
 <main>
+  <div class="page">
 
-<!-- ══════════════════════════════════════════════
-     HERO
-══════════════════════════════════════════════ -->
-<section class="hero">
-  <div class="hero-radials"></div>
-  <div class="container">
-    <div class="hero-grid">
-      <div class="hero-copy fade-up">
-        <span class="eyebrow-dark">People &amp; Culture</span>
-        <h1 class="hero-title">Equipos sólidos para proyectos de largo plazo.</h1>
-        <p class="hero-lead">En Inthegra, la cultura no es un discurso aislado: es la forma en que conectamos capacidad técnica, entendimiento de negocio y trabajo colaborativo para construir soluciones enterprise con visión de futuro.</p>
-        <div class="hero-actions">
-          <a href="contacto.html?origen=people_culture" class="btn-primary">Coordinar reunión →</a>
-          <a href="#equipo" class="btn-ghost">Ver equipo y capacidades</a>
-        </div>
-      </div>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-top">
+            <div class="hero-copy fade-up">
+              <div class="eyebrow">People &amp; Culture</div>
+              <h1>El equipo detr&aacute;s de cada proyecto cr&iacute;tico.</h1>
+              <p class="lead">
+                En Inthegra, la cultura no es decorativa. Es parte de c&oacute;mo entendemos el negocio,
+                coordinamos equipos, tomamos decisiones y sostenemos implementaciones complejas con
+                una l&oacute;gica de largo plazo.
+              </p>
+              <div class="hero-actions">
+                <a class="button primary" href="contacto.html?origen=people_culture">Hablemos</a>
+                <a class="button secondary" href="#quienes">Conoc&eacute; Inthegra</a>
+              </div>
+            </div>
 
-      <aside class="hero-card fade-up" style="transition-delay:.15s">
-        <div class="hero-card-label">Una cultura orientada a ejecución</div>
-        <div class="stat-grid">
-          <div class="stat-box">
-            <strong>+20</strong>
-            <span>Años de experiencia en software y transformación empresarial</span>
-          </div>
-          <div class="stat-box">
-            <strong>Oracle</strong>
-            <span>Expertise tecnológico aplicado a productos, servicios e innovación</span>
-          </div>
-          <div class="stat-box">
-            <strong>Equipos</strong>
-            <span>Trabajo multidisciplinario con foco en delivery, calidad y evolución</span>
-          </div>
-          <div class="stat-box">
-            <strong>Largo plazo</strong>
-            <span>Relaciones sostenibles con clientes, personas y proyectos</span>
-          </div>
-        </div>
-      </aside>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════
-     TEAM PHOTO
-══════════════════════════════════════════════ -->
-<section class="team-photo-section">
-  <div class="container">
-    <img src="img/inthegra-team-completo.webp" alt="Equipo completo de Inthegra Software" class="fade-up" />
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════
-     QUIÉNES SOMOS
-══════════════════════════════════════════════ -->
-<section id="quienes" class="section-light">
-  <div class="container">
-    <div class="fade-up">
-      <span class="eyebrow-light">Quiénes somos</span>
-      <h2 class="section-title-light">Una compañía de tecnología con criterio de negocio y vocación de permanencia.</h2>
-      <p class="section-intro-light">People &amp; Culture en Inthegra refleja una empresa madura, profesional y colaborativa, donde las personas y la capacidad de ejecución son parte del valor entregado al cliente.</p>
-    </div>
-
-    <div class="split-layout fade-up" style="transition-delay:.1s">
-      <div class="pos-panel">
-        <div class="pos-panel-label">Posicionamiento</div>
-        <div class="pos-list">
-          <div class="pos-item">
-            <div class="pos-check">✓</div>
-            <div class="pos-item-text">
-              <strong>Experiencia y consistencia.</strong>
-              <span>Más de dos décadas desarrollando e implementando soluciones para organizaciones que necesitan escala, control y evolución tecnológica.</span>
+            <div class="metrics">
+              <div class="metric fade-up">
+                <div class="metric-number">+20</div>
+                <p>a&ntilde;os de trayectoria en software empresarial.</p>
+              </div>
+              <div class="metric fade-up" style="transition-delay:.05s">
+                <div class="metric-number">+60</div>
+                <p>profesionales senior en tecnolog&iacute;a Oracle.</p>
+              </div>
+              <div class="metric fade-up" style="transition-delay:.1s">
+                <div class="metric-number">Entrega real</div>
+                <p>equipos conectados a productos, servicios y clientes.</p>
+              </div>
             </div>
           </div>
-          <div class="pos-item">
-            <div class="pos-check">✓</div>
-            <div class="pos-item-text">
-              <strong>Base Oracle y mirada enterprise.</strong>
-              <span>Productos, soluciones y servicios construidos con estándares de robustez, seguridad y continuidad operativa.</span>
-            </div>
-          </div>
-          <div class="pos-item">
-            <div class="pos-check">✓</div>
-            <div class="pos-item-text">
-              <strong>Talento conectado con resultados.</strong>
-              <span>La cultura se expresa en claridad, responsabilidad, colaboración y foco en impacto real para el cliente.</span>
+
+          <div class="hero-side fade-up" style="transition-delay:.15s">
+            <img src="img/inthegra-team-completo.webp" alt="Equipo completo de Inthegra Software" />
+            <div class="hero-overlay">
+              <strong>People &amp; Culture que construye confianza</strong>
+              <p>
+                La calidad del equipo tambi&eacute;n es parte del producto: experiencia, criterio t&eacute;cnico,
+                comunicaci&oacute;n clara y trabajo colaborativo al servicio de la entrega.
+              </p>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="image-stack">
-        <div class="image-card tall">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2026/03/DSC03508copia-768x512.webp" alt="Equipo Inthegra" />
-          <span class="image-label">Equipo</span>
-        </div>
-        <div class="image-card">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2026/03/DSC03469copia-768x512.webp" alt="Colaboración Inthegra" />
-          <span class="image-label">Colaboración</span>
-        </div>
-        <div class="image-card">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2026/03/DSC03453copia-768x512.webp" alt="Trabajo en equipo Inthegra" />
-          <span class="image-label">Trabajo en equipo</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════
-     CÓMO TRABAJAMOS
-══════════════════════════════════════════════ -->
-<section id="como" class="section-light-nopad">
-  <div class="container">
-    <div class="fade-up">
-      <span class="eyebrow-light">Cómo trabajamos</span>
-      <h2 class="section-title-light">Procesos claros, equipos conectados y foco en entrega.</h2>
-      <p class="section-intro-light">Equipos cross-funcionales, integración entre producto y servicios, colaboración con el cliente y mejora continua como modelo de trabajo real.</p>
-    </div>
-    <div class="cards-4 fade-up" style="transition-delay:.1s">
-      <article class="light-card">
-        <div class="card-num">01</div>
-        <h3>Equipos multidisciplinarios</h3>
-        <p>Personas de tecnología, negocio, producto e implementación trabajando sobre objetivos compartidos y contexto común.</p>
-      </article>
-      <article class="light-card">
-        <div class="card-num">02</div>
-        <h3>Producto + servicios</h3>
-        <p>Una estructura preparada para resolver tanto necesidades estándar como desafíos específicos de cada cliente.</p>
-      </article>
-      <article class="light-card">
-        <div class="card-num">03</div>
-        <h3>Comunicación con criterio</h3>
-        <p>Menos improvisación, más claridad. Documentar, alinear y coordinar también es parte del valor entregado.</p>
-      </article>
-      <article class="light-card">
-        <div class="card-num">04</div>
-        <h3>Evolución continua</h3>
-        <p>La cultura acompaña el crecimiento: aprender, profesionalizar y escalar sin perder calidad en la ejecución.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════
-     VALORES
-══════════════════════════════════════════════ -->
-<section id="valores" class="section-light-nopad">
-  <div class="container">
-    <div class="fade-up">
-      <span class="eyebrow-light">Lo que valoramos</span>
-      <h2 class="section-title-light">Principios que se traducen en forma de trabajo.</h2>
-    </div>
-    <div class="cards-3 fade-up" style="transition-delay:.1s">
-      <article class="light-card">
-        <div class="card-num">A</div>
-        <h3>Ownership</h3>
-        <p>Nos involucramos de punta a punta. Cada proyecto necesita personas que asuman responsabilidad sobre el resultado.</p>
-      </article>
-      <article class="light-card">
-        <div class="card-num">B</div>
-        <h3>Claridad</h3>
-        <p>La buena comunicación evita desgaste, mejora la coordinación y eleva la calidad del trabajo colectivo.</p>
-      </article>
-      <article class="light-card">
-        <div class="card-num">C</div>
-        <h3>Colaboración</h3>
-        <p>Resolver mejor implica combinar perspectivas, compartir contexto y construir entre áreas.</p>
-      </article>
-      <article class="light-card">
-        <div class="card-num">D</div>
-        <h3>Mejora continua</h3>
-        <p>La profesionalización no ocurre sola: se trabaja, se revisa y se fortalece con el tiempo.</p>
-      </article>
-      <article class="light-card">
-        <div class="card-num">E</div>
-        <h3>Entender el negocio</h3>
-        <p>No alcanza con programar bien. La diferencia está en comprender procesos, contexto y objetivos del cliente.</p>
-      </article>
-      <article class="light-card">
-        <div class="card-num">F</div>
-        <h3>Visión de largo plazo</h3>
-        <p>Construimos relaciones y soluciones que puedan sostenerse, escalar y seguir generando valor con el tiempo.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════
-     EQUIPO & CAPACIDADES
-══════════════════════════════════════════════ -->
-<section id="equipo" class="section-light-nopad">
-  <div class="container">
-    <div class="fade-up">
-      <span class="eyebrow-light">Equipo &amp; capacidades</span>
-      <h2 class="section-title-light">La capacidad del equipo también es parte del producto.</h2>
-      <p class="section-intro-light">No solo clima o cercanía: seniority, criterio técnico y capacidad real para sostener proyectos complejos en el tiempo.</p>
-    </div>
-
-    <div class="capability-grid fade-up" style="transition-delay:.1s">
-      <div class="quote-strip">
-        <div class="quote-box">
-          <strong>Seniority con contexto</strong>
-          <span>Profesionales con experiencia en tecnología Oracle, productos empresariales, implementación y evolución continua.</span>
-        </div>
-        <div class="quote-box">
-          <strong>Equipos que entienden negocio</strong>
-          <span>La cercanía con la operación del cliente permite construir soluciones más útiles, más claras y más sostenibles.</span>
-        </div>
-        <div class="quote-box">
-          <strong>Capacidad para crecer</strong>
-          <span>Una cultura que acompaña el aprendizaje, la especialización y la consolidación de nuevas capacidades.</span>
-        </div>
-      </div>
-
-      <div class="mosaic">
-        <div class="tile large">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2026/03/DSC03620copia-768x512.webp" alt="Equipo reunido Inthegra" />
-        </div>
-        <div class="tile">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2026/03/DSC03448copia-768x512.webp" alt="Cultura de trabajo Inthegra" />
-        </div>
-        <div class="tile">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2026/03/DSC03380copia-768x512.webp" alt="Personas de Inthegra" />
-        </div>
-        <div class="tile wide">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2026/03/1_people.webp" alt="People &amp; Culture Inthegra" />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════
-     CRECIMIENTO & FUTURO (dark)
-══════════════════════════════════════════════ -->
-<section class="section-future">
-  <div class="container">
-    <div class="future-grid fade-up">
-      <div>
-        <span class="eyebrow-dark">Crecimiento &amp; futuro</span>
-        <h2 class="section-title-dark">Crecer en Inthegra es crecer con más criterio, más contexto y más impacto.</h2>
-        <p class="section-intro-dark">Inthegra es un entorno donde las personas pueden desarrollarse, asumir desafíos mayores y participar en una compañía que sigue profesionalizándose.</p>
-      </div>
-      <div class="dark-panel fade-up" style="transition-delay:.1s">
-        <div class="dark-panel-label">Lo que ofrecemos</div>
-        <div class="dark-list">
-          <div class="dark-item">
-            <div class="pos-check">✓</div>
-            <div>
-              <strong>Aprendizaje continuo.</strong>
-              <span>Espacio para evolucionar técnica y profesionalmente en tecnología Oracle y proyectos enterprise.</span>
-            </div>
+    <section class="section">
+      <div class="container">
+        <div class="panel positioning fade-up">
+          <div>
+            <h3>La calidad del equipo tambi&eacute;n es parte del producto.</h3>
+            <p class="muted">
+              Experiencia, criterio t&eacute;cnico, comunicaci&oacute;n clara y trabajo colaborativo forman parte
+              de la forma en que Inthegra entrega valor en proyectos de largo plazo.
+            </p>
           </div>
-          <div class="dark-item">
-            <div class="pos-check">✓</div>
-            <div>
-              <strong>Participación en proyectos relevantes.</strong>
-              <span>Trabajo con impacto real en clientes, productos y servicios de alta complejidad.</span>
-            </div>
+          <div class="tag-row">
+            <span class="tag">Equipos multidisciplinarios</span>
+            <span class="tag">Foco en ejecuci&oacute;n</span>
+            <span class="tag">Humanidad con madurez profesional</span>
+            <span class="tag">Capacidad de entrega</span>
           </div>
-          <div class="dark-item">
-            <div class="pos-check">✓</div>
-            <div>
-              <strong>Construcción de carrera con visión.</strong>
-              <span>Una empresa donde la profesionalización acompaña el crecimiento individual y colectivo.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="quienes">
+      <div class="container split">
+        <div class="fade-up">
+          <div class="eyebrow">Qui&eacute;nes somos</div>
+          <h2>Una historia de evoluci&oacute;n, criterio y compromiso.</h2>
+          <p class="lead">
+            Inthegra es una empresa de software con m&aacute;s de 20 a&ntilde;os de trayectoria, especializada
+            en el desarrollo, implementaci&oacute;n y evoluci&oacute;n de soluciones empresariales.
+          </p>
+          <p class="lead" style="margin-top:18px; max-width:720px;">
+            Trabajamos con organizaciones que necesitan operar con sistemas cr&iacute;ticos, integrando
+            tecnolog&iacute;a, procesos y conocimiento de negocio. A lo largo de nuestra historia,
+            construimos una forma de trabajo basada en la cercan&iacute;a con el cliente, la responsabilidad
+            en la ejecuci&oacute;n y la mejora continua.
+          </p>
+
+          <div class="quote-box">
+            &ldquo;Nuestra cultura aparece en c&oacute;mo coordinamos, c&oacute;mo decidimos, c&oacute;mo documentamos y c&oacute;mo acompa&ntilde;amos a cada cliente.&rdquo;
+          </div>
+        </div>
+
+        <div class="fade-up" style="transition-delay:.1s">
+          <div class="stat-list">
+            <div class="stat-item">
+              <strong>+300 proyectos</strong>
+              Implementados en m&uacute;ltiples industrias y contextos operativos.
+            </div>
+            <div class="stat-item">
+              <strong>+150 clientes</strong>
+              Acompa&ntilde;ados con productos, soluciones y servicios.
+            </div>
+            <div class="stat-item">
+              <strong>Oracle + negocio</strong>
+              Capacidad t&eacute;cnica combinada con entendimiento de procesos empresariales.
+            </div>
+            <div class="stat-item">
+              <strong>Largo plazo</strong>
+              Relaciones sostenidas con clientes, equipos y evoluci&oacute;n continua.
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ══════════════════════════════════════════════
-     CTA FINAL
-══════════════════════════════════════════════ -->
-<section id="contacto" class="section-cta">
-  <div class="container">
-    <div class="fade-up" style="max-width:820px;margin-bottom:36px">
-      <span class="eyebrow-light">Cerramos con esto</span>
-      <h2 class="section-title-light">Un equipo preparado para relaciones y proyectos de alto impacto.</h2>
-      <p class="section-intro-light">Detrás de cada producto, solución o servicio, hay una organización seria, equipos sólidos y una cultura alineada con la calidad, la colaboración y la evolución de largo plazo.</p>
-    </div>
-    <div class="cta-box fade-up" style="transition-delay:.1s">
-      <div>
-        <h3>Conversemos sobre el próximo desafío.</h3>
-        <p>Coordinamos una reunión para entender tu contexto y mostrarte cómo trabajamos.</p>
-      </div>
-      <div class="cta-actions">
-        <a href="contacto.html?origen=people_culture" class="btn-primary">Agendar reunión →</a>
-        <a href="#quienes" class="btn-ghost">Volver arriba</a>
-      </div>
-    </div>
-  </div>
-</section>
+    <section class="section">
+      <div class="container">
+        <div class="eyebrow">C&oacute;mo trabajamos</div>
+        <h2>Procesos claros, equipos conectados y foco en entrega.</h2>
+        <p class="lead">
+          Nuestra forma de trabajo combina equipos conectados, contexto compartido y foco en la
+          ejecuci&oacute;n para transformar necesidades reales en soluciones que funcionen en la pr&aacute;ctica.
+        </p>
 
+        <div class="cards-4">
+          <article class="card fade-up" style="transition-delay:.05s">
+            <div class="card-index">01</div>
+            <h3>Equipos multidisciplinarios</h3>
+            <p>Personas de negocio, producto, implementaci&oacute;n y tecnolog&iacute;a trabajando con el mismo contexto y el mismo objetivo.</p>
+          </article>
+          <article class="card fade-up" style="transition-delay:.1s">
+            <div class="card-index">02</div>
+            <h3>Producto + servicios</h3>
+            <p>Una estructura preparada para resolver tanto necesidades recurrentes como desaf&iacute;os espec&iacute;ficos de cada cliente.</p>
+          </article>
+          <article class="card fade-up" style="transition-delay:.15s">
+            <div class="card-index">03</div>
+            <h3>Comunicaci&oacute;n con criterio</h3>
+            <p>Menos improvisaci&oacute;n, m&aacute;s claridad. Documentaci&oacute;n, trazabilidad y decisiones tomadas con contexto de negocio.</p>
+          </article>
+          <article class="card fade-up" style="transition-delay:.2s">
+            <div class="card-index">04</div>
+            <h3>Evoluci&oacute;n continua</h3>
+            <p>La cultura acompa&ntilde;a el crecimiento: procesos m&aacute;s ordenados, mejor coordinaci&oacute;n y foco estable en la ejecuci&oacute;n.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="eyebrow">Principios en acci&oacute;n</div>
+        <h2>Principios que se ven en el trabajo diario.</h2>
+        <p class="lead">
+          Nuestros principios se reflejan en c&oacute;mo trabajamos todos los d&iacute;as: con responsabilidad,
+          claridad, colaboraci&oacute;n y mejora continua.
+        </p>
+
+        <div class="principles-grid">
+          <article class="principle fade-up">
+            <span class="label">Ownership</span>
+            <h3>Responsabilidad real</h3>
+            <p>Nos hacemos responsables del resultado, no solo de la tarea.</p>
+          </article>
+          <article class="principle fade-up" style="transition-delay:.05s">
+            <span class="label">Claridad</span>
+            <h3>Comunicar mejor para ejecutar mejor</h3>
+            <p>Priorizamos la comunicaci&oacute;n directa, la documentaci&oacute;n y el contexto compartido para ejecutar mejor.</p>
+          </article>
+          <article class="principle fade-up" style="transition-delay:.1s">
+            <span class="label">Colaboraci&oacute;n</span>
+            <h3>Construir entre &aacute;reas</h3>
+            <p>Trabajamos entre &aacute;reas para resolver problemas complejos con una mirada integral.</p>
+          </article>
+          <article class="principle fade-up" style="transition-delay:.15s">
+            <span class="label">Mejora continua</span>
+            <h3>Aprender de la pr&aacute;ctica</h3>
+            <p>Aprendemos de cada implementaci&oacute;n y mejoramos sobre lo construido.</p>
+          </article>
+        </div>
+
+        <div class="principles-grid" style="margin-top:18px;">
+          <article class="principle fade-up">
+            <span class="label">Impacto visible</span>
+            <h3>Cultura con impacto visible</h3>
+            <p>La cercan&iacute;a humana fortalece la confianza, la coordinaci&oacute;n y la capacidad de sostener proyectos relevantes.</p>
+          </article>
+          <article class="principle fade-up" style="transition-delay:.05s">
+            <span class="label">Negocio</span>
+            <h3>Entender el negocio tambi&eacute;n es cultura</h3>
+            <p>No alcanza con saber programar. La diferencia est&aacute; en comprender la operaci&oacute;n del cliente y traducirla en ejecuci&oacute;n consistente.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="eyebrow">Capacidad del equipo</div>
+        <h2>La calidad del equipo tambi&eacute;n es parte del producto.</h2>
+        <p class="lead">
+          El nivel t&eacute;cnico, la experiencia de implementaci&oacute;n y la comprensi&oacute;n del negocio son parte del valor que Inthegra entrega.
+        </p>
+
+        <div class="capabilities-grid">
+          <article class="capability fade-up">
+            <span class="label">Seniority con contexto</span>
+            <h3>Experiencia que sostiene implementaciones</h3>
+            <p>No solo experiencia t&eacute;cnica. Tambi&eacute;n criterio para sostener implementaciones, resolver desv&iacute;os y tomar decisiones con impacto real.</p>
+            <ul>
+              <li>Trayectoria en entornos empresariales complejos</li>
+              <li>Capacidad para trabajar con procesos reales</li>
+              <li>Madurez profesional orientada a resultados</li>
+            </ul>
+          </article>
+          <article class="capability fade-up" style="transition-delay:.05s">
+            <span class="label">Expertise Oracle</span>
+            <h3>Base tecnol&oacute;gica s&oacute;lida</h3>
+            <p>Una plataforma preparada para productos, soluciones y servicios que requieren seguridad, escalabilidad y continuidad.</p>
+            <ul>
+              <li>Equipos con experiencia sobre stack Oracle</li>
+              <li>Visi&oacute;n integral entre plataforma y negocio</li>
+              <li>Trabajo cercano a clientes y operaciones cr&iacute;ticas</li>
+            </ul>
+          </article>
+          <article class="capability fade-up" style="transition-delay:.1s">
+            <span class="label">Crecimiento que se construye</span>
+            <h3>Aprendizaje aplicado y especializaci&oacute;n progresiva</h3>
+            <p>La evoluci&oacute;n del equipo se refleja en proyectos, aprendizaje aplicado y construcci&oacute;n sostenida de criterio.</p>
+            <ul>
+              <li>Espacio para asumir nuevos desaf&iacute;os</li>
+              <li>Aprendizaje vinculado a proyectos concretos</li>
+              <li>Desarrollo sostenido con visi&oacute;n de largo plazo</li>
+            </ul>
+          </article>
+          <article class="capability fade-up" style="transition-delay:.15s">
+            <span class="label">Entrega</span>
+            <h3>Capacidad real de ejecuci&oacute;n</h3>
+            <p>La confianza institucional nace de combinar tecnolog&iacute;a, coordinaci&oacute;n y calidad humana en el trabajo cotidiano.</p>
+            <ul>
+              <li>Equipos conectados a producto, servicios y cliente</li>
+              <li>Menos dependencia de personas, m&aacute;s claridad operativa</li>
+              <li>Compromiso con resultados sostenibles</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="eyebrow">Lado humano</div>
+        <h2>Calidez, cercan&iacute;a y energ&iacute;a sin perder madurez.</h2>
+        <p class="lead">
+          Creemos en equipos profesionales que tambi&eacute;n disfrutan trabajar juntos. Fomentamos espacios de colaboraci&oacute;n, aprendizaje y crecimiento, donde cada persona puede desarrollarse y aportar valor real a los proyectos.
+        </p>
+
+        <div class="gallery-grid">
+          <div class="gallery-item fade-up"><img src="img/team-DSC03469.webp" alt="Equipo Inthegra" /></div>
+          <div class="gallery-item fade-up" style="transition-delay:.05s"><img src="img/team-DSC03453.webp" alt="Equipo Inthegra" /></div>
+          <div class="gallery-item fade-up" style="transition-delay:.1s"><img src="img/team-DSC03620.webp" alt="Equipo Inthegra" /></div>
+          <div class="gallery-item fade-up" style="transition-delay:.15s"><img src="img/team-DSC03448.webp" alt="Equipo Inthegra" /></div>
+          <div class="gallery-item fade-up" style="transition-delay:.2s"><img src="img/team-DSC03380.webp" alt="Equipo Inthegra" /></div>
+        </div>
+
+        <div class="small-copy">
+          <article class="human-card fade-up" style="min-height:auto;">
+            <span class="label">Empresa humana</span>
+            <h3>Una empresa humana, no informal</h3>
+            <p>La cercan&iacute;a importa y convive con responsabilidad, profesionalismo y est&aacute;ndares de calidad acordes a proyectos enterprise.</p>
+          </article>
+          <article class="human-card fade-up" style="min-height:auto;transition-delay:.05s">
+            <span class="label">Pertenencia</span>
+            <h3>Historia que genera pertenencia</h3>
+            <p>La historia compartida fortalece la identidad de la compa&ntilde;&iacute;a y el sentido de pertenencia del equipo.</p>
+          </article>
+          <article class="human-card fade-up" style="min-height:auto;transition-delay:.1s">
+            <span class="label">Autenticidad</span>
+            <h3>Momentos reales, no stock cultural</h3>
+            <p>Celebraciones, colaboraci&oacute;n entre equipos e instancias compartidas transmiten autenticidad y cercan&iacute;a.</p>
+          </article>
+        </div>
+
+        <div class="human-grid">
+          <article class="human-card fade-up">
+            <span class="label">Talento</span>
+            <h3>Sumate a proyectos con impacto real</h3>
+            <p>Si te interesa trabajar en desaf&iacute;os reales, con complejidad y aprendizaje continuo, podemos conversar.</p>
+          </article>
+          <article class="human-card fade-up" style="transition-delay:.05s">
+            <span class="label">Cultura aplicada</span>
+            <h3>Profesionalismo con cercan&iacute;a</h3>
+            <p>La confianza tambi&eacute;n se construye desde la forma en que las personas trabajan juntas y sostienen relaciones de largo plazo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="panel cta-panel fade-up">
+          <div>
+            <div class="eyebrow">Cierre</div>
+            <h2>Trabaj&aacute; con un equipo que entiende tu negocio.</h2>
+            <p class="lead" style="margin-top:18px;">
+              Combinamos experiencia, tecnolog&iacute;a y cercan&iacute;a para construir soluciones que funcionan en la realidad y sostienen relaciones de largo plazo con clientes, partners y talento.
+            </p>
+          </div>
+          <div class="actions">
+            <a class="button primary" href="contacto.html?origen=people_culture">Hablemos</a>
+            <a class="button secondary" href="home.html">Conoc&eacute; m&aacute;s sobre Inthegra</a>
+          </div>
+        </div>
+
+        <div class="closing-grid">
+          <article class="closing-card fade-up">
+            <span class="label">Para clientes</span>
+            <h3>Equipos que entienden negocio, tecnolog&iacute;a y ejecuci&oacute;n.</h3>
+            <p>La confianza institucional se apoya en seniority, claridad operativa y capacidad de entrega.</p>
+          </article>
+          <article class="closing-card fade-up" style="transition-delay:.05s">
+            <span class="label">Para talento</span>
+            <h3>Si te interesa construir tecnolog&iacute;a con impacto real, conversemos.</h3>
+            <p>Desaf&iacute;os concretos, aprendizaje continuo y una cultura que acompa&ntilde;a el crecimiento profesional.</p>
+          </article>
+          <article class="closing-card fade-up" style="transition-delay:.1s">
+            <span class="label">Confianza institucional</span>
+            <h3>Seniority, claridad y capacidad de entrega.</h3>
+            <p>Una p&aacute;gina de People &amp; Culture que refuerza marca, no solo employer branding.</p>
+          </article>
+          <article class="closing-card fade-up" style="transition-delay:.15s">
+            <span class="label">Largo plazo</span>
+            <h3>Relaciones sostenidas con clientes, equipos y evoluci&oacute;n continua.</h3>
+            <p>La cultura se vuelve visible cuando ayuda a sostener resultados consistentes en el tiempo.</p>
+          </article>
+        </div>
+
+        <div style="margin-top:18px; display:flex; justify-content:flex-start;">
+          <a class="button secondary" href="https://wa.me/5491150595908">Contactar por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
 </main>
-<!-- ── FOOTER ─────────────────────────────────────────── -->
+
 <footer>
   <div class="container">
     <div class="footer-grid">
@@ -692,7 +968,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="footer-col">
         <h4>Servicios Oracle</h4>
-        <a href="landing_modernizacion.html">Modernización</a>
+        <a href="landing_modernizacion.html">Modernizaci&oacute;n</a>
         <a href="landing_oci.html">Oracle Cloud (OCI)</a>
         <a href="landing_desarrollo_medida.html">Desarrollo a Medida</a>
         <a href="landing_oac.html">Analytics</a>
@@ -706,18 +982,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="footer-col">
         <h4>Empresa</h4>
         <a href="people_culture.html">People &amp; Culture</a>
-        <a href="success_stories.html">Casos de Éxito</a>
+        <a href="success_stories.html">Casos de &Eacute;xito</a>
         <a href="blog.html">Blog</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <span class="footer-copy">© 2026 Inthegra Software. Argentina &amp; Latam.</span>
+      <span class="footer-copy">&copy; 2026 Inthegra Software. Argentina &amp; Latam.</span>
       <div class="footer-social">
         <a href="https://ar.linkedin.com/company/inthegra" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
         <a href="https://www.instagram.com/inthegra_software/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 100-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 11-2.88 0 1.441 1.441 0 012.88 0z"/></svg></a>
         <a href="https://www.facebook.com/inthegra.software" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
       </div>
-      <span class="footer-copy">Oracle Partner · Enterprise Software</span>
+      <span class="footer-copy">Oracle Partner &middot; Enterprise Software</span>
     </div>
   </div>
 </footer>
@@ -731,10 +1007,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- ── SCROLL ANIMATIONS ──────────────────────────── -->
 <script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); } });
+document.addEventListener('DOMContentLoaded', function() {
+  var obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
   }, { threshold: 0.10 });
-  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  document.querySelectorAll('.fade-up').forEach(function(el) { obs.observe(el); });
+});
 </script>
 
 </body>

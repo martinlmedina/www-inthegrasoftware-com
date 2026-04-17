@@ -52,9 +52,14 @@
       --text:      #e8eefc;
       --text-2:    #b4c8f0;
       --muted:     #7d9ac4;
-      --brand:     #5aa0ff;
-      --brand-2:   #7c5cff;
-      --accent:    #00d9ff;
+
+      /* Colores institucionales Inthegra */
+      --inthegra:  #ff7200;   /* Empresa · solo CTA */
+      --services:  #F7B5CD;   /* Services (rosa claro) */
+      --services-t:#d96c96;   /* Services texto legible */
+      --brand:     #d96c96;   /* antes #d96c96 — Services para textos/bordes */
+      --brand-2:   #F7B5CD;   /* antes #F7B5CD — Services claro para gradients */
+      --accent:    #F7B5CD;   /* antes #F7B5CD — alineado a Services */
       --ok:        #36d399;
       --warn:      #ffd166;
       --danger:    #ff6b6b;
@@ -67,8 +72,8 @@
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       background: var(--bg-deep);
       background-image:
-        radial-gradient(ellipse 80% 60% at 50% -10%, rgba(90,160,255,.14) 0%, transparent 70%),
-        radial-gradient(ellipse 60% 40% at 80% 80%, rgba(124,92,255,.10) 0%, transparent 60%);
+        radial-gradient(ellipse 80% 60% at 50% -10%, rgba(217,108,150,.14) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 40% at 80% 80%, rgba(247,181,205,.10) 0%, transparent 60%);
       color: var(--text);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
@@ -96,15 +101,15 @@
       color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500;
       padding: 6px 14px; border-radius: 8px; transition: all .2s;
     }
-    nav a:hover { color: var(--brand); background: rgba(90,160,255,.08); }
+    nav a:hover { color: var(--brand); background: rgba(217,108,150,.08); }
     .nav-cta {
       padding: 9px 20px; border-radius: 10px; border: none;
       background: linear-gradient(135deg, var(--brand), var(--brand-2));
       color: #fff; font-size: 14px; font-weight: 700; cursor: pointer;
       text-decoration: none; display: inline-block; transition: box-shadow .2s;
-      box-shadow: 0 4px 16px rgba(90,160,255,.3);
+      box-shadow: 0 4px 16px rgba(217,108,150,.3);
     }
-    .nav-cta:hover { box-shadow: 0 6px 24px rgba(90,160,255,.45); }
+    .nav-cta:hover { box-shadow: 0 6px 24px rgba(217,108,150,.45); }
 
     /* ─── HERO ───────────────────────────────────── */
     .hero {
@@ -114,8 +119,8 @@
     .eyebrow {
       display: inline-flex; align-items: center; gap: 8px;
       padding: 7px 14px; border-radius: 999px;
-      border: 1px solid rgba(90,160,255,.35);
-      background: rgba(90,160,255,.08);
+      border: 1px solid rgba(217,108,150,.35);
+      background: rgba(217,108,150,.08);
       color: var(--brand); font-size: 12px; font-weight: 700;
       letter-spacing: .06em; text-transform: uppercase; margin-bottom: 20px;
     }
@@ -149,14 +154,14 @@
     .btn-primary {
       background: linear-gradient(135deg, var(--brand), var(--brand-2));
       color: #fff; border-color: transparent;
-      box-shadow: 0 8px 28px rgba(90,160,255,.35);
+      box-shadow: 0 8px 28px rgba(217,108,150,.35);
     }
-    .btn-primary:hover { box-shadow: 0 12px 40px rgba(90,160,255,.5); }
+    .btn-primary:hover { box-shadow: 0 12px 40px rgba(217,108,150,.5); }
     .btn-ghost {
       background: rgba(255,255,255,.05); border-color: var(--line-2);
       color: var(--text-2);
     }
-    .btn-ghost:hover { border-color: var(--brand); color: var(--brand); background: rgba(90,160,255,.07); }
+    .btn-ghost:hover { border-color: var(--brand); color: var(--brand); background: rgba(217,108,150,.07); }
     .hero-note { margin-top: 20px; font-size: 12px; color: var(--muted); display: flex; gap: 18px; flex-wrap: wrap; }
     .hero-note span::before { content: '✓ '; color: var(--ok); }
 
@@ -239,17 +244,17 @@
     .tech-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; margin-top: 28px; }
     .tech-card {
       padding: 18px 20px; border-radius: 14px;
-      background: linear-gradient(135deg, rgba(90,160,255,.12), rgba(124,92,255,.08));
-      border: 1px solid rgba(90,160,255,.3); text-align: center;
+      background: linear-gradient(135deg, rgba(217,108,150,.12), rgba(247,181,205,.08));
+      border: 1px solid rgba(217,108,150,.3); text-align: center;
       font-weight: 700; font-size: 15px; color: var(--brand);
       transition: all .25s;
     }
-    .tech-card:hover { background: linear-gradient(135deg, rgba(90,160,255,.2), rgba(124,92,255,.14)); transform: translateY(-2px); }
+    .tech-card:hover { background: linear-gradient(135deg, rgba(217,108,150,.2), rgba(247,181,205,.14)); transform: translateY(-2px); }
     .tech-card small { display: block; font-weight: 400; font-size: 12px; color: var(--muted); margin-top: 3px; }
 
     .kpi-box {
-      background: linear-gradient(160deg, rgba(90,160,255,.09), rgba(124,92,255,.07));
-      border: 1px solid rgba(90,160,255,.25); border-radius: 18px; padding: 36px;
+      background: linear-gradient(160deg, rgba(217,108,150,.09), rgba(247,181,205,.07));
+      border: 1px solid rgba(217,108,150,.25); border-radius: 18px; padding: 36px;
     }
     .kpi-box h4 { font-size: 16px; font-weight: 700; color: var(--brand); margin-bottom: 20px; text-align: center; }
     .kpi-list { display: flex; flex-direction: column; gap: 12px; }
@@ -275,14 +280,14 @@
       background: linear-gradient(135deg, var(--brand), var(--brand-2));
       display: flex; align-items: center; justify-content: center;
       font-size: 22px; font-weight: 900; color: #fff;
-      box-shadow: 0 0 0 6px rgba(90,160,255,.12), 0 8px 24px rgba(90,160,255,.25);
+      box-shadow: 0 0 0 6px rgba(217,108,150,.12), 0 8px 24px rgba(217,108,150,.25);
     }
     .process-step h3 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
     .process-step p { font-size: 13px; color: var(--muted); line-height: 1.55; }
     .process-step .step-tag {
       display: inline-block; margin-bottom: 10px; font-size: 10px; font-weight: 700;
       letter-spacing: .08em; text-transform: uppercase; color: var(--brand);
-      background: rgba(90,160,255,.1); border: 1px solid rgba(90,160,255,.2);
+      background: rgba(217,108,150,.1); border: 1px solid rgba(217,108,150,.2);
       padding: 3px 8px; border-radius: 99px;
     }
     .process-svg-wrap {
@@ -294,8 +299,8 @@
 
     /* ─── AI SECTION ─────────────────────────────── */
     .ai-section-wrap {
-      background: linear-gradient(160deg, rgba(90,160,255,.08), rgba(124,92,255,.06));
-      border: 1px solid rgba(90,160,255,.22); border-radius: 24px; padding: 56px;
+      background: linear-gradient(160deg, rgba(217,108,150,.08), rgba(247,181,205,.06));
+      border: 1px solid rgba(217,108,150,.22); border-radius: 24px; padding: 56px;
       display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center;
     }
     .ai-features { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
@@ -303,7 +308,7 @@
       padding: 22px; background: rgba(255,255,255,.04);
       border: 1px solid var(--line); border-radius: 14px; transition: all .25s;
     }
-    .ai-feat:hover { border-color: var(--brand); background: rgba(90,160,255,.07); }
+    .ai-feat:hover { border-color: var(--brand); background: rgba(217,108,150,.07); }
     .ai-feat-icon { font-size: 24px; margin-bottom: 10px; }
     .ai-feat h4 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
     .ai-feat p { font-size: 13px; color: var(--muted); line-height: 1.55; }
@@ -348,7 +353,7 @@
       width: 44px; height: 44px; border-radius: 50%;
       background: linear-gradient(135deg, var(--brand), var(--brand-2));
       display: flex; align-items: center; justify-content: center;
-      font-size: 20px; color: #fff; box-shadow: 0 4px 20px rgba(90,160,255,.35);
+      font-size: 20px; color: #fff; box-shadow: 0 4px 20px rgba(217,108,150,.35);
     }
 
     /* ─── ARCHITECTURE ───────────────────────────── */
@@ -378,20 +383,20 @@
     /* ─── CTA ────────────────────────────────────── */
     .cta-section {
       margin: 0 0 88px; padding: 72px 64px; border-radius: 28px;
-      background: linear-gradient(140deg, rgba(90,160,255,.14), rgba(124,92,255,.1));
-      border: 1px solid rgba(90,160,255,.3);
+      background: linear-gradient(140deg, rgba(217,108,150,.14), rgba(247,181,205,.1));
+      border: 1px solid rgba(217,108,150,.3);
       position: relative; overflow: hidden; text-align: center;
     }
     .cta-section::before {
       content: ''; position: absolute; top: -60px; right: -60px;
       width: 300px; height: 300px; border-radius: 50%;
-      background: radial-gradient(circle, rgba(90,160,255,.15), transparent 70%);
+      background: radial-gradient(circle, rgba(217,108,150,.15), transparent 70%);
       pointer-events: none;
     }
     .cta-section::after {
       content: ''; position: absolute; bottom: -40px; left: -40px;
       width: 200px; height: 200px; border-radius: 50%;
-      background: radial-gradient(circle, rgba(124,92,255,.12), transparent 70%);
+      background: radial-gradient(circle, rgba(247,181,205,.12), transparent 70%);
       pointer-events: none;
     }
     .cta-section h2 {
@@ -409,7 +414,7 @@
       font-family: inherit; font-size: 15px; min-width: 260px; transition: all .25s;
     }
     .text-input::placeholder { color: var(--muted); }
-    .text-input:focus { outline: none; border-color: var(--brand); background: rgba(255,255,255,.1); box-shadow: 0 0 0 3px rgba(90,160,255,.2); }
+    .text-input:focus { outline: none; border-color: var(--brand); background: rgba(255,255,255,.1); box-shadow: 0 0 0 3px rgba(217,108,150,.2); }
     .cta-note { font-size: 12px; color: var(--muted); margin-top: 16px; position: relative; z-index: 1; }
 
     /* ─── FOOTER ─────────────────────────────────── */
@@ -494,7 +499,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="header-inner">
       <a href="https://inthegrasoftware.com" style="text-decoration:none; display:block;">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2026/02/Logo_oracle_header.svg" alt="Inthegra Software" style="height:34px; width:auto; display:block;" />
+          <img src="img/wp/2026/02/Logo_oracle_header.svg" alt="Inthegra Software" style="height:34px; width:auto; display:block;" />
         </a>
       <nav>
         <a href="#problema">Problema</a>
@@ -537,8 +542,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <svg viewBox="0 0 560 440" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <linearGradient id="hg1" x1="0" x2="1" y1="0" y2="1">
-            <stop offset="0%" stop-color="#5aa0ff"/>
-            <stop offset="100%" stop-color="#7c5cff"/>
+            <stop offset="0%" stop-color="#d96c96"/>
+            <stop offset="100%" stop-color="#F7B5CD"/>
           </linearGradient>
           <linearGradient id="hg2" x1="0" x2="0" y1="0" y2="1">
             <stop offset="0%" stop-color="#0d1b3e"/>
@@ -552,7 +557,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <rect width="560" height="440" rx="18" fill="url(#hg2)"/>
 
         <!-- Background glow -->
-        <ellipse cx="280" cy="220" rx="160" ry="100" fill="rgba(90,160,255,.06)"/>
+        <ellipse cx="280" cy="220" rx="160" ry="100" fill="rgba(217,108,150,.06)"/>
 
         <!-- LEGACY panel -->
         <rect x="18" y="28" width="168" height="390" rx="16" fill="#0d1b3e" stroke="#ff6b6b" stroke-width="1.5" stroke-opacity=".5"/>
@@ -572,7 +577,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <!-- AI core -->
         <circle cx="280" cy="220" r="56" fill="#0a1328" stroke="url(#hg1)" stroke-width="2.5" filter="url(#glow)"/>
-        <circle cx="280" cy="220" r="34" fill="rgba(90,160,255,.12)"/>
+        <circle cx="280" cy="220" r="34" fill="rgba(217,108,150,.12)"/>
         <circle cx="280" cy="220" r="18" fill="url(#hg1)"/>
         <text x="271" y="226" fill="#fff" font-size="13" font-weight="800" font-family="Arial">IA</text>
         <!-- Connecting lines -->
@@ -581,10 +586,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <path d="M298 212 C320 200 340 180 374 180" stroke="url(#hg1)" stroke-width="2" fill="none" stroke-dasharray="5,4" opacity=".6"/>
         <path d="M298 228 C320 240 340 250 374 250" stroke="url(#hg1)" stroke-width="2" fill="none" stroke-dasharray="5,4" opacity=".6"/>
         <!-- Small nodes -->
-        <circle cx="244" cy="185" r="6" fill="#7c5cff" opacity=".8"/>
-        <circle cx="244" cy="255" r="6" fill="#7c5cff" opacity=".8"/>
-        <circle cx="316" cy="185" r="6" fill="#5aa0ff" opacity=".8"/>
-        <circle cx="316" cy="255" r="6" fill="#5aa0ff" opacity=".8"/>
+        <circle cx="244" cy="185" r="6" fill="#F7B5CD" opacity=".8"/>
+        <circle cx="244" cy="255" r="6" fill="#F7B5CD" opacity=".8"/>
+        <circle cx="316" cy="185" r="6" fill="#d96c96" opacity=".8"/>
+        <circle cx="316" cy="255" r="6" fill="#d96c96" opacity=".8"/>
 
         <!-- MODERN panel -->
         <rect x="374" y="28" width="168" height="390" rx="16" fill="#0d1b3e" stroke="#36d399" stroke-width="1.5" stroke-opacity=".5"/>
@@ -741,7 +746,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="process-svg-wrap" style="margin-top:48px;">
       <svg viewBox="0 0 1200 280" xmlns="http://www.w3.org/2000/svg">
         <defs>
-          <linearGradient id="proc" x1="0" x2="1"><stop offset="0%" stop-color="#5aa0ff"/><stop offset="100%" stop-color="#7c5cff"/></linearGradient>
+          <linearGradient id="proc" x1="0" x2="1"><stop offset="0%" stop-color="#d96c96"/><stop offset="100%" stop-color="#F7B5CD"/></linearGradient>
         </defs>
         <rect width="1200" height="280" fill="#091530"/>
         <!-- connector line -->
@@ -766,10 +771,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <text x="840"  y="175" fill="#b4c8f0" font-size="14" font-family="Arial" text-anchor="middle">Construcción</text>
         <text x="1080" y="175" fill="#b4c8f0" font-size="14" font-family="Arial" text-anchor="middle">Go-Live</text>
         <!-- tags above -->
-        <text x="120"  y="52"  fill="#5aa0ff" font-size="11" font-family="Arial" text-anchor="middle">Día 1</text>
-        <text x="360"  y="52"  fill="#5aa0ff" font-size="11" font-family="Arial" text-anchor="middle">Semana 2–3</text>
-        <text x="600"  y="52"  fill="#5aa0ff" font-size="11" font-family="Arial" text-anchor="middle">Semana 4–5</text>
-        <text x="840"  y="52"  fill="#5aa0ff" font-size="11" font-family="Arial" text-anchor="middle">Sprints 2–N</text>
+        <text x="120"  y="52"  fill="#d96c96" font-size="11" font-family="Arial" text-anchor="middle">Día 1</text>
+        <text x="360"  y="52"  fill="#d96c96" font-size="11" font-family="Arial" text-anchor="middle">Semana 2–3</text>
+        <text x="600"  y="52"  fill="#d96c96" font-size="11" font-family="Arial" text-anchor="middle">Semana 4–5</text>
+        <text x="840"  y="52"  fill="#d96c96" font-size="11" font-family="Arial" text-anchor="middle">Sprints 2–N</text>
         <text x="1080" y="52"  fill="#36d399" font-size="11" font-family="Arial" text-anchor="middle">Producción</text>
         <!-- info cards below steps -->
         <rect x="30"   y="200" width="178" height="60" rx="12" fill="#0d1b3e" stroke="#1e3460"/>
@@ -964,7 +969,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="footer-inner">
       <a href="https://inthegrasoftware.com" style="text-decoration:none; display:block;">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2024/12/logo-footer.png" alt="Inthegra Software" style="height:32px; width:auto; display:block;" />
+          <img src="img/wp/2024/12/logo-footer.png" alt="Inthegra Software" style="height:32px; width:auto; display:block;" />
         </a>
       <div class="footer-links">
         <a href="https://inthegrasoftware.com">Sitio principal</a>

@@ -54,12 +54,12 @@
       --text:     #eef4ff;
       --text-2:   #c0d4f0;
       --muted:    #7d9ac4;
-      --brand:    #55a3ff;
-      --erp:      #ff6b35;
-      --erp-2:    #ffb347;
+      --brand:    #179dca;
+      --erp:      #179dca;
+      --erp-2:    #5fcce6;
       --green:    #35d39b;
-      --teal:     #2dd4bf;
-      --ai:       #a78bfa;
+      --teal:     #179dca;
+      --ai:       #5fcce6;
       --shadow:   0 24px 80px rgba(0,0,0,.32);
       --radius:   20px;
     }
@@ -71,9 +71,9 @@
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       background-color: var(--bg);
       background-image:
-        radial-gradient(ellipse 80% 50% at 100% 0%,  rgba(255,107,53,.10) 0%, transparent 50%),
-        radial-gradient(ellipse 55% 40% at 0%   10%, rgba(85,163,255,.08) 0%, transparent 45%),
-        radial-gradient(ellipse 60% 50% at 50%  80%, rgba(255,179,71,.04) 0%, transparent 55%);
+        radial-gradient(ellipse 80% 50% at 100% 0%,  rgba(23,157,202,.10) 0%, transparent 50%),
+        radial-gradient(ellipse 55% 40% at 0%   10%, rgba(23,157,202,.08) 0%, transparent 45%),
+        radial-gradient(ellipse 60% 50% at 50%  80%, rgba(95,204,230,.04) 0%, transparent 55%);
       color: var(--text);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
@@ -105,15 +105,15 @@
     .eyebrow {
       display: inline-flex; align-items: center; gap: 10px;
       padding: 8px 16px; border-radius: 999px;
-      border: 1px solid rgba(255,107,53,.3);
-      background: rgba(255,107,53,.08);
+      border: 1px solid rgba(23,157,202,.3);
+      background: rgba(23,157,202,.08);
       color: var(--erp-2); font-size: 13px; font-weight: 600; letter-spacing: .3px;
       margin-bottom: 20px;
     }
     .eyebrow-dot {
       width: 7px; height: 7px; border-radius: 50%;
       background: linear-gradient(135deg, var(--erp), var(--erp-2));
-      box-shadow: 0 0 0 5px rgba(255,107,53,.15); flex-shrink: 0;
+      box-shadow: 0 0 0 5px rgba(23,157,202,.15); flex-shrink: 0;
     }
 
     h1 { font-size: clamp(40px,6vw,66px); line-height:.97; letter-spacing:-2px; font-weight:900; margin-bottom:22px; }
@@ -141,9 +141,9 @@
     .btn-primary {
       color: #fff;
       background: linear-gradient(135deg, var(--erp), var(--erp-2));
-      box-shadow: 0 12px 32px rgba(255,107,53,.3);
+      box-shadow: 0 12px 32px rgba(23,157,202,.3);
     }
-    .btn-primary:hover { transform:translateY(-2px); box-shadow:0 18px 42px rgba(255,107,53,.42); }
+    .btn-primary:hover { transform:translateY(-2px); box-shadow:0 18px 42px rgba(23,157,202,.42); }
     .btn-secondary {
       color: var(--text); border-color: rgba(255,255,255,.15);
       background: rgba(255,255,255,.04);
@@ -158,8 +158,8 @@
       box-shadow: 0 8px 30px rgba(0,0,0,.18);
     }
     .card-erp {
-      border-color: rgba(255,107,53,.2);
-      background: linear-gradient(160deg, rgba(255,107,53,.07), rgba(255,179,71,.02));
+      border-color: rgba(23,157,202,.2);
+      background: linear-gradient(160deg, rgba(23,157,202,.07), rgba(95,204,230,.02));
     }
 
     /* ── LISTS ── */
@@ -169,14 +169,14 @@
       content:""; position:absolute; left:0; top:8px;
       width:10px; height:10px; border-radius:50%;
       background: linear-gradient(135deg, var(--erp), var(--erp-2));
-      box-shadow: 0 0 0 4px rgba(255,107,53,.12);
+      box-shadow: 0 0 0 4px rgba(23,157,202,.12);
     }
 
     /* ── ICON BOX ── */
     .icon-box {
       width:48px; height:48px; border-radius:14px; margin-bottom:16px;
-      background: linear-gradient(135deg, rgba(255,107,53,.2), rgba(255,179,71,.06));
-      border: 1px solid rgba(255,107,53,.2);
+      background: linear-gradient(135deg, rgba(23,157,202,.2), rgba(95,204,230,.06));
+      border: 1px solid rgba(23,157,202,.2);
       display:flex; align-items:center; justify-content:center;
       font-size:22px; flex-shrink:0;
     }
@@ -191,8 +191,8 @@
     .hero {
       padding: 100px 0 64px;
       background-image:
-        radial-gradient(ellipse 65% 55% at 95% -5%, rgba(255,107,53,.15) 0%, transparent 50%),
-        radial-gradient(ellipse 45% 40% at 5% 15%, rgba(85,163,255,.07) 0%, transparent 50%);
+        radial-gradient(ellipse 65% 55% at 95% -5%, rgba(23,157,202,.15) 0%, transparent 50%),
+        radial-gradient(ellipse 45% 40% at 5% 15%, rgba(23,157,202,.07) 0%, transparent 50%);
     }
     .hero-grid { display:grid; grid-template-columns:1.1fr .9fr; gap:48px; align-items:center; }
     .hero h1 span { background:linear-gradient(135deg, var(--erp), var(--erp-2)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
@@ -208,7 +208,7 @@
     /* Hero panel */
     .hero-panel {
       background: linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.025));
-      border: 1px solid rgba(255,107,53,.2);
+      border: 1px solid rgba(23,157,202,.2);
       box-shadow: var(--shadow);
       border-radius:26px; padding:28px; overflow:hidden; position:relative;
     }
@@ -271,7 +271,7 @@
     .seg-tag {
       display:inline-block; margin-bottom:16px; padding:7px 14px; border-radius:999px;
       font-size:11px; font-weight:700; letter-spacing:.5px; text-transform:uppercase;
-      border:1px solid rgba(255,107,53,.25); color:var(--erp-2); background:rgba(255,107,53,.07);
+      border:1px solid rgba(23,157,202,.25); color:var(--erp-2); background:rgba(23,157,202,.07);
     }
     .seg-card h3 { font-size:22px; font-weight:800; margin-bottom:10px; }
     .seg-card > p { color:var(--muted); font-size:15px; }
@@ -299,7 +299,7 @@
        RETAIL AVANZADO
     ━━━━━━━━━━━━━━━━━━━━━━━━━━ */
     .retail-grid { display:grid; grid-template-columns:1.05fr .95fr; gap:24px; align-items:start; }
-    .retail-card { border-radius:26px; padding:36px; background:rgba(255,255,255,.04); border:1px solid rgba(255,107,53,.15); }
+    .retail-card { border-radius:26px; padding:36px; background:rgba(255,255,255,.04); border:1px solid rgba(23,157,202,.15); }
     .retail-card h3 { font-size:22px; margin-bottom:20px; }
     .retail-levels { display:grid; gap:14px; }
     .level-card {
@@ -308,8 +308,8 @@
     }
     .level-num {
       width:36px; height:36px; border-radius:10px; flex-shrink:0;
-      background:linear-gradient(135deg, rgba(255,107,53,.28), rgba(255,179,71,.08));
-      border:1px solid rgba(255,107,53,.2);
+      background:linear-gradient(135deg, rgba(23,157,202,.28), rgba(95,204,230,.08));
+      border:1px solid rgba(23,157,202,.2);
       display:flex; align-items:center; justify-content:center;
       font-size:12px; font-weight:800; color:#ffe0c0;
     }
@@ -321,8 +321,8 @@
     ━━━━━━━━━━━━━━━━━━━━━━━━━━ */
     .svc-grid { display:grid; grid-template-columns:1.1fr .9fr; gap:24px; align-items:start; }
     .svc-main {
-      background:linear-gradient(160deg, rgba(255,107,53,.07), rgba(255,179,71,.02));
-      border:1px solid rgba(255,107,53,.18); border-radius:26px; padding:36px;
+      background:linear-gradient(160deg, rgba(23,157,202,.07), rgba(95,204,230,.02));
+      border:1px solid rgba(23,157,202,.18); border-radius:26px; padding:36px;
     }
     .svc-main h2 { font-size:clamp(26px,3vw,38px); margin-bottom:14px; }
     .svc-main > p { color:var(--muted); font-size:16px; }
@@ -340,23 +340,23 @@
     .ecosystem-wrap {
       position:relative; min-height:560px; border-radius:30px; padding:32px;
       background:linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.025));
-      border:1px solid rgba(255,107,53,.18);
+      border:1px solid rgba(23,157,202,.18);
       box-shadow:var(--shadow);
       overflow:hidden;
     }
     .ecosystem-wrap::before {
       content:""; position:absolute; inset:0;
       background:
-        radial-gradient(circle at 50% 50%, rgba(255,107,53,.08), transparent 55%),
-        radial-gradient(circle at 50% 50%, rgba(255,179,71,.04), transparent 70%);
+        radial-gradient(circle at 50% 50%, rgba(23,157,202,.08), transparent 55%),
+        radial-gradient(circle at 50% 50%, rgba(95,204,230,.04), transparent 70%);
       pointer-events:none;
     }
     .eco-hub {
       position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
       width:200px; height:200px; border-radius:50%;
-      background:radial-gradient(circle at top, rgba(255,107,53,.25), rgba(255,107,53,.08));
-      border:2px solid rgba(255,107,53,.3);
-      box-shadow:0 0 0 24px rgba(255,107,53,.04), 0 0 0 48px rgba(255,107,53,.02);
+      background:radial-gradient(circle at top, rgba(23,157,202,.25), rgba(23,157,202,.08));
+      border:2px solid rgba(23,157,202,.3);
+      box-shadow:0 0 0 24px rgba(23,157,202,.04), 0 0 0 48px rgba(23,157,202,.02);
       display:grid; place-items:center; text-align:center; padding:20px; z-index:2;
     }
     .eco-hub strong { display:block; font-size:18px; font-weight:800; margin-bottom:6px; color:#fff; }
@@ -383,15 +383,15 @@
     .tech-grid { display:grid; grid-template-columns:.95fr 1.05fr; gap:24px; align-items:start; }
     .tech-left {
       padding:36px; border-radius:26px;
-      background:linear-gradient(160deg, rgba(255,107,53,.07), rgba(255,179,71,.02));
-      border:1px solid rgba(255,107,53,.18);
+      background:linear-gradient(160deg, rgba(23,157,202,.07), rgba(95,204,230,.02));
+      border:1px solid rgba(23,157,202,.18);
     }
     .tech-left h2 { font-size:clamp(26px,3vw,38px); margin-bottom:14px; }
     .tech-left > p { color:var(--muted); font-size:16px; }
     .stack-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin-top:22px; }
     .stack-item {
       padding:14px 18px; border-radius:14px;
-      border:1px solid rgba(255,107,53,.2); background:rgba(0,10,30,.4);
+      border:1px solid rgba(23,157,202,.2); background:rgba(0,10,30,.4);
       font-weight:700; font-size:15px; color:#dce8ff;
     }
     .tech-right { display:flex; flex-direction:column; gap:16px; }
@@ -414,10 +414,10 @@
     .cta-panel {
       position:relative; overflow:hidden; border-radius:28px; padding:56px 48px;
       background:
-        radial-gradient(circle at 10% 20%, rgba(255,179,71,.18), transparent 35%),
-        radial-gradient(circle at 90% 10%, rgba(255,107,53,.14), transparent 28%),
+        radial-gradient(circle at 10% 20%, rgba(95,204,230,.18), transparent 35%),
+        radial-gradient(circle at 90% 10%, rgba(23,157,202,.14), transparent 28%),
         linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,.025));
-      border:1px solid rgba(255,107,53,.25); box-shadow:var(--shadow);
+      border:1px solid rgba(23,157,202,.25); box-shadow:var(--shadow);
     }
     .cta-panel::after {
       content:"INTHEGRA"; position:absolute; right:-28px; bottom:-8px;
@@ -1026,7 +1026,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2025/02/inthegra-software-logo-menu.png"
+          <img src="img/wp/2024/12/logo-footer.png"
                alt="Inthegra Software" class="footer-logo">
           <p>Plataformas enterprise Oracle-native para retail, servicios, crédito y salud en Latinoamérica.</p>
         </div>

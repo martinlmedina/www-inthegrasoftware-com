@@ -44,11 +44,11 @@
       --text:     #eef4ff;
       --text-2:   #c0d4f0;
       --muted:    #7d9ac4;
-      --brand:    #55a3ff;
-      --brand-2:  #7c5cff;
+      --brand:    #179dca;
+      --brand-2:  #5fcce6;
       --green:    #35d39b;
       --gold:     #ffd166;
-      --teal:     #2dd4bf;
+      --teal:     #179dca;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -58,8 +58,8 @@
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       background-color: var(--bg);
       background-image:
-        radial-gradient(ellipse 90% 55% at 100% 0%,  rgba(85,163,255,.18) 0%, transparent 50%),
-        radial-gradient(ellipse 60% 40% at 0%   10%, rgba(45,212,191,.1)  0%, transparent 45%),
+        radial-gradient(ellipse 90% 55% at 100% 0%,  rgba(23,157,202,.18) 0%, transparent 50%),
+        radial-gradient(ellipse 60% 40% at 0%   10%, rgba(23,157,202,.1)  0%, transparent 45%),
         radial-gradient(ellipse 80% 70% at 50%  70%, rgba(53,211,155,.06)  0%, transparent 55%);
       color: var(--text);
       line-height: 1.6;
@@ -80,22 +80,22 @@
     .logo-wrap img { height: 34px; width: auto; display: block; }
     nav { display: flex; align-items: center; gap: 2px; }
     nav a { color: var(--muted); text-decoration: none; font-size: 13px; font-weight: 500; padding: 6px 12px; border-radius: 8px; transition: all .2s; white-space: nowrap; }
-    nav a:hover { color: var(--brand); background: rgba(85,163,255,.09); }
-    .nav-cta { flex-shrink: 0; padding: 10px 22px; border-radius: 10px; background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #fff; font-size: 14px; font-weight: 700; text-decoration: none; transition: box-shadow .25s; box-shadow: 0 4px 18px rgba(85,163,255,.3); }
-    .nav-cta:hover { box-shadow: 0 6px 28px rgba(85,163,255,.5); }
+    nav a:hover { color: var(--brand); background: rgba(23,157,202,.09); }
+    .nav-cta { flex-shrink: 0; padding: 10px 22px; border-radius: 10px; background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #fff; font-size: 14px; font-weight: 700; text-decoration: none; transition: box-shadow .25s; box-shadow: 0 4px 18px rgba(23,157,202,.3); }
+    .nav-cta:hover { box-shadow: 0 6px 28px rgba(23,157,202,.5); }
 
     /* ── BUTTONS ─── */
     .btn { display: inline-flex; align-items: center; gap: 8px; padding: 13px 26px; border-radius: 12px; font-size: 15px; font-weight: 700; text-decoration: none; cursor: pointer; border: 1.5px solid transparent; transition: all .25s; font-family: inherit; }
     .btn:hover { transform: translateY(-2px); }
-    .btn-primary { background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #fff; box-shadow: 0 8px 28px rgba(85,163,255,.3); }
-    .btn-primary:hover { box-shadow: 0 12px 40px rgba(85,163,255,.5); }
+    .btn-primary { background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #fff; box-shadow: 0 8px 28px rgba(23,157,202,.3); }
+    .btn-primary:hover { box-shadow: 0 12px 40px rgba(23,157,202,.5); }
     .btn-ghost { background: rgba(255,255,255,.05); border-color: var(--line-2); color: var(--text-2); }
-    .btn-ghost:hover { border-color: var(--brand); color: var(--brand); background: rgba(85,163,255,.08); }
+    .btn-ghost:hover { border-color: var(--brand); color: var(--brand); background: rgba(23,157,202,.08); }
 
     /* ── SHARED ─── */
     .section { padding: 96px 0; }
     .section + .section { border-top: 1px solid rgba(36,58,97,.45); }
-    .eyebrow { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 18px; padding: 6px 14px; border-radius: 999px; border: 1px solid rgba(85,163,255,.3); background: rgba(85,163,255,.08); color: var(--brand); font-size: 11px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 18px; padding: 6px 14px; border-radius: 999px; border: 1px solid rgba(23,157,202,.3); background: rgba(23,157,202,.08); color: var(--brand); font-size: 11px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
     .eyebrow::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--brand); }
     .section-label { font-size: 11px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--brand); display: block; margin-bottom: 12px; }
     .section-title { font-size: 44px; font-weight: 800; line-height: 1.12; letter-spacing: -.025em; margin-bottom: 16px; }
@@ -183,7 +183,7 @@
     .pos-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 28px; margin-top: 40px; }
     .glass { background: var(--bg-card); border: 1px solid var(--line); border-radius: 20px; padding: 32px; }
     .stack-flow { display: grid; gap: 14px; margin-top: 20px; }
-    .stack-layer { padding: 16px 18px; border-radius: 14px; background: rgba(85,163,255,.06); border: 1px solid rgba(85,163,255,.14); }
+    .stack-layer { padding: 16px 18px; border-radius: 14px; background: rgba(23,157,202,.06); border: 1px solid rgba(23,157,202,.14); }
     .stack-layer strong { display: block; font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
     .stack-layer span { font-size: 13px; color: var(--muted); }
     .metrics-2x2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 20px; }
@@ -211,8 +211,8 @@
     .proof-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-top: 40px; }
     .proof-card { background: var(--bg-card); border: 1px solid var(--line); border-radius: 20px; padding: 28px; }
     .proof-tag { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; padding: 5px 12px; border-radius: 999px; margin-bottom: 16px; }
-    .proof-tag.teal  { background: rgba(45,212,191,.1); border: 1px solid rgba(45,212,191,.25); color: var(--teal); }
-    .proof-tag.violet { background: rgba(124,92,255,.1); border: 1px solid rgba(124,92,255,.25); color: var(--brand-2); }
+    .proof-tag.teal  { background: rgba(23,157,202,.1); border: 1px solid rgba(23,157,202,.25); color: var(--teal); }
+    .proof-tag.violet { background: rgba(95,204,230,.1); border: 1px solid rgba(95,204,230,.25); color: var(--brand-2); }
     .proof-tag.gold  { background: rgba(255,209,102,.1); border: 1px solid rgba(255,209,102,.25); color: var(--gold); }
     .proof-card h3 { font-size: 17px; font-weight: 700; margin-bottom: 10px; }
     .proof-card p { font-size: 14px; color: var(--muted); line-height: 1.65; margin-bottom: 16px; }
@@ -228,12 +228,12 @@
 
     /* ── CTA ─── */
     .cta-box {
-      background: linear-gradient(135deg, rgba(85,163,255,.12), rgba(45,212,191,.1));
-      border: 1px solid rgba(85,163,255,.25); border-radius: 28px;
+      background: linear-gradient(135deg, rgba(23,157,202,.12), rgba(23,157,202,.1));
+      border: 1px solid rgba(23,157,202,.25); border-radius: 28px;
       padding: 72px 56px; text-align: center; position: relative; overflow: hidden;
     }
-    .cta-box::before { content: ''; position: absolute; top: -80px; right: -80px; width: 300px; height: 300px; border-radius: 50%; background: rgba(85,163,255,.08); pointer-events: none; }
-    .cta-box::after  { content: ''; position: absolute; bottom: -60px; left: -60px; width: 240px; height: 240px; border-radius: 50%; background: rgba(45,212,191,.07); pointer-events: none; }
+    .cta-box::before { content: ''; position: absolute; top: -80px; right: -80px; width: 300px; height: 300px; border-radius: 50%; background: rgba(23,157,202,.08); pointer-events: none; }
+    .cta-box::after  { content: ''; position: absolute; bottom: -60px; left: -60px; width: 240px; height: 240px; border-radius: 50%; background: rgba(23,157,202,.07); pointer-events: none; }
     .cta-box h2 { font-size: 42px; font-weight: 900; letter-spacing: -.025em; margin-bottom: 16px; position: relative; z-index: 1; }
     .cta-box p  { font-size: 18px; color: var(--muted); max-width: 55ch; margin: 0 auto 36px; line-height: 1.7; position: relative; z-index: 1; }
     .cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; position: relative; z-index: 1; }
@@ -324,7 +324,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="header-inner">
       <div class="logo-wrap">
         <a href="https://inthegrasoftware.com">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2026/02/Logo_oracle_header.svg" alt="Inthegra Software" />
+          <img src="img/wp/2026/02/Logo_oracle_header.svg" alt="Inthegra Software" />
         </a>
       </div>
       <nav>
@@ -381,64 +381,64 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <stop offset="100%" stop-color="#0d1628"/>
             </linearGradient>
             <linearGradient id="hg-teal" x1="0" x2="1">
-              <stop offset="0%" stop-color="#2dd4bf"/>
+              <stop offset="0%" stop-color="#179dca"/>
               <stop offset="100%" stop-color="#35d39b"/>
             </linearGradient>
             <linearGradient id="hg-violet" x1="0" x2="1">
-              <stop offset="0%" stop-color="#7c5cff"/>
-              <stop offset="100%" stop-color="#55a3ff"/>
+              <stop offset="0%" stop-color="#5fcce6"/>
+              <stop offset="100%" stop-color="#179dca"/>
             </linearGradient>
             <linearGradient id="hg-gold" x1="0" x2="1">
               <stop offset="0%" stop-color="#ffd166"/>
-              <stop offset="100%" stop-color="#ffb347"/>
+              <stop offset="100%" stop-color="#5fcce6"/>
             </linearGradient>
             <linearGradient id="hg-core" x1="0" x2="1">
-              <stop offset="0%" stop-color="#55a3ff"/>
-              <stop offset="100%" stop-color="#7c5cff"/>
+              <stop offset="0%" stop-color="#179dca"/>
+              <stop offset="100%" stop-color="#5fcce6"/>
             </linearGradient>
           </defs>
 
           <rect width="880" height="600" fill="url(#hg-bg)"/>
-          <ellipse cx="440" cy="300" rx="180" ry="100" fill="rgba(85,163,255,.04)"/>
+          <ellipse cx="440" cy="300" rx="180" ry="100" fill="rgba(23,157,202,.04)"/>
 
           <!-- Core central: Oracle Platform -->
           <rect x="295" y="220" width="290" height="160" rx="20" fill="#121f3b" stroke="#30446f"/>
           <rect x="315" y="244" width="250" height="56" rx="12" fill="url(#hg-core)"/>
           <text x="440" y="272" fill="#fff" font-size="14" font-weight="800" font-family="Arial" text-anchor="middle">Oracle Platform</text>
           <text x="440" y="290" fill="rgba(255,255,255,.8)" font-size="10" font-family="Arial" text-anchor="middle">ERP · OCI · AI · Analytics · APEX</text>
-          <rect x="315" y="312" width="78" height="44" rx="10" fill="#162040" stroke="rgba(85,163,255,.3)"/>
-          <text x="354" y="333" fill="#55a3ff" font-size="10" font-weight="700" font-family="Arial" text-anchor="middle">Cloud</text>
+          <rect x="315" y="312" width="78" height="44" rx="10" fill="#162040" stroke="rgba(23,157,202,.3)"/>
+          <text x="354" y="333" fill="#179dca" font-size="10" font-weight="700" font-family="Arial" text-anchor="middle">Cloud</text>
           <text x="354" y="348" fill="#7d9ac4" font-size="9" font-family="Arial" text-anchor="middle">OCI · SLA</text>
-          <rect x="401" y="312" width="78" height="44" rx="10" fill="#162040" stroke="rgba(167,139,250,.3)"/>
-          <text x="440" y="333" fill="#a78bfa" font-size="10" font-weight="700" font-family="Arial" text-anchor="middle">AI</text>
+          <rect x="401" y="312" width="78" height="44" rx="10" fill="#162040" stroke="rgba(95,204,230,.3)"/>
+          <text x="440" y="333" fill="#5fcce6" font-size="10" font-weight="700" font-family="Arial" text-anchor="middle">AI</text>
           <text x="440" y="348" fill="#7d9ac4" font-size="9" font-family="Arial" text-anchor="middle">RAG · Agentes</text>
           <rect x="487" y="312" width="78" height="44" rx="10" fill="#162040" stroke="rgba(53,211,155,.3)"/>
           <text x="526" y="333" fill="#35d39b" font-size="10" font-weight="700" font-family="Arial" text-anchor="middle">Analytics</text>
           <text x="526" y="348" fill="#7d9ac4" font-size="9" font-family="Arial" text-anchor="middle">OAC · BI</text>
 
           <!-- HealthCare card (top-left) -->
-          <rect x="28" y="52" width="220" height="166" rx="18" fill="#121f3b" stroke="rgba(45,212,191,.4)"/>
+          <rect x="28" y="52" width="220" height="166" rx="18" fill="#121f3b" stroke="rgba(23,157,202,.4)"/>
           <rect x="48" y="72" width="180" height="44" rx="10" fill="url(#hg-teal)"/>
           <text x="138" y="96" fill="#fff" font-size="13" font-weight="800" font-family="Arial" text-anchor="middle">HealthCare</text>
           <text x="138" y="111" fill="rgba(255,255,255,.8)" font-size="9" font-family="Arial" text-anchor="middle">Prepagas · Obras sociales · Clínicas</text>
-          <rect x="48" y="128" width="82" height="34" rx="8" fill="#162040" stroke="rgba(45,212,191,.25)"/>
-          <text x="89" y="148" fill="#2dd4bf" font-size="9" font-weight="700" font-family="Arial" text-anchor="middle">Gestión crítica</text>
-          <rect x="138" y="128" width="90" height="34" rx="8" fill="#162040" stroke="rgba(45,212,191,.25)"/>
-          <text x="183" y="148" fill="#2dd4bf" font-size="9" font-weight="700" font-family="Arial" text-anchor="middle">Trazabilidad</text>
-          <text x="48" y="197" fill="#7d9ac4" font-size="9" font-family="Arial">SIPSSA · EMI · Alta Salud · INDOM</text>
-          <text x="48" y="210" fill="#2dd4bf" font-size="10" font-weight="600" font-family="Arial">Ver HealthCare →</text>
+          <rect x="48" y="128" width="82" height="34" rx="8" fill="#162040" stroke="rgba(23,157,202,.25)"/>
+          <text x="89" y="148" fill="#179dca" font-size="9" font-weight="700" font-family="Arial" text-anchor="middle">Gestión crítica</text>
+          <rect x="138" y="128" width="90" height="34" rx="8" fill="#162040" stroke="rgba(23,157,202,.25)"/>
+          <text x="183" y="148" fill="#179dca" font-size="9" font-weight="700" font-family="Arial" text-anchor="middle">Trazabilidad</text>
+          <text x="48" y="197" fill="#7d9ac4" font-size="9" font-family="Arial">Prepagas · Obras sociales · Clínicas</text>
+          <text x="48" y="210" fill="#179dca" font-size="10" font-weight="600" font-family="Arial">Ver HealthCare →</text>
 
           <!-- Credit & Financial card (top-right) -->
-          <rect x="632" y="52" width="220" height="166" rx="18" fill="#121f3b" stroke="rgba(124,92,255,.4)"/>
+          <rect x="632" y="52" width="220" height="166" rx="18" fill="#121f3b" stroke="rgba(95,204,230,.4)"/>
           <rect x="652" y="72" width="180" height="44" rx="10" fill="url(#hg-violet)"/>
           <text x="742" y="96" fill="#fff" font-size="13" font-weight="800" font-family="Arial" text-anchor="middle">Credit &amp; Financial</text>
           <text x="742" y="111" fill="rgba(255,255,255,.8)" font-size="9" font-family="Arial" text-anchor="middle">Crédito · Cobranzas · Gestión financiera</text>
-          <rect x="652" y="128" width="82" height="34" rx="8" fill="#162040" stroke="rgba(124,92,255,.25)"/>
-          <text x="693" y="148" fill="#a78bfa" font-size="9" font-weight="700" font-family="Arial" text-anchor="middle">Crédito</text>
-          <rect x="742" y="128" width="90" height="34" rx="8" fill="#162040" stroke="rgba(124,92,255,.25)"/>
-          <text x="787" y="148" fill="#a78bfa" font-size="9" font-weight="700" font-family="Arial" text-anchor="middle">Cobranzas</text>
-          <text x="652" y="197" fill="#7d9ac4" font-size="9" font-family="Arial">Grupo Dilfer · Noacard · Sucredito</text>
-          <text x="652" y="210" fill="#a78bfa" font-size="10" font-weight="600" font-family="Arial">Ver Credit &amp; Financial →</text>
+          <rect x="652" y="128" width="82" height="34" rx="8" fill="#162040" stroke="rgba(95,204,230,.25)"/>
+          <text x="693" y="148" fill="#5fcce6" font-size="9" font-weight="700" font-family="Arial" text-anchor="middle">Crédito</text>
+          <rect x="742" y="128" width="90" height="34" rx="8" fill="#162040" stroke="rgba(95,204,230,.25)"/>
+          <text x="787" y="148" fill="#5fcce6" font-size="9" font-weight="700" font-family="Arial" text-anchor="middle">Cobranzas</text>
+          <text x="652" y="197" fill="#7d9ac4" font-size="9" font-family="Arial">Financieras · Emisoras · Cobranza</text>
+          <text x="652" y="210" fill="#5fcce6" font-size="10" font-weight="600" font-family="Arial">Ver Credit &amp; Financial →</text>
 
           <!-- Retail card (bottom-center) -->
           <rect x="295" y="442" width="290" height="136" rx="18" fill="#121f3b" stroke="rgba(255,209,102,.4)"/>
@@ -453,9 +453,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
           <!-- Connector lines -->
           <!-- HealthCare → Core -->
-          <path d="M248 135 Q280 135 295 270" stroke="rgba(45,212,191,.5)" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
+          <path d="M248 135 Q280 135 295 270" stroke="rgba(23,157,202,.5)" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
           <!-- Credit → Core -->
-          <path d="M632 135 Q600 135 585 270" stroke="rgba(124,92,255,.5)" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
+          <path d="M632 135 Q600 135 585 270" stroke="rgba(95,204,230,.5)" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
           <!-- Retail → Core -->
           <path d="M440 442 V380" stroke="rgba(255,209,102,.5)" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
 
@@ -517,28 +517,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </linearGradient>
             </defs>
             <rect width="360" height="120" fill="url(#hc-bg)"/>
-            <ellipse cx="280" cy="40" rx="80" ry="60" fill="rgba(45,212,191,.08)"/>
-            <rect x="18" y="18" width="100" height="84" rx="12" fill="#121f3b" stroke="rgba(45,212,191,.3)"/>
-            <text x="68" y="44" fill="#2dd4bf" font-size="10" font-weight="700" font-family="Arial" text-anchor="middle">Prepagas</text>
-            <rect x="18" y="38" width="100" height="2" rx="1" fill="rgba(45,212,191,.15)"/>
+            <ellipse cx="280" cy="40" rx="80" ry="60" fill="rgba(23,157,202,.08)"/>
+            <rect x="18" y="18" width="100" height="84" rx="12" fill="#121f3b" stroke="rgba(23,157,202,.3)"/>
+            <text x="68" y="44" fill="#179dca" font-size="10" font-weight="700" font-family="Arial" text-anchor="middle">Prepagas</text>
+            <rect x="18" y="38" width="100" height="2" rx="1" fill="rgba(23,157,202,.15)"/>
             <text x="28" y="58" fill="#7d9ac4" font-size="8" font-family="Arial">Afiliados</text>
             <text x="28" y="70" fill="#7d9ac4" font-size="8" font-family="Arial">Prestaciones</text>
             <text x="28" y="82" fill="#7d9ac4" font-size="8" font-family="Arial">Cobranzas</text>
-            <text x="28" y="94" fill="#2dd4bf" font-size="8" font-family="Arial">● Activo</text>
-            <rect x="130" y="18" width="100" height="84" rx="12" fill="#121f3b" stroke="rgba(45,212,191,.3)"/>
-            <text x="180" y="44" fill="#2dd4bf" font-size="10" font-weight="700" font-family="Arial" text-anchor="middle">Emergencias</text>
-            <rect x="130" y="38" width="100" height="2" rx="1" fill="rgba(45,212,191,.15)"/>
+            <text x="28" y="94" fill="#179dca" font-size="8" font-family="Arial">● Activo</text>
+            <rect x="130" y="18" width="100" height="84" rx="12" fill="#121f3b" stroke="rgba(23,157,202,.3)"/>
+            <text x="180" y="44" fill="#179dca" font-size="10" font-weight="700" font-family="Arial" text-anchor="middle">Emergencias</text>
+            <rect x="130" y="38" width="100" height="2" rx="1" fill="rgba(23,157,202,.15)"/>
             <text x="140" y="58" fill="#7d9ac4" font-size="8" font-family="Arial">Despacho</text>
             <text x="140" y="70" fill="#7d9ac4" font-size="8" font-family="Arial">Móviles</text>
             <text x="140" y="82" fill="#7d9ac4" font-size="8" font-family="Arial">Operación 24/7</text>
-            <text x="140" y="94" fill="#2dd4bf" font-size="8" font-family="Arial">● Activo</text>
-            <rect x="242" y="18" width="100" height="84" rx="12" fill="#121f3b" stroke="rgba(45,212,191,.3)"/>
-            <text x="292" y="44" fill="#2dd4bf" font-size="10" font-weight="700" font-family="Arial" text-anchor="middle">Clínicas</text>
-            <rect x="242" y="38" width="100" height="2" rx="1" fill="rgba(45,212,191,.15)"/>
+            <text x="140" y="94" fill="#179dca" font-size="8" font-family="Arial">● Activo</text>
+            <rect x="242" y="18" width="100" height="84" rx="12" fill="#121f3b" stroke="rgba(23,157,202,.3)"/>
+            <text x="292" y="44" fill="#179dca" font-size="10" font-weight="700" font-family="Arial" text-anchor="middle">Clínicas</text>
+            <rect x="242" y="38" width="100" height="2" rx="1" fill="rgba(23,157,202,.15)"/>
             <text x="252" y="58" fill="#7d9ac4" font-size="8" font-family="Arial">Historia clínica</text>
             <text x="252" y="70" fill="#7d9ac4" font-size="8" font-family="Arial">Facturación</text>
             <text x="252" y="82" fill="#7d9ac4" font-size="8" font-family="Arial">Integraciones</text>
-            <text x="252" y="94" fill="#2dd4bf" font-size="8" font-family="Arial">● Activo</text>
+            <text x="252" y="94" fill="#179dca" font-size="8" font-family="Arial">● Activo</text>
           </svg>
         </div>
         <div class="prod-body">
@@ -560,7 +560,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </ul>
           <div class="prod-footer">
             <span class="prod-link">Ver HealthCare →</span>
-            <div class="prod-clients"><strong>SIPSSA · EMI · Alta Salud</strong>Referencias en producción</div>
           </div>
         </div>
       </a>
@@ -579,19 +578,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </linearGradient>
             </defs>
             <rect width="360" height="120" fill="url(#cf-bg)"/>
-            <ellipse cx="80" cy="80" rx="100" ry="60" fill="rgba(124,92,255,.07)"/>
+            <ellipse cx="80" cy="80" rx="100" ry="60" fill="rgba(95,204,230,.07)"/>
             <!-- Metric cards -->
-            <rect x="18" y="14" width="152" height="92" rx="12" fill="#121f3b" stroke="rgba(124,92,255,.35)"/>
-            <text x="34" y="38" fill="#a78bfa" font-size="10" font-weight="700" font-family="Arial">Cartera activa</text>
+            <rect x="18" y="14" width="152" height="92" rx="12" fill="#121f3b" stroke="rgba(95,204,230,.35)"/>
+            <text x="34" y="38" fill="#5fcce6" font-size="10" font-weight="700" font-family="Arial">Cartera activa</text>
             <text x="34" y="62" fill="#fff" font-size="26" font-weight="900" font-family="Arial">$4.2M</text>
             <text x="34" y="78" fill="#7d9ac4" font-size="9" font-family="Arial">Gestión centralizada</text>
             <rect x="34" y="88" width="90" height="6" rx="3" fill="rgba(255,255,255,.08)"/>
             <rect x="34" y="88" width="74" height="6" rx="3" fill="url(#hg-violet)"/>
-            <rect x="190" y="14" width="152" height="44" rx="12" fill="#121f3b" stroke="rgba(124,92,255,.3)"/>
-            <text x="206" y="34" fill="#a78bfa" font-size="10" font-weight="700" font-family="Arial">Mora controlada</text>
+            <rect x="190" y="14" width="152" height="44" rx="12" fill="#121f3b" stroke="rgba(95,204,230,.3)"/>
+            <text x="206" y="34" fill="#5fcce6" font-size="10" font-weight="700" font-family="Arial">Mora controlada</text>
             <text x="206" y="50" fill="#35d39b" font-size="11" font-weight="800" font-family="Arial">▼ -18% este mes</text>
-            <rect x="190" y="64" width="152" height="42" rx="12" fill="#121f3b" stroke="rgba(124,92,255,.3)"/>
-            <text x="206" y="82" fill="#a78bfa" font-size="10" font-weight="700" font-family="Arial">Recupero</text>
+            <rect x="190" y="64" width="152" height="42" rx="12" fill="#121f3b" stroke="rgba(95,204,230,.3)"/>
+            <text x="206" y="82" fill="#5fcce6" font-size="10" font-weight="700" font-family="Arial">Recupero</text>
             <text x="206" y="98" fill="#fff" font-size="11" font-weight="800" font-family="Arial">87.4% efectividad</text>
           </svg>
         </div>
@@ -614,7 +613,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </ul>
           <div class="prod-footer">
             <span class="prod-link">Ver Credit &amp; Financial →</span>
-            <div class="prod-clients"><strong>Grupo Dilfer · Noacard</strong>Referencias en producción</div>
           </div>
         </div>
       </a>
@@ -673,7 +671,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </ul>
           <div class="prod-footer">
             <span class="prod-link">Ver Retail →</span>
-            <div class="prod-clients"><strong>Tiendas Nico · Todo Cerca</strong>Referencias en producción</div>
           </div>
         </div>
       </a>
@@ -806,58 +803,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span>Escalabilidad, datos gobernados y evolución continua.</span>
           </div>
         </div>
-        <div style="margin-top:24px; padding:18px; border-radius:14px; background:rgba(85,163,255,.06); border:1px solid rgba(85,163,255,.15);">
+        <div style="margin-top:24px; padding:18px; border-radius:14px; background:rgba(23,157,202,.06); border:1px solid rgba(23,157,202,.15);">
           <p style="font-size:13px; color:var(--text-2); line-height:1.6;">El objetivo no es vender software aislado: es construir una plataforma conectada con ERP, AI, cloud y soluciones cross que permita <strong>control operativo, velocidad de implementación y escalabilidad real</strong>.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── PROOF ─────────────────────────────────────── -->
-<section class="section" id="casos">
-  <div class="container">
-    <div style="margin-bottom:16px;" class="fade-up">
-      <span class="section-label">Experiencia por vertical</span>
-      <h2 class="section-title">Clientes reales en operaciones reales</h2>
-      <p class="section-desc" style="max-width:58ch;">Referencias concretas por industria que respaldan la capacidad de ejecución y el know-how acumulado.</p>
-    </div>
-
-    <div class="proof-grid fade-up" style="transition-delay:.1s">
-      <div class="proof-card">
-        <div class="proof-tag teal">HealthCare</div>
-        <h3>Experiencia en salud</h3>
-        <p>Prepagas, obras sociales, emergencias médicas y clínicas con procesos críticos y alta complejidad operativa. Operaciones en producción desde hace años.</p>
-        <div class="proof-logos">
-          <span class="proof-logo">SIPSSA</span>
-          <span class="proof-logo">EMI</span>
-          <span class="proof-logo">Alta Salud</span>
-          <span class="proof-logo">Roster</span>
-          <span class="proof-logo">INDOM</span>
-        </div>
-      </div>
-
-      <div class="proof-card">
-        <div class="proof-tag violet">Credit &amp; Financial</div>
-        <h3>Experiencia en crédito</h3>
-        <p>Empresas de crédito, financieras y operadores de cobranza con volumen intensivo, necesidad de control y visibilidad operativa en tiempo real.</p>
-        <div class="proof-logos">
-          <span class="proof-logo">Grupo Dilfer</span>
-          <span class="proof-logo">Noacard</span>
-          <span class="proof-logo">Sucredito</span>
-          <span class="proof-logo">La Zonal</span>
-          <span class="proof-logo">Elebar</span>
-        </div>
-      </div>
-
-      <div class="proof-card">
-        <div class="proof-tag gold">Retail</div>
-        <h3>Experiencia en retail</h3>
-        <p>Retailers, cadenas y negocios en expansión con necesidades de control de stock, reposición, operación de sucursales y crecimiento comercial.</p>
-        <div class="proof-logos">
-          <span class="proof-logo">Tiendas Nico</span>
-          <span class="proof-logo">Acogra</span>
-          <span class="proof-logo">Todo Cerca</span>
         </div>
       </div>
     </div>
@@ -913,7 +860,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="footer-grid">
       <div>
         <div class="footer-logo">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2024/12/logo-footer.png" alt="Inthegra Software" />
+          <img src="img/wp/2024/12/logo-footer.png" alt="Inthegra Software" />
         </div>
         <p class="footer-tagline">Ecosistema de productos Oracle-native para HealthCare, Credit &amp; Financial y Retail. Modularidad real, integración enterprise y escalabilidad.</p>
       </div>

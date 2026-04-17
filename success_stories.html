@@ -41,8 +41,8 @@
       --text:     #eef4ff;
       --text-2:   #c0d4f0;
       --muted:    #7d9ac4;
-      --brand:    #5ea3ff;
-      --brand-2:  #7ce2ff;
+      --brand:    #ff7200;
+      --brand-2:  #ff4d8f;
       --green:    #80f3c4;
     }
 
@@ -53,7 +53,7 @@
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       background-color: var(--bg);
       background-image:
-        radial-gradient(ellipse 70% 40% at 0% 0%,   rgba(94,163,255,.14), transparent 45%),
+        radial-gradient(ellipse 70% 40% at 0% 0%,   rgba(255,114,0,.14), transparent 45%),
         radial-gradient(ellipse 60% 35% at 100% 15%, rgba(124,226,255,.09), transparent 40%);
       color: var(--text);
       line-height: 1.6;
@@ -83,15 +83,19 @@
     .eyebrow {
       display: inline-flex; align-items: center; gap: 8px; margin-bottom: 18px;
       padding: 7px 14px; border-radius: 999px;
-      border: 1px solid rgba(128,243,196,.25); background: rgba(128,243,196,.07);
-      color: var(--green); font-size: 11px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
+      border: 1px solid rgba(255,114,0,.28); background: rgba(255,114,0,.08);
+      color: var(--brand); font-size: 11px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
     }
-    .eyebrow::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--green); }
+    .eyebrow::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--brand); }
 
-    .eyebrow.blue { border-color: rgba(94,163,255,.28); background: rgba(94,163,255,.08); color: var(--brand); }
+    .eyebrow.blue { border-color: rgba(255,114,0,.28); background: rgba(255,114,0,.08); color: var(--brand); }
     .eyebrow.blue::before { background: var(--brand); }
 
     /* ── TYPOGRAPHY ─── */
+    .hero-title, .section-title {
+      background: linear-gradient(135deg, #fff 15%, var(--brand) 55%, var(--brand-2) 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
     .section-title { font-size: clamp(28px,3.8vw,50px); font-weight: 800; line-height: 1.04; letter-spacing: -.03em; margin-bottom: 14px; }
     .section-desc { color: var(--muted); font-size: 17px; line-height: 1.7; max-width: 72ch; }
 
@@ -114,7 +118,7 @@
       border: 1px solid rgba(255,255,255,.16); color: var(--text-2);
       background: rgba(255,255,255,.03); transition: all .2s;
     }
-    .btn-ghost:hover { border-color: rgba(94,163,255,.4); color: var(--brand); }
+    .btn-ghost:hover { border-color: rgba(255,114,0,.4); color: var(--brand); }
 
     /* ══════════════════════════════════════
        HERO
@@ -147,7 +151,7 @@
       min-height: 520px;
       background:
         linear-gradient(180deg, rgba(7,17,31,.14), rgba(7,17,31,.72)),
-        url('https://inthegrasoftware.com/wp-content/uploads/2025/03/VALLE-FERTIL-SA-Banner.png') center/cover no-repeat;
+        url('img/wp/2025/03/VALLE-FERTIL-SA-Banner.png') center/cover no-repeat;
       box-shadow: 0 30px 80px rgba(0,0,0,.3);
     }
     .hero-featured-overlay {
@@ -195,7 +199,7 @@
       border: 1px solid rgba(255,255,255,.08);
       background:
         linear-gradient(180deg, rgba(7,17,31,.12), rgba(7,17,31,.58)),
-        url('https://inthegrasoftware.com/wp-content/uploads/2025/03/captura-sidecreer.png') center/cover no-repeat;
+        url('img/wp/2025/03/captura-sidecreer.png') center/cover no-repeat;
       box-shadow: 0 20px 60px rgba(0,0,0,.28);
       position: relative;
     }
@@ -218,7 +222,7 @@
       color: var(--text-2); cursor: pointer; transition: all .2s; font-family: inherit;
     }
     .filter-btn:hover, .filter-btn.active {
-      background: rgba(94,163,255,.16); border-color: rgba(124,205,255,.35); color: var(--text);
+      background: rgba(255,114,0,.16); border-color: rgba(124,205,255,.35); color: var(--text);
     }
 
     .cards-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
@@ -261,7 +265,7 @@
     .case-dot {
       width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; margin-top: 5px;
       background: linear-gradient(135deg, var(--brand), var(--brand-2));
-      box-shadow: 0 0 0 4px rgba(94,163,255,.12);
+      box-shadow: 0 0 0 4px rgba(255,114,0,.12);
     }
 
     .card-cta {
@@ -294,7 +298,7 @@
       width: 36px; height: 36px; border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
       font-weight: 800; font-size: 15px; margin-bottom: 16px;
-      background: rgba(94,163,255,.16); color: #dff1ff;
+      background: rgba(255,114,0,.16); color: #dff1ff;
     }
     .timeline-card h4 { font-size: 18px; font-weight: 700; margin-bottom: 10px; letter-spacing: -.01em; }
     .timeline-card p { font-size: 15px; color: var(--muted); line-height: 1.65; }
@@ -317,10 +321,10 @@
     .cta-box {
       border-radius: 32px; overflow: hidden;
       background:
-        radial-gradient(circle at 15% 15%, rgba(94,163,255,.2), transparent 30%),
+        radial-gradient(circle at 15% 15%, rgba(255,114,0,.2), transparent 30%),
         radial-gradient(circle at 80% 30%, rgba(124,226,255,.14), transparent 26%),
         linear-gradient(135deg, rgba(255,255,255,.07), rgba(255,255,255,.03));
-      border: 1px solid rgba(94,163,255,.18);
+      border: 1px solid rgba(255,114,0,.18);
       box-shadow: 0 30px 80px rgba(0,0,0,.28);
     }
     .cta-inner {
@@ -545,7 +549,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <article class="case-card" data-tags="operations apex">
         <div class="card-media">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2025/03/JAVER-BANNER-03.jpg" alt="JAVER — Control presupuestario TI" />
+          <img src="img/wp/2025/03/JAVER-BANNER-03.jpg" alt="JAVER — Control presupuestario TI" />
         </div>
         <div class="card-body">
           <div class="case-topline">
@@ -566,7 +570,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <article class="case-card" data-tags="financial onboarding apex">
         <div class="card-media">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2025/03/VALLE-FERTIL-SA-Banner.png" alt="Valle Fertil SA — Onboarding digital" />
+          <img src="img/wp/2025/03/VALLE-FERTIL-SA-Banner.png" alt="Valle Fertil SA — Onboarding digital" />
         </div>
         <div class="card-body">
           <div class="case-topline">
@@ -587,7 +591,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <article class="case-card" data-tags="operations apex">
         <div class="card-media">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2025/03/DFoJPgTXsAAtVnG-1.png" alt="Federación Peruana de Fútbol — Digitalización" />
+          <img src="img/wp/2025/03/DFoJPgTXsAAtVnG-1.png" alt="Federación Peruana de Fútbol — Digitalización" />
         </div>
         <div class="card-body">
           <div class="case-topline">
@@ -608,7 +612,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <article class="case-card" data-tags="financial onboarding apex">
         <div class="card-media">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2025/03/captura-sidecreer.png" alt="Sidecreer SA — Onboarding digital" />
+          <img src="img/wp/2025/03/captura-sidecreer.png" alt="Sidecreer SA — Onboarding digital" />
         </div>
         <div class="card-body">
           <div class="case-topline">
@@ -629,7 +633,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <article class="case-card" data-tags="operations apex">
         <div class="card-media">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2025/03/infa-taller-general-1.jpg" alt="INFA — Gestión de producción en planta" />
+          <img src="img/wp/2025/03/infa-taller-general-1.jpg" alt="INFA — Gestión de producción en planta" />
         </div>
         <div class="card-body">
           <div class="case-topline">
@@ -650,7 +654,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <article class="case-card" data-tags="operations apex">
         <div class="card-media">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2025/04/Screenshot_11.png" alt="MSPORT — Gestión de taller" />
+          <img src="img/wp/2025/04/Screenshot_11.png" alt="MSPORT — Gestión de taller" />
         </div>
         <div class="card-body">
           <div class="case-topline">
@@ -796,7 +800,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="footer-grid">
       <div>
         <div class="footer-logo">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2026/02/Logo_oracle_header.svg" alt="Inthegra Software" />
+          <img src="img/wp/2026/02/Logo_oracle_header.svg" alt="Inthegra Software" />
         </div>
         <p class="footer-tagline">Oracle-native enterprise software para organizaciones que necesitan escalar con control.</p>
       </div>

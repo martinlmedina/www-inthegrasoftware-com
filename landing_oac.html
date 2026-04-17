@@ -56,12 +56,12 @@
       --text:      #eef4ff;
       --text-2:    #c0d4f0;
       --muted:     #7d9ac4;
-      --brand:     #55a3ff;
-      --brand-2:   #7c5cff;
+      --brand:     #d96c96;
+      --brand-2:   #F7B5CD;
       --green:     #35d39b;
       --gold:      #ffd166;
       --danger:    #ff9f7a;
-      --teal:      #2dd4bf;
+      --teal:      #d96c96;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -71,9 +71,9 @@
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       background-color: var(--bg);
       background-image:
-        radial-gradient(ellipse 80% 50% at 95%  0%,  rgba(85,163,255,.16) 0%, transparent 50%),
+        radial-gradient(ellipse 80% 50% at 95%  0%,  rgba(217,108,150,.16) 0%, transparent 50%),
         radial-gradient(ellipse 55% 35% at 5%   8%,  rgba(53,211,155,.10)  0%, transparent 45%),
-        radial-gradient(ellipse 70% 60% at 50% 60%,  rgba(124,92,255,.07)  0%, transparent 60%);
+        radial-gradient(ellipse 70% 60% at 50% 60%,  rgba(247,181,205,.07)  0%, transparent 60%);
       color: var(--text);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
@@ -93,22 +93,22 @@
     .logo-wrap img { height: 34px; width: auto; display: block; }
     nav { display: flex; align-items: center; gap: 2px; }
     nav a { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500; padding: 7px 14px; border-radius: 8px; transition: all .2s; }
-    nav a:hover, nav a.active { color: var(--brand); background: rgba(85,163,255,.09); }
+    nav a:hover, nav a.active { color: var(--brand); background: rgba(217,108,150,.09); }
     .nav-cta {
       flex-shrink: 0; padding: 10px 22px; border-radius: 10px;
       background: linear-gradient(135deg, var(--brand), var(--brand-2));
       color: #fff; font-size: 14px; font-weight: 700; text-decoration: none;
-      transition: box-shadow .25s; box-shadow: 0 4px 18px rgba(85,163,255,.3);
+      transition: box-shadow .25s; box-shadow: 0 4px 18px rgba(217,108,150,.3);
     }
-    .nav-cta:hover { box-shadow: 0 6px 28px rgba(85,163,255,.5); }
+    .nav-cta:hover { box-shadow: 0 6px 28px rgba(217,108,150,.5); }
 
     /* ── BUTTONS ─── */
     .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 12px; font-size: 15px; font-weight: 700; text-decoration: none; cursor: pointer; border: 1.5px solid transparent; transition: all .25s; font-family: inherit; }
     .btn:hover { transform: translateY(-2px); }
-    .btn-primary { background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #fff; box-shadow: 0 8px 28px rgba(85,163,255,.3); }
-    .btn-primary:hover { box-shadow: 0 12px 40px rgba(85,163,255,.5); }
+    .btn-primary { background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #fff; box-shadow: 0 8px 28px rgba(217,108,150,.3); }
+    .btn-primary:hover { box-shadow: 0 12px 40px rgba(217,108,150,.5); }
     .btn-ghost { background: rgba(255,255,255,.05); border-color: var(--line-2); color: var(--text-2); }
-    .btn-ghost:hover { border-color: var(--brand); color: var(--brand); background: rgba(85,163,255,.08); }
+    .btn-ghost:hover { border-color: var(--brand); color: var(--brand); background: rgba(217,108,150,.08); }
 
     /* ── SHARED ─── */
     .section { padding: 96px 0; }
@@ -117,7 +117,7 @@
     .eyebrow {
       display: inline-flex; align-items: center; gap: 8px; margin-bottom: 18px;
       padding: 6px 14px; border-radius: 999px;
-      border: 1px solid rgba(85,163,255,.3); background: rgba(85,163,255,.08);
+      border: 1px solid rgba(217,108,150,.3); background: rgba(217,108,150,.08);
       color: var(--brand); font-size: 11px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
     }
     .eyebrow::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--brand); }
@@ -143,8 +143,8 @@
 
     /* ── STORY STRIP ─── */
     .story-strip {
-      background: linear-gradient(135deg, rgba(85,163,255,.08), rgba(53,211,155,.06));
-      border: 1px solid rgba(85,163,255,.2);
+      background: linear-gradient(135deg, rgba(217,108,150,.08), rgba(53,211,155,.06));
+      border: 1px solid rgba(217,108,150,.2);
       border-radius: 24px; padding: 40px 48px;
       display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center;
     }
@@ -172,7 +172,7 @@
       border-left: 3px solid var(--brand); transition: border-color .2s, transform .2s;
     }
     .svc-card:hover { border-left-color: var(--green); transform: translateX(3px); }
-    .svc-num { flex-shrink: 0; font-size: 12px; font-weight: 800; color: var(--brand); letter-spacing: .06em; background: rgba(85,163,255,.1); border-radius: 8px; padding: 5px 9px; }
+    .svc-num { flex-shrink: 0; font-size: 12px; font-weight: 800; color: var(--brand); letter-spacing: .06em; background: rgba(217,108,150,.1); border-radius: 8px; padding: 5px 9px; }
     .svc-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
     .svc-card p { font-size: 14px; color: var(--muted); line-height: 1.65; }
 
@@ -186,19 +186,19 @@
     .use-icon {
       width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;
       font-size: 22px; margin-bottom: 18px;
-      background: linear-gradient(135deg, rgba(85,163,255,.15), rgba(53,211,155,.1));
-      border: 1px solid rgba(85,163,255,.2);
+      background: linear-gradient(135deg, rgba(217,108,150,.15), rgba(53,211,155,.1));
+      border: 1px solid rgba(217,108,150,.2);
     }
     .use-card h3 { font-size: 17px; font-weight: 700; margin-bottom: 10px; }
     .use-card p { font-size: 14px; color: var(--muted); line-height: 1.65; margin-bottom: 14px; }
     .use-tags { display: flex; flex-wrap: wrap; gap: 6px; }
-    .use-tag { font-size: 11px; padding: 3px 10px; border-radius: 999px; background: rgba(85,163,255,.09); border: 1px solid rgba(85,163,255,.2); color: var(--brand); }
+    .use-tag { font-size: 11px; padding: 3px 10px; border-radius: 999px; background: rgba(217,108,150,.09); border: 1px solid rgba(217,108,150,.2); color: var(--brand); }
 
     /* ── ARCHITECTURE ─── */
     .arch-visual { border-radius: 20px; overflow: hidden; border: 1px solid var(--line); margin-bottom: 28px; }
     .arch-visual svg { display: block; width: 100%; height: auto; }
     .arch-tags { display: flex; flex-wrap: wrap; gap: 10px; }
-    .arch-tag { padding: 8px 18px; border-radius: 10px; background: rgba(85,163,255,.08); border: 1px solid rgba(85,163,255,.2); color: var(--text-2); font-size: 13px; font-weight: 600; }
+    .arch-tag { padding: 8px 18px; border-radius: 10px; background: rgba(217,108,150,.08); border: 1px solid rgba(217,108,150,.2); color: var(--text-2); font-size: 13px; font-weight: 600; }
 
     /* ── COMPARISON ─── */
     .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 40px; }
@@ -206,7 +206,7 @@
       border-radius: 20px; padding: 32px;
       background: var(--bg-card); border: 1px solid var(--line);
     }
-    .compare-col.oac { border-color: rgba(85,163,255,.4); background: linear-gradient(145deg, rgba(85,163,255,.07), rgba(53,211,155,.04)); }
+    .compare-col.oac { border-color: rgba(217,108,150,.4); background: linear-gradient(145deg, rgba(217,108,150,.07), rgba(53,211,155,.04)); }
     .compare-col h3 { font-size: 20px; font-weight: 800; margin-bottom: 20px; }
     .compare-col.oac h3 { color: var(--brand); }
     .compare-col.pbi h3 { color: var(--gold); }
@@ -217,7 +217,7 @@
     .compare-list.yellow li::before { content: '→'; color: var(--gold); font-weight: 700; }
     .compare-note {
       margin-top: 32px; padding: 24px 28px; border-radius: 16px;
-      background: rgba(85,163,255,.06); border: 1px solid rgba(85,163,255,.2);
+      background: rgba(217,108,150,.06); border: 1px solid rgba(217,108,150,.2);
       font-size: 15px; color: var(--text-2); line-height: 1.7;
     }
     .compare-note strong { color: var(--text); }
@@ -237,7 +237,7 @@
       background: linear-gradient(135deg, var(--brand), var(--brand-2));
       font-size: 20px; font-weight: 900; color: #fff;
       display: flex; align-items: center; justify-content: center;
-      box-shadow: 0 0 0 6px rgba(85,163,255,.12);
+      box-shadow: 0 0 0 6px rgba(217,108,150,.12);
       position: relative; z-index: 1;
     }
     .j-tag { font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--brand); margin-bottom: 10px; }
@@ -266,8 +266,8 @@
     }
     .managed-icon {
       flex-shrink: 0; width: 44px; height: 44px; border-radius: 12px;
-      background: linear-gradient(135deg, rgba(85,163,255,.2), rgba(53,211,155,.15));
-      border: 1px solid rgba(85,163,255,.25);
+      background: linear-gradient(135deg, rgba(217,108,150,.2), rgba(53,211,155,.15));
+      border: 1px solid rgba(217,108,150,.25);
       display: flex; align-items: center; justify-content: center; font-size: 20px;
     }
     .managed-item h3 { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
@@ -275,8 +275,8 @@
 
     /* ── CTA ─── */
     .cta-section {
-      background: linear-gradient(135deg, rgba(85,163,255,.1), rgba(124,92,255,.1));
-      border: 1px solid rgba(85,163,255,.25); border-radius: 28px; padding: 64px 56px;
+      background: linear-gradient(135deg, rgba(217,108,150,.1), rgba(247,181,205,.1));
+      border: 1px solid rgba(217,108,150,.25); border-radius: 28px; padding: 64px 56px;
       display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center;
     }
     .cta-title { font-size: 38px; font-weight: 900; line-height: 1.12; letter-spacing: -.025em; margin-bottom: 16px; }
@@ -296,8 +296,8 @@
     }
     .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--brand); }
     .form-group select option { background: var(--bg-deep); }
-    .form-submit { width: 100%; padding: 14px; border-radius: 12px; border: none; cursor: pointer; font-size: 15px; font-weight: 700; font-family: inherit; background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #fff; box-shadow: 0 8px 28px rgba(85,163,255,.3); transition: box-shadow .25s, transform .2s; }
-    .form-submit:hover { box-shadow: 0 12px 40px rgba(85,163,255,.5); transform: translateY(-2px); }
+    .form-submit { width: 100%; padding: 14px; border-radius: 12px; border: none; cursor: pointer; font-size: 15px; font-weight: 700; font-family: inherit; background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #fff; box-shadow: 0 8px 28px rgba(217,108,150,.3); transition: box-shadow .25s, transform .2s; }
+    .form-submit:hover { box-shadow: 0 12px 40px rgba(217,108,150,.5); transform: translateY(-2px); }
 
     /* ── FOOTER ─── */
     footer { background: rgba(8,17,31,.8); border-top: 1px solid rgba(36,58,97,.7); padding: 56px 0 32px; }
@@ -388,7 +388,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="header-inner">
       <div class="logo-wrap">
         <a href="https://inthegrasoftware.com">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2026/02/Logo_oracle_header.svg" alt="Inthegra Software" />
+          <img src="img/wp/2026/02/Logo_oracle_header.svg" alt="Inthegra Software" />
         </a>
       </div>
       <nav>
@@ -439,19 +439,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="hero-visual fade-up" style="transition-delay: .15s;">
         <svg viewBox="0 0 920 640" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <linearGradient id="hg1" x1="0" x2="1"><stop offset="0%" stop-color="#55a3ff"/><stop offset="100%" stop-color="#7c5cff"/></linearGradient>
+            <linearGradient id="hg1" x1="0" x2="1"><stop offset="0%" stop-color="#d96c96"/><stop offset="100%" stop-color="#F7B5CD"/></linearGradient>
             <linearGradient id="hg2" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#0f1933"/><stop offset="100%" stop-color="#162442"/></linearGradient>
-            <linearGradient id="hg3" x1="0" x2="1"><stop offset="0%" stop-color="#55a3ff"/><stop offset="100%" stop-color="#35d39b"/></linearGradient>
+            <linearGradient id="hg3" x1="0" x2="1"><stop offset="0%" stop-color="#d96c96"/><stop offset="100%" stop-color="#35d39b"/></linearGradient>
           </defs>
           <rect width="920" height="640" rx="0" fill="url(#hg2)"/>
-          <ellipse cx="460" cy="320" rx="240" ry="130" fill="rgba(85,163,255,.05)"/>
+          <ellipse cx="460" cy="320" rx="240" ry="130" fill="rgba(217,108,150,.05)"/>
 
           <!-- Panel izquierdo: Fuentes -->
           <rect x="44" y="70" width="252" height="500" rx="22" fill="#121f3b" stroke="#30446f"/>
           <text x="80" y="108" fill="#eef4ff" font-size="18" font-weight="700" font-family="Arial">Fuentes</text>
 
           <!-- Oracle EBS/ERP -->
-          <rect x="68" y="122" width="200" height="80" rx="12" fill="#162040" stroke="rgba(85,163,255,.35)"/>
+          <rect x="68" y="122" width="200" height="80" rx="12" fill="#162040" stroke="rgba(217,108,150,.35)"/>
           <circle cx="90" cy="150" r="13" fill="rgba(255,100,50,.2)"/>
           <text x="90" y="155" fill="#ff6432" font-size="11" font-weight="800" font-family="Arial" text-anchor="middle">ERP</text>
           <text x="112" y="147" fill="#eef4ff" font-size="13" font-weight="700" font-family="Arial">Oracle EBS / Fusion</text>
@@ -468,9 +468,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <text x="112" y="285" fill="#35d39b" font-size="10" font-family="Arial">● Actualización diaria</text>
 
           <!-- CRM / APIs -->
-          <rect x="68" y="306" width="200" height="80" rx="12" fill="#162040" stroke="rgba(124,92,255,.3)"/>
-          <circle cx="90" cy="334" r="13" fill="rgba(124,92,255,.15)"/>
-          <text x="90" y="339" fill="#a78bfa" font-size="10" font-weight="800" font-family="Arial" text-anchor="middle">API</text>
+          <rect x="68" y="306" width="200" height="80" rx="12" fill="#162040" stroke="rgba(247,181,205,.3)"/>
+          <circle cx="90" cy="334" r="13" fill="rgba(247,181,205,.15)"/>
+          <text x="90" y="339" fill="#F7B5CD" font-size="10" font-weight="800" font-family="Arial" text-anchor="middle">API</text>
           <text x="112" y="331" fill="#eef4ff" font-size="13" font-weight="700" font-family="Arial">CRM / APIs</text>
           <text x="112" y="347" fill="#7d9ac4" font-size="11" font-family="Arial">Salesforce · REST · Web</text>
           <text x="112" y="377" fill="#35d39b" font-size="10" font-family="Arial">● Integrado vía Data Flow</text>
@@ -495,8 +495,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <text x="380" y="208" fill="rgba(255,255,255,.6)" font-size="10" font-family="Arial">Una sola fuente de verdad</text>
 
           <!-- Analytics Engine -->
-          <rect x="360" y="234" width="200" height="80" rx="14" fill="#162040" stroke="rgba(85,163,255,.4)"/>
-          <text x="380" y="261" fill="#55a3ff" font-size="13" font-weight="700" font-family="Arial">Analytics Engine</text>
+          <rect x="360" y="234" width="200" height="80" rx="14" fill="#162040" stroke="rgba(217,108,150,.4)"/>
+          <text x="380" y="261" fill="#d96c96" font-size="13" font-weight="700" font-family="Arial">Analytics Engine</text>
           <text x="380" y="277" fill="#7d9ac4" font-size="11" font-family="Arial">Dashboards · Análisis</text>
           <text x="380" y="305" fill="#7d9ac4" font-size="10" font-family="Arial">Drilldown · Filtros · Alertas</text>
 
@@ -507,8 +507,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <text x="380" y="399" fill="#7d9ac4" font-size="10" font-family="Arial">Exploración conversacional</text>
 
           <!-- Reporting -->
-          <rect x="360" y="422" width="200" height="80" rx="14" fill="#162040" stroke="rgba(124,92,255,.3)"/>
-          <text x="380" y="449" fill="#a78bfa" font-size="13" font-weight="700" font-family="Arial">Reporting Enterprise</text>
+          <rect x="360" y="422" width="200" height="80" rx="14" fill="#162040" stroke="rgba(247,181,205,.3)"/>
+          <text x="380" y="449" fill="#F7B5CD" font-size="13" font-weight="700" font-family="Arial">Reporting Enterprise</text>
           <text x="380" y="465" fill="#7d9ac4" font-size="11" font-family="Arial">Pixel-perfect · Publisher</text>
           <text x="380" y="493" fill="#7d9ac4" font-size="10" font-family="Arial">Distribución automática</text>
           <text x="360" y="548" fill="#7d9ac4" font-size="11" font-family="Arial">Oracle Analytics Cloud Platform</text>
@@ -518,14 +518,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <text x="664" y="108" fill="#eef4ff" font-size="18" font-weight="700" font-family="Arial">Negocio</text>
 
           <!-- Dashboard ejecutivo con mini chart -->
-          <rect x="648" y="122" width="210" height="110" rx="12" fill="#162040" stroke="rgba(85,163,255,.35)"/>
+          <rect x="648" y="122" width="210" height="110" rx="12" fill="#162040" stroke="rgba(217,108,150,.35)"/>
           <text x="664" y="144" fill="#7d9ac4" font-size="11" font-family="Arial">Dirección</text>
           <text x="664" y="162" fill="#eef4ff" font-size="13" font-weight="700" font-family="Arial">Dashboard Ejecutivo</text>
           <!-- mini bar chart -->
-          <rect x="664" y="172" width="20" height="38" rx="3" fill="rgba(85,163,255,.3)"/>
-          <rect x="690" y="183" width="20" height="27" rx="3" fill="rgba(85,163,255,.4)"/>
+          <rect x="664" y="172" width="20" height="38" rx="3" fill="rgba(217,108,150,.3)"/>
+          <rect x="690" y="183" width="20" height="27" rx="3" fill="rgba(217,108,150,.4)"/>
           <rect x="716" y="167" width="20" height="43" rx="3" fill="url(#hg1)"/>
-          <rect x="742" y="177" width="20" height="33" rx="3" fill="rgba(85,163,255,.35)"/>
+          <rect x="742" y="177" width="20" height="33" rx="3" fill="rgba(217,108,150,.35)"/>
           <rect x="768" y="162" width="20" height="48" rx="3" fill="url(#hg3)"/>
           <text x="664" y="222" fill="#35d39b" font-size="10" font-family="Arial">↑ +18% vs objetivo</text>
 
@@ -539,12 +539,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <text x="664" y="328" fill="#35d39b" font-size="10" font-family="Arial">Exploración sin IT</text>
 
           <!-- Reporting operativo -->
-          <rect x="648" y="346" width="210" height="90" rx="12" fill="#162040" stroke="rgba(124,92,255,.3)"/>
+          <rect x="648" y="346" width="210" height="90" rx="12" fill="#162040" stroke="rgba(247,181,205,.3)"/>
           <text x="664" y="368" fill="#7d9ac4" font-size="11" font-family="Arial">Operaciones</text>
           <text x="664" y="386" fill="#eef4ff" font-size="13" font-weight="700" font-family="Arial">Reportes Operativos</text>
-          <rect x="664" y="396" width="186" height="8" rx="4" fill="rgba(124,92,255,.2)"/>
-          <rect x="664" y="408" width="140" height="7" rx="4" fill="rgba(124,92,255,.15)"/>
-          <text x="664" y="430" fill="#a78bfa" font-size="10" font-family="Arial">Pixel-perfect · Distribuidos</text>
+          <rect x="664" y="396" width="186" height="8" rx="4" fill="rgba(247,181,205,.2)"/>
+          <rect x="664" y="408" width="140" height="7" rx="4" fill="rgba(247,181,205,.15)"/>
+          <text x="664" y="430" fill="#F7B5CD" font-size="10" font-family="Arial">Pixel-perfect · Distribuidos</text>
 
           <!-- KPI final -->
           <rect x="648" y="448" width="210" height="72" rx="12" fill="#162040" stroke="rgba(255,209,102,.25)"/>
@@ -758,22 +758,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="arch-visual fade-up">
       <svg viewBox="0 0 1200 520" xmlns="http://www.w3.org/2000/svg">
         <defs>
-          <linearGradient id="ag1" x1="0" x2="1"><stop offset="0%" stop-color="#55a3ff"/><stop offset="100%" stop-color="#7c5cff"/></linearGradient>
-          <linearGradient id="ag2" x1="0" x2="1"><stop offset="0%" stop-color="#55a3ff"/><stop offset="100%" stop-color="#35d39b"/></linearGradient>
+          <linearGradient id="ag1" x1="0" x2="1"><stop offset="0%" stop-color="#d96c96"/><stop offset="100%" stop-color="#F7B5CD"/></linearGradient>
+          <linearGradient id="ag2" x1="0" x2="1"><stop offset="0%" stop-color="#d96c96"/><stop offset="100%" stop-color="#35d39b"/></linearGradient>
           <linearGradient id="abg" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#0f1933"/><stop offset="100%" stop-color="#0d1628"/></linearGradient>
         </defs>
         <rect width="1200" height="520" rx="20" fill="url(#abg)"/>
 
         <!-- Layer labels -->
-        <text x="162" y="40" fill="#55a3ff" font-size="13" font-weight="700" font-family="Arial" text-anchor="middle">FUENTES DE DATOS</text>
+        <text x="162" y="40" fill="#d96c96" font-size="13" font-weight="700" font-family="Arial" text-anchor="middle">FUENTES DE DATOS</text>
         <text x="600" y="40" fill="#35d39b" font-size="13" font-weight="700" font-family="Arial" text-anchor="middle">ORACLE ANALYTICS CLOUD</text>
-        <text x="1038" y="40" fill="#a78bfa" font-size="13" font-weight="700" font-family="Arial" text-anchor="middle">CONSUMO</text>
+        <text x="1038" y="40" fill="#F7B5CD" font-size="13" font-weight="700" font-family="Arial" text-anchor="middle">CONSUMO</text>
 
         <!-- Column 1: Fuentes -->
         <rect x="62" y="60" width="200" height="400" rx="18" fill="#121f3b" stroke="#243860"/>
         <!-- EBS -->
-        <rect x="82" y="88" width="160" height="70" rx="12" fill="#162040" stroke="rgba(85,163,255,.3)"/>
-        <text x="102" y="114" fill="#55a3ff" font-size="12" font-weight="700" font-family="Arial">Oracle EBS / Fusion</text>
+        <rect x="82" y="88" width="160" height="70" rx="12" fill="#162040" stroke="rgba(217,108,150,.3)"/>
+        <text x="102" y="114" fill="#d96c96" font-size="12" font-weight="700" font-family="Arial">Oracle EBS / Fusion</text>
         <text x="102" y="130" fill="#7d9ac4" font-size="11" font-family="Arial">Finance · HR · SCM</text>
         <text x="102" y="147" fill="#35d39b" font-size="10" font-family="Arial">● Conector nativo OAC</text>
         <!-- Oracle DB -->
@@ -782,8 +782,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <text x="102" y="216" fill="#7d9ac4" font-size="11" font-family="Arial">Tablas · Vistas · ADW</text>
         <text x="102" y="233" fill="#35d39b" font-size="10" font-family="Arial">● Acceso directo</text>
         <!-- APIs -->
-        <rect x="82" y="260" width="160" height="70" rx="12" fill="#162040" stroke="rgba(124,92,255,.25)"/>
-        <text x="102" y="286" fill="#a78bfa" font-size="12" font-weight="700" font-family="Arial">APIs / CRM / SaaS</text>
+        <rect x="82" y="260" width="160" height="70" rx="12" fill="#162040" stroke="rgba(247,181,205,.25)"/>
+        <text x="102" y="286" fill="#F7B5CD" font-size="12" font-weight="700" font-family="Arial">APIs / CRM / SaaS</text>
         <text x="102" y="302" fill="#7d9ac4" font-size="11" font-family="Arial">REST · Salesforce · Web</text>
         <text x="102" y="319" fill="#35d39b" font-size="10" font-family="Arial">● Data Flow OAC</text>
         <!-- Files -->
@@ -795,8 +795,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- Column 2: OAC - with more details -->
         <rect x="390" y="52" width="420" height="416" rx="18" fill="#121f3b" stroke="#30446f"/>
         <!-- Data Flow / Integración -->
-        <rect x="414" y="78" width="174" height="72" rx="12" fill="#162040" stroke="rgba(85,163,255,.3)"/>
-        <text x="434" y="103" fill="#55a3ff" font-size="12" font-weight="700" font-family="Arial">Data Flow</text>
+        <rect x="414" y="78" width="174" height="72" rx="12" fill="#162040" stroke="rgba(217,108,150,.3)"/>
+        <text x="434" y="103" fill="#d96c96" font-size="12" font-weight="700" font-family="Arial">Data Flow</text>
         <text x="434" y="119" fill="#7d9ac4" font-size="11" font-family="Arial">ETL / Preparación</text>
         <text x="434" y="138" fill="#7d9ac4" font-size="10" font-family="Arial">Enriquecimiento</text>
         <!-- Data Sets -->
@@ -810,12 +810,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <text x="440" y="218" fill="rgba(255,255,255,.85)" font-size="11" font-family="Arial">Métricas · KPIs · Jerarquías · Reglas de negocio · Seguridad</text>
         <text x="440" y="234" fill="rgba(255,255,255,.7)" font-size="10" font-family="Arial">Una sola fuente de verdad para toda la organización</text>
         <!-- Analytics + Reporting -->
-        <rect x="414" y="268" width="174" height="80" rx="12" fill="#162040" stroke="rgba(85,163,255,.3)"/>
-        <text x="434" y="294" fill="#55a3ff" font-size="12" font-weight="700" font-family="Arial">Analytics Engine</text>
+        <rect x="414" y="268" width="174" height="80" rx="12" fill="#162040" stroke="rgba(217,108,150,.3)"/>
+        <text x="434" y="294" fill="#d96c96" font-size="12" font-weight="700" font-family="Arial">Analytics Engine</text>
         <text x="434" y="310" fill="#7d9ac4" font-size="11" font-family="Arial">Dashboards · Analysis</text>
         <text x="434" y="340" fill="#7d9ac4" font-size="10" font-family="Arial">Drilldown · Alertas</text>
-        <rect x="606" y="268" width="174" height="80" rx="12" fill="#162040" stroke="rgba(124,92,255,.25)"/>
-        <text x="626" y="294" fill="#a78bfa" font-size="12" font-weight="700" font-family="Arial">BI Publisher</text>
+        <rect x="606" y="268" width="174" height="80" rx="12" fill="#162040" stroke="rgba(247,181,205,.25)"/>
+        <text x="626" y="294" fill="#F7B5CD" font-size="12" font-weight="700" font-family="Arial">BI Publisher</text>
         <text x="626" y="310" fill="#7d9ac4" font-size="11" font-family="Arial">Pixel-perfect Reports</text>
         <text x="626" y="340" fill="#7d9ac4" font-size="10" font-family="Arial">Distribución auto</text>
         <!-- AI -->
@@ -826,8 +826,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- Column 3: Consumo -->
         <rect x="938" y="60" width="200" height="400" rx="18" fill="#121f3b" stroke="#243860"/>
         <!-- Dirección -->
-        <rect x="958" y="84" width="160" height="70" rx="12" fill="#162040" stroke="rgba(85,163,255,.3)"/>
-        <text x="978" y="110" fill="#55a3ff" font-size="12" font-weight="700" font-family="Arial">Dirección</text>
+        <rect x="958" y="84" width="160" height="70" rx="12" fill="#162040" stroke="rgba(217,108,150,.3)"/>
+        <text x="978" y="110" fill="#d96c96" font-size="12" font-weight="700" font-family="Arial">Dirección</text>
         <text x="978" y="126" fill="#7d9ac4" font-size="11" font-family="Arial">KPIs · Semáforos</text>
         <text x="978" y="143" fill="#35d39b" font-size="10" font-family="Arial">Alertas proactivas</text>
         <!-- Operaciones -->
@@ -836,8 +836,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <text x="978" y="214" fill="#7d9ac4" font-size="11" font-family="Arial">Reports operativos</text>
         <text x="978" y="231" fill="#7d9ac4" font-size="10" font-family="Arial">SLA · Cartera · Ops</text>
         <!-- Analistas -->
-        <rect x="958" y="260" width="160" height="70" rx="12" fill="#162040" stroke="rgba(124,92,255,.25)"/>
-        <text x="978" y="286" fill="#a78bfa" font-size="12" font-weight="700" font-family="Arial">Analistas</text>
+        <rect x="958" y="260" width="160" height="70" rx="12" fill="#162040" stroke="rgba(247,181,205,.25)"/>
+        <text x="978" y="286" fill="#F7B5CD" font-size="12" font-weight="700" font-family="Arial">Analistas</text>
         <text x="978" y="302" fill="#7d9ac4" font-size="11" font-family="Arial">Autoservicio + IA</text>
         <text x="978" y="319" fill="#7d9ac4" font-size="10" font-family="Arial">Data prep libre</text>
         <!-- Externos / Regulatorio -->
@@ -847,7 +847,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <text x="978" y="408" fill="#7d9ac4" font-size="10" font-family="Arial">Distribución auto</text>
 
         <!-- Arrows Fuentes → OAC -->
-        <path d="M262 123 H390 M262 209 H390 M262 295 H390 M262 381 H390" stroke="#55a3ff" stroke-width="6" stroke-linecap="round" opacity=".7"/>
+        <path d="M262 123 H390 M262 209 H390 M262 295 H390 M262 381 H390" stroke="#d96c96" stroke-width="6" stroke-linecap="round" opacity=".7"/>
         <!-- Arrows OAC → Consumo -->
         <path d="M810 119 H938 M810 209 H938 M810 298 H938 M810 384 H938" stroke="url(#ag2)" stroke-width="6" stroke-linecap="round" opacity=".7"/>
       </svg>
@@ -959,7 +959,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="ai-visual fade-up" style="transition-delay:.15s;">
         <svg viewBox="0 0 560 640" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <linearGradient id="aig1" x1="0" x2="1"><stop offset="0%" stop-color="#55a3ff"/><stop offset="100%" stop-color="#7c5cff"/></linearGradient>
+            <linearGradient id="aig1" x1="0" x2="1"><stop offset="0%" stop-color="#d96c96"/><stop offset="100%" stop-color="#F7B5CD"/></linearGradient>
             <linearGradient id="aig2" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#0f1933"/><stop offset="100%" stop-color="#162442"/></linearGradient>
           </defs>
           <rect width="560" height="640" rx="20" fill="url(#aig2)"/>
@@ -972,7 +972,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <circle cx="64" cy="26" r="8" fill="#35d39b" opacity=".6"/>
           <text x="200" y="30" fill="#7d9ac4" font-size="12" font-family="Arial" text-anchor="middle">Oracle Analytics · Ask Data</text>
           <!-- Search/Ask bar -->
-          <rect x="24" y="66" width="512" height="44" rx="14" fill="#162040" stroke="rgba(85,163,255,.4)"/>
+          <rect x="24" y="66" width="512" height="44" rx="14" fill="#162040" stroke="rgba(217,108,150,.4)"/>
           <text x="52" y="93" fill="#7d9ac4" font-size="13" font-family="Arial">¿Cuál fue la venta por región en Q3?</text>
           <rect x="492" y="74" width="34" height="28" rx="8" fill="url(#aig1)"/>
           <text x="509" y="92" fill="#fff" font-size="14" font-weight="700" font-family="Arial" text-anchor="middle">→</text>
@@ -990,7 +990,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <rect x="160" y="175" width="56" height="87" rx="6" fill="url(#aig1)"/>
           <rect x="240" y="200" width="56" height="62" rx="6" fill="url(#aig1)" opacity=".8"/>
           <rect x="320" y="182" width="56" height="80" rx="6" fill="url(#aig1)" opacity=".95"/>
-          <rect x="400" y="168" width="56" height="94" rx="6" fill="url(#aig2)" stroke="#55a3ff"/>
+          <rect x="400" y="168" width="56" height="94" rx="6" fill="url(#aig2)" stroke="#d96c96"/>
           <rect x="400" y="168" width="56" height="94" rx="6" fill="url(#aig1)"/>
           <!-- Value labels -->
           <text x="108" y="186" fill="#fff" font-size="11" font-family="Arial" text-anchor="middle">$2.1M</text>
@@ -1011,16 +1011,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <text x="44" y="422" fill="#c0d4f0" font-size="12" font-family="Arial">el promedio. Revisá la contribución de nuevos canales.</text>
           <!-- Suggestion chips -->
           <text x="24" y="458" fill="#7d9ac4" font-size="11" font-family="Arial">Sugerencias:</text>
-          <rect x="24" y="466" width="162" height="30" rx="8" fill="rgba(85,163,255,.1)" stroke="rgba(85,163,255,.3)"/>
-          <text x="105" y="485" fill="#55a3ff" font-size="11" font-family="Arial" text-anchor="middle">Comparar con Q3 2023</text>
-          <rect x="196" y="466" width="148" height="30" rx="8" fill="rgba(85,163,255,.1)" stroke="rgba(85,163,255,.3)"/>
-          <text x="270" y="485" fill="#55a3ff" font-size="11" font-family="Arial" text-anchor="middle">Desglosar por canal</text>
-          <rect x="354" y="466" width="148" height="30" rx="8" fill="rgba(85,163,255,.1)" stroke="rgba(85,163,255,.3)"/>
-          <text x="428" y="485" fill="#55a3ff" font-size="11" font-family="Arial" text-anchor="middle">Ver forecast Q4</text>
+          <rect x="24" y="466" width="162" height="30" rx="8" fill="rgba(217,108,150,.1)" stroke="rgba(217,108,150,.3)"/>
+          <text x="105" y="485" fill="#d96c96" font-size="11" font-family="Arial" text-anchor="middle">Comparar con Q3 2023</text>
+          <rect x="196" y="466" width="148" height="30" rx="8" fill="rgba(217,108,150,.1)" stroke="rgba(217,108,150,.3)"/>
+          <text x="270" y="485" fill="#d96c96" font-size="11" font-family="Arial" text-anchor="middle">Desglosar por canal</text>
+          <rect x="354" y="466" width="148" height="30" rx="8" fill="rgba(217,108,150,.1)" stroke="rgba(217,108,150,.3)"/>
+          <text x="428" y="485" fill="#d96c96" font-size="11" font-family="Arial" text-anchor="middle">Ver forecast Q4</text>
           <!-- Bottom KPIs -->
           <rect x="24" y="510" width="155" height="80" rx="12" fill="#121f3b" stroke="#243860"/>
           <text x="44" y="534" fill="#7d9ac4" font-size="10" font-family="Arial">Total Q3</text>
-          <text x="44" y="558" fill="#55a3ff" font-size="22" font-weight="900" font-family="Arial">$11.7M</text>
+          <text x="44" y="558" fill="#d96c96" font-size="22" font-weight="900" font-family="Arial">$11.7M</text>
           <text x="44" y="578" fill="#35d39b" font-size="11" font-family="Arial">↑ +18% vs obj.</text>
           <rect x="195" y="510" width="155" height="80" rx="12" fill="#121f3b" stroke="#243860"/>
           <text x="215" y="534" fill="#7d9ac4" font-size="10" font-family="Arial">Mejor región</text>
@@ -1108,13 +1108,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div style="background: var(--bg-card); border: 1px solid var(--line); border-radius: 24px; padding: 32px; overflow: hidden;">
           <svg viewBox="0 0 520 560" xmlns="http://www.w3.org/2000/svg">
             <defs>
-              <linearGradient id="mg1" x1="0" x2="1"><stop offset="0%" stop-color="#55a3ff"/><stop offset="100%" stop-color="#35d39b"/></linearGradient>
+              <linearGradient id="mg1" x1="0" x2="1"><stop offset="0%" stop-color="#d96c96"/><stop offset="100%" stop-color="#35d39b"/></linearGradient>
               <linearGradient id="mg2" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#0f1933"/><stop offset="100%" stop-color="#162442"/></linearGradient>
             </defs>
             <rect width="520" height="560" rx="16" fill="url(#mg2)"/>
             <!-- Header -->
             <rect x="16" y="16" width="488" height="48" rx="12" fill="#0d1628"/>
-            <circle cx="38" cy="40" r="10" fill="rgba(85,163,255,.3)"/>
+            <circle cx="38" cy="40" r="10" fill="rgba(217,108,150,.3)"/>
             <text x="56" y="44" fill="#eef4ff" font-size="13" font-weight="700" font-family="Arial">Managed Analytics · Inthegra</text>
             <!-- Adoption chart -->
             <text x="16" y="96" fill="#7d9ac4" font-size="11" font-family="Arial">Adopción activa por área (usuarios/mes)</text>
@@ -1142,7 +1142,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <text x="56" y="330" fill="#eef4ff" font-size="12" font-family="Arial">Métricas de RRHH · Ausentismo + Rotación</text>
             <rect x="32" y="342" width="16" height="16" rx="4" fill="#ffd166"/>
             <text x="56" y="354" fill="#c0d4f0" font-size="12" font-family="Arial">Reporte regulatorio AFIP — en revisión</text>
-            <rect x="32" y="366" width="16" height="16" rx="4" fill="#55a3ff" opacity=".4"/>
+            <rect x="32" y="366" width="16" height="16" rx="4" fill="#d96c96" opacity=".4"/>
             <text x="56" y="378" fill="#7d9ac4" font-size="12" font-family="Arial">Integración API Salesforce · pendiente</text>
             <!-- SLA / KPIs -->
             <text x="16" y="428" fill="#7d9ac4" font-size="11" font-family="Arial">SLA del mes</text>
@@ -1150,7 +1150,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <text x="70" y="470" fill="#35d39b" font-size="22" font-weight="900" font-family="Arial" text-anchor="middle">98.7%</text>
             <text x="70" y="488" fill="#7d9ac4" font-size="10" font-family="Arial" text-anchor="middle">Satisfacción</text>
             <rect x="138" y="436" width="108" height="72" rx="10" fill="#162040" stroke="#243860"/>
-            <text x="192" y="470" fill="#55a3ff" font-size="22" font-weight="900" font-family="Arial" text-anchor="middle">14</text>
+            <text x="192" y="470" fill="#d96c96" font-size="22" font-weight="900" font-family="Arial" text-anchor="middle">14</text>
             <text x="192" y="488" fill="#7d9ac4" font-size="10" font-family="Arial" text-anchor="middle">Mejoras entregadas</text>
             <rect x="260" y="436" width="108" height="72" rx="10" fill="#162040" stroke="#243860"/>
             <text x="314" y="470" fill="#ffd166" font-size="22" font-weight="900" font-family="Arial" text-anchor="middle">4h</text>
@@ -1196,7 +1196,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="footer-grid">
       <div>
         <div class="footer-logo">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2024/12/logo-footer.png" alt="Inthegra Software" />
+          <img src="img/wp/2024/12/logo-footer.png" alt="Inthegra Software" />
         </div>
         <p class="footer-tagline">Partner Oracle especializado en aplicaciones, analítica y cloud. Más de una década construyendo plataformas empresariales que duran.</p>
       </div>

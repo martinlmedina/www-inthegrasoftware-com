@@ -42,9 +42,9 @@
       --text: #f3f7fb;
       --muted: #b8c5d6;
       --muted-2: #8ea0b8;
-      --brand: #4da3ff;
-      --brand-2: #81c4ff;
-      --accent: #d9ecff;
+      --brand: #ff7200;
+      --brand-2: #ff4d8f;
+      --accent: #ffb8a0;
       --shadow: 0 20px 60px rgba(0,0,0,.28);
       --radius-xl: 28px;
       --radius-lg: 22px;
@@ -59,7 +59,7 @@
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at 85% 12%, rgba(77,163,255,.16), transparent 0 26%),
+        radial-gradient(circle at 85% 12%, rgba(255,114,0,.16), transparent 0 26%),
         radial-gradient(circle at 12% 22%, rgba(129,196,255,.11), transparent 0 18%),
         linear-gradient(180deg, #09111d 0%, #0a1322 42%, #0d1728 100%);
       line-height: 1.6;
@@ -83,7 +83,7 @@
       height: 420px;
       left: -90px;
       top: 90px;
-      background-image: radial-gradient(circle at center, rgba(77,163,255,.45) 0 1px, transparent 1px), radial-gradient(circle at center, rgba(255,255,255,.22) 0 1px, transparent 1px);
+      background-image: radial-gradient(circle at center, rgba(255,114,0,.45) 0 1px, transparent 1px), radial-gradient(circle at center, rgba(255,255,255,.22) 0 1px, transparent 1px);
       background-size: 28px 28px, 56px 56px;
       transform: rotate(14deg);
     }
@@ -93,7 +93,7 @@
       height: 460px;
       right: -110px;
       bottom: 80px;
-      background-image: linear-gradient(135deg, rgba(77,163,255,.45), transparent 65%), radial-gradient(circle at 22% 22%, rgba(255,255,255,.22) 0 2px, transparent 2px);
+      background-image: linear-gradient(135deg, rgba(255,114,0,.45), transparent 65%), radial-gradient(circle at 22% 22%, rgba(255,255,255,.22) 0 2px, transparent 2px);
       background-size: cover, 42px 42px;
       transform: rotate(-8deg);
     }
@@ -121,7 +121,7 @@
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      color: var(--brand-2);
+      color: var(--brand);
       font-size: 13px;
       letter-spacing: .14em;
       text-transform: uppercase;
@@ -133,10 +133,15 @@
       content: "";
       width: 42px;
       height: 1px;
-      background: linear-gradient(90deg, rgba(77,163,255,0), rgba(77,163,255,.95));
+      background: linear-gradient(90deg, rgba(255,114,0,0), rgba(255,114,0,.95));
     }
 
     h1, h2, h3, h4, p { margin: 0; }
+
+    h1, h2 {
+      background: linear-gradient(135deg, #fff 15%, var(--brand) 55%, var(--brand-2) 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
 
     h1 {
       font-size: clamp(2.7rem, 6vw, 5.1rem);
@@ -205,9 +210,9 @@
     }
 
     .button.primary {
-      background: linear-gradient(135deg, var(--brand), #2d7be8);
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
       color: white;
-      box-shadow: 0 10px 28px rgba(77,163,255,.25);
+      box-shadow: 0 10px 28px rgba(255,114,0,.25);
     }
 
     .button.secondary {
@@ -389,7 +394,7 @@
       width: 42px;
       height: 42px;
       border-radius: 12px;
-      background: rgba(77,163,255,.14);
+      background: rgba(255,114,0,.14);
       color: var(--brand-2);
       font-weight: 800;
       margin-bottom: 20px;
@@ -956,7 +961,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="footer-grid">
       <div>
         <div class="footer-logo">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2026/02/Logo_oracle_header.svg" alt="Inthegra Software" />
+          <img src="img/wp/2026/02/Logo_oracle_header.svg" alt="Inthegra Software" />
         </div>
         <p class="footer-tagline">Oracle-native enterprise software para organizaciones que necesitan escalar con control.</p>
       </div>

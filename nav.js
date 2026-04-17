@@ -239,7 +239,7 @@
 
       /* Logo */
       '<div class="sn-logo">',
-        '<a href="home.html">',
+        '<a href="/">',
           '<img src="logo-header.svg" alt="Inthegra Software" />',
         '</a>',
       '</div>',
@@ -442,7 +442,7 @@
     }
 
     /* 4. Mark active link based on current filename */
-    var page = (location.pathname.split('/').pop() || 'home.html').toLowerCase();
+    var page = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
     var links = header.querySelectorAll('.sn-link, .sn-panel-item');
     links.forEach(function (link) {
       var href = (link.getAttribute('href') || '').toLowerCase();

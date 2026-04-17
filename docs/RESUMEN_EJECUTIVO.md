@@ -50,7 +50,7 @@ Sitio web corporativo de Inthegra Software, 100% estatico (sin backend), con **2
 
 | Pagina | Archivo | Que cubre |
 |--------|---------|-----------|
-| Home | home.html | Landing principal, propuesta de valor, CTA |
+| Home | index.html | Landing principal, propuesta de valor, CTA |
 | Contacto | contacto.html | Formulario de contacto, WhatsApp, email |
 | People & Culture | people_culture.html | Equipo, cultura, hiring |
 | Casos de Exito | success_stories.html | JAVER, Valle Fertil SA, Federacion Peruana de Futbol, Sidecreer, INFA, MSPORT |

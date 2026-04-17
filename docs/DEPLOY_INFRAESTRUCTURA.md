@@ -96,7 +96,7 @@ server {
 
     # ── Root del sitio ──
     root /var/www/inthegrasoftware.com;
-    index home.html;
+    index index.html;
     charset utf-8;
 
     # ── Pagina 404 custom ──
@@ -137,7 +137,7 @@ server {
 
     # ── Home ──
     location = / {
-        try_files /home.html =404;
+        try_files /index.html =404;
     }
 
     # ── Productos ──
@@ -235,7 +235,7 @@ RewriteCond %{HTTP_HOST} ^www\.inthegrasoftware\.com$ [NC]
 RewriteRule ^ https://inthegrasoftware.com%{REQUEST_URI} [L,R=301]
 
 # ── Home ──
-RewriteRule ^$ /home.html [L]
+RewriteRule ^$ /index.html [L]
 
 # ── Productos ──
 RewriteRule ^productos/?$ /index_productos.html [L]
@@ -456,7 +456,7 @@ El sitio carga recursos de estos dominios externos. Deben estar permitidos en fi
                    [Nginx]
                       |
          /var/www/inthegrasoftware.com/
-         ├── home.html              → /
+         ├── index.html              → /
          ├── index_productos.html   → /productos/
          ├── landing_*.html         → /productos/*/ y /servicios-oracle/*/
          ├── solutions_*.html       → /soluciones/*/

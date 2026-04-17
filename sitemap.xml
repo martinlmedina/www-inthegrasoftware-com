@@ -26,7 +26,7 @@
 
   ARCHIVOS DEL PROYECTO ↔ URL FINAL:
   ────────────────────────────────────
-  home.html                    → /
+  index.html                   → /
   index_productos.html         → /productos/
   landing_healthcare.html      → /productos/healthcare/
   landing_credit_financial.html→ /productos/credit-financial/

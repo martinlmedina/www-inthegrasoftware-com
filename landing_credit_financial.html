@@ -54,14 +54,14 @@
       --text:      #eef4ff;
       --text-2:    #c0d4f0;
       --muted:     #7d9ac4;
-      --brand:     #6ea8ff;
-      --brand-2:   #84e1ff;
-      --accent:    #8da2ff;
-      --credit:    #6ea8ff;
-      --credit-2:  #84e1ff;
+      --brand:     #179dca;
+      --brand-2:   #5fcce6;
+      --accent:    #5fcce6;
+      --credit:    #179dca;
+      --credit-2:  #5fcce6;
       --green:     #35d39b;
       --gold:      #ffd166;
-      --ai:        #a78bfa;
+      --ai:        #5fcce6;
       --shadow:    0 24px 80px rgba(0,0,0,.32);
       --radius:    20px;
     }
@@ -73,9 +73,9 @@
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       background-color: var(--bg);
       background-image:
-        radial-gradient(ellipse 80% 50% at 100% 0%,  rgba(110,168,255,.12) 0%, transparent 50%),
-        radial-gradient(ellipse 55% 40% at 0%   10%, rgba(132,225,255,.08) 0%, transparent 45%),
-        radial-gradient(ellipse 60% 50% at 50%  80%, rgba(141,162,255,.05) 0%, transparent 55%);
+        radial-gradient(ellipse 80% 50% at 100% 0%,  rgba(23,157,202,.12) 0%, transparent 50%),
+        radial-gradient(ellipse 55% 40% at 0%   10%, rgba(95,204,230,.08) 0%, transparent 45%),
+        radial-gradient(ellipse 60% 50% at 50%  80%, rgba(95,204,230,.05) 0%, transparent 55%);
       color: var(--text);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
@@ -110,15 +110,15 @@
     .eyebrow {
       display: inline-flex; align-items: center; gap: 10px;
       padding: 8px 16px; border-radius: 999px;
-      border: 1px solid rgba(110,168,255,.25);
-      background: rgba(110,168,255,.07);
+      border: 1px solid rgba(23,157,202,.25);
+      background: rgba(23,157,202,.07);
       color: var(--credit-2); font-size: 13px; font-weight: 600;
       letter-spacing: .3px; margin-bottom: 20px;
     }
     .eyebrow-dot {
       width: 7px; height: 7px; border-radius: 50%;
       background: linear-gradient(135deg, var(--credit), var(--credit-2));
-      box-shadow: 0 0 0 5px rgba(110,168,255,.15);
+      box-shadow: 0 0 0 5px rgba(23,157,202,.15);
       flex-shrink: 0;
     }
 
@@ -151,9 +151,9 @@
     .btn-primary {
       color: #07111f;
       background: linear-gradient(135deg, var(--credit-2), var(--credit));
-      box-shadow: 0 12px 32px rgba(110,168,255,.28);
+      box-shadow: 0 12px 32px rgba(23,157,202,.28);
     }
-    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 18px 42px rgba(110,168,255,.38); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 18px 42px rgba(23,157,202,.38); }
     .btn-secondary {
       color: var(--text); border-color: rgba(255,255,255,.15);
       background: rgba(255,255,255,.04);
@@ -169,8 +169,8 @@
       box-shadow: 0 8px 30px rgba(0,0,0,.18);
     }
     .card-highlight {
-      border-color: rgba(110,168,255,.22);
-      background: linear-gradient(160deg, rgba(110,168,255,.08), rgba(132,225,255,.03));
+      border-color: rgba(23,157,202,.22);
+      background: linear-gradient(160deg, rgba(23,157,202,.08), rgba(95,204,230,.03));
     }
 
     /* ── LIST STYLE ── */
@@ -182,14 +182,14 @@
       content: ""; position: absolute; left: 0; top: 8px;
       width: 10px; height: 10px; border-radius: 50%;
       background: linear-gradient(135deg, var(--credit), var(--credit-2));
-      box-shadow: 0 0 0 4px rgba(110,168,255,.12);
+      box-shadow: 0 0 0 4px rgba(23,157,202,.12);
     }
 
     /* ── ICON BOX ── */
     .icon-box {
       width: 48px; height: 48px; border-radius: 14px; margin-bottom: 16px;
-      background: linear-gradient(135deg, rgba(110,168,255,.2), rgba(132,225,255,.06));
-      border: 1px solid rgba(110,168,255,.2);
+      background: linear-gradient(135deg, rgba(23,157,202,.2), rgba(95,204,230,.06));
+      border: 1px solid rgba(23,157,202,.2);
       display: flex; align-items: center; justify-content: center;
       font-size: 20px; flex-shrink: 0;
     }
@@ -204,8 +204,8 @@
     .hero {
       padding: 100px 0 60px;
       background-image:
-        radial-gradient(ellipse 60% 55% at 95% -5%, rgba(110,168,255,.16) 0%, transparent 50%),
-        radial-gradient(ellipse 45% 40% at 5%  15%, rgba(132,225,255,.08) 0%, transparent 50%);
+        radial-gradient(ellipse 60% 55% at 95% -5%, rgba(23,157,202,.16) 0%, transparent 50%),
+        radial-gradient(ellipse 45% 40% at 5%  15%, rgba(95,204,230,.08) 0%, transparent 50%);
     }
     .hero-grid {
       display: grid; grid-template-columns: 1.1fr .9fr;
@@ -214,8 +214,8 @@
     .hero-eyebrow {
       display: inline-flex; align-items: center; gap: 10px;
       padding: 9px 16px; border-radius: 999px;
-      border: 1px solid rgba(110,168,255,.22);
-      background: rgba(110,168,255,.07);
+      border: 1px solid rgba(23,157,202,.22);
+      background: rgba(23,157,202,.07);
       color: #dbe8ff; font-size: 13px; font-weight: 600;
       letter-spacing: .2px; margin-bottom: 22px;
     }
@@ -230,8 +230,8 @@
     .hero-card {
       position: relative;
       background: linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.025));
-      border: 1px solid rgba(110,168,255,.18);
-      box-shadow: var(--shadow), 0 0 0 1px rgba(132,225,255,.04);
+      border: 1px solid rgba(23,157,202,.18);
+      box-shadow: var(--shadow), 0 0 0 1px rgba(95,204,230,.04);
       border-radius: 26px; padding: 28px; overflow: hidden; min-height: 500px;
     }
     .hero-card::before {
@@ -241,7 +241,7 @@
       pointer-events: none;
     }
     .mini-panel {
-      background: rgba(0,15,40,.55); border: 1px solid rgba(110,168,255,.14);
+      background: rgba(0,15,40,.55); border: 1px solid rgba(23,157,202,.14);
       border-radius: 16px; padding: 18px; margin-bottom: 18px;
     }
     .mini-panel strong { display: block; font-size: 15px; color: #dce8ff; margin-bottom: 6px; }
@@ -266,8 +266,8 @@
     }
     .step-num {
       width: 36px; height: 36px; border-radius: 10px; flex-shrink: 0;
-      background: linear-gradient(135deg, rgba(110,168,255,.28), rgba(132,225,255,.08));
-      border: 1px solid rgba(110,168,255,.2);
+      background: linear-gradient(135deg, rgba(23,157,202,.28), rgba(95,204,230,.08));
+      border: 1px solid rgba(23,157,202,.2);
       display: flex; align-items: center; justify-content: center;
       font-size: 12px; font-weight: 800; color: #dff5ff;
     }
@@ -303,8 +303,8 @@
     ━━━━━━━━━━━━━━━━━━━━━━━━━━ */
     .platform-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 20px; align-items: start; }
     .platform-big {
-      background: linear-gradient(160deg, rgba(110,168,255,.09), rgba(132,225,255,.03));
-      border: 1px solid rgba(110,168,255,.2); border-radius: 26px; padding: 36px;
+      background: linear-gradient(160deg, rgba(23,157,202,.09), rgba(95,204,230,.03));
+      border: 1px solid rgba(23,157,202,.2); border-radius: 26px; padding: 36px;
     }
     .platform-big h2 { font-size: clamp(28px, 3.5vw, 42px); margin-bottom: 16px; }
     .platform-big > p { color: var(--muted); font-size: 17px; margin-bottom: 28px; max-width: 54ch; }
@@ -330,15 +330,15 @@
     .pillar {
       padding: 36px; border-radius: 26px;
       background:
-        radial-gradient(circle at top right, rgba(110,168,255,.14), transparent 40%),
+        radial-gradient(circle at top right, rgba(23,157,202,.14), transparent 40%),
         linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.018));
-      border: 1px solid rgba(110,168,255,.15);
+      border: 1px solid rgba(23,157,202,.15);
     }
     .pillar-tag {
       display: inline-block; margin-bottom: 14px; padding: 7px 14px; border-radius: 999px;
       font-size: 11px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase;
-      border: 1px solid rgba(110,168,255,.25); color: var(--credit-2);
-      background: rgba(110,168,255,.07);
+      border: 1px solid rgba(23,157,202,.25); color: var(--credit-2);
+      background: rgba(23,157,202,.07);
     }
     .pillar h3 { font-size: 28px; font-weight: 800; margin-bottom: 10px; }
     .pillar > p { color: var(--muted); font-size: 15px; margin-bottom: 0; }
@@ -392,15 +392,15 @@
     .tech-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 20px; align-items: start; }
     .tech-left {
       padding: 36px; border-radius: 26px;
-      background: linear-gradient(160deg, rgba(110,168,255,.08), rgba(132,225,255,.02));
-      border: 1px solid rgba(110,168,255,.18);
+      background: linear-gradient(160deg, rgba(23,157,202,.08), rgba(95,204,230,.02));
+      border: 1px solid rgba(23,157,202,.18);
     }
     .tech-left h2 { font-size: clamp(26px, 3vw, 38px); margin-bottom: 14px; }
     .tech-left > p { color: var(--muted); font-size: 16px; margin-bottom: 24px; }
     .stack-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 20px; }
     .stack-item {
       padding: 14px 18px; border-radius: 14px;
-      border: 1px solid rgba(110,168,255,.2);
+      border: 1px solid rgba(23,157,202,.2);
       background: rgba(0,10,30,.4);
       font-weight: 700; font-size: 15px; color: #dce8ff;
     }
@@ -415,8 +415,8 @@
     }
     .impl-num {
       width: 32px; height: 32px; border-radius: 10px;
-      background: linear-gradient(135deg, rgba(110,168,255,.25), rgba(132,225,255,.08));
-      border: 1px solid rgba(110,168,255,.2);
+      background: linear-gradient(135deg, rgba(23,157,202,.25), rgba(95,204,230,.08));
+      border: 1px solid rgba(23,157,202,.2);
       display: flex; align-items: center; justify-content: center;
       font-size: 12px; font-weight: 800; color: #dff5ff; margin-bottom: 14px;
     }
@@ -453,10 +453,10 @@
       position: relative; overflow: hidden;
       border-radius: 28px; padding: 56px 48px;
       background:
-        radial-gradient(circle at 10% 20%, rgba(132,225,255,.16), transparent 32%),
-        radial-gradient(circle at 90% 10%, rgba(110,168,255,.14), transparent 26%),
+        radial-gradient(circle at 10% 20%, rgba(95,204,230,.16), transparent 32%),
+        radial-gradient(circle at 90% 10%, rgba(23,157,202,.14), transparent 26%),
         linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,.025));
-      border: 1px solid rgba(110,168,255,.2);
+      border: 1px solid rgba(23,157,202,.2);
       box-shadow: var(--shadow);
     }
     .cta-panel::after {
@@ -586,7 +586,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container hero-grid">
       <div class="fade-up">
         <div class="hero-eyebrow">
-          <span style="width:7px;height:7px;border-radius:50%;background:linear-gradient(135deg,#6ea8ff,#84e1ff);box-shadow:0 0 0 5px rgba(110,168,255,.15);flex-shrink:0;display:inline-block;"></span>
+          <span style="width:7px;height:7px;border-radius:50%;background:linear-gradient(135deg,#179dca,#5fcce6);box-shadow:0 0 0 5px rgba(23,157,202,.15);flex-shrink:0;display:inline-block;"></span>
           Plataforma enterprise para préstamos, créditos y tarjetas no bancarizadas
         </div>
         <h1>Gestiona toda tu operación de crédito <span>en una sola plataforma.</span></h1>
@@ -769,7 +769,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <li>Negocios con financiación propia en red comercial</li>
             </ul>
           </div>
-          <div class="card" style="background:rgba(0,10,30,.4);border-color:rgba(110,168,255,.15);">
+          <div class="card" style="background:rgba(0,10,30,.4);border-color:rgba(23,157,202,.15);">
             <p style="font-size:15px;color:var(--muted);">
               La plataforma está diseñada para que los equipos comerciales, de riesgo, cobranza y tecnología
               operen desde una misma base — sin silos, sin integraciones frágiles.
@@ -1081,41 +1081,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- ══════════════════════════════
        CLIENTS / PROOF
   ══════════════════════════════ -->
-  <section id="clientes" style="background:rgba(0,0,0,.1);">
-    <div class="container">
-      <div class="fade-up" style="text-align:center;margin-bottom:48px;">
-        <span class="section-label">Clientes que confían</span>
-        <h2 style="margin-bottom:12px;">Empresas financieras que ya operan con Inthegra.</h2>
-        <p style="color:var(--muted);font-size:17px;max-width:52ch;margin:0 auto;">
-          Financieras regionales, emisoras de crédito y operaciones híbridas en producción sobre Inthegra Credit Suite.
-        </p>
-      </div>
-
-      <div class="clients-logos fade-up" style="transition-delay:.1s;">
-        <div class="client-badge">Elebar</div>
-        <div class="client-badge">Sucredito</div>
-        <div class="client-badge">La Zonal</div>
-        <div class="client-badge">Grupo Dilfer</div>
-        <div class="client-badge">Noacard</div>
-      </div>
-
-      <div class="proof-stats fade-up" style="transition-delay:.2s;">
-        <div class="proof-stat">
-          <strong>+23</strong>
-          <span>años de experiencia en software enterprise financiero</span>
-        </div>
-        <div class="proof-stat">
-          <strong>Oracle</strong>
-          <span>Arquitectura nativa — no integración, base real</span>
-        </div>
-        <div class="proof-stat">
-          <strong>E2E</strong>
-          <span>Cobertura completa: desde originación hasta autogestión</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ══════════════════════════════
        FINAL CTA
   ══════════════════════════════ -->
@@ -1143,7 +1108,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2025/02/inthegra-software-logo-menu.png"
+          <img src="img/wp/2024/12/logo-footer.png"
                alt="Inthegra Software" class="footer-logo">
           <p>Plataformas enterprise Oracle-native para financieras, operaciones de crédito y salud en Latinoamérica.</p>
         </div>

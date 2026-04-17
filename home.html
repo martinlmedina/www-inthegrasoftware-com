@@ -46,12 +46,17 @@
       --text:      #eef4ff;
       --text-2:    #bdd2ef;
       --muted:     #7294bb;
-      --brand:     #55a3ff;
-      --brand-2:   #7c5cff;
-      --green:     #35d39b;
-      --teal:      #2dd4bf;
-      --gold:      #ffd166;
-      --ai:        #a78bfa;
+
+      /* Colores institucionales Inthegra */
+      --inthegra:  #ff7200;   /* Empresa — solo CTA */
+      --brand:     #179dca;   /* Products (cyan) */
+      --brand-2:   #a603fc;   /* Solutions (violeta) */
+      --services:  #F7B5CD;   /* Services (rosa) */
+      --services-t:#d96c96;   /* Services texto legible */
+      --teal:      #179dca;   /* HealthCare = Products */
+      --ai:        #c557ff;   /* Solutions claro */
+      --green:     #35d39b;   /* acento neutro (success) */
+      --gold:      #ffd166;   /* acento neutro (Crédito) */
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
@@ -121,7 +126,7 @@
       display: flex; align-items: center; gap: 12px; padding: 10px 12px;
       border-radius: 10px; text-decoration: none; transition: all .16s;
     }
-    .nav-panel-item:hover { background: rgba(85,163,255,.08); }
+    .nav-panel-item:hover { background: rgba(23,157,202,.08); }
     .npi-icon {
       width: 34px; height: 34px; border-radius: 9px; display: flex; align-items: center;
       justify-content: center; font-size: 16px; flex-shrink: 0;
@@ -133,11 +138,11 @@
 
     .nav-cta {
       flex-shrink: 0; padding: 9px 22px; border-radius: 10px;
-      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      background: var(--inthegra);
       color: #fff; font-size: 13.5px; font-weight: 700; text-decoration: none;
-      box-shadow: 0 4px 20px rgba(85,163,255,.28); transition: box-shadow .25s, transform .2s;
+      box-shadow: 0 4px 20px rgba(255,114,0,.28); transition: box-shadow .25s, transform .2s, filter .2s;
     }
-    .nav-cta:hover { box-shadow: 0 6px 30px rgba(85,163,255,.48); transform: translateY(-1px); }
+    .nav-cta:hover { box-shadow: 0 6px 30px rgba(255,114,0,.48); transform: translateY(-1px); filter: brightness(1.05); }
 
     /* ════════════════════════════════════════════════════
        BUTTONS
@@ -150,15 +155,15 @@
     }
     .btn:hover { transform: translateY(-2px); }
     .btn-primary {
-      background: linear-gradient(135deg, var(--brand), var(--brand-2));
-      color: #fff; box-shadow: 0 8px 28px rgba(85,163,255,.32);
+      background: var(--inthegra);
+      color: #fff; box-shadow: 0 8px 28px rgba(255,114,0,.32);
     }
-    .btn-primary:hover { box-shadow: 0 14px 40px rgba(85,163,255,.5); }
+    .btn-primary:hover { box-shadow: 0 14px 40px rgba(255,114,0,.5); filter: brightness(1.05); }
     .btn-ghost {
       background: rgba(255,255,255,.05); border-color: rgba(42,68,112,.9);
       color: var(--text-2);
     }
-    .btn-ghost:hover { border-color: var(--brand); color: var(--brand); background: rgba(85,163,255,.07); }
+    .btn-ghost:hover { border-color: var(--brand); color: var(--brand); background: rgba(23,157,202,.07); }
     .btn-sm { padding: 9px 18px; font-size: 13px; border-radius: 10px; }
 
     /* ════════════════════════════════════════════════════
@@ -170,7 +175,7 @@
     .eyebrow {
       display: inline-flex; align-items: center; gap: 8px; margin-bottom: 20px;
       padding: 5px 14px; border-radius: 999px;
-      border: 1px solid rgba(85,163,255,.28); background: rgba(85,163,255,.07);
+      border: 1px solid rgba(23,157,202,.28); background: rgba(23,157,202,.07);
       color: var(--brand); font-size: 11px; font-weight: 700;
       letter-spacing: .08em; text-transform: uppercase;
     }
@@ -189,7 +194,7 @@
       letter-spacing: -.03em; margin-bottom: 18px;
     }
     .gradient-text {
-      background: linear-gradient(135deg, #fff 15%, var(--brand) 55%, var(--green) 100%);
+      background: linear-gradient(135deg, #fff 15%, var(--inthegra) 55%, #ff4d8f 100%);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
     }
     .section-desc { color: var(--muted); font-size: 18px; line-height: 1.75; }
@@ -200,8 +205,8 @@
     ════════════════════════════════════════════════════ */
     .hero-bg {
       background:
-        radial-gradient(ellipse 100% 80% at 100%  0%,   rgba(85,163,255,.14)  0%, transparent 55%),
-        radial-gradient(ellipse 70%  60% at 0%    15%,  rgba(124,92,255,.10)  0%, transparent 50%),
+        radial-gradient(ellipse 100% 80% at 100%  0%,   rgba(23,157,202,.14)  0%, transparent 55%),
+        radial-gradient(ellipse 70%  60% at 0%    15%,  rgba(166,3,252,.10)  0%, transparent 50%),
         radial-gradient(ellipse 80%  90% at 50%  100%,  rgba(53,211,155,.05)  0%, transparent 60%),
         var(--bg-deep);
     }
@@ -212,11 +217,11 @@
     .hero-tag {
       display: inline-flex; align-items: center; gap: 10px; margin-bottom: 24px;
       padding: 6px 16px 6px 8px; border-radius: 999px;
-      border: 1px solid rgba(85,163,255,.25); background: rgba(85,163,255,.06);
+      border: 1px solid rgba(23,157,202,.25); background: rgba(23,157,202,.06);
     }
     .hero-tag-badge {
       padding: 3px 10px; border-radius: 999px;
-      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      background: linear-gradient(135deg, var(--inthegra), #ff4d8f);
       color: #fff; font-size: 10px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase;
     }
     .hero-tag span { font-size: 12px; color: var(--text-2); font-weight: 500; }
@@ -244,7 +249,7 @@
     .hero-visual {
       border-radius: 20px; overflow: hidden;
       border: 1px solid rgba(30,50,87,.9);
-      box-shadow: 0 40px 100px rgba(0,0,0,.55), 0 0 0 1px rgba(85,163,255,.05);
+      box-shadow: 0 40px 100px rgba(0,0,0,.55), 0 0 0 1px rgba(23,157,202,.05);
     }
     .hero-visual svg { display: block; width: 100%; height: auto; }
 
@@ -288,9 +293,9 @@
       transition: transform .3s, box-shadow .3s;
     }
     .model-card:hover { transform: translateY(-6px); }
-    .model-card.mc-products:hover  { box-shadow: 0 24px 64px rgba(45,212,191,.12); border-color: rgba(45,212,191,.35); }
-    .model-card.mc-solutions:hover { box-shadow: 0 24px 64px rgba(124,92,255,.14); border-color: rgba(124,92,255,.35); }
-    .model-card.mc-services:hover  { box-shadow: 0 24px 64px rgba(85,163,255,.12); border-color: rgba(85,163,255,.3); }
+    .model-card.mc-products:hover  { box-shadow: 0 24px 64px rgba(23,157,202,.12); border-color: rgba(23,157,202,.35); }
+    .model-card.mc-solutions:hover { box-shadow: 0 24px 64px rgba(166,3,252,.14); border-color: rgba(166,3,252,.35); }
+    .model-card.mc-services:hover  { box-shadow: 0 24px 64px rgba(23,157,202,.12); border-color: rgba(23,157,202,.3); }
 
     .mc-top { height: 4px; }
     .mc-products .mc-top  { background: linear-gradient(90deg, var(--teal), var(--green)); }
@@ -302,9 +307,9 @@
       width: 46px; height: 46px; border-radius: 13px; display: flex;
       align-items: center; justify-content: center; font-size: 20px; margin-bottom: 18px;
     }
-    .mc-products .mc-icon  { background: rgba(45,212,191,.1);  border: 1px solid rgba(45,212,191,.2); }
-    .mc-solutions .mc-icon { background: rgba(124,92,255,.1);  border: 1px solid rgba(124,92,255,.2); }
-    .mc-services .mc-icon  { background: rgba(85,163,255,.1);  border: 1px solid rgba(85,163,255,.2); }
+    .mc-products .mc-icon  { background: rgba(23,157,202,.1);  border: 1px solid rgba(23,157,202,.2); }
+    .mc-solutions .mc-icon { background: rgba(166,3,252,.1);  border: 1px solid rgba(166,3,252,.2); }
+    .mc-services .mc-icon  { background: rgba(23,157,202,.1);  border: 1px solid rgba(23,157,202,.2); }
 
     .mc-kicker { font-size: 10.5px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; margin-bottom: 8px; }
     .mc-products .mc-kicker  { color: var(--teal); }
@@ -355,9 +360,9 @@
       transition: transform .3s, box-shadow .3s, border-color .3s;
     }
     .ind-card:hover { transform: translateY(-8px); }
-    .ind-card.health:hover  { border-color: rgba(45,212,191,.4);  box-shadow: 0 28px 70px rgba(45,212,191,.12); }
+    .ind-card.health:hover  { border-color: rgba(23,157,202,.4);  box-shadow: 0 28px 70px rgba(23,157,202,.12); }
     .ind-card.credit:hover  { border-color: rgba(255,209,102,.4); box-shadow: 0 28px 70px rgba(255,209,102,.12); }
-    .ind-card.retail:hover  { border-color: rgba(85,163,255,.4);  box-shadow: 0 28px 70px rgba(85,163,255,.12); }
+    .ind-card.retail:hover  { border-color: rgba(23,157,202,.4);  box-shadow: 0 28px 70px rgba(23,157,202,.12); }
 
     .ind-accent { height: 5px; }
     .ind-card.health .ind-accent  { background: linear-gradient(90deg, var(--teal), var(--green)); }
@@ -369,9 +374,9 @@
       width: 48px; height: 48px; border-radius: 14px; display: flex;
       align-items: center; justify-content: center; font-size: 22px; margin-bottom: 16px;
     }
-    .ind-card.health .ind-icon-wrap  { background: rgba(45,212,191,.1);  border: 1px solid rgba(45,212,191,.2); }
+    .ind-card.health .ind-icon-wrap  { background: rgba(23,157,202,.1);  border: 1px solid rgba(23,157,202,.2); }
     .ind-card.credit .ind-icon-wrap  { background: rgba(255,209,102,.1); border: 1px solid rgba(255,209,102,.2); }
-    .ind-card.retail .ind-icon-wrap  { background: rgba(85,163,255,.1);  border: 1px solid rgba(85,163,255,.2); }
+    .ind-card.retail .ind-icon-wrap  { background: rgba(23,157,202,.1);  border: 1px solid rgba(23,157,202,.2); }
 
     .ind-kicker { font-size: 10px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; margin-bottom: 8px; }
     .ind-card.health .ind-kicker  { color: var(--teal); }
@@ -382,9 +387,9 @@
     .ind-body p  { font-size: 13.5px; color: var(--muted); line-height: 1.7; margin-bottom: 18px; }
     .ind-modules { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }
     .ind-mod { font-size: 11.5px; font-weight: 600; padding: 4px 10px; border-radius: 7px; }
-    .ind-card.health .ind-mod  { background: rgba(45,212,191,.09);  color: var(--teal); }
+    .ind-card.health .ind-mod  { background: rgba(23,157,202,.09);  color: var(--teal); }
     .ind-card.credit .ind-mod  { background: rgba(255,209,102,.09); color: var(--gold); }
-    .ind-card.retail .ind-mod  { background: rgba(85,163,255,.09);  color: var(--brand); }
+    .ind-card.retail .ind-mod  { background: rgba(23,157,202,.09);  color: var(--brand); }
 
     .ind-clients { font-size: 11.5px; color: var(--muted); line-height: 1.6; margin-bottom: 20px; }
     .ind-clients strong { color: var(--text-2); }
@@ -406,27 +411,27 @@
     ════════════════════════════════════════════════════ */
     .ai-wrap {
       border-radius: 28px;
-      border: 1px solid rgba(124,92,255,.2);
-      background: linear-gradient(140deg, rgba(124,92,255,.06) 0%, rgba(167,139,250,.04) 50%, rgba(85,163,255,.05) 100%);
+      border: 1px solid rgba(166,3,252,.2);
+      background: linear-gradient(140deg, rgba(166,3,252,.06) 0%, rgba(197,87,255,.04) 50%, rgba(23,157,202,.05) 100%);
       padding: 72px 64px;
       display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center;
     }
     .ai-eyebrow {
       display: inline-flex; align-items: center; gap: 8px; margin-bottom: 20px;
       padding: 5px 14px; border-radius: 999px;
-      border: 1px solid rgba(167,139,250,.3); background: rgba(167,139,250,.07);
+      border: 1px solid rgba(197,87,255,.3); background: rgba(197,87,255,.07);
       color: var(--ai); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
     }
     .ai-pillars { display: flex; flex-direction: column; gap: 16px; margin-top: 32px; }
     .ai-pillar {
       display: flex; gap: 16px; align-items: flex-start;
       padding: 18px 20px; border-radius: 15px;
-      background: rgba(124,92,255,.06); border: 1px solid rgba(124,92,255,.12); transition: all .22s;
+      background: rgba(166,3,252,.06); border: 1px solid rgba(166,3,252,.12); transition: all .22s;
     }
-    .ai-pillar:hover { background: rgba(124,92,255,.1); border-color: rgba(124,92,255,.22); }
+    .ai-pillar:hover { background: rgba(166,3,252,.1); border-color: rgba(166,3,252,.22); }
     .ap-icon {
       width: 38px; height: 38px; border-radius: 10px; flex-shrink: 0;
-      background: rgba(167,139,250,.14); border: 1px solid rgba(167,139,250,.18);
+      background: rgba(197,87,255,.14); border: 1px solid rgba(197,87,255,.18);
       display: flex; align-items: center; justify-content: center; font-size: 16px;
     }
     .ap-text h4 { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
@@ -478,9 +483,9 @@
       border-radius: 7px; font-size: 10.5px; font-weight: 700; letter-spacing: .07em;
       text-transform: uppercase; margin-bottom: 20px;
     }
-    .story-vertical.v-health  { background: rgba(45,212,191,.1);  color: var(--teal); }
+    .story-vertical.v-health  { background: rgba(23,157,202,.1);  color: var(--teal); }
     .story-vertical.v-credit  { background: rgba(255,209,102,.1); color: var(--gold); }
-    .story-vertical.v-retail  { background: rgba(85,163,255,.1);  color: var(--brand); }
+    .story-vertical.v-retail  { background: rgba(23,157,202,.1);  color: var(--brand); }
 
     .story-client { font-size: 19px; font-weight: 800; margin-bottom: 8px; }
     .story-challenge { font-size: 13px; color: var(--muted); line-height: 1.65; margin-bottom: 24px; }
@@ -515,7 +520,7 @@
     .culture-stat span   { font-size: 12px; color: var(--muted); }
     .culture-visual {
       height: 100%; min-height: 320px;
-      background: linear-gradient(135deg, rgba(53,211,155,.08), rgba(85,163,255,.06));
+      background: linear-gradient(135deg, rgba(53,211,155,.08), rgba(23,157,202,.06));
       border-left: 1px solid rgba(30,50,87,.7);
       display: flex; flex-direction: column; align-items: center; justify-content: center;
       padding: 40px; gap: 14px;
@@ -532,14 +537,14 @@
     ════════════════════════════════════════════════════ */
     .cta-box {
       border-radius: 28px; overflow: hidden; position: relative;
-      background: linear-gradient(135deg, rgba(85,163,255,.1) 0%, rgba(124,92,255,.1) 100%);
-      border: 1px solid rgba(85,163,255,.2); padding: 88px 60px; text-align: center;
+      background: linear-gradient(135deg, rgba(23,157,202,.1) 0%, rgba(166,3,252,.1) 100%);
+      border: 1px solid rgba(23,157,202,.2); padding: 88px 60px; text-align: center;
     }
     .cta-box::before {
       content: ''; position: absolute; inset: 0; pointer-events: none;
       background:
-        radial-gradient(ellipse 60% 60% at 100% 0%,   rgba(85,163,255,.1),  transparent),
-        radial-gradient(ellipse 60% 60% at 0%   100%, rgba(124,92,255,.1), transparent);
+        radial-gradient(ellipse 60% 60% at 100% 0%,   rgba(23,157,202,.1),  transparent),
+        radial-gradient(ellipse 60% 60% at 0%   100%, rgba(166,3,252,.1), transparent);
     }
     .cta-box > * { position: relative; z-index: 1; }
     .cta-box h2 { font-size: 48px; font-weight: 900; letter-spacing: -.035em; margin-bottom: 18px; }
@@ -674,7 +679,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="logo-wrap">
         <a href="home.html">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2026/02/Logo_oracle_header.svg" alt="Inthegra Software" />
+          <img src="img/wp/2026/02/Logo_oracle_header.svg" alt="Inthegra Software" />
         </a>
       </div>
 
@@ -683,7 +688,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="index_productos.html" class="nav-link">Productos</a>
           <div class="nav-panel">
             <a href="landing_healthcare.html" class="nav-panel-item">
-              <span class="npi-icon" style="background:rgba(45,212,191,.1);border:1px solid rgba(45,212,191,.2);">🏥</span>
+              <span class="npi-icon" style="background:rgba(23,157,202,.1);border:1px solid rgba(23,157,202,.2);">🏥</span>
               <div class="npi-text"><strong>HealthCare</strong><span>Gestión integral para prepagas, clínicas y prestadores</span></div>
             </a>
             <a href="landing_credit_financial.html" class="nav-panel-item">
@@ -691,7 +696,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="npi-text"><strong>Credit &amp; Financial</strong><span>Crédito, cobranzas y gestión de carteras</span></div>
             </a>
             <a href="landing_erp.html" class="nav-panel-item">
-              <span class="npi-icon" style="background:rgba(85,163,255,.1);border:1px solid rgba(85,163,255,.2);">🏪</span>
+              <span class="npi-icon" style="background:rgba(23,157,202,.1);border:1px solid rgba(23,157,202,.2);">🏪</span>
               <div class="npi-text"><strong>Retail &amp; Distribución</strong><span>ERP para cadenas, mayoristas y distribuidoras</span></div>
             </a>
           </div>
@@ -701,7 +706,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="index_services.html" class="nav-link">Servicios Oracle</a>
           <div class="nav-panel">
             <a href="landing_modernizacion.html" class="nav-panel-item">
-              <span class="npi-icon" style="background:rgba(85,163,255,.1);border:1px solid rgba(85,163,255,.2);">⚡</span>
+              <span class="npi-icon" style="background:rgba(23,157,202,.1);border:1px solid rgba(23,157,202,.2);">⚡</span>
               <div class="npi-text"><strong>Modernización Forms</strong><span>Oracle Forms &amp; Reports modernizados con IA</span></div>
             </a>
             <a href="landing_oci.html" class="nav-panel-item">
@@ -709,16 +714,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="npi-text"><strong>Oracle Cloud (OCI)</strong><span>Migración, arquitectura y operación cloud</span></div>
             </a>
             <a href="landing_desarrollo_medida.html" class="nav-panel-item">
-              <span class="npi-icon" style="background:rgba(124,92,255,.1);border:1px solid rgba(124,92,255,.2);">🛠️</span>
+              <span class="npi-icon" style="background:rgba(166,3,252,.1);border:1px solid rgba(166,3,252,.2);">🛠️</span>
               <div class="npi-text"><strong>Desarrollo a Medida</strong><span>APEX, ORDS, PWA y APIs Oracle-native</span></div>
             </a>
             <div class="nav-panel-sep"></div>
             <a href="landing_oac.html" class="nav-panel-item">
-              <span class="npi-icon" style="background:rgba(85,163,255,.1);border:1px solid rgba(85,163,255,.2);">📊</span>
+              <span class="npi-icon" style="background:rgba(23,157,202,.1);border:1px solid rgba(23,157,202,.2);">📊</span>
               <div class="npi-text"><strong>Oracle Analytics</strong><span>Semantic model, BI y dashboards enterprise</span></div>
             </a>
             <a href="landing_production_ai.html" class="nav-panel-item">
-              <span class="npi-icon" style="background:rgba(167,139,250,.1);border:1px solid rgba(167,139,250,.2);">🤖</span>
+              <span class="npi-icon" style="background:rgba(197,87,255,.1);border:1px solid rgba(197,87,255,.2);">🤖</span>
               <div class="npi-text"><strong>Production AI</strong><span>RAG, agentes y AI integrada a procesos reales</span></div>
             </a>
           </div>
@@ -728,11 +733,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="#soluciones" class="nav-link">Soluciones</a>
           <div class="nav-panel">
             <a href="solutions_crm.html" class="nav-panel-item">
-              <span class="npi-icon" style="background:rgba(124,92,255,.1);border:1px solid rgba(124,92,255,.2);">🤝</span>
+              <span class="npi-icon" style="background:rgba(166,3,252,.1);border:1px solid rgba(166,3,252,.2);">🤝</span>
               <div class="npi-text"><strong>CRM Enterprise</strong><span>Pipeline de ventas y gestión de clientes</span></div>
             </a>
             <a href="solutions_ai_chatbot.html" class="nav-panel-item">
-              <span class="npi-icon" style="background:rgba(167,139,250,.1);border:1px solid rgba(167,139,250,.2);">💬</span>
+              <span class="npi-icon" style="background:rgba(197,87,255,.1);border:1px solid rgba(197,87,255,.2);">💬</span>
               <div class="npi-text"><strong>AI Chatbot</strong><span>Asistente con RAG sobre los datos de tu empresa</span></div>
             </a>
           </div>
@@ -780,7 +785,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <h1 class="hero-title">
           El software<br>enterprise que<br>
-          <span style="background:linear-gradient(130deg, var(--brand) 0%, var(--brand-2) 50%, var(--ai) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">opera en producción</span>
+          <span style="background:linear-gradient(130deg, var(--inthegra) 0%, #ff4d8f 60%, #ffb8a0 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">opera en producción</span>
         </h1>
 
         <p class="hero-sub">
@@ -813,12 +818,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="hero-visual fade-up fd3">
         <svg viewBox="0 0 560 460" fill="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <linearGradient id="gBlue"  x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#55a3ff"/><stop offset="100%" stop-color="#7c5cff"/></linearGradient>
-            <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#35d39b"/><stop offset="100%" stop-color="#2dd4bf"/></linearGradient>
+            <linearGradient id="gBlue"  x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#179dca"/><stop offset="100%" stop-color="#a603fc"/></linearGradient>
+            <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#35d39b"/><stop offset="100%" stop-color="#179dca"/></linearGradient>
             <linearGradient id="gGold"  x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#ffd166"/><stop offset="100%" stop-color="#f59e0b"/></linearGradient>
-            <linearGradient id="gAI"    x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#7c5cff"/></linearGradient>
+            <linearGradient id="gAI"    x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#c557ff"/><stop offset="100%" stop-color="#a603fc"/></linearGradient>
             <linearGradient id="chartArea"  x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#35d39b" stop-opacity=".25"/><stop offset="100%" stop-color="#35d39b" stop-opacity="0"/></linearGradient>
-            <linearGradient id="chartArea2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#55a3ff" stop-opacity=".2"/><stop offset="100%" stop-color="#55a3ff" stop-opacity="0"/></linearGradient>
+            <linearGradient id="chartArea2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#179dca" stop-opacity=".2"/><stop offset="100%" stop-color="#179dca" stop-opacity="0"/></linearGradient>
           </defs>
 
           <rect width="560" height="460" fill="#08111f"/>
@@ -835,8 +840,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <circle cx="36" cy="23" r="5" fill="#ffbd2e" opacity=".8"/>
           <circle cx="52" cy="23" r="5" fill="#27c93f" opacity=".8"/>
           <text x="74" y="27" fill="#c0d4f0" font-size="11" font-weight="700" font-family="Inter,sans-serif">Inthegra Platform</text>
-          <rect x="200" y="14" width="52" height="18" rx="5" fill="rgba(85,163,255,.12)"/>
-          <text x="226" y="26" fill="#55a3ff" font-size="9" font-weight="600" font-family="Inter,sans-serif" text-anchor="middle">HealthCare</text>
+          <rect x="200" y="14" width="52" height="18" rx="5" fill="rgba(23,157,202,.12)"/>
+          <text x="226" y="26" fill="#179dca" font-size="9" font-weight="600" font-family="Inter,sans-serif" text-anchor="middle">HealthCare</text>
           <rect x="258" y="14" width="44" height="18" rx="5" fill="transparent"/>
           <text x="280" y="26" fill="#7294bb" font-size="9" font-weight="500" font-family="Inter,sans-serif" text-anchor="middle">Crédito</text>
           <rect x="308" y="14" width="36" height="18" rx="5" fill="transparent"/>
@@ -847,10 +852,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <!-- Left sidebar -->
           <rect x="0" y="47" width="120" height="413" fill="#080f1e"/>
           <rect x="120" y="47" width="1" height="413" fill="#1e3257"/>
-          <rect x="12" y="60" width="96" height="30" rx="7" fill="rgba(85,163,255,.07)" stroke="rgba(85,163,255,.15)" stroke-width="1"/>
-          <text x="60" y="79" fill="#55a3ff" font-size="9" font-weight="700" font-family="Inter,sans-serif" text-anchor="middle">⬡ Inthegra</text>
-          <rect x="8" y="104" width="104" height="28" rx="8" fill="rgba(45,212,191,.1)" stroke="rgba(45,212,191,.22)" stroke-width="1"/>
-          <text x="22" y="122" fill="#2dd4bf" font-size="10" font-weight="700" font-family="Inter,sans-serif">🏥 HealthCare</text>
+          <rect x="12" y="60" width="96" height="30" rx="7" fill="rgba(23,157,202,.07)" stroke="rgba(23,157,202,.15)" stroke-width="1"/>
+          <text x="60" y="79" fill="#179dca" font-size="9" font-weight="700" font-family="Inter,sans-serif" text-anchor="middle">⬡ Inthegra</text>
+          <rect x="8" y="104" width="104" height="28" rx="8" fill="rgba(23,157,202,.1)" stroke="rgba(23,157,202,.22)" stroke-width="1"/>
+          <text x="22" y="122" fill="#179dca" font-size="10" font-weight="700" font-family="Inter,sans-serif">🏥 HealthCare</text>
           <text x="22" y="158" fill="#7294bb" font-size="10" font-weight="500" font-family="Inter,sans-serif">💳 Crédito</text>
           <text x="22" y="186" fill="#7294bb" font-size="10" font-weight="500" font-family="Inter,sans-serif">🏪 Retail</text>
           <text x="22" y="214" fill="#7294bb" font-size="10" font-weight="500" font-family="Inter,sans-serif">🤝 CRM</text>
@@ -881,7 +886,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <rect x="438" y="58" width="110" height="54" rx="8" fill="#0e1c35" stroke="#1e3257" stroke-width="1"/>
           <text x="448" y="74" fill="#7294bb" font-size="7.5" font-weight="600" font-family="Inter,sans-serif">AUDITORÍA AUTO.</text>
           <text x="448" y="94" font-size="22" font-weight="900" font-family="Inter,sans-serif" fill="url(#gAI)">98.3%</text>
-          <text x="448" y="104" fill="#a78bfa" font-size="7" font-family="Inter,sans-serif">▲ AI-powered</text>
+          <text x="448" y="104" fill="#c557ff" font-size="7" font-family="Inter,sans-serif">▲ AI-powered</text>
 
           <!-- Chart -->
           <rect x="132" y="122" width="276" height="164" rx="10" fill="#0a1525" stroke="#1e3257" stroke-width="1"/>
@@ -890,9 +895,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <path d="M148,268 170,255 200,247 230,238 262,226 290,215 322,205 360,192 360,276 148,276Z" fill="url(#chartArea)"/>
           <path d="M148,272 170,262 200,257 230,250 262,242 290,234 322,226 360,215 360,276 148,276Z" fill="url(#chartArea2)"/>
           <polyline points="148,268 170,255 200,247 230,238 262,226 290,215 322,205 360,192" stroke="#35d39b" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-          <polyline points="148,272 170,262 200,257 230,250 262,242 290,234 322,226 360,215" stroke="#55a3ff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <polyline points="148,272 170,262 200,257 230,250 262,242 290,234 322,226 360,215" stroke="#179dca" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
           <circle cx="360" cy="192" r="4" fill="#35d39b"/>
-          <circle cx="360" cy="215" r="4" fill="#55a3ff"/>
+          <circle cx="360" cy="215" r="4" fill="#179dca"/>
           <text x="135" y="200" fill="#7294bb" font-size="7" font-family="Inter,sans-serif">16K</text>
           <text x="135" y="235" fill="#7294bb" font-size="7" font-family="Inter,sans-serif">12K</text>
           <text x="135" y="265" fill="#7294bb" font-size="7" font-family="Inter,sans-serif">8K</text>
@@ -907,33 +912,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <text x="432" y="140" fill="#bdd2ef" font-size="8.5" font-weight="700" font-family="Inter,sans-serif">Actividad reciente</text>
           <rect x="430" y="148" width="108" height="16" rx="4" fill="rgba(53,211,155,.08)"/>
           <text x="436" y="159" fill="#35d39b" font-size="7.5" font-family="Inter,sans-serif">✓ Liquidación aprobada · $480K</text>
-          <rect x="430" y="167" width="108" height="16" rx="4" fill="rgba(85,163,255,.07)"/>
-          <text x="436" y="178" fill="#55a3ff" font-size="7.5" font-family="Inter,sans-serif">↻ 38 nuevas prestaciones</text>
+          <rect x="430" y="167" width="108" height="16" rx="4" fill="rgba(23,157,202,.07)"/>
+          <text x="436" y="178" fill="#179dca" font-size="7.5" font-family="Inter,sans-serif">↻ 38 nuevas prestaciones</text>
           <rect x="430" y="186" width="108" height="16" rx="4" fill="rgba(255,209,102,.07)"/>
           <text x="436" y="197" fill="#ffd166" font-size="7.5" font-family="Inter,sans-serif">⚠ 2 auditorías pendientes</text>
 
-          <rect x="420" y="212" width="128" height="74" rx="8" fill="#0a1525" stroke="rgba(167,139,250,.2)" stroke-width="1"/>
-          <text x="432" y="228" fill="#a78bfa" font-size="8" font-weight="700" font-family="Inter,sans-serif">🤖 AI Insight</text>
+          <rect x="420" y="212" width="128" height="74" rx="8" fill="#0a1525" stroke="rgba(197,87,255,.2)" stroke-width="1"/>
+          <text x="432" y="228" fill="#c557ff" font-size="8" font-weight="700" font-family="Inter,sans-serif">🤖 AI Insight</text>
           <text x="432" y="243" fill="#7294bb" font-size="7.5" font-family="Inter,sans-serif">El 12% de prestaciones</text>
           <text x="432" y="254" fill="#7294bb" font-size="7.5" font-family="Inter,sans-serif">pueden tener duplicados.</text>
-          <rect x="430" y="261" width="78" height="15" rx="5" fill="rgba(167,139,250,.14)"/>
-          <text x="469" y="272" fill="#a78bfa" font-size="8" font-weight="700" font-family="Inter,sans-serif" text-anchor="middle">Ver análisis →</text>
+          <rect x="430" y="261" width="78" height="15" rx="5" fill="rgba(197,87,255,.14)"/>
+          <text x="469" y="272" fill="#c557ff" font-size="8" font-weight="700" font-family="Inter,sans-serif" text-anchor="middle">Ver análisis →</text>
 
           <!-- Modules strip -->
           <rect x="132" y="298" width="416" height="56" rx="8" fill="#0a1525" stroke="#1e3257" stroke-width="1"/>
           <text x="144" y="316" fill="#7294bb" font-size="7.5" font-weight="600" font-family="Inter,sans-serif">MÓDULOS ACTIVOS</text>
-          <rect x="144" y="323" width="72" height="18" rx="5" fill="rgba(45,212,191,.09)" stroke="rgba(45,212,191,.2)" stroke-width="1"/>
-          <text x="180" y="335" fill="#2dd4bf" font-size="7.5" font-weight="600" font-family="Inter,sans-serif" text-anchor="middle">Facturación Médica</text>
-          <rect x="222" y="323" width="60" height="18" rx="5" fill="rgba(45,212,191,.09)" stroke="rgba(45,212,191,.2)" stroke-width="1"/>
-          <text x="252" y="335" fill="#2dd4bf" font-size="7.5" font-weight="600" font-family="Inter,sans-serif" text-anchor="middle">Prestadores</text>
-          <rect x="288" y="323" width="50" height="18" rx="5" fill="rgba(45,212,191,.09)" stroke="rgba(45,212,191,.2)" stroke-width="1"/>
-          <text x="313" y="335" fill="#2dd4bf" font-size="7.5" font-weight="600" font-family="Inter,sans-serif" text-anchor="middle">Auditoría</text>
-          <rect x="344" y="323" width="44" height="18" rx="5" fill="rgba(45,212,191,.09)" stroke="rgba(45,212,191,.2)" stroke-width="1"/>
-          <text x="366" y="335" fill="#2dd4bf" font-size="7.5" font-weight="600" font-family="Inter,sans-serif" text-anchor="middle">Turnos</text>
-          <rect x="394" y="323" width="64" height="18" rx="5" fill="rgba(167,139,250,.09)" stroke="rgba(167,139,250,.2)" stroke-width="1"/>
-          <text x="426" y="335" fill="#a78bfa" font-size="7.5" font-weight="600" font-family="Inter,sans-serif" text-anchor="middle">AI Scoring</text>
-          <rect x="464" y="323" width="50" height="18" rx="5" fill="rgba(124,92,255,.09)" stroke="rgba(124,92,255,.2)" stroke-width="1"/>
-          <text x="489" y="335" fill="#7c5cff" font-size="7.5" font-weight="600" font-family="Inter,sans-serif" text-anchor="middle">CRM</text>
+          <rect x="144" y="323" width="72" height="18" rx="5" fill="rgba(23,157,202,.09)" stroke="rgba(23,157,202,.2)" stroke-width="1"/>
+          <text x="180" y="335" fill="#179dca" font-size="7.5" font-weight="600" font-family="Inter,sans-serif" text-anchor="middle">Facturación Médica</text>
+          <rect x="222" y="323" width="60" height="18" rx="5" fill="rgba(23,157,202,.09)" stroke="rgba(23,157,202,.2)" stroke-width="1"/>
+          <text x="252" y="335" fill="#179dca" font-size="7.5" font-weight="600" font-family="Inter,sans-serif" text-anchor="middle">Prestadores</text>
+          <rect x="288" y="323" width="50" height="18" rx="5" fill="rgba(23,157,202,.09)" stroke="rgba(23,157,202,.2)" stroke-width="1"/>
+          <text x="313" y="335" fill="#179dca" font-size="7.5" font-weight="600" font-family="Inter,sans-serif" text-anchor="middle">Auditoría</text>
+          <rect x="344" y="323" width="44" height="18" rx="5" fill="rgba(23,157,202,.09)" stroke="rgba(23,157,202,.2)" stroke-width="1"/>
+          <text x="366" y="335" fill="#179dca" font-size="7.5" font-weight="600" font-family="Inter,sans-serif" text-anchor="middle">Turnos</text>
+          <rect x="394" y="323" width="64" height="18" rx="5" fill="rgba(197,87,255,.09)" stroke="rgba(197,87,255,.2)" stroke-width="1"/>
+          <text x="426" y="335" fill="#c557ff" font-size="7.5" font-weight="600" font-family="Inter,sans-serif" text-anchor="middle">AI Scoring</text>
+          <rect x="464" y="323" width="50" height="18" rx="5" fill="rgba(166,3,252,.09)" stroke="rgba(166,3,252,.2)" stroke-width="1"/>
+          <text x="489" y="335" fill="#a603fc" font-size="7.5" font-weight="600" font-family="Inter,sans-serif" text-anchor="middle">CRM</text>
 
           <!-- Status bar -->
           <rect x="132" y="362" width="416" height="48" rx="8" fill="#0a1525" stroke="#1e3257" stroke-width="1"/>
@@ -947,7 +952,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <text x="328" y="395" fill="#35d39b" font-size="7" font-family="Inter,sans-serif">99.9% uptime</text>
           <line x1="418" y1="374" x2="418" y2="398" stroke="#1e3257" stroke-width="1"/>
           <text x="428" y="384" fill="#7294bb" font-size="7.5" font-family="Inter,sans-serif">AI Pipeline</text>
-          <text x="428" y="395" fill="#a78bfa" font-size="7" font-family="Inter,sans-serif">▲ Running</text>
+          <text x="428" y="395" fill="#c557ff" font-size="7" font-family="Inter,sans-serif">▲ Running</text>
 
           <rect x="0" y="420" width="560" height="40" fill="#060d1a"/>
           <rect y="420" width="560" height="1" fill="#1e3257"/>
@@ -969,44 +974,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="kpi-strip fade-up">
       <div class="kpi-cell">
-        <span class="kpi-n" style="background:linear-gradient(135deg,var(--brand),var(--brand-2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">23</span>
+        <span class="kpi-n" style="background:linear-gradient(135deg,var(--inthegra),#ff4d8f);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">23</span>
         <span class="kpi-l">Años construyendo software enterprise en Argentina y Latam</span>
       </div>
       <div class="kpi-cell">
-        <span class="kpi-n" style="background:linear-gradient(135deg,var(--green),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">+100</span>
+        <span class="kpi-n" style="background:linear-gradient(135deg,var(--inthegra),#ff4d8f);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">+100</span>
         <span class="kpi-l">Empresas operando sistemas Inthegra en producción hoy</span>
       </div>
       <div class="kpi-cell">
-        <span class="kpi-n" style="background:linear-gradient(135deg,var(--gold),#f59e0b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">3</span>
+        <span class="kpi-n" style="background:linear-gradient(135deg,var(--inthegra),#ff4d8f);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">3</span>
         <span class="kpi-l">Verticales con lógica de industria nativa — salud, crédito, retail</span>
       </div>
       <div class="kpi-cell">
-        <span class="kpi-n" style="background:linear-gradient(135deg,var(--ai),var(--brand-2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">90d</span>
+        <span class="kpi-n" style="background:linear-gradient(135deg,var(--inthegra),#ff4d8f);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">90d</span>
         <span class="kpi-l">Implementación del core en producción — sin proyectos eternos</span>
-      </div>
-    </div>
-
-    <div class="clients-band fade-up fd1">
-      <p class="clients-band-label">Empresas que operan sobre sistemas Inthegra</p>
-      <div class="clients-row">
-        <div class="client-sep">— Salud —</div>
-        <div class="client-chip">SIPSSA</div>
-        <div class="client-chip">EMI</div>
-        <div class="client-chip">Asesores Especializados</div>
-        <div class="client-chip">INDOM</div>
-        <div class="client-chip">ROSTER</div>
-        <div class="client-chip">Alta Salud</div>
-        <div class="client-chip">YIOS</div>
-        <div class="client-sep" style="margin-top:8px;">— Crédito &amp; Finanzas —</div>
-        <div class="client-chip">Elebar</div>
-        <div class="client-chip">Sucredito</div>
-        <div class="client-chip">La Zonal</div>
-        <div class="client-chip">Grupo Dilfer</div>
-        <div class="client-chip">Noacard</div>
-        <div class="client-sep" style="margin-top:8px;">— Retail &amp; Distribución —</div>
-        <div class="client-chip">Tiendas Nico</div>
-        <div class="client-chip">Acogra</div>
-        <div class="client-chip">Todo Cerca</div>
       </div>
     </div>
 
@@ -1204,7 +1185,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="ind-mod">Internaciones</span>
             <span class="ind-mod">Farmacia</span>
           </div>
-          <p class="ind-clients">Clientes: <strong>SIPSSA · EMI · Alta Salud · INDOM · ROSTER · YIOS</strong></p>
         </div>
         <div class="ind-footer">
           <span class="ind-cta">Agendar demo →</span>
@@ -1227,7 +1207,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="ind-mod">BCRA Reporting</span>
             <span class="ind-mod">Cartera</span>
           </div>
-          <p class="ind-clients">Clientes: <strong>Elebar · Sucredito · La Zonal · Grupo Dilfer · Noacard</strong></p>
         </div>
         <div class="ind-footer">
           <span class="ind-cta">Agendar demo →</span>
@@ -1250,7 +1229,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="ind-mod">Multi-sucursal</span>
             <span class="ind-mod">Reportería</span>
           </div>
-          <p class="ind-clients">Clientes: <strong>Tiendas Nico · Acogra · Todo Cerca</strong></p>
         </div>
         <div class="ind-footer">
           <span class="ind-cta">Agendar demo →</span>
@@ -1391,7 +1369,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h3 class="story-client">SIPSSA</h3>
         <p class="story-challenge">Liquidación descentralizada de prestadores con miles de transacciones mensuales, ciclos de 15 días y alta tasa de error manual.</p>
         <div class="story-result">
-          <span class="story-result-n" style="background:linear-gradient(135deg,var(--teal),var(--green));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">-65%</span>
+          <span class="story-result-n" style="background:linear-gradient(135deg,var(--inthegra),#ff4d8f);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">-65%</span>
           <span class="story-result-l">reducción en tiempo de liquidación — de 15 días a 5 días con automatización del ciclo completo</span>
         </div>
         <a href="success_stories.html" class="story-link">Ver caso completo →</a>
@@ -1402,7 +1380,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h3 class="story-client">Elebar</h3>
         <p class="story-challenge">Originación manual de créditos con alta tasa de error, proceso lento y sin scoring automatizado para la cartera de préstamos personales.</p>
         <div class="story-result">
-          <span class="story-result-n" style="background:linear-gradient(135deg,var(--gold),#f59e0b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">+800</span>
+          <span class="story-result-n" style="background:linear-gradient(135deg,var(--inthegra),#ff4d8f);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">+800</span>
           <span class="story-result-l">créditos/día procesados con scoring automatizado — 40% de reducción en costo operativo</span>
         </div>
         <a href="success_stories.html" class="story-link">Ver caso completo →</a>
@@ -1413,7 +1391,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h3 class="story-client">Tiendas Nico</h3>
         <p class="story-challenge">Stock inconsistente entre 12 sucursales, pérdidas por quiebre de inventario y sin visibilidad de ventas en tiempo real.</p>
         <div class="story-result">
-          <span class="story-result-n" style="background:linear-gradient(135deg,var(--brand),var(--brand-2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">-30%</span>
+          <span class="story-result-n" style="background:linear-gradient(135deg,var(--inthegra),#ff4d8f);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">-30%</span>
           <span class="story-result-l">quiebre de stock con visibilidad en tiempo real — stock unificado para 12 sucursales desde el primer mes</span>
         </div>
         <a href="success_stories.html" class="story-link">Ver caso completo →</a>
@@ -1486,7 +1464,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     .contact-info p{color:var(--text-2);font-size:16px;line-height:1.6;margin-bottom:32px;}
     .contact-channels{display:flex;flex-direction:column;gap:16px;}
     .contact-channel{display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;background:rgba(255,255,255,.03);border:1px solid rgba(30,50,87,.5);text-decoration:none;color:var(--text);transition:background .18s,border-color .18s;}
-    .contact-channel:hover{background:rgba(85,163,255,.06);border-color:rgba(85,163,255,.3);}
+    .contact-channel:hover{background:rgba(23,157,202,.06);border-color:rgba(23,157,202,.3);}
     .contact-channel .ch-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
     .contact-channel .ch-text strong{display:block;font-size:13px;color:var(--text);margin-bottom:2px;}
     .contact-channel .ch-text span{font-size:12px;color:var(--muted);}
@@ -1501,8 +1479,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     .form-group textarea{resize:vertical;min-height:90px;}
     .form-group select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237294bb' stroke-width='2.5'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;background-size:16px;padding-right:36px;}
     .form-group select option{background:#0f1830;color:var(--text);}
-    .form-submit{width:100%;padding:14px;border:none;border-radius:12px;background:linear-gradient(135deg,#55a3ff,#7c5cff);color:#fff;font-size:15px;font-weight:700;font-family:inherit;cursor:pointer;transition:box-shadow .25s,transform .2s;}
-    .form-submit:hover{box-shadow:0 6px 30px rgba(85,163,255,.48);transform:translateY(-1px);}
+    .form-submit{width:100%;padding:14px;border:none;border-radius:12px;background:var(--inthegra);color:#fff;font-size:15px;font-weight:700;font-family:inherit;cursor:pointer;transition:box-shadow .25s,transform .2s,filter .2s;}
+    .form-submit:hover{box-shadow:0 6px 30px rgba(255,114,0,.48);transform:translateY(-1px);filter:brightness(1.05);}
     .form-note{text-align:center;font-size:12px;color:var(--muted);margin-top:12px;}
     @media(max-width:768px){.contact-grid{grid-template-columns:1fr;gap:32px;}.form-row{grid-template-columns:1fr;}}
   </style>
@@ -1526,7 +1504,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
           </a>
           <a href="mailto:contacto@inthegrasoftware.com" class="contact-channel">
-            <span class="ch-icon" style="background:rgba(85,163,255,.1);border:1px solid rgba(85,163,255,.2)">✉️</span>
+            <span class="ch-icon" style="background:rgba(23,157,202,.1);border:1px solid rgba(23,157,202,.2)">✉️</span>
             <div class="ch-text">
               <strong>contacto@inthegrasoftware.com</strong>
               <span>Respondemos en menos de 24 hs</span>
@@ -1556,7 +1534,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="footer-grid">
 
       <div class="footer-brand">
-        <img src="https://inthegrasoftware.com/wp-content/uploads/2024/12/logo-footer.png" alt="Inthegra Software" />
+        <img src="img/wp/2024/12/logo-footer.png" alt="Inthegra Software" />
         <p>Oracle-Native Enterprise Software y AI para Argentina y Latam. Producto, servicios e inteligencia artificial en un solo partner.</p>
         <div class="footer-badges">
           <span class="footer-badge">Oracle Partner certificado</span>

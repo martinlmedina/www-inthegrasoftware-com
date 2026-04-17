@@ -55,12 +55,12 @@
       --text:     #eef4ff;
       --text-2:   #c0d4f0;
       --muted:    #7d9ac4;
-      --brand:    #55a3ff;
-      --brand-2:  #7c5cff;
+      --brand:    #d96c96;
+      --brand-2:  #F7B5CD;
       --green:    #35d39b;
       --gold:     #ffd166;
       --danger:   #ff9f7a;
-      --ai:       #a78bfa;
+      --ai:       #F7B5CD;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -70,8 +70,8 @@
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       background-color: var(--bg);
       background-image:
-        radial-gradient(ellipse 80% 50% at 90%  0%,  rgba(167,139,250,.16) 0%, transparent 50%),
-        radial-gradient(ellipse 60% 40% at 5%   8%,  rgba(85,163,255,.12)  0%, transparent 45%),
+        radial-gradient(ellipse 80% 50% at 90%  0%,  rgba(247,181,205,.16) 0%, transparent 50%),
+        radial-gradient(ellipse 60% 40% at 5%   8%,  rgba(217,108,150,.12)  0%, transparent 45%),
         radial-gradient(ellipse 70% 60% at 50% 65%,  rgba(53,211,155,.06)  0%, transparent 55%);
       color: var(--text);
       line-height: 1.6;
@@ -92,22 +92,22 @@
     .logo-wrap img { height: 34px; width: auto; display: block; }
     nav { display: flex; align-items: center; gap: 2px; }
     nav a { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500; padding: 7px 14px; border-radius: 8px; transition: all .2s; }
-    nav a:hover, nav a.active { color: var(--ai); background: rgba(167,139,250,.09); }
+    nav a:hover, nav a.active { color: var(--ai); background: rgba(247,181,205,.09); }
     .nav-cta {
       flex-shrink: 0; padding: 10px 22px; border-radius: 10px;
       background: linear-gradient(135deg, var(--brand), var(--brand-2));
       color: #fff; font-size: 14px; font-weight: 700; text-decoration: none;
-      transition: box-shadow .25s; box-shadow: 0 4px 18px rgba(124,92,255,.3);
+      transition: box-shadow .25s; box-shadow: 0 4px 18px rgba(247,181,205,.3);
     }
-    .nav-cta:hover { box-shadow: 0 6px 28px rgba(124,92,255,.5); }
+    .nav-cta:hover { box-shadow: 0 6px 28px rgba(247,181,205,.5); }
 
     /* ── BUTTONS ─── */
     .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 12px; font-size: 15px; font-weight: 700; text-decoration: none; cursor: pointer; border: 1.5px solid transparent; transition: all .25s; font-family: inherit; }
     .btn:hover { transform: translateY(-2px); }
-    .btn-primary { background: linear-gradient(135deg, var(--brand-2), var(--brand)); color: #fff; box-shadow: 0 8px 28px rgba(124,92,255,.3); }
-    .btn-primary:hover { box-shadow: 0 12px 40px rgba(124,92,255,.5); }
+    .btn-primary { background: linear-gradient(135deg, var(--brand-2), var(--brand)); color: #fff; box-shadow: 0 8px 28px rgba(247,181,205,.3); }
+    .btn-primary:hover { box-shadow: 0 12px 40px rgba(247,181,205,.5); }
     .btn-ghost { background: rgba(255,255,255,.05); border-color: var(--line-2); color: var(--text-2); }
-    .btn-ghost:hover { border-color: var(--ai); color: var(--ai); background: rgba(167,139,250,.08); }
+    .btn-ghost:hover { border-color: var(--ai); color: var(--ai); background: rgba(247,181,205,.08); }
 
     /* ── SHARED ─── */
     .section { padding: 96px 0; }
@@ -115,7 +115,7 @@
     .eyebrow {
       display: inline-flex; align-items: center; gap: 8px; margin-bottom: 18px;
       padding: 6px 14px; border-radius: 999px;
-      border: 1px solid rgba(167,139,250,.35); background: rgba(167,139,250,.08);
+      border: 1px solid rgba(247,181,205,.35); background: rgba(247,181,205,.08);
       color: var(--ai); font-size: 11px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
     }
     .eyebrow::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--ai); }
@@ -131,7 +131,7 @@
     .hero-title { font-size: 56px; font-weight: 900; line-height: 1.04; letter-spacing: -.035em; margin-bottom: 22px; }
     .hero-sub { color: var(--text-2); font-size: 18px; line-height: 1.72; max-width: 52ch; margin-bottom: 32px; }
     .hero-badges { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 36px; }
-    .hero-badge { padding: 5px 13px; border-radius: 999px; border: 1px solid rgba(167,139,250,.25); background: rgba(167,139,250,.06); color: var(--text-2); font-size: 12px; font-weight: 500; }
+    .hero-badge { padding: 5px 13px; border-radius: 999px; border: 1px solid rgba(247,181,205,.25); background: rgba(247,181,205,.06); color: var(--text-2); font-size: 12px; font-weight: 500; }
     .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
     .hero-note { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 28px; }
     .hero-note span { font-size: 12px; color: var(--muted); }
@@ -141,8 +141,8 @@
 
     /* ── STORY STRIP ─── */
     .story-strip {
-      background: linear-gradient(135deg, rgba(167,139,250,.08), rgba(85,163,255,.06));
-      border: 1px solid rgba(167,139,250,.2);
+      background: linear-gradient(135deg, rgba(247,181,205,.08), rgba(217,108,150,.06));
+      border: 1px solid rgba(247,181,205,.2);
       border-radius: 24px; padding: 40px 48px;
       display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center;
     }
@@ -176,7 +176,7 @@
     .pillar h3 { font-size: 22px; font-weight: 800; margin-bottom: 12px; }
     .pillar p { font-size: 14px; color: var(--muted); line-height: 1.7; margin-bottom: 20px; }
     .pillar-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: auto; }
-    .pillar-tag { font-size: 11px; padding: 4px 10px; border-radius: 999px; background: rgba(167,139,250,.1); border: 1px solid rgba(167,139,250,.2); color: var(--ai); }
+    .pillar-tag { font-size: 11px; padding: 4px 10px; border-radius: 999px; background: rgba(247,181,205,.1); border: 1px solid rgba(247,181,205,.2); color: var(--ai); }
 
     /* ── USE CASES ─── */
     .uc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
@@ -185,7 +185,7 @@
       transition: border-color .2s, transform .2s;
     }
     .uc-card:hover { border-color: var(--ai); transform: translateY(-4px); }
-    .uc-icon { width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 16px; background: linear-gradient(135deg, rgba(167,139,250,.15), rgba(85,163,255,.1)); border: 1px solid rgba(167,139,250,.2); }
+    .uc-icon { width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 16px; background: linear-gradient(135deg, rgba(247,181,205,.15), rgba(217,108,150,.1)); border: 1px solid rgba(247,181,205,.2); }
     .uc-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
     .uc-card p { font-size: 13px; color: var(--muted); line-height: 1.65; margin-bottom: 12px; }
     .uc-roi { font-size: 12px; font-weight: 700; color: var(--green); background: rgba(53,211,155,.1); border: 1px solid rgba(53,211,155,.2); padding: 4px 12px; border-radius: 999px; display: inline-block; }
@@ -194,7 +194,7 @@
     .arch-visual { border-radius: 20px; overflow: hidden; border: 1px solid var(--line); margin-bottom: 28px; }
     .arch-visual svg { display: block; width: 100%; height: auto; }
     .arch-tags { display: flex; flex-wrap: wrap; gap: 10px; }
-    .arch-tag { padding: 8px 18px; border-radius: 10px; background: rgba(167,139,250,.08); border: 1px solid rgba(167,139,250,.2); color: var(--text-2); font-size: 13px; font-weight: 600; }
+    .arch-tag { padding: 8px 18px; border-radius: 10px; background: rgba(247,181,205,.08); border: 1px solid rgba(247,181,205,.2); color: var(--text-2); font-size: 13px; font-weight: 600; }
 
     /* ── GOVERNANCE ─── */
     .gov-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
@@ -202,7 +202,7 @@
       background: var(--bg-card); border: 1px solid var(--line); border-radius: 20px; padding: 28px;
       display: flex; gap: 20px; align-items: flex-start;
     }
-    .gov-icon { flex-shrink: 0; width: 46px; height: 46px; border-radius: 12px; background: linear-gradient(135deg, rgba(167,139,250,.18), rgba(85,163,255,.12)); border: 1px solid rgba(167,139,250,.25); display: flex; align-items: center; justify-content: center; font-size: 20px; }
+    .gov-icon { flex-shrink: 0; width: 46px; height: 46px; border-radius: 12px; background: linear-gradient(135deg, rgba(247,181,205,.18), rgba(217,108,150,.12)); border: 1px solid rgba(247,181,205,.25); display: flex; align-items: center; justify-content: center; font-size: 20px; }
     .gov-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
     .gov-card p { font-size: 14px; color: var(--muted); line-height: 1.6; }
 
@@ -210,7 +210,7 @@
     .journey-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; position: relative; }
     .journey-grid::before { content: ''; position: absolute; top: 52px; left: 10%; right: 10%; height: 2px; background: linear-gradient(90deg, var(--ai), var(--brand)); }
     .j-card { background: var(--bg-card); border: 1px solid var(--line); border-radius: 20px; padding: 28px 22px 24px; text-align: center; position: relative; }
-    .j-num { width: 52px; height: 52px; border-radius: 50%; margin: 0 auto 16px; background: linear-gradient(135deg, var(--brand-2), var(--brand)); font-size: 20px; font-weight: 900; color: #fff; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 6px rgba(167,139,250,.12); position: relative; z-index: 1; }
+    .j-num { width: 52px; height: 52px; border-radius: 50%; margin: 0 auto 16px; background: linear-gradient(135deg, var(--brand-2), var(--brand)); font-size: 20px; font-weight: 900; color: #fff; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 6px rgba(247,181,205,.12); position: relative; z-index: 1; }
     .j-tag { font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ai); margin-bottom: 10px; }
     .j-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
     .j-card p { font-size: 13px; color: var(--muted); line-height: 1.6; }
@@ -224,7 +224,7 @@
     .roi-ctx { font-size: 11px; color: var(--ai); margin-top: 6px; font-weight: 600; }
 
     /* ── CTA ─── */
-    .cta-section { background: linear-gradient(135deg, rgba(124,92,255,.1), rgba(85,163,255,.1)); border: 1px solid rgba(167,139,250,.25); border-radius: 28px; padding: 64px 56px; display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+    .cta-section { background: linear-gradient(135deg, rgba(247,181,205,.1), rgba(217,108,150,.1)); border: 1px solid rgba(247,181,205,.25); border-radius: 28px; padding: 64px 56px; display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
     .cta-title { font-size: 38px; font-weight: 900; line-height: 1.12; letter-spacing: -.025em; margin-bottom: 16px; }
     .cta-sub { color: var(--muted); font-size: 16px; line-height: 1.7; margin-bottom: 28px; }
     .cta-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
@@ -238,8 +238,8 @@
     .form-group input, .form-group select, .form-group textarea { width: 100%; background: rgba(255,255,255,.05); border: 1px solid var(--line-2); border-radius: 10px; padding: 11px 14px; color: var(--text); font-size: 14px; font-family: inherit; transition: border-color .2s; outline: none; }
     .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--ai); }
     .form-group select option { background: var(--bg-deep); }
-    .form-submit { width: 100%; padding: 14px; border-radius: 12px; border: none; cursor: pointer; font-size: 15px; font-weight: 700; font-family: inherit; background: linear-gradient(135deg, var(--brand-2), var(--brand)); color: #fff; box-shadow: 0 8px 28px rgba(124,92,255,.3); transition: box-shadow .25s, transform .2s; }
-    .form-submit:hover { box-shadow: 0 12px 40px rgba(124,92,255,.5); transform: translateY(-2px); }
+    .form-submit { width: 100%; padding: 14px; border-radius: 12px; border: none; cursor: pointer; font-size: 15px; font-weight: 700; font-family: inherit; background: linear-gradient(135deg, var(--brand-2), var(--brand)); color: #fff; box-shadow: 0 8px 28px rgba(247,181,205,.3); transition: box-shadow .25s, transform .2s; }
+    .form-submit:hover { box-shadow: 0 12px 40px rgba(247,181,205,.5); transform: translateY(-2px); }
 
     /* ── FOOTER ─── */
     footer { background: rgba(8,17,31,.8); border-top: 1px solid rgba(36,58,97,.7); padding: 56px 0 32px; }
@@ -320,7 +320,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="header-inner">
       <div class="logo-wrap">
         <a href="https://inthegrasoftware.com">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2026/02/Logo_oracle_header.svg" alt="Inthegra Software" />
+          <img src="img/wp/2026/02/Logo_oracle_header.svg" alt="Inthegra Software" />
         </a>
       </div>
       <nav>
@@ -372,12 +372,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="hero-visual fade-up" style="transition-delay:.15s;">
         <svg viewBox="0 0 920 660" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <linearGradient id="hg1" x1="0" x2="1"><stop offset="0%" stop-color="#7c5cff"/><stop offset="100%" stop-color="#55a3ff"/></linearGradient>
+            <linearGradient id="hg1" x1="0" x2="1"><stop offset="0%" stop-color="#F7B5CD"/><stop offset="100%" stop-color="#d96c96"/></linearGradient>
             <linearGradient id="hg2" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#0f1933"/><stop offset="100%" stop-color="#162442"/></linearGradient>
-            <linearGradient id="hg3" x1="0" x2="1"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#35d39b"/></linearGradient>
+            <linearGradient id="hg3" x1="0" x2="1"><stop offset="0%" stop-color="#F7B5CD"/><stop offset="100%" stop-color="#35d39b"/></linearGradient>
           </defs>
           <rect width="920" height="660" fill="url(#hg2)"/>
-          <ellipse cx="460" cy="330" rx="230" ry="130" fill="rgba(167,139,250,.05)"/>
+          <ellipse cx="460" cy="330" rx="230" ry="130" fill="rgba(247,181,205,.05)"/>
 
           <!-- Panel izq: Negocio / Inputs -->
           <rect x="30" y="70" width="252" height="520" rx="22" fill="#121f3b" stroke="#30446f"/>
@@ -392,17 +392,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <text x="100" y="194" fill="#35d39b" font-size="10" font-family="Arial">● Conectado</text>
 
           <!-- Documentos -->
-          <rect x="54" y="218" width="204" height="80" rx="12" fill="#162040" stroke="rgba(85,163,255,.3)"/>
-          <circle cx="78" cy="246" r="13" fill="rgba(85,163,255,.15)"/>
-          <text x="78" y="251" fill="#55a3ff" font-size="10" font-weight="800" font-family="Arial" text-anchor="middle">PDF</text>
+          <rect x="54" y="218" width="204" height="80" rx="12" fill="#162040" stroke="rgba(217,108,150,.3)"/>
+          <circle cx="78" cy="246" r="13" fill="rgba(217,108,150,.15)"/>
+          <text x="78" y="251" fill="#d96c96" font-size="10" font-weight="800" font-family="Arial" text-anchor="middle">PDF</text>
           <text x="100" y="243" fill="#eef4ff" font-size="13" font-weight="700" font-family="Arial">Documentos</text>
           <text x="100" y="259" fill="#7d9ac4" font-size="11" font-family="Arial">PDF · Contratos · Emails</text>
           <text x="100" y="288" fill="#35d39b" font-size="10" font-family="Arial">● Procesados en tiempo real</text>
 
           <!-- Tickets / Ops -->
-          <rect x="54" y="312" width="204" height="80" rx="12" fill="#162040" stroke="rgba(167,139,250,.3)"/>
-          <circle cx="78" cy="340" r="13" fill="rgba(167,139,250,.15)"/>
-          <text x="78" y="345" fill="#a78bfa" font-size="9" font-weight="800" font-family="Arial" text-anchor="middle">TICK</text>
+          <rect x="54" y="312" width="204" height="80" rx="12" fill="#162040" stroke="rgba(247,181,205,.3)"/>
+          <circle cx="78" cy="340" r="13" fill="rgba(247,181,205,.15)"/>
+          <text x="78" y="345" fill="#F7B5CD" font-size="9" font-weight="800" font-family="Arial" text-anchor="middle">TICK</text>
           <text x="100" y="337" fill="#eef4ff" font-size="13" font-weight="700" font-family="Arial">Tickets / Soporte</text>
           <text x="100" y="353" fill="#7d9ac4" font-size="11" font-family="Arial">Incidentes · Consultas</text>
           <text x="100" y="382" fill="#35d39b" font-size="10" font-family="Arial">● Clasificación automática</text>
@@ -426,8 +426,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <!-- Panel central: AI Engine -->
           <rect x="322" y="48" width="276" height="564" rx="22" fill="#121f3b" stroke="#30446f"/>
           <!-- Glow interno -->
-          <ellipse cx="460" cy="330" rx="100" ry="180" fill="rgba(167,139,250,.06)"/>
-          <text x="400" y="88" fill="#a78bfa" font-size="17" font-weight="700" font-family="Arial">AI Engine</text>
+          <ellipse cx="460" cy="330" rx="100" ry="180" fill="rgba(247,181,205,.06)"/>
+          <text x="400" y="88" fill="#F7B5CD" font-size="17" font-weight="700" font-family="Arial">AI Engine</text>
 
           <!-- LLM (central, destacado) -->
           <rect x="346" y="106" width="228" height="96" rx="16" fill="url(#hg1)"/>
@@ -436,14 +436,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <text x="380" y="182" fill="rgba(255,255,255,.7)" font-size="10" font-family="Arial">Razonamiento · Generación</text>
 
           <!-- RAG Pipeline -->
-          <rect x="346" y="218" width="228" height="82" rx="14" fill="#162040" stroke="rgba(167,139,250,.4)"/>
-          <text x="366" y="244" fill="#a78bfa" font-size="13" font-weight="700" font-family="Arial">RAG Pipeline</text>
+          <rect x="346" y="218" width="228" height="82" rx="14" fill="#162040" stroke="rgba(247,181,205,.4)"/>
+          <text x="366" y="244" fill="#F7B5CD" font-size="13" font-weight="700" font-family="Arial">RAG Pipeline</text>
           <text x="366" y="260" fill="#7d9ac4" font-size="11" font-family="Arial">Retrieval · Embeddings</text>
           <text x="366" y="290" fill="#7d9ac4" font-size="10" font-family="Arial">Chunk · Rank · Augment</text>
 
           <!-- Vector DB -->
-          <rect x="346" y="316" width="228" height="80" rx="14" fill="#162040" stroke="rgba(85,163,255,.35)"/>
-          <text x="366" y="342" fill="#55a3ff" font-size="13" font-weight="700" font-family="Arial">Vector Database</text>
+          <rect x="346" y="316" width="228" height="80" rx="14" fill="#162040" stroke="rgba(217,108,150,.35)"/>
+          <text x="366" y="342" fill="#d96c96" font-size="13" font-weight="700" font-family="Arial">Vector Database</text>
           <text x="366" y="358" fill="#7d9ac4" font-size="11" font-family="Arial">OpenSearch · pgvector</text>
           <text x="366" y="386" fill="#7d9ac4" font-size="10" font-family="Arial">Búsqueda semántica</text>
 
@@ -464,20 +464,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <text x="678" y="108" fill="#eef4ff" font-size="17" font-weight="700" font-family="Arial">Producción</text>
 
           <!-- Asistente interno -->
-          <rect x="662" y="124" width="204" height="90" rx="12" fill="#162040" stroke="rgba(167,139,250,.35)"/>
+          <rect x="662" y="124" width="204" height="90" rx="12" fill="#162040" stroke="rgba(247,181,205,.35)"/>
           <text x="678" y="146" fill="#7d9ac4" font-size="11" font-family="Arial">Caso en prod.</text>
           <text x="678" y="164" fill="#eef4ff" font-size="13" font-weight="700" font-family="Arial">Asistente interno</text>
           <!-- Chat bubble mini -->
-          <rect x="678" y="174" width="168" height="28" rx="8" fill="rgba(167,139,250,.15)" stroke="rgba(167,139,250,.3)"/>
-          <text x="688" y="192" fill="#a78bfa" font-size="11" font-family="Arial">¿Cuál es la política de…? →</text>
+          <rect x="678" y="174" width="168" height="28" rx="8" fill="rgba(247,181,205,.15)" stroke="rgba(247,181,205,.3)"/>
+          <text x="688" y="192" fill="#F7B5CD" font-size="11" font-family="Arial">¿Cuál es la política de…? →</text>
           <text x="678" y="212" fill="#35d39b" font-size="10" font-family="Arial">● Responde en &lt;2s con fuente</text>
 
           <!-- Lectura de comprobantes -->
-          <rect x="662" y="228" width="204" height="88" rx="12" fill="#162040" stroke="rgba(85,163,255,.3)"/>
+          <rect x="662" y="228" width="204" height="88" rx="12" fill="#162040" stroke="rgba(217,108,150,.3)"/>
           <text x="678" y="250" fill="#7d9ac4" font-size="11" font-family="Arial">Automatización</text>
           <text x="678" y="268" fill="#eef4ff" font-size="13" font-weight="700" font-family="Arial">Lectura de facturas</text>
-          <rect x="678" y="278" width="168" height="8" rx="3" fill="rgba(85,163,255,.25)"/>
-          <rect x="678" y="290" width="120" height="8" rx="3" fill="rgba(85,163,255,.18)"/>
+          <rect x="678" y="278" width="168" height="8" rx="3" fill="rgba(217,108,150,.25)"/>
+          <rect x="678" y="290" width="120" height="8" rx="3" fill="rgba(217,108,150,.18)"/>
           <text x="678" y="308" fill="#35d39b" font-size="10" font-family="Arial">● 98.4% precisión · -80% tiempo</text>
 
           <!-- Tickets automáticos -->
@@ -500,7 +500,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <text x="662" y="572" fill="#7d9ac4" font-size="11" font-family="Arial">AI real · Impacto medible · ROI</text>
 
           <!-- Arrows izq → centro -->
-          <path d="M282 164 H322 M282 258 H322 M282 352 H322 M282 446 H322 M282 532 H322" stroke="#55a3ff" stroke-width="6" stroke-linecap="round" opacity=".6"/>
+          <path d="M282 164 H322 M282 258 H322 M282 352 H322 M282 446 H322 M282 532 H322" stroke="#d96c96" stroke-width="6" stroke-linecap="round" opacity=".6"/>
           <!-- Arrows centro → der -->
           <path d="M598 154 H638 M598 259 H638 M598 356 H638 M598 452 H638 M598 542 H638" stroke="url(#hg3)" stroke-width="6" stroke-linecap="round" opacity=".7"/>
         </svg>
@@ -726,15 +726,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="arch-visual fade-up">
       <svg viewBox="0 0 1200 540" xmlns="http://www.w3.org/2000/svg">
         <defs>
-          <linearGradient id="ag1" x1="0" x2="1"><stop offset="0%" stop-color="#7c5cff"/><stop offset="100%" stop-color="#55a3ff"/></linearGradient>
-          <linearGradient id="ag2" x1="0" x2="1"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#35d39b"/></linearGradient>
+          <linearGradient id="ag1" x1="0" x2="1"><stop offset="0%" stop-color="#F7B5CD"/><stop offset="100%" stop-color="#d96c96"/></linearGradient>
+          <linearGradient id="ag2" x1="0" x2="1"><stop offset="0%" stop-color="#F7B5CD"/><stop offset="100%" stop-color="#35d39b"/></linearGradient>
           <linearGradient id="abg" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#0f1933"/><stop offset="100%" stop-color="#0d1628"/></linearGradient>
         </defs>
         <rect width="1200" height="540" rx="20" fill="url(#abg)"/>
 
         <!-- Column labels -->
-        <text x="120" y="36" fill="#55a3ff" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle" letter-spacing="1">DATOS Y SISTEMAS</text>
-        <text x="420" y="36" fill="#a78bfa" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle" letter-spacing="1">AI LAYER</text>
+        <text x="120" y="36" fill="#d96c96" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle" letter-spacing="1">DATOS Y SISTEMAS</text>
+        <text x="420" y="36" fill="#F7B5CD" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle" letter-spacing="1">AI LAYER</text>
         <text x="740" y="36" fill="#35d39b" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle" letter-spacing="1">ORQUESTACIÓN</text>
         <text x="1060" y="36" fill="#ffd166" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle" letter-spacing="1">INTEGRACIÓN Y OUTPUT</text>
 
@@ -743,11 +743,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <rect x="60" y="80" width="122" height="56" rx="10" fill="#162040" stroke="rgba(255,100,50,.3)"/>
         <text x="121" y="108" fill="#ff6432" font-size="12" font-weight="700" font-family="Arial" text-anchor="middle">Oracle EBS</text>
         <text x="121" y="124" fill="#7d9ac4" font-size="10" font-family="Arial" text-anchor="middle">Fusion · APIs</text>
-        <rect x="60" y="150" width="122" height="56" rx="10" fill="#162040" stroke="rgba(85,163,255,.3)"/>
-        <text x="121" y="178" fill="#55a3ff" font-size="12" font-weight="700" font-family="Arial" text-anchor="middle">Oracle DB</text>
+        <rect x="60" y="150" width="122" height="56" rx="10" fill="#162040" stroke="rgba(217,108,150,.3)"/>
+        <text x="121" y="178" fill="#d96c96" font-size="12" font-weight="700" font-family="Arial" text-anchor="middle">Oracle DB</text>
         <text x="121" y="194" fill="#7d9ac4" font-size="10" font-family="Arial" text-anchor="middle">Datos estructurados</text>
-        <rect x="60" y="220" width="122" height="56" rx="10" fill="#162040" stroke="rgba(167,139,250,.3)"/>
-        <text x="121" y="248" fill="#a78bfa" font-size="12" font-weight="700" font-family="Arial" text-anchor="middle">Documentos</text>
+        <rect x="60" y="220" width="122" height="56" rx="10" fill="#162040" stroke="rgba(247,181,205,.3)"/>
+        <text x="121" y="248" fill="#F7B5CD" font-size="12" font-weight="700" font-family="Arial" text-anchor="middle">Documentos</text>
         <text x="121" y="264" fill="#7d9ac4" font-size="10" font-family="Arial" text-anchor="middle">PDF · Email · Web</text>
         <rect x="60" y="290" width="122" height="56" rx="10" fill="#162040" stroke="rgba(53,211,155,.25)"/>
         <text x="121" y="318" fill="#35d39b" font-size="12" font-weight="700" font-family="Arial" text-anchor="middle">APIs externas</text>
@@ -764,13 +764,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <text x="274" y="126" fill="rgba(255,255,255,.8)" font-size="10" font-family="Arial">Claude · GPT-4o · Gemini</text>
         <text x="274" y="140" fill="rgba(255,255,255,.65)" font-size="9" font-family="Arial">Razonamiento · Generación</text>
         <!-- Embeddings -->
-        <rect x="430" y="76" width="152" height="72" rx="12" fill="#162040" stroke="rgba(167,139,250,.4)"/>
-        <text x="506" y="108" fill="#a78bfa" font-size="13" font-weight="700" font-family="Arial" text-anchor="middle">Embeddings</text>
+        <rect x="430" y="76" width="152" height="72" rx="12" fill="#162040" stroke="rgba(247,181,205,.4)"/>
+        <text x="506" y="108" fill="#F7B5CD" font-size="13" font-weight="700" font-family="Arial" text-anchor="middle">Embeddings</text>
         <text x="440" y="126" fill="#7d9ac4" font-size="10" font-family="Arial">text-embedding-3</text>
         <text x="440" y="140" fill="#7d9ac4" font-size="9" font-family="Arial">Vectorización semántica</text>
         <!-- RAG -->
-        <rect x="264" y="166" width="318" height="68" rx="12" fill="#162040" stroke="rgba(85,163,255,.35)"/>
-        <text x="380" y="192" fill="#55a3ff" font-size="13" font-weight="700" font-family="Arial" text-anchor="middle">RAG Pipeline</text>
+        <rect x="264" y="166" width="318" height="68" rx="12" fill="#162040" stroke="rgba(217,108,150,.35)"/>
+        <text x="380" y="192" fill="#d96c96" font-size="13" font-weight="700" font-family="Arial" text-anchor="middle">RAG Pipeline</text>
         <text x="274" y="210" fill="#7d9ac4" font-size="10" font-family="Arial">Chunk → Embed → Index → Retrieve → Augment → Generate</text>
         <text x="274" y="224" fill="#7d9ac4" font-size="9" font-family="Arial">Relevance ranking · Context window management · Source citation</text>
         <!-- Vector DB -->
@@ -788,16 +788,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <text x="380" y="364" fill="#ff9f7a" font-size="13" font-weight="700" font-family="Arial" text-anchor="middle">Guardrails &amp; Output Validation</text>
         <text x="274" y="384" fill="#7d9ac4" font-size="10" font-family="Arial">Hallucination detection · Content filtering · Schema validation · Confidence scores</text>
         <!-- Logging -->
-        <rect x="264" y="416" width="318" height="46" rx="12" fill="#162040" stroke="rgba(167,139,250,.25)"/>
-        <text x="380" y="442" fill="#a78bfa" font-size="12" font-weight="700" font-family="Arial" text-anchor="middle">Logging · Tracing · Observability</text>
+        <rect x="264" y="416" width="318" height="46" rx="12" fill="#162040" stroke="rgba(247,181,205,.25)"/>
+        <text x="380" y="442" fill="#F7B5CD" font-size="12" font-weight="700" font-family="Arial" text-anchor="middle">Logging · Tracing · Observability</text>
 
         <!-- Col 3: Orquestación -->
         <rect x="646" y="56" width="188" height="422" rx="16" fill="#121f3b" stroke="#243860"/>
-        <rect x="666" y="80" width="148" height="60" rx="10" fill="#162040" stroke="rgba(167,139,250,.35)"/>
-        <text x="740" y="108" fill="#a78bfa" font-size="12" font-weight="700" font-family="Arial" text-anchor="middle">LangChain</text>
+        <rect x="666" y="80" width="148" height="60" rx="10" fill="#162040" stroke="rgba(247,181,205,.35)"/>
+        <text x="740" y="108" fill="#F7B5CD" font-size="12" font-weight="700" font-family="Arial" text-anchor="middle">LangChain</text>
         <text x="740" y="124" fill="#7d9ac4" font-size="10" font-family="Arial" text-anchor="middle">Agent framework</text>
-        <rect x="666" y="156" width="148" height="60" rx="10" fill="#162040" stroke="rgba(85,163,255,.3)"/>
-        <text x="740" y="184" fill="#55a3ff" font-size="12" font-weight="700" font-family="Arial" text-anchor="middle">LlamaIndex</text>
+        <rect x="666" y="156" width="148" height="60" rx="10" fill="#162040" stroke="rgba(217,108,150,.3)"/>
+        <text x="740" y="184" fill="#d96c96" font-size="12" font-weight="700" font-family="Arial" text-anchor="middle">LlamaIndex</text>
         <text x="740" y="200" fill="#7d9ac4" font-size="10" font-family="Arial" text-anchor="middle">RAG orquestado</text>
         <rect x="666" y="232" width="148" height="60" rx="10" fill="#162040" stroke="rgba(53,211,155,.25)"/>
         <text x="740" y="260" fill="#35d39b" font-size="12" font-weight="700" font-family="Arial" text-anchor="middle">Custom Agents</text>
@@ -805,8 +805,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <rect x="666" y="308" width="148" height="60" rx="10" fill="#162040" stroke="rgba(255,209,102,.2)"/>
         <text x="740" y="336" fill="#ffd166" font-size="12" font-weight="700" font-family="Arial" text-anchor="middle">OCI AI Services</text>
         <text x="740" y="352" fill="#7d9ac4" font-size="10" font-family="Arial" text-anchor="middle">Oracle GenAI</text>
-        <rect x="666" y="384" width="148" height="78" rx="10" fill="#162040" stroke="rgba(167,139,250,.3)"/>
-        <text x="740" y="412" fill="#a78bfa" font-size="12" font-weight="700" font-family="Arial" text-anchor="middle">Cost Manager</text>
+        <rect x="666" y="384" width="148" height="78" rx="10" fill="#162040" stroke="rgba(247,181,205,.3)"/>
+        <text x="740" y="412" fill="#F7B5CD" font-size="12" font-weight="700" font-family="Arial" text-anchor="middle">Cost Manager</text>
         <text x="740" y="428" fill="#7d9ac4" font-size="10" font-family="Arial" text-anchor="middle">Token budget</text>
         <text x="740" y="444" fill="#7d9ac4" font-size="9" font-family="Arial" text-anchor="middle">Caching · Routing</text>
 
@@ -815,11 +815,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <rect x="902" y="80" width="238" height="56" rx="10" fill="#162040" stroke="rgba(255,100,50,.3)"/>
         <text x="1021" y="108" fill="#ff9f7a" font-size="12" font-weight="700" font-family="Arial" text-anchor="middle">Integración Oracle EBS</text>
         <text x="1021" y="124" fill="#7d9ac4" font-size="10" font-family="Arial" text-anchor="middle">Write-back · Triggers · APIs</text>
-        <rect x="902" y="150" width="238" height="56" rx="10" fill="#162040" stroke="rgba(85,163,255,.3)"/>
-        <text x="1021" y="178" fill="#55a3ff" font-size="12" font-weight="700" font-family="Arial" text-anchor="middle">Webhook / Event Bus</text>
+        <rect x="902" y="150" width="238" height="56" rx="10" fill="#162040" stroke="rgba(217,108,150,.3)"/>
+        <text x="1021" y="178" fill="#d96c96" font-size="12" font-weight="700" font-family="Arial" text-anchor="middle">Webhook / Event Bus</text>
         <text x="1021" y="194" fill="#7d9ac4" font-size="10" font-family="Arial" text-anchor="middle">Acción automática en sistemas</text>
-        <rect x="902" y="220" width="238" height="56" rx="10" fill="#162040" stroke="rgba(167,139,250,.3)"/>
-        <text x="1021" y="248" fill="#a78bfa" font-size="12" font-weight="700" font-family="Arial" text-anchor="middle">UI / Chatbot embebido</text>
+        <rect x="902" y="220" width="238" height="56" rx="10" fill="#162040" stroke="rgba(247,181,205,.3)"/>
+        <text x="1021" y="248" fill="#F7B5CD" font-size="12" font-weight="700" font-family="Arial" text-anchor="middle">UI / Chatbot embebido</text>
         <text x="1021" y="264" fill="#7d9ac4" font-size="10" font-family="Arial" text-anchor="middle">Web · APEX · WhatsApp</text>
         <rect x="902" y="290" width="238" height="56" rx="10" fill="#162040" stroke="rgba(53,211,155,.25)"/>
         <text x="1021" y="318" fill="#35d39b" font-size="12" font-weight="700" font-family="Arial" text-anchor="middle">Dashboard / Reporting</text>
@@ -831,7 +831,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <text x="1021" y="440" fill="#35d39b" font-size="9" font-family="Arial" text-anchor="middle">● SLA monitoring 24/7</text>
 
         <!-- Arrows -->
-        <path d="M202 108 H240 M202 178 H240 M202 248 H240 M202 318 H240 M202 388 H240" stroke="#55a3ff" stroke-width="5" stroke-linecap="round" opacity=".6"/>
+        <path d="M202 108 H240 M202 178 H240 M202 248 H240 M202 318 H240 M202 388 H240" stroke="#d96c96" stroke-width="5" stroke-linecap="round" opacity=".6"/>
         <path d="M602 260 H646 M602 370 H646" stroke="url(#ag2)" stroke-width="5" stroke-linecap="round" opacity=".65"/>
         <path d="M834 260 H882 M834 315 H882 M834 370 H882" stroke="#35d39b" stroke-width="5" stroke-linecap="round" opacity=".6"/>
       </svg>
@@ -973,7 +973,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="footer-grid">
       <div>
         <div class="footer-logo">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2024/12/logo-footer.png" alt="Inthegra Software" />
+          <img src="img/wp/2024/12/logo-footer.png" alt="Inthegra Software" />
         </div>
         <p class="footer-tagline">Partner Oracle especializado en aplicaciones, analítica, cloud e inteligencia artificial aplicada a producción.</p>
       </div>

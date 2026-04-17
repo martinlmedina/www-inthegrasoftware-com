@@ -44,11 +44,11 @@
       --text:     #eef4ff;
       --text-2:   #c0d4f0;
       --muted:    #7d9ac4;
-      --brand:    #55a3ff;
-      --brand-2:  #7c5cff;
+      --brand:    #d96c96;
+      --brand-2:  #F7B5CD;
       --green:    #35d39b;
       --gold:     #ffd166;
-      --ai:       #a78bfa;
+      --ai:       #F7B5CD;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -58,8 +58,8 @@
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       background-color: var(--bg);
       background-image:
-        radial-gradient(ellipse 90% 55% at 100% 0%,  rgba(85,163,255,.18) 0%, transparent 50%),
-        radial-gradient(ellipse 60% 40% at 0%   10%, rgba(124,92,255,.13)  0%, transparent 45%),
+        radial-gradient(ellipse 90% 55% at 100% 0%,  rgba(217,108,150,.18) 0%, transparent 50%),
+        radial-gradient(ellipse 60% 40% at 0%   10%, rgba(247,181,205,.13)  0%, transparent 45%),
         radial-gradient(ellipse 80% 70% at 50%  70%, rgba(53,211,155,.06)  0%, transparent 55%);
       color: var(--text);
       line-height: 1.6;
@@ -80,22 +80,22 @@
     .logo-wrap img { height: 34px; width: auto; display: block; }
     nav { display: flex; align-items: center; gap: 2px; }
     nav a { color: var(--muted); text-decoration: none; font-size: 13px; font-weight: 500; padding: 6px 12px; border-radius: 8px; transition: all .2s; white-space: nowrap; }
-    nav a:hover { color: var(--brand); background: rgba(85,163,255,.09); }
-    .nav-cta { flex-shrink: 0; padding: 10px 22px; border-radius: 10px; background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #fff; font-size: 14px; font-weight: 700; text-decoration: none; transition: box-shadow .25s; box-shadow: 0 4px 18px rgba(85,163,255,.3); }
-    .nav-cta:hover { box-shadow: 0 6px 28px rgba(85,163,255,.5); }
+    nav a:hover { color: var(--brand); background: rgba(217,108,150,.09); }
+    .nav-cta { flex-shrink: 0; padding: 10px 22px; border-radius: 10px; background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #fff; font-size: 14px; font-weight: 700; text-decoration: none; transition: box-shadow .25s; box-shadow: 0 4px 18px rgba(217,108,150,.3); }
+    .nav-cta:hover { box-shadow: 0 6px 28px rgba(217,108,150,.5); }
 
     /* ── BUTTONS ─── */
     .btn { display: inline-flex; align-items: center; gap: 8px; padding: 13px 26px; border-radius: 12px; font-size: 15px; font-weight: 700; text-decoration: none; cursor: pointer; border: 1.5px solid transparent; transition: all .25s; font-family: inherit; }
     .btn:hover { transform: translateY(-2px); }
-    .btn-primary { background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #fff; box-shadow: 0 8px 28px rgba(85,163,255,.3); }
-    .btn-primary:hover { box-shadow: 0 12px 40px rgba(85,163,255,.5); }
+    .btn-primary { background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #fff; box-shadow: 0 8px 28px rgba(217,108,150,.3); }
+    .btn-primary:hover { box-shadow: 0 12px 40px rgba(217,108,150,.5); }
     .btn-ghost { background: rgba(255,255,255,.05); border-color: var(--line-2); color: var(--text-2); }
-    .btn-ghost:hover { border-color: var(--brand); color: var(--brand); background: rgba(85,163,255,.08); }
+    .btn-ghost:hover { border-color: var(--brand); color: var(--brand); background: rgba(217,108,150,.08); }
 
     /* ── SHARED ─── */
     .section { padding: 96px 0; }
     .section + .section { border-top: 1px solid rgba(36,58,97,.45); }
-    .eyebrow { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 18px; padding: 6px 14px; border-radius: 999px; border: 1px solid rgba(85,163,255,.3); background: rgba(85,163,255,.08); color: var(--brand); font-size: 11px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 18px; padding: 6px 14px; border-radius: 999px; border: 1px solid rgba(217,108,150,.3); background: rgba(217,108,150,.08); color: var(--brand); font-size: 11px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
     .eyebrow::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--brand); }
     .section-label { font-size: 11px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--brand); display: block; margin-bottom: 12px; }
     .section-title { font-size: 44px; font-weight: 800; line-height: 1.12; letter-spacing: -.025em; margin-bottom: 16px; }
@@ -136,7 +136,7 @@
     .svc-card.accent-blue:hover { border-color: var(--brand); }
     .svc-card.accent-green:hover { border-color: var(--green); }
     .svc-card.accent-violet:hover { border-color: var(--brand-2); }
-    .svc-card.accent-teal:hover { border-color: #2dd4bf; }
+    .svc-card.accent-teal:hover { border-color: #d96c96; }
     .svc-card.accent-ai:hover { border-color: var(--ai); }
 
     .svc-top { padding: 32px 32px 0; display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
@@ -150,8 +150,8 @@
     .svc-card.accent-green .svc-tag::before { background: var(--green); }
     .svc-card.accent-violet .svc-tag { color: var(--brand-2); }
     .svc-card.accent-violet .svc-tag::before { background: var(--brand-2); }
-    .svc-card.accent-teal .svc-tag { color: #2dd4bf; }
-    .svc-card.accent-teal .svc-tag::before { background: #2dd4bf; }
+    .svc-card.accent-teal .svc-tag { color: #d96c96; }
+    .svc-card.accent-teal .svc-tag::before { background: #d96c96; }
     .svc-card.accent-ai .svc-tag { color: var(--ai); }
     .svc-card.accent-ai .svc-tag::before { background: var(--ai); }
 
@@ -162,7 +162,7 @@
     .svc-bullets li::before { content: '→'; position: absolute; left: 0; color: var(--brand); font-size: 12px; }
     .svc-card.accent-green .svc-bullets li::before { color: var(--green); }
     .svc-card.accent-violet .svc-bullets li::before { color: var(--brand-2); }
-    .svc-card.accent-teal .svc-bullets li::before { color: #2dd4bf; }
+    .svc-card.accent-teal .svc-bullets li::before { color: #d96c96; }
     .svc-card.accent-ai .svc-bullets li::before { color: var(--ai); }
 
     .svc-footer { margin-top: auto; display: flex; align-items: center; justify-content: space-between; padding-top: 20px; border-top: 1px solid var(--line); }
@@ -170,7 +170,7 @@
     .svc-card.accent-blue .svc-link { color: var(--brand); }
     .svc-card.accent-green .svc-link { color: var(--green); }
     .svc-card.accent-violet .svc-link { color: var(--brand-2); }
-    .svc-card.accent-teal .svc-link { color: #2dd4bf; }
+    .svc-card.accent-teal .svc-link { color: #d96c96; }
     .svc-card.accent-ai .svc-link { color: var(--ai); }
     .svc-kpi { font-size: 12px; color: var(--muted); text-align: right; }
     .svc-kpi strong { display: block; font-size: 18px; font-weight: 800; color: var(--text); }
@@ -208,12 +208,12 @@
 
     /* ── CTA ─── */
     .cta-box {
-      background: linear-gradient(135deg, rgba(85,163,255,.12), rgba(124,92,255,.12));
-      border: 1px solid rgba(85,163,255,.25); border-radius: 28px;
+      background: linear-gradient(135deg, rgba(217,108,150,.12), rgba(247,181,205,.12));
+      border: 1px solid rgba(217,108,150,.25); border-radius: 28px;
       padding: 72px 56px; text-align: center; position: relative; overflow: hidden;
     }
-    .cta-box::before { content: ''; position: absolute; top: -80px; right: -80px; width: 300px; height: 300px; border-radius: 50%; background: rgba(85,163,255,.08); pointer-events: none; }
-    .cta-box::after { content: ''; position: absolute; bottom: -60px; left: -60px; width: 240px; height: 240px; border-radius: 50%; background: rgba(124,92,255,.08); pointer-events: none; }
+    .cta-box::before { content: ''; position: absolute; top: -80px; right: -80px; width: 300px; height: 300px; border-radius: 50%; background: rgba(217,108,150,.08); pointer-events: none; }
+    .cta-box::after { content: ''; position: absolute; bottom: -60px; left: -60px; width: 240px; height: 240px; border-radius: 50%; background: rgba(247,181,205,.08); pointer-events: none; }
     .cta-box h2 { font-size: 42px; font-weight: 900; letter-spacing: -.025em; margin-bottom: 16px; position: relative; z-index: 1; }
     .cta-box p { font-size: 18px; color: var(--muted); max-width: 55ch; margin: 0 auto 36px; line-height: 1.7; position: relative; z-index: 1; }
     .cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; position: relative; z-index: 1; }
@@ -304,7 +304,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="header-inner">
       <div class="logo-wrap">
         <a href="https://inthegrasoftware.com">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2026/02/Logo_oracle_header.svg" alt="Inthegra Software" />
+          <img src="img/wp/2026/02/Logo_oracle_header.svg" alt="Inthegra Software" />
         </a>
       </div>
       <nav>
@@ -356,13 +356,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="hero-visual fade-up" style="transition-delay:.15s;">
         <svg viewBox="0 0 920 640" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <linearGradient id="hg1" x1="0" x2="1"><stop offset="0%" stop-color="#55a3ff"/><stop offset="100%" stop-color="#7c5cff"/></linearGradient>
+            <linearGradient id="hg1" x1="0" x2="1"><stop offset="0%" stop-color="#d96c96"/><stop offset="100%" stop-color="#F7B5CD"/></linearGradient>
             <linearGradient id="hg2" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#0f1933"/><stop offset="100%" stop-color="#162442"/></linearGradient>
-            <linearGradient id="hg3" x1="0" x2="1"><stop offset="0%" stop-color="#55a3ff"/><stop offset="100%" stop-color="#35d39b"/></linearGradient>
-            <linearGradient id="hg4" x1="0" x2="1"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#55a3ff"/></linearGradient>
+            <linearGradient id="hg3" x1="0" x2="1"><stop offset="0%" stop-color="#d96c96"/><stop offset="100%" stop-color="#35d39b"/></linearGradient>
+            <linearGradient id="hg4" x1="0" x2="1"><stop offset="0%" stop-color="#F7B5CD"/><stop offset="100%" stop-color="#d96c96"/></linearGradient>
           </defs>
           <rect width="920" height="640" fill="url(#hg2)"/>
-          <ellipse cx="460" cy="320" rx="220" ry="140" fill="rgba(85,163,255,.05)"/>
+          <ellipse cx="460" cy="320" rx="220" ry="140" fill="rgba(217,108,150,.05)"/>
 
           <!-- Panel izquierdo: Stack Oracle actual -->
           <rect x="28" y="68" width="240" height="504" rx="20" fill="#121f3b" stroke="#30446f"/>
@@ -373,13 +373,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <text x="70" y="158" fill="#7d9ac4" font-size="11" font-family="Arial">Client/server · Reportes</text>
           <text x="70" y="180" fill="#ffd166" font-size="10" font-family="Arial">▲ Desactualizado</text>
           <!-- Oracle DB -->
-          <rect x="50" y="204" width="196" height="72" rx="12" fill="#162040" stroke="rgba(85,163,255,.3)"/>
-          <text x="70" y="228" fill="#55a3ff" font-size="12" font-weight="700" font-family="Arial">Oracle Database</text>
+          <rect x="50" y="204" width="196" height="72" rx="12" fill="#162040" stroke="rgba(217,108,150,.3)"/>
+          <text x="70" y="228" fill="#d96c96" font-size="12" font-weight="700" font-family="Arial">Oracle Database</text>
           <text x="70" y="244" fill="#7d9ac4" font-size="11" font-family="Arial">On-premise · Producción</text>
           <text x="70" y="266" fill="#35d39b" font-size="10" font-family="Arial">● Core del negocio</text>
           <!-- Infra local -->
-          <rect x="50" y="290" width="196" height="72" rx="12" fill="#162040" stroke="rgba(124,92,255,.25)"/>
-          <text x="70" y="314" fill="#a78bfa" font-size="12" font-weight="700" font-family="Arial">Infraestructura propia</text>
+          <rect x="50" y="290" width="196" height="72" rx="12" fill="#162040" stroke="rgba(247,181,205,.25)"/>
+          <text x="70" y="314" fill="#F7B5CD" font-size="12" font-weight="700" font-family="Arial">Infraestructura propia</text>
           <text x="70" y="330" fill="#7d9ac4" font-size="11" font-family="Arial">Servidores · Alto costo</text>
           <text x="70" y="352" fill="#ffd166" font-size="10" font-family="Arial">▲ Sin escalabilidad</text>
           <!-- Reportes dispersos -->
@@ -395,7 +395,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
           <!-- Panel central: Inthegra Services -->
           <rect x="310" y="44" width="300" height="552" rx="22" fill="#121f3b" stroke="#30446f"/>
-          <ellipse cx="460" cy="320" rx="100" ry="200" fill="rgba(85,163,255,.04)"/>
+          <ellipse cx="460" cy="320" rx="100" ry="200" fill="rgba(217,108,150,.04)"/>
           <text x="387" y="84" fill="#eef4ff" font-size="16" font-weight="700" font-family="Arial">Inthegra Oracle</text>
           <!-- Modernización -->
           <rect x="330" y="102" width="260" height="76" rx="14" fill="url(#hg1)"/>
@@ -406,16 +406,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <text x="352" y="225" fill="#35d39b" font-size="14" font-weight="700" font-family="Arial">Oracle Cloud (OCI)</text>
           <text x="352" y="245" fill="#7d9ac4" font-size="11" font-family="Arial">Infra · DB · Security · FinOps</text>
           <!-- Desarrollo -->
-          <rect x="330" y="280" width="260" height="70" rx="14" fill="#162040" stroke="rgba(124,92,255,.4)"/>
-          <text x="352" y="311" fill="#a78bfa" font-size="14" font-weight="700" font-family="Arial">Desarrollo a Medida</text>
+          <rect x="330" y="280" width="260" height="70" rx="14" fill="#162040" stroke="rgba(247,181,205,.4)"/>
+          <text x="352" y="311" fill="#F7B5CD" font-size="14" font-weight="700" font-family="Arial">Desarrollo a Medida</text>
           <text x="352" y="331" fill="#7d9ac4" font-size="11" font-family="Arial">APEX · ORDS · PWA · APIs</text>
           <!-- Analytics -->
-          <rect x="330" y="366" width="260" height="70" rx="14" fill="#162040" stroke="rgba(85,163,255,.3)"/>
-          <text x="352" y="397" fill="#55a3ff" font-size="14" font-weight="700" font-family="Arial">Oracle Analytics Cloud</text>
+          <rect x="330" y="366" width="260" height="70" rx="14" fill="#162040" stroke="rgba(217,108,150,.3)"/>
+          <text x="352" y="397" fill="#d96c96" font-size="14" font-weight="700" font-family="Arial">Oracle Analytics Cloud</text>
           <text x="352" y="417" fill="#7d9ac4" font-size="11" font-family="Arial">Semantic Model · BI · Reporting</text>
           <!-- Production AI -->
-          <rect x="330" y="452" width="260" height="70" rx="14" fill="#162040" stroke="rgba(167,139,250,.4)"/>
-          <text x="352" y="484" fill="#a78bfa" font-size="14" font-weight="700" font-family="Arial">Production AI</text>
+          <rect x="330" y="452" width="260" height="70" rx="14" fill="#162040" stroke="rgba(247,181,205,.4)"/>
+          <text x="352" y="484" fill="#F7B5CD" font-size="14" font-weight="700" font-family="Arial">Production AI</text>
           <text x="352" y="504" fill="#7d9ac4" font-size="11" font-family="Arial">RAG · Agentes · LLM en prod.</text>
           <text x="330" y="544" fill="#7d9ac4" font-size="11" font-family="Arial">Capacidad Oracle integrada · end-to-end</text>
 
@@ -423,8 +423,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <rect x="652" y="68" width="240" height="504" rx="20" fill="#121f3b" stroke="#30446f"/>
           <text x="690" y="104" fill="#eef4ff" font-size="16" font-weight="700" font-family="Arial">Resultado</text>
           <!-- Apps modernas -->
-          <rect x="672" y="118" width="200" height="72" rx="12" fill="#162040" stroke="rgba(85,163,255,.35)"/>
-          <text x="692" y="142" fill="#55a3ff" font-size="12" font-weight="700" font-family="Arial">Apps web modernas</text>
+          <rect x="672" y="118" width="200" height="72" rx="12" fill="#162040" stroke="rgba(217,108,150,.35)"/>
+          <text x="692" y="142" fill="#d96c96" font-size="12" font-weight="700" font-family="Arial">Apps web modernas</text>
           <text x="692" y="158" fill="#7d9ac4" font-size="11" font-family="Arial">UX renovada · Integración</text>
           <text x="692" y="179" fill="#35d39b" font-size="10" font-family="Arial">● Sin reescribir el core</text>
           <!-- Cloud optimizado -->
@@ -433,23 +433,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <text x="692" y="244" fill="#7d9ac4" font-size="11" font-family="Arial">99.9% uptime · -30% costo</text>
           <text x="692" y="266" fill="#35d39b" font-size="10" font-family="Arial">● FinOps continuo</text>
           <!-- APEX apps -->
-          <rect x="672" y="290" width="200" height="72" rx="12" fill="#162040" stroke="rgba(124,92,255,.3)"/>
-          <text x="692" y="314" fill="#a78bfa" font-size="12" font-weight="700" font-family="Arial">Apps a medida entregadas</text>
+          <rect x="672" y="290" width="200" height="72" rx="12" fill="#162040" stroke="rgba(247,181,205,.3)"/>
+          <text x="692" y="314" fill="#F7B5CD" font-size="12" font-weight="700" font-family="Arial">Apps a medida entregadas</text>
           <text x="692" y="330" fill="#7d9ac4" font-size="11" font-family="Arial">Portales · Workflows · PWA</text>
           <text x="692" y="352" fill="#35d39b" font-size="10" font-family="Arial">● DevOps + agilidad</text>
           <!-- Analytics gobernada -->
-          <rect x="672" y="376" width="200" height="68" rx="12" fill="#162040" stroke="rgba(85,163,255,.25)"/>
-          <text x="692" y="400" fill="#55a3ff" font-size="12" font-weight="700" font-family="Arial">Analítica gobernada</text>
+          <rect x="672" y="376" width="200" height="68" rx="12" fill="#162040" stroke="rgba(217,108,150,.25)"/>
+          <text x="692" y="400" fill="#d96c96" font-size="12" font-weight="700" font-family="Arial">Analítica gobernada</text>
           <text x="692" y="416" fill="#7d9ac4" font-size="11" font-family="Arial">Una fuente de verdad</text>
           <text x="692" y="434" fill="#35d39b" font-size="10" font-family="Arial">● -65% tiempo reporting</text>
           <!-- AI en producción -->
-          <rect x="672" y="458" width="200" height="60" rx="12" fill="#162040" stroke="rgba(167,139,250,.3)"/>
-          <text x="692" y="482" fill="#a78bfa" font-size="12" font-weight="700" font-family="Arial">AI en producción real</text>
+          <rect x="672" y="458" width="200" height="60" rx="12" fill="#162040" stroke="rgba(247,181,205,.3)"/>
+          <text x="692" y="482" fill="#F7B5CD" font-size="12" font-weight="700" font-family="Arial">AI en producción real</text>
           <text x="692" y="498" fill="#7d9ac4" font-size="11" font-family="Arial">ROI medible · Sin hype</text>
           <text x="652" y="548" fill="#7d9ac4" font-size="11" font-family="Arial">Modernización · Ops · Datos · AI</text>
 
           <!-- Arrows -->
-          <path d="M268 154 H310 M268 240 H310 M268 326 H310 M268 410 H310 M268 488 H310" stroke="#55a3ff" stroke-width="6" stroke-linecap="round" opacity=".55"/>
+          <path d="M268 154 H310 M268 240 H310 M268 326 H310 M268 410 H310 M268 488 H310" stroke="#d96c96" stroke-width="6" stroke-linecap="round" opacity=".55"/>
           <path d="M630 140 H652 M630 229 H652 M630 315 H652 M630 401 H652 M630 487 H652" stroke="url(#hg3)" stroke-width="6" stroke-linecap="round" opacity=".65"/>
         </svg>
       </div>
@@ -600,7 +600,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </ul>
           </div>
           <div style="display:flex; flex-direction:column; gap:16px; align-items:flex-end; justify-content:space-between;">
-            <div style="background:rgba(167,139,250,.08); border:1px solid rgba(167,139,250,.2); border-radius:16px; padding:20px 24px; width:100%;">
+            <div style="background:rgba(247,181,205,.08); border:1px solid rgba(247,181,205,.2); border-radius:16px; padding:20px 24px; width:100%;">
               <div style="font-size:11px; color:var(--muted); margin-bottom:12px; font-weight:600; text-transform:uppercase; letter-spacing:.07em;">Casos en producción</div>
               <div style="display:flex; flex-direction:column; gap:8px;">
                 <div style="font-size:13px; color:var(--text-2); display:flex; align-items:center; gap:8px;"><span style="width:8px;height:8px;border-radius:50%;background:var(--ai);flex-shrink:0;"></span>Lectura automática de facturas y comprobantes</div>
@@ -708,17 +708,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="arch-wrap fade-up">
       <svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg">
         <defs>
-          <linearGradient id="pg1" x1="0" x2="1"><stop offset="0%" stop-color="#55a3ff"/><stop offset="100%" stop-color="#7c5cff"/></linearGradient>
-          <linearGradient id="pg2" x1="0" x2="1"><stop offset="0%" stop-color="#55a3ff"/><stop offset="100%" stop-color="#35d39b"/></linearGradient>
+          <linearGradient id="pg1" x1="0" x2="1"><stop offset="0%" stop-color="#d96c96"/><stop offset="100%" stop-color="#F7B5CD"/></linearGradient>
+          <linearGradient id="pg2" x1="0" x2="1"><stop offset="0%" stop-color="#d96c96"/><stop offset="100%" stop-color="#35d39b"/></linearGradient>
           <linearGradient id="pbg" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#0f1933"/><stop offset="100%" stop-color="#0d1628"/></linearGradient>
         </defs>
         <rect width="1200" height="480" rx="20" fill="url(#pbg)"/>
 
         <!-- Layer labels -->
-        <text x="120"  y="32" fill="#55a3ff" font-size="10" font-weight="700" font-family="Arial" text-anchor="middle" letter-spacing="1">LEGACY / NEGOCIO</text>
+        <text x="120"  y="32" fill="#d96c96" font-size="10" font-weight="700" font-family="Arial" text-anchor="middle" letter-spacing="1">LEGACY / NEGOCIO</text>
         <text x="380"  y="32" fill="#35d39b" font-size="10" font-weight="700" font-family="Arial" text-anchor="middle" letter-spacing="1">MODERNIZACIÓN</text>
-        <text x="600"  y="32" fill="#a78bfa" font-size="10" font-weight="700" font-family="Arial" text-anchor="middle" letter-spacing="1">PLATAFORMA ORACLE</text>
-        <text x="860"  y="32" fill="#55a3ff" font-size="10" font-weight="700" font-family="Arial" text-anchor="middle" letter-spacing="1">DATOS &amp; AI</text>
+        <text x="600"  y="32" fill="#F7B5CD" font-size="10" font-weight="700" font-family="Arial" text-anchor="middle" letter-spacing="1">PLATAFORMA ORACLE</text>
+        <text x="860"  y="32" fill="#d96c96" font-size="10" font-weight="700" font-family="Arial" text-anchor="middle" letter-spacing="1">DATOS &amp; AI</text>
         <text x="1090" y="32" fill="#ffd166" font-size="10" font-weight="700" font-family="Arial" text-anchor="middle" letter-spacing="1">OUTCOMES</text>
 
         <!-- Col 1: Legacy -->
@@ -726,11 +726,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <rect x="64"  y="80"  width="112" height="50" rx="10" fill="#162040" stroke="rgba(255,100,50,.3)"/>
         <text x="120" y="105" fill="#ff9060" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">Oracle Forms</text>
         <text x="120" y="120" fill="#7d9ac4" font-size="9"  font-family="Arial" text-anchor="middle">Legacy apps</text>
-        <rect x="64"  y="146" width="112" height="50" rx="10" fill="#162040" stroke="rgba(85,163,255,.3)"/>
-        <text x="120" y="171" fill="#55a3ff" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">Oracle DB</text>
+        <rect x="64"  y="146" width="112" height="50" rx="10" fill="#162040" stroke="rgba(217,108,150,.3)"/>
+        <text x="120" y="171" fill="#d96c96" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">Oracle DB</text>
         <text x="120" y="186" fill="#7d9ac4" font-size="9"  font-family="Arial" text-anchor="middle">Core data</text>
-        <rect x="64"  y="212" width="112" height="50" rx="10" fill="#162040" stroke="rgba(124,92,255,.25)"/>
-        <text x="120" y="237" fill="#a78bfa" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">Infra propia</text>
+        <rect x="64"  y="212" width="112" height="50" rx="10" fill="#162040" stroke="rgba(247,181,205,.25)"/>
+        <text x="120" y="237" fill="#F7B5CD" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">Infra propia</text>
         <text x="120" y="252" fill="#7d9ac4" font-size="9"  font-family="Arial" text-anchor="middle">On-premise</text>
         <rect x="64"  y="278" width="112" height="50" rx="10" fill="#162040" stroke="rgba(255,209,102,.2)"/>
         <text x="120" y="303" fill="#ffd166" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">Datos Excel</text>
@@ -747,8 +747,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <rect x="258" y="168" width="112" height="60" rx="10" fill="#162040" stroke="rgba(53,211,155,.35)"/>
         <text x="314" y="196" fill="#35d39b" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">OCI Migration</text>
         <text x="314" y="212" fill="#7d9ac4" font-size="9" font-family="Arial" text-anchor="middle">Lift &amp; shift / improve</text>
-        <rect x="258" y="246" width="112" height="60" rx="10" fill="#162040" stroke="rgba(124,92,255,.3)"/>
-        <text x="314" y="274" fill="#a78bfa" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">APEX Dev</text>
+        <rect x="258" y="246" width="112" height="60" rx="10" fill="#162040" stroke="rgba(247,181,205,.3)"/>
+        <text x="314" y="274" fill="#F7B5CD" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">APEX Dev</text>
         <text x="314" y="290" fill="#7d9ac4" font-size="9" font-family="Arial" text-anchor="middle">Nuevas apps</text>
         <text x="258" y="414" fill="#7d9ac4" font-size="9" font-family="Arial" text-anchor="left">Modernización Oracle Forms</text>
 
@@ -757,33 +757,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <rect x="464" y="64"  width="272" height="64" rx="12" fill="url(#pg1)"/>
         <text x="600" y="96"  fill="#fff" font-size="13" font-weight="800" font-family="Arial" text-anchor="middle">Oracle Cloud (OCI)</text>
         <text x="600" y="114" fill="rgba(255,255,255,.8)" font-size="10" font-family="Arial" text-anchor="middle">Compute · DB Systems · Networking · Security</text>
-        <rect x="464" y="146" width="128" height="56" rx="10" fill="#162040" stroke="rgba(85,163,255,.3)"/>
-        <text x="528" y="172" fill="#55a3ff" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">Oracle APEX</text>
+        <rect x="464" y="146" width="128" height="56" rx="10" fill="#162040" stroke="rgba(217,108,150,.3)"/>
+        <text x="528" y="172" fill="#d96c96" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">Oracle APEX</text>
         <text x="528" y="188" fill="#7d9ac4" font-size="9" font-family="Arial" text-anchor="middle">Apps · PWA · Portals</text>
         <rect x="608" y="146" width="128" height="56" rx="10" fill="#162040" stroke="rgba(53,211,155,.3)"/>
         <text x="672" y="172" fill="#35d39b" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">Oracle DB</text>
         <text x="672" y="188" fill="#7d9ac4" font-size="9" font-family="Arial" text-anchor="middle">19c · RAC · ADW</text>
-        <rect x="464" y="220" width="128" height="56" rx="10" fill="#162040" stroke="rgba(124,92,255,.25)"/>
-        <text x="528" y="246" fill="#a78bfa" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">IAM · Security</text>
+        <rect x="464" y="220" width="128" height="56" rx="10" fill="#162040" stroke="rgba(247,181,205,.25)"/>
+        <text x="528" y="246" fill="#F7B5CD" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">IAM · Security</text>
         <text x="528" y="262" fill="#7d9ac4" font-size="9" font-family="Arial" text-anchor="middle">WAF · Cloud Guard</text>
         <rect x="608" y="220" width="128" height="56" rx="10" fill="#162040" stroke="rgba(255,209,102,.2)"/>
         <text x="672" y="246" fill="#ffd166" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">FinOps</text>
         <text x="672" y="262" fill="#7d9ac4" font-size="9" font-family="Arial" text-anchor="middle">Cost · Budget · Tag</text>
-        <rect x="464" y="294" width="272" height="48" rx="10" fill="#162040" stroke="rgba(85,163,255,.25)"/>
-        <text x="600" y="318" fill="#55a3ff" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">ORDS · APIs REST · Integration</text>
+        <rect x="464" y="294" width="272" height="48" rx="10" fill="#162040" stroke="rgba(217,108,150,.25)"/>
+        <text x="600" y="318" fill="#d96c96" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">ORDS · APIs REST · Integration</text>
         <text x="600" y="334" fill="#7d9ac4" font-size="9" font-family="Arial" text-anchor="middle">Capa de conectividad entre servicios</text>
-        <rect x="464" y="358" width="272" height="64" rx="10" fill="#162040" stroke="rgba(167,139,250,.3)"/>
-        <text x="600" y="382" fill="#a78bfa" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">OCI AI Services · Vector DB · LLM</text>
+        <rect x="464" y="358" width="272" height="64" rx="10" fill="#162040" stroke="rgba(247,181,205,.3)"/>
+        <text x="600" y="382" fill="#F7B5CD" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">OCI AI Services · Vector DB · LLM</text>
         <text x="600" y="398" fill="#7d9ac4" font-size="9" font-family="Arial" text-anchor="middle">Oracle GenAI · OpenSearch · Custom AI stack</text>
         <text x="600" y="414" fill="#7d9ac4" font-size="9" font-family="Arial" text-anchor="middle">Oracle Cloud Platform</text>
 
         <!-- Col 4: Datos & AI -->
         <rect x="812" y="52" width="148" height="376" rx="16" fill="#121f3b" stroke="#243860"/>
-        <rect x="830" y="80"  width="112" height="64" rx="10" fill="#162040" stroke="rgba(85,163,255,.35)"/>
-        <text x="886" y="108" fill="#55a3ff" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">OAC · Analytics</text>
+        <rect x="830" y="80"  width="112" height="64" rx="10" fill="#162040" stroke="rgba(217,108,150,.35)"/>
+        <text x="886" y="108" fill="#d96c96" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">OAC · Analytics</text>
         <text x="886" y="124" fill="#7d9ac4" font-size="9"  font-family="Arial" text-anchor="middle">Semantic · BI</text>
-        <rect x="830" y="162" width="112" height="60" rx="10" fill="#162040" stroke="rgba(167,139,250,.35)"/>
-        <text x="886" y="188" fill="#a78bfa" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">RAG Pipeline</text>
+        <rect x="830" y="162" width="112" height="60" rx="10" fill="#162040" stroke="rgba(247,181,205,.35)"/>
+        <text x="886" y="188" fill="#F7B5CD" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">RAG Pipeline</text>
         <text x="886" y="204" fill="#7d9ac4" font-size="9"  font-family="Arial" text-anchor="middle">LLM · Vector</text>
         <rect x="830" y="240" width="112" height="60" rx="10" fill="#162040" stroke="rgba(53,211,155,.3)"/>
         <text x="886" y="266" fill="#35d39b" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">AI Agents</text>
@@ -794,25 +794,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <!-- Col 5: Outcomes -->
         <rect x="1016" y="52" width="148" height="376" rx="16" fill="#121f3b" stroke="#243860"/>
-        <rect x="1034" y="80"  width="112" height="56" rx="10" fill="#162040" stroke="rgba(85,163,255,.3)"/>
-        <text x="1090" y="107" fill="#55a3ff" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">Apps modernas</text>
+        <rect x="1034" y="80"  width="112" height="56" rx="10" fill="#162040" stroke="rgba(217,108,150,.3)"/>
+        <text x="1090" y="107" fill="#d96c96" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">Apps modernas</text>
         <text x="1090" y="123" fill="#35d39b" font-size="9"  font-family="Arial" text-anchor="middle">UX mejorada</text>
         <rect x="1034" y="152" width="112" height="56" rx="10" fill="#162040" stroke="rgba(53,211,155,.3)"/>
         <text x="1090" y="178" fill="#35d39b" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">Cloud con SLA</text>
         <text x="1090" y="194" fill="#35d39b" font-size="9"  font-family="Arial" text-anchor="middle">99.9% · -30% costo</text>
-        <rect x="1034" y="224" width="112" height="56" rx="10" fill="#162040" stroke="rgba(124,92,255,.25)"/>
-        <text x="1090" y="250" fill="#a78bfa" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">1 fuente de verdad</text>
+        <rect x="1034" y="224" width="112" height="56" rx="10" fill="#162040" stroke="rgba(247,181,205,.25)"/>
+        <text x="1090" y="250" fill="#F7B5CD" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">1 fuente de verdad</text>
         <text x="1090" y="266" fill="#35d39b" font-size="9"  font-family="Arial" text-anchor="middle">Analytics gobernada</text>
-        <rect x="1034" y="296" width="112" height="56" rx="10" fill="#162040" stroke="rgba(167,139,250,.3)"/>
-        <text x="1090" y="322" fill="#a78bfa" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">AI en producción</text>
+        <rect x="1034" y="296" width="112" height="56" rx="10" fill="#162040" stroke="rgba(247,181,205,.3)"/>
+        <text x="1090" y="322" fill="#F7B5CD" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">AI en producción</text>
         <text x="1090" y="338" fill="#35d39b" font-size="9"  font-family="Arial" text-anchor="middle">ROI medible</text>
         <rect x="1034" y="368" width="112" height="44" rx="10" fill="#162040" stroke="rgba(255,209,102,.2)"/>
         <text x="1090" y="393" fill="#ffd166" font-size="11" font-weight="700" font-family="Arial" text-anchor="middle">Negocio escalable</text>
 
         <!-- Arrows -->
-        <path d="M194 240 H240" stroke="#55a3ff" stroke-width="5" stroke-linecap="round" opacity=".55"/>
+        <path d="M194 240 H240" stroke="#d96c96" stroke-width="5" stroke-linecap="round" opacity=".55"/>
         <path d="M388 200 H440 M388 300 H440" stroke="url(#pg2)" stroke-width="5" stroke-linecap="round" opacity=".6"/>
-        <path d="M760 200 H812 M760 300 H812" stroke="#a78bfa" stroke-width="5" stroke-linecap="round" opacity=".6"/>
+        <path d="M760 200 H812 M760 300 H812" stroke="#F7B5CD" stroke-width="5" stroke-linecap="round" opacity=".6"/>
         <path d="M960 200 H1016 M960 300 H1016" stroke="#35d39b" stroke-width="5" stroke-linecap="round" opacity=".6"/>
       </svg>
     </div>
@@ -840,7 +840,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="footer-grid">
       <div>
         <div class="footer-logo">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2024/12/logo-footer.png" alt="Inthegra Software" />
+          <img src="img/wp/2024/12/logo-footer.png" alt="Inthegra Software" />
         </div>
         <p class="footer-tagline">Partner Oracle especializado en modernización, cloud, desarrollo, analítica e inteligencia artificial aplicada a producción.</p>
       </div>

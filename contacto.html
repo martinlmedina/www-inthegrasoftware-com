@@ -43,8 +43,8 @@
       --text:      #eef4ff;
       --text-2:    #bdd2ef;
       --muted:     #7294bb;
-      --brand:     #55a3ff;
-      --brand-2:   #7c5cff;
+      --brand:     #ff7200;
+      --brand-2:   #ff4d8f;
       --green:     #35d39b;
       --teal:      #2dd4bf;
       --gold:      #ffd166;
@@ -75,6 +75,12 @@
       font-size: clamp(28px, 4vw, 40px);
       line-height: 1.15;
       margin-bottom: 16px;
+      background: linear-gradient(135deg, #fff 15%, var(--brand) 55%, var(--brand-2) 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
     }
     .contact-info > p {
       color: var(--text-2);
@@ -92,8 +98,8 @@
       transition: background .18s, border-color .18s;
     }
     .contact-channel:hover {
-      background: rgba(85,163,255,.06);
-      border-color: rgba(85,163,255,.3);
+      background: rgba(255,114,0,.06);
+      border-color: rgba(255,114,0,.3);
     }
     .contact-channel .ch-icon {
       width: 40px; height: 40px; border-radius: 10px;
@@ -159,13 +165,13 @@
     .form-group select option { background: #0f1830; color: var(--text); }
     .form-submit {
       width: 100%; padding: 14px; border: none; border-radius: 12px;
-      background: linear-gradient(135deg, #55a3ff, #7c5cff);
+      background: linear-gradient(135deg, #ff7200, #ff4d8f);
       color: #fff; font-size: 15px; font-weight: 700;
       font-family: inherit; cursor: pointer;
       transition: box-shadow .25s, transform .2s;
     }
     .form-submit:hover {
-      box-shadow: 0 6px 30px rgba(85,163,255,.48);
+      box-shadow: 0 6px 30px rgba(255,114,0,.48);
       transform: translateY(-1px);
     }
     .form-note { text-align: center; font-size: 12px; color: var(--muted); margin-top: 12px; }
@@ -379,7 +385,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="https://inthegrasoftware.com/wp-content/uploads/2024/12/logo-footer.png" alt="Inthegra Software" />
+        <img src="img/wp/2024/12/logo-footer.png" alt="Inthegra Software" />
         <p>Oracle-Native Enterprise Software y AI para Argentina y Latam. Producto, servicios e inteligencia artificial en un solo partner.</p>
         <div class="footer-badges">
           <span class="footer-badge">Oracle Partner certificado</span>

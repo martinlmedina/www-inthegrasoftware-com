@@ -56,12 +56,12 @@
       --text:      #edf3ff;
       --text-2:    #c2d4f0;
       --muted:     #7d9ac4;
-      --brand:     #4fa3ff;
-      --brand-2:   #7c5cff;
+      --brand:     #d96c96;
+      --brand-2:   #F7B5CD;
       --ok:        #39d98a;
       --gold:      #ffcf70;
       --danger:    #ff6b6b;
-      --accent:    #00d9ff;
+      --accent:    #F7B5CD;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -71,8 +71,8 @@
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       background-color: var(--bg);
       background-image:
-        radial-gradient(ellipse 90% 55% at 80% -5%,  rgba(79,163,255,.16) 0%, transparent 65%),
-        radial-gradient(ellipse 70% 45% at 10% 85%,  rgba(124,92,255,.12) 0%, transparent 60%),
+        radial-gradient(ellipse 90% 55% at 80% -5%,  rgba(217,108,150,.16) 0%, transparent 65%),
+        radial-gradient(ellipse 70% 45% at 10% 85%,  rgba(247,181,205,.12) 0%, transparent 60%),
         radial-gradient(ellipse 100% 70% at 50% 50%,  rgba(8,16,29,.65)   0%, transparent 100%);
       color: var(--text);
       line-height: 1.6;
@@ -99,15 +99,15 @@
       color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500;
       padding: 7px 14px; border-radius: 8px; transition: all .2s; white-space: nowrap;
     }
-    nav a:hover, nav a.active { color: var(--brand); background: rgba(79,163,255,.09); }
+    nav a:hover, nav a.active { color: var(--brand); background: rgba(217,108,150,.09); }
     .nav-cta {
       flex-shrink: 0; padding: 10px 22px; border-radius: 10px;
       background: linear-gradient(135deg, var(--brand), var(--brand-2));
       color: #fff; font-size: 14px; font-weight: 700;
       text-decoration: none; transition: box-shadow .25s;
-      box-shadow: 0 4px 18px rgba(79,163,255,.3);
+      box-shadow: 0 4px 18px rgba(217,108,150,.3);
     }
-    .nav-cta:hover { box-shadow: 0 6px 28px rgba(79,163,255,.5); }
+    .nav-cta:hover { box-shadow: 0 6px 28px rgba(217,108,150,.5); }
 
     /* ── BUTTONS ─────────────────────────────────────── */
     .btn {
@@ -119,13 +119,13 @@
     .btn:hover { transform: translateY(-2px); }
     .btn-primary {
       background: linear-gradient(135deg, var(--brand), var(--brand-2));
-      color: #fff; box-shadow: 0 8px 28px rgba(79,163,255,.32);
+      color: #fff; box-shadow: 0 8px 28px rgba(217,108,150,.32);
     }
-    .btn-primary:hover { box-shadow: 0 12px 40px rgba(79,163,255,.5); }
+    .btn-primary:hover { box-shadow: 0 12px 40px rgba(217,108,150,.5); }
     .btn-ghost {
       background: rgba(255,255,255,.05); border-color: var(--line-2); color: var(--text-2);
     }
-    .btn-ghost:hover { border-color: var(--brand); color: var(--brand); background: rgba(79,163,255,.08); }
+    .btn-ghost:hover { border-color: var(--brand); color: var(--brand); background: rgba(217,108,150,.08); }
 
     /* ── SHARED SECTION ──────────────────────────────── */
     .section { padding: 96px 0; }
@@ -134,8 +134,8 @@
     .eyebrow {
       display: inline-flex; align-items: center; gap: 8px;
       padding: 6px 14px; border-radius: 999px;
-      border: 1px solid rgba(79,163,255,.3);
-      background: rgba(79,163,255,.08);
+      border: 1px solid rgba(217,108,150,.3);
+      background: rgba(217,108,150,.08);
       color: var(--brand); font-size: 11px; font-weight: 700;
       letter-spacing: .07em; text-transform: uppercase; margin-bottom: 18px;
     }
@@ -177,7 +177,7 @@
       background: rgba(255,255,255,.04);
       color: var(--text-2); font-size: 13px; font-weight: 500;
     }
-    .tag-brand { border-color: rgba(79,163,255,.4); color: var(--brand); background: rgba(79,163,255,.07); }
+    .tag-brand { border-color: rgba(217,108,150,.4); color: var(--brand); background: rgba(217,108,150,.07); }
     .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
     .hero-note {
       margin-top: 22px; display: flex; flex-wrap: wrap; gap: 18px;
@@ -199,7 +199,7 @@
       border: 1px solid var(--line-2);
       transition: all .3s; display: flex; flex-direction: column;
     }
-    .sol-card:hover { border-color: rgba(79,163,255,.5); transform: translateY(-5px); box-shadow: 0 20px 50px rgba(0,0,0,.4); }
+    .sol-card:hover { border-color: rgba(217,108,150,.5); transform: translateY(-5px); box-shadow: 0 20px 50px rgba(0,0,0,.4); }
     .sol-mockup {
       width: 100%; aspect-ratio: 4/3; overflow: hidden;
       background: #0c1628; position: relative; flex-shrink: 0;
@@ -215,7 +215,7 @@
     .sol-tag {
       font-size: 10px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
       padding: 3px 8px; border-radius: 99px;
-      background: rgba(79,163,255,.1); border: 1px solid rgba(79,163,255,.25); color: var(--brand);
+      background: rgba(217,108,150,.1); border: 1px solid rgba(217,108,150,.25); color: var(--brand);
     }
     .sol-tag-green { background: rgba(57,217,138,.1); border-color: rgba(57,217,138,.3); color: var(--ok); }
     /* PWA comparison table */
@@ -227,7 +227,7 @@
     }
     .pwa-col { background: var(--bg-card); padding: 28px 24px; }
     .pwa-col-header {
-      background: linear-gradient(160deg, rgba(79,163,255,.12), rgba(124,92,255,.08));
+      background: linear-gradient(160deg, rgba(217,108,150,.12), rgba(247,181,205,.08));
     }
     .pwa-col h4 { font-size: 15px; font-weight: 800; margin-bottom: 18px; }
     .pwa-col h4 .highlight { color: var(--ok); }
@@ -259,11 +259,11 @@
       background: rgba(255,255,255,.03); border: 1px solid var(--line);
       transition: all .25s;
     }
-    .cap-item:hover { border-color: var(--brand); background: rgba(79,163,255,.06); }
+    .cap-item:hover { border-color: var(--brand); background: rgba(217,108,150,.06); }
     .cap-item-icon {
       flex-shrink: 0; width: 44px; height: 44px; border-radius: 12px;
-      background: linear-gradient(135deg, rgba(79,163,255,.2), rgba(124,92,255,.15));
-      border: 1px solid rgba(79,163,255,.3);
+      background: linear-gradient(135deg, rgba(217,108,150,.2), rgba(247,181,205,.15));
+      border: 1px solid rgba(217,108,150,.3);
       display: flex; align-items: center; justify-content: center; font-size: 20px;
     }
     .cap-item h4 { font-size: 16px; font-weight: 700; margin-bottom: 5px; }
@@ -272,12 +272,12 @@
     .tech-badge-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
     .tech-badge {
       padding: 16px 18px; border-radius: 14px;
-      background: linear-gradient(135deg, rgba(79,163,255,.12), rgba(124,92,255,.08));
-      border: 1px solid rgba(79,163,255,.28);
+      background: linear-gradient(135deg, rgba(217,108,150,.12), rgba(247,181,205,.08));
+      border: 1px solid rgba(217,108,150,.28);
       font-weight: 700; font-size: 15px; color: var(--brand);
       text-align: center; transition: all .25s;
     }
-    .tech-badge:hover { transform: translateY(-2px); background: linear-gradient(135deg, rgba(79,163,255,.2), rgba(124,92,255,.14)); }
+    .tech-badge:hover { transform: translateY(-2px); background: linear-gradient(135deg, rgba(217,108,150,.2), rgba(247,181,205,.14)); }
     .tech-badge small { display: block; font-weight: 400; font-size: 12px; color: var(--muted); margin-top: 3px; }
     .cap-kpi-box {
       margin-top: 16px; padding: 24px; border-radius: 16px;
@@ -300,12 +300,12 @@
       background: linear-gradient(135deg, var(--brand), var(--brand-2));
       display: flex; align-items: center; justify-content: center;
       font-size: 24px; font-weight: 900; color: #fff;
-      box-shadow: 0 0 0 6px rgba(79,163,255,.11), 0 8px 24px rgba(79,163,255,.25);
+      box-shadow: 0 0 0 6px rgba(217,108,150,.11), 0 8px 24px rgba(217,108,150,.25);
     }
     .d-tag {
       display: inline-block; margin-bottom: 10px; font-size: 10px; font-weight: 700;
       letter-spacing: .08em; text-transform: uppercase; color: var(--brand);
-      background: rgba(79,163,255,.1); border: 1px solid rgba(79,163,255,.2);
+      background: rgba(217,108,150,.1); border: 1px solid rgba(217,108,150,.2);
       padding: 3px 9px; border-radius: 99px;
     }
     .delivery-step h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
@@ -331,15 +331,15 @@
     .devops-item h4 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
     .devops-item p { font-size: 13px; color: var(--muted); margin: 0; }
     .devops-pipeline {
-      background: linear-gradient(160deg, rgba(57,217,138,.07), rgba(79,163,255,.05));
+      background: linear-gradient(160deg, rgba(57,217,138,.07), rgba(217,108,150,.05));
       border: 1px solid rgba(57,217,138,.2); border-radius: 20px; padding: 6px;
     }
     .devops-pipeline svg { display: block; width: 100%; height: auto; border-radius: 14px; }
 
     /* ── AI SECTION ──────────────────────────────────── */
     .ai-wrap {
-      background: linear-gradient(160deg, rgba(79,163,255,.09), rgba(124,92,255,.07));
-      border: 1px solid rgba(79,163,255,.22); border-radius: 24px; padding: 60px;
+      background: linear-gradient(160deg, rgba(217,108,150,.09), rgba(247,181,205,.07));
+      border: 1px solid rgba(217,108,150,.22); border-radius: 24px; padding: 60px;
       display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
     }
     .ai-stat-col { display: flex; flex-direction: column; gap: 16px; }
@@ -356,7 +356,7 @@
       padding: 20px; background: rgba(255,255,255,.04);
       border: 1px solid var(--line); border-radius: 14px; transition: all .25s;
     }
-    .ai-feat:hover { border-color: var(--brand); background: rgba(79,163,255,.07); }
+    .ai-feat:hover { border-color: var(--brand); background: rgba(217,108,150,.07); }
     .ai-feat-icon { font-size: 22px; margin-bottom: 10px; }
     .ai-feat h4 { font-size: 14px; font-weight: 700; margin-bottom: 5px; }
     .ai-feat p { font-size: 13px; color: var(--muted); line-height: 1.55; margin: 0; }
@@ -389,20 +389,20 @@
     /* ── CTA ─────────────────────────────────────────── */
     .cta-section {
       border-radius: 28px; padding: 72px 64px;
-      background: linear-gradient(145deg, rgba(79,163,255,.14), rgba(124,92,255,.10));
-      border: 1px solid rgba(79,163,255,.28);
+      background: linear-gradient(145deg, rgba(217,108,150,.14), rgba(247,181,205,.10));
+      border: 1px solid rgba(217,108,150,.28);
       position: relative; overflow: hidden;
     }
     .cta-section::before {
       content: ''; position: absolute; top: -70px; right: -70px;
       width: 320px; height: 320px; border-radius: 50%;
-      background: radial-gradient(circle, rgba(79,163,255,.18), transparent 70%);
+      background: radial-gradient(circle, rgba(217,108,150,.18), transparent 70%);
       pointer-events: none;
     }
     .cta-section::after {
       content: ''; position: absolute; bottom: -50px; left: -50px;
       width: 240px; height: 240px; border-radius: 50%;
-      background: radial-gradient(circle, rgba(124,92,255,.14), transparent 70%);
+      background: radial-gradient(circle, rgba(247,181,205,.14), transparent 70%);
       pointer-events: none;
     }
     .cta-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; position: relative; z-index: 1; }
@@ -412,7 +412,7 @@
     .cta-benefits li { color: var(--text-2); font-size: 14px; display: flex; align-items: center; gap: 10px; }
     .cta-benefits li::before { content: '✓'; color: var(--ok); font-weight: 800; font-size: 13px; flex-shrink: 0; }
     .form-box {
-      background: rgba(255,255,255,.06); border: 1px solid rgba(79,163,255,.22);
+      background: rgba(255,255,255,.06); border: 1px solid rgba(217,108,150,.22);
       border-radius: 20px; padding: 36px; display: flex; flex-direction: column; gap: 14px;
     }
     .form-box p { font-size: 12px; color: var(--muted); text-align: center; }
@@ -423,14 +423,14 @@
       color: var(--text); font-family: inherit; font-size: 15px; transition: all .25s;
     }
     .form-input::placeholder { color: var(--muted); }
-    .form-input:focus { outline: none; border-color: var(--brand); background: rgba(255,255,255,.1); box-shadow: 0 0 0 3px rgba(79,163,255,.2); }
+    .form-input:focus { outline: none; border-color: var(--brand); background: rgba(255,255,255,.1); box-shadow: 0 0 0 3px rgba(217,108,150,.2); }
     .form-submit {
       width: 100%; padding: 14px; border: none; border-radius: 12px; font-family: inherit;
       background: linear-gradient(135deg, var(--brand), var(--brand-2));
       color: #fff; font-size: 16px; font-weight: 700; cursor: pointer;
-      transition: all .25s; box-shadow: 0 6px 24px rgba(79,163,255,.3);
+      transition: all .25s; box-shadow: 0 6px 24px rgba(217,108,150,.3);
     }
-    .form-submit:hover { box-shadow: 0 8px 32px rgba(79,163,255,.5); transform: translateY(-1px); }
+    .form-submit:hover { box-shadow: 0 8px 32px rgba(217,108,150,.5); transform: translateY(-1px); }
     .form-submit:disabled { opacity: .7; cursor: default; transform: none; }
 
     /* ── FOOTER ──────────────────────────────────────── */
@@ -537,7 +537,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="header-inner">
       <a href="https://inthegrasoftware.com/homenueva/" class="logo-wrap">
-        <img src="https://inthegrasoftware.com/wp-content/uploads/2026/02/Logo_oracle_header.svg" alt="Inthegra" />
+        <img src="img/wp/2026/02/Logo_oracle_header.svg" alt="Inthegra" />
       </a>
       <nav>
         <a href="https://inthegrasoftware.com/oracle-services/" class="active">Servicios</a>
@@ -582,12 +582,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="hero-visual" style="margin-right:32px;">
       <svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg">
         <defs>
-          <linearGradient id="hg1" x1="0" x2="1"><stop offset="0%" stop-color="#4fa3ff"/><stop offset="100%" stop-color="#7c5cff"/></linearGradient>
+          <linearGradient id="hg1" x1="0" x2="1"><stop offset="0%" stop-color="#d96c96"/><stop offset="100%" stop-color="#F7B5CD"/></linearGradient>
           <linearGradient id="hg2" x1="0" x2="1"><stop offset="0%" stop-color="#0f1831"/><stop offset="100%" stop-color="#16264a"/></linearGradient>
         </defs>
         <rect width="900" height="620" rx="28" fill="url(#hg2)"/>
         <!-- ambient glow -->
-        <ellipse cx="450" cy="310" rx="240" ry="140" fill="rgba(79,163,255,.06)"/>
+        <ellipse cx="450" cy="310" rx="240" ry="140" fill="rgba(217,108,150,.06)"/>
         <!-- Negocio panel -->
         <rect x="48" y="64" width="260" height="482" rx="22" fill="#121e39" stroke="#30446f"/>
         <text x="82" y="106" fill="#edf3ff" font-size="22" font-weight="700" font-family="Arial">Negocio</text>
@@ -606,9 +606,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <text x="372" y="106" fill="#edf3ff" font-size="22" font-weight="700" font-family="Arial">Plataforma</text>
         <rect x="364" y="138" width="172" height="80" rx="16" fill="url(#hg1)"/>
         <text x="410" y="186" fill="#fff" font-size="22" font-weight="800" font-family="Arial">APEX</text>
-        <rect x="364" y="238" width="172" height="78" rx="16" fill="#1b3060" stroke="rgba(79,163,255,.4)"/>
+        <rect x="364" y="238" width="172" height="78" rx="16" fill="#1b3060" stroke="rgba(217,108,150,.4)"/>
         <text x="390" y="284" fill="#c2d4f0" font-size="18" font-family="Arial">DevOps</text>
-        <rect x="364" y="336" width="172" height="78" rx="16" fill="#1b3060" stroke="rgba(124,92,255,.4)"/>
+        <rect x="364" y="336" width="172" height="78" rx="16" fill="#1b3060" stroke="rgba(247,181,205,.4)"/>
         <text x="390" y="382" fill="#c2d4f0" font-size="18" font-family="Arial">IA assist.</text>
         <text x="372" y="468" fill="#7d9ac4" font-size="11" font-family="Arial">Oracle APEX · ORDS · OCI</text>
         <!-- Delivery panel -->
@@ -629,8 +629,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <path d="M308 190 H364 M308 278 H364 M308 376 H364" stroke="url(#hg1)" stroke-width="9" stroke-linecap="round"/>
         <path d="M536 190 H592 M536 278 H592 M536 376 H592" stroke="url(#hg1)" stroke-width="9" stroke-linecap="round"/>
         <!-- arrow heads right side -->
-        <polygon points="364,186 350,178 350,194" fill="#7c5cff"/>
-        <polygon points="592,186 578,178 578,194" fill="#7c5cff"/>
+        <polygon points="364,186 350,178 350,194" fill="#F7B5CD"/>
+        <polygon points="592,186 578,178 578,194" fill="#F7B5CD"/>
       </svg>
     </div>
   </div>
@@ -651,12 +651,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="sol-mockup">
           <svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg">
             <defs>
-              <linearGradient id="pm1" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#4fa3ff"/><stop offset="100%" stop-color="#7c5cff"/></linearGradient>
+              <linearGradient id="pm1" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#d96c96"/><stop offset="100%" stop-color="#F7B5CD"/></linearGradient>
             </defs>
             <rect width="360" height="270" fill="#0c1628"/>
             <!-- nav bar -->
             <rect x="18" y="18" width="324" height="36" rx="10" fill="#162040" stroke="#243860"/>
-            <rect x="30" y="28" width="52" height="16" rx="5" fill="#4fa3ff" opacity=".7"/>
+            <rect x="30" y="28" width="52" height="16" rx="5" fill="#d96c96" opacity=".7"/>
             <rect x="94" y="30" width="40" height="12" rx="4" fill="#2a3e68"/>
             <rect x="144" y="30" width="40" height="12" rx="4" fill="#2a3e68"/>
             <rect x="194" y="30" width="40" height="12" rx="4" fill="#2a3e68"/>
@@ -671,7 +671,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <rect x="196" y="98" width="130" height="8" rx="4" fill="#2a3e68"/>
             <rect x="196" y="114" width="110" height="8" rx="4" fill="#2a3e68"/>
             <rect x="196" y="130" width="120" height="8" rx="4" fill="#2a3e68"/>
-            <rect x="196" y="154" width="56" height="24" rx="7" fill="#4fa3ff" opacity=".8"/>
+            <rect x="196" y="154" width="56" height="24" rx="7" fill="#d96c96" opacity=".8"/>
             <!-- bottom text rows -->
             <rect x="18" y="208" width="220" height="10" rx="5" fill="#243860" opacity=".8"/>
             <rect x="18" y="226" width="168" height="8" rx="4" fill="#1e3260" opacity=".6"/>
@@ -695,16 +695,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="sol-mockup">
           <svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg">
             <defs>
-              <linearGradient id="wm1" x1="0" x2="1"><stop offset="0%" stop-color="#4fa3ff"/><stop offset="100%" stop-color="#7c5cff"/></linearGradient>
+              <linearGradient id="wm1" x1="0" x2="1"><stop offset="0%" stop-color="#d96c96"/><stop offset="100%" stop-color="#F7B5CD"/></linearGradient>
             </defs>
             <rect width="360" height="270" fill="#0c1628"/>
             <!-- step circles + connectors -->
             <line x1="54" y1="90" x2="306" y2="90" stroke="#1e3460" stroke-width="3"/>
-            <circle cx="72"  cy="90" r="30" fill="#111f3a" stroke="#4fa3ff" stroke-width="2"/>
-            <circle cx="180" cy="90" r="30" fill="#111f3a" stroke="#4fa3ff" stroke-width="2"/>
-            <circle cx="288" cy="90" r="30" fill="#4fa3ff"/>
-            <text x="63"  y="97" fill="#4fa3ff" font-size="18" font-weight="900" font-family="Arial">1</text>
-            <text x="171" y="97" fill="#4fa3ff" font-size="18" font-weight="900" font-family="Arial">2</text>
+            <circle cx="72"  cy="90" r="30" fill="#111f3a" stroke="#d96c96" stroke-width="2"/>
+            <circle cx="180" cy="90" r="30" fill="#111f3a" stroke="#d96c96" stroke-width="2"/>
+            <circle cx="288" cy="90" r="30" fill="#d96c96"/>
+            <text x="63"  y="97" fill="#d96c96" font-size="18" font-weight="900" font-family="Arial">1</text>
+            <text x="171" y="97" fill="#d96c96" font-size="18" font-weight="900" font-family="Arial">2</text>
             <text x="278" y="97" fill="#fff"    font-size="18" font-weight="900" font-family="Arial">3</text>
             <!-- connector arrows -->
             <path d="M102 90 H150" stroke="url(#wm1)" stroke-width="6" stroke-linecap="round"/>
@@ -740,8 +740,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="sol-mockup">
           <svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg">
             <defs>
-              <linearGradient id="om1" x1="0" x2="1"><stop offset="0%" stop-color="#4fa3ff"/><stop offset="100%" stop-color="#7c5cff"/></linearGradient>
-              <linearGradient id="om2" x1="0" x2="1"><stop offset="0%" stop-color="#7c5cff"/><stop offset="100%" stop-color="#39d98a"/></linearGradient>
+              <linearGradient id="om1" x1="0" x2="1"><stop offset="0%" stop-color="#d96c96"/><stop offset="100%" stop-color="#F7B5CD"/></linearGradient>
+              <linearGradient id="om2" x1="0" x2="1"><stop offset="0%" stop-color="#F7B5CD"/><stop offset="100%" stop-color="#39d98a"/></linearGradient>
             </defs>
             <rect width="360" height="270" fill="#0c1628"/>
             <!-- chart area -->
@@ -765,7 +765,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <text x="34"  y="210" fill="#39d98a" font-size="22" font-weight="900" font-family="Arial">+28%</text>
             <rect x="34"  y="218" width="100" height="8" rx="4" fill="#2a3e68"/>
             <rect x="34"  y="232" width="76"  height="8" rx="4" fill="#1e3260" opacity=".7"/>
-            <text x="208" y="210" fill="#4fa3ff" font-size="22" font-weight="900" font-family="Arial">4.8k</text>
+            <text x="208" y="210" fill="#d96c96" font-size="22" font-weight="900" font-family="Arial">4.8k</text>
             <rect x="208" y="218" width="100" height="8" rx="4" fill="#2a3e68"/>
             <rect x="208" y="232" width="76"  height="8" rx="4" fill="#1e3260" opacity=".7"/>
           </svg>
@@ -787,7 +787,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="sol-mockup">
           <svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg">
             <defs>
-              <linearGradient id="pw1" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#4fa3ff"/><stop offset="100%" stop-color="#39d98a"/></linearGradient>
+              <linearGradient id="pw1" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#d96c96"/><stop offset="100%" stop-color="#39d98a"/></linearGradient>
             </defs>
             <rect width="360" height="270" fill="#0c1628"/>
             <!-- phone frame -->
@@ -810,7 +810,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <rect x="183" y="150" width="55"  height="52" rx="8" fill="#162040" stroke="#243860"/>
             <rect x="128" y="162" width="38"  height="18" rx="5" fill="url(#pw1)" opacity=".7"/>
             <rect x="128" y="186" width="38"  height="8"  rx="3" fill="#2a3e68"/>
-            <rect x="189" y="162" width="38"  height="18" rx="5" fill="#1e3460" stroke="#4fa3ff" stroke-opacity=".4"/>
+            <rect x="189" y="162" width="38"  height="18" rx="5" fill="#1e3460" stroke="#d96c96" stroke-opacity=".4"/>
             <rect x="189" y="186" width="38"  height="8"  rx="3" fill="#2a3e68"/>
             <!-- bottom nav -->
             <rect x="122" y="212" width="116" height="30" rx="8" fill="#111f3a" stroke="#243860"/>
@@ -821,10 +821,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <rect x="262" y="60" width="80" height="22" rx="7" fill="rgba(57,217,138,.15)" stroke="rgba(57,217,138,.4)"/>
             <text x="271" y="75" fill="#39d98a" font-size="10" font-weight="700" font-family="Arial">+ Instalar</text>
             <!-- wifi/offline badge -->
-            <rect x="262" y="90" width="80" height="22" rx="7" fill="rgba(79,163,255,.12)" stroke="rgba(79,163,255,.35)"/>
-            <text x="272" y="105" fill="#4fa3ff" font-size="10" font-weight="700" font-family="Arial">Offline ✓</text>
+            <rect x="262" y="90" width="80" height="22" rx="7" fill="rgba(217,108,150,.12)" stroke="rgba(217,108,150,.35)"/>
+            <text x="272" y="105" fill="#d96c96" font-size="10" font-weight="700" font-family="Arial">Offline ✓</text>
             <!-- push badge -->
-            <rect x="262" y="120" width="80" height="22" rx="7" fill="rgba(124,92,255,.12)" stroke="rgba(124,92,255,.35)"/>
+            <rect x="262" y="120" width="80" height="22" rx="7" fill="rgba(247,181,205,.12)" stroke="rgba(247,181,205,.35)"/>
             <text x="265" y="135" fill="#b07fff" font-size="10" font-weight="700" font-family="Arial">Push notif.</text>
           </svg>
         </div>
@@ -921,7 +921,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span class="sol-tag sol-tag-green">Instalar en pantalla de inicio</span>
         <span class="sol-tag sol-tag-green">Acceso a archivos del dispositivo</span>
         <span class="sol-tag sol-tag-green">Sincronización en background</span>
-        <span class="sol-tag" style="background:rgba(79,163,255,.1); border-color:rgba(79,163,255,.3); color:var(--brand);">APEX PWA module nativo v21.2+</span>
+        <span class="sol-tag" style="background:rgba(217,108,150,.1); border-color:rgba(217,108,150,.3); color:var(--brand);">APEX PWA module nativo v21.2+</span>
       </div>
     </div>
 
@@ -996,7 +996,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="svg-card" style="margin-top:20px;">
           <svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg">
-            <defs><linearGradient id="c2" x1="0" x2="1"><stop offset="0%" stop-color="#4fa3ff"/><stop offset="100%" stop-color="#39d98a"/></linearGradient></defs>
+            <defs><linearGradient id="c2" x1="0" x2="1"><stop offset="0%" stop-color="#d96c96"/><stop offset="100%" stop-color="#39d98a"/></linearGradient></defs>
             <rect width="640" height="280" fill="#0a1629"/>
             <rect x="20"  y="30" width="136" height="220" rx="14" fill="#121d38" stroke="#30446f"/>
             <rect x="252" y="30" width="136" height="220" rx="14" fill="#121d38" stroke="#30446f"/>
@@ -1012,7 +1012,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <rect x="500" y="78" width="100" height="50" rx="10" fill="#eef3ff" opacity=".7"/>
             <rect x="500" y="144" width="100" height="50" rx="10" fill="#eef3ff" opacity=".6"/>
             <rect x="500" y="210" width="100" height="22" rx="8"  fill="#eef3ff" opacity=".45"/>
-            <path d="M156 110 H252 M156 182 H252 M388 104 H484 M388 174 H484 M388 222 H484" stroke="#4fa3ff" stroke-width="7" stroke-linecap="round"/>
+            <path d="M156 110 H252 M156 182 H252 M388 104 H484 M388 174 H484 M388 222 H484" stroke="#d96c96" stroke-width="7" stroke-linecap="round"/>
           </svg>
         </div>
       </div>
@@ -1056,7 +1056,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <div class="svg-card" style="margin-top:48px;">
       <svg viewBox="0 0 1200 280" xmlns="http://www.w3.org/2000/svg">
-        <defs><linearGradient id="d1" x1="0" x2="1"><stop offset="0%" stop-color="#4fa3ff"/><stop offset="100%" stop-color="#7c5cff"/></linearGradient></defs>
+        <defs><linearGradient id="d1" x1="0" x2="1"><stop offset="0%" stop-color="#d96c96"/><stop offset="100%" stop-color="#F7B5CD"/></linearGradient></defs>
         <rect width="1200" height="280" fill="#091530"/>
         <path d="M134 120 H1066" stroke="#1e3460" stroke-width="6" stroke-linecap="round"/>
         <path d="M134 120 H1066" stroke="url(#d1)" stroke-width="6" stroke-linecap="round" opacity=".35"/>
@@ -1072,9 +1072,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <text x="420"  y="185" fill="#b4c8f0" font-size="14" font-family="Arial" text-anchor="middle">Diseño</text>
         <text x="670"  y="185" fill="#b4c8f0" font-size="14" font-family="Arial" text-anchor="middle">Build</text>
         <text x="920"  y="185" fill="#b4c8f0" font-size="14" font-family="Arial" text-anchor="middle">Deploy</text>
-        <text x="170"  y="52"  fill="#4fa3ff" font-size="11" font-family="Arial" text-anchor="middle">Sem. 1–2</text>
-        <text x="420"  y="52"  fill="#4fa3ff" font-size="11" font-family="Arial" text-anchor="middle">Sem. 2–3</text>
-        <text x="670"  y="52"  fill="#4fa3ff" font-size="11" font-family="Arial" text-anchor="middle">Sprints 2–N</text>
+        <text x="170"  y="52"  fill="#d96c96" font-size="11" font-family="Arial" text-anchor="middle">Sem. 1–2</text>
+        <text x="420"  y="52"  fill="#d96c96" font-size="11" font-family="Arial" text-anchor="middle">Sem. 2–3</text>
+        <text x="670"  y="52"  fill="#d96c96" font-size="11" font-family="Arial" text-anchor="middle">Sprints 2–N</text>
         <text x="920"  y="52"  fill="#39d98a" font-size="11" font-family="Arial" text-anchor="middle">Producción + evolución</text>
         <rect x="78"   y="208" width="184" height="56" rx="12" fill="#0d1b3e" stroke="#1e3460"/>
         <rect x="328"  y="208" width="184" height="56" rx="12" fill="#0d1b3e" stroke="#1e3460"/>
@@ -1134,7 +1134,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="devops-pipeline">
         <svg viewBox="0 0 1200 440" xmlns="http://www.w3.org/2000/svg">
-          <defs><linearGradient id="dv1" x1="0" x2="1"><stop offset="0%" stop-color="#4fa3ff"/><stop offset="100%" stop-color="#39d98a"/></linearGradient></defs>
+          <defs><linearGradient id="dv1" x1="0" x2="1"><stop offset="0%" stop-color="#d96c96"/><stop offset="100%" stop-color="#39d98a"/></linearGradient></defs>
           <rect width="1200" height="440" fill="#0d162d"/>
           <rect x="84" y="60" width="1030" height="320" rx="24" fill="#121d38" stroke="#30446f"/>
           <text x="118" y="108" fill="#edf3ff" font-size="22" font-weight="700" font-family="Arial">Pipeline DevOps Oracle</text>
@@ -1226,7 +1226,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <div class="arch-svg">
       <svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg">
-        <defs><linearGradient id="ar1" x1="0" x2="1"><stop offset="0%" stop-color="#4fa3ff"/><stop offset="100%" stop-color="#39d98a"/></linearGradient></defs>
+        <defs><linearGradient id="ar1" x1="0" x2="1"><stop offset="0%" stop-color="#d96c96"/><stop offset="100%" stop-color="#39d98a"/></linearGradient></defs>
         <rect width="1200" height="480" fill="#091530"/>
         <!-- columns -->
         <rect x="82"  y="60" width="230" height="360" rx="20" fill="#121d38" stroke="#30446f"/>
@@ -1247,9 +1247,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- app cards -->
         <rect x="515" y="128" width="170" height="80" rx="14" fill="url(#ar1)" opacity=".85"/>
         <text x="545" y="174" fill="#fff" font-size="16" font-weight="700" font-family="Arial">APEX App</text>
-        <rect x="515" y="226" width="170" height="78" rx="14" fill="#1b3060" stroke="rgba(79,163,255,.4)"/>
+        <rect x="515" y="226" width="170" height="78" rx="14" fill="#1b3060" stroke="rgba(217,108,150,.4)"/>
         <text x="540" y="272" fill="#c2d4f0" font-size="15" font-family="Arial">ORDS / REST</text>
-        <rect x="515" y="322" width="170" height="72" rx="14" fill="#1b3060" stroke="rgba(124,92,255,.4)"/>
+        <rect x="515" y="322" width="170" height="72" rx="14" fill="#1b3060" stroke="rgba(247,181,205,.4)"/>
         <text x="540" y="366" fill="#c2d4f0" font-size="15" font-family="Arial">OCI Services</text>
         <!-- core cards -->
         <rect x="918" y="128" width="168" height="78" rx="14" fill="#eef3ff" opacity=".8"/>
@@ -1260,7 +1260,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <rect x="930" y="254" width="90" height="8"  rx="4" fill="#d8e2f0"/>
         <rect x="918" y="312" width="168" height="70" rx="14" fill="#eef3ff" opacity=".5"/>
         <!-- connecting lines -->
-        <path d="M312 172 H485 M312 268 H485 M312 354 H485" stroke="#4fa3ff" stroke-width="9" stroke-linecap="round"/>
+        <path d="M312 172 H485 M312 268 H485 M312 354 H485" stroke="#d96c96" stroke-width="9" stroke-linecap="round"/>
         <path d="M715 168 H888 M715 266 H888 M715 358 H888" stroke="url(#ar1)" stroke-width="9" stroke-linecap="round"/>
         <!-- labels -->
         <text x="197" y="432" fill="#7d9ac4" font-size="13" font-family="Arial" text-anchor="middle">Web · Mobile · API</text>
@@ -1349,7 +1349,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="footer-grid">
       <div class="footer-logo">
         <a href="https://inthegrasoftware.com/homenueva/">
-          <img src="https://inthegrasoftware.com/wp-content/uploads/2024/12/logo-footer.png" alt="Inthegra" />
+          <img src="img/wp/2024/12/logo-footer.png" alt="Inthegra" />
         </a>
       </div>
       <nav class="footer-nav">

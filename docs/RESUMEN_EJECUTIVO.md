@@ -1,7 +1,7 @@
 # Resumen Ejecutivo — inthegrasoftware.com
 
-**Fecha:** 13 de abril de 2026
-**Version:** Sitio estatico HTML/CSS/JS — pre-produccion
+**Fecha:** 20 de abril de 2026
+**Version:** Sitio estatico HTML/CSS/JS — listo para go-live
 
 ---
 
@@ -14,6 +14,8 @@ Sitio web corporativo de Inthegra Software, 100% estatico (sin backend), con **2
 - CSS puro con custom properties (design tokens)
 - JavaScript vanilla (nav.js como componente compartido)
 - Google Tag Manager + GA4 + Google Ads conversion tracking
+- Meta Pixel (Facebook) con evento `Lead` en submit del formulario
+- Formulario de contacto conectado a Google Apps Script (Sheet + email)
 
 ---
 
@@ -108,6 +110,7 @@ Sitio web corporativo de Inthegra Software, 100% estatico (sin backend), con **2
 | Google Tag Manager | GTM-TRT4B92N | Instalado en todas las paginas |
 | Google Ads | AW-16670573573 | Conversion tracking activo |
 | GA4 Events (via dataLayer) | `form_submit`, `whatsapp_click`, `cta_click` | Configurados en nav.js y contacto.html |
+| Meta Pixel (Facebook) | 1226651955694155 | `PageView` en las 30 paginas + `Lead` en submit del form |
 
 ### Eventos custom disponibles en GTM
 
@@ -116,6 +119,7 @@ Sitio web corporativo de Inthegra Software, 100% estatico (sin backend), con **2
 | `form_submit` | Envio del formulario de contacto | form_name, form_interest, form_origin |
 | `whatsapp_click` | Click en cualquier link de WhatsApp | link_url, page_location |
 | `cta_click` | Click en cualquier CTA a contacto.html | link_url, link_text, page_location |
+| `Lead` (Meta Pixel) | Envio exitoso del formulario de contacto | — (evento standard de Facebook) |
 
 ---
 
@@ -204,13 +208,13 @@ Resumen:
 
 ---
 
-## 8. Issue bloqueante para produccion
+## 8. Issues bloqueantes para produccion
 
-| Issue | Archivo | Detalle |
-|-------|---------|---------|
-| Formulario de contacto sin endpoint | contacto.html linea ~430 | `APPS_SCRIPT_URL_PLACEHOLDER` debe reemplazarse con la URL del Google Apps Script deployado |
+**Ninguno.** El formulario de contacto ya apunta al Apps Script desplegado (commit `1c56e17`, 2026-04-20) y se validó el flujo end-to-end (submission → Google Sheet → email de notificacion).
 
-**Guia de deploy del Apps Script:** `docs/SETUP_CONTACTO_BACKEND.md`
+**Documentacion de referencia:**
+- Backend del formulario: `docs/SETUP_CONTACTO_BACKEND.md`
+- Deploy de infraestructura: `docs/DEPLOY_INFRAESTRUCTURA.md`
 
 ---
 
@@ -220,8 +224,10 @@ Resumen:
 
 | Item | Detalle | Esfuerzo |
 |------|---------|----------|
-| Deployar Apps Script | Configurar backend del formulario de contacto (ver docs/SETUP_CONTACTO_BACKEND.md) | IT — 1 hora |
+| ~~Deployar Apps Script~~ | ~~Configurar backend del formulario de contacto~~ | ✅ Hecho 2026-04-20 |
+| ~~Integrar Meta Pixel~~ | ~~Instalar pixel de Facebook + evento Lead en formulario~~ | ✅ Hecho 2026-04-20 |
 | Configurar GTM triggers | Crear triggers para form_submit, whatsapp_click en GTM y conectar con GA4 goals | Marketing — 2 horas |
+| Configurar Meta Events Manager | Verificar llegada de `PageView` y `Lead`, crear audiencias de remarketing | Marketing — 1 hora |
 | Google Search Console | Verificar propiedad via GTM, enviar sitemap | Marketing/IT — 30 min |
 | Optimizar imagenes | Convertir PNGs a WebP, agregar srcset/sizes para responsive images | Dev — medio dia |
 | Extraer CSS comun | Mover CSS inline repetido (~20-37 KB por pagina) a common.css | Dev — 1 dia |
@@ -268,12 +274,14 @@ Resumen:
 | Total paginas produccion | 29 + 12 blog = 41 |
 | Peso total del sitio | ~4.5 MB (sin PDF brochure de 28 MB) |
 | Paginas con SEO completo | 29/29 (100%) |
-| Paginas con GTM | 29/29 (100%) |
+| Paginas con GTM | 30/30 (100%, incluye 404) |
+| Paginas con Meta Pixel | 30/30 (100%, incluye 404) |
+| Formulario de contacto | Activo (Apps Script → Google Sheet + email) |
 | Links rotos en navegacion | 0/18 |
 | Archivos JS en produccion | 1 (nav.js — limpio, sin console.log) |
-| Issues bloqueantes | 1 (Apps Script placeholder) |
+| Issues bloqueantes | 0 |
 | SSL | Pendiente (Let's Encrypt al deployar) |
 
 ---
 
-*Documento generado el 13 de abril de 2026. Basado en auditoria del repositorio martinlmedina/www-inthegrasoftware-com, branch master, commit 52acf51.*
+*Documento actualizado el 20 de abril de 2026. Basado en auditoria del repositorio martinlmedina/www-inthegrasoftware-com, branch master, commit `1c56e17`.*

@@ -215,6 +215,7 @@ Resumen:
 **Documentacion de referencia:**
 - Backend del formulario: `docs/SETUP_CONTACTO_BACKEND.md`
 - Deploy de infraestructura: `docs/DEPLOY_INFRAESTRUCTURA.md`
+- Setup de tracking y SEO post-deploy: `docs/SETUP_TRACKING_SEO.md`
 
 ---
 
@@ -226,9 +227,9 @@ Resumen:
 |------|---------|----------|
 | ~~Deployar Apps Script~~ | ~~Configurar backend del formulario de contacto~~ | ✅ Hecho 2026-04-20 |
 | ~~Integrar Meta Pixel~~ | ~~Instalar pixel de Facebook + evento Lead en formulario~~ | ✅ Hecho 2026-04-20 |
-| Configurar GTM triggers | Crear triggers para form_submit, whatsapp_click en GTM y conectar con GA4 goals | Marketing — 2 horas |
-| Configurar Meta Events Manager | Verificar llegada de `PageView` y `Lead`, crear audiencias de remarketing | Marketing — 1 hora |
-| Google Search Console | Verificar propiedad via GTM, enviar sitemap | Marketing/IT — 30 min |
+| Configurar GTM triggers | Crear triggers para form_submit, whatsapp_click en GTM y conectar con GA4 goals. [Guía](SETUP_TRACKING_SEO.md#1-gtm-triggers--ga4-goals) | Marketing — 2 horas |
+| Configurar Meta Events Manager | Verificar llegada de `PageView` y `Lead`, crear audiencias de remarketing. [Guía](SETUP_TRACKING_SEO.md#2-meta-events-manager) | Marketing — 1 hora |
+| Google Search Console | Verificar propiedad via GTM, enviar sitemap. [Guía](SETUP_TRACKING_SEO.md#3-google-search-console) | Marketing/IT — 30 min |
 | Optimizar imagenes | Convertir PNGs a WebP, agregar srcset/sizes para responsive images | Dev — medio dia |
 | Extraer CSS comun | Mover CSS inline repetido (~20-37 KB por pagina) a common.css | Dev — 1 dia |
 

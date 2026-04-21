@@ -142,6 +142,32 @@
     '#site-nav .sn-pi-text span{font-size:11.5px;color:#7294bb;line-height:1.3;}',
     '#site-nav .sn-panel-sep{height:1px;background:rgba(30,50,87,.7);margin:6px 0;}',
 
+    /* Mega panel (2 columns) */
+    '#site-nav .sn-panel--mega{',
+      'display:grid;grid-template-columns:1fr 1fr;gap:8px;',
+      'min-width:580px;padding:14px;',
+    '}',
+    '#site-nav .sn-panel-col{display:flex;flex-direction:column;gap:2px;padding:0 4px;}',
+    '#site-nav .sn-panel-col--modules{border-left:1px solid rgba(30,50,87,.7);padding-left:12px;}',
+    '#site-nav .sn-panel-title{',
+      'font-size:10.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;',
+      'color:#7294bb;padding:4px 12px 8px;',
+    '}',
+    '#site-nav .sn-pi-pill{',
+      'display:inline-block;margin-left:6px;padding:1px 7px;border-radius:999px;',
+      'background:rgba(23,157,202,.15);color:#5fcce6;',
+      'font-size:10px;font-weight:600;letter-spacing:.02em;vertical-align:middle;',
+    '}',
+    '#site-nav .sn-panel-foot{',
+      'grid-column:1/-1;border-top:1px solid rgba(30,50,87,.7);',
+      'margin-top:6px;padding:10px 12px 4px;',
+    '}',
+    '#site-nav .sn-panel-foot a{',
+      'color:#5fcce6;text-decoration:none;font-size:12px;font-weight:600;',
+      'display:inline-flex;align-items:center;gap:4px;transition:color .16s;',
+    '}',
+    '#site-nav .sn-panel-foot a:hover{color:#eef4ff;}',
+
     /* CTA button */
     '#site-nav .sn-cta{',
       'flex-shrink:0;padding:9px 22px;border-radius:10px;',
@@ -214,6 +240,19 @@
     '}',
     '#site-nav .sn-m-sub .sn-m-label{font-weight:500;color:#eef4ff;font-size:13px;}',
 
+    /* Mobile: nested sub-accordion (e.g. ERP modules inside Productos) */
+    '#site-nav .sn-m-sub .sn-m-sublink{',
+      'display:flex;align-items:center;justify-content:space-between;',
+      'padding:10px 12px;border-radius:8px;margin-top:4px;',
+      'color:#bdd2ef;text-decoration:none;font-size:13px;font-weight:600;',
+      'border-top:1px solid rgba(30,50,87,.5);',
+      'transition:background .16s,color .16s;cursor:pointer;',
+    '}',
+    '#site-nav .sn-m-sub .sn-m-sublink:hover{background:rgba(255,255,255,.04);color:#eef4ff;}',
+    '#site-nav .sn-m-sub .sn-m-sublink .sn-m-chev{width:16px;height:16px;flex-shrink:0;transition:transform .2s;}',
+    '#site-nav .sn-m-sub .sn-m-sublink.sn-m-expanded .sn-m-chev{transform:rotate(180deg);}',
+    '#site-nav .sn-m-sub--nested{padding-left:28px;}',
+
     /* Mobile CTA */
     '#site-nav .sn-m-cta{',
       'display:block;text-align:center;margin-top:20px;padding:14px 24px;border-radius:12px;',
@@ -250,19 +289,55 @@
         /* Productos */
         '<div class="sn-item">',
           '<a href="index_productos.html" class="sn-link">Productos</a>',
-          '<div class="sn-panel">',
-            '<a href="landing_healthcare.html" class="sn-panel-item">',
-              '<span class="sn-pi-icon" style="background:rgba(45,212,191,.1);border:1px solid rgba(45,212,191,.2)">🏥</span>',
-              '<div class="sn-pi-text"><strong>HealthCare</strong><span>Gestión integral para prepagas, clínicas y prestadores</span></div>',
-            '</a>',
-            '<a href="landing_credit_financial.html" class="sn-panel-item">',
-              '<span class="sn-pi-icon" style="background:rgba(255,209,102,.1);border:1px solid rgba(255,209,102,.2)">💳</span>',
-              '<div class="sn-pi-text"><strong>Credit &amp; Financial</strong><span>Crédito, cobranzas y gestión de carteras</span></div>',
-            '</a>',
-            '<a href="landing_erp.html" class="sn-panel-item">',
-              '<span class="sn-pi-icon" style="background:rgba(255,107,53,.1);border:1px solid rgba(255,107,53,.2)">🏪</span>',
-              '<div class="sn-pi-text"><strong>ERP para Retail &amp; Servicios</strong><span>Plataforma modular para retail, mayoristas y servicios</span></div>',
-            '</a>',
+          '<div class="sn-panel sn-panel--mega">',
+
+            /* Column 1: Platforms */
+            '<div class="sn-panel-col">',
+              '<div class="sn-panel-title">Plataformas</div>',
+              '<a href="landing_healthcare.html" class="sn-panel-item">',
+                '<span class="sn-pi-icon" style="background:rgba(45,212,191,.1);border:1px solid rgba(45,212,191,.2)">🏥</span>',
+                '<div class="sn-pi-text"><strong>HealthCare</strong><span>Gestión integral para prepagas, clínicas y prestadores</span></div>',
+              '</a>',
+              '<a href="landing_credit_financial.html" class="sn-panel-item">',
+                '<span class="sn-pi-icon" style="background:rgba(255,209,102,.1);border:1px solid rgba(255,209,102,.2)">💳</span>',
+                '<div class="sn-pi-text"><strong>Credit &amp; Financial</strong><span>Crédito, cobranzas y gestión de carteras</span></div>',
+              '</a>',
+              '<a href="landing_erp.html" class="sn-panel-item">',
+                '<span class="sn-pi-icon" style="background:rgba(255,107,53,.1);border:1px solid rgba(255,107,53,.2)">🏪</span>',
+                '<div class="sn-pi-text"><strong>ERP Retail &amp; Servicios<span class="sn-pi-pill">5 módulos</span></strong><span>Plataforma modular para retail, mayoristas y servicios</span></div>',
+              '</a>',
+            '</div>',
+
+            /* Column 2: ERP modules */
+            '<div class="sn-panel-col sn-panel-col--modules">',
+              '<div class="sn-panel-title">Módulos ERP</div>',
+              '<a href="landing_erp.html" class="sn-panel-item">',
+                '<span class="sn-pi-icon" style="background:rgba(23,157,202,.12);border:1px solid rgba(23,157,202,.25)">📦</span>',
+                '<div class="sn-pi-text"><strong>Overview ERP</strong><span>Vista general de la suite empresarial</span></div>',
+              '</a>',
+              '<a href="landing_erp_supply_chain.html" class="sn-panel-item">',
+                '<span class="sn-pi-icon" style="background:rgba(85,163,255,.1);border:1px solid rgba(85,163,255,.2)">🔗</span>',
+                '<div class="sn-pi-text"><strong>Supply Chain</strong><span>Planificación, compras y abastecimiento</span></div>',
+              '</a>',
+              '<a href="landing_erp_wms.html" class="sn-panel-item">',
+                '<span class="sn-pi-icon" style="background:rgba(53,211,155,.1);border:1px solid rgba(53,211,155,.2)">🏬</span>',
+                '<div class="sn-pi-text"><strong>Warehouse Management (WMS)</strong><span>Gestión de depósitos y logística</span></div>',
+              '</a>',
+              '<a href="landing_erp_ecommerce.html" class="sn-panel-item">',
+                '<span class="sn-pi-icon" style="background:rgba(255,107,53,.1);border:1px solid rgba(255,107,53,.2)">🛒</span>',
+                '<div class="sn-pi-text"><strong>Ecommerce Platform</strong><span>Tiendas online integradas al ERP</span></div>',
+              '</a>',
+              '<a href="landing_erp_people_care.html" class="sn-panel-item">',
+                '<span class="sn-pi-icon" style="background:rgba(167,139,250,.1);border:1px solid rgba(167,139,250,.2)">👥</span>',
+                '<div class="sn-pi-text"><strong>People Care (RRHH)</strong><span>Liquidación, legajos y desarrollo</span></div>',
+              '</a>',
+            '</div>',
+
+            /* Footer link */
+            '<div class="sn-panel-foot">',
+              '<a href="landing_erp.html">Ver todos los módulos →</a>',
+            '</div>',
+
           '</div>',
         '</div>',
 
@@ -348,8 +423,35 @@
         '</a>',
         '<a href="landing_erp.html">',
           '<span class="sn-m-icon" style="background:rgba(255,107,53,.1);border:1px solid rgba(255,107,53,.2)">🏪</span>',
-          '<span class="sn-m-label">ERP para Retail</span>',
+          '<span class="sn-m-label">ERP Retail y Servicios</span>',
         '</a>',
+
+        /* Nested: ERP modules */
+        '<a href="#" class="sn-m-sublink" data-toggle="m-erp-modules">Módulos ERP',
+          '<svg class="sn-m-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>',
+        '</a>',
+        '<div class="sn-m-sub sn-m-sub--nested" id="m-erp-modules">',
+          '<a href="landing_erp.html">',
+            '<span class="sn-m-icon" style="background:rgba(23,157,202,.12);border:1px solid rgba(23,157,202,.25)">📦</span>',
+            '<span class="sn-m-label">Overview ERP</span>',
+          '</a>',
+          '<a href="landing_erp_supply_chain.html">',
+            '<span class="sn-m-icon" style="background:rgba(85,163,255,.1);border:1px solid rgba(85,163,255,.2)">🔗</span>',
+            '<span class="sn-m-label">Supply Chain</span>',
+          '</a>',
+          '<a href="landing_erp_wms.html">',
+            '<span class="sn-m-icon" style="background:rgba(53,211,155,.1);border:1px solid rgba(53,211,155,.2)">🏬</span>',
+            '<span class="sn-m-label">Warehouse Management (WMS)</span>',
+          '</a>',
+          '<a href="landing_erp_ecommerce.html">',
+            '<span class="sn-m-icon" style="background:rgba(255,107,53,.1);border:1px solid rgba(255,107,53,.2)">🛒</span>',
+            '<span class="sn-m-label">Ecommerce Platform</span>',
+          '</a>',
+          '<a href="landing_erp_people_care.html">',
+            '<span class="sn-m-icon" style="background:rgba(167,139,250,.1);border:1px solid rgba(167,139,250,.2)">👥</span>',
+            '<span class="sn-m-label">People Care (RRHH)</span>',
+          '</a>',
+        '</div>',
       '</div>',
 
       /* Servicios Oracle */
@@ -482,15 +584,17 @@
             var wasOpen = sub.classList.contains('sn-open');
             sub.classList.toggle('sn-open');
             link.classList.toggle('sn-m-expanded');
-            /* Close other open sections */
+            /* Close other open sections at the same nesting level */
             if (!wasOpen) {
+              var isNested = !!link.closest('.sn-m-sub');
               toggleLinks.forEach(function (otherLink) {
-                if (otherLink !== link) {
-                  var otherId = otherLink.getAttribute('data-toggle');
-                  var otherSub = document.getElementById(otherId);
-                  if (otherSub) otherSub.classList.remove('sn-open');
-                  otherLink.classList.remove('sn-m-expanded');
-                }
+                if (otherLink === link) return;
+                var otherIsNested = !!otherLink.closest('.sn-m-sub');
+                if (isNested !== otherIsNested) return;
+                var otherId = otherLink.getAttribute('data-toggle');
+                var otherSub = document.getElementById(otherId);
+                if (otherSub) otherSub.classList.remove('sn-open');
+                otherLink.classList.remove('sn-m-expanded');
               });
             }
           }

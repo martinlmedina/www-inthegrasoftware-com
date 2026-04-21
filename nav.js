@@ -381,6 +381,10 @@
               '<span class="sn-pi-icon" style="background:rgba(167,139,250,.1);border:1px solid rgba(167,139,250,.2)">💬</span>',
               '<div class="sn-pi-text"><strong>AI Chatbot</strong><span>Asistente con RAG sobre los datos de tu empresa</span></div>',
             '</a>',
+            '<a href="solutions_automations.html" class="sn-panel-item">',
+              '<span class="sn-pi-icon" style="background:rgba(197,87,255,.1);border:1px solid rgba(197,87,255,.2)">⚡</span>',
+              '<div class="sn-pi-text"><strong>Automatización &amp; Orquestación</strong><span>Workflows empresariales con n8n sobre OCI</span></div>',
+            '</a>',
           '</div>',
         '</div>',
 
@@ -493,6 +497,10 @@
         '<a href="solutions_ai_chatbot.html">',
           '<span class="sn-m-icon" style="background:rgba(167,139,250,.1);border:1px solid rgba(167,139,250,.2)">💬</span>',
           '<span class="sn-m-label">AI Chatbot</span>',
+        '</a>',
+        '<a href="solutions_automations.html">',
+          '<span class="sn-m-icon" style="background:rgba(197,87,255,.1);border:1px solid rgba(197,87,255,.2)">⚡</span>',
+          '<span class="sn-m-label">Automatización &amp; Orquestación</span>',
         '</a>',
       '</div>',
 

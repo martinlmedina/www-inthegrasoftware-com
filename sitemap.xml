@@ -2,7 +2,7 @@
 <!--
   Inthegra Software — Sitemap / Arquitectura del sitio
   Dominio: https://inthegrasoftware.com
-  Última actualización: 2026-04-21
+  Última actualización: 2026-04-21 (+ soluciones/automations)
 
   ESTRUCTURA DE NAVEGACIÓN:
   ─────────────────────────
@@ -23,7 +23,8 @@
   │   └── Production AI
   ├── Soluciones
   │   ├── CRM Enterprise
-  │   └── AI Chatbot
+  │   ├── AI Chatbot
+  │   └── Automatización & Orquestación (n8n + OCI)
   ├── Equipo & Cultura
   ├── Casos de Éxito
   ├── Blog
@@ -50,6 +51,7 @@
   landing_production_ai.html       → /servicios-oracle/production-ai/
   solutions_crm.html               → /soluciones/crm/
   solutions_ai_chatbot.html        → /soluciones/ai-chatbot/
+  solutions_automations.html       → /soluciones/automations/
   people_culture.html              → /equipo/
   success_stories.html             → /casos-de-exito/
   contacto.html                    → /contacto/
@@ -182,6 +184,13 @@
   <url>
     <loc>https://inthegrasoftware.com/soluciones/ai-chatbot/</loc>
     <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://inthegrasoftware.com/soluciones/automations/</loc>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

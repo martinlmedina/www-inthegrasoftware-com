@@ -7,7 +7,7 @@
 
 ## 1. Vision general
 
-Sitio web corporativo de Inthegra Software, 100% estatico (sin backend), con **35 paginas de produccion** (incluye 12 articulos de blog). Construido sobre HTML/CSS/JS puro, sin frameworks. Navegacion y footer compartidos via `nav.js` y `footer.js`, sistema de diseno unificado via `common.css` y CSS custom properties.
+Sitio web corporativo de Inthegra Software, 100% estatico (sin backend), con **36 paginas de produccion** (incluye 12 articulos de blog). Construido sobre HTML/CSS/JS puro, sin frameworks. Navegacion y footer compartidos via `nav.js` y `footer.js`, sistema de diseno unificado via `common.css` y CSS custom properties.
 
 **Stack:**
 - HTML5 semantico con `<main>`, `<article>`, Open Graph, JSON-LD
@@ -51,12 +51,13 @@ Sitio web corporativo de Inthegra Software, 100% estatico (sin backend), con **3
 | Oracle Analytics | landing_oac.html | BI, dashboards ejecutivos, semantic models sobre OAC |
 | Production AI | landing_production_ai.html | RAG, agentes, AI integrada a procesos enterprise |
 
-### Soluciones (2 paginas)
+### Soluciones (3 paginas)
 
 | Pagina | Archivo | Que cubre |
 |--------|---------|-----------|
 | CRM Enterprise | solutions_crm.html | Sales CRM + Collections CRM integrado con ERP |
 | AI Chatbot | solutions_ai_chatbot.html | Asistente conversacional con RAG sobre datos del cliente |
+| Automatizacion & Orquestacion | solutions_automations.html | Workflows empresariales con n8n sobre OCI, integra ERP/CRM/WA + agentes IA |
 
 ### Institucional (4 paginas)
 
@@ -96,7 +97,7 @@ Sitio web corporativo de Inthegra Software, 100% estatico (sin backend), con **3
 | Archivo | Funcion |
 |---------|---------|
 | 404.html | Pagina de error custom (noindex) |
-| sitemap.xml | 35 URLs, actualizado 2026-04-21 (incluye 4 modulos ERP + 2 legales) |
+| sitemap.xml | 36 URLs, actualizado 2026-04-21 (incluye 4 modulos ERP + 2 legales + automations) |
 | robots.txt | Allow all, referencia a sitemap |
 | llms.txt | Mapa del sitio para crawlers de IA, actualizado 2026-04-21 |
 
@@ -208,7 +209,8 @@ Servicios Oracle
 
 Soluciones
   ├── CRM Enterprise
-  └── AI Chatbot
+  ├── AI Chatbot
+  └── Automatizacion & Orquestacion (n8n + OCI)
 
 People & Culture
 Casos de Exito

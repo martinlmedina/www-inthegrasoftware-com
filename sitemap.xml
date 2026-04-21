@@ -2,7 +2,7 @@
 <!--
   Inthegra Software — Sitemap / Arquitectura del sitio
   Dominio: https://inthegrasoftware.com
-  Última actualización: 2026-04-10
+  Última actualización: 2026-04-21
 
   ESTRUCTURA DE NAVEGACIÓN:
   ─────────────────────────
@@ -10,7 +10,11 @@
   ├── Productos
   │   ├── HealthCare
   │   ├── Credit & Financial
-  │   └── Retail & Distribución
+  │   └── ERP para Retail & Servicios
+  │       ├── Supply Chain
+  │       ├── Warehouse Management (WMS)
+  │       ├── Ecommerce Platform
+  │       └── People Care (RRHH)
   ├── Servicios Oracle
   │   ├── Modernización Oracle Forms
   │   ├── Oracle Cloud (OCI)
@@ -22,27 +26,36 @@
   │   └── AI Chatbot
   ├── Equipo & Cultura
   ├── Casos de Éxito
-  └── Blog
+  ├── Blog
+  └── Legales
+      ├── Privacidad
+      └── Términos
 
   ARCHIVOS DEL PROYECTO ↔ URL FINAL:
   ────────────────────────────────────
-  index.html                   → /
-  index_productos.html         → /productos/
-  landing_healthcare.html      → /productos/healthcare/
-  landing_credit_financial.html→ /productos/credit-financial/
-  landing_erp.html             → /productos/retail/
-  index_services.html          → /servicios-oracle/
-  landing_modernizacion.html   → /servicios-oracle/modernizacion/
-  landing_oci.html             → /servicios-oracle/oci/
-  landing_desarrollo_medida.html→ /servicios-oracle/desarrollo-medida/
-  landing_oac.html             → /servicios-oracle/analytics/
-  landing_production_ai.html   → /servicios-oracle/production-ai/
-  solutions_crm.html           → /soluciones/crm/
-  solutions_ai_chatbot.html    → /soluciones/ai-chatbot/
-  people_culture.html          → /equipo/
-  success_stories.html         → /casos-de-exito/
-  contacto.html                → /contacto/
-  blog.html                    → /blog/
+  index.html                       → /
+  index_productos.html             → /productos/
+  landing_healthcare.html          → /productos/healthcare/
+  landing_credit_financial.html    → /productos/credit-financial/
+  landing_erp.html                 → /productos/retail/
+  landing_erp_supply_chain.html    → /productos/erp/supply-chain/
+  landing_erp_wms.html             → /productos/erp/wms/
+  landing_erp_ecommerce.html       → /productos/erp/ecommerce/
+  landing_erp_people_care.html     → /productos/erp/people-care/
+  index_services.html              → /servicios-oracle/
+  landing_modernizacion.html       → /servicios-oracle/modernizacion/
+  landing_oci.html                 → /servicios-oracle/oci/
+  landing_desarrollo_medida.html   → /servicios-oracle/desarrollo-medida/
+  landing_oac.html                 → /servicios-oracle/analytics/
+  landing_production_ai.html       → /servicios-oracle/production-ai/
+  solutions_crm.html               → /soluciones/crm/
+  solutions_ai_chatbot.html        → /soluciones/ai-chatbot/
+  people_culture.html              → /equipo/
+  success_stories.html             → /casos-de-exito/
+  contacto.html                    → /contacto/
+  blog.html                        → /blog/
+  privacidad.html                  → /privacidad.html
+  terminos.html                    → /terminos.html
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -84,6 +97,35 @@
     <lastmod>2026-04-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- ── MÓDULOS ERP ── -->
+  <url>
+    <loc>https://inthegrasoftware.com/productos/erp/supply-chain/</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://inthegrasoftware.com/productos/erp/wms/</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://inthegrasoftware.com/productos/erp/ecommerce/</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://inthegrasoftware.com/productos/erp/people-care/</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <!-- ── SERVICIOS ORACLE ── -->
@@ -256,6 +298,21 @@
     <lastmod>2025-09-11</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
+  </url>
+
+  <!-- ── LEGALES ── -->
+  <url>
+    <loc>https://inthegrasoftware.com/privacidad.html</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://inthegrasoftware.com/terminos.html</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 
 </urlset>

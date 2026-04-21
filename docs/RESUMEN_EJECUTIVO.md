@@ -96,9 +96,9 @@ Sitio web corporativo de Inthegra Software, 100% estatico (sin backend), con **3
 | Archivo | Funcion |
 |---------|---------|
 | 404.html | Pagina de error custom (noindex) |
-| sitemap.xml | 29 URLs (pendiente regenerar: faltan 4 modulos ERP + 2 legales) |
+| sitemap.xml | 35 URLs, actualizado 2026-04-21 (incluye 4 modulos ERP + 2 legales) |
 | robots.txt | Allow all, referencia a sitemap |
-| llms.txt | Mapa del sitio para crawlers de IA (pendiente actualizar con las nuevas paginas) |
+| llms.txt | Mapa del sitio para crawlers de IA, actualizado 2026-04-21 |
 
 ---
 
@@ -252,7 +252,7 @@ Resumen:
 | ~~Integrar Meta Pixel~~ | ~~Instalar pixel de Facebook + evento Lead en formulario~~ | ✅ Hecho 2026-04-20 |
 | ~~Unificar footer~~ | ~~Reemplazar footers hardcoded por `footer.js` compartido~~ | ✅ Hecho 2026-04-21 |
 | ~~Publicar paginas legales~~ | ~~Crear privacidad.html y terminos.html (links del footer)~~ | ✅ Hecho 2026-04-21 |
-| Regenerar sitemap.xml y llms.txt | Agregar las 6 paginas nuevas (4 modulos ERP + 2 legales) | Dev — 30 min |
+| ~~Regenerar sitemap.xml y llms.txt~~ | ~~Agregar las 6 paginas nuevas (4 modulos ERP + 2 legales)~~ | ✅ Hecho 2026-04-21 |
 | Configurar GTM triggers | Crear triggers para form_submit, whatsapp_click en GTM y conectar con GA4 goals. [Guía](SETUP_TRACKING_SEO.md#1-gtm-triggers--ga4-goals) | Marketing — 2 horas |
 | Configurar Meta Events Manager | Verificar llegada de `PageView` y `Lead`, crear audiencias de remarketing. [Guía](SETUP_TRACKING_SEO.md#2-meta-events-manager) | Marketing — 1 hora |
 | Google Search Console | Verificar propiedad via GTM, enviar sitemap. [Guía](SETUP_TRACKING_SEO.md#3-google-search-console) | Marketing/IT — 30 min |

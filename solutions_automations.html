@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TRT4B92N');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Facebook Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1226651955694155');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1226651955694155&ev=PageView&noscript=1"/></noscript>
+  <!-- End Facebook Pixel Code -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Inthegra Automation — Automatización y orquestación enterprise de procesos con IA, integraciones multi-sistema y motor n8n sobre infraestructura Oracle Cloud (OCI)." />
+  <title>Automatización y Orquestación de Procesos | Inthegra</title>
+  <link rel="canonical" href="https://inthegrasoftware.com/soluciones/automations/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://inthegrasoftware.com/soluciones/automations/" />
+  <meta property="og:title" content="Automatización y Orquestación de Procesos | Inthegra" />
+  <meta property="og:description" content="Automatización y orquestación enterprise de procesos con IA, integraciones multi-sistema y motor n8n sobre infraestructura Oracle Cloud (OCI)." />
+  <meta property="og:image" content="https://inthegrasoftware.com/logo-header.svg" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:site_name" content="Inthegra Software" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Automatización y Orquestación de Procesos | Inthegra" />
+  <meta name="twitter:description" content="Automatización y orquestación enterprise de procesos con IA, integraciones multi-sistema y motor n8n sobre infraestructura Oracle Cloud (OCI)." />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://inthegrasoftware.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Soluciones", "item": "https://inthegrasoftware.com/index_productos.html" },
+      { "@type": "ListItem", "position": 3, "name": "Automatización y Orquestación", "item": "https://inthegrasoftware.com/solutions_automations.html" }
+    ]
+  }
+  </script>
+
+  <link rel="icon" href="favicon-32.png" sizes="32x32" />
+  <link rel="icon" href="favicon-192.png" sizes="192x192" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="common.css" />
+  <script src="nav.js"></script>
+  <script src="footer.js" defer></script>
+
+  <style>
+    :root {
+      --bg:        #0F2043;
+      --bg-deep:   #08111f;
+      --bg-panel:  #0f1830;
+      --bg-card:   #121f3d;
+      --line:      #243a61;
+      --text:      #eef4ff;
+      --text-2:    #c0d4f0;
+      --muted:     #7d9ac4;
+      --purple:    #a603fc;
+      --purple-2:  #c557ff;
+      --cyan:      #c557ff;
+      --green:     #6ee7b7;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg);
+      background-image:
+        radial-gradient(ellipse 80% 50% at 100% 0%,  rgba(166,3,252,.12) 0%, transparent 50%),
+        radial-gradient(ellipse 55% 40% at 0%   10%, rgba(197,87,255,.07)  0%, transparent 45%),
+        radial-gradient(ellipse 70% 60% at 50%  85%, rgba(197,87,255,.06)  0%, transparent 55%);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    .container { max-width: 1260px; margin: 0 auto; padding: 0 32px; }
+
+    header {
+      position: sticky; top: 0; z-index: 200;
+      background: rgba(8,17,31,.9);
+      backdrop-filter: blur(20px) saturate(1.5);
+      border-bottom: 1px solid rgba(36,58,97,.7);
+    }
+
+    .section-relative { position: relative; overflow: hidden; }
+    .section-relative > .container { position: relative; z-index: 1; }
+    .bg-graphic { position: absolute; pointer-events: none; z-index: 0; user-select: none; }
+    @media (max-width: 768px) { .bg-graphic { display: none; } }
+
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px; margin-bottom: 18px;
+      padding: 6px 14px; border-radius: 999px;
+      border: 1px solid rgba(166,3,252,.3); background: rgba(166,3,252,.08);
+      color: var(--purple); font-size: 11px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
+    }
+    .eyebrow::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--purple); }
+
+    .hero-title, .section-title {
+      background: linear-gradient(135deg, #fff 15%, var(--purple) 55%, var(--purple-2) 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .section-title { font-size: clamp(30px,4vw,50px); font-weight: 800; line-height: 1.06; letter-spacing: -.03em; margin-bottom: 18px; }
+    .section-desc { color: var(--muted); font-size: 18px; line-height: 1.7; max-width: 72ch; }
+
+    .section { padding: 96px 0; }
+    .section-alt { background: rgba(255,255,255,.015); border-top: 1px solid rgba(36,58,97,.5); border-bottom: 1px solid rgba(36,58,97,.5); }
+
+    .hero { padding: 56px 0 96px; min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden; }
+    .hero-orb { position: absolute; border-radius: 50%; filter: blur(90px); pointer-events: none; }
+    .hero-orb.a { width: 600px; height: 600px; top: -200px; left: -150px; background: radial-gradient(circle, rgba(197,87,255,.14), transparent 65%); }
+    .hero-orb.b { width: 480px; height: 480px; bottom: -150px; right: -120px; background: radial-gradient(circle, rgba(197,87,255,.08), transparent 65%); }
+
+    .hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center; }
+    .hero-copy { display: flex; flex-direction: column; gap: 24px; }
+    .hero-title { font-size: clamp(38px,5.5vw,68px); font-weight: 900; line-height: .96; letter-spacing: -.04em; }
+    .hero-lead { font-size: clamp(16px,1.7vw,19px); color: var(--text-2); max-width: 58ch; line-height: 1.65; }
+
+    .hero-pills { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; }
+    .hero-pill {
+      padding: 14px; border-radius: 18px;
+      background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08);
+      color: var(--text-2); font-size: 13px; line-height: 1.45;
+    }
+
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 28px; border-radius: 999px; font-size: 15px; font-weight: 700;
+      background: linear-gradient(135deg, var(--purple), var(--purple-2));
+      color: #fff; box-shadow: 0 18px 40px rgba(197,87,255,.3);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 24px 48px rgba(197,87,255,.42); }
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 28px; border-radius: 999px; font-size: 15px; font-weight: 700;
+      border: 1px solid rgba(255,255,255,.16); color: var(--text-2);
+      background: rgba(255,255,255,.03); transition: all .2s;
+    }
+    .btn-ghost:hover { border-color: rgba(166,3,252,.4); color: var(--purple); background: rgba(166,3,252,.06); }
+
+    /* ── HERO VISUAL: workflow canvas ─── */
+    .hero-card {
+      padding: 24px; border-radius: 28px;
+      background: linear-gradient(180deg, rgba(19,36,69,.92), rgba(10,18,34,.94));
+      border: 1px solid rgba(255,255,255,.1);
+      box-shadow: 0 24px 64px rgba(0,0,0,.32);
+      overflow: hidden; position: relative;
+    }
+    .hero-card::before {
+      content: ''; position: absolute; inset: 0; border-radius: 28px; pointer-events: none;
+      background: radial-gradient(circle at 80% 10%, rgba(166,3,252,.1), transparent 40%);
+    }
+    .wf-status {
+      display: flex; justify-content: space-between; align-items: center;
+      margin-bottom: 18px; font-size: 13px; color: var(--text-2); position: relative; z-index: 1;
+    }
+    .status-live {
+      display: inline-flex; align-items: center; gap: 8px; font-size: 12px;
+      color: var(--green); font-weight: 600;
+    }
+    .status-live::before {
+      content: ''; width: 8px; height: 8px; border-radius: 50%;
+      background: var(--green); box-shadow: 0 0 0 4px rgba(110,231,183,.2);
+    }
+    .wf-canvas { display: grid; gap: 10px; margin-bottom: 18px; position: relative; z-index: 1; }
+    .wf-node {
+      display: grid; grid-template-columns: 36px 1fr auto; align-items: center; gap: 12px;
+      padding: 10px 14px; border-radius: 14px;
+      background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08);
+      position: relative;
+    }
+    .wf-node::after {
+      content: ''; position: absolute; left: 27px; top: 100%;
+      width: 2px; height: 10px; background: linear-gradient(180deg, rgba(166,3,252,.5), rgba(166,3,252,.1));
+    }
+    .wf-node:last-child::after { display: none; }
+    .wf-icon {
+      width: 36px; height: 36px; border-radius: 10px;
+      display: flex; align-items: center; justify-content: center; font-size: 16px;
+      background: rgba(166,3,252,.14); border: 1px solid rgba(166,3,252,.24);
+    }
+    .wf-body strong { display: block; font-size: 13px; font-weight: 700; letter-spacing: -.01em; color: var(--text); }
+    .wf-body span { display: block; font-size: 11.5px; color: var(--muted); line-height: 1.45; margin-top: 2px; }
+    .wf-tag {
+      font-size: 10px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+      padding: 3px 8px; border-radius: 999px;
+    }
+    .wf-tag.ok { color: var(--green); background: rgba(110,231,183,.12); border: 1px solid rgba(110,231,183,.2); }
+    .wf-tag.ai { color: var(--purple-2); background: rgba(197,87,255,.14); border: 1px solid rgba(197,87,255,.22); }
+    .wf-tag.run { color: #7ec8ff; background: rgba(126,200,255,.12); border: 1px solid rgba(126,200,255,.2); }
+
+    .mini-panels { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; position: relative; z-index: 1; }
+    .mini-panel {
+      padding: 14px; border-radius: 18px;
+      background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.08);
+    }
+    .mini-panel .label { font-size: 11px; color: var(--muted); margin-bottom: 6px; font-weight: 600; }
+    .mini-panel .kpi { font-size: 28px; font-weight: 800; letter-spacing: -.04em; }
+    .mini-panel .kpi.purple { color: var(--purple); }
+    .mini-panel .kpi.cyan { color: var(--cyan); }
+    .mini-panel .small { font-size: 12px; color: var(--muted); margin-top: 4px; line-height: 1.4; }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.025));
+      border: 1px solid rgba(36,58,97,.8); border-radius: 24px; padding: 28px;
+      box-shadow: 0 12px 40px rgba(0,0,0,.18);
+    }
+    .card.soft { background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); }
+    .card-icon {
+      width: 46px; height: 46px; border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 16px; font-size: 22px;
+      background: rgba(166,3,252,.12); border: 1px solid rgba(166,3,252,.2);
+    }
+    .card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; letter-spacing: -.015em; }
+    .card p { color: var(--muted); font-size: 15px; line-height: 1.65; }
+    .cap-tag {
+      display: inline-block; margin-top: 14px;
+      padding: 5px 10px; border-radius: 999px;
+      background: rgba(166,3,252,.1); border: 1px solid rgba(166,3,252,.2);
+      color: var(--purple); font-size: 11px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
+    }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 20px; }
+
+    .problem-card {
+      padding: 28px; border-radius: 24px; min-height: 200px;
+      border: 1px solid rgba(36,58,97,.8);
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+    }
+    .problem-card .num {
+      font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+      color: var(--purple); margin-bottom: 14px; display: block;
+    }
+    .problem-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; letter-spacing: -.015em; }
+    .problem-card p { color: var(--muted); font-size: 15px; line-height: 1.65; }
+
+    .pos-split { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+    .pos-panel {
+      padding: 30px; border-radius: 26px;
+      background: linear-gradient(180deg, rgba(11,30,70,.9), rgba(8,20,50,.95));
+    }
+    .pos-panel.bad { border: 1px solid rgba(255,90,31,.18); }
+    .pos-panel.good { border: 1px solid rgba(166,3,252,.25); }
+    .pos-panel h3 { font-size: 20px; font-weight: 700; margin-bottom: 18px; letter-spacing: -.02em; }
+    .checklist { display: grid; gap: 12px; margin-top: 4px; }
+    .check-item { display: flex; gap: 12px; align-items: flex-start; color: var(--text-2); font-size: 15px; line-height: 1.55; }
+    .check-x { width: 20px; height: 20px; border-radius: 50%; flex: 0 0 20px; margin-top: 1px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 800; background: rgba(255,90,31,.15); color: #ff6b3d; border: 1px solid rgba(255,90,31,.2); }
+    .check-ok { width: 20px; height: 20px; border-radius: 50%; flex: 0 0 20px; margin-top: 1px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 800; background: rgba(166,3,252,.15); color: var(--purple); border: 1px solid rgba(166,3,252,.25); }
+
+    .flow-grid { display: grid; grid-template-columns: repeat(7,minmax(0,1fr)); gap: 12px; }
+    .flow-step {
+      padding: 20px 16px; border-radius: 20px; position: relative;
+      background: rgba(255,255,255,.04); border: 1px solid rgba(36,58,97,.8);
+      min-height: 180px;
+    }
+    .flow-step .step-num { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--purple); margin-bottom: 10px; display: block; }
+    .flow-step h4 { font-size: 16px; font-weight: 700; margin-bottom: 8px; letter-spacing: -.01em; }
+    .flow-step p { font-size: 13px; color: var(--muted); line-height: 1.55; }
+    .flow-step::after { content: '→'; position: absolute; right: -10px; top: 50%; transform: translateY(-50%); color: rgba(255,255,255,.2); font-size: 18px; z-index: 2; }
+    .flow-step:last-child::after { display: none; }
+
+    .usecases-grid { display: grid; grid-template-columns: 260px 1fr; gap: 18px; align-items: start; }
+    .tabs-list { display: grid; gap: 10px; }
+    .tab-btn {
+      padding: 18px; border-radius: 18px; cursor: pointer;
+      background: rgba(255,255,255,.04); border: 1px solid rgba(36,58,97,.8);
+      color: var(--text-2); transition: all .2s; text-align: left;
+    }
+    .tab-btn strong { display: block; font-size: 15px; margin-bottom: 4px; }
+    .tab-btn span { font-size: 13px; color: var(--muted); line-height: 1.4; }
+    .tab-btn.active {
+      background: linear-gradient(180deg, rgba(166,3,252,.16), rgba(197,87,255,.07));
+      border-color: rgba(166,3,252,.3);
+    }
+    .tab-panel { display: none; padding: 30px; border-radius: 24px; background: linear-gradient(180deg, rgba(11,30,70,.9), rgba(8,20,50,.95)); border: 1px solid rgba(36,58,97,.8); }
+    .tab-panel.active { display: block; }
+    .tab-panel h3 { font-size: 22px; font-weight: 700; margin-bottom: 10px; letter-spacing: -.02em; }
+    .tab-panel > p { color: var(--muted); font-size: 16px; line-height: 1.65; margin-bottom: 20px; }
+    .bullet-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; }
+    .bullet-item {
+      padding: 16px; border-radius: 16px;
+      background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.07);
+      color: var(--text-2); font-size: 14px; line-height: 1.55;
+    }
+    .bullet-item strong { display: block; margin-bottom: 4px; color: var(--text); }
+
+    .orbit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center; }
+    .orbit-wrap {
+      position: relative; min-height: 460px; border-radius: 28px;
+      background: linear-gradient(180deg, rgba(166,3,252,.07), rgba(197,87,255,.03));
+      border: 1px solid rgba(166,3,252,.15);
+      overflow: hidden;
+    }
+    .orbit-center {
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+      width: 150px; height: 150px; border-radius: 50%;
+      background: linear-gradient(135deg, rgba(166,3,252,.3), rgba(197,87,255,.15));
+      border: 2px solid rgba(166,3,252,.3);
+      box-shadow: 0 0 0 20px rgba(166,3,252,.05), 0 0 0 40px rgba(166,3,252,.02);
+      display: flex; align-items: center; justify-content: center;
+      text-align: center; padding: 16px; z-index: 2;
+      font-size: 11.5px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; line-height: 1.3;
+    }
+    .orbit-node {
+      position: absolute; padding: 12px 14px; border-radius: 14px; z-index: 2;
+      background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12);
+      font-size: 12px; font-weight: 700; text-align: center; color: var(--text-2); line-height: 1.3;
+    }
+    .on-top    { top: 32px;   left: 50%; transform: translateX(-50%); }
+    .on-right  { right: 28px; top: 50%; transform: translateY(-50%); }
+    .on-bottom { bottom: 32px; left: 50%; transform: translateX(-50%); }
+    .on-left   { left: 28px;  top: 50%; transform: translateY(-50%); }
+    .on-tr     { right: 60px; top: 70px; }
+    .on-bl     { left: 60px; bottom: 70px; }
+
+    .dashboard-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 20px; }
+    .dash-main { display: grid; gap: 16px; }
+    .dash-side { display: grid; gap: 16px; }
+    .chart-box {
+      padding: 26px; border-radius: 22px;
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      border: 1px solid rgba(36,58,97,.8);
+    }
+    .chart-box h4 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+    .chart-box p { font-size: 13px; color: var(--muted); margin-bottom: 20px; }
+    .bar-chart { display: flex; align-items: flex-end; gap: 10px; height: 100px; }
+    .bar-col { flex: 1; border-radius: 6px 6px 0 0; background: linear-gradient(180deg, var(--purple), rgba(197,87,255,.4)); min-width: 0; position: relative; }
+    .bar-col span { position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); font-size: 11px; color: var(--muted); white-space: nowrap; }
+    .log-box {
+      padding: 22px; border-radius: 20px;
+      background: rgba(255,255,255,.04); border: 1px solid rgba(36,58,97,.8);
+    }
+    .log-box h4 { font-size: 14px; font-weight: 700; margin-bottom: 14px; }
+    .log-item { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,.05); font-size: 13px; color: var(--text-2); }
+    .log-item:last-child { border-bottom: none; }
+    .log-time { color: var(--muted); white-space: nowrap; flex-shrink: 0; }
+    .stats-box {
+      padding: 22px; border-radius: 20px;
+      background: rgba(255,255,255,.04); border: 1px solid rgba(36,58,97,.8);
+    }
+    .stats-box h4 { font-size: 14px; font-weight: 700; margin-bottom: 16px; }
+    .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .stat-item { padding: 14px; border-radius: 14px; background: rgba(255,255,255,.04); }
+    .stat-item .s-label { font-size: 11px; color: var(--muted); margin-bottom: 4px; }
+    .stat-item .s-value { font-size: 26px; font-weight: 800; letter-spacing: -.03em; color: var(--purple); }
+    .score-box {
+      padding: 22px; border-radius: 20px;
+      background: linear-gradient(180deg, rgba(166,3,252,.08), rgba(255,255,255,.02));
+      border: 1px solid rgba(166,3,252,.18);
+    }
+    .score-box h4 { font-size: 14px; font-weight: 700; margin-bottom: 10px; }
+    .score-box p { font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 14px; }
+    .score-inner {
+      padding: 16px; border-radius: 16px;
+      background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.07);
+    }
+    .score-inner .s-label { font-size: 11px; color: var(--muted); margin-bottom: 6px; }
+    .score-inner .s-big { font-size: 42px; font-weight: 800; letter-spacing: -.05em; color: var(--purple); }
+    .score-inner .s-desc { font-size: 13px; color: var(--text-2); line-height: 1.55; margin-top: 8px; }
+
+    .impact-row { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 16px; }
+    .impact-card {
+      padding: 28px 22px; border-radius: 22px; text-align: center;
+      background: rgba(255,255,255,.03); border: 1px solid rgba(36,58,97,.8);
+    }
+    .impact-card .big { font-size: clamp(28px,3vw,40px); font-weight: 900; letter-spacing: -.04em; color: var(--purple); display: block; margin-bottom: 12px; }
+    .impact-card p { font-size: 14px; color: var(--muted); line-height: 1.55; }
+
+    .cta-box {
+      padding: 52px; border-radius: 32px;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(166,3,252,.16), transparent 35%),
+        linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03));
+      border: 1px solid rgba(166,3,252,.2);
+      box-shadow: 0 24px 64px rgba(0,0,0,.24);
+    }
+    .cta-inner { display: grid; grid-template-columns: 1.1fr .9fr; gap: 32px; align-items: center; }
+    .cta-box h2 { font-size: clamp(24px,2.8vw,38px); font-weight: 800; line-height: 1.1; letter-spacing: -.03em; margin-bottom: 16px; }
+    .cta-box p { font-size: 17px; color: var(--muted); line-height: 1.65; margin-bottom: 28px; }
+    .cta-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+    .cta-props { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .cta-prop {
+      padding: 16px; border-radius: 16px;
+      background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.07);
+    }
+    .cta-prop strong { display: block; font-size: 13px; font-weight: 700; margin-bottom: 4px; }
+    .cta-prop span { font-size: 12px; color: var(--muted); line-height: 1.4; }
+
+    .fade-up { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+    .fade-up.in { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 1080px) {
+      .hero-grid, .pos-split, .grid-2, .orbit-grid, .dashboard-grid, .cta-inner, .usecases-grid { grid-template-columns: 1fr; }
+      .grid-3, .grid-4 { grid-template-columns: repeat(2,1fr); }
+      .flow-grid { grid-template-columns: repeat(4,1fr); }
+      .flow-step::after { display: none; }
+      .impact-row { grid-template-columns: repeat(3,1fr); }
+      .hero { min-height: auto; padding-bottom: 64px; }
+      .orbit-wrap { min-height: 360px; }
+      .on-top, .on-right, .on-bottom, .on-left, .on-tr, .on-bl { position: static; transform: none; }
+      .orbit-center { position: static; transform: none; }
+      .orbit-wrap { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; padding: 20px; min-height: auto; }
+    }
+    @media (max-width: 720px) {
+      .section { padding: 72px 0; }
+      .container { padding: 0 20px; }
+      .grid-3, .grid-4 { grid-template-columns: 1fr; }
+      .flow-grid { grid-template-columns: repeat(2,1fr); }
+      .impact-row { grid-template-columns: repeat(2,1fr); }
+      .cta-props { grid-template-columns: 1fr; }
+      .cta-box { padding: 32px 24px; }
+      .hero-pills { grid-template-columns: 1fr; }
+      .hero-actions { flex-direction: column; }
+      .btn-primary, .btn-ghost { width: 100%; justify-content: center; }
+      .bullet-grid { grid-template-columns: 1fr; }
+      .stat-grid { grid-template-columns: 1fr; }
+      .cta-props { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Inthegra Automation & Orchestration",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "Automatización y orquestación enterprise de procesos con IA, integraciones multi-sistema y motor n8n sobre infraestructura Oracle Cloud (OCI).",
+    "provider": {
+      "@type": "Organization",
+      "name": "Inthegra Software",
+      "url": "https://inthegrasoftware.com"
+    }
+  }
+  </script>
+</head>
+<body data-wa-context="Automatización y Orquestación de Procesos">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRT4B92N"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- Global site tag (gtag.js) - Google Ads -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16670573573"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-16670573573');
+</script>
+
+<header>
+  <div style="padding:16px 0;color:#7d9ac4;font-size:14px;">Cargando navegación…</div>
+</header>
+<main>
+
+<!-- ══════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════ -->
+<section class="hero section-relative">
+  <div class="hero-orb a"></div>
+  <div class="hero-orb b"></div>
+  <img src="Solutions.svg" class="bg-graphic" aria-hidden="true"
+       style="width:680px;top:-60px;right:-100px;opacity:.09;" />
+
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-copy fade-up">
+        <span class="eyebrow">Orquestación · Integración · IA · OCI</span>
+        <h1 class="hero-title">Automatizá y orquestá tu operación de punta a punta.</h1>
+        <p class="hero-lead">Integrá sistemas, eliminá procesos manuales y escalá tu negocio con automatización empresarial impulsada por IA, sobre motor n8n e infraestructura propia en Oracle Cloud (OCI).</p>
+        <div class="hero-actions">
+          <a href="contacto.html?interes=automations&origen=solutions_automations" class="btn-primary">Agendar demo →</a>
+          <a href="#capacidades" class="btn-ghost">Ver capacidades</a>
+        </div>
+        <div class="hero-pills">
+          <div class="hero-pill"><strong style="display:block;margin-bottom:4px;color:var(--purple)">Capa de orquestación</strong>Conecta ERP, CRM, APIs y canales en un mismo flujo de negocio.</div>
+          <div class="hero-pill"><strong style="display:block;margin-bottom:4px;color:var(--purple)">IA en el workflow</strong>Agentes que deciden, clasifican y resuelven dentro del proceso.</div>
+          <div class="hero-pill"><strong style="display:block;margin-bottom:4px;color:var(--purple)">Infraestructura OCI</strong>Seguridad enterprise y deploy rápido sobre nube Oracle.</div>
+        </div>
+      </div>
+
+      <div class="fade-up" style="transition-delay:.15s">
+        <div class="hero-card">
+          <div class="wf-status">
+            <span style="font-weight:600">Workflow · Recupero de cartera</span>
+            <span class="status-live">En ejecución</span>
+          </div>
+          <div class="wf-canvas">
+            <div class="wf-node">
+              <div class="wf-icon">⚡</div>
+              <div class="wf-body"><strong>Trigger</strong><span>Vencimiento diario · 08:00</span></div>
+              <span class="wf-tag ok">OK</span>
+            </div>
+            <div class="wf-node">
+              <div class="wf-icon">🗄️</div>
+              <div class="wf-body"><strong>Ingesta ERP</strong><span>Cartera de mora T+1 a T+30</span></div>
+              <span class="wf-tag ok">1.284</span>
+            </div>
+            <div class="wf-node">
+              <div class="wf-icon">🧠</div>
+              <div class="wf-body"><strong>Agente IA · Clasificación</strong><span>Segmenta por riesgo y propensión</span></div>
+              <span class="wf-tag ai">IA</span>
+            </div>
+            <div class="wf-node">
+              <div class="wf-icon">💬</div>
+              <div class="wf-body"><strong>WhatsApp + Chatbot</strong><span>Contactación y negociación</span></div>
+              <span class="wf-tag run">enviando</span>
+            </div>
+            <div class="wf-node">
+              <div class="wf-icon">📋</div>
+              <div class="wf-body"><strong>Registro en CRM</strong><span>Promesa, acuerdo y derivación</span></div>
+              <span class="wf-tag ok">sync</span>
+            </div>
+          </div>
+          <div class="mini-panels">
+            <div class="mini-panel">
+              <div class="label">Workflows activos</div>
+              <div class="kpi purple">42</div>
+              <div class="small">procesos orquestados en producción</div>
+            </div>
+            <div class="mini-panel">
+              <div class="label">Eventos / día</div>
+              <div class="kpi cyan">18.4K</div>
+              <div class="small">ejecuciones automáticas sin intervención manual</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     PROBLEMA REAL
+══════════════════════════════════════════════ -->
+<section class="section section-alt section-relative">
+  <img src="Solutions.svg" class="bg-graphic" aria-hidden="true"
+       style="width:620px;bottom:-100px;left:-80px;opacity:.08;" />
+  <div class="container">
+    <div class="fade-up" style="max-width:820px;margin-bottom:52px">
+      <span class="eyebrow">El problema real</span>
+      <h2 class="section-title">Operaciones frenadas por sistemas desconectados, procesos manuales y decisiones dispersas.</h2>
+      <p class="section-desc">La complejidad operativa no se resuelve con más herramientas. Se resuelve con una capa que integre los sistemas que ya tenés, automatice lo repetitivo y dé visibilidad en tiempo real.</p>
+    </div>
+    <div class="grid-3 fade-up" style="transition-delay:.1s">
+      <div class="problem-card">
+        <span class="num">01</span>
+        <h3>Sistemas desconectados e información en silos</h3>
+        <p>ERP, CRM, canales digitales y planillas conviven sin hablarse. Los datos se replican, se desactualizan y pierden trazabilidad.</p>
+      </div>
+      <div class="problem-card">
+        <span class="num">02</span>
+        <h3>Procesos manuales repetitivos</h3>
+        <p>Excels, mails y tareas que se ejecutan todos los días consumen tiempo del equipo, generan errores y no dejan registro.</p>
+      </div>
+      <div class="problem-card">
+        <span class="num">03</span>
+        <h3>Alto costo operativo por headcount</h3>
+        <p>Más volumen implica más personas. Sin automatización, el costo operacional crece linealmente con la demanda.</p>
+      </div>
+      <div class="problem-card">
+        <span class="num">04</span>
+        <h3>Errores humanos y falta de trazabilidad</h3>
+        <p>Tareas críticas dependientes de que una persona recuerde, cargue o envíe. Sin auditoría real de qué se hizo y cuándo.</p>
+      </div>
+      <div class="problem-card">
+        <span class="num">05</span>
+        <h3>Falta de visibilidad en tiempo real</h3>
+        <p>Nadie ve el estado de los procesos hasta que algo se rompe. Las decisiones llegan tarde y con datos incompletos.</p>
+      </div>
+      <div class="problem-card">
+        <span class="num">06</span>
+        <h3>Dependencia de IT para cada cambio</h3>
+        <p>Cada ajuste de proceso requiere un desarrollo, una planificación y un release. La operación se mueve más lento que el negocio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     POSICIONAMIENTO
+══════════════════════════════════════════════ -->
+<section class="section section-relative">
+  <img src="Solutions.svg" class="bg-graphic" aria-hidden="true"
+       style="width:660px;top:-80px;right:-120px;opacity:.09;" />
+  <div class="container">
+    <div class="fade-up" style="max-width:820px;margin-bottom:52px">
+      <span class="eyebrow">Posicionamiento</span>
+      <h2 class="section-title">No es una herramienta de no-code. Es una capa de orquestación empresarial.</h2>
+      <p class="section-desc">La diferencia no está en el motor — es en n8n sobre OCI. Está en cómo se implementa: integrado a los sistemas reales del negocio, con IA donde hace falta y con gobierno de nivel enterprise.</p>
+    </div>
+    <div class="pos-split fade-up" style="transition-delay:.1s">
+      <div class="pos-panel bad">
+        <h3 style="color:#ff8060">Automatización no-code genérica</h3>
+        <div class="checklist">
+          <div class="check-item"><span class="check-x">✕</span><div>Workflows aislados, sin integración real a ERP o CRM</div></div>
+          <div class="check-item"><span class="check-x">✕</span><div>Sin lógica de negocio ni IA, solo tareas simples encadenadas</div></div>
+          <div class="check-item"><span class="check-x">✕</span><div>Infraestructura compartida, sin control sobre datos ni performance</div></div>
+          <div class="check-item"><span class="check-x">✕</span><div>Sin auditoría, retry ni gestión de errores a nivel operación</div></div>
+          <div class="check-item"><span class="check-x">✕</span><div>Escalamiento limitado al plan de la herramienta</div></div>
+        </div>
+      </div>
+      <div class="pos-panel good">
+        <h3 style="color:var(--purple)">Orquestación Inthegra · n8n + OCI</h3>
+        <div class="checklist">
+          <div class="check-item"><span class="check-ok">✓</span><div>Integración profunda con ERP, CRM, APIs y sistemas internos</div></div>
+          <div class="check-item"><span class="check-ok">✓</span><div>Agentes de IA en el flujo para clasificar, decidir y resolver</div></div>
+          <div class="check-item"><span class="check-ok">✓</span><div>Infraestructura propia en OCI con aislamiento y seguridad enterprise</div></div>
+          <div class="check-item"><span class="check-ok">✓</span><div>Logs completos, retry automático y alertas por workflow</div></div>
+          <div class="check-item"><span class="check-ok">✓</span><div>Escalabilidad y costo bajo tu control, no de un SaaS externo</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     CÓMO FUNCIONA
+══════════════════════════════════════════════ -->
+<section class="section section-alt section-relative">
+  <img src="Solutions.svg" class="bg-graphic" aria-hidden="true"
+       style="width:640px;bottom:-80px;right:-60px;opacity:.08;" />
+  <div class="container">
+    <div class="fade-up" style="text-align:center;max-width:820px;margin:0 auto 52px">
+      <span class="eyebrow">Cómo funciona</span>
+      <h2 class="section-title">Del evento a la acción, con IA y trazabilidad completa.</h2>
+      <p class="section-desc" style="margin-inline:auto">Cada proceso automatizado sigue un ciclo estructurado: trigger, integración, decisión, ejecución, notificación y auditoría.</p>
+    </div>
+    <div class="flow-grid fade-up" style="transition-delay:.1s">
+      <div class="flow-step">
+        <span class="step-num">01</span>
+        <h4>Trigger</h4>
+        <p>Evento de negocio, cron, webhook o formulario dispara el workflow de manera automática.</p>
+      </div>
+      <div class="flow-step">
+        <span class="step-num">02</span>
+        <h4>Ingesta</h4>
+        <p>Datos del ERP, CRM, APIs externas o bases internas entran al flujo ya normalizados.</p>
+      </div>
+      <div class="flow-step">
+        <span class="step-num">03</span>
+        <h4>Orquesta</h4>
+        <p>Pasos secuenciales, condiciones y paralelismo definen el recorrido del proceso.</p>
+      </div>
+      <div class="flow-step">
+        <span class="step-num">04</span>
+        <h4>Decide (IA)</h4>
+        <p>Agentes LLM y reglas de negocio clasifican, priorizan y resuelven automáticamente.</p>
+      </div>
+      <div class="flow-step">
+        <span class="step-num">05</span>
+        <h4>Ejecuta</h4>
+        <p>Acciones sobre ERP, CRM, WhatsApp, email o APIs según la lógica del workflow.</p>
+      </div>
+      <div class="flow-step">
+        <span class="step-num">06</span>
+        <h4>Notifica</h4>
+        <p>Alertas a operadores, feedback al cliente y actualizaciones a los sistemas involucrados.</p>
+      </div>
+      <div class="flow-step">
+        <span class="step-num">07</span>
+        <h4>Audita</h4>
+        <p>Logs, métricas y retry automático dejan registro completo de cada ejecución.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     CAPACIDADES
+══════════════════════════════════════════════ -->
+<section id="capacidades" class="section section-relative">
+  <img src="Solutions.svg" class="bg-graphic" aria-hidden="true"
+       style="width:680px;top:-60px;left:-100px;opacity:.09;" />
+  <div class="container">
+    <div class="fade-up" style="max-width:820px;margin-bottom:52px">
+      <span class="eyebrow">Capacidades core</span>
+      <h2 class="section-title">Todo lo necesario para orquestar procesos críticos, con IA y grado enterprise.</h2>
+    </div>
+    <div class="grid-3 fade-up" style="transition-delay:.1s">
+      <div class="card">
+        <div class="card-icon">🔗</div>
+        <h3>Integraciones multi-sistema</h3>
+        <p>ERP, CRM, bases de datos, APIs públicas y sistemas internos. Conectores nativos y genéricos para cualquier endpoint.</p>
+        <span class="cap-tag">Integración</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">🧩</div>
+        <h3>Orquestación declarativa</h3>
+        <p>Flujos visuales con condiciones, paralelismo, ramas y variables. Sin código para el 80% de los casos; código donde hace falta.</p>
+        <span class="cap-tag">Workflows</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">🧠</div>
+        <h3>Agentes de IA en el flujo</h3>
+        <p>LLMs, RAG y reglas convivan dentro del workflow para clasificar, resumir, decidir y resolver sin intervención humana.</p>
+        <span class="cap-tag">IA</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">⚡</div>
+        <h3>Triggers por evento, cron o webhook</h3>
+        <p>Disparo por cambio en sistema, horario, formulario web, mensaje entrante o cualquier API externa.</p>
+        <span class="cap-tag">Triggers</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">⚙️</div>
+        <h3>Motor de reglas y condiciones</h3>
+        <p>Parámetros configurables por proceso: umbrales, segmentos, aprobaciones, escalamientos y SLAs.</p>
+        <span class="cap-tag">Reglas</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">📡</div>
+        <h3>Monitoreo y alertas</h3>
+        <p>Panel en tiempo real del estado de cada workflow, errores, latencia y volumen procesado.</p>
+        <span class="cap-tag">Observabilidad</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔁</div>
+        <h3>Retry y gestión de errores</h3>
+        <p>Reintentos automáticos, dead-letter queues, escalamiento a operadores y resolución manual cuando corresponde.</p>
+        <span class="cap-tag">Resiliencia</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔐</div>
+        <h3>Seguridad y gobierno</h3>
+        <p>Credenciales cifradas, roles por workflow, audit log completo y aislamiento por tenant en la infraestructura OCI.</p>
+        <span class="cap-tag">Enterprise</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">☁️</div>
+        <h3>Infraestructura OCI gestionada</h3>
+        <p>Deploy rápido sobre nube Oracle, con escalabilidad, alta disponibilidad y monitoreo operado por Inthegra.</p>
+        <span class="cap-tag">OCI</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     CASOS DE USO POR ÁREA
+══════════════════════════════════════════════ -->
+<section class="section section-alt section-relative">
+  <img src="Solutions.svg" class="bg-graphic" aria-hidden="true"
+       style="width:620px;bottom:-80px;right:-60px;opacity:.08;" />
+  <div class="container">
+    <div class="fade-up" style="text-align:center;max-width:820px;margin:0 auto 52px">
+      <span class="eyebrow">Casos de uso</span>
+      <h2 class="section-title">Una capa, múltiples procesos críticos automatizados.</h2>
+      <p class="section-desc" style="margin-inline:auto">Los mismos bloques de orquestación aplican a cobranzas, atención, operación retail o workflows internos. Lo que cambia es la lógica del negocio.</p>
+    </div>
+    <div class="usecases-grid fade-up" style="transition-delay:.1s">
+      <div class="tabs-list">
+        <button class="tab-btn active" data-tab="tab-cobranzas">
+          <strong>Cobranzas automatizadas</strong>
+          <span>Recupero de cartera con IA y canales digitales.</span>
+        </button>
+        <button class="tab-btn" data-tab="tab-crm">
+          <strong>CRM + WhatsApp + Chatbot</strong>
+          <span>Orquestación conversacional conectada al negocio.</span>
+        </button>
+        <button class="tab-btn" data-tab="tab-retail">
+          <strong>Operaciones retail</strong>
+          <span>Pedidos, stock, logística y ecommerce.</span>
+        </button>
+        <button class="tab-btn" data-tab="tab-workflows">
+          <strong>Workflows internos</strong>
+          <span>Aprobaciones, onboarding y procesos del back office.</span>
+        </button>
+      </div>
+      <div>
+        <div class="tab-panel active" id="tab-cobranzas">
+          <h3>Cobranzas automatizadas de punta a punta</h3>
+          <p>Flujos diarios que leen cartera del ERP, segmentan con IA, contactan por WhatsApp o email y registran resultados en CRM y cobranzas.</p>
+          <div class="bullet-grid">
+            <div class="bullet-item"><strong>Segmentación con IA</strong>Clasificación por riesgo, propensión de pago y estrategia según comportamiento histórico.</div>
+            <div class="bullet-item"><strong>Contactación multicanal</strong>WhatsApp, email y chatbot disparados según reglas y disponibilidad del cliente.</div>
+            <div class="bullet-item"><strong>Negociación automatizada</strong>Ofertas de cuotas, descuentos y plazos configurables en el flujo.</div>
+            <div class="bullet-item"><strong>Registro y seguimiento</strong>Promesas, acuerdos y estados sincronizados con el motor de cobranzas.</div>
+          </div>
+        </div>
+        <div class="tab-panel" id="tab-crm">
+          <h3>Orquestación CRM + WhatsApp + Chatbot</h3>
+          <p>Cada mensaje entrante, formulario o evento del CRM dispara un flujo que usa IA, consulta sistemas y responde en tiempo real.</p>
+          <div class="bullet-grid">
+            <div class="bullet-item"><strong>Routing conversacional</strong>IA clasifica la intención y deriva al flujo adecuado: ventas, atención o gestión.</div>
+            <div class="bullet-item"><strong>Enriquecimiento de leads</strong>Consulta al CRM, saldo en ERP y fuentes externas para armar el contexto de la conversación.</div>
+            <div class="bullet-item"><strong>Handoff inteligente</strong>Derivación a operador con todo el historial disponible cuando se requiere intervención humana.</div>
+            <div class="bullet-item"><strong>Cierre de gestión</strong>Actualización automática de oportunidades, casos y próximos pasos en el CRM.</div>
+          </div>
+        </div>
+        <div class="tab-panel" id="tab-retail">
+          <h3>Automatización de operaciones retail</h3>
+          <p>Integración entre canales de venta, ERP, WMS y logística para que el pedido fluya sin intervención manual desde la compra hasta la entrega.</p>
+          <div class="bullet-grid">
+            <div class="bullet-item"><strong>Procesamiento de pedidos</strong>Ingesta desde ecommerce, marketplaces y POS, validación de stock y ruteo al WMS.</div>
+            <div class="bullet-item"><strong>Sincronización de stock</strong>Actualización cross-canal en tiempo real para evitar sobreventa y desalineaciones.</div>
+            <div class="bullet-item"><strong>Alertas operativas</strong>Notificación automática por quiebres de stock, rupturas de SLA o fallas de entrega.</div>
+            <div class="bullet-item"><strong>Reposición inteligente</strong>Sugerencias con IA y disparo automático de órdenes a proveedores o sucursales.</div>
+          </div>
+        </div>
+        <div class="tab-panel" id="tab-workflows">
+          <h3>Workflows internos y back office</h3>
+          <p>Aprobaciones, onboarding, recordatorios y tareas repetitivas resueltas por la plataforma, con visibilidad completa para el equipo.</p>
+          <div class="bullet-grid">
+            <div class="bullet-item"><strong>Aprobaciones configurables</strong>Circuitos de gastos, compras o contratos con reglas, niveles y notificaciones.</div>
+            <div class="bullet-item"><strong>Onboarding de personas</strong>Alta en sistemas, notificaciones, accesos y seguimiento en un solo flujo.</div>
+            <div class="bullet-item"><strong>Tareas recurrentes</strong>Reportes diarios, conciliaciones y cierres batch que corren solos y alertan si algo falla.</div>
+            <div class="bullet-item"><strong>Visibilidad de equipo</strong>Dashboard con el estado de cada proceso crítico del back office en tiempo real.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     INTEGRACIÓN / ARQUITECTURA
+══════════════════════════════════════════════ -->
+<section id="integracion" class="section section-relative">
+  <img src="Solutions.svg" class="bg-graphic" aria-hidden="true"
+       style="width:660px;top:-80px;right:-100px;opacity:.09;" />
+  <div class="container">
+    <div class="fade-up" style="max-width:820px;margin-bottom:52px">
+      <span class="eyebrow">Arquitectura</span>
+      <h2 class="section-title">Una capa de orquestación conectada a todo tu ecosistema.</h2>
+      <p class="section-desc">El motor de automatización se sienta entre los sistemas que ya tenés y los canales con los que operás. Todo pasa por esa capa: lógica, IA, auditoría y control.</p>
+    </div>
+    <div class="orbit-grid fade-up" style="transition-delay:.1s">
+      <div class="orbit-wrap">
+        <div class="orbit-node on-top">ERP /<br>Productos Inthegra</div>
+        <div class="orbit-node on-right">CRM<br>y cobranzas</div>
+        <div class="orbit-node on-bottom">WhatsApp<br>y canales digitales</div>
+        <div class="orbit-node on-left">APIs<br>externas</div>
+        <div class="orbit-node on-tr">Agentes<br>de IA / LLM</div>
+        <div class="orbit-node on-bl">Analytics<br>y monitoreo</div>
+        <div class="orbit-center">INTHEGRA<br>AUTOMATION<br>n8n + OCI</div>
+      </div>
+      <div class="grid-2" style="gap:16px;align-content:start">
+        <div class="card soft" style="padding:24px">
+          <div class="card-icon" style="margin-bottom:12px">☁️</div>
+          <h3>Infraestructura propia en OCI</h3>
+          <p>Deploy sobre Oracle Cloud con aislamiento, alta disponibilidad, backups y monitoreo gestionados por Inthegra.</p>
+        </div>
+        <div class="card soft" style="padding:24px">
+          <div class="card-icon" style="margin-bottom:12px">🔗</div>
+          <h3>Integración con productos Inthegra</h3>
+          <p>ERP, CRM y AI Chatbot hablan nativamente con la capa de orquestación. Un ecosistema, no piezas sueltas.</p>
+        </div>
+        <div class="card soft" style="padding:24px;grid-column:span 2">
+          <div class="card-icon" style="margin-bottom:12px">🚀</div>
+          <h3>Deploy rápido, iteración continua</h3>
+          <p>Workflows nuevos en días, no meses. Cambios parametrizables sin pasar por ciclos de release tradicionales.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     CONTROL Y VISIBILIDAD
+══════════════════════════════════════════════ -->
+<section class="section section-alt section-relative">
+  <img src="Solutions.svg" class="bg-graphic" aria-hidden="true"
+       style="width:640px;bottom:-60px;left:-80px;opacity:.08;" />
+  <div class="container">
+    <div class="fade-up" style="text-align:center;max-width:820px;margin:0 auto 52px">
+      <span class="eyebrow">Control y visibilidad</span>
+      <h2 class="section-title">Panel operativo para gobernar la automatización en tiempo real.</h2>
+      <p class="section-desc" style="margin-inline:auto">Cada workflow deja registro de sus ejecuciones, errores, tiempos y resultados. La operación deja de ser una caja negra.</p>
+    </div>
+    <div class="dashboard-grid fade-up" style="transition-delay:.1s">
+      <div class="dash-main">
+        <div class="chart-box">
+          <h4>Ejecuciones por día</h4>
+          <p>Volumen de workflows ejecutados y estado de salud operativa.</p>
+          <div class="bar-chart">
+            <div class="bar-col" style="height:52%"><span>Lun</span></div>
+            <div class="bar-col" style="height:64%"><span>Mar</span></div>
+            <div class="bar-col" style="height:58%"><span>Mié</span></div>
+            <div class="bar-col" style="height:81%"><span>Jue</span></div>
+            <div class="bar-col" style="height:96%"><span>Vie</span></div>
+            <div class="bar-col" style="height:70%"><span>Sáb</span></div>
+          </div>
+        </div>
+        <div class="log-box">
+          <h4>Eventos recientes</h4>
+          <div class="log-item"><span>Workflow · Recupero de cartera completado (1.284 contactos)</span><span class="log-time">09:14</span></div>
+          <div class="log-item"><span>Agente IA · Clasificación de leads ejecutada</span><span class="log-time">09:42</span></div>
+          <div class="log-item"><span>Sincronización de stock · ecommerce + ERP</span><span class="log-time">10:06</span></div>
+          <div class="log-item"><span>Aprobación de gasto escalada a responsable</span><span class="log-time">10:23</span></div>
+        </div>
+      </div>
+      <div class="dash-side">
+        <div class="stats-box">
+          <h4>Métricas clave</h4>
+          <div class="stat-grid">
+            <div class="stat-item">
+              <div class="s-label">Uptime</div>
+              <div class="s-value">99,9%</div>
+            </div>
+            <div class="stat-item">
+              <div class="s-label">Tasa de éxito</div>
+              <div class="s-value">98,6%</div>
+            </div>
+            <div class="stat-item">
+              <div class="s-label">Latencia media</div>
+              <div class="s-value">1,2s</div>
+            </div>
+            <div class="stat-item">
+              <div class="s-label">Workflows</div>
+              <div class="s-value">42</div>
+            </div>
+          </div>
+        </div>
+        <div class="score-box">
+          <h4>Ahorro operativo</h4>
+          <p>Horas/persona liberadas por mes gracias a la automatización de procesos manuales.</p>
+          <div class="score-inner">
+            <div class="s-label">Ahorro mensual</div>
+            <div class="s-big">1.280h</div>
+            <div class="s-desc">Equivalente a ~8 FTEs reasignados a tareas de mayor valor agregado.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     IMPACTO DE NEGOCIO
+══════════════════════════════════════════════ -->
+<section class="section section-relative">
+  <img src="Solutions.svg" class="bg-graphic" aria-hidden="true"
+       style="width:660px;top:-80px;right:-100px;opacity:.09;" />
+  <div class="container">
+    <div class="fade-up" style="text-align:center;max-width:820px;margin:0 auto 52px">
+      <span class="eyebrow">Valor de negocio</span>
+      <h2 class="section-title">Impacto concreto en costo, velocidad y control operativo.</h2>
+      <p class="section-desc" style="margin-inline:auto">La promesa no es "más tecnología". Es mejor operación: menor costo, más capacidad, menos errores y visibilidad total.</p>
+    </div>
+    <div class="impact-row fade-up" style="transition-delay:.1s">
+      <div class="impact-card">
+        <span class="big">-60%</span>
+        <p>Reducción estimada del costo operativo en procesos automatizados.</p>
+      </div>
+      <div class="impact-card">
+        <span class="big">+5x</span>
+        <p>Velocidad de ejecución de procesos críticos comparado con gestión manual.</p>
+      </div>
+      <div class="impact-card">
+        <span class="big">-90%</span>
+        <p>Caída de errores humanos en tareas repetitivas orquestadas.</p>
+      </div>
+      <div class="impact-card">
+        <span class="big">+Escala</span>
+        <p>Volumen creciente sin escalar linealmente el headcount.</p>
+      </div>
+      <div class="impact-card">
+        <span class="big">+Vis.</span>
+        <p>Trazabilidad, métricas y alertas en tiempo real sobre cada proceso.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     CTA FINAL
+══════════════════════════════════════════════ -->
+<section id="cta" class="section section-relative">
+  <div class="container">
+    <div class="cta-box fade-up">
+      <div class="cta-inner">
+        <div>
+          <span class="eyebrow" style="margin-bottom:20px">Próximo paso</span>
+          <h2>Automatizá tus procesos críticos hoy.</h2>
+          <p>Mostranos un proceso que hoy te consume tiempo o genera errores. Diseñamos el workflow y lo dejamos corriendo sobre tu infraestructura OCI.</p>
+          <div class="cta-actions">
+            <a href="contacto.html?interes=automations&origen=solutions_automations" class="btn-primary">Agendar demo →</a>
+            <a href="contacto.html?interes=automations&origen=solutions_automations" class="btn-ghost">Hablar con un asesor</a>
+          </div>
+        </div>
+        <div class="cta-props">
+          <div class="cta-prop">
+            <strong>Infra OCI propia</strong>
+            <span>Nube Oracle gestionada por Inthegra, con seguridad y aislamiento.</span>
+          </div>
+          <div class="cta-prop">
+            <strong>Deploy rápido</strong>
+            <span>Workflows productivos en días, no meses, con iteración continua.</span>
+          </div>
+          <div class="cta-prop">
+            <strong>Ecosistema Inthegra</strong>
+            <span>Integrado nativamente con ERP, CRM y AI Chatbot propios.</span>
+          </div>
+          <div class="cta-prop">
+            <strong>Enterprise-ready</strong>
+            <span>Observabilidad, retry, auditoría y gobierno de nivel corporativo.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer></footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); } });
+  }, { threshold: 0.10 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(btn.dataset.tab).classList.add('active');
+    });
+  });
+</script>
+
+</body>
+</html>

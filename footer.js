@@ -192,6 +192,7 @@
           '<h4>Soluciones</h4>',
           '<a href="solutions_crm.html">CRM Enterprise</a>',
           '<a href="solutions_ai_chatbot.html">AI Chatbot</a>',
+          '<a href="solutions_automations.html">Automatización &amp; Orquestación</a>',
         '</div>',
 
         /* Column 5: Empresa */

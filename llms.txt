@@ -28,6 +28,7 @@ Inthegra Software develops enterprise platforms built on Oracle technology for h
 
 - [CRM](https://inthegrasoftware.com/solutions_crm.html): Customer relationship management.
 - [AI Chatbot](https://inthegrasoftware.com/solutions_ai_chatbot.html): Intelligent conversational assistants for enterprises.
+- [Process Automation & Orchestration](https://inthegrasoftware.com/solutions_automations.html): Enterprise workflow automation powered by n8n on Oracle Cloud Infrastructure. Integrates ERP, CRM, WhatsApp, and AI agents.
 
 ## Other Pages
 

@@ -10,7 +10,11 @@ Inthegra Software develops enterprise platforms built on Oracle technology for h
 
 - [HealthCare Suite](https://inthegrasoftware.com/landing_healthcare.html): ERP for healthcare — prepaid medicine, social security, occupational health, home care. Clients include SIPSSA, EMI, Alta Salud.
 - [Credit & Financial Suite](https://inthegrasoftware.com/landing_credit_financial.html): Platform for loans and credit card management. Clients include Elebar, Sucredito, La Zonal.
-- [ERP for Retail & Services](https://inthegrasoftware.com/landing_erp.html): Business suite for retail, wholesale, and services with WMS, POS, ecommerce, and analytics modules.
+- [ERP for Retail & Services](https://inthegrasoftware.com/landing_erp.html): Business suite for retail, wholesale, and services. Hub of the ERP product.
+  - [Supply Chain](https://inthegrasoftware.com/landing_erp_supply_chain.html): Planning, purchasing, and procurement module.
+  - [Warehouse Management (WMS)](https://inthegrasoftware.com/landing_erp_wms.html): Warehouse and logistics operations.
+  - [Ecommerce Platform](https://inthegrasoftware.com/landing_erp_ecommerce.html): Online storefront integrated with ERP catalog, stock, and pricing.
+  - [People Care (HR)](https://inthegrasoftware.com/landing_erp_people_care.html): Payroll, employee records, and talent development.
 
 ## Oracle Services
 
@@ -31,3 +35,8 @@ Inthegra Software develops enterprise platforms built on Oracle technology for h
 - [Team & Culture](https://inthegrasoftware.com/people_culture.html): Company culture and team.
 - [Success Stories](https://inthegrasoftware.com/success_stories.html): Client case studies.
 - [Blog](https://inthegrasoftware.com/blog.html): Technical articles on Oracle, healthcare IT, and enterprise software.
+
+## Legal
+
+- [Privacy Policy](https://inthegrasoftware.com/privacidad.html): Data handling disclosure, GDPR-equivalent under Argentine Law 25.326.
+- [Terms and Conditions](https://inthegrasoftware.com/terminos.html): Site usage terms, intellectual property, and jurisdiction.

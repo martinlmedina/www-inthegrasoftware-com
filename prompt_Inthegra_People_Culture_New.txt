@@ -1,0 +1,136 @@
+Using the full Inthegra Software website context, generate the mockup concept for the People & Culture page.
+
+Strategic objective:
+This page must work primarily as an institutional trust-building page, not as a recruiting landing page.
+
+It should communicate that behind Inthegra’s products, solutions and enterprise implementations there is a strong, experienced, collaborative and human team.
+
+Important positioning:
+- This is NOT a startup culture page
+- This is NOT mainly a hiring page
+- This is NOT a generic HR page
+- This IS an institutional page that reinforces trust, maturity, execution capability and company identity
+
+The page must balance two dimensions:
+1. Human warmth and internal culture
+2. Professional seniority, delivery mindset and enterprise credibility
+
+The tone should communicate:
+- Serious company
+- Strong teams
+- Technology + business understanding
+- Collaborative culture
+- Professional maturity
+- Long-term vision
+- Execution capability
+- Human closeness without looking informal
+
+Core message to transmit:
+Inthegra’s culture is not decorative.
+It is part of how the company delivers complex software, works with clients, scales teams and sustains long-term relationships.
+
+The page should make clear that:
+- Inthegra has more than 20 years of trajectory
+- The team works on real enterprise challenges
+- The company combines technology expertise with business understanding
+- Collaboration, communication and responsibility are part of delivery quality
+- Team capability is one of the reasons clients can trust Inthegra
+
+Required sections:
+
+1. Hero section
+   - Strong institutional headline around people, culture and execution
+   - Subheadline that connects team quality with delivery quality
+   - Premium visual treatment using real team imagery if available
+   - CTA should be institutional, not recruiting-first
+   - Example CTA directions:
+     - Conocé Inthegra
+     - Hablemos
+     - Trabajá con un equipo que entiende tu negocio
+
+2. Who we are
+   - Brief story of Inthegra as a company
+   - Human but credible tone
+   - Show trajectory, commitment, evolution and identity
+   - This section should create emotional connection without losing corporate seriousness
+
+3. How we work
+   - This is one of the most important sections
+   - Show real working principles, not generic motivational phrases
+   - Examples of ideas:
+     - multidisciplinary collaboration
+     - product + services mindset
+     - communication with context
+     - documentation and clarity
+     - continuous evolution
+     - focus on client reality
+   - Make it feel operational and real
+
+4. Principles translated into action
+   - Reframe company values so they feel concrete
+   - Avoid cliché “values cards” with vague copy
+   - Show how principles appear in daily work and project execution
+   - Examples:
+     - ownership
+     - clarity
+     - collaboration
+     - continuous improvement
+     - business understanding
+     - long-term thinking
+
+5. Team capability / expertise section
+   - Show that team quality is part of the product and service quality
+   - This section should feel enterprise-grade
+   - Possible themes:
+     - senior talent
+     - Oracle expertise
+     - real implementation experience
+     - cross-functional knowledge
+     - growth through projects
+   - Important:
+     do not over-focus on hierarchy or leadership portraits unless they add trust
+
+6. Culture and human side
+   - Add warmth, energy and authenticity
+   - Use real images, moments, internal experiences, celebrations, collaboration scenes
+   - This section should support employer branding but still feel aligned with the institutional goal
+   - Avoid looking childish or startup-like
+   - More “human professional company” than “fun office culture”
+
+7. Optional future / careers block
+   - This section should be secondary, not dominant
+   - It can invite talent to connect, but without turning the page into a CV landing page
+   - Better approach:
+     “Si te interesa construir tecnología con impacto real, conversemos”
+   - Avoid heavy recruiting mechanics on this page
+
+8. Final CTA
+   - Must close with trust and connection
+   - Should work both for potential clients and potential talent
+   - It must feel premium, calm and confident
+
+Design and visual direction:
+- Premium institutional aesthetic
+- Clean enterprise layout
+- High-quality real photography preferred
+- Strong typography and spacious composition
+- Avoid generic stock-HR aesthetics
+- Avoid overusing smiling posed office shots
+- If visual support graphics are used, incorporate the existing Inthegra background graphics subtly so they enrich the composition without affecting readability
+- Motion and interactions should feel elegant, restrained and modern
+
+Important content guidance:
+- Do not make the page feel like a blog
+- Do not make it feel like a jobs portal
+- Do not make it feel too cold or too corporate
+- Do not make it feel like any generic software company could use it
+- It must feel specifically like Inthegra:
+  experienced, serious, human, collaborative and capable of delivering enterprise software
+
+Need:
+- Premium page mockup concept
+- Section-by-section structure
+- Suggested copy direction in Spanish
+- Visual hierarchy recommendations
+- Interaction suggestions
+- Guidance on what existing images from the site should be reused if available

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desarrollo de soluciones de software a medida | Inthegra Blog</title>
+  <meta name="description" content="Artículo mockup para el blog de Inthegra Software. Desarrollo a medida, arquitectura enterprise, Oracle-native, integración e IA aplicada al negocio." />
+  <style>
+    :root{
+      --bg:#08111d;
+      --panel:#0d1b2f;
+      --panel-2:#10233b;
+      --line:rgba(255,255,255,.10);
+      --text:#e8eef8;
+      --muted:#9fb0c8;
+      --soft:#c8d4e6;
+      --brand:#62b0ff;
+      --brand-2:#95f0d6;
+      --max:1240px;
+      --reading:760px;
+      --radius:24px;
+      --shadow:0 20px 60px rgba(0,0,0,.22);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at 10% 0%, rgba(98,176,255,.12), transparent 24%),
+        radial-gradient(circle at 100% 10%, rgba(149,240,214,.10), transparent 22%),
+        linear-gradient(180deg,#06111f 0%,#091525 42%,#08111d 100%);
+      line-height:1.72;
+    }
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+    .topbar{
+      position:sticky;top:0;z-index:10;
+      backdrop-filter:blur(18px);
+      background:rgba(6,17,31,.68);
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    .topbar-inner{
+      max-width:var(--max);margin:0 auto;padding:14px 24px;
+      display:flex;align-items:center;justify-content:space-between;gap:16px;
+    }
+    .brand{display:flex;align-items:center;gap:12px;font-weight:700}
+    .brand-mark{
+      width:40px;height:40px;border-radius:14px;
+      display:grid;place-items:center;
+      border:1px solid rgba(255,255,255,.1);
+      background:linear-gradient(135deg, rgba(98,176,255,.24), rgba(149,240,214,.14));
+    }
+    .nav{display:flex;gap:10px;flex-wrap:wrap}
+    .nav a{
+      padding:10px 14px;border-radius:999px;color:var(--muted);font-size:14px
+    }
+    .nav a:hover,.nav a.active{background:rgba(255,255,255,.04);color:var(--text);border:1px solid rgba(255,255,255,.1)}
+    .hero{padding:54px 0 24px}
+    .breadcrumbs{
+      font-size:14px;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;align-items:center
+    }
+    .pill{
+      display:inline-flex;align-items:center;
+      margin-top:18px;
+      width:max-content;
+      padding:10px 14px;border-radius:999px;
+      background:rgba(98,176,255,.12);
+      border:1px solid rgba(98,176,255,.2);
+      color:#d9ecff;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+    }
+    h1{
+      margin:18px 0 16px;
+      font-size:clamp(36px,5.6vw,68px);
+      line-height:1;
+      letter-spacing:-.05em;
+      max-width:1000px;
+    }
+    .hero p{
+      margin:0;
+      max-width:900px;
+      font-size:clamp(18px,2vw,22px);
+      color:var(--soft);
+    }
+    .meta{
+      display:flex;gap:12px;flex-wrap:wrap;align-items:center;
+      color:var(--muted);font-size:14px;margin-top:20px
+    }
+    .hero-image{
+      margin-top:28px;border-radius:30px;overflow:hidden;
+      border:1px solid rgba(255,255,255,.1);box-shadow:var(--shadow)
+    }
+    .hero-image img{width:100%;height:min(560px, 52vw);object-fit:cover}
+    .layout{
+      display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:32px;
+      align-items:start;padding:34px 0 60px;
+    }
+    .article{
+      max-width:var(--reading);
+    }
+    .article p{color:var(--soft);font-size:18px;margin:0 0 22px}
+    .article h2{
+      margin:40px 0 14px;
+      font-size:34px;line-height:1.08;letter-spacing:-.04em
+    }
+    .article h3{
+      margin:28px 0 10px;
+      font-size:24px;line-height:1.12;letter-spacing:-.03em
+    }
+    .article ul{padding-left:22px;margin:0 0 24px}
+    .article li{margin-bottom:10px;color:var(--soft);font-size:18px}
+    .lead{
+      font-size:21px !important;color:#eaf1fb !important
+    }
+    .highlight, .solution-box, .quote-box{
+      padding:24px;border-radius:24px;
+      border:1px solid rgba(255,255,255,.1);
+      background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.025));
+      box-shadow:var(--shadow);
+      margin:28px 0;
+    }
+    .highlight strong,.solution-box strong{display:block;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:#cde4ff;margin-bottom:10px}
+    .quote-box{
+      border-left:4px solid rgba(98,176,255,.55);
+      background:rgba(255,255,255,.04)
+    }
+    .quote-box p{margin:0;font-size:22px;line-height:1.45;color:#eef5ff}
+    .aside{
+      position:sticky;top:88px;
+      display:flex;flex-direction:column;gap:16px;
+    }
+    .aside-card{
+      padding:20px;border-radius:22px;
+      border:1px solid rgba(255,255,255,.1);
+      background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.025));
+      box-shadow:var(--shadow)
+    }
+    .aside-card h4{margin:0 0 10px;font-size:18px}
+    .aside-card p{margin:0 0 14px;color:var(--muted);font-size:15px;line-height:1.6}
+    .toc a{
+      display:block;padding:10px 0;color:var(--soft);font-size:14px;border-top:1px solid rgba(255,255,255,.07)
+    }
+    .toc a:first-child{border-top:none;padding-top:0}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:13px 16px;border-radius:14px;font-weight:650;
+      border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.03)
+    }
+    .btn-primary{
+      background:linear-gradient(135deg, rgba(98,176,255,.18), rgba(149,240,214,.14));
+    }
+    .related{
+      padding:12px 0 60px
+    }
+    .related h2{font-size:32px;letter-spacing:-.04em;margin:0 0 20px}
+    .grid{
+      display:grid;grid-template-columns:repeat(3, minmax(0,1fr));gap:20px
+    }
+    .card{
+      border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,.09);
+      background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03));
+      box-shadow:var(--shadow)
+    }
+    .card-media{aspect-ratio:16/10;background:#10213a}
+    .card-media img{width:100%;height:100%;object-fit:cover}
+    .card-body{padding:18px}
+    .card h3{margin:0 0 10px;font-size:22px;line-height:1.1;letter-spacing:-.03em}
+    .card p{margin:0;color:var(--muted);font-size:15px;line-height:1.55}
+    .cta{
+      margin:18px 0 64px;
+      padding:30px;border-radius:28px;
+      border:1px solid rgba(255,255,255,.1);
+      background:
+        radial-gradient(circle at 100% 0%, rgba(149,240,214,.10), transparent 28%),
+        linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;
+    }
+    .cta h2{margin:0 0 10px;font-size:32px;letter-spacing:-.03em}
+    .cta p{margin:0;color:var(--soft);font-size:17px}
+    .footer{
+      border-top:1px solid rgba(255,255,255,.08);
+      color:var(--muted);font-size:14px;padding:22px 0 40px
+    }
+    @media (max-width: 1040px){
+      .layout{grid-template-columns:1fr}
+      .article{max-width:none}
+      .aside{position:static}
+      .grid{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width: 720px){
+      .wrap{padding:0 18px}
+      .topbar-inner{padding:12px 18px}
+      .nav{display:none}
+      .hero{padding:42px 0 18px}
+      .article p,.article li{font-size:17px}
+      .lead{font-size:19px !important}
+      .grid{grid-template-columns:1fr}
+      .cta{padding:22px}
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="blog.html">
+        <div class="brand-mark">ITG</div>
+        <div>Inthegra Software</div>
+      </a>
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">Productos</a>
+        <a href="#">Soluciones</a>
+        <a href="#">Servicios</a>
+        <a class="active" href="blog.html">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="breadcrumbs">
+          <a href="#">Home</a>
+          <span>•</span>
+          <a href="blog.html">Blog</a>
+          <span>•</span>
+          <span>Software Development</span>
+        </div>
+        <span class="pill">Software Development</span>
+        <h1>Desarrollo de soluciones de software a medida: cómo construir una plataforma enterprise que acompañe el crecimiento del negocio.</h1>
+        <p>
+          Un artículo modelo para el nuevo blog de Inthegra. Está pensado para combinar autoridad técnica,
+          visión de negocio, SEO, legibilidad y una integración natural con productos, soluciones y CTAs comerciales.
+        </p>
+        <div class="meta">
+          <span>12 abril 2026</span>
+          <span>·</span>
+          <span>8 min de lectura</span>
+          <span>·</span>
+          <span>Por Equipo Inthegra</span>
+          <span>·</span>
+          <span>Oracle · IA · Enterprise Software</span>
+        </div>
+        <div class="hero-image">
+          <img src="https://inthegrasoftware.com/wp-content/uploads/2026/03/Retail-1-scaled.png" alt="Desarrollo de soluciones de software a medida" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap layout">
+        <article class="article">
+          <p class="lead">
+            Cuando una empresa crece, los procesos dejan de ser lineales. Aparecen integraciones, reglas operativas,
+            múltiples áreas, excepciones y necesidades de visibilidad que rara vez encajan en una herramienta genérica.
+            En ese punto, el desarrollo a medida deja de ser una idea táctica y se convierte en una decisión estratégica.
+          </p>
+
+          <div class="highlight">
+            <strong>Business Insight</strong>
+            <p>
+              El software a medida no debería pensarse como “hacer algo desde cero”, sino como diseñar una plataforma que
+              conecte operación, información y capacidad de evolución sin forzar al negocio a adaptarse a una herramienta limitada.
+            </p>
+          </div>
+
+          <h2 id="cuando-conviene">¿Cuándo conviene una solución a medida?</h2>
+          <p>
+            Conviene cuando el negocio tiene procesos propios que impactan ingresos, costos, servicio o escalabilidad y que
+            no pueden resolverse bien con una solución estándar. También cuando hay que integrar ERP, CRM, canales digitales,
+            motores de decisión, documentos, analytics o automatizaciones en una misma arquitectura coherente.
+          </p>
+          <ul>
+            <li>Cuando hay lógica operativa específica que no debe perderse.</li>
+            <li>Cuando la experiencia del usuario interno es clave para productividad.</li>
+            <li>Cuando la trazabilidad y el control son críticos para auditoría o gestión.</li>
+            <li>Cuando el crecimiento proyectado exige una base tecnológica robusta y escalable.</li>
+          </ul>
+
+          <div class="solution-box">
+            <strong>Related Solution</strong>
+            <h3 style="margin-top:0">Desarrollo a medida Oracle-native</h3>
+            <p>
+              Inthegra combina conocimiento de negocio, stack Oracle, integración cloud y velocidad de construcción para
+              desarrollar aplicaciones empresariales que acompañen la operación real.
+            </p>
+            <a class="btn btn-primary" href="#">Ver solución</a>
+          </div>
+
+          <h2 id="que-evaluar">Qué evaluar antes de iniciar el proyecto</h2>
+          <p>
+            Un proyecto sólido empieza con decisiones correctas sobre alcance, criticidad, integraciones, gobierno de datos,
+            seguridad y evolución futura. No se trata solo de definir pantallas o requerimientos funcionales; se trata de
+            entender qué capacidades debe ganar la organización.
+          </p>
+          <p>
+            En este tipo de iniciativas, la arquitectura importa desde el día uno. Elegir una base enterprise permite
+            reducir deuda técnica, simplificar mantenimiento y preservar flexibilidad para nuevas etapas del roadmap.
+          </p>
+
+          <h3>Preguntas que deberían estar resueltas</h3>
+          <ul>
+            <li>¿Qué parte del proceso genera más fricción hoy?</li>
+            <li>¿Qué sistemas deben integrarse sí o sí?</li>
+            <li>¿Qué indicadores necesita ver el negocio en tiempo real?</li>
+            <li>¿Qué flujos podrían automatizarse con IA o reglas de negocio?</li>
+            <li>¿Cómo se evitará que la primera versión se vuelva rígida?</li>
+          </ul>
+
+          <div class="quote-box">
+            <p>
+              “La diferencia entre un desarrollo útil y una plataforma estratégica suele estar menos en la tecnología elegida
+              y más en la capacidad de traducir negocio en arquitectura.”
+            </p>
+          </div>
+
+          <h2 id="arquitectura">Arquitectura, integración y escalabilidad</h2>
+          <p>
+            Una solución a medida bien diseñada debe conversar con el ecosistema existente. ERP, CRM, módulos verticales,
+            canales digitales, reporting y analítica no pueden verse como piezas aisladas. La plataforma tiene que unificar datos,
+            eventos y procesos para que la empresa gane control operativo y capacidad de decisión.
+          </p>
+          <p>
+            En el caso de Inthegra, esto se apoya en un enfoque Oracle-native que busca robustez, seguridad, rendimiento
+            y rapidez de evolución. El objetivo no es solo desarrollar más rápido, sino desarrollar mejor para contextos empresariales.
+          </p>
+
+          <div class="highlight">
+            <strong>Business Insight</strong>
+            <p>
+              Escalabilidad no significa solamente soportar más usuarios. También significa poder incorporar nuevas unidades
+              de negocio, nuevas reglas, nuevos canales y nuevas automatizaciones sin tener que reconstruir la base del sistema.
+            </p>
+          </div>
+
+          <h2 id="ia">Dónde entra la IA en una solución enterprise</h2>
+          <p>
+            La IA agrega valor cuando mejora tiempos de respuesta, ayuda a clasificar, recomendar, asistir decisiones o automatizar
+            tareas repetitivas. En un entorno enterprise, su impacto crece cuando está integrada con datos, procesos y políticas reales
+            del negocio, no cuando funciona como una capa aislada.
+          </p>
+          <ul>
+            <li>Asistentes internos para operación y soporte.</li>
+            <li>Clasificación y priorización de casos o reclamos.</li>
+            <li>Automatización conversacional en ventas y cobranzas.</li>
+            <li>Extracción y análisis de documentos.</li>
+            <li>Ayuda a la toma de decisiones con contexto de negocio.</li>
+          </ul>
+
+          <h2 id="resultado">Qué debería entregar un proyecto bien resuelto</h2>
+          <p>
+            Más allá del go-live, una buena implementación debería dejar capacidades instaladas: mejor control, más velocidad operativa,
+            menor dependencia de personas, mejor trazabilidad y una base lista para nuevos módulos o integraciones.
+          </p>
+          <p>
+            En términos de negocio, eso suele traducirse en menos fricción, mejor experiencia de usuario, mayor calidad de información
+            y más capacidad de crecimiento con menor complejidad.
+          </p>
+
+          <div class="solution-box">
+            <strong>Related Solution</strong>
+            <h3 style="margin-top:0">Oracle Services + Desarrollo a Medida</h3>
+            <p>
+              Una combinación natural para empresas que necesitan una base robusta, integración cloud y acompañamiento continuo en evolución.
+            </p>
+            <a class="btn btn-primary" href="#">Hablar con un experto</a>
+          </div>
+        </article>
+
+        <aside class="aside">
+          <div class="aside-card">
+            <h4>En este artículo</h4>
+            <div class="toc">
+              <a href="#cuando-conviene">Cuándo conviene</a>
+              <a href="#que-evaluar">Qué evaluar antes de iniciar</a>
+              <a href="#arquitectura">Arquitectura e integración</a>
+              <a href="#ia">IA aplicada al negocio</a>
+              <a href="#resultado">Resultados esperables</a>
+            </div>
+          </div>
+
+          <div class="aside-card">
+            <h4>Solución relacionada</h4>
+            <p>Desarrollo a medida enterprise sobre stack Oracle, integración con sistemas existentes y foco en evolución sostenible.</p>
+            <a class="btn btn-primary" href="#">Ver solución</a>
+          </div>
+
+          <div class="aside-card">
+            <h4>CTA comercial</h4>
+            <p>¿Estás evaluando modernizar procesos, integrar sistemas o construir una plataforma propia?</p>
+            <a class="btn" href="#">Agendar reunión</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="related">
+      <div class="wrap">
+        <h2>Artículos relacionados</h2>
+        <div class="grid">
+          <article class="card">
+            <a class="card-media" href="#">
+              <img src="https://inthegrasoftware.com/wp-content/uploads/2026/03/Retail-1-scaled.png" alt="CRM omnicanal" />
+            </a>
+            <div class="card-body">
+              <span class="pill" style="margin-top:0">CRM &amp; Customer Experience</span>
+              <h3>CRM omnicanal para ventas, reclamos y cobranzas</h3>
+              <p>Cómo conectar canales, conversaciones y operación con una lógica de plataforma.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <a class="card-media" href="#">
+              <img src="https://inthegrasoftware.com/wp-content/uploads/2026/03/DSC03508copia-768x512.webp" alt="HealthCare Software" />
+            </a>
+            <div class="card-body">
+              <span class="pill" style="margin-top:0">HealthCare</span>
+              <h3>HealthCare Software: integración y trazabilidad operativa</h3>
+              <p>Una mirada enterprise sobre procesos complejos en organizaciones de salud.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <a class="card-media" href="#">
+              <img src="https://inthegrasoftware.com/wp-content/uploads/2026/03/Retail-1-scaled.png" alt="Credit Suite" />
+            </a>
+            <div class="card-body">
+              <span class="pill" style="margin-top:0">Credit &amp; Financial</span>
+              <h3>Software para créditos, préstamos y tarjetas</h3>
+              <p>Originación, scoring, otorgamiento y mora bajo una arquitectura unificada.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="cta">
+          <div>
+            <h2>Llevá esta idea a tu operación real</h2>
+            <p>Conversemos sobre cómo aplicar este enfoque en tu empresa, con una arquitectura alineada a tus procesos y objetivos.</p>
+          </div>
+          <div style="display:flex;gap:12px;flex-wrap:wrap">
+            <a class="btn btn-primary" href="#">Hablar con un experto</a>
+            <a class="btn" href="blog.html">Volver al blog</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      Mockup HTML del template de artículo para el Blog de Inthegra Software.
+    </div>
+  </footer>
+</body>
+</html>

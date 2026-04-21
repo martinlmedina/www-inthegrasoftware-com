@@ -1,0 +1,205 @@
+Using the global website context already established for Inthegra Software, generate a premium product page mockup for the ERP / RRHH product "People Care".
+
+Context:
+This page belongs inside the Products ecosystem of Inthegra and should feel fully aligned with the premium enterprise visual language already defined for the site.
+It must look like a serious B2B software platform page, not like a generic HR startup landing page.
+
+Important business framing:
+- Product name: People Care
+- Category: ERP para Retail y Servicios / RRHH
+- Core positioning: comprehensive HR management and employee care platform
+- Main message: hard + soft HR processes in one single platform
+- Secondary message: centralizes administration, time, talent, recruiting, internal communication, and leader workflows
+- Brand tone: enterprise, trustworthy, modern, Oracle-native, operationally strong
+- Audience:
+  - Companies with growing teams
+  - HR leaders
+  - People managers
+  - Operations / Administration leaders
+  - Business owners that need more control, traceability and organizational order
+
+Real product scope to reflect:
+- Administración de personal
+  - Alta de colaboradores
+  - Legajo digital
+  - Estructura organizacional
+  - Organigrama
+  - Registro de novedades
+  - Beneficios
+  - Reportes e indicadores
+- Gestión de tiempo
+  - Licencias
+  - Horas extras
+  - Turnos
+  - Indicadores
+- Gestión de talento
+  - Evaluación de desempeño
+  - Encuestas de clima laboral
+  - Capacitaciones
+  - Mapa de competencias
+  - Descripción de puestos
+  - Seguimiento de objetivos y OKR
+  - Formación y planes de carrera
+- Higiene y seguridad
+  - Entrega de equipos
+  - Registro de accidentes
+  - Protocolos
+- Atracción de talento
+  - Publicación de vacantes
+  - Pipeline de selección
+  - Programación de entrevistas
+  - Informes
+  - Solicitud de contrataciones
+  - Gestión documental
+  - Portal de contratación customizable
+- Portal de colaboradores
+  - Anuncios y comunicados
+  - Misión, visión, valores y propósito
+  - Gestión de licencias
+  - Calendario de eventos
+  - Capacitaciones
+  - Evaluaciones y encuestas
+  - Gestión de legajo
+- Portal de líderes / responsables
+  - Solicitud de contratación
+  - Seguimiento de pipeline
+  - Solicitud de sanciones
+  - Novedades de colaboradores
+  - Registro de eventos
+  - Registro de licencias
+- Módulo encuestas
+
+Strategic interpretation for the page:
+This is not only an HR administration tool.
+It must be presented as a platform that gives organizational visibility, process order, employee experience, talent development and better leadership execution.
+The page should make clear that People Care connects administration, culture, management and employee lifecycle in a single system.
+
+Main objective of the page:
+Convince a decision maker that Inthegra can provide an enterprise-grade HR platform that helps structure the company, improve visibility, digitize people processes and scale with more control.
+
+The page must include these sections:
+
+1. Hero section
+- Strong headline around RRHH + people operations + employee experience
+- Subheadline explaining that hard and soft HR processes are unified in one platform
+- Primary CTA: Agendar demo
+- Secondary CTA: Conocer módulos
+- Visual direction: executive, premium, calm, with subtle human / organizational / systems feeling
+
+2. Organizational pain points section
+Show the problems the platform solves, such as:
+- Información dispersa de colaboradores
+- Procesos manuales de RRHH
+- Falta de trazabilidad de licencias, novedades y documentación
+- Dificultad para dar seguimiento al desempeño y objetivos
+- Procesos de selección poco ordenados
+- Escasa visibilidad para líderes y responsables
+- Comunicación interna fragmentada
+This section should feel operational and credible.
+
+3. Platform overview section
+Explain People Care as a single platform for the full employee lifecycle.
+Must communicate:
+- Centralization
+- Traceability
+- Role-based access
+- Better decision support with reports and indicators
+- Better employee experience
+- Better coordination between HR, leaders and collaborators
+
+4. Capability architecture / module system
+Design a premium modular section that organizes the product into clear pillars:
+- Administración de personal
+- Gestión de tiempo
+- Gestión de talento
+- Atracción de talento
+- Higiene y seguridad
+- Portal de colaboradores
+- Portal de líderes
+- Encuestas e indicadores
+This section should feel like a robust enterprise suite, not a feature dump.
+
+5. Employee lifecycle / journey section
+Show how the platform supports the lifecycle from hiring to development and internal management:
+- Atracción y selección
+- Alta y legajo
+- Gestión diaria
+- Licencias / tiempo
+- Desempeño y objetivos
+- Formación y clima
+- Comunicación y autogestión
+- Liderazgo y seguimiento
+This can be represented as a horizontal journey or connected cards.
+
+6. Self-service and leadership section
+Emphasize the value of:
+- Portal de colaboradores
+- Portal de líderes / responsables
+Explain that HR should not be the bottleneck for every process.
+Show that the system distributes operational visibility and action across the organization.
+
+7. Analytics / control / decision support section
+Present reports, indicators and organizational visibility as a key strength.
+Suggested ideas:
+- Headcount visibility
+- Licenses and absences
+- Recruitment funnel
+- Performance tracking
+- Training completion
+- Climate / surveys
+- Organizational events and novedades
+The tone should remain strategic and enterprise-grade.
+
+8. Business outcomes section
+Communicate outcomes, for example:
+- Más orden en RRHH
+- Menos tareas manuales
+- Mejor experiencia del colaborador
+- Más visibilidad para líderes
+- Procesos más trazables
+- Mejor soporte para crecimiento organizacional
+- Más capacidad para profesionalizar la gestión de personas
+
+9. Trust / platform strength section
+Reinforce that this is backed by Inthegra’s enterprise experience.
+Use the same corporate credibility language used in the rest of the site:
+- +20 años de experiencia
+- expertise en tecnología Oracle
+- enfoque enterprise
+- capacidad de adaptación a procesos del cliente
+- implementación estructurada
+Do not overdo this section.
+
+10. Final CTA section
+Close with a strong invitation to coordinate a demo.
+Tone: business-oriented, serious, consultative.
+
+Design system and visual direction:
+- Must feel aligned with the new Inthegra site aesthetic
+- Clean enterprise layout
+- Premium whitespace
+- Strong typography hierarchy
+- Subtle cards and divisions
+- Rounded but sober UI
+- Avoid looking like startup SaaS with exaggerated gradients
+- Use the Products color logic subtly, prioritizing the Products cyan (#179dca)
+- Inthegra orange (#ff7200) can appear only in strategic CTAs or accents
+- If decorative background graphics are used, they must be subtle and low-opacity, never harming readability
+- Background graphics can reference the visual assets already used in the project (Solutions / Product / Inthegra / Services) in a delicate way
+
+Content direction:
+- Write copy in Spanish
+- Keep it executive and commercially useful
+- Avoid fake metrics or invented client stories
+- Do not invent technical details not grounded in the provided product scope
+- Avoid generic HR clichés
+- Emphasize process strength, visibility, scalability, and employee experience
+
+Output required:
+1. Premium page structure
+2. Suggested section-by-section copy
+3. Recommended visual hierarchy
+4. UX / interaction suggestions
+5. Notes for how the mockup should look in HTML
+
+Then generate the result as a premium enterprise website mockup concept, ready to be implemented in HTML.

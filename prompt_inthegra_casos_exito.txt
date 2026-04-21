@@ -1,0 +1,190 @@
+Using the current Inthegra Software website context, generate the mockup concept for the Success Stories page.
+
+Primary goal:
+Create a premium enterprise-grade Success Stories page that strengthens trust, supports sales conversations, and proves Inthegra’s execution capability through real cases, real business problems, and visible business outcomes.
+
+Important strategic direction:
+This page must NOT feel like a blog archive.
+It must NOT feel like generic testimonials.
+It must feel like a curated proof page for enterprise buyers.
+
+Critical context from the current website:
+- The current page already contains real success stories that must be preserved as source material.
+- The current active cases include:
+  - JAVER
+  - Valle Fertil SA
+  - Federación Peruana de Futbol
+  - Sidecreer SA
+  - INFA
+  - MSPORT
+- The current cases are cross-industry and cross-solution.
+- The new page must preserve the substance of these stories, while elevating the design, structure, clarity, and trustworthiness.
+- Existing case images from the current site should be reused whenever possible, not discarded.
+- The page should preserve continuity with the existing commercial narrative of Inthegra:
+  Oracle-native execution, custom development capability, enterprise products, AI and automation mindset, process improvement, operational control, and scalable implementation.
+
+What the page must communicate:
+- Inthegra delivers real systems in real companies
+- Inthegra solves operational and business-critical problems
+- Inthegra works across industries, not only in one niche
+- Inthegra can build, modernize, integrate, and digitize strategic processes
+- Inthegra is credible for enterprise and mid-market buyers in Latam
+- Each case should feel specific and grounded, not inflated or overly marketing-driven
+
+Narrative approach:
+The page should be structured as “strategic proof”.
+It should show:
+- the client context
+- the business problem
+- the implemented solution
+- the operational/business impact
+- the type of technology or implementation logic behind it
+
+Do not invent fake KPIs.
+Do not create fabricated quotes.
+Do not overclaim.
+Keep everything credible, elegant, and commercially useful.
+
+Recommended page structure:
+
+1. Hero section
+- Strong title around real business results / transformation / implemented success stories
+- Position the page as evidence of execution, not just references
+- Subcopy should explain that Inthegra helps organizations digitize, automate, integrate and improve key business operations
+- Primary CTA: Agendar demo
+- Secondary CTA: Hablar con un especialista or Ver soluciones
+
+2. Intro / credibility framing
+- Brief section explaining why these cases matter
+- Reinforce that Inthegra combines software products, custom development, Oracle technology, cloud and process know-how
+- Mention that success cases span different industries and business models
+- This block should frame the page as proof of delivery capability
+
+3. Featured case study section
+- A large, high-visibility featured case at the top
+- Could highlight one of the strongest transformation stories
+- Recommended candidates:
+  - Valle Fertil SA
+  - Sidecreer SA
+  - JAVER
+- This section should include:
+  - Client name
+  - Country
+  - Industry
+  - Business challenge
+  - Solution delivered
+  - Outcome summary
+  - Existing case image reused from the current site
+  - CTA: Ver caso completo / Hablar sobre una solución similar
+
+4. Success stories grid
+- Premium card grid for all current cases
+- Include the currently active cases:
+  - JAVER
+  - Valle Fertil SA
+  - Federación Peruana de Futbol
+  - Sidecreer SA
+  - INFA
+  - MSPORT
+- Each card should include:
+  - Client name
+  - Industry or business type
+  - Country
+  - One-line transformation summary
+  - Category or capability label such as:
+    - Onboarding digital
+    - Oracle APEX development
+    - Process automation
+    - Operational traceability
+    - Integrated management
+    - Production control
+  - Existing image from current site
+  - CTA: Ver caso
+
+5. Filter / segmentation block
+- Add a modern filtering or navigation system so the page is easier to scan
+- Suggested filters:
+  - Por industria
+  - Por solución
+  - Por tipo de resultado
+- Suggested tags:
+  - Financial / Credit
+  - Industrial
+  - Real Estate
+  - Sports / Institutions
+  - Automotive Services
+  - Onboarding
+  - Oracle APEX
+  - Custom Development
+  - Automation
+  - Cloud / OCI
+- This section should improve usability without turning the page into a database UI
+
+6. How Inthegra creates impact
+- A section synthesizing recurring transformation patterns seen across the cases
+- Examples of themes to communicate:
+  - Reemplazo de procesos manuales y planillas
+  - Centralización de información
+  - Trazabilidad y control operativo
+  - Digitalización de altas o trámites
+  - Integración con sistemas existentes
+  - Mejor experiencia de usuario
+  - Reducción de tiempos y costos operativos
+- This section should help visitors generalize from the cases to their own business
+
+7. Optional detailed case strip or timeline section
+- A visually rich section that shows a simplified before / after structure:
+  - Antes
+  - Solución implementada
+  - Resultado operativo
+- This can be used for 2 or 3 selected cases
+- The goal is to make the stories easy for commercial conversations
+
+8. Trust / enterprise reassurance section
+- Reinforce that Inthegra has experience implementing mission-critical solutions
+- Mention Oracle-native base, custom development capability, business understanding and long-term partnership approach
+- This section should feel institutional and mature
+
+9. Final CTA section
+- Invite the user to discuss a similar case or book a meeting
+- Suggested CTA copy:
+  - Hablemos de tu caso
+  - Agendar demo
+  - Explorar una solución similar
+- Tone: consultative, not aggressive
+
+Content direction for the individual cases:
+Use the current website cases as source truth and preserve their real logic:
+- JAVER: budget control / TI budget management / integrated with EBS / Oracle APEX
+- Valle Fertil SA: onboarding digital / new client acquisition / scoring + biometric validation / operational efficiency
+- Federación Peruana de Futbol: player registration / digital paperwork / traceability / notifications / role-based access / OCI + APEX
+- Sidecreer SA: digital onboarding / credit eligibility / biometric validation / faster high-volume client enrollment
+- INFA: production/project management / plant operations / multi-device execution visibility
+- MSPORT: workshop work orders / approval flow / customer visibility / service management
+
+Visual and UX direction:
+- Premium enterprise aesthetic
+- Dark/light balanced palette aligned with Inthegra brand
+- Strong whitespace and editorial layout
+- Use subtle background graphics from the Inthegra visual set only as soft support, never harming readability
+- Use real case imagery from the current website prominently
+- Avoid template-looking blog cards
+- Make cards and featured sections feel more like B2B proof assets
+- Add light motion on hover, filter transitions, and reveal animations
+- Keep the page conversion-oriented
+
+Important design constraint:
+Do not redesign this page as only Health / Credit / Retail.
+The current case library is broader and more transversal than that.
+You may allow category filtering, but the main logic should remain based on real individual cases.
+
+Output needed:
+- Premium page mockup concept
+- Section-by-section structure
+- Copy direction per section
+- Suggested featured-case hierarchy
+- Card system recommendations
+- Filtering/navigation recommendations
+- Visual system guidance
+- Interaction suggestions
+- Guidance for how to preserve and reuse existing website images in the new mockup

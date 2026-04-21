@@ -1,0 +1,254 @@
+Using the full website context and existing blog content of Inthegra Software, generate a complete enterprise-grade Blog (Knowledge Hub) page and Blog Article template.
+
+IMPORTANT CONTEXT (VERY IMPORTANT):
+The current blog already exists in WordPress and includes:
+- Multiple articles already indexed (SEO must be preserved and enhanced)
+- Existing images per article
+- URLs already defined (must not be broken)
+- Metadata (OpenGraph, Schema.org, Twitter Cards)
+- RSS feed and search functionality
+
+The new implementation MUST:
+- Respect existing content and URLs
+- Upgrade the experience to enterprise level
+- Improve SEO structure (not replace it)
+- Improve readability, hierarchy, and authority perception
+
+--------------------------------------------------
+
+GOAL OF THE BLOG:
+
+Transform the blog into an enterprise "Knowledge Hub" that reinforces:
+
+- Oracle expertise
+- Enterprise software authority
+- AI applied to business
+- Industry-specific knowledge
+- Cloud, analytics and automation leadership
+
+This should NOT feel like a generic blog.
+
+It must feel like:
+- A consulting + technology knowledge platform
+- A strategic content asset for sales enablement
+- A trust-building tool for enterprise clients
+
+--------------------------------------------------
+
+DELIVERABLES REQUIRED:
+
+1) BLOG MAIN PAGE (Listing Page)
+2) BLOG ARTICLE PAGE (Single Post Template)
+
+--------------------------------------------------
+
+1) BLOG MAIN PAGE STRUCTURE
+
+A. HERO / EDITORIAL INTRO
+- Title: Knowledge Hub / Insights / Blog
+- Subheadline:
+  "Insights on enterprise software, Oracle technology, AI and industry transformation"
+- Short positioning:
+  Explain that Inthegra shares real experience from implementations, products and industries
+- CTA (optional):
+  - Explore products
+  - Talk to an expert
+
+VISUAL:
+- Use subtle background graphics (from provided SVG assets: Solutions / Product / Inthegra / Services)
+- Clean, corporate, minimal noise
+
+--------------------------------------------------
+
+B. FEATURED ARTICLE SECTION
+
+- Large horizontal card (hero article)
+- Includes:
+  - Image (existing blog image)
+  - Category
+  - Title
+  - Short excerpt
+  - Reading time
+- This article should stand out visually
+
+--------------------------------------------------
+
+C. CATEGORY NAVIGATION
+
+Use REAL categories based on existing content:
+
+- ERP & Business Management
+- CRM & Customer Experience
+- Credit & Financial Systems
+- HealthTech
+- Retail & Supply Chain
+- AI & Automation
+- Oracle Technology
+- Software Development
+
+Include:
+- Horizontal scroll or pill-based navigation
+- Active state
+- Filter behavior (frontend or conceptual)
+
+--------------------------------------------------
+
+D. ARTICLE GRID
+
+- Card-based layout (3 columns desktop)
+- Each card includes:
+  - Image (reuse existing images from blog)
+  - Category tag
+  - Title
+  - Short summary (2–3 lines)
+  - Reading time
+  - CTA: Read more
+
+IMPORTANT:
+- Maintain strong visual hierarchy
+- Avoid clutter
+- Keep enterprise tone
+
+--------------------------------------------------
+
+E. NEWSLETTER / CONTENT CTA BLOCK
+
+- Title:
+  "Stay ahead in enterprise technology"
+- Value proposition:
+  Receive insights on AI, Oracle, and industry solutions
+- Input:
+  Email field + CTA
+
+Alternative:
+- "Subscribe" or "Get updates"
+
+--------------------------------------------------
+
+F. FINAL COMMERCIAL CTA
+
+- Title:
+  "Turn insights into business results"
+- CTA:
+  "Schedule a demo"
+- Secondary:
+  "Explore solutions"
+
+--------------------------------------------------
+
+2) BLOG ARTICLE PAGE (VERY IMPORTANT)
+
+This is critical for SEO and authority.
+
+A. ARTICLE HERO
+
+- Title
+- Category
+- Author (optional)
+- Reading time
+- Date
+- Featured image (existing)
+
+--------------------------------------------------
+
+B. ARTICLE CONTENT STRUCTURE
+
+- Clean typography
+- Wide readable layout
+- Sections:
+  - H2 / H3 structured content
+  - Bullet points
+  - Highlight blocks
+  - Quotes (optional)
+
+IMPORTANT:
+- Optimize for reading and scanning
+- Enterprise tone (not marketing fluff)
+
+--------------------------------------------------
+
+C. INLINE STRATEGIC BLOCKS (VERY IMPORTANT)
+
+Insert subtle conversion blocks:
+
+1. "Related solution"
+   Example:
+   - CRM → link to CRM page
+   - ERP → link to ERP page
+
+2. "Business insight"
+   Highlight box with key takeaway
+
+--------------------------------------------------
+
+D. RELATED ARTICLES
+
+- 3–4 related posts
+- Based on category
+
+--------------------------------------------------
+
+E. FINAL CTA
+
+- "Talk to an expert"
+- "See how this applies to your business"
+
+--------------------------------------------------
+
+F. SEO REQUIREMENTS (CRITICAL)
+
+Maintain and improve:
+
+- OpenGraph tags
+- Twitter cards
+- Schema.org (Article instead of just WebPage)
+- Reading time
+- Clean URL structure
+- Internal linking
+
+DO NOT REMOVE EXISTING SEO STRUCTURE
+
+--------------------------------------------------
+
+VISUAL & DESIGN SYSTEM
+
+- Premium enterprise aesthetic
+- Inspired by:
+  - Consulting firms
+  - Oracle partners
+  - B2B SaaS leaders
+
+- Use:
+  - White space
+  - Clean grids
+  - Soft shadows
+  - Subtle background graphics (VERY IMPORTANT)
+
+BACKGROUND GRAPHICS RULE:
+- Use provided SVG assets subtly
+- Never reduce readability
+- Use as ambient visuals only
+
+--------------------------------------------------
+
+TONE
+
+- Expert
+- Clear
+- Business-oriented
+- Non-generic
+- No buzzword overload
+
+--------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+1. Full HTML mockup for Blog Main Page
+2. Full HTML mockup for Blog Article Page
+
+Both should be:
+- Clean HTML (no frameworks required)
+- Ready to adapt into production
+- With realistic content examples based on existing blog topics

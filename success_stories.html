@@ -18,19 +18,19 @@
   <!-- End Facebook Pixel Code -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Casos de Éxito Inthegra Software — Prueba real de ejecución enterprise en JAVER, Valle Fertil SA, Federación Peruana de Fútbol, Sidecreer, INFA y MSPORT." />
+  <meta name="description" content="Casos de Éxito Inthegra Software — JAVER, Valle Fertil SA, Federación Peruana de Fútbol, Sidecreer, INFA, MSPORT y Farmacias Sánchez Antoniolli. Proyectos reales, impacto operativo concreto." />
   <title>Casos de Éxito | Inthegra Software</title>
   <link rel="canonical" href="https://inthegrasoftware.com/casos-de-exito/" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://inthegrasoftware.com/casos-de-exito/" />
   <meta property="og:title" content="Casos de Éxito | Inthegra Software" />
-  <meta property="og:description" content="Casos de Éxito Inthegra Software — Prueba real de ejecución enterprise en JAVER, Valle Fertil SA, Federación Peruana de Fútbol, Sidecreer, INFA y MSPORT." />
+  <meta property="og:description" content="Casos de Éxito Inthegra Software — JAVER, Valle Fertil SA, Federación Peruana de Fútbol, Sidecreer, INFA, MSPORT y Farmacias Sánchez Antoniolli." />
   <meta property="og:image" content="https://inthegrasoftware.com/logo-header.svg" />
   <meta property="og:locale" content="es_AR" />
   <meta property="og:site_name" content="Inthegra Software" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Casos de Éxito | Inthegra Software" />
-  <meta name="twitter:description" content="Casos de Éxito Inthegra Software — Prueba real de ejecución enterprise en JAVER, Valle Fertil SA, Federación Peruana de Fútbol, Sidecreer, INFA y MSPORT." />
+  <meta name="twitter:description" content="Casos de Éxito Inthegra Software — JAVER, Valle Fertil SA, Federación Peruana de Fútbol, Sidecreer, INFA, MSPORT y Farmacias Sánchez Antoniolli." />
 
   <link rel="icon" href="favicon-32.png" sizes="32x32" />
   <link rel="icon" href="favicon-192.png" sizes="192x192" />
@@ -73,7 +73,6 @@
     img { max-width: 100%; display: block; }
     .container { max-width: 1260px; margin: 0 auto; padding: 0 32px; }
 
-    /* ── HEADER ─── */
     header {
       position: sticky; top: 0; z-index: 200;
       background: rgba(8,17,31,.9);
@@ -81,13 +80,11 @@
       border-bottom: 1px solid rgba(36,58,97,.7);
     }
 
-    /* ── BG GRAPHICS ─── */
     .section-relative { position: relative; overflow: hidden; }
     .section-relative > .container { position: relative; z-index: 1; }
     .bg-graphic { position: absolute; pointer-events: none; z-index: 0; user-select: none; }
     @media (max-width: 768px) { .bg-graphic { display: none; } }
 
-    /* ── EYEBROW ─── */
     .eyebrow {
       display: inline-flex; align-items: center; gap: 8px; margin-bottom: 18px;
       padding: 7px 14px; border-radius: 999px;
@@ -95,11 +92,8 @@
       color: var(--brand); font-size: 11px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
     }
     .eyebrow::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--brand); }
-
     .eyebrow.blue { border-color: rgba(255,114,0,.28); background: rgba(255,114,0,.08); color: var(--brand); }
-    .eyebrow.blue::before { background: var(--brand); }
 
-    /* ── TYPOGRAPHY ─── */
     .hero-title, .section-title {
       background: linear-gradient(135deg, #fff 15%, var(--brand) 55%, var(--brand-2) 100%);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
@@ -107,11 +101,9 @@
     .section-title { font-size: clamp(28px,3.8vw,50px); font-weight: 800; line-height: 1.04; letter-spacing: -.03em; margin-bottom: 14px; }
     .section-desc { color: var(--muted); font-size: 17px; line-height: 1.7; max-width: 72ch; }
 
-    /* ── SECTIONS ─── */
     .section { padding: 80px 0; }
     .section-alt { background: rgba(255,255,255,.015); border-top: 1px solid rgba(36,58,97,.5); border-bottom: 1px solid rgba(36,58,97,.5); }
 
-    /* ── BTNS ─── */
     .btn-primary {
       display: inline-flex; align-items: center; gap: 8px;
       padding: 14px 26px; border-radius: 999px; font-size: 15px; font-weight: 700;
@@ -129,22 +121,20 @@
     .btn-ghost:hover { border-color: rgba(255,114,0,.4); color: var(--brand); }
 
     /* ══════════════════════════════════════
-       HERO
+       HERO (compacto — featured ahora va en la lista)
     ══════════════════════════════════════ */
-    .hero { padding: 56px 0 80px; }
-    .hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 24px; align-items: stretch; }
-
-    .hero-copy-panel {
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
-      border: 1px solid rgba(255,255,255,.09);
+    .hero { padding: 72px 0 56px; }
+    .hero-inner {
+      max-width: 980px;
+      text-align: left;
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      border: 1px solid rgba(255,255,255,.08);
       border-radius: 28px; padding: 42px;
-      min-height: 520px; display: flex; flex-direction: column; justify-content: space-between;
       box-shadow: 0 30px 80px rgba(0,0,0,.3);
     }
-    .hero-title { font-size: clamp(36px,5.5vw,66px); font-weight: 900; line-height: .97; letter-spacing: -.045em; max-width: 12ch; margin-bottom: 18px; }
-    .hero-lead { font-size: 17px; color: var(--muted); line-height: 1.7; max-width: 60ch; margin-bottom: 26px; }
-    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
-
+    .hero-title { font-size: clamp(34px,4.8vw,58px); font-weight: 900; line-height: .98; letter-spacing: -.04em; margin-bottom: 16px; max-width: 16ch; }
+    .hero-lead { font-size: 17px; color: var(--muted); line-height: 1.7; max-width: 62ch; margin-bottom: 26px; }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 28px; }
     .hero-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; }
     .hero-stat {
       padding: 16px; border-radius: 18px;
@@ -153,138 +143,252 @@
     .hero-stat strong { display: block; font-size: 20px; font-weight: 800; margin-bottom: 6px; color: var(--brand); }
     .hero-stat span { font-size: 13px; color: var(--muted); line-height: 1.4; }
 
-    .hero-featured {
-      position: relative; border-radius: 28px; overflow: hidden;
-      border: 1px solid rgba(255,255,255,.09);
-      min-height: 520px;
-      background:
-        linear-gradient(180deg, rgba(7,17,31,.14), rgba(7,17,31,.72)),
-        url('img/wp/2025/03/VALLE-FERTIL-SA-Banner.png') center/cover no-repeat;
-      box-shadow: 0 30px 80px rgba(0,0,0,.3);
-    }
-    .hero-featured-overlay {
-      position: absolute; inset: auto 0 0 0; padding: 32px;
-      background: linear-gradient(180deg, transparent, rgba(4,10,18,.85) 40%, rgba(4,10,18,.96));
-    }
-    .mini-tag {
-      display: inline-flex; padding: 7px 12px; border-radius: 999px;
-      background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.12);
-      color: #fff; font-size: 11px; font-weight: 700; margin-bottom: 12px;
-      text-transform: uppercase; letter-spacing: .04em;
-    }
-    .hero-featured h2 { font-size: clamp(22px,3.5vw,36px); font-weight: 800; letter-spacing: -.04em; margin-bottom: 10px; }
-    .chip-row { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0 14px; }
-    .chip {
-      padding: 6px 12px; border-radius: 999px;
-      border: 1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.06);
-      color: #dbe8ff; font-size: 12px; font-weight: 600;
-    }
-    .hero-featured p { font-size: 14px; color: #d6e1f5; line-height: 1.65; max-width: 48ch; }
-
     /* ══════════════════════════════════════
-       FEATURED CASE STRIP
+       FILTERS
     ══════════════════════════════════════ */
-    .featured-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 22px; align-items: stretch; }
-
-    .featured-panel {
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
-      border: 1px solid rgba(255,255,255,.09); border-radius: 26px; padding: 34px;
-      box-shadow: 0 20px 60px rgba(0,0,0,.25);
+    .filters-bar {
+      display: flex; gap: 10px; flex-wrap: wrap;
+      margin: 0 0 28px;
+      padding: 18px 20px; border-radius: 18px;
+      background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.07);
     }
-    .featured-panel h3 { font-size: clamp(22px,2.8vw,34px); font-weight: 800; letter-spacing: -.035em; margin: 12px 0 14px; }
-    .featured-panel > p { color: var(--muted); font-size: 16px; line-height: 1.7; margin-bottom: 22px; }
-
-    .impact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 24px; }
-    .impact-item {
-      padding: 16px; border-radius: 16px;
-      border: 1px solid rgba(255,255,255,.07); background: rgba(255,255,255,.04);
+    .filters-label {
+      font-size: 11px; font-weight: 700; color: var(--muted);
+      letter-spacing: .12em; text-transform: uppercase;
+      display: flex; align-items: center; margin-right: 6px;
     }
-    .impact-item strong { display: block; font-size: 13px; font-weight: 700; margin-bottom: 6px; color: var(--text); }
-    .impact-item span { font-size: 13px; color: var(--muted); line-height: 1.5; }
-
-    .featured-image {
-      border-radius: 26px; overflow: hidden; min-height: 440px;
-      border: 1px solid rgba(255,255,255,.08);
-      background:
-        linear-gradient(180deg, rgba(7,17,31,.12), rgba(7,17,31,.58)),
-        url('img/wp/2025/03/captura-sidecreer.png') center/cover no-repeat;
-      box-shadow: 0 20px 60px rgba(0,0,0,.28);
-      position: relative;
-    }
-    .featured-image-label {
-      position: absolute; left: 20px; bottom: 20px; right: 20px;
-      padding: 16px; border-radius: 16px;
-      background: rgba(6,14,25,.75); backdrop-filter: blur(12px);
-      border: 1px solid rgba(255,255,255,.1);
-    }
-    .featured-image-label strong { display: block; font-size: 14px; margin-bottom: 4px; }
-    .featured-image-label span { font-size: 13px; color: var(--muted); line-height: 1.5; }
-
-    /* ══════════════════════════════════════
-       FILTERS + CARDS GRID
-    ══════════════════════════════════════ */
-    .filters { display: flex; gap: 10px; flex-wrap: wrap; margin: 28px 0 22px; }
     .filter-btn {
-      padding: 10px 18px; border-radius: 999px; font-size: 13px; font-weight: 700;
+      padding: 9px 16px; border-radius: 999px; font-size: 13px; font-weight: 700;
       border: 1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.04);
       color: var(--text-2); cursor: pointer; transition: all .2s; font-family: inherit;
     }
     .filter-btn:hover, .filter-btn.active {
-      background: rgba(255,114,0,.16); border-color: rgba(124,205,255,.35); color: var(--text);
+      background: rgba(255,114,0,.16); border-color: rgba(255,114,0,.4); color: var(--text);
     }
-
-    .cards-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
-
-    .case-card {
-      overflow: hidden; border-radius: 24px;
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
-      border: 1px solid rgba(255,255,255,.08);
-      box-shadow: 0 20px 50px rgba(0,0,0,.22);
-      transition: transform .28s ease, border-color .28s ease;
-      display: flex; flex-direction: column;
-    }
-    .case-card:hover { transform: translateY(-6px); border-color: rgba(124,205,255,.26); }
-    .case-card.hidden { display: none; }
-
-    .card-media {
-      position: relative; height: 200px; overflow: hidden; flex-shrink: 0;
-    }
-    .card-media img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
-    .case-card:hover .card-media img { transform: scale(1.04); }
-    .card-media::after {
-      content: ''; position: absolute; inset: 0;
-      background: linear-gradient(180deg, transparent 40%, rgba(8,17,31,.6));
-    }
-
-    .card-body { padding: 24px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
-
-    .case-topline { display: flex; gap: 8px; flex-wrap: wrap; }
-    .case-tag {
-      padding: 5px 10px; border-radius: 999px;
-      background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.08);
-      color: var(--muted); font-size: 11px; font-weight: 700;
-    }
-
-    .case-card h3 { font-size: 20px; font-weight: 800; letter-spacing: -.025em; }
-    .case-card > .card-body > p { color: var(--muted); font-size: 14px; line-height: 1.65; flex: 1; }
-
-    .case-points { display: grid; gap: 8px; }
-    .case-point { display: flex; align-items: flex-start; gap: 10px; color: var(--text-2); font-size: 13px; line-height: 1.5; }
-    .case-dot {
-      width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; margin-top: 5px;
-      background: linear-gradient(135deg, var(--brand), var(--brand-2));
-      box-shadow: 0 0 0 4px rgba(255,114,0,.12);
-    }
-
-    .card-cta {
-      display: inline-flex; align-items: center; gap: 6px;
-      font-size: 14px; font-weight: 700; color: var(--brand);
-      padding-top: 4px; transition: gap .2s;
-    }
-    .card-cta:hover { gap: 10px; }
 
     /* ══════════════════════════════════════
-       IMPACT PATTERNS
+       SHOWCASE LIST — todos los casos unificados
+    ══════════════════════════════════════ */
+    .showcase-list {
+      display: flex; flex-direction: column; gap: 28px;
+    }
+
+    .case-showcase {
+      padding: 0; overflow: hidden;
+      border-radius: 30px;
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border: 1px solid rgba(255,255,255,.08);
+      box-shadow: 0 30px 90px rgba(0,0,0,.32);
+      transition: transform .28s ease, border-color .28s ease, box-shadow .28s ease;
+    }
+    .case-showcase:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255,114,0,.4);
+      box-shadow: 0 40px 110px rgba(255,114,0,.1);
+    }
+    .case-showcase.hidden { display: none; }
+
+    /* Featured variant */
+    .case-showcase.featured {
+      border-color: rgba(255,114,0,.28);
+      box-shadow: 0 30px 90px rgba(0,0,0,.36);
+    }
+    .case-showcase.featured:hover {
+      border-color: rgba(255,114,0,.5);
+      box-shadow: 0 40px 110px rgba(255,114,0,.12);
+    }
+
+    .showcase-grid {
+      display: grid; grid-template-columns: 1fr 1.1fr; gap: 0;
+      min-height: 520px;
+    }
+
+    /* ── Left: Visual panel ── */
+    .showcase-visual {
+      position: relative; overflow: hidden;
+      padding: 36px 36px;
+      display: flex; flex-direction: column; justify-content: space-between; gap: 24px;
+      background-size: cover; background-position: center;
+      background-color: #0d1f3a;
+    }
+    .showcase-visual::before {
+      content: ''; position: absolute; inset: 0;
+      background:
+        linear-gradient(180deg, rgba(7,15,30,.35) 0%, rgba(7,15,30,.82) 100%);
+      pointer-events: none; z-index: 1;
+    }
+    .showcase-visual > * { position: relative; z-index: 2; }
+
+    /* Pharma variant (Sánchez Antoniolli) — fondo verde solo como fallback si falla la foto */
+    .showcase-visual.pharma {
+      background-color: #083324;
+    }
+    /* Overlay más claro y neutro para que la foto de la fachada se vea bien */
+    .showcase-visual.pharma::before {
+      background:
+        linear-gradient(180deg, rgba(0,0,0,.10) 0%, rgba(0,15,8,.55) 55%, rgba(0,15,8,.88) 100%);
+    }
+
+    .brand-mark {
+      display: inline-flex; align-items: center; gap: 12px;
+      padding: 10px 16px; border-radius: 14px;
+      background: rgba(7,15,30,.55);
+      border: 1px solid rgba(255,255,255,.2);
+      backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+      align-self: flex-start;
+    }
+    .brand-mark-ic {
+      width: 28px; height: 28px; border-radius: 7px;
+      display: grid; place-items: center;
+      font-weight: 900; font-size: 14px; line-height: 1;
+      flex-shrink: 0; color: #fff;
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.2);
+      letter-spacing: -.5px;
+    }
+    .pharma-cross {
+      background: #35d39b; color: #083324;
+      font-size: 22px; border: none;
+    }
+    .brand-mark-text { display: flex; flex-direction: column; gap: 2px; }
+    .brand-mark-text strong { font-size: 12px; font-weight: 800; letter-spacing: .12em; color: #fff; }
+    .brand-mark-text span { font-size: 10px; font-weight: 700; color: rgba(255,255,255,.7); letter-spacing: .06em; }
+
+    .country-chip {
+      display: inline-flex; padding: 6px 14px; border-radius: 999px;
+      background: rgba(7,15,30,.55); border: 1px solid rgba(255,255,255,.18);
+      backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+      color: #fff; font-size: 11px; font-weight: 700; letter-spacing: .04em;
+      margin-top: 10px; align-self: flex-start;
+    }
+    .country-chip.pharma-green {
+      background: rgba(53,211,155,.2); border-color: rgba(53,211,155,.35); color: #80f3c4;
+    }
+
+    .showcase-headline { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 12px; }
+    .showcase-headline h4 {
+      font-size: clamp(22px, 2.8vw, 32px);
+      font-weight: 800; letter-spacing: -.025em; line-height: 1.1;
+      color: #fff;
+      max-width: 18ch;
+    }
+    .showcase-headline p {
+      color: rgba(255,255,255,.78); font-size: 14px; line-height: 1.55;
+      max-width: 38ch;
+    }
+
+    .visual-stats {
+      display: grid; grid-template-columns: repeat(3,1fr); gap: 12px;
+      padding: 16px; border-radius: 16px;
+      background: rgba(7,15,30,.55);
+      border: 1px solid rgba(255,255,255,.14);
+      backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    }
+    .visual-stats.pharma-stats {
+      background: rgba(0,0,0,.32);
+    }
+    .visual-stats > div { text-align: left; }
+    .visual-stats strong {
+      display: block; font-size: 22px; font-weight: 800;
+      color: #fff; letter-spacing: -.4px; margin-bottom: 3px;
+      font-variant-numeric: tabular-nums;
+    }
+    .visual-stats.pharma-stats strong { color: #80f3c4; font-size: 24px; }
+    .visual-stats span {
+      font-size: 10.5px; color: rgba(255,255,255,.72);
+      font-weight: 600; letter-spacing: .02em; line-height: 1.35;
+      display: block;
+    }
+
+    /* ── Right: Content panel ── */
+    .showcase-body {
+      padding: 36px 38px;
+      display: flex; flex-direction: column; gap: 12px;
+    }
+    .showcase-topline {
+      display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 2px;
+    }
+    .showcase-tag {
+      padding: 5px 11px; border-radius: 999px;
+      background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1);
+      color: var(--muted); font-size: 11px; font-weight: 700;
+      letter-spacing: .01em;
+    }
+    .showcase-tag.featured-tag {
+      background: rgba(255,114,0,.15); border-color: rgba(255,114,0,.35); color: var(--brand);
+    }
+
+    .case-showcase h3 {
+      font-size: clamp(24px, 2.8vw, 34px);
+      font-weight: 800; letter-spacing: -.025em; line-height: 1.05;
+      background: linear-gradient(135deg, #fff 20%, var(--brand) 85%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      margin-bottom: 2px;
+    }
+    .showcase-kicker {
+      color: var(--text-2); font-size: 15.5px; font-weight: 600;
+      line-height: 1.45;
+    }
+    .showcase-lead {
+      color: var(--muted); font-size: 14.5px; line-height: 1.7;
+    }
+    .showcase-lead strong { color: var(--text-2); font-weight: 600; }
+
+    .showcase-quote {
+      padding: 16px 20px;
+      border-left: 3px solid var(--brand);
+      background: rgba(255,114,0,.07);
+      border-radius: 0 12px 12px 0;
+      font-size: 13.5px; color: var(--text-2);
+      font-style: italic; line-height: 1.6;
+    }
+    .showcase-quote cite {
+      display: block; margin-top: 8px;
+      font-style: normal; font-size: 12px;
+      color: var(--muted); font-weight: 600;
+    }
+
+    .showcase-tech {
+      padding: 14px 18px; border-radius: 12px;
+      background: rgba(124,226,255,.05); border: 1px dashed rgba(124,226,255,.2);
+      font-size: 13px; color: var(--text-2); line-height: 1.6;
+    }
+    .showcase-tech strong {
+      display: block; margin-bottom: 4px;
+      font-size: 10.5px; font-weight: 800; letter-spacing: .1em;
+      color: #7ccdff; text-transform: uppercase;
+    }
+
+    .showcase-results {
+      display: grid; grid-template-columns: repeat(2,1fr); gap: 10px;
+      margin-top: 2px;
+    }
+    .showcase-results > div {
+      padding: 12px 14px; border-radius: 12px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.08);
+      transition: border-color .2s, background .2s;
+    }
+    .showcase-results > div:hover {
+      background: rgba(255,114,0,.06);
+      border-color: rgba(255,114,0,.22);
+    }
+    .showcase-results strong {
+      display: block; font-size: 13px; font-weight: 700;
+      color: var(--green); margin-bottom: 3px;
+      letter-spacing: .01em;
+    }
+    .showcase-results span {
+      font-size: 12.5px; color: var(--muted); line-height: 1.4;
+    }
+    .showcase-actions {
+      display: flex; gap: 10px; flex-wrap: wrap; margin-top: 6px;
+    }
+    .showcase-actions .btn-primary,
+    .showcase-actions .btn-ghost { padding: 12px 22px; font-size: 14px; }
+
+    /* ══════════════════════════════════════
+       PATRONES + TIMELINE + TRUST (reusados)
     ══════════════════════════════════════ */
     .patterns-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 18px; }
     .pattern-card {
@@ -294,9 +398,6 @@
     .pattern-card h4 { font-size: 16px; font-weight: 700; margin-bottom: 10px; letter-spacing: -.01em; }
     .pattern-card p { font-size: 14px; color: var(--muted); line-height: 1.65; }
 
-    /* ══════════════════════════════════════
-       BEFORE/AFTER TIMELINE
-    ══════════════════════════════════════ */
     .timeline-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
     .timeline-card {
       padding: 26px; border-radius: 22px;
@@ -311,9 +412,6 @@
     .timeline-card h4 { font-size: 18px; font-weight: 700; margin-bottom: 10px; letter-spacing: -.01em; }
     .timeline-card p { font-size: 15px; color: var(--muted); line-height: 1.65; }
 
-    /* ══════════════════════════════════════
-       TRUST SECTION
-    ══════════════════════════════════════ */
     .trust-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
     .trust-card {
       padding: 28px; border-radius: 24px;
@@ -343,7 +441,7 @@
     .cta-box p { font-size: 17px; color: var(--muted); line-height: 1.7; max-width: 54ch; }
     .cta-actions { display: flex; gap: 12px; flex-wrap: wrap; flex-shrink: 0; }
 
-    /* ── FOOTER ─── */
+    /* FOOTER */
     footer { background: rgba(8,17,31,.9); border-top: 1px solid rgba(36,58,97,.7); padding: 56px 0 32px; }
     .footer-grid { display: grid; grid-template-columns: 2fr repeat(4,1fr); gap: 36px; margin-bottom: 40px; }
     .footer-logo img { height: 34px; margin-bottom: 14px; }
@@ -354,7 +452,6 @@
     .footer-bottom { border-top: 1px solid rgba(36,58,97,.5); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
     .footer-copy { font-size: 12px; color: var(--muted); }
 
-    /* ── WHATSAPP FLOAT ─── */
     .wa-float {
       position: fixed; bottom: 28px; right: 28px; z-index: 900;
       width: 56px; height: 56px; border-radius: 50%;
@@ -364,30 +461,31 @@
     .wa-float:hover { transform: scale(1.08); }
     .wa-float svg { width: 28px; height: 28px; fill: #fff; }
 
-    /* ── ANIMATIONS ─── */
     .fade-up { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
     .fade-up.in { opacity: 1; transform: translateY(0); }
 
-    /* ── RESPONSIVE ─── */
+    /* RESPONSIVE */
     @media (max-width: 1080px) {
-      .hero-grid, .featured-grid, .trust-grid { grid-template-columns: 1fr; }
-      .cards-grid { grid-template-columns: repeat(2,1fr); }
+      .showcase-grid { grid-template-columns: 1fr; min-height: auto; }
+      .showcase-visual { padding: 32px 28px; min-height: 360px; }
+      .showcase-body { padding: 32px 28px; }
+      .trust-grid { grid-template-columns: 1fr; }
       .patterns-grid { grid-template-columns: repeat(2,1fr); }
       .footer-grid { grid-template-columns: 1fr 1fr; }
-      .hero-featured { min-height: 360px; }
-      .featured-image { min-height: 320px; }
       .cta-inner { flex-direction: column; align-items: flex-start; }
     }
     @media (max-width: 720px) {
       .section { padding: 64px 0; }
       .container { padding: 0 20px; }
-      .cards-grid, .patterns-grid, .timeline-grid { grid-template-columns: 1fr; }
-      .hero-copy-panel { padding: 28px; min-height: auto; }
+      .hero-inner { padding: 28px; }
       .hero-stats { grid-template-columns: 1fr; }
       .hero-actions, .cta-actions { flex-direction: column; }
       .btn-primary, .btn-ghost { width: 100%; justify-content: center; }
-      .impact-grid { grid-template-columns: 1fr; }
-      .featured-panel { padding: 24px; }
+      .visual-stats { grid-template-columns: 1fr; }
+      .visual-stats > div { text-align: center; }
+      .showcase-results { grid-template-columns: 1fr; }
+      .showcase-visual.pharma::after { font-size: 320px; right: -40px; bottom: -60px; }
+      .patterns-grid, .timeline-grid { grid-template-columns: 1fr; }
       .cta-inner { padding: 28px 24px; }
       .footer-grid { grid-template-columns: 1fr; }
     }
@@ -397,7 +495,7 @@
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Casos de Éxito | Inthegra Software",
-    "description": "Casos de Éxito Inthegra Software — Prueba real de ejecución enterprise en JAVER, Valle Fertil SA, Federación Peruana de Fútbol, Sidecreer, INFA y MSPORT.",
+    "description": "Casos de Éxito Inthegra Software — JAVER, Valle Fertil SA, Federación Peruana de Fútbol, Sidecreer, INFA, MSPORT y Farmacias Sánchez Antoniolli.",
     "publisher": {
       "@type": "Organization",
       "name": "Inthegra Software",
@@ -420,56 +518,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   gtag('config', 'AW-16670573573');
 </script>
 
-<!-- ── HEADER (replaced by nav.js) ─── -->
 <header>
   <div style="padding:16px 0;color:#7d9ac4;font-size:14px;">Cargando navegación…</div>
 </header>
 <main>
 
 <!-- ══════════════════════════════════════════════
-     HERO
+     HERO compacto
 ══════════════════════════════════════════════ -->
 <section class="hero section-relative">
   <img src="Inthegra.svg" class="bg-graphic" aria-hidden="true"
        style="width:700px;top:-80px;right:-120px;opacity:.08;" />
   <div class="container">
-    <div class="hero-grid fade-up">
-      <div class="hero-copy-panel">
-        <div>
-          <span class="eyebrow">Casos reales · Prueba comercial · Ejecución enterprise</span>
-          <h1 class="hero-title">Casos de éxito que muestran impacto de negocio.</h1>
-          <p class="hero-lead">No son testimoniales genéricos. Son pruebas concretas de ejecución: cliente real, problema operativo real, solución implementada y resultado alcanzado. Organizaciones de distintas industrias que eligieron Inthegra para digitalizar, automatizar e integrar procesos críticos.</p>
-          <div class="hero-actions">
-            <a href="contacto.html?origen=success_stories" class="btn-primary">Agendar demo →</a>
-            <a href="#casos" class="btn-ghost">Ver casos</a>
-          </div>
-        </div>
-        <div class="hero-stats">
-          <div class="hero-stat">
-            <strong>6 casos</strong>
-            <span>Biblioteca activa de proyectos implementados y en producción.</span>
-          </div>
-          <div class="hero-stat">
-            <strong>Multi-industria</strong>
-            <span>Finanzas, real estate, deporte, industria y servicios especializados.</span>
-          </div>
-          <div class="hero-stat">
-            <strong>Oracle-native</strong>
-            <span>Oracle APEX, OCI e integración EBS como base tecnológica principal.</span>
-          </div>
-        </div>
+    <div class="hero-inner fade-up">
+      <span class="eyebrow">Casos reales · Prueba comercial · Ejecución enterprise</span>
+      <h1 class="hero-title">Casos de éxito que muestran impacto de negocio.</h1>
+      <p class="hero-lead">No son testimoniales genéricos. Son pruebas concretas de ejecución: cliente real, problema operativo real, solución implementada y resultado alcanzado. Organizaciones de distintas industrias que eligieron Inthegra para digitalizar, automatizar e integrar procesos críticos.</p>
+      <div class="hero-actions">
+        <a href="contacto.html?origen=success_stories" class="btn-primary">Agendar demo →</a>
+        <a href="#casos" class="btn-ghost">Ver casos</a>
       </div>
-
-      <div class="hero-featured fade-up" style="transition-delay:.15s">
-        <div class="hero-featured-overlay">
-          <div class="mini-tag">Caso destacado</div>
-          <h2>Valle Fertil SA</h2>
-          <div class="chip-row">
-            <span class="chip">Argentina</span>
-            <span class="chip">Credit &amp; Financial</span>
-            <span class="chip">Onboarding digital</span>
-          </div>
-          <p>Alta digital de clientes con scoring, validación biométrica y disponibilidad crediticia integrada. Más captación, menos fricción operativa.</p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <strong>7 casos</strong>
+          <span>Biblioteca activa de proyectos implementados y en producción.</span>
+        </div>
+        <div class="hero-stat">
+          <strong>Multi-industria</strong>
+          <span>Finanzas, real estate, deporte, industria, servicios y retail farmacéutico.</span>
+        </div>
+        <div class="hero-stat">
+          <strong>Oracle-native</strong>
+          <span>Oracle APEX, OCI e integración EBS como base tecnológica principal.</span>
         </div>
       </div>
     </div>
@@ -477,207 +557,422 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <!-- ══════════════════════════════════════════════
-     FEATURED CASE
-══════════════════════════════════════════════ -->
-<section class="section section-alt section-relative">
-  <img src="Inthegra.svg" class="bg-graphic" aria-hidden="true"
-       style="width:620px;bottom:-80px;left:-80px;opacity:.07;" />
-  <div class="container">
-    <div class="fade-up" style="max-width:820px;margin-bottom:40px">
-      <span class="eyebrow blue">Caso destacado</span>
-      <h2 class="section-title">Un caso para abrir la conversación comercial.</h2>
-      <p class="section-desc">Problema inicial claro, solución implementada y resultado alcanzado — sin tono de blog ni exceso promocional.</p>
-    </div>
-    <div class="featured-grid fade-up" style="transition-delay:.1s">
-      <div class="featured-panel">
-        <span class="eyebrow blue">Featured case study</span>
-        <h3>Sidecreer SA · Captación digital con scoring y biometría</h3>
-        <div class="chip-row">
-          <span class="chip">Argentina</span>
-          <span class="chip">Sistema de crédito</span>
-          <span class="chip">Oracle APEX + OCI</span>
-        </div>
-        <p>Una organización con un proceso de alta de clientes manual y de baja escala. La solución digitalizó el proceso completo: formulario online, validación biométrica e integración con scoring de crédito. El resultado fue una alta online completada en minutos.</p>
-        <div class="impact-grid">
-          <div class="impact-item">
-            <strong>Necesidad</strong>
-            <span>Digitalizar el proceso de adhesión de clientes que se gestionaba de forma manual y presencial.</span>
-          </div>
-          <div class="impact-item">
-            <strong>Solución</strong>
-            <span>Aplicación responsive en Oracle APEX desplegada en OCI, con scoring y autenticación biométrica.</span>
-          </div>
-          <div class="impact-item">
-            <strong>Resultado</strong>
-            <span>Más captación de clientes, menos fricción operativa y alta online completada en minutos.</span>
-          </div>
-          <div class="impact-item">
-            <strong>Tecnología</strong>
-            <span>Oracle APEX · Oracle Cloud Infrastructure (OCI) · Biometría · Scoring integrado</span>
-          </div>
-        </div>
-        <div class="hero-actions">
-          <a href="contacto.html?origen=success_stories" class="btn-primary">Hablar sobre una solución similar</a>
-          <a href="#casos" class="btn-ghost">Ver todos los casos</a>
-        </div>
-      </div>
-
-      <div class="featured-image">
-        <div class="featured-image-label">
-          <strong>Sidecreer SA — Alta digital online</strong>
-          <span>Plataforma de adhesión de clientes con biometría y scoring integrado. Oracle APEX + OCI.</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════
-     CASOS GRID
+     CASOS — showcase list unificado
 ══════════════════════════════════════════════ -->
 <section id="casos" class="section section-relative">
   <img src="Inthegra.svg" class="bg-graphic" aria-hidden="true"
        style="width:660px;top:-60px;right:-100px;opacity:.08;" />
   <div class="container">
-    <div class="fade-up" style="max-width:820px;margin-bottom:8px">
+    <div class="fade-up" style="max-width:820px;margin-bottom:24px">
       <span class="eyebrow blue">Biblioteca de casos</span>
       <h2 class="section-title">Casos reales, resultados concretos.</h2>
       <p class="section-desc">Cada proyecto tiene su contexto, su problema y su solución. Filtrá por área o tipo de implementación para encontrar el más cercano a tu realidad.</p>
     </div>
 
-    <div class="filters fade-up" style="transition-delay:.05s">
+    <div class="filters-bar fade-up" style="transition-delay:.05s">
+      <span class="filters-label">Filtrar</span>
       <button class="filter-btn active" data-filter="all">Todos</button>
       <button class="filter-btn" data-filter="financial">Financial</button>
       <button class="filter-btn" data-filter="operations">Operaciones</button>
       <button class="filter-btn" data-filter="onboarding">Onboarding</button>
+      <button class="filter-btn" data-filter="supply">Supply Chain</button>
       <button class="filter-btn" data-filter="apex">Oracle APEX</button>
     </div>
 
-    <div class="cards-grid fade-up" style="transition-delay:.1s">
+    <div class="showcase-list">
 
-      <article class="case-card" data-tags="operations apex">
-        <div class="card-media">
-          <img src="img/wp/2025/03/JAVER-BANNER-03.jpg" alt="JAVER — Control presupuestario TI" />
-        </div>
-        <div class="card-body">
-          <div class="case-topline">
-            <span class="case-tag">México</span>
-            <span class="case-tag">Real Estate</span>
-            <span class="case-tag">Oracle APEX</span>
+      <!-- ════ 1. JAVER ════ -->
+      <article class="case-showcase fade-up" data-tags="operations apex">
+        <div class="showcase-grid">
+          <div class="showcase-visual" style="background-image: url('img/wp/2025/03/JAVER-BANNER-03.jpg');">
+            <div>
+              <div class="brand-mark">
+                <span class="brand-mark-ic">JV</span>
+                <span class="brand-mark-text">
+                  <strong>JAVER</strong>
+                  <span>Real Estate · México</span>
+                </span>
+              </div>
+              <span class="country-chip">México</span>
+            </div>
+            <div class="showcase-headline">
+              <h4>Control presupuestario de TI en una sola plataforma.</h4>
+              <p>Centralización de presupuestos, órdenes de compra e integración con Oracle EBS para una de las desarrolladoras más grandes de México.</p>
+            </div>
+            <div class="visual-stats">
+              <div><strong>APEX</strong><span>Oracle native</span></div>
+              <div><strong>EBS</strong><span>Integrado</span></div>
+              <div><strong>TI</strong><span>Presupuesto</span></div>
+            </div>
           </div>
-          <h3>JAVER</h3>
-          <p>Control presupuestario de TI e integración con EBS en una sola plataforma, reemplazando planillas y mejorando la visibilidad operativa.</p>
-          <div class="case-points">
-            <div class="case-point"><span class="case-dot"></span><span>Presupuestos por proyecto y carga masiva desde Excel.</span></div>
-            <div class="case-point"><span class="case-dot"></span><span>Seguimiento de órdenes de compra e impacto financiero.</span></div>
-            <div class="case-point"><span class="case-dot"></span><span>Automatización de reportes para dirección.</span></div>
+
+          <div class="showcase-body">
+            <div class="showcase-topline">
+              <span class="showcase-tag">México</span>
+              <span class="showcase-tag">Real Estate</span>
+              <span class="showcase-tag">Oracle APEX</span>
+              <span class="showcase-tag">EBS</span>
+            </div>
+            <h3>JAVER</h3>
+            <p class="showcase-kicker">Planillas fuera, control presupuestario dentro de la plataforma.</p>
+            <p class="showcase-lead">
+              Centraliza presupuestos por proyecto, carga masiva desde Excel, seguimiento de órdenes de compra con impacto financiero y reportes ejecutivos automáticos — todo integrado con <strong>Oracle EBS</strong> sobre una aplicación Oracle APEX.
+            </p>
+            <div class="showcase-tech">
+              <strong>Stack técnico</strong>
+              Oracle APEX sobre Oracle Database · Integración directa a Oracle EBS · Roles, flujos de aprobación y reporting operativo para dirección de TI.
+            </div>
+            <div class="showcase-results">
+              <div><strong>Centralización</strong><span>Presupuestos, OC y actualizaciones en una sola plataforma.</span></div>
+              <div><strong>Automatización</strong><span>Reportes para dirección sin trabajo manual recurrente.</span></div>
+              <div><strong>Visibilidad</strong><span>Estado de cada proyecto de TI en tiempo real.</span></div>
+              <div><strong>Trazabilidad</strong><span>Historial completo de decisiones y cambios presupuestarios.</span></div>
+            </div>
+            <div class="showcase-actions">
+              <a href="https://wa.me/5493517870115?text=Hola%2C%20me%20interesa%20una%20solución%20similar%20a%20JAVER" class="btn-primary" target="_blank" rel="noopener">Hablar sobre este caso →</a>
+              <a href="contacto.html?origen=success_stories&caso=javer" class="btn-ghost">Agendar demo</a>
+            </div>
           </div>
-          <a href="https://wa.me/5493517870115?text=Hola%2C%20me%20interesa%20una%20solución%20similar%20a%20JAVER" class="card-cta" target="_blank" rel="noopener">Hablar sobre este caso →</a>
         </div>
       </article>
 
-      <article class="case-card" data-tags="financial onboarding apex">
-        <div class="card-media">
-          <img src="img/wp/2025/03/VALLE-FERTIL-SA-Banner.png" alt="Valle Fertil SA — Onboarding digital" />
-        </div>
-        <div class="card-body">
-          <div class="case-topline">
-            <span class="case-tag">Argentina</span>
-            <span class="case-tag">Credit &amp; Financial</span>
-            <span class="case-tag">Onboarding</span>
+      <!-- ════ 2. VALLE FERTIL SA ════ -->
+      <article class="case-showcase fade-up" data-tags="financial onboarding apex">
+        <div class="showcase-grid">
+          <div class="showcase-visual" style="background-image: url('img/wp/2025/03/VALLE-FERTIL-SA-Banner.png');">
+            <div>
+              <div class="brand-mark">
+                <span class="brand-mark-ic">VF</span>
+                <span class="brand-mark-text">
+                  <strong>VALLE FERTIL SA</strong>
+                  <span>Credit &amp; Financial · Argentina</span>
+                </span>
+              </div>
+              <span class="country-chip">Argentina</span>
+            </div>
+            <div class="showcase-headline">
+              <h4>Alta digital de clientes con scoring y biometría.</h4>
+              <p>Proceso de onboarding de crédito 100% online, con validación biométrica y disponibilidad crediticia integrada en tiempo real.</p>
+            </div>
+            <div class="visual-stats">
+              <div><strong>Online</strong><span>sin presencia física</span></div>
+              <div><strong>Scoring</strong><span>en tiempo real</span></div>
+              <div><strong>Biometría</strong><span>validación</span></div>
+            </div>
           </div>
-          <h3>Valle Fertil SA</h3>
-          <p>Alta digital de clientes con scoring y biometría para acelerar captación y reducir tiempos y costos operativos.</p>
-          <div class="case-points">
-            <div class="case-point"><span class="case-dot"></span><span>Proceso 100% online y automatizado.</span></div>
-            <div class="case-point"><span class="case-dot"></span><span>Disponibilidad crediticia integrada en tiempo real.</span></div>
-            <div class="case-point"><span class="case-dot"></span><span>Experiencia más simple y escalable para el cliente.</span></div>
+
+          <div class="showcase-body">
+            <div class="showcase-topline">
+              <span class="showcase-tag">Argentina</span>
+              <span class="showcase-tag">Credit &amp; Financial</span>
+              <span class="showcase-tag">Onboarding</span>
+              <span class="showcase-tag">Biometría</span>
+            </div>
+            <h3>Valle Fertil SA</h3>
+            <p class="showcase-kicker">Más captación de clientes, menos fricción operativa.</p>
+            <p class="showcase-lead">
+              Digitaliza la adhesión de clientes reemplazando un proceso presencial por una aplicación responsive con <strong>scoring integrado</strong> y validación biométrica. Alta online completada en minutos y escalable sin sumar operadores.
+            </p>
+            <div class="showcase-tech">
+              <strong>Stack técnico</strong>
+              Oracle APEX sobre Oracle Cloud Infrastructure (OCI) · Biometría integrada · Motor de scoring y disponibilidad crediticia en tiempo real.
+            </div>
+            <div class="showcase-results">
+              <div><strong>Alta online</strong><span>Proceso 100% digital, sin necesidad de sucursal.</span></div>
+              <div><strong>Scoring integrado</strong><span>Disponibilidad crediticia evaluada en tiempo real.</span></div>
+              <div><strong>Experiencia cliente</strong><span>Simple, responsive y escalable en cualquier dispositivo.</span></div>
+              <div><strong>Captación masiva</strong><span>Más clientes captados con menos operación manual.</span></div>
+            </div>
+            <div class="showcase-actions">
+              <a href="https://wa.me/5493517870115?text=Hola%2C%20me%20interesa%20una%20solución%20similar%20a%20Valle%20Fertil" class="btn-primary" target="_blank" rel="noopener">Hablar sobre este caso →</a>
+              <a href="contacto.html?origen=success_stories&caso=valle_fertil" class="btn-ghost">Agendar demo</a>
+            </div>
           </div>
-          <a href="https://wa.me/5493517870115?text=Hola%2C%20me%20interesa%20una%20solución%20similar%20a%20Valle%20Fertil" class="card-cta" target="_blank" rel="noopener">Hablar sobre este caso →</a>
         </div>
       </article>
 
-      <article class="case-card" data-tags="operations apex">
-        <div class="card-media">
-          <img src="img/wp/2025/03/DFoJPgTXsAAtVnG-1.png" alt="Federación Peruana de Fútbol — Digitalización" />
-        </div>
-        <div class="card-body">
-          <div class="case-topline">
-            <span class="case-tag">Perú</span>
-            <span class="case-tag">Institucional</span>
-            <span class="case-tag">OCI + APEX</span>
+      <!-- ════ 3. FEDERACIÓN PERUANA DE FÚTBOL ════ -->
+      <article class="case-showcase fade-up" data-tags="operations apex">
+        <div class="showcase-grid">
+          <div class="showcase-visual" style="background-image: url('img/wp/2025/03/DFoJPgTXsAAtVnG-1.png');">
+            <div>
+              <div class="brand-mark">
+                <span class="brand-mark-ic">FPF</span>
+                <span class="brand-mark-text">
+                  <strong>FEDERACIÓN PERUANA</strong>
+                  <span>Institucional · Perú</span>
+                </span>
+              </div>
+              <span class="country-chip">Perú</span>
+            </div>
+            <div class="showcase-headline">
+              <h4>Digitalización del alta de jugadores y trazabilidad integral.</h4>
+              <p>Una única plataforma en la nube para inscripción, documentación, flujos de aprobación y reporting de toda la estructura federativa.</p>
+            </div>
+            <div class="visual-stats">
+              <div><strong>OCI</strong><span>Oracle Cloud</span></div>
+              <div><strong>APEX</strong><span>aplicación</span></div>
+              <div><strong>Roles</strong><span>multi-área</span></div>
+            </div>
           </div>
-          <h3>Federación Peruana de Fútbol</h3>
-          <p>Digitalización del alta de jugadores y trazabilidad integral de trámites desde una única plataforma en la nube.</p>
-          <div class="case-points">
-            <div class="case-point"><span class="case-dot"></span><span>Inscripción online y carga documental centralizada.</span></div>
-            <div class="case-point"><span class="case-dot"></span><span>Flujos de aprobación y rechazo por área con roles.</span></div>
-            <div class="case-point"><span class="case-dot"></span><span>Notificaciones y BI en tiempo real sobre OCI.</span></div>
+
+          <div class="showcase-body">
+            <div class="showcase-topline">
+              <span class="showcase-tag">Perú</span>
+              <span class="showcase-tag">Institucional</span>
+              <span class="showcase-tag">OCI</span>
+              <span class="showcase-tag">Oracle APEX</span>
+            </div>
+            <h3>Federación Peruana de Fútbol</h3>
+            <p class="showcase-kicker">Una sola plataforma para toda la cadena federativa.</p>
+            <p class="showcase-lead">
+              Inscripción online, carga documental centralizada, flujos de aprobación y rechazo por área con roles, notificaciones en tiempo real y <strong>BI operativo</strong> desplegado sobre Oracle Cloud Infrastructure.
+            </p>
+            <div class="showcase-tech">
+              <strong>Stack técnico</strong>
+              Oracle APEX sobre Oracle Cloud Infrastructure (OCI) · Gestión documental centralizada · Motor de flujos de aprobación multi-área · BI operativo en tiempo real.
+            </div>
+            <div class="showcase-results">
+              <div><strong>Inscripción online</strong><span>Carga documental centralizada desde un único portal.</span></div>
+              <div><strong>Flujos por rol</strong><span>Aprobaciones y rechazos por área con control de permisos.</span></div>
+              <div><strong>Notificaciones</strong><span>Alertas en tiempo real para todos los involucrados.</span></div>
+              <div><strong>BI operativo</strong><span>Visibilidad ejecutiva sobre Oracle Cloud Infrastructure.</span></div>
+            </div>
+            <div class="showcase-actions">
+              <a href="https://wa.me/5493517870115?text=Hola%2C%20me%20interesa%20una%20solución%20similar%20a%20la%20FPF" class="btn-primary" target="_blank" rel="noopener">Hablar sobre este caso →</a>
+              <a href="contacto.html?origen=success_stories&caso=fpf" class="btn-ghost">Agendar demo</a>
+            </div>
           </div>
-          <a href="https://wa.me/5493517870115?text=Hola%2C%20me%20interesa%20una%20solución%20similar%20a%20la%20FPF" class="card-cta" target="_blank" rel="noopener">Hablar sobre este caso →</a>
         </div>
       </article>
 
-      <article class="case-card" data-tags="financial onboarding apex">
-        <div class="card-media">
-          <img src="img/wp/2025/03/captura-sidecreer.png" alt="Sidecreer SA — Onboarding digital" />
-        </div>
-        <div class="card-body">
-          <div class="case-topline">
-            <span class="case-tag">Argentina</span>
-            <span class="case-tag">Sistema de crédito</span>
-            <span class="case-tag">Onboarding</span>
+      <!-- ════ 4. SIDECREER SA ════ -->
+      <article class="case-showcase fade-up" data-tags="financial onboarding apex">
+        <div class="showcase-grid">
+          <div class="showcase-visual" style="background-image: url('img/wp/2025/03/captura-sidecreer.png');">
+            <div>
+              <div class="brand-mark">
+                <span class="brand-mark-ic">SC</span>
+                <span class="brand-mark-text">
+                  <strong>SIDECREER SA</strong>
+                  <span>Sistema de crédito · Argentina</span>
+                </span>
+              </div>
+              <span class="country-chip">Argentina</span>
+            </div>
+            <div class="showcase-headline">
+              <h4>Onboarding digital con scoring y biometría.</h4>
+              <p>Alta online completada en minutos para escalar captación sin sumar operación manual presencial.</p>
+            </div>
+            <div class="visual-stats">
+              <div><strong>Min.</strong><span>tiempo de alta</span></div>
+              <div><strong>OCI</strong><span>Oracle Cloud</span></div>
+              <div><strong>APEX</strong><span>responsive</span></div>
+            </div>
           </div>
-          <h3>Sidecreer SA</h3>
-          <p>Onboarding digital con scoring y validación biométrica para escalar altas de clientes y reducir la fricción operativa.</p>
-          <div class="case-points">
-            <div class="case-point"><span class="case-dot"></span><span>Alta automatizada y responsive, sin presencia física.</span></div>
-            <div class="case-point"><span class="case-dot"></span><span>Oracle Cloud Infrastructure como base de despliegue.</span></div>
-            <div class="case-point"><span class="case-dot"></span><span>Alta online completada en minutos.</span></div>
+
+          <div class="showcase-body">
+            <div class="showcase-topline">
+              <span class="showcase-tag">Argentina</span>
+              <span class="showcase-tag">Sistema de crédito</span>
+              <span class="showcase-tag">Onboarding</span>
+              <span class="showcase-tag">OCI + APEX</span>
+            </div>
+            <h3>Sidecreer SA</h3>
+            <p class="showcase-kicker">Alta de clientes en minutos, sin presencia física.</p>
+            <p class="showcase-lead">
+              Aplicación responsive desarrollada sobre <strong>Oracle APEX</strong> y desplegada en <strong>Oracle Cloud Infrastructure</strong>, con scoring y validación biométrica integrados. Fricción operativa reducida y captación escalable.
+            </p>
+            <div class="showcase-tech">
+              <strong>Stack técnico</strong>
+              Oracle APEX · Oracle Cloud Infrastructure (OCI) · Biometría · Motor de scoring integrado · Formulario responsive multi-dispositivo.
+            </div>
+            <div class="showcase-results">
+              <div><strong>Alta en minutos</strong><span>Onboarding completado sin presencia física.</span></div>
+              <div><strong>Sin fricción</strong><span>Formulario responsive y fluido en cualquier dispositivo.</span></div>
+              <div><strong>Base enterprise</strong><span>Oracle APEX + OCI como fundamento tecnológico.</span></div>
+              <div><strong>Escalabilidad</strong><span>Captación masiva sin crecer en estructura operativa.</span></div>
+            </div>
+            <div class="showcase-actions">
+              <a href="https://wa.me/5493517870115?text=Hola%2C%20me%20interesa%20una%20solución%20similar%20a%20Sidecreer" class="btn-primary" target="_blank" rel="noopener">Hablar sobre este caso →</a>
+              <a href="contacto.html?origen=success_stories&caso=sidecreer" class="btn-ghost">Agendar demo</a>
+            </div>
           </div>
-          <a href="https://wa.me/5493517870115?text=Hola%2C%20me%20interesa%20una%20solución%20similar%20a%20Sidecreer" class="card-cta" target="_blank" rel="noopener">Hablar sobre este caso →</a>
         </div>
       </article>
 
-      <article class="case-card" data-tags="operations apex">
-        <div class="card-media">
-          <img src="img/wp/2025/03/infa-taller-general-1.jpg" alt="INFA — Gestión de producción en planta" />
-        </div>
-        <div class="card-body">
-          <div class="case-topline">
-            <span class="case-tag">Argentina</span>
-            <span class="case-tag">Industrial</span>
-            <span class="case-tag">Producción</span>
+      <!-- ════ 5. INFA ════ -->
+      <article class="case-showcase fade-up" data-tags="operations apex">
+        <div class="showcase-grid">
+          <div class="showcase-visual" style="background-image: url('img/wp/2025/03/infa-taller-general-1.jpg');">
+            <div>
+              <div class="brand-mark">
+                <span class="brand-mark-ic">IN</span>
+                <span class="brand-mark-text">
+                  <strong>INFA</strong>
+                  <span>Industrial · Argentina</span>
+                </span>
+              </div>
+              <span class="country-chip">Argentina</span>
+            </div>
+            <div class="showcase-headline">
+              <h4>Producción en planta desde cualquier dispositivo.</h4>
+              <p>Gestión eficiente de proyectos industriales con seguimiento de tareas, planificación semanal automatizada y status desde el piso de planta.</p>
+            </div>
+            <div class="visual-stats">
+              <div><strong>Planta</strong><span>multi-device</span></div>
+              <div><strong>Semanal</strong><span>programa auto</span></div>
+              <div><strong>APEX</strong><span>Oracle native</span></div>
+            </div>
           </div>
-          <h3>INFA</h3>
-          <p>Gestión eficiente de proyectos de producción en planta con seguimiento de tareas desde múltiples dispositivos.</p>
-          <div class="case-points">
-            <div class="case-point"><span class="case-dot"></span><span>Estructuración del proyecto y planificación de fabricación.</span></div>
-            <div class="case-point"><span class="case-dot"></span><span>Programa de fabricación semanal automatizado.</span></div>
-            <div class="case-point"><span class="case-dot"></span><span>Status y horas remanentes desde piso de planta.</span></div>
+
+          <div class="showcase-body">
+            <div class="showcase-topline">
+              <span class="showcase-tag">Argentina</span>
+              <span class="showcase-tag">Industrial</span>
+              <span class="showcase-tag">Producción</span>
+              <span class="showcase-tag">Oracle APEX</span>
+            </div>
+            <h3>INFA</h3>
+            <p class="showcase-kicker">Gestión de producción con visibilidad desde el piso de planta.</p>
+            <p class="showcase-lead">
+              Estructuración de proyectos industriales, <strong>planificación semanal automatizada</strong> de fabricación y carga de status y horas remanentes desde el taller. Todo en una aplicación multi-dispositivo sobre Oracle APEX.
+            </p>
+            <div class="showcase-tech">
+              <strong>Stack técnico</strong>
+              Oracle APEX · Aplicación responsive multi-dispositivo · Motor de planificación semanal automatizada · Seguimiento de status desde piso de planta.
+            </div>
+            <div class="showcase-results">
+              <div><strong>Planificación</strong><span>Estructura de proyecto y fabricación automatizada.</span></div>
+              <div><strong>Piso de planta</strong><span>Carga de status y horas desde cualquier dispositivo.</span></div>
+              <div><strong>Programa semanal</strong><span>Generación automática del programa de fabricación.</span></div>
+              <div><strong>Control operativo</strong><span>Visibilidad completa del proceso productivo.</span></div>
+            </div>
+            <div class="showcase-actions">
+              <a href="https://wa.me/5493517870115?text=Hola%2C%20me%20interesa%20una%20solución%20similar%20a%20INFA" class="btn-primary" target="_blank" rel="noopener">Hablar sobre este caso →</a>
+              <a href="contacto.html?origen=success_stories&caso=infa" class="btn-ghost">Agendar demo</a>
+            </div>
           </div>
-          <a href="https://wa.me/5493517870115?text=Hola%2C%20me%20interesa%20una%20solución%20similar%20a%20INFA" class="card-cta" target="_blank" rel="noopener">Hablar sobre este caso →</a>
         </div>
       </article>
 
-      <article class="case-card" data-tags="operations apex">
-        <div class="card-media">
-          <img src="img/wp/2025/04/Screenshot_11.png" alt="MSPORT — Gestión de taller" />
+      <!-- ════ 6. MSPORT ════ -->
+      <article class="case-showcase fade-up" data-tags="operations apex">
+        <div class="showcase-grid">
+          <div class="showcase-visual" style="background-image: url('img/wp/2025/04/Screenshot_11.png');">
+            <div>
+              <div class="brand-mark">
+                <span class="brand-mark-ic">MS</span>
+                <span class="brand-mark-text">
+                  <strong>MSPORT</strong>
+                  <span>Servicios · Uruguay</span>
+                </span>
+              </div>
+              <span class="country-chip">Uruguay</span>
+            </div>
+            <div class="showcase-headline">
+              <h4>Gestión de taller con autorización del cliente en tiempo real.</h4>
+              <p>Órdenes de trabajo desde el taller y app cliente para aprobar o rechazar servicios con trazabilidad completa.</p>
+            </div>
+            <div class="visual-stats">
+              <div><strong>Taller</strong><span>digital</span></div>
+              <div><strong>App</strong><span>cliente final</span></div>
+              <div><strong>Real-time</strong><span>aprobación</span></div>
+            </div>
+          </div>
+
+          <div class="showcase-body">
+            <div class="showcase-topline">
+              <span class="showcase-tag">Uruguay</span>
+              <span class="showcase-tag">Servicios</span>
+              <span class="showcase-tag">Órdenes de trabajo</span>
+              <span class="showcase-tag">App cliente</span>
+            </div>
+            <h3>MSPORT</h3>
+            <p class="showcase-kicker">Taller y cliente conectados en un único flujo.</p>
+            <p class="showcase-lead">
+              Gestión central de <strong>órdenes de trabajo</strong> desde el taller más una app para que el cliente final apruebe o rechace servicios en tiempo real. Más transparencia, más confianza y trazabilidad completa del servicio.
+            </p>
+            <div class="showcase-tech">
+              <strong>Stack técnico</strong>
+              Oracle APEX · App responsive para cliente final · Flujo de aprobación bidireccional · Historial completo de cada orden de trabajo.
+            </div>
+            <div class="showcase-results">
+              <div><strong>Taller digital</strong><span>Órdenes gestionadas desde un único sistema central.</span></div>
+              <div><strong>App cliente</strong><span>Aprobación o rechazo del servicio en tiempo real.</span></div>
+              <div><strong>Transparencia</strong><span>Estado visible para ambos lados del proceso.</span></div>
+              <div><strong>Confianza</strong><span>Trazabilidad completa y auditable del servicio.</span></div>
+            </div>
+            <div class="showcase-actions">
+              <a href="https://wa.me/5493517870115?text=Hola%2C%20me%20interesa%20una%20solución%20similar%20a%20MSPORT" class="btn-primary" target="_blank" rel="noopener">Hablar sobre este caso →</a>
+              <a href="contacto.html?origen=success_stories&caso=msport" class="btn-ghost">Agendar demo</a>
+            </div>
+          </div>
         </div>
-        <div class="card-body">
-          <div class="case-topline">
-            <span class="case-tag">Uruguay</span>
-            <span class="case-tag">Servicios</span>
-            <span class="case-tag">Órdenes de trabajo</span>
+      </article>
+
+      <!-- ════ 7. FARMACIA SÁNCHEZ ANTONIOLLI — Supply ════ -->
+      <article class="case-showcase featured fade-up" data-tags="operations supply retail apex">
+        <div class="showcase-grid">
+          <div class="showcase-visual pharma"
+               style="background-image: url('img/wp/2026/04/farmacia-sanchez-antoniolli.webp');">
+            <div>
+              <div class="brand-mark">
+                <span class="brand-mark-ic pharma-cross">+</span>
+                <span class="brand-mark-text">
+                  <strong>SÁNCHEZ ANTONIOLLI</strong>
+                  <span>Farmacias · Desde 1985</span>
+                </span>
+              </div>
+              <span class="country-chip pharma-green">Córdoba, Argentina</span>
+            </div>
+
+            <div class="showcase-headline">
+              <h4>La cadena de farmacias que más creció en Córdoba.</h4>
+              <p>Inthegra SUPPLY transformó el abastecimiento de una red que gestiona más de cien mil productos entre fármacos, cosmética y supermercado.</p>
+            </div>
+
+            <div class="visual-stats pharma-stats">
+              <div><strong>+100K</strong><span>productos gestionados</span></div>
+              <div><strong>+60</strong><span>sucursales abastecidas</span></div>
+              <div><strong>SUPPLY</strong><span>+ WMS Quantio</span></div>
+            </div>
           </div>
-          <h3>MSPORT</h3>
-          <p>Gestión del taller y autorización de órdenes de trabajo con visibilidad en tiempo real también para el cliente final.</p>
-          <div class="case-points">
-            <div class="case-point"><span class="case-dot"></span><span>Gestión central de órdenes desde el taller.</span></div>
-            <div class="case-point"><span class="case-dot"></span><span>App cliente para aprobar o rechazar trabajos.</span></div>
-            <div class="case-point"><span class="case-dot"></span><span>Mayor confianza y trazabilidad del servicio.</span></div>
+
+          <div class="showcase-body">
+            <div class="showcase-topline">
+              <span class="showcase-tag featured-tag">Caso destacado</span>
+              <span class="showcase-tag">Argentina</span>
+              <span class="showcase-tag">Supply Chain</span>
+              <span class="showcase-tag">Retail Farmacéutico</span>
+              <span class="showcase-tag">ERP + WMS</span>
+            </div>
+            <h3>Farmacias Sánchez Antoniolli</h3>
+            <p class="showcase-kicker">Cómo SUPPLY transformó la gestión de abastecimiento de la cadena que más creció en Córdoba.</p>
+            <p class="showcase-lead">
+              La cadena reemplazó decenas de planillas Excel con más de 100.000 productos por
+              <strong>Inthegra SUPPLY</strong>, integrado al ERP y conectado vía
+              <strong>Web Services</strong> con el WMS de su Centro de Distribución (Quantio).
+              Análisis de demanda avanzado, reposición automática y un ciclo de compras orquestado desde una única plataforma.
+            </p>
+
+            <div class="showcase-quote">
+              "El volumen de información que manejábamos en Excel era inmanejable. Necesitábamos una solución que nos diera control, agilidad y precisión."
+              <cite>— Equipo de Logística, Farmacias Sánchez Antoniolli</cite>
+            </div>
+
+            <div class="showcase-results">
+              <div><strong>↑ Mayor disponibilidad</strong><span>Reducción significativa de quiebres de stock en toda la red.</span></div>
+              <div><strong>↓ Optimización de inventario</strong><span>Menos sobrestock, mejor rotación y rentabilidad.</span></div>
+              <div><strong>↑ Procesos ágiles</strong><span>Automatización total del ciclo de compras y reposición.</span></div>
+              <div><strong>↑ Escalabilidad real</strong><span>Plataforma preparada para acompañar el crecimiento de la cadena.</span></div>
+            </div>
+
+            <div class="showcase-actions">
+              <a href="contacto.html?interes=supply&origen=caso_exito_sanchez_antoniolli" class="btn-primary">Agendar demo →</a>
+              <a href="landing_erp_supply_chain.html" class="btn-ghost">Conocer SUPPLY</a>
+            </div>
           </div>
-          <a href="https://wa.me/5493517870115?text=Hola%2C%20me%20interesa%20una%20solución%20similar%20a%20MSPORT" class="card-cta" target="_blank" rel="noopener">Hablar sobre este caso →</a>
         </div>
       </article>
 
@@ -739,7 +1034,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="timeline-card">
         <div class="timeline-num">2</div>
         <h4>Solución implementada</h4>
-        <p>Aplicaciones web en Oracle APEX, integraciones con scoring, biometría, EBS y OCI. Roles por usuario, aprobaciones, notificaciones y reporting operativo.</p>
+        <p>Aplicaciones web en Oracle APEX, integraciones con scoring, biometría, EBS, WMS y OCI. Roles por usuario, aprobaciones, notificaciones y reporting operativo.</p>
       </div>
       <div class="timeline-card">
         <div class="timeline-num">3</div>
@@ -770,7 +1065,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="trust-card">
         <h4>Experiencia en múltiples industrias y países</h4>
-        <p>Proyectos en Argentina, México, Perú y Uruguay, en sectores tan distintos como finanzas, real estate, deporte e industria. La capacidad de adaptación es parte del valor.</p>
+        <p>Proyectos en Argentina, México, Perú y Uruguay, en sectores tan distintos como finanzas, real estate, deporte, industria y retail farmacéutico. La capacidad de adaptación es parte del valor.</p>
       </div>
       <div class="trust-card">
         <h4>Relaciones de largo plazo con los clientes</h4>
@@ -802,7 +1097,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 </main>
-<!-- ── FOOTER ─────────────────────────────────────────── -->
+
 <footer>
   <div class="container">
     <div class="footer-grid">
@@ -817,6 +1112,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="landing_healthcare.html">HealthCare</a>
         <a href="landing_credit_financial.html">Credit &amp; Financial</a>
         <a href="landing_erp.html">ERP para Retail &amp; Servicios</a>
+        <a href="landing_erp_supply_chain.html">Supply Chain</a>
       </div>
       <div class="footer-col">
         <h4>Servicios Oracle</h4>
@@ -841,41 +1137,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="footer-bottom">
       <span class="footer-copy">© 2026 Inthegra Software. Argentina &amp; Latam.</span>
       <div class="footer-social">
-        <a href="https://ar.linkedin.com/company/inthegra" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-        <a href="https://www.instagram.com/inthegra_software/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 100-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 11-2.88 0 1.441 1.441 0 012.88 0z"/></svg></a>
-        <a href="https://www.facebook.com/inthegra.software" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+        <a href="https://ar.linkedin.com/company/inthegra" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width:20px;height:20px;fill:var(--muted);"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+        <a href="https://www.instagram.com/inthegra_software/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width:20px;height:20px;fill:var(--muted);"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 100-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 11-2.88 0 1.441 1.441 0 012.88 0z"/></svg></a>
+        <a href="https://www.facebook.com/inthegra.software" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width:20px;height:20px;fill:var(--muted);"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
       </div>
       <span class="footer-copy">Oracle Partner · Enterprise Software</span>
     </div>
   </div>
 </footer>
 
-<!-- ── WHATSAPP FLOAT ─────────────────────────────── -->
 <a href="https://wa.me/5493517870115" class="wa-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
   </svg>
 </a>
 
-<!-- ── SCRIPTS ────────────────────────────────────── -->
 <script>
-  // Scroll animations
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); } });
   }, { threshold: 0.10 });
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-  // Filters
   const filterBtns = document.querySelectorAll('.filter-btn');
-  const cards = document.querySelectorAll('.case-card');
+  const cases = document.querySelectorAll('.case-showcase');
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       const filter = btn.dataset.filter;
-      cards.forEach(card => {
-        const tags = card.dataset.tags || '';
-        card.classList.toggle('hidden', filter !== 'all' && !tags.includes(filter));
+      cases.forEach(c => {
+        const tags = c.dataset.tags || '';
+        c.classList.toggle('hidden', filter !== 'all' && !tags.includes(filter));
       });
     });
   });

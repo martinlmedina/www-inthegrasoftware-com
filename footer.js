@@ -287,7 +287,19 @@
       }
     });
 
-    /* 5. GA4 click tracking (local — nav.js's trackClicks ran before footer existed) */
+    /* 5. WhatsApp prefill: if the page sets <body data-wa-context="...">,
+          rebuild the WA href with that context so each landing carries its own
+          conversation-starter. Otherwise the generic default stays. */
+    var waCtx = (document.body.dataset.waContext || '').trim();
+    if (waCtx) {
+      var wa = footer.querySelector('.sf-wa');
+      if (wa) {
+        var msg = 'Hola, quiero m\u00E1s informaci\u00F3n sobre ' + waCtx;
+        wa.setAttribute('href', 'https://wa.me/5493517870115?text=' + encodeURIComponent(msg));
+      }
+    }
+
+    /* 6. GA4 click tracking (local — nav.js's trackClicks ran before footer existed) */
     footer.querySelectorAll('a[href*="wa.me"]').forEach(function (link) {
       link.addEventListener('click', function () {
         window.dataLayer = window.dataLayer || [];

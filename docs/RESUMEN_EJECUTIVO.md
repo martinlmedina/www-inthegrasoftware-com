@@ -1,21 +1,22 @@
 # Resumen Ejecutivo — inthegrasoftware.com
 
-**Fecha:** 20 de abril de 2026
+**Fecha:** 21 de abril de 2026
 **Version:** Sitio estatico HTML/CSS/JS — listo para go-live
 
 ---
 
 ## 1. Vision general
 
-Sitio web corporativo de Inthegra Software, 100% estatico (sin backend), con **29 paginas de produccion** + **12 articulos de blog**. Construido sobre HTML/CSS/JS puro, sin frameworks. Navegacion compartida via `nav.js`, sistema de diseno unificado via `common.css` y CSS custom properties.
+Sitio web corporativo de Inthegra Software, 100% estatico (sin backend), con **35 paginas de produccion** (incluye 12 articulos de blog). Construido sobre HTML/CSS/JS puro, sin frameworks. Navegacion y footer compartidos via `nav.js` y `footer.js`, sistema de diseno unificado via `common.css` y CSS custom properties.
 
 **Stack:**
 - HTML5 semantico con `<main>`, `<article>`, Open Graph, JSON-LD
 - CSS puro con custom properties (design tokens)
-- JavaScript vanilla (nav.js como componente compartido)
+- JavaScript vanilla (nav.js + footer.js como componentes compartidos, IIFE pattern)
 - Google Tag Manager + GA4 + Google Ads conversion tracking
 - Meta Pixel (Facebook) con evento `Lead` en submit del formulario
 - Formulario de contacto conectado a Google Apps Script (Sheet + email)
+- WhatsApp prefill por pagina via `<body data-wa-context="...">` leido por `footer.js`
 
 ---
 
@@ -28,7 +29,16 @@ Sitio web corporativo de Inthegra Software, 100% estatico (sin backend), con **2
 | Hub de Productos | index_productos.html | Indice con los 3 productos |
 | HealthCare | landing_healthcare.html | ERP para prepagas, obras sociales, clinicas, emergencias, medicina laboral, internacion domiciliaria. Clientes: SIPSSA, EMI, Alta Salud, Roster, INDOM, YIOS |
 | Credit & Financial | landing_credit_financial.html | Plataforma de prestamos, tarjetas no bancarizadas, cobranzas. Clientes: Elebar, Sucredito, La Zonal, Grupo Dilfer, Noacard |
-| ERP / Business Suite | landing_erp.html | ERP para retail minorista, mayorista y servicios. Modulos: WMS, POS, ecommerce, analytics |
+| ERP / Business Suite | landing_erp.html | ERP para retail minorista, mayorista y servicios. Hub del producto |
+
+### Modulos ERP (4 landings, enlazados desde el mega-panel del nav)
+
+| Pagina | Archivo | Que cubre |
+|--------|---------|-----------|
+| Supply Chain | landing_erp_supply_chain.html | Planificacion, compras y abastecimiento |
+| Warehouse Management (WMS) | landing_erp_wms.html | Gestion de depositos y logistica |
+| Ecommerce Platform | landing_erp_ecommerce.html | Tiendas online integradas al ERP (storefront + stock en vivo) |
+| People Care (RRHH) | landing_erp_people_care.html | Liquidacion, legajos y desarrollo de talento |
 
 ### Servicios Oracle (5 landings + 1 hub)
 
@@ -57,6 +67,13 @@ Sitio web corporativo de Inthegra Software, 100% estatico (sin backend), con **2
 | People & Culture | people_culture.html | Equipo, cultura, hiring |
 | Casos de Exito | success_stories.html | JAVER, Valle Fertil SA, Federacion Peruana de Futbol, Sidecreer, INFA, MSPORT |
 
+### Legales (2 paginas)
+
+| Pagina | Archivo | Que cubre |
+|--------|---------|-----------|
+| Politica de Privacidad | privacidad.html | Tratamiento de datos personales, GA4/Pixel/Apps Script como procesadores, Ley 25.326, derechos ARCO |
+| Terminos y Condiciones | terminos.html | Uso del sitio, propiedad intelectual, enlaces de terceros, jurisdiccion Cordoba |
+
 ### Blog (1 hub + 12 articulos)
 
 | Articulo | Fecha publicacion |
@@ -79,9 +96,9 @@ Sitio web corporativo de Inthegra Software, 100% estatico (sin backend), con **2
 | Archivo | Funcion |
 |---------|---------|
 | 404.html | Pagina de error custom (noindex) |
-| sitemap.xml | 29 URLs, actualizado 2026-04-12 |
+| sitemap.xml | 29 URLs (pendiente regenerar: faltan 4 modulos ERP + 2 legales) |
 | robots.txt | Allow all, referencia a sitemap |
-| llms.txt | Mapa del sitio para crawlers de IA |
+| llms.txt | Mapa del sitio para crawlers de IA (pendiente actualizar con las nuevas paginas) |
 
 ---
 
@@ -161,7 +178,8 @@ Sitio web corporativo de Inthegra Software, 100% estatico (sin backend), con **2
 
 | Componente | Archivo | Descripcion |
 |------------|---------|-------------|
-| Navegacion | nav.js | IIFE que inyecta header sticky con dropdowns, mobile accordion, GA4 events |
+| Navegacion | nav.js | IIFE que inyecta header sticky con dropdowns, mega-panel ERP de 2 columnas, mobile accordion, GA4 events |
+| Footer + WhatsApp | footer.js | IIFE que inyecta footer unificado (5 columnas) y boton flotante de WhatsApp. Lee `data-wa-context` del `<body>` para personalizar el prefill por pagina |
 | Design tokens | common.css | Variables CSS, reset, tipografia, componentes base |
 | Background SVGs | Product.svg, Services.svg, Solutions.svg, Inthegra.svg | Graficos decorativos por seccion, opacity 0.10-0.16 |
 
@@ -174,6 +192,11 @@ Productos
   ├── HealthCare
   ├── Credit & Financial
   └── ERP para Retail & Servicios
+       └── [mega-panel 2 columnas]
+            ├── Supply Chain
+            ├── Warehouse Management (WMS)
+            ├── Ecommerce Platform
+            └── People Care (RRHH)
 
 Servicios Oracle
   ├── Modernizacion Forms
@@ -210,7 +233,7 @@ Resumen:
 
 ## 8. Issues bloqueantes para produccion
 
-**Ninguno.** El formulario de contacto ya apunta al Apps Script desplegado (commit `1c56e17`, 2026-04-20) y se validó el flujo end-to-end (submission → Google Sheet → email de notificacion).
+**Ninguno.** El formulario de contacto ya apunta al Apps Script desplegado (commit `1c56e17`, 2026-04-20) y se validó el flujo end-to-end (submission → Google Sheet → email de notificacion). El footer fue unificado en `footer.js` (commit `8caedf5`, 2026-04-21) y las paginas legales (privacidad, terminos) fueron publicadas (commit `0688489`, 2026-04-21), cerrando los links rotos del footer.
 
 **Documentacion de referencia:**
 - Backend del formulario: `docs/SETUP_CONTACTO_BACKEND.md`
@@ -227,6 +250,9 @@ Resumen:
 |------|---------|----------|
 | ~~Deployar Apps Script~~ | ~~Configurar backend del formulario de contacto~~ | ✅ Hecho 2026-04-20 |
 | ~~Integrar Meta Pixel~~ | ~~Instalar pixel de Facebook + evento Lead en formulario~~ | ✅ Hecho 2026-04-20 |
+| ~~Unificar footer~~ | ~~Reemplazar footers hardcoded por `footer.js` compartido~~ | ✅ Hecho 2026-04-21 |
+| ~~Publicar paginas legales~~ | ~~Crear privacidad.html y terminos.html (links del footer)~~ | ✅ Hecho 2026-04-21 |
+| Regenerar sitemap.xml y llms.txt | Agregar las 6 paginas nuevas (4 modulos ERP + 2 legales) | Dev — 30 min |
 | Configurar GTM triggers | Crear triggers para form_submit, whatsapp_click en GTM y conectar con GA4 goals. [Guía](SETUP_TRACKING_SEO.md#1-gtm-triggers--ga4-goals) | Marketing — 2 horas |
 | Configurar Meta Events Manager | Verificar llegada de `PageView` y `Lead`, crear audiencias de remarketing. [Guía](SETUP_TRACKING_SEO.md#2-meta-events-manager) | Marketing — 1 hora |
 | Google Search Console | Verificar propiedad via GTM, enviar sitemap. [Guía](SETUP_TRACKING_SEO.md#3-google-search-console) | Marketing/IT — 30 min |
@@ -272,17 +298,18 @@ Resumen:
 
 | Metrica | Valor |
 |---------|-------|
-| Total paginas produccion | 29 + 12 blog = 41 |
+| Total paginas produccion | 23 top-level + 12 blog = 35 |
 | Peso total del sitio | ~4.5 MB (sin PDF brochure de 28 MB) |
-| Paginas con SEO completo | 29/29 (100%) |
-| Paginas con GTM | 30/30 (100%, incluye 404) |
-| Paginas con Meta Pixel | 30/30 (100%, incluye 404) |
+| Paginas con SEO completo | 35/35 (100%) |
+| Paginas con GTM | 36/36 (100%, incluye 404) |
+| Paginas con Meta Pixel | 36/36 (100%, incluye 404) |
+| Footer unificado | 33/33 paginas via `footer.js` |
 | Formulario de contacto | Activo (Apps Script → Google Sheet + email) |
-| Links rotos en navegacion | 0/18 |
-| Archivos JS en produccion | 1 (nav.js — limpio, sin console.log) |
+| Links rotos en navegacion | 0/22 |
+| Archivos JS en produccion | 2 (nav.js, footer.js — limpios, sin console.log) |
 | Issues bloqueantes | 0 |
 | SSL | Pendiente (Let's Encrypt al deployar) |
 
 ---
 
-*Documento actualizado el 20 de abril de 2026. Basado en auditoria del repositorio martinlmedina/www-inthegrasoftware-com, branch master, commit `1c56e17`.*
+*Documento actualizado el 21 de abril de 2026. Basado en auditoria del repositorio martinlmedina/www-inthegrasoftware-com, branch master, commit `6e3f8da`.*

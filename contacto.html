@@ -437,6 +437,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <input type="text" id="cf-company" name="company" placeholder="Tu empresa" autocomplete="organization" />
             </div>
           </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-role">Cargo</label>
+              <input type="text" id="cf-role" name="role" placeholder="Tu cargo o rol" autocomplete="organization-title" />
+            </div>
+            <div class="form-group">
+              <label for="cf-phone">Teléfono</label>
+              <input type="tel" id="cf-phone" name="phone" placeholder="+54 9 351 ..." autocomplete="tel" inputmode="tel" />
+            </div>
+          </div>
           <div class="form-group">
             <label for="cf-email">Email</label>
             <input type="email" id="cf-email" name="email" required placeholder="tu@empresa.com" autocomplete="email" />
@@ -545,6 +555,8 @@ function submitForm(e) {
   var data = {
     name:        document.getElementById('cf-name').value.trim(),
     company:     document.getElementById('cf-company').value.trim(),
+    role:        document.getElementById('cf-role').value.trim(),
+    phone:       document.getElementById('cf-phone').value.trim(),
     email:       document.getElementById('cf-email').value.trim(),
     interest:    document.getElementById('cf-interest').value,
     message:     document.getElementById('cf-message').value.trim(),

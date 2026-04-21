@@ -172,6 +172,89 @@
       padding-right: 36px;
     }
     .form-group select option { background: #0f1830; color: var(--text); }
+
+    /* ── Custom dropdown (replaces native select visually) ── */
+    .cf-dd-native { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; opacity: 0; pointer-events: none; }
+    .cf-dd { position: relative; width: 100%; }
+    .cf-dd-trigger {
+      width: 100%;
+      display: flex; align-items: center; justify-content: space-between;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(30,50,87,.7);
+      border-radius: 10px;
+      padding: 12px 14px;
+      color: var(--text);
+      font-size: 14px;
+      font-family: inherit;
+      cursor: pointer;
+      text-align: left;
+      transition: border-color .18s;
+    }
+    .cf-dd-trigger:focus { outline: none; border-color: var(--brand); }
+    .cf-dd.open .cf-dd-trigger { border-color: var(--brand); }
+    .cf-dd-trigger[aria-disabled="true"] { opacity: .55; cursor: not-allowed; }
+    .cf-dd-label { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .cf-dd-label.placeholder { color: var(--muted); }
+    .cf-dd-chev { width: 16px; height: 16px; flex-shrink: 0; margin-left: 10px; transition: transform .2s; }
+    .cf-dd.open .cf-dd-chev { transform: rotate(180deg); }
+
+    .cf-dd-panel {
+      position: absolute; top: calc(100% + 6px); left: 0; right: 0;
+      background: #0b162d;
+      border: 1px solid rgba(30,50,87,.9);
+      border-radius: 12px;
+      padding: 6px 0;
+      max-height: 340px;
+      overflow-y: auto;
+      box-shadow: 0 20px 50px rgba(0,0,0,.45);
+      z-index: 40;
+    }
+    .cf-dd-panel[hidden] { display: none; }
+    .cf-dd-panel::-webkit-scrollbar { width: 8px; }
+    .cf-dd-panel::-webkit-scrollbar-track { background: transparent; }
+    .cf-dd-panel::-webkit-scrollbar-thumb { background: rgba(255,255,255,.08); border-radius: 4px; }
+
+    .cf-dd-group { padding: 2px 0; }
+    .cf-dd-group-head {
+      display: flex; align-items: center; gap: 10px;
+      padding: 9px 14px 8px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--brand);
+      background: linear-gradient(90deg,
+        color-mix(in srgb, var(--brand) 26%, transparent) 0%,
+        color-mix(in srgb, var(--brand) 10%, transparent) 45%,
+        color-mix(in srgb, var(--brand) 3%, transparent) 75%,
+        transparent 100%);
+      border-top: 1px solid color-mix(in srgb, var(--brand) 20%, transparent);
+      border-bottom: 1px solid color-mix(in srgb, var(--brand) 10%, transparent);
+      user-select: none;
+    }
+    .cf-dd-group:first-child .cf-dd-group-head { border-top: none; }
+    .cf-dd-group-logo { width: 18px; height: 18px; flex-shrink: 0; }
+
+    .cf-dd-option {
+      padding: 10px 14px 10px 30px;
+      font-size: 14px;
+      color: var(--text);
+      cursor: pointer;
+      transition: background-color .12s, color .12s;
+    }
+    .cf-dd-option[data-root="1"] { padding-left: 14px; border-top: 1px solid rgba(30,50,87,.5); margin-top: 4px; color: var(--text-2); }
+    .cf-dd-option:hover,
+    .cf-dd-option.focused {
+      background: rgba(255,255,255,.05);
+    }
+    .cf-dd-option.selected {
+      background: color-mix(in srgb, var(--brand) 18%, transparent);
+      color: #fff;
+    }
+    .cf-dd-group:nth-child(1) .cf-dd-option.selected { background: color-mix(in srgb, #179dca 22%, transparent); }
+    .cf-dd-group:nth-child(2) .cf-dd-option.selected { background: color-mix(in srgb, #e72863 22%, transparent); }
+    .cf-dd-group:nth-child(3) .cf-dd-option.selected { background: color-mix(in srgb, #a603fc 22%, transparent); }
+
     .form-submit {
       width: 100%; padding: 14px; border: none; border-radius: 12px;
       background: linear-gradient(135deg, #ff7200, #ff4d8f);
@@ -359,8 +442,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <input type="email" id="cf-email" name="email" required placeholder="tu@empresa.com" autocomplete="email" />
           </div>
           <div class="form-group">
-            <label for="cf-interest">Interés</label>
-            <select id="cf-interest" name="interest">
+            <label for="cf-interest" id="cf-interest-label">Interés</label>
+            <select id="cf-interest" name="interest" class="cf-dd-native" aria-hidden="true" tabindex="-1">
               <option value="">Seleccioná un área</option>
               <optgroup label="Productos">
                 <option value="healthcare">HealthCare</option>
@@ -385,6 +468,50 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </optgroup>
               <option value="otro">Otro</option>
             </select>
+            <div class="cf-dd" id="cf-dd" data-for="cf-interest">
+              <button type="button" class="cf-dd-trigger" id="cf-dd-trigger"
+                      aria-haspopup="listbox" aria-expanded="false" aria-controls="cf-dd-panel"
+                      aria-labelledby="cf-interest-label cf-dd-label-text">
+                <span class="cf-dd-label placeholder" id="cf-dd-label-text">Seleccioná un área</span>
+                <svg class="cf-dd-chev" viewBox="0 0 24 24" fill="none" stroke="#7294bb" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>
+              </button>
+              <div class="cf-dd-panel" id="cf-dd-panel" role="listbox" aria-label="Interés" hidden>
+                <div class="cf-dd-group" style="--brand:#179dca">
+                  <div class="cf-dd-group-head">
+                    <img src="Logo_Products_Isologo.svg" alt="" class="cf-dd-group-logo" aria-hidden="true">
+                    <span>Productos</span>
+                  </div>
+                  <div class="cf-dd-option" role="option" data-value="healthcare">HealthCare</div>
+                  <div class="cf-dd-option" role="option" data-value="credit">Credit &amp; Financial</div>
+                  <div class="cf-dd-option" role="option" data-value="erp">ERP Retail &amp; Servicios</div>
+                  <div class="cf-dd-option" role="option" data-value="supply">ERP · Supply Chain</div>
+                  <div class="cf-dd-option" role="option" data-value="wms">ERP · Warehouse Management (WMS)</div>
+                  <div class="cf-dd-option" role="option" data-value="ecommerce">ERP · Ecommerce</div>
+                  <div class="cf-dd-option" role="option" data-value="people-care">ERP · People Care (RRHH)</div>
+                </div>
+                <div class="cf-dd-group" style="--brand:#e72863">
+                  <div class="cf-dd-group-head">
+                    <img src="Logo_Services_Isologo.svg" alt="" class="cf-dd-group-logo" aria-hidden="true">
+                    <span>Servicios Oracle</span>
+                  </div>
+                  <div class="cf-dd-option" role="option" data-value="modernizacion">Modernización Oracle Forms</div>
+                  <div class="cf-dd-option" role="option" data-value="oci">Oracle Cloud (OCI)</div>
+                  <div class="cf-dd-option" role="option" data-value="desarrollo">Desarrollo a Medida</div>
+                  <div class="cf-dd-option" role="option" data-value="analytics">Oracle Analytics</div>
+                  <div class="cf-dd-option" role="option" data-value="ai">Production AI</div>
+                </div>
+                <div class="cf-dd-group" style="--brand:#a603fc">
+                  <div class="cf-dd-group-head">
+                    <img src="Logo_Solutions_Isologo.svg" alt="" class="cf-dd-group-logo" aria-hidden="true">
+                    <span>Soluciones</span>
+                  </div>
+                  <div class="cf-dd-option" role="option" data-value="crm">CRM Enterprise</div>
+                  <div class="cf-dd-option" role="option" data-value="chatbot">AI Chatbot</div>
+                  <div class="cf-dd-option" role="option" data-value="automations">Automatización &amp; Orquestación</div>
+                </div>
+                <div class="cf-dd-option" role="option" data-value="otro" data-root="1">Otro</div>
+              </div>
+            </div>
           </div>
           <div class="form-group">
             <label for="cf-message">Mensaje</label>
@@ -444,6 +571,8 @@ function submitForm(e) {
     btn.textContent = '✓ Consulta enviada — te contactamos pronto';
     btn.style.background = 'linear-gradient(135deg, #36d399, #1eb87a)';
     form.querySelectorAll('input, select, textarea').forEach(function (el) { el.disabled = true; });
+    var ddTrig = document.getElementById('cf-dd-trigger');
+    if (ddTrig) { ddTrig.disabled = true; ddTrig.setAttribute('aria-disabled', 'true'); }
 
     // GA4 conversion event via dataLayer
     window.dataLayer = window.dataLayer || [];
@@ -465,6 +594,103 @@ function submitForm(e) {
   return false;
 }
 
+/* ── Custom dropdown widget for #cf-interest ── */
+(function () {
+  var sel     = document.getElementById('cf-interest');
+  var dd      = document.getElementById('cf-dd');
+  var trigger = document.getElementById('cf-dd-trigger');
+  var panel   = document.getElementById('cf-dd-panel');
+  var labelEl = document.getElementById('cf-dd-label-text');
+  if (!sel || !dd || !trigger || !panel || !labelEl) return;
+
+  var options = Array.prototype.slice.call(panel.querySelectorAll('.cf-dd-option'));
+  var focusIdx = -1;
+
+  function placeholderText() { return sel.options[0] ? sel.options[0].text : 'Seleccioná un área'; }
+
+  function syncLabelFromSelect() {
+    var v = sel.value;
+    options.forEach(function (el) { el.classList.toggle('selected', el.getAttribute('data-value') === v); });
+    if (!v) {
+      labelEl.textContent = placeholderText();
+      labelEl.classList.add('placeholder');
+    } else {
+      var opt = options.find(function (el) { return el.getAttribute('data-value') === v; });
+      labelEl.textContent = opt ? opt.textContent : (sel.options[sel.selectedIndex] ? sel.options[sel.selectedIndex].text : '');
+      labelEl.classList.remove('placeholder');
+    }
+  }
+
+  function openPanel() {
+    panel.hidden = false;
+    dd.classList.add('open');
+    trigger.setAttribute('aria-expanded', 'true');
+    var selectedEl = options.find(function (el) { return el.classList.contains('selected'); });
+    focusIdx = selectedEl ? options.indexOf(selectedEl) : -1;
+    setFocused(focusIdx);
+    if (selectedEl) selectedEl.scrollIntoView({ block: 'nearest' });
+  }
+  function closePanel() {
+    panel.hidden = true;
+    dd.classList.remove('open');
+    trigger.setAttribute('aria-expanded', 'false');
+    setFocused(-1);
+  }
+  function togglePanel() { panel.hidden ? openPanel() : closePanel(); }
+
+  function setFocused(idx) {
+    options.forEach(function (el, i) { el.classList.toggle('focused', i === idx); });
+    focusIdx = idx;
+  }
+  function moveFocus(delta) {
+    var n = options.length;
+    if (n === 0) return;
+    var next = focusIdx < 0 ? (delta > 0 ? 0 : n - 1) : (focusIdx + delta + n) % n;
+    setFocused(next);
+    options[next].scrollIntoView({ block: 'nearest' });
+  }
+  function selectOption(el) {
+    if (!el) return;
+    var v = el.getAttribute('data-value');
+    if (sel.value !== v) {
+      sel.value = v;
+      sel.dispatchEvent(new Event('change', { bubbles: true }));
+    }
+    closePanel();
+    trigger.focus();
+  }
+
+  trigger.addEventListener('click', function (e) { e.preventDefault(); togglePanel(); });
+  trigger.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowDown' || e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      if (panel.hidden) openPanel(); else moveFocus(1);
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      if (panel.hidden) openPanel(); else moveFocus(-1);
+    } else if (e.key === 'Escape') {
+      if (!panel.hidden) { e.preventDefault(); closePanel(); }
+    }
+  });
+  panel.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowDown') { e.preventDefault(); moveFocus(1); }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); moveFocus(-1); }
+    else if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); if (focusIdx >= 0) selectOption(options[focusIdx]); }
+    else if (e.key === 'Escape') { e.preventDefault(); closePanel(); trigger.focus(); }
+    else if (e.key === 'Tab') { closePanel(); }
+  });
+  options.forEach(function (el) {
+    el.addEventListener('click', function () { selectOption(el); });
+    el.addEventListener('mouseenter', function () { setFocused(options.indexOf(el)); });
+  });
+  document.addEventListener('click', function (e) {
+    if (!panel.hidden && !dd.contains(e.target)) closePanel();
+  });
+  sel.addEventListener('change', syncLabelFromSelect);
+
+  syncLabelFromSelect();
+})();
+
 /* ── URL params → form pre-fill ── */
 (function () {
   var params = new URLSearchParams(window.location.search);
@@ -477,6 +703,7 @@ function submitForm(e) {
       for (var i = 0; i < sel.options.length; i++) {
         if (sel.options[i].value === interes) {
           sel.selectedIndex = i;
+          sel.dispatchEvent(new Event('change', { bubbles: true }));
           break;
         }
       }
@@ -491,16 +718,21 @@ function submitForm(e) {
   if (utm) document.getElementById('field-utm').value = utm;
 
   var labels = {
-    healthcare: 'HealthCare ERP',
+    healthcare: 'HealthCare',
     credit: 'Credit & Financial',
-    erp: 'Retail & Distribución',
+    erp: 'ERP Retail & Servicios',
+    supply: 'ERP · Supply Chain',
+    wms: 'ERP · Warehouse Management (WMS)',
+    ecommerce: 'ERP · Ecommerce',
+    'people-care': 'ERP · People Care (RRHH)',
     modernizacion: 'Modernización Oracle Forms',
     oci: 'Oracle Cloud (OCI)',
     desarrollo: 'Desarrollo a Medida',
     analytics: 'Oracle Analytics',
     ai: 'Production AI',
     crm: 'CRM Enterprise',
-    chatbot: 'AI Chatbot'
+    chatbot: 'AI Chatbot',
+    automations: 'Automatización & Orquestación'
   };
 
   if (interes && labels[interes]) {

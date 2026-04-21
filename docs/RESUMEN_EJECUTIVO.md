@@ -241,6 +241,7 @@ Resumen:
 - Backend del formulario: `docs/SETUP_CONTACTO_BACKEND.md`
 - Deploy de infraestructura: `docs/DEPLOY_INFRAESTRUCTURA.md`
 - Setup de tracking y SEO post-deploy: `docs/SETUP_TRACKING_SEO.md`
+- Checklist para agregar/modificar una unidad de negocio: `docs/CHECKLIST_PRODUCTO.md`
 
 ---
 

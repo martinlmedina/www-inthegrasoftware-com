@@ -1,5 +1,20 @@
 [
   {
+    "slug": "que-es-oracle-analytics-cloud",
+    "title": "¿Qué es Oracle Analytics Cloud y por qué es clave para tu estrategia de datos?",
+    "excerpt": "En muchas organizaciones los datos existen, pero no están conectados ni se transforman en decisiones. Oracle Analytics Cloud (OAC) unifica integración, analítica, visualización e IA en una sola plataforma.",
+    "category": "oracle",
+    "categoryLabel": "Oracle Technology",
+    "image": "img/wp/2026/04/Imagen-newsletter-OAC.webp",
+    "readTime": "6",
+    "date": "22 abril 2026",
+    "author": "Equipo OAC",
+    "featured": false,
+    "file": "blog/que-es-oracle-analytics-cloud.html",
+    "wpUrl": "",
+    "tags": ["oracle", "oac", "analytics", "bi", "datos"]
+  },
+  {
     "slug": "desarrollo-de-soluciones-de-software-a-medida",
     "title": "Desarrollo de soluciones de software a medida: cuándo conviene, qué evaluar y cómo escalar sin perder control.",
     "excerpt": "Muchas empresas crecen más rápido que sus sistemas. En ese punto, el desarrollo a medida deja de ser una idea táctica y se convierte en una decisión estratégica.",

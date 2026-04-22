@@ -159,7 +159,7 @@
 
         /* Column 1: Brand */
         '<div class="sf-brand">',
-          '<img src="logo-header.svg" alt="Inthegra Software">',
+          '<img src="/logo-header.svg" alt="Inthegra Software">',
           '<p>Oracle-native enterprise software y AI para escalar con control en Argentina y Latam.</p>',
         '</div>',
 
@@ -167,41 +167,41 @@
         '<div class="sf-col">',
           '<h4>Productos</h4>',
           '<div class="sf-subhead">Plataformas</div>',
-          '<a href="landing_healthcare.html">HealthCare</a>',
-          '<a href="landing_credit_financial.html">Credit &amp; Financial</a>',
-          '<a href="landing_erp.html">ERP Retail &amp; Servicios</a>',
+          '<a href="/landing_healthcare.html">HealthCare</a>',
+          '<a href="/landing_credit_financial.html">Credit &amp; Financial</a>',
+          '<a href="/landing_erp.html">ERP Retail &amp; Servicios</a>',
           '<div class="sf-subhead">M\u00F3dulos ERP</div>',
-          '<a href="landing_erp_supply_chain.html">Supply Chain</a>',
-          '<a href="landing_erp_wms.html">Warehouse (WMS)</a>',
-          '<a href="landing_erp_ecommerce.html">Ecommerce</a>',
-          '<a href="landing_erp_people_care.html">People Care</a>',
+          '<a href="/landing_erp_supply_chain.html">Supply Chain</a>',
+          '<a href="/landing_erp_wms.html">Warehouse (WMS)</a>',
+          '<a href="/landing_erp_ecommerce.html">Ecommerce</a>',
+          '<a href="/landing_erp_people_care.html">People Care</a>',
         '</div>',
 
         /* Column 3: Servicios Oracle */
         '<div class="sf-col">',
           '<h4>Servicios Oracle</h4>',
-          '<a href="landing_modernizacion.html">Modernizaci\u00F3n Forms</a>',
-          '<a href="landing_oci.html">Oracle Cloud (OCI)</a>',
-          '<a href="landing_desarrollo_medida.html">Desarrollo a Medida</a>',
-          '<a href="landing_oac.html">Oracle Analytics</a>',
-          '<a href="landing_production_ai.html">Production AI</a>',
+          '<a href="/landing_modernizacion.html">Modernizaci\u00F3n Forms</a>',
+          '<a href="/landing_oci.html">Oracle Cloud (OCI)</a>',
+          '<a href="/landing_desarrollo_medida.html">Desarrollo a Medida</a>',
+          '<a href="/landing_oac.html">Oracle Analytics</a>',
+          '<a href="/landing_production_ai.html">Production AI</a>',
         '</div>',
 
         /* Column 4: Soluciones */
         '<div class="sf-col">',
           '<h4>Soluciones</h4>',
-          '<a href="solutions_crm.html">CRM Enterprise</a>',
-          '<a href="solutions_ai_chatbot.html">AI Chatbot</a>',
-          '<a href="solutions_automations.html">Automatización &amp; Orquestación</a>',
+          '<a href="/solutions_crm.html">CRM Enterprise</a>',
+          '<a href="/solutions_ai_chatbot.html">AI Chatbot</a>',
+          '<a href="/solutions_automations.html">Automatización &amp; Orquestación</a>',
         '</div>',
 
         /* Column 5: Empresa */
         '<div class="sf-col">',
           '<h4>Empresa</h4>',
-          '<a href="people_culture.html">People &amp; Culture</a>',
-          '<a href="success_stories.html">Casos de \u00C9xito</a>',
-          '<a href="blog.html">Blog</a>',
-          '<a href="contacto.html">Contacto</a>',
+          '<a href="/people_culture.html">People &amp; Culture</a>',
+          '<a href="/success_stories.html">Casos de \u00C9xito</a>',
+          '<a href="/blog.html">Blog</a>',
+          '<a href="/contacto.html">Contacto</a>',
         '</div>',
 
       '</div>', /* /sf-grid */
@@ -225,8 +225,8 @@
         '<p class="sf-strip">Oracle Partner \u00B7 Enterprise Software</p>',
 
         '<div class="sf-legal">',
-          '<a href="privacidad.html">Privacidad</a>',
-          '<a href="terminos.html">T\u00E9rminos</a>',
+          '<a href="/privacidad.html">Privacidad</a>',
+          '<a href="/terminos.html">T\u00E9rminos</a>',
         '</div>',
 
       '</div>', /* /sf-bottom */

@@ -55,19 +55,19 @@
       'height:34px;width:auto;display:block;margin-bottom:16px;',
     '}',
     '#site-footer .sf-brand p{',
-      'font-size:13px;line-height:1.65;color:#7d9ac4;max-width:32ch;margin:0;',
+      'font-size:13px;line-height:1.65;color:#95acc8;max-width:32ch;margin:0;',
     '}',
 
     /* Column heading */
     '#site-footer .sf-col h4{',
       'font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;',
-      'color:#7d9ac4;margin:0 0 16px;',
+      'color:#95acc8;margin:0 0 16px;',
     '}',
 
     /* Subgroup heading inside a column */
     '#site-footer .sf-subhead{',
       'font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;',
-      'color:#7d9ac4;opacity:.75;margin:14px 0 8px;',
+      'color:#95acc8;margin:14px 0 8px;',
     '}',
     '#site-footer .sf-subhead:first-child{margin-top:0;}',
 
@@ -88,16 +88,16 @@
       'flex-wrap:wrap;gap:16px;',
     '}',
     '#site-footer .sf-copy{',
-      'font-size:12px;color:#7d9ac4;margin:0;',
+      'font-size:12px;color:#95acc8;margin:0;',
     '}',
     '#site-footer .sf-strip{',
-      'font-size:12px;color:#7d9ac4;margin:0;',
+      'font-size:12px;color:#95acc8;margin:0;',
     '}',
     '#site-footer .sf-legal{',
       'display:flex;gap:16px;',
     '}',
     '#site-footer .sf-legal a{',
-      'font-size:12px;color:#7d9ac4;text-decoration:none;transition:color .18s;',
+      'font-size:12px;color:#95acc8;text-decoration:none;transition:color .18s;',
     '}',
     '#site-footer .sf-legal a:hover{color:#2dd4bf;}',
 

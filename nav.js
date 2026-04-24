@@ -540,14 +540,26 @@
     header.id = 'site-nav';
     header.innerHTML = NAV_HTML;
 
-    /* 3. Fix relative hrefs: resolve against nav.js location so links work
-          from any subdirectory and any deploy base path (e.g. GitHub Pages) */
+    /* 3. Fix hrefs/srcs so links work from any deploy base path
+          (prod root AND subpath deploys like GitHub Pages). */
     if (NAV_BASE) {
-      header.querySelectorAll('a[href]').forEach(function(a) {
-        var href = a.getAttribute('href');
-        if (href && !href.match(/^(https?:|#|\/)/)) {
-          a.setAttribute('href', NAV_BASE + href);
+      var basePath = '/';
+      try { basePath = new URL(NAV_BASE).pathname; } catch (e) {}
+      var rebase = function (v) {
+        if (!v) return v;
+        if (/^(https?:|mailto:|tel:|#|\/\/|data:)/.test(v)) return v;
+        if (v.charAt(0) === '/') {
+          /* Root-absolute: rebase under deploy prefix (no-op at prod root). */
+          return basePath === '/' ? v : basePath + v.substring(1);
         }
+        /* Relative: prepend deploy prefix. */
+        return basePath + v;
+      };
+      header.querySelectorAll('a[href]').forEach(function (a) {
+        a.setAttribute('href', rebase(a.getAttribute('href')));
+      });
+      header.querySelectorAll('img[src]').forEach(function (img) {
+        img.setAttribute('src', rebase(img.getAttribute('src')));
       });
     }
 

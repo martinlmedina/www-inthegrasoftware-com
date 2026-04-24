@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es-AR">
 <head>
-  <!-- Deferred third-party tags: GTM + Facebook Pixel load on first user interaction (or 10s fallback) -->
+  <!-- Deferred third-party tags: GTM + Facebook Pixel load on first user interaction (or 30s fallback) -->
   <script>
   (function() {
     var fired = false;
@@ -14,10 +14,19 @@
       !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
       fbq('init', '1226651955694155');
       fbq('track', 'PageView');
+      // Google Ads gtag — defer to first interaction too (was the biggest TBT offender on desktop)
+      var gtagScript = document.createElement('script');
+      gtagScript.async = true;
+      gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=AW-16670573573';
+      document.head.appendChild(gtagScript);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = window.gtag || function(){dataLayer.push(arguments);};
+      gtag('js', new Date());
+      gtag('config', 'AW-16670573573');
     }
-    var evts = ['scroll','keydown','mousemove','touchstart','pointerdown','visibilitychange'];
+    var evts = ['scroll','keydown','touchstart','pointerdown','click'];
     evts.forEach(function(e) { window.addEventListener(e, load3rdParty, {once:true, passive:true}); });
-    setTimeout(load3rdParty, 10000);
+    setTimeout(load3rdParty, 30000);
   })();
   </script>
   <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1226651955694155&ev=PageView&noscript=1" alt=""/></noscript>
@@ -526,14 +535,6 @@ img { max-width: 100%; display: block; }
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRT4B92N"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<!-- Global site tag (gtag.js) - Google Ads -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16670573573"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-16670573573');
-</script>
 
 <div class="page-spacer"></div>
 

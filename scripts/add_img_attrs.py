@@ -23,6 +23,7 @@ from PIL import Image
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 IMG_RE = re.compile(r'<img\b([^>]*?)/?>', re.DOTALL)
+HEADER_RE = re.compile(r'<header[^>]*>.*?</header>', re.DOTALL)
 ATTR_RE = re.compile(r'(\w[\w-]*)\s*=\s*"([^"]*)"')
 ATTR_RE_SQ = re.compile(r"(\w[\w-]*)\s*=\s*'([^']*)'")
 
@@ -126,8 +127,20 @@ def process_file(path: pathlib.Path, dry_run: bool) -> int:
     text = path.read_text(encoding='utf-8')
     updates = 0
 
+    # Collect <img> spans inside <header>...</header> so we skip them —
+    # nav.js replaces the <header> entirely on load, so lazy-loading the
+    # placeholder logo is semantically wrong (and triggers a useless fetch
+    # if the browser paints before nav.js runs).
+    skip_spans = []
+    for hm in HEADER_RE.finditer(text):
+        for im in IMG_RE.finditer(hm.group(0)):
+            skip_spans.append((hm.start() + im.start(), hm.start() + im.end()))
+
     def replace(m: re.Match) -> str:
         nonlocal updates
+        for start, end in skip_spans:
+            if m.start() == start and m.end() == end:
+                return m.group(0)
         new = process_img(m, path)
         if new != m.group(0):
             updates += 1

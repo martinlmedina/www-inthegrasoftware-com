@@ -10,7 +10,7 @@ touchstart / pointerdown / visibilitychange) keeps them fully out of the
 LCP+TBT measurement window for users who bounce, and still triggers for
 real users as soon as they engage.
 
-10s setTimeout fallback ensures tracking fires for background tabs that
+30s setTimeout fallback ensures tracking fires for background tabs that
 never get focus, so we don't zero out pageview data.
 
 Idempotent: skips files that already contain the fired-guard marker.
@@ -32,7 +32,7 @@ OLD = """  <!-- Deferred third-party tags: GTM + Facebook Pixel load after windo
   });
   </script>"""
 
-NEW = """  <!-- Deferred third-party tags: GTM + Facebook Pixel load on first user interaction (or 10s fallback) -->
+NEW = """  <!-- Deferred third-party tags: GTM + Facebook Pixel load on first user interaction (or 30s fallback) -->
   <script>
   (function() {
     var fired = false;
@@ -46,9 +46,9 @@ NEW = """  <!-- Deferred third-party tags: GTM + Facebook Pixel load on first us
       fbq('init', '1226651955694155');
       fbq('track', 'PageView');
     }
-    var evts = ['scroll','keydown','mousemove','touchstart','pointerdown','visibilitychange'];
+    var evts = ['scroll','keydown','touchstart','pointerdown','click'];
     evts.forEach(function(e) { window.addEventListener(e, load3rdParty, {once:true, passive:true}); });
-    setTimeout(load3rdParty, 10000);
+    setTimeout(load3rdParty, 30000);
   })();
   </script>"""
 

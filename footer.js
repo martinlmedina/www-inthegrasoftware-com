@@ -260,21 +260,24 @@
     footer.id = 'site-footer';
     footer.innerHTML = FOOTER_HTML;
 
-    /* 3. Rewrite relative hrefs against FOOTER_BASE so links work
-          from subdirectories (e.g. /blog/*.html). */
+    /* 3. Rewrite hrefs/srcs so links work from any deploy base path
+          (prod root AND subpath deploys like GitHub Pages). */
     if (FOOTER_BASE) {
+      var basePath = '/';
+      try { basePath = new URL(FOOTER_BASE).pathname; } catch (e) {}
+      var rebase = function (v) {
+        if (!v) return v;
+        if (/^(https?:|mailto:|tel:|#|\/\/|data:)/.test(v)) return v;
+        if (v.charAt(0) === '/') {
+          return basePath === '/' ? v : basePath + v.substring(1);
+        }
+        return basePath + v;
+      };
       footer.querySelectorAll('a[href]').forEach(function (a) {
-        var href = a.getAttribute('href');
-        if (href && !href.match(/^(https?:|mailto:|tel:|#|\/)/)) {
-          a.setAttribute('href', FOOTER_BASE + href);
-        }
+        a.setAttribute('href', rebase(a.getAttribute('href')));
       });
-      /* Also rewrite <img src> for the logo */
       footer.querySelectorAll('img[src]').forEach(function (img) {
-        var src = img.getAttribute('src');
-        if (src && !src.match(/^(https?:|data:|\/)/)) {
-          img.setAttribute('src', FOOTER_BASE + src);
-        }
+        img.setAttribute('src', rebase(img.getAttribute('src')));
       });
     }
 

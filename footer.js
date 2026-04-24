@@ -159,7 +159,7 @@
 
         /* Column 1: Brand */
         '<div class="sf-brand">',
-          '<img src="/logo-header.svg" alt="Inthegra Software">',
+          '<img src="/logo-header.svg" alt="Inthegra Software" fetchpriority="high">',
           '<p>Oracle-native enterprise software y AI para escalar con control en Argentina y Latam.</p>',
         '</div>',
 

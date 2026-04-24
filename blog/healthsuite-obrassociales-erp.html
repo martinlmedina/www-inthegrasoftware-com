@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="es-AR">
 <head>
-  <!-- Deferred third-party tags: GTM + Facebook Pixel load after window.onload -->
+  <!-- Deferred third-party tags: GTM + Facebook Pixel load on first user interaction (or 10s fallback) -->
   <script>
-  window.addEventListener('load', function() {
-    // Google Tag Manager
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TRT4B92N');
-    // Facebook Pixel
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1226651955694155');
-    fbq('track', 'PageView');
-  });
+  (function() {
+    var fired = false;
+    function load3rdParty() {
+      if (fired) return;
+      fired = true;
+      // Google Tag Manager
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TRT4B92N');
+      // Facebook Pixel
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1226651955694155');
+      fbq('track', 'PageView');
+    }
+    var evts = ['scroll','keydown','mousemove','touchstart','pointerdown','visibilitychange'];
+    evts.forEach(function(e) { window.addEventListener(e, load3rdParty, {once:true, passive:true}); });
+    setTimeout(load3rdParty, 10000);
+  })();
   </script>
   <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1226651955694155&ev=PageView&noscript=1" alt=""/></noscript>
   <meta charset="UTF-8" />
@@ -54,7 +62,172 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="../common.css" />
+  <style data-inlined="common">
+/* ══════════════════════════════════════════════════════════
+   Inthegra Software — Shared Styles (common.css)
+   Design tokens, reset, typography, components, layout
+══════════════════════════════════════════════════════════ */
+
+/* ── Design Tokens ── */
+:root {
+  --bg:        #0F2043;
+  --bg-deep:   #08111f;
+  --bg-panel:  #0f1830;
+  --bg-card:   #121f3d;
+  --line:      #243a61;
+  --line-2:    #2e4a7a;
+  --text:      #eef4ff;
+  --text-2:    #c0d4f0;
+  --muted:     #7d9ac4;
+  --brand:     #55a3ff;
+  --brand-2:   #7c5cff;
+  --green:     #35d39b;
+  --teal:      #2dd4bf;
+  --gold:      #ffd166;
+  --ai:        #a78bfa;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+
+/* ── Container ── */
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* ── Section ── */
+.section { padding: 96px 0; }
+.section + .section,
+.section-sep { border-top: 1px solid rgba(36,58,97,.4); }
+.section-relative { position: relative; overflow: hidden; }
+.section-relative > .container { position: relative; z-index: 1; }
+
+/* ── Typography ── */
+.section-title {
+  font-size: clamp(30px, 4vw, 44px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -.025em;
+  margin-bottom: 18px;
+}
+.section-desc {
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 72ch;
+}
+.gradient-text {
+  background: linear-gradient(135deg, #fff 15%, var(--brand) 55%, var(--green) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Eyebrow ── */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(85,163,255,.3);
+  background: rgba(85,163,255,.08);
+  color: var(--brand);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+.dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* ── Buttons ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1.5px solid transparent;
+  transition: all .25s;
+  font-family: inherit;
+}
+.btn:hover { transform: translateY(-2px); }
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  color: #fff;
+  box-shadow: 0 8px 28px rgba(85,163,255,.3);
+}
+.btn-primary:hover {
+  box-shadow: 0 12px 40px rgba(85,163,255,.5);
+}
+
+.btn-ghost {
+  background: rgba(255,255,255,.05);
+  border-color: var(--line-2);
+  color: var(--text-2);
+}
+.btn-ghost:hover {
+  border-color: var(--brand);
+  color: var(--brand);
+  background: rgba(85,163,255,.08);
+}
+
+/* ── Background Graphics ── */
+.bg-graphic {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  user-select: none;
+}
+
+/* WhatsApp float and footer styles live in footer.js (scoped under #site-footer). */
+
+/* ── Animations ── */
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.fade-up.in,
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Responsive ── */
+@media (max-width: 1100px) {
+  .container { padding: 0 24px; }
+}
+@media (max-width: 768px) {
+  .section { padding: 64px 0; }
+  .section-title { font-size: 28px; }
+  .container { padding: 0 20px; }
+  .bg-graphic { display: none; }
+}
+
+  </style>
   <link rel="preload" as="image" href="/logo-header.svg" fetchpriority="high">
   <script src="../nav.js" defer></script>
   <script src="../footer.js" defer></script>

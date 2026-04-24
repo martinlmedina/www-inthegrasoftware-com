@@ -377,7 +377,6 @@ Crear `.github/workflows/deploy.yml` para deploy automatico en cada push a maste
 - [ ] WhatsApp float abre chat correcto
 - [ ] SVGs de fondo cargan (inspeccionar con DevTools > Network)
 - [ ] Imagenes de WordPress cargan (las que usan wp-content/uploads/)
-- [ ] PDF del brochure descarga (`/img_solutions/BROCHURE CRM.pdf`)
 
 ### SEO
 - [ ] `https://inthegrasoftware.com/sitemap.xml` accesible

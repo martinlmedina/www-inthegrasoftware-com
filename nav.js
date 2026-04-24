@@ -279,7 +279,7 @@
       /* Logo */
       '<div class="sn-logo">',
         '<a href="/">',
-          '<img src="/logo-header.svg" alt="Inthegra Software" />',
+          '<img src="/logo-header.svg" alt="Inthegra Software" fetchpriority="high" />',
         '</a>',
       '</div>',
 

@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="es-AR">
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-TRT4B92N');</script>
-  <!-- End Google Tag Manager -->
-  <!-- Facebook Pixel Code -->
+  <!-- Deferred third-party tags: GTM + Facebook Pixel load after window.onload -->
   <script>
-  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1226651955694155');
-  fbq('track', 'PageView');
+  window.addEventListener('load', function() {
+    // Google Tag Manager
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TRT4B92N');
+    // Facebook Pixel
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1226651955694155');
+    fbq('track', 'PageView');
+  });
   </script>
-  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1226651955694155&ev=PageView&noscript=1"/></noscript>
-  <!-- End Facebook Pixel Code -->
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1226651955694155&ev=PageView&noscript=1" alt=""/></noscript>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Contactá al equipo de Inthegra Software. Formulario de consulta, WhatsApp y email. Oracle Partner certificado con 23 años de experiencia en Argentina y Latam." />
@@ -38,7 +35,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="common.css" />
-  <script src="nav.js"></script>
+  <script src="nav.js" defer></script>
   <script src="footer.js" defer></script>
 
   <style>
@@ -387,21 +384,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
           </a>
           <a href="mailto:comercial@inthegrasoftware.com" class="contact-channel">
-            <span class="ch-icon" style="background:rgba(255,114,0,.08);border:1px solid rgba(255,114,0,.18)"><img src="img/logos/Logo_Inthegra_Isologo.svg" alt="" width="22" height="22" style="display:block;" /></span>
+            <span class="ch-icon" style="background:rgba(255,114,0,.08);border:1px solid rgba(255,114,0,.18)"><img src="img/logos/Logo_Inthegra_Isologo.svg" alt="" width="22" height="22" style="display:block;" loading="lazy" decoding="async" /></span>
             <div class="ch-text">
               <strong>comercial@inthegrasoftware.com</strong>
               <span>Consultas comerciales y ventas</span>
             </div>
           </a>
           <a href="mailto:productos@inthegrasoftware.com" class="contact-channel">
-            <span class="ch-icon" style="background:rgba(23,157,202,.08);border:1px solid rgba(23,157,202,.18)"><img src="img/logos/Logo_Products_Isologo.svg" alt="" width="22" height="22" style="display:block;" /></span>
+            <span class="ch-icon" style="background:rgba(23,157,202,.08);border:1px solid rgba(23,157,202,.18)"><img src="img/logos/Logo_Products_Isologo.svg" alt="" width="22" height="22" style="display:block;" loading="lazy" decoding="async" /></span>
             <div class="ch-text">
               <strong>productos@inthegrasoftware.com</strong>
               <span>Productos y soluciones enterprise</span>
             </div>
           </a>
           <a href="mailto:servicios@inthegrasoftware.com" class="contact-channel">
-            <span class="ch-icon" style="background:rgba(231,40,99,.08);border:1px solid rgba(231,40,99,.18)"><img src="img/logos/Logo_Services_Isologo.svg" alt="" width="22" height="22" style="display:block;" /></span>
+            <span class="ch-icon" style="background:rgba(231,40,99,.08);border:1px solid rgba(231,40,99,.18)"><img src="img/logos/Logo_Services_Isologo.svg" alt="" width="22" height="22" style="display:block;" loading="lazy" decoding="async" /></span>
             <div class="ch-text">
               <strong>servicios@inthegrasoftware.com</strong>
               <span>Servicios Oracle y consultoría</span>
@@ -488,7 +485,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="cf-dd-panel" id="cf-dd-panel" role="listbox" aria-label="Interés" hidden>
                 <div class="cf-dd-group" style="--brand:#179dca">
                   <div class="cf-dd-group-head">
-                    <img src="Logo_Products_Isologo.svg" alt="" class="cf-dd-group-logo" aria-hidden="true">
+                    <img src="Logo_Products_Isologo.svg" alt="" class="cf-dd-group-logo" aria-hidden="true" loading="lazy" decoding="async">
                     <span>Productos</span>
                   </div>
                   <div class="cf-dd-option" role="option" data-value="healthcare">HealthCare</div>
@@ -501,7 +498,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
                 <div class="cf-dd-group" style="--brand:#e72863">
                   <div class="cf-dd-group-head">
-                    <img src="Logo_Services_Isologo.svg" alt="" class="cf-dd-group-logo" aria-hidden="true">
+                    <img src="Logo_Services_Isologo.svg" alt="" class="cf-dd-group-logo" aria-hidden="true" loading="lazy" decoding="async">
                     <span>Servicios Oracle</span>
                   </div>
                   <div class="cf-dd-option" role="option" data-value="modernizacion">Modernización Oracle Forms</div>
@@ -512,7 +509,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
                 <div class="cf-dd-group" style="--brand:#a603fc">
                   <div class="cf-dd-group-head">
-                    <img src="Logo_Solutions_Isologo.svg" alt="" class="cf-dd-group-logo" aria-hidden="true">
+                    <img src="Logo_Solutions_Isologo.svg" alt="" class="cf-dd-group-logo" aria-hidden="true" loading="lazy" decoding="async">
                     <span>Soluciones</span>
                   </div>
                   <div class="cf-dd-option" role="option" data-value="crm">CRM Enterprise</div>

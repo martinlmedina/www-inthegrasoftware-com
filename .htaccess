@@ -1,0 +1,74 @@
+AddDefaultCharset UTF-8
+RewriteEngine On
+
+# ─── WebP auto-serve: si el browser acepta webp y existe foo.png.webp, servirlo ───
+<IfModule mod_rewrite.c>
+  RewriteCond %{HTTP_ACCEPT} image/webp
+  RewriteCond %{REQUEST_FILENAME} \.(png|jpe?g)$
+  RewriteCond %{REQUEST_FILENAME}.webp -f
+  RewriteRule ^ %{REQUEST_URI}.webp [T=image/webp,E=accept:1,L]
+</IfModule>
+
+RewriteRule ^$ /index.html [L]
+
+RewriteRule ^productos/?$ /index_productos.html [L]
+RewriteRule ^productos/healthcare/?$ /landing_healthcare.html [L]
+RewriteRule ^productos/credit-financial/?$ /landing_credit_financial.html [L]
+RewriteRule ^productos/retail/?$ /landing_erp.html [L]
+
+RewriteRule ^servicios-oracle/?$ /index_services.html [L]
+RewriteRule ^servicios-oracle/modernizacion/?$ /landing_modernizacion.html [L]
+RewriteRule ^servicios-oracle/oci/?$ /landing_oci.html [L]
+RewriteRule ^servicios-oracle/desarrollo-medida/?$ /landing_desarrollo_medida.html [L]
+RewriteRule ^servicios-oracle/analytics/?$ /landing_oac.html [L]
+RewriteRule ^servicios-oracle/production-ai/?$ /landing_production_ai.html [L]
+
+RewriteRule ^soluciones/crm/?$ /solutions_crm.html [L]
+RewriteRule ^soluciones/ai-chatbot/?$ /solutions_ai_chatbot.html [L]
+
+RewriteRule ^equipo/?$ /people_culture.html [L]
+RewriteRule ^casos-de-exito/?$ /success_stories.html [L]
+RewriteRule ^contacto/?$ /contacto.html [L]
+
+RewriteRule ^blog/?$ /blog.html [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^blog/(.+)$ /blog/$1 [L]
+
+RewriteRule ^docs/ - [F,L]
+RewriteRule ^(mock_|mockup-|home_oldversion|view-source_) - [F,L]
+
+ErrorDocument 404 /404.html
+
+# ─── Compresión Brotli (preferido) + Gzip (fallback) ───
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/css text/javascript application/javascript application/json image/svg+xml application/xml
+</IfModule>
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/javascript application/javascript application/json image/svg+xml application/xml
+</IfModule>
+
+# ─── Cache: 1 año para estáticos, 0 para HTML ───
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html                 "access plus 0 seconds"
+  ExpiresByType text/css                  "access plus 1 year"
+  ExpiresByType application/javascript    "access plus 1 year"
+  ExpiresByType text/javascript           "access plus 1 year"
+  ExpiresByType image/svg+xml             "access plus 1 year"
+  ExpiresByType image/webp                "access plus 1 year"
+  ExpiresByType image/avif                "access plus 1 year"
+  ExpiresByType image/png                 "access plus 1 year"
+  ExpiresByType image/jpeg                "access plus 1 year"
+  ExpiresByType image/x-icon              "access plus 1 year"
+  ExpiresByType font/woff2                "access plus 1 year"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(css|js|svg|webp|avif|png|jpe?g|ico|woff2)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+  Header append Vary Accept env=accept
+</IfModule>

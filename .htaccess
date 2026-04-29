@@ -9,6 +9,110 @@ RewriteEngine On
   RewriteRule ^ %{REQUEST_URI}.webp [T=image/webp,E=accept:1,L]
 </IfModule>
 
+# ─── 301: archivos .html → URL limpia (canónica) ───
+# Usa THE_REQUEST para que sólo dispare cuando el cliente pidió la URL .html literal,
+# no cuando los rewrites internos de abajo la generaron.
+RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+RewriteRule ^ / [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+index_productos\.html[\s?] [NC]
+RewriteRule ^ /productos/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+landing_healthcare\.html[\s?] [NC]
+RewriteRule ^ /productos/healthcare/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+landing_credit_financial\.html[\s?] [NC]
+RewriteRule ^ /productos/credit-financial/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+landing_erp\.html[\s?] [NC]
+RewriteRule ^ /productos/retail/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+landing_erp_supply_chain\.html[\s?] [NC]
+RewriteRule ^ /productos/retail/supply-chain/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+landing_erp_wms\.html[\s?] [NC]
+RewriteRule ^ /productos/retail/wms/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+landing_erp_ecommerce\.html[\s?] [NC]
+RewriteRule ^ /productos/retail/ecommerce/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+landing_erp_people_care\.html[\s?] [NC]
+RewriteRule ^ /productos/retail/people-care/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+index_services\.html[\s?] [NC]
+RewriteRule ^ /servicios-oracle/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+landing_modernizacion\.html[\s?] [NC]
+RewriteRule ^ /servicios-oracle/modernizacion/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+landing_oci\.html[\s?] [NC]
+RewriteRule ^ /servicios-oracle/oci/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+landing_desarrollo_medida\.html[\s?] [NC]
+RewriteRule ^ /servicios-oracle/desarrollo-medida/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+landing_oac\.html[\s?] [NC]
+RewriteRule ^ /servicios-oracle/analytics/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+landing_production_ai\.html[\s?] [NC]
+RewriteRule ^ /servicios-oracle/production-ai/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+solutions_crm\.html[\s?] [NC]
+RewriteRule ^ /soluciones/crm/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+solutions_ai_chatbot\.html[\s?] [NC]
+RewriteRule ^ /soluciones/ai-chatbot/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+solutions_automations\.html[\s?] [NC]
+RewriteRule ^ /soluciones/automatizaciones/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+people_culture\.html[\s?] [NC]
+RewriteRule ^ /equipo/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+success_stories\.html[\s?] [NC]
+RewriteRule ^ /casos-de-exito/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+contacto\.html[\s?] [NC]
+RewriteRule ^ /contacto/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+blog\.html[\s?] [NC]
+RewriteRule ^ /blog/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+privacidad\.html[\s?] [NC]
+RewriteRule ^ /privacidad/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+terminos\.html[\s?] [NC]
+RewriteRule ^ /terminos/ [R=301,L]
+
+# ─── 301: URLs legacy específicas de Inthegra → URLs nuevas (mapeadas desde Search Console) ───
+RewriteRule ^erp-creditos/?$ /productos/credit-financial/ [R=301,L]
+RewriteRule ^salud-erp/?$ /productos/healthcare/ [R=301,L]
+RewriteRule ^nosotros/?$ /equipo/ [R=301,L]
+RewriteRule ^people-culture/?$ /equipo/ [R=301,L]
+RewriteRule ^crm/?$ /soluciones/crm/ [R=301,L]
+RewriteRule ^casos-de-valor(/.*)?$ /casos-de-exito/? [R=301,L]
+
+# 410 Gone: /en/ root (basura del WP viejo, NO subrutas para no chocar con futura i18n)
+RewriteRule ^en/?$ - [G,L]
+
+# ─── 410 Gone: URLs legacy genéricas de WordPress (sitio anterior) ───
+# Le dice a Google "olvidá esto del índice, no va a volver".
+# Patrones específicos de URLs legacy de Inthegra se agregarán en una segunda
+# pasada cuando se mapee el CSV de Search Console.
+RewriteRule ^category(/.*)?$ - [G,L]
+RewriteRule ^tag(/.*)?$ - [G,L]
+RewriteRule ^author(/.*)?$ - [G,L]
+RewriteRule ^feed/?$ - [G,L]
+RewriteRule ^comments/feed/?$ - [G,L]
+RewriteRule ^wp-(content|admin|includes|json|login\.php).* - [G,L]
+RewriteRule ^xmlrpc\.php$ - [G,L]
+RewriteRule ^wp-sitemap.*\.xml$ - [G,L]
+
+# ?p=N y ?page_id=N (permalinks viejos de WP basados en query string)
+RewriteCond %{QUERY_STRING} ^p=[0-9]+(&.*)?$ [OR]
+RewriteCond %{QUERY_STRING} ^page_id=[0-9]+(&.*)?$
+RewriteRule ^$ - [G,L]
+
 RewriteRule ^$ /index.html [L]
 
 RewriteRule ^productos/?$ /index_productos.html [L]

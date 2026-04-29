@@ -15,6 +15,10 @@ RewriteRule ^productos/?$ /index_productos.html [L]
 RewriteRule ^productos/healthcare/?$ /landing_healthcare.html [L]
 RewriteRule ^productos/credit-financial/?$ /landing_credit_financial.html [L]
 RewriteRule ^productos/retail/?$ /landing_erp.html [L]
+RewriteRule ^productos/retail/ecommerce/?$ /landing_erp_ecommerce.html [L]
+RewriteRule ^productos/retail/people-care/?$ /landing_erp_people_care.html [L]
+RewriteRule ^productos/retail/supply-chain/?$ /landing_erp_supply_chain.html [L]
+RewriteRule ^productos/retail/wms/?$ /landing_erp_wms.html [L]
 
 RewriteRule ^servicios-oracle/?$ /index_services.html [L]
 RewriteRule ^servicios-oracle/modernizacion/?$ /landing_modernizacion.html [L]
@@ -25,10 +29,13 @@ RewriteRule ^servicios-oracle/production-ai/?$ /landing_production_ai.html [L]
 
 RewriteRule ^soluciones/crm/?$ /solutions_crm.html [L]
 RewriteRule ^soluciones/ai-chatbot/?$ /solutions_ai_chatbot.html [L]
+RewriteRule ^soluciones/automatizaciones/?$ /solutions_automations.html [L]
 
 RewriteRule ^equipo/?$ /people_culture.html [L]
 RewriteRule ^casos-de-exito/?$ /success_stories.html [L]
 RewriteRule ^contacto/?$ /contacto.html [L]
+RewriteRule ^privacidad/?$ /privacidad.html [L]
+RewriteRule ^terminos/?$ /terminos.html [L]
 
 RewriteRule ^blog/?$ /blog.html [L]
 RewriteCond %{REQUEST_FILENAME} !-f

@@ -8,36 +8,36 @@ Inthegra Software develops enterprise platforms built on Oracle technology for h
 
 ## Products
 
-- [HealthCare Suite](https://inthegrasoftware.com/landing_healthcare.html): ERP for healthcare — prepaid medicine, social security, occupational health, home care. Clients include SIPSSA, EMI, Alta Salud.
-- [Credit & Financial Suite](https://inthegrasoftware.com/landing_credit_financial.html): Platform for loans and credit card management. Clients include Elebar, Sucredito, La Zonal.
-- [ERP for Retail & Services](https://inthegrasoftware.com/landing_erp.html): Business suite for retail, wholesale, and services. Hub of the ERP product.
-  - [Supply Chain](https://inthegrasoftware.com/landing_erp_supply_chain.html): Planning, purchasing, and procurement module.
-  - [Warehouse Management (WMS)](https://inthegrasoftware.com/landing_erp_wms.html): Warehouse and logistics operations.
-  - [Ecommerce Platform](https://inthegrasoftware.com/landing_erp_ecommerce.html): Online storefront integrated with ERP catalog, stock, and pricing.
-  - [People Care (HR)](https://inthegrasoftware.com/landing_erp_people_care.html): Payroll, employee records, and talent development.
+- [HealthCare Suite](https://inthegrasoftware.com/productos/healthcare/): ERP for healthcare — prepaid medicine, social security, occupational health, home care. Clients include SIPSSA, EMI, Alta Salud.
+- [Credit & Financial Suite](https://inthegrasoftware.com/productos/credit-financial/): Platform for loans and credit card management. Clients include Elebar, Sucredito, La Zonal.
+- [ERP for Retail & Services](https://inthegrasoftware.com/productos/retail/): Business suite for retail, wholesale, and services. Hub of the ERP product.
+  - [Supply Chain](https://inthegrasoftware.com/productos/retail/supply-chain/): Planning, purchasing, and procurement module.
+  - [Warehouse Management (WMS)](https://inthegrasoftware.com/productos/retail/wms/): Warehouse and logistics operations.
+  - [Ecommerce Platform](https://inthegrasoftware.com/productos/retail/ecommerce/): Online storefront integrated with ERP catalog, stock, and pricing.
+  - [People Care (HR)](https://inthegrasoftware.com/productos/retail/people-care/): Payroll, employee records, and talent development.
 
 ## Oracle Services
 
-- [Oracle Forms Modernization](https://inthegrasoftware.com/landing_modernizacion.html): Migration from Oracle Forms to Oracle APEX.
-- [Oracle Cloud Infrastructure (OCI)](https://inthegrasoftware.com/landing_oci.html): Cloud migration and managed infrastructure.
-- [Oracle Analytics Cloud (OAC)](https://inthegrasoftware.com/landing_oac.html): Business intelligence and analytics implementation.
-- [Production AI](https://inthegrasoftware.com/landing_production_ai.html): AI integration for enterprise processes.
-- [Custom Development](https://inthegrasoftware.com/landing_desarrollo_medida.html): Bespoke Oracle APEX application development.
+- [Oracle Forms Modernization](https://inthegrasoftware.com/servicios-oracle/modernizacion/): Migration from Oracle Forms to Oracle APEX.
+- [Oracle Cloud Infrastructure (OCI)](https://inthegrasoftware.com/servicios-oracle/oci/): Cloud migration and managed infrastructure.
+- [Oracle Analytics Cloud (OAC)](https://inthegrasoftware.com/servicios-oracle/analytics/): Business intelligence and analytics implementation.
+- [Production AI](https://inthegrasoftware.com/servicios-oracle/production-ai/): AI integration for enterprise processes.
+- [Custom Development](https://inthegrasoftware.com/servicios-oracle/desarrollo-medida/): Bespoke Oracle APEX application development.
 
 ## Solutions
 
-- [CRM](https://inthegrasoftware.com/solutions_crm.html): Customer relationship management.
-- [AI Chatbot](https://inthegrasoftware.com/solutions_ai_chatbot.html): Intelligent conversational assistants for enterprises.
-- [Process Automation & Orchestration](https://inthegrasoftware.com/solutions_automations.html): Enterprise workflow automation powered by n8n on Oracle Cloud Infrastructure. Integrates ERP, CRM, WhatsApp, and AI agents.
+- [CRM](https://inthegrasoftware.com/soluciones/crm/): Customer relationship management.
+- [AI Chatbot](https://inthegrasoftware.com/soluciones/ai-chatbot/): Intelligent conversational assistants for enterprises.
+- [Process Automation & Orchestration](https://inthegrasoftware.com/soluciones/automatizaciones/): Enterprise workflow automation powered by n8n on Oracle Cloud Infrastructure. Integrates ERP, CRM, WhatsApp, and AI agents.
 
 ## Other Pages
 
-- [Contact](https://inthegrasoftware.com/contacto.html): Contact form and information.
-- [Team & Culture](https://inthegrasoftware.com/people_culture.html): Company culture and team.
-- [Success Stories](https://inthegrasoftware.com/success_stories.html): Client case studies.
-- [Blog](https://inthegrasoftware.com/blog.html): Technical articles on Oracle, healthcare IT, and enterprise software.
+- [Contact](https://inthegrasoftware.com/contacto/): Contact form and information.
+- [Team & Culture](https://inthegrasoftware.com/equipo/): Company culture and team.
+- [Success Stories](https://inthegrasoftware.com/casos-de-exito/): Client case studies.
+- [Blog](https://inthegrasoftware.com/blog/): Technical articles on Oracle, healthcare IT, and enterprise software.
 
 ## Legal
 
-- [Privacy Policy](https://inthegrasoftware.com/privacidad.html): Data handling disclosure, GDPR-equivalent under Argentine Law 25.326.
-- [Terms and Conditions](https://inthegrasoftware.com/terminos.html): Site usage terms, intellectual property, and jurisdiction.
+- [Privacy Policy](https://inthegrasoftware.com/privacidad/): Data handling disclosure, GDPR-equivalent under Argentine Law 25.326.
+- [Terms and Conditions](https://inthegrasoftware.com/terminos/): Site usage terms, intellectual property, and jurisdiction.

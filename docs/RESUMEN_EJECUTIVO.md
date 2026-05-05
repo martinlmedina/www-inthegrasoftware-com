@@ -1,20 +1,20 @@
 # Resumen Ejecutivo — inthegrasoftware.com
 
-**Fecha:** 21 de abril de 2026
-**Version:** Sitio estatico HTML/CSS/JS — listo para go-live
+**Fecha:** 5 de mayo de 2026
+**Version:** Sitio en produccion — sprint SEO tecnico + performance optimization cerrados
 
 ---
 
 ## 1. Vision general
 
-Sitio web corporativo de Inthegra Software, 100% estatico (sin backend), con **36 paginas de produccion** (incluye 12 articulos de blog). Construido sobre HTML/CSS/JS puro, sin frameworks. Navegacion y footer compartidos via `nav.js` y `footer.js`, sistema de diseno unificado via `common.css` y CSS custom properties.
+Sitio web corporativo de Inthegra Software, 100% estatico (sin backend), con **37 paginas en sitemap** (23 top-level + 13 articulos de blog + home). Construido sobre HTML/CSS/JS puro, sin frameworks. Navegacion y footer compartidos via `nav.js` y `footer.js`, sistema de diseno unificado via `common.css` y CSS custom properties.
 
 **Stack:**
-- HTML5 semantico con `<main>`, `<article>`, Open Graph, JSON-LD
-- CSS puro con custom properties (design tokens)
+- HTML5 semantico con `<main>`, `<article>`, Open Graph, Twitter cards, JSON-LD enriquecido, hreflang stub
+- CSS puro con custom properties (design tokens). `common.css` inline en `<head>` para eliminar roundtrip critico
 - JavaScript vanilla (nav.js + footer.js como componentes compartidos, IIFE pattern)
-- Google Tag Manager + GA4 + Google Ads conversion tracking
-- Meta Pixel (Facebook) con evento `Lead` en submit del formulario
+- Apache + `.htaccess`: Brotli + Gzip, WebP auto-serve, cache 1 año immutable para estaticos, 0s para HTML
+- 3rd-party scripts (GTM, Meta Pixel, Google Ads gtag) deferidos a primera interaccion del usuario via `load3rdParty()` pattern
 - Formulario de contacto conectado a Google Apps Script (Sheet + email)
 - WhatsApp prefill por pagina via `<body data-wa-context="...">` leido por `footer.js`
 
@@ -75,60 +75,127 @@ Sitio web corporativo de Inthegra Software, 100% estatico (sin backend), con **3
 | Politica de Privacidad | privacidad.html | Tratamiento de datos personales, GA4/Pixel/Apps Script como procesadores, Ley 25.326, derechos ARCO |
 | Terminos y Condiciones | terminos.html | Uso del sitio, propiedad intelectual, enlaces de terceros, jurisdiccion Cordoba |
 
-### Blog (1 hub + 12 articulos)
+### Blog (1 hub + 13 articulos)
 
-| Articulo | Fecha publicacion |
-|----------|-------------------|
-| Desarrollo de soluciones de software a medida | 2026-04-12 |
-| Oracle Cloud Infrastructure: nube empresarial para sistemas criticos | 2026-03-18 |
-| Modernizacion: como actualizar sistemas sin perder lo que ya funciona | 2026-03-04 |
-| Desarrollo a medida: cuando la tecnologia se adapta al negocio | 2026-02-19 |
-| Oracle Cloud Infrastructure (OCI): Que es y por que tu empresa la necesita | 2026-02-04 |
-| Oracle Services: acompanamos la evolucion tecnologica de tu negocio | 2025-12-18 |
-| Eficiencia e integracion para Obras Sociales con Health Suite | 2025-10-29 |
-| Health Suite para Internacion Domiciliaria | 2025-10-22 |
-| Digitaliza tu gestion de medicina prepaga con Health Suite | 2025-10-15 |
-| Health Suite para medicina laboral | 2025-10-08 |
-| Health Suite: como Inthegra digitaliza la industria de la salud | 2025-10-02 |
-| Como un ERP transforma el retail | 2025-09-11 |
+| Articulo | Slug |
+|----------|------|
+| ¿Que es Oracle Analytics Cloud? | que-es-oracle-analytics-cloud |
+| Desarrollo de soluciones de software a medida | desarrollo-de-soluciones-de-software-a-medida |
+| Oracle Cloud Infrastructure: nube empresarial para sistemas criticos | oracle-cloud-infrastructure-sistemas-criticos |
+| Modernizacion: como actualizar sistemas sin perder lo que ya funciona | modernizacion-como-actualizar-sistemas |
+| Desarrollo a medida: cuando la tecnologia se adapta al negocio | desarrollo-a-medida-oracle-apex |
+| Oracle Cloud Infrastructure (OCI): Que es y por que tu empresa la necesita | oracle-cloud-infrastructure-beneficios |
+| Oracle Services: acompanamos la evolucion tecnologica de tu negocio | oracle-services-inthegra |
+| Eficiencia e integracion para Obras Sociales con Health Suite | healthsuite-obrassociales-erp |
+| Health Suite para Internacion Domiciliaria | healthsuite-internacion-domiciliaria-erp |
+| Digitaliza tu gestion de medicina prepaga con Health Suite | healthsuite-medicina-prepaga-erp |
+| Health Suite para medicina laboral | healthsuitemedicinalaboral |
+| Health Suite: como Inthegra digitaliza la industria de la salud | erp-salud-beneficios-inthegra |
+| Como un ERP transforma el retail | erp-retail-inthegra |
 
-### Utilidad (3 archivos)
+### Utilidad
 
 | Archivo | Funcion |
 |---------|---------|
-| 404.html | Pagina de error custom (noindex) |
-| sitemap.xml | 36 URLs, actualizado 2026-04-21 (incluye 4 modulos ERP + 2 legales + automations) |
+| 404.html | Pagina de error custom (noindex), con meta description |
+| sitemap.xml | 37 URLs, lastmod 2026-05-04 |
 | robots.txt | Allow all, referencia a sitemap |
-| llms.txt | Mapa del sitio para crawlers de IA, actualizado 2026-04-21 |
+| llms.txt | Mapa del sitio para crawlers de IA |
+| .htaccess | Apache config: Brotli, cache, WebP auto-serve, 24 redirects 301 (URL limpia → .html), 6 redirects legacy WP, 9 reglas 410 Gone |
 
 ---
 
-## 3. SEO y metadatos — Estado actual
+## 3. SEO tecnico — Estado (cerrado el 2026-04-29)
 
 | Item | Estado | Cobertura |
 |------|--------|-----------|
-| Title tags | OK | 29/29 paginas |
-| Meta description | OK | 29/29 paginas |
-| Canonical URLs | OK | 29/29 paginas (URLs limpias con trailing slash) |
-| Open Graph (og:title, og:description, og:image, og:url) | OK | 29/29 paginas |
-| Twitter Cards | OK | 29/29 paginas |
-| JSON-LD structured data | OK | Organization en home, BreadcrumbList en landings, Article en blog |
-| Tag `<main>` | OK | 29/29 paginas |
-| robots.txt | OK | Creado |
-| sitemap.xml | OK | 29 URLs |
-| llms.txt | OK | Creado |
-| hreflang (i18n) | PENDIENTE | Solo español. Sin soporte multi-idioma aun |
+| Title tags | OK | 37/37 |
+| Meta description | OK | 37/37 (incluye 404) |
+| Canonical URLs | OK | Todas apuntan a `.html` directo (post-revert 4-mayo) |
+| Open Graph (og:title, og:description, og:image, og:url) | OK | 37/37 (incluye legales) |
+| Twitter Cards (summary_large_image) | OK | 37/37 |
+| `<main>` semantico | OK | 37/37 |
+| robots.txt | OK | Configurado |
+| sitemap.xml | OK | 37 URLs, lastmod 2026-05-04 |
+| llms.txt | OK | Mantenido |
+| 404.html | OK | noindex + meta description |
+| hreflang stub `es-AR` + `x-default` | OK | 37/37 (preparacion para futura i18n) |
+| Breadcrumbs | OK | Corregidos en solutions_*.html (2 niveles) |
+| **i18n real (en, pt-BR)** | PENDIENTE | Solo español. Ver §11 |
+
+### JSON-LD enriquecido por tipo de pagina
+
+| Tipo de pagina | Schema |
+|----------------|--------|
+| Home (index.html) | Organization |
+| Hubs (index_productos.html, index_services.html) | CollectionPage + ItemList |
+| Landings de productos | BreadcrumbList + SoftwareApplication |
+| Landings de servicios | BreadcrumbList + Service |
+| Soluciones | BreadcrumbList + SoftwareApplication |
+| Casos de Exito | CollectionPage + ItemList |
+| People & Culture | AboutPage |
+| Contacto | ContactPage |
+| Blog hub | Blog (con array de 13 BlogPosting) |
+| Posts del blog | Article |
+| Legales | WebPage |
+
+### Decisiones conscientes de NO implementar
+
+- **FAQPage schema** en solutions_ai_chatbot y landing_production_ai — auditoria del DOM mostro que NO hay secciones de FAQ reales (solo menciones aisladas en SVG decorativos). Agregar FAQPage sin Q&A visibles viola politica de Google y puede penalizar.
+- **og:image dedicada por pagina** (1200×630) — se sigue con `logo-header.svg`. Refactor futuro si se quiere mejorar previews en redes.
 
 ---
 
-## 4. Tracking y analytics
+## 4. Performance (cerrado el 2026-04-24, 3 rounds de optimizacion)
+
+### Estado final PageSpeed
+
+| Metrica | Mobile | Desktop |
+|---|---|---|
+| Performance score | >90 | >90 |
+| LCP | 2.1s (desde 4.4s) | ~2s |
+| TBT | <200ms | <300ms (desde 1,590ms) |
+| CLS | 0.001 | 0 |
+
+### Optimizaciones aplicadas
+
+- **Brotli** activado (mas Gzip fallback) — compresion para HTML/CSS/JS/SVG/JSON/XML
+- **Cache headers**: 1 año immutable para estaticos, 0s + must-revalidate para HTML
+- **WebP auto-serve** via `mod_rewrite`: si el browser acepta `image/webp` y existe `foo.png.webp`, se sirve el webp
+- **14 imagenes PNG/JPG → WebP** (Pillow, script `scripts/optimize_images.py`) — **3.6 MB ahorrados**
+- **`<img>` con loading="lazy", decoding="async", width, height** en 88 imgs (script `scripts/add_img_attrs.py`)
+- **common.css inline** en `<head>` (1.8 KiB gzipped) — elimina roundtrip critico que pesaba 3,225ms en mobile 4G (script `scripts/inline_common_css.py`)
+- **3rd-party scripts deferidos a interaccion** (GTM, Meta Pixel, Google Ads gtag) — script `scripts/defer_3p_to_interaction.py`. Triggers: scroll, keydown, touchstart, pointerdown, click. Fallback timeout 30s
+- **LCP logo preload** + `fetchpriority="high"` en el `<img>` real del header (en nav.js y placeholder estatico)
+- **Google Fonts async** via `<link rel="preload" as="style" onload="this.rel='stylesheet'">`
+- **Cleanup**: borrados PNG duplicados de SVGs (Inthegra, Product, Services, Solutions) y `BROCHURE CRM.pdf` (29 MB sin uso)
+
+### Trade-offs aceptados
+
+1. **Tracking post-interaccion**: usuarios que bouncen en <30s sin scrollear/tocar no se trackean. Aceptable para B2B enterprise donde la intent viene de CTAs.
+2. **CSS comun inlineado**: ~1.4 KB extra por HTML × 37 = ~52 KB en deploy. Con Brotli activo es negligible.
+
+### Scripts reusables en `scripts/`
+
+| Script | Funcion |
+|--------|---------|
+| `optimize_images.py` | PNG/JPG >50KB → WebP |
+| `add_img_attrs.py` | loading="lazy", decoding="async", width/height en `<img>` |
+| `inline_common_css.py` | Inlinea common.css en `<head>` |
+| `inline_logo_svg.py` | Inlinea SVG del logo |
+| `defer_3p_to_interaction.py` | Patron defer 3rd-party a primera interaccion |
+| `batch_head_perf.py` | Migracion inicial de head (Round 1) |
+
+---
+
+## 5. Tracking y analytics
 
 | Herramienta | ID / Detalle | Estado |
 |-------------|-------------|--------|
-| Google Tag Manager | GTM-TRT4B92N | Instalado en todas las paginas |
-| Google Ads | AW-16670573573 | Conversion tracking activo |
+| Google Tag Manager | GTM-TRT4B92N | Instalado en todas las paginas (deferido a interaccion) |
+| Google Ads | AW-16670573573 | Conversion tracking activo (tambien deferido) |
 | GA4 Events (via dataLayer) | `form_submit`, `whatsapp_click`, `cta_click` | Configurados en nav.js y contacto.html |
-| Meta Pixel (Facebook) | 1226651955694155 | `PageView` en las 30 paginas + `Lead` en submit del form |
+| Meta Pixel (Facebook) | 1226651955694155 | `PageView` en todas las paginas + `Lead` en submit del form |
 
 ### Eventos custom disponibles en GTM
 
@@ -141,7 +208,7 @@ Sitio web corporativo de Inthegra Software, 100% estatico (sin backend), con **3
 
 ---
 
-## 5. Sistema de diseno
+## 6. Sistema de diseno
 
 ### Paleta de colores (CSS custom properties)
 
@@ -161,32 +228,36 @@ Sitio web corporativo de Inthegra Software, 100% estatico (sin backend), con **3
 | `--gold` | #ffd166 | Acento dorado |
 | `--ai` | #a78bfa | Acento AI (lavanda) |
 
-### Acentos por producto
+### Acentos por producto (marca)
 
-| Producto | Color acento |
-|----------|-------------|
-| HealthCare | Teal #2dd4bf |
-| Credit & Financial | Azul #6ea8ff / #84e1ff |
-| ERP / Business Suite | Naranja #ff6b35 / #ffb347 |
-| Modernizacion | Azul #5aa0ff / Violeta #7c5cff |
+| Producto | Color acento (sitio) | Color marca oficial |
+|----------|---------------------|---------------------|
+| HealthCare | Teal #2dd4bf | — |
+| Credit & Financial | Azul #6ea8ff / #84e1ff | — |
+| ERP / Business Suite | Naranja #ff6b35 / #ffb347 | — |
+| Modernizacion | Azul #5aa0ff / Violeta #7c5cff | — |
+| Inthegra (corporate) | — | #ff7200 |
+| Products division | — | #179dca |
+| Services division | — | #F7B5CD |
+| Solutions division | — | #a603fc |
 
 ### Tipografia
 
-- **Fuente:** Inter (Google Fonts), pesos 400-900
-- **Container:** max-width 1260px
+- **Fuente:** Inter (Google Fonts), pesos 400-900, cargada async
+- **Container:** max-width 1240px-1260px
 
 ### Componentes compartidos
 
 | Componente | Archivo | Descripcion |
 |------------|---------|-------------|
-| Navegacion | nav.js | IIFE que inyecta header sticky con dropdowns, mega-panel ERP de 2 columnas, mobile accordion, GA4 events |
+| Navegacion | nav.js | IIFE que inyecta header sticky con dropdowns, mega-panel ERP de 2 columnas, mobile accordion, GA4 events. fetchpriority="high" + rebase para subpath |
 | Footer + WhatsApp | footer.js | IIFE que inyecta footer unificado (5 columnas) y boton flotante de WhatsApp. Lee `data-wa-context` del `<body>` para personalizar el prefill por pagina |
-| Design tokens | common.css | Variables CSS, reset, tipografia, componentes base |
+| Design tokens | common.css | Variables CSS, reset, tipografia, componentes base. Inlineado en `<head>` |
 | Background SVGs | Product.svg, Services.svg, Solutions.svg, Inthegra.svg | Graficos decorativos por seccion, opacity 0.10-0.16 |
 
 ---
 
-## 6. Navegacion (menu)
+## 7. Navegacion (menu)
 
 ```
 Productos
@@ -221,98 +292,162 @@ Blog
 
 ---
 
-## 7. Infraestructura y deploy
+## 8. Infraestructura y deploy
 
 Documento tecnico completo en: **`docs/DEPLOY_INFRAESTRUCTURA.md`**
 
-Resumen:
-- Servidor web: Nginx recomendado (config incluida con 17 reglas de URL rewrite)
-- VM minima: 1 vCPU, 1 GB RAM, 10 GB SSD
-- SSL: Let's Encrypt (gratis, auto-renovacion)
-- Alternativa: OCI Free Tier (gratis, Oracle Partner)
+**Estado actual: en produccion** sobre **Apache** (no Nginx). El `.htaccess` activo en raiz tiene:
+
+| Bloque | Que hace |
+|--------|----------|
+| `RewriteEngine On` + WebP auto-serve | Sirve `.webp` cuando el browser lo acepta y el archivo existe |
+| 6 redirects 301 legacy Inthegra | `/erp-creditos/` → `/landing_credit_financial.html`, `/salud-erp/` → `/landing_healthcare.html`, `/nosotros/` → `/people_culture.html`, `/people-culture/` → idem, `/crm/` → `/solutions_crm.html`, `/casos-de-valor/*` → `/success_stories.html` |
+| 9 reglas 410 Gone | Limpieza WordPress legacy: `/category/*`, `/tag/*`, `/author/*`, `/feed/*`, `/wp-*`, `/xmlrpc.php`, `?p=N`, `?page_id=N`, `/en/` (root) |
+| 24 redirects 301 URL limpia → .html | Compatibilidad backwards: `/productos/healthcare/` → `/landing_healthcare.html`, etc. El **canonico es el .html** |
+| Bloqueo `^docs/` y `^(mock_\|mockup-\|home_oldversion\|view-source_)` | Protege internos y drafts del acceso web |
+| Brotli + Gzip | Compresion para HTML/CSS/JS/SVG/JSON/XML |
+| Expiraciones + Cache-Control | 1 año immutable para estaticos, 0s + must-revalidate para HTML |
 
 ---
 
-## 8. Issues bloqueantes para produccion
+## 9. Post-mortem: incidente URLs limpias (4-mayo-2026)
 
-**Ninguno.** El formulario de contacto ya apunta al Apps Script desplegado (commit `1c56e17`, 2026-04-20) y se validó el flujo end-to-end (submission → Google Sheet → email de notificacion). El footer fue unificado en `footer.js` (commit `8caedf5`, 2026-04-21) y las paginas legales (privacidad, terminos) fueron publicadas (commit `0688489`, 2026-04-21), cerrando los links rotos del footer.
+**Que se intento**: el 29-abril el sprint SEO incluyo activar URLs limpias internas (`/productos/healthcare/` servido directamente como contenido, no redirigido). El 4-mayo se detecto que rompio el sitio en produccion.
 
-**Documentacion de referencia:**
-- Backend del formulario: `docs/SETUP_CONTACTO_BACKEND.md`
-- Deploy de infraestructura: `docs/DEPLOY_INFRAESTRUCTURA.md`
-- Setup de tracking y SEO post-deploy: `docs/SETUP_TRACKING_SEO.md`
-- Checklist para agregar/modificar una unidad de negocio: `docs/CHECKLIST_PRODUCTO.md`
+**Por que fallo**: todos los paths en los HTML son **relativos** (`<script src="nav.js">`, `<link href="favicon-32.png">`, `<img src="img/...">`). El browser resuelve relativos contra la URL **visible**, no contra la ubicacion real del archivo. Con clean URLs activas la URL visible era `/productos/healthcare/`, asi que `nav.js` se buscaba en `/productos/healthcare/nav.js` (404). Resultado: navegacion rota, CTAs caidos, imagenes ausentes.
+
+**Que se hizo**: commits `230ce68` + `6ca70b1` revirtieron canonicals a `.html` directo, sitemap a `.html`, y desactivaron los rewrites internos de URL limpia (manteniendo solo los 301 hacia atras como compatibilidad).
+
+**Que hay que hacer antes de reintentar URLs limpias** (ver §11):
+1. Convertir todos los paths relativos a **root-absolute** en los ~24 HTML principales (`src="nav.js"` → `src="/nav.js"`, `href="img/..."` → `href="/img/..."`, etc.)
+2. Verificar con `grep -r 'src="[a-z]' *.html` que no queden relativos
+3. Reactivar rewrites internos en `.htaccess` y volver a alinear canonicals + sitemap
 
 ---
 
-## 9. Roadmap — Pendientes a futuro
+## 10. GSC migration cleanup — en seguimiento
 
-### Prioridad Alta (antes o poco despues del go-live)
+**Snapshot 2026-04-29** (post-deploy del nuevo sitio + sitemap subido a Google Search Console):
+
+| Motivo | URLs | Estado |
+|---|---:|---|
+| Indexadas | 105 | (sitio real tiene 37 — el resto es ruido legacy WP) |
+| Rastreada: actualmente sin indexar | 245 | Esperar (autoridad/tiempo, no es tecnico) |
+| Pagina alternativa con canonica adecuada | 62 | Normal — Google entendio duplicados |
+| Excluida por "noindex" | 31 | wp-admin del WP viejo, ignorar |
+| No encontrada (404) | 30 | Atacado con 301/410 (commit `dd40cdf`) |
+| Pagina con redireccion | 27 | Normal — Google sigue 301s |
+| Error de redireccion | 9 | APEX, ignorar |
+| Duplicada — Google eligio otra canonica | 5 | Subdominio `productos.*` |
+| Duplicada sin canonica | 3 | Subdominio `productos.*` |
+| Bloqueada por 4xx | 1 | Bajo impacto |
+| Error 5xx | 1 | Anomalo, transitorio |
+
+**Acciones tomadas**: commit `dd40cdf` agrego 24 redirects 301 + 6 legacy + 9 reglas 410 + 1 query string al `.htaccess`.
+
+**Pendientes operativos**:
+- Verificar que `.htaccess` con los redirects este efectivamente desplegado en el hosting (usar `curl -I` para validar).
+- Subdominio `productos.inthegrasoftware.com`: si responde, agregar `RewriteCond` para 301 al dominio principal.
+- Indexacion manual de 5-10 URLs prioritarias en GSC (Inspeccion de URL → "Solicitar indexacion").
+
+**Proxima revision sugerida: ~10-junio-2026** (6 semanas post-snapshot). Esperado: "No encontrada (404)" → ~0; "Indexadas" debe estabilizar entre 30-37.
+
+---
+
+## 11. Roadmap
+
+### Hecho (referencia historica)
+
+| Item | Cierre |
+|------|--------|
+| Deploy del Apps Script (backend del formulario) | 2026-04-20 |
+| Integracion Meta Pixel + evento Lead | 2026-04-20 |
+| Footer unificado en `footer.js` | 2026-04-21 |
+| Publicar paginas legales (privacidad, terminos) | 2026-04-21 |
+| Sitemap.xml + llms.txt (regen con todas las paginas) | 2026-04-21 |
+| Performance optimization (3 rounds) → PageSpeed >90 mobile + desktop | 2026-04-24 |
+| Optimizar imagenes (14 PNG/JPG → WebP, 3.6 MB ahorrados) | 2026-04-24 |
+| Extraer CSS comun (inline `common.css` en head) | 2026-04-24 |
+| Sprint SEO tecnico (JSON-LD enriquecido, hreflang stub, OG/Twitter en todas, breadcrumbs corregidos) | 2026-04-29 |
+| `.htaccess` con 24 redirects 301 + 9 reglas 410 (cleanup post-migracion WP) | 2026-04-29 |
+| Google Search Console (verificacion + sitemap + snapshot inicial) | 2026-04-29 |
+| Revert URLs limpias (paths relativos rompian nav/CTAs) | 2026-05-04 |
+| Cleanup mockups/drafts en raiz (12 archivos) | 2026-05-05 |
+
+### Prioridad Alta (proximas 2-4 semanas)
 
 | Item | Detalle | Esfuerzo |
 |------|---------|----------|
-| ~~Deployar Apps Script~~ | ~~Configurar backend del formulario de contacto~~ | ✅ Hecho 2026-04-20 |
-| ~~Integrar Meta Pixel~~ | ~~Instalar pixel de Facebook + evento Lead en formulario~~ | ✅ Hecho 2026-04-20 |
-| ~~Unificar footer~~ | ~~Reemplazar footers hardcoded por `footer.js` compartido~~ | ✅ Hecho 2026-04-21 |
-| ~~Publicar paginas legales~~ | ~~Crear privacidad.html y terminos.html (links del footer)~~ | ✅ Hecho 2026-04-21 |
-| ~~Regenerar sitemap.xml y llms.txt~~ | ~~Agregar las 6 paginas nuevas (4 modulos ERP + 2 legales)~~ | ✅ Hecho 2026-04-21 |
-| Configurar GTM triggers | Crear triggers para form_submit, whatsapp_click en GTM y conectar con GA4 goals. [Guía](SETUP_TRACKING_SEO.md#1-gtm-triggers--ga4-goals) | Marketing — 2 horas |
-| Configurar Meta Events Manager | Verificar llegada de `PageView` y `Lead`, crear audiencias de remarketing. [Guía](SETUP_TRACKING_SEO.md#2-meta-events-manager) | Marketing — 1 hora |
-| Google Search Console | Verificar propiedad via GTM, enviar sitemap. [Guía](SETUP_TRACKING_SEO.md#3-google-search-console) | Marketing/IT — 30 min |
-| Optimizar imagenes | Convertir PNGs a WebP, agregar srcset/sizes para responsive images | Dev — medio dia |
-| Extraer CSS comun | Mover CSS inline repetido (~20-37 KB por pagina) a common.css | Dev — 1 dia |
+| Configurar GTM triggers + GA4 goals | Crear triggers en GTM para `form_submit`, `whatsapp_click`, `cta_click` y conectar con goals/conversions de GA4. [Guia](SETUP_TRACKING_SEO.md#1-gtm-triggers--ga4-goals) | Marketing — 2 horas |
+| Verificar Meta Events Manager | Confirmar llegada de `PageView` y `Lead`, crear audiencias de remarketing. [Guia](SETUP_TRACKING_SEO.md#2-meta-events-manager) | Marketing — 1 hora |
+| Validar deploy de `.htaccess` en hosting | `curl -I` sobre URLs legacy para confirmar 301/410 (ej. `/erp-creditos/`, `/category/oracle/`, `/wp-admin/`) | IT — 30 min |
+| Revision GSC ~10-junio | Comparar contra snapshot 2026-04-29. Esperado: 404s → 0, indexadas estables 30-37 | Marketing — 1 hora |
+| Subdominio `productos.inthegrasoftware.com` | Verificar si sigue activo. Si responde, redireccionar al dominio principal con 301 | IT — 30 min |
 
-### Prioridad Media (primer mes post-launch)
+### Prioridad Media (1-2 meses)
 
 | Item | Detalle | Esfuerzo |
 |------|---------|----------|
-| Internacionalizacion (i18n) | Definir estrategia de URLs (/en/, /pt/), traducir paginas a ingles y portugues, agregar hreflang tags | Dev — 2-3 semanas |
-| CRM integration | Conectar formulario de contacto con Kommo u otro CRM para seguimiento automatico de leads | Dev/IT — 2-3 dias |
-| Blog — cadencia de publicacion | Definir calendario editorial, idealmente 2-4 articulos/mes para SEO | Marketing — ongoing |
-| Performance audit | Lighthouse full, Core Web Vitals, lazy loading de imagenes below-fold | Dev — 1 dia |
+| **Convertir paths a root-absolute** (prerequisito URLs limpias) | Cambiar `src="nav.js"` → `src="/nav.js"` (y todos los relativos) en los ~24 HTML principales. Habilita reactivar URLs limpias sin romper el sitio | Dev — 1 dia |
+| Modelo de mantenimiento del blog | Decidir entre: (A) JSON+JS render dinamico, (B) HTML por post via Claude Code, (C) hibrido (estado actual). Documentar el flujo | Dev — medio dia |
+| Cadencia editorial del blog | 2-4 articulos/mes para SEO. Definir calendario | Marketing — ongoing |
+| CRM integration | Conectar formulario de contacto con Kommo u otro CRM para nurturing automatico | Dev/IT — 2-3 dias |
 | Analytics dashboard | Configurar reportes en GA4: top pages, conversion rate, sources, bounce rate | Marketing — 1 dia |
 
 ### Prioridad Baja (trimestre 2+)
 
 | Item | Detalle | Esfuerzo |
 |------|---------|----------|
-| Live chat / Chatbot widget | Integrar chat en tiempo real (Intercom, Drift, o el propio AI Chatbot de Inthegra) | Dev — 1 semana |
-| A/B testing | Testear variantes de CTAs, hero copy, y formulario de contacto | Marketing — ongoing |
-| Blog search | Agregar buscador al blog cuando supere 20+ articulos | Dev — 1 dia |
-| Service Worker / PWA | Offline support y carga instantanea para visitantes recurrentes | Dev — 2-3 dias |
-| Schema.org ampliado | Agregar FAQPage schema a landings, Review schema a casos de exito | Dev — 1 dia |
+| Internacionalizacion (i18n) | Definir estrategia URLs (`/en/`, `/pt/`), traducir paginas, activar hreflang real (los stubs ya estan listos) | Dev — 2-3 semanas |
+| Live chat / Chatbot widget | Integrar chat en tiempo real (o el propio AI Chatbot de Inthegra) | Dev — 1 semana |
+| A/B testing | Variantes de CTAs, hero copy, formulario | Marketing — ongoing |
+| Blog search | Buscador del blog cuando supere 20+ articulos | Dev — 1 dia |
+| Service Worker / PWA | Offline support, carga instantanea para visitantes recurrentes | Dev — 2-3 dias |
+| FAQPage schema | Solo si se agregan secciones FAQ reales (Q&A visibles) en landings — agregar schema sin contenido viola politica de Google | Dev — 1 dia |
+| og:image dedicada (1200×630) por pagina | Mejor preview en redes sociales | Dev — medio dia |
+| Self-host de Inter woff2 | Proxima palanca de perf si el score cae | Dev — medio dia |
 | Automatizacion CI/CD | GitHub Actions para deploy automatico en push a master | Dev/IT — medio dia |
-| CDN | Configurar Cloudflare o CloudFront si el trafico lo justifica | IT — medio dia |
+| CDN | Cloudflare/CloudFront si el trafico lo justifica | IT — medio dia |
 | Accesibilidad WCAG 2.1 | Audit completo, focus states, ARIA labels, contraste | Dev — 1 semana |
 
 ### Ideas a evaluar
 
-| Item | Notas |
-|------|-------|
-| Testimonios en video | Embeber videos cortos de clientes en success_stories.html |
-| Calculadora de ROI | Herramienta interactiva para que prospects estimen retorno de inversion |
-| Newsletter signup | Captura de emails en blog para nurturing |
-| Webinars / Eventos | Seccion de eventos proximos y grabaciones de webinars pasados |
-| Documentacion publica | Portal de docs para clientes actuales (Knowledge Base) |
+- Testimonios en video embebidos en `success_stories.html`
+- Calculadora de ROI interactiva
+- Newsletter signup en el blog
+- Webinars / Eventos
+- Documentacion publica (Knowledge Base) para clientes
 
 ---
 
-## 10. Metricas de salud del sitio
+## 12. Metricas de salud
 
 | Metrica | Valor |
 |---------|-------|
-| Total paginas produccion | 23 top-level + 12 blog = 35 |
-| Peso total del sitio | ~4.5 MB (sin PDF brochure de 28 MB) |
-| Paginas con SEO completo | 35/35 (100%) |
-| Paginas con GTM | 36/36 (100%, incluye 404) |
-| Paginas con Meta Pixel | 36/36 (100%, incluye 404) |
-| Footer unificado | 33/33 paginas via `footer.js` |
+| Total paginas en sitemap | 37 (1 home + 22 top-level + 13 blog + 1 hub blog) |
+| Paginas con SEO completo | 37/37 (100%) |
+| Paginas con GTM | 100% |
+| Paginas con Meta Pixel | 100% |
+| Footer unificado via `footer.js` | 100% |
+| Mockups/drafts en raiz | 0 (cleaneado 2026-05-05, antes habia 12) |
 | Formulario de contacto | Activo (Apps Script → Google Sheet + email) |
-| Links rotos en navegacion | 0/22 |
+| Links rotos en navegacion | 0 |
 | Archivos JS en produccion | 2 (nav.js, footer.js — limpios, sin console.log) |
 | Issues bloqueantes | 0 |
-| SSL | Pendiente (Let's Encrypt al deployar) |
+| **PageSpeed mobile** | **>90** (LCP 2.1s, TBT <200ms, CLS 0.001) |
+| **PageSpeed desktop** | **>90** (LCP ~2s, TBT <300ms, CLS 0) |
+| Compresion | Brotli + Gzip activos |
+| Cache | 1 año immutable para estaticos, 0s para HTML |
+| WebP auto-serve | Activo via mod_rewrite |
+| SSL | Activo en produccion |
+| GSC indexadas | 105 (snapshot 2026-04-29) — proxima revision ~10-junio |
 
 ---
 
-*Documento actualizado el 21 de abril de 2026. Basado en auditoria del repositorio martinlmedina/www-inthegrasoftware-com, branch master, commit `6e3f8da`.*
+**Documentacion de referencia:**
+- `docs/CHECKLIST_PRODUCTO.md` — checklist para agregar/modificar una unidad de negocio
+- `docs/DEPLOY_INFRAESTRUCTURA.md` — deploy de infraestructura
+- `docs/SETUP_CONTACTO_BACKEND.md` — backend del formulario (Apps Script)
+- `docs/SETUP_TRACKING_SEO.md` — setup de tracking y SEO post-deploy
+
+*Documento actualizado el 5 de mayo de 2026. Basado en auditoria del repositorio sobre branch `claude/admiring-grothendieck-883f63`, sincronizada con master en commit `6ca70b1`. Revision previa: 21-abril-2026.*

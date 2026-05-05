@@ -1,5 +1,6 @@
-# Claude Code local config
-.claude/
+# Claude Code — excluir solo archivos locales/temporales, no settings compartibles
+.claude/settings.local.json
+.claude/worktrees/
 
 # OS
 .DS_Store
